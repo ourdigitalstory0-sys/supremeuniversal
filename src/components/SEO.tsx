@@ -14,7 +14,7 @@ const SEO = ({
     description = 'Supreme Riverside Punawale offers ultra-luxury 2 & 3 BHK Homes near Hinjewadi. Experience premium riverside living with world-class amenities in Punawale, Pune.',
     keywords = 'Supreme Riverside, Supreme Riverside Punawale, 2 BHK in Punawale, 3 BHK in Punawale, 2 & 3 BHK Homes in Punawale Pune, Premium Apartments Pune, Luxury Homes Hinjewadi, Riverside Apartments, Real Estate Pune, Supreme Universal Projects, Flats near Hinjewadi, Apartments near Wakad, New Launch Punawale, Gated Community Pune, Properties near Mumbai-Pune Expressway',
     image = '/hero-bg.png',
-    url = 'https://supremeriverside.in/'
+    url = 'https://supreme-universal.in/'
 }: SEOProps) => {
     const fullTitle = title === 'Supreme Riverside | Premium 2 & 3 BHK Apartments in Punawale' ? title : `${title} | Supreme Riverside`;
 
