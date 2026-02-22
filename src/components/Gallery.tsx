@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Gallery = () => {
     const images = [
@@ -64,16 +65,19 @@ const Gallery = () => {
                 </div>
 
                 <div className="mt-16 text-center shadow-none">
-                    <motion.a
-                        href="#contact"
+                    <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
-                        className="inline-flex items-center justify-center gap-4 text-supreme-black font-sans font-semibold uppercase tracking-[0.15em] text-xs hover:text-supreme-gold transition-colors"
                     >
-                        <span>Schedule a Visit</span>
-                        <span className="w-12 h-[1px] bg-supreme-gold"></span>
-                    </motion.a>
+                        <Link
+                            to="/contact-supreme-universal"
+                            className="inline-flex items-center justify-center gap-4 text-supreme-black font-sans font-semibold uppercase tracking-[0.15em] text-xs hover:text-supreme-gold transition-colors"
+                        >
+                            <span>Schedule a Visit</span>
+                            <span className="w-12 h-[1px] bg-supreme-gold"></span>
+                        </Link>
+                    </motion.div>
                 </div>
             </div>
         </section>

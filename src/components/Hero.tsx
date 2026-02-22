@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 interface HeroProps {
     onEnquire?: () => void;
@@ -64,12 +65,12 @@ const Hero = ({ onEnquire }: HeroProps) => {
                         <div className="absolute inset-0 h-full w-full transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out bg-white"></div>
                     </button>
 
-                    <a
-                        href="#overview"
+                    <Link
+                        to="/luxury-residences-overview"
                         className="group relative px-8 py-4 rounded-full font-sans font-semibold uppercase tracking-widest text-sm transition-all w-full sm:w-auto text-white border border-white/30 hover:border-white hover:bg-white/10"
                     >
                         Explore Project
-                    </a>
+                    </Link>
                 </motion.div>
             </div>
 

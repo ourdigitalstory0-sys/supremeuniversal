@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -26,10 +27,10 @@ const Footer = () => {
                     <div className="lg:col-span-2 lg:col-start-6">
                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Navigation</h5>
                         <ul className="space-y-4 text-white/50 font-sans font-light">
-                            <li><a href="#home" className="hover:text-supreme-gold transition-colors duration-300">Home</a></li>
-                            <li><a href="#overview" className="hover:text-supreme-gold transition-colors duration-300">The Vision</a></li>
-                            <li><a href="#amenities" className="hover:text-supreme-gold transition-colors duration-300">The Master Club</a></li>
-                            <li><a href="#location" className="hover:text-supreme-gold transition-colors duration-300">Neighborhood</a></li>
+                            <li><Link to="/" className="hover:text-supreme-gold transition-colors duration-300">Home</Link></li>
+                            <li><Link to="/luxury-residences-overview" className="hover:text-supreme-gold transition-colors duration-300">The Vision</Link></li>
+                            <li><Link to="/world-class-amenities" className="hover:text-supreme-gold transition-colors duration-300">The Master Club</Link></li>
+                            <li><Link to="/west-pune-location-map" className="hover:text-supreme-gold transition-colors duration-300">Neighborhood</Link></li>
                         </ul>
                     </div>
 

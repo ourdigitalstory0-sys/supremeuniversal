@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -19,7 +20,39 @@ import QuickEnquireModal from './components/QuickEnquireModal';
 import LeadPopup from './components/LeadPopup';
 import FAQ from './components/FAQ';
 
-function App() {
+function ScrollHandler() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const sectionMap: Record<string, string> = {
+        '/luxury-residences-overview': '#overview',
+        '/world-class-amenities': '#amenities',
+        '/2bhk-3bhk-floor-plans-punawale': '#features',
+        '/supreme-riverside-gallery': '#gallery',
+        '/west-pune-location-map': '#location',
+        '/frequently-asked-questions': '#faq',
+        '/contact-supreme-universal': '#contact'
+      };
+
+      const targetId = sectionMap[pathname];
+      if (targetId) {
+        const element = document.querySelector(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else if (pathname === '/') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [pathname]);
+
+  return null;
+}
+
+function MainApp() {
   const [isLoading, setIsLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -73,6 +106,15 @@ function App() {
       <QuickEnquireModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <LeadPopup />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <ScrollHandler />
+      <MainApp />
+    </Router>
   );
 }
 

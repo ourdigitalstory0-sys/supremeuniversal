@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Overview = () => {
     return (
@@ -101,13 +102,13 @@ const Overview = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.6, duration: 0.8 }}
                             >
-                                <a
-                                    href="#amenities"
+                                <Link
+                                    to="/world-class-amenities"
                                     className="group inline-flex items-center gap-4 text-supreme-black font-sans font-semibold uppercase tracking-[0.15em] text-xs hover:text-supreme-gold transition-colors"
                                 >
                                     <span>Discover Amenities</span>
                                     <span className="w-8 h-[1px] bg-supreme-black group-hover:bg-supreme-gold group-hover:w-16 transition-all duration-500"></span>
-                                </a>
+                                </Link>
                             </motion.div>
 
                         </motion.div>
