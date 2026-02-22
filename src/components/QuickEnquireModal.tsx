@@ -54,11 +54,20 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                                     </p>
                                 </div>
 
-                                <form className="space-y-6">
+                                <form
+                                    action="https://formsubmit.co/propsmartrealty@gmail.com"
+                                    method="POST"
+                                    className="space-y-6"
+                                >
+                                    {/* FormSubmit Configuration */}
+                                    <input type="hidden" name="_subject" value="New Quick Enquiry from Supreme Riverside" />
+                                    <input type="hidden" name="_captcha" value="false" />
+                                    <input type="hidden" name="_template" value="table" />
                                     <div className="space-y-4">
                                         <div className="relative">
                                             <input
                                                 type="text"
+                                                name="name"
                                                 id="modal-name"
                                                 className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder-transparent focus:outline-none focus:border-supreme-gold transition-colors peer font-light text-sm"
                                                 placeholder="Name"
@@ -75,6 +84,7 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                                         <div className="relative">
                                             <input
                                                 type="tel"
+                                                name="phone"
                                                 id="modal-phone"
                                                 className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder-transparent focus:outline-none focus:border-supreme-gold transition-colors peer font-light text-sm"
                                                 placeholder="Phone"
@@ -91,6 +101,7 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                                         <div className="relative">
                                             <input
                                                 type="email"
+                                                name="email"
                                                 id="modal-email"
                                                 className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder-transparent focus:outline-none focus:border-supreme-gold transition-colors peer font-light text-sm"
                                                 placeholder="Email"

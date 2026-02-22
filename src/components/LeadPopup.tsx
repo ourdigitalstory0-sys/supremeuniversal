@@ -95,10 +95,19 @@ const LeadPopup = () => {
                                     </p>
                                 </div>
 
-                                <form className="space-y-5">
+                                <form
+                                    action="https://formsubmit.co/propsmartrealty@gmail.com"
+                                    method="POST"
+                                    className="space-y-5"
+                                >
+                                    {/* FormSubmit Configuration */}
+                                    <input type="hidden" name="_subject" value="New VIP Lead from Supreme Riverside" />
+                                    <input type="hidden" name="_captcha" value="false" />
+                                    <input type="hidden" name="_template" value="table" />
                                     <div className="relative">
                                         <input
                                             type="text"
+                                            name="name"
                                             id="exit-name"
                                             className="w-full bg-transparent border-b border-white/20 py-2 text-white placeholder-transparent focus:outline-none focus:border-supreme-gold transition-colors peer font-light text-sm"
                                             placeholder="Name"
@@ -114,6 +123,7 @@ const LeadPopup = () => {
                                     <div className="relative">
                                         <input
                                             type="tel"
+                                            name="phone"
                                             id="exit-phone"
                                             className="w-full bg-transparent border-b border-white/20 py-2 text-white placeholder-transparent focus:outline-none focus:border-supreme-gold transition-colors peer font-light text-sm"
                                             placeholder="Phone"
