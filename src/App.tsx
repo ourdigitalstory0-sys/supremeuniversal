@@ -17,7 +17,7 @@ import Preloader from './components/Preloader';
 import NoiseOverlay from './components/NoiseOverlay';
 import QuickEnquireModal from './components/QuickEnquireModal';
 import LeadPopup from './components/LeadPopup';
-import SEOFootprint from './components/SEOFootprint';
+import FAQ from './components/FAQ';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -68,7 +68,7 @@ function App() {
       <Gallery />
       <Location />
       <Contact />
-      <SEOFootprint />
+      <FAQ />
       <Footer />
       <QuickEnquireModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <LeadPopup />
