@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/manrope/300.css';
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/500.css';
+@import '@fontsource/manrope/600.css';
+@import '@fontsource/outfit/400.css';
+@import '@fontsource/outfit/500.css';
+@import '@fontsource/outfit/600.css';
+@import '@fontsource/outfit/700.css';
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Manrope", sans-serif;
+  --font-apple: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-google: "Outfit", sans-serif;
+
+  --color-supreme-gold: #C6A87C;
+  --color-supreme-black: #1C1C1C;
+  --color-supreme-gray: #FAFAFA;
+  --color-supreme-gold-dark: #A3865D;
+  --color-supreme-maroon: #800000;
+  --color-supreme-teal: #0E3A33;
+  /* Deep Green from reference */
+  --color-supreme-gold-accent: #D4AF37;
+
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
+  --animate-fade-in: fadeIn 1s ease-out forwards;
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased text-gray-900;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+@utility text-supreme-gold {
+  color: var(--color-supreme-gold);
+}
+
+@utility bg-supreme-gold {
+  background-color: var(--color-supreme-gold);
+}
+
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@utility glass-card-dark {
+  background: rgba(28, 28, 28, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@utility text-supreme-maroon {
+  color: var(--color-supreme-maroon);
+}
+
+@utility bg-supreme-teal {
+  background-color: var(--color-supreme-teal);
+}
+
+@utility text-supreme-teal {
+  color: var(--color-supreme-teal);
+}
+
+@utility text-gradient-gold {
+  background: linear-gradient(135deg, #C6A87C 0%, #E5D1B0 50%, #A3865D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
