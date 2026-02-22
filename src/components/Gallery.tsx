@@ -71,7 +71,7 @@ const Gallery = () => {
                         viewport={{ once: true }}
                     >
                         <Link
-                            to="/contact-supreme-universal"
+                            to="/supreme-riverside-punawale-contact"
                             className="inline-flex items-center justify-center gap-4 text-supreme-black font-sans font-semibold uppercase tracking-[0.15em] text-xs hover:text-supreme-gold transition-colors"
                         >
                             <span>Schedule a Visit</span>

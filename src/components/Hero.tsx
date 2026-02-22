@@ -66,7 +66,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
                     </button>
 
                     <Link
-                        to="/luxury-residences-overview"
+                        to="/supreme-riverside-punawale-overview"
                         className="group relative px-8 py-4 rounded-full font-sans font-semibold uppercase tracking-widest text-sm transition-all w-full sm:w-auto text-white border border-white/30 hover:border-white hover:bg-white/10"
                     >
                         Explore Project

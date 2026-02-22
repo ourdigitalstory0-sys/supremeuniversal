@@ -26,13 +26,13 @@ function ScrollHandler() {
   useEffect(() => {
     const timer = setTimeout(() => {
       const sectionMap: Record<string, string> = {
-        '/luxury-residences-overview': '#overview',
-        '/world-class-amenities': '#amenities',
-        '/2bhk-3bhk-floor-plans-punawale': '#features',
-        '/supreme-riverside-gallery': '#gallery',
-        '/west-pune-location-map': '#location',
-        '/frequently-asked-questions': '#faq',
-        '/contact-supreme-universal': '#contact'
+        '/supreme-riverside-punawale-overview': '#overview',
+        '/supreme-riverside-punawale-amenities': '#amenities',
+        '/supreme-riverside-punawale-floor-plans': '#features',
+        '/supreme-riverside-punawale-gallery': '#gallery',
+        '/supreme-riverside-punawale-location': '#location',
+        '/supreme-riverside-punawale-faq': '#faq',
+        '/supreme-riverside-punawale-contact': '#contact'
       };
 
       const targetId = sectionMap[pathname];

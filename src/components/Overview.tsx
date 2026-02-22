@@ -103,7 +103,7 @@ const Overview = () => {
                                 transition={{ delay: 0.6, duration: 0.8 }}
                             >
                                 <Link
-                                    to="/world-class-amenities"
+                                    to="/supreme-riverside-punawale-amenities"
                                     className="group inline-flex items-center gap-4 text-supreme-black font-sans font-semibold uppercase tracking-[0.15em] text-xs hover:text-supreme-gold transition-colors"
                                 >
                                     <span>Discover Amenities</span>

@@ -21,11 +21,11 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
 
     const navLinks = [
         { name: 'Home', href: '/' },
-        { name: 'Overview', href: '/luxury-residences-overview' },
-        { name: 'Amenities', href: '/world-class-amenities' },
-        { name: 'Gallery', href: '/supreme-riverside-gallery' },
-        { name: 'Location', href: '/west-pune-location-map' },
-        { name: 'Contact', href: '/contact-supreme-universal' },
+        { name: 'Overview', href: '/supreme-riverside-punawale-overview' },
+        { name: 'Amenities', href: '/supreme-riverside-punawale-amenities' },
+        { name: 'Gallery', href: '/supreme-riverside-punawale-gallery' },
+        { name: 'Location', href: '/supreme-riverside-punawale-location' },
+        { name: 'Contact', href: '/supreme-riverside-punawale-contact' },
     ];
 
     return (
