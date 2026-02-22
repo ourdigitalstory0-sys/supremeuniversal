@@ -1,8 +1,33 @@
 
 import { Phone, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const Contact = () => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
+
+        const formData = new FormData(e.currentTarget);
+        formData.append("access_key", "8d14bafa-306b-4e68-bc3f-791c5fbf5dc1");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            }); const data = await response.json();
+            if (data.success) {
+                setSubmitStatus('success');
+                (e.target as HTMLFormElement).reset();
+            } else { setSubmitStatus('error'); }
+        } catch { setSubmitStatus('error'); }
+        setIsSubmitting(false);
+    };
+
     return (
         <section id="contact" className="py-24 md:py-32 bg-supreme-black text-white relative overflow-hidden">
             {/* Decorative bg */}
@@ -84,14 +109,11 @@ const Contact = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.4 }}
-                            action="https://formsubmit.co/propsmartrealty@gmail.com"
-                            method="POST"
+                            onSubmit={handleSubmit}
                             className="space-y-8 bg-white/5 p-8 md:p-12 border border-white/10"
                         >
-                            {/* FormSubmit Configuration */}
-                            <input type="hidden" name="_subject" value="New Enquiry from Supreme Riverside Website" />
-                            <input type="hidden" name="_captcha" value="false" />
-                            <input type="hidden" name="_template" value="table" />
+                            <input type="hidden" name="subject" value="New Website Contact Enquiry" />
+                            <input type="hidden" name="from_name" value="Supreme Riverside System" />
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <div className="relative group">
@@ -146,10 +168,14 @@ const Contact = () => {
                             <div className="pt-6">
                                 <button
                                     type="submit"
-                                    className="w-full px-10 py-5 bg-supreme-gold text-supreme-black font-sans font-semibold tracking-[0.15em] uppercase hover:bg-white transition-all duration-300 shadow-xl shadow-supreme-gold/20 hover:shadow-white/20"
+                                    disabled={isSubmitting || submitStatus === 'success'}
+                                    className="w-full px-10 py-5 bg-supreme-gold text-supreme-black font-sans font-semibold tracking-[0.15em] uppercase hover:bg-white transition-all duration-300 shadow-xl shadow-supreme-gold/20 hover:shadow-white/20 disabled:opacity-50"
                                 >
-                                    Submit Request
+                                    {isSubmitting ? 'Submitting...' : submitStatus === 'success' ? 'Request Received Successfully!' : 'Submit Request'}
                                 </button>
+                                {submitStatus === 'error' && (
+                                    <p className="text-red-400 text-sm mt-4 text-center">There was an error submitting your request. Please try again.</p>
+                                )}
                             </div>
                         </motion.form>
                     </div>

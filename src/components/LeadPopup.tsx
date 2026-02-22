@@ -4,6 +4,8 @@ import { X } from 'lucide-react';
 
 const LeadPopup = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
     useEffect(() => {
         // Check if we've already shown the popup in this session
@@ -36,6 +38,29 @@ const LeadPopup = () => {
     }, []);
 
     const closePopup = () => setIsVisible(false);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
+
+        const formData = new FormData(e.currentTarget);
+        formData.append("access_key", "8d14bafa-306b-4e68-bc3f-791c5fbf5dc1");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            }); const data = await response.json();
+            if (data.success) {
+                setSubmitStatus('success');
+                setTimeout(() => {
+                    closePopup();
+                }, 3000);
+            } else { setSubmitStatus('error'); }
+        } catch { setSubmitStatus('error'); }
+        setIsSubmitting(false);
+    };
 
     return (
         <AnimatePresence>
@@ -95,15 +120,9 @@ const LeadPopup = () => {
                                     </p>
                                 </div>
 
-                                <form
-                                    action="https://formsubmit.co/propsmartrealty@gmail.com"
-                                    method="POST"
-                                    className="space-y-5"
-                                >
-                                    {/* FormSubmit Configuration */}
-                                    <input type="hidden" name="_subject" value="New VIP Lead from Supreme Riverside" />
-                                    <input type="hidden" name="_captcha" value="false" />
-                                    <input type="hidden" name="_template" value="table" />
+                                <form onSubmit={handleSubmit} className="space-y-5">
+                                    <input type="hidden" name="subject" value="New VIP Lead from Supreme Riverside" />
+                                    <input type="hidden" name="from_name" value="Supreme Riverside System" />
                                     <div className="relative">
                                         <input
                                             type="text"
@@ -139,10 +158,15 @@ const LeadPopup = () => {
 
                                     <button
                                         type="submit"
-                                        className="w-full bg-supreme-gold text-white py-3 font-sans font-semibold tracking-[0.1em] uppercase text-xs hover:bg-white hover:text-supreme-black transition-colors duration-300 mt-6"
+                                        disabled={isSubmitting || submitStatus === 'success'}
+                                        className="w-full bg-supreme-gold text-white py-3 font-sans font-semibold tracking-[0.1em] uppercase text-xs hover:bg-white hover:text-supreme-black transition-colors duration-300 mt-6 disabled:opacity-50"
                                     >
-                                        Claim VIP Offer
+                                        {isSubmitting ? 'Unlocking...' : submitStatus === 'success' ? 'Unlocked! Check Email' : 'Claim VIP Offer'}
                                     </button>
+
+                                    {submitStatus === 'error' && (
+                                        <p className="text-red-400 text-xs text-center mt-2">Communication error. Please call us directly.</p>
+                                    )}
                                 </form>
                             </div>
                         </motion.div>

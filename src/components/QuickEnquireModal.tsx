@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
+import { useState } from 'react';
 
 interface QuickEnquireModalProps {
     isOpen: boolean;
@@ -7,6 +8,33 @@ interface QuickEnquireModalProps {
 }
 
 const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
+
+        const formData = new FormData(e.currentTarget);
+        formData.append("access_key", "8d14bafa-306b-4e68-bc3f-791c5fbf5dc1");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            }); const data = await response.json();
+            if (data.success) {
+                setSubmitStatus('success');
+                setTimeout(() => {
+                    onClose();
+                    setSubmitStatus('idle');
+                }, 3000);
+            } else { setSubmitStatus('error'); }
+        } catch { setSubmitStatus('error'); }
+        setIsSubmitting(false);
+    };
+
     return (
         <AnimatePresence>
             {isOpen && (
@@ -54,15 +82,9 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                                     </p>
                                 </div>
 
-                                <form
-                                    action="https://formsubmit.co/propsmartrealty@gmail.com"
-                                    method="POST"
-                                    className="space-y-6"
-                                >
-                                    {/* FormSubmit Configuration */}
-                                    <input type="hidden" name="_subject" value="New Quick Enquiry from Supreme Riverside" />
-                                    <input type="hidden" name="_captcha" value="false" />
-                                    <input type="hidden" name="_template" value="table" />
+                                <form onSubmit={handleSubmit} className="space-y-6">
+                                    <input type="hidden" name="subject" value="New Quick Enquiry from Supreme Riverside" />
+                                    <input type="hidden" name="from_name" value="Supreme Riverside System" />
                                     <div className="space-y-4">
                                         <div className="relative">
                                             <input
@@ -117,10 +139,15 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
 
                                     <button
                                         type="submit"
-                                        className="w-full bg-supreme-gold text-white py-4 font-sans font-semibold tracking-[0.15em] uppercase text-xs hover:bg-white hover:text-supreme-black transition-colors duration-300 mt-8"
+                                        disabled={isSubmitting || submitStatus === 'success'}
+                                        className="w-full bg-supreme-gold text-white py-4 font-sans font-semibold tracking-[0.15em] uppercase text-xs hover:bg-white hover:text-supreme-black transition-colors duration-300 mt-8 disabled:opacity-50"
                                     >
-                                        Submit Details
+                                        {isSubmitting ? 'Sending Details...' : submitStatus === 'success' ? 'Details Received!' : 'Submit Details'}
                                     </button>
+
+                                    {submitStatus === 'error' && (
+                                        <p className="text-red-400 text-xs text-center mt-2">Failed to send details. Please try again or call us.</p>
+                                    )}
 
                                     <p className="text-center text-white/30 text-[10px] tracking-wide mt-4">
                                         Your details are secure and will not be shared.
