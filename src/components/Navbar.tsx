@@ -83,6 +83,7 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
                         <button
                             className="lg:hidden text-white focus:outline-none ml-auto"
                             onClick={() => setIsOpen(!isOpen)}
+                            aria-label="Toggle Navigation Menu"
                         >
                             {isOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>

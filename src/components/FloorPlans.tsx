@@ -66,6 +66,7 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                                                 : "https://cdn.supremeuniversal.com/media/t4mf35_WtizuRsupremeelysiamin.jpg"}
                                             alt={`${activeTab} Floor Plan`}
                                             className="w-full h-full object-cover"
+                                            loading="lazy"
                                         />
                                     </div>
                                 </div>

@@ -22,9 +22,9 @@ const Preloader = ({ isLoading }: PreloaderProps) => {
                         className="text-center"
                     >
                         <div className="relative mb-6">
-                            <h1 className="text-4xl md:text-6xl font-serif font-bold text-white tracking-tight uppercase leading-none">
+                            <span className="text-4xl md:text-6xl font-serif font-bold text-white tracking-tight uppercase leading-none block">
                                 Supreme
-                            </h1>
+                            </span>
                             <h2 className="text-xl md:text-2xl text-supreme-gold tracking-[0.4em] uppercase font-light mt-1">
                                 Riverside
                             </h2>
