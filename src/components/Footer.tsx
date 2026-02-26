@@ -24,18 +24,29 @@ const Footer = () => {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="lg:col-span-2 lg:col-start-6">
+                    <div className="lg:col-span-2 lg:col-start-5">
                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Navigation</h5>
                         <ul className="space-y-4 text-white/50 font-sans font-light">
                             <li><Link to="/" className="hover:text-supreme-gold transition-colors duration-300">Home</Link></li>
                             <li><Link to="/supreme-riverside-punawale-overview" className="hover:text-supreme-gold transition-colors duration-300">The Vision</Link></li>
                             <li><Link to="/supreme-riverside-punawale-amenities" className="hover:text-supreme-gold transition-colors duration-300">The Master Club</Link></li>
                             <li><Link to="/supreme-riverside-punawale-location" className="hover:text-supreme-gold transition-colors duration-300">Neighborhood</Link></li>
+                            <li><Link to="/blog" className="hover:text-supreme-gold transition-colors duration-300">Market Insights</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* SEO Hub Links */}
+                    <div className="lg:col-span-2">
+                        <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Top Guides</h5>
+                        <ul className="space-y-4 text-white/50 font-sans font-light">
+                            <li><Link to="/blog/ultimate-guide-buying-property-punawale-pune" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Punawale Guide<span className="text-[10px] text-white/30 truncate">Real Estate 2026</span></Link></li>
+                            <li><Link to="/blog/punawale-infrastructure-connectivity-updates-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Connectivity<span className="text-[10px] text-white/30 truncate">Ring Road Updates</span></Link></li>
+                            <li><Link to="/blog/supreme-universal-luxury-legacy-west-pune" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Developer Legacy<span className="text-[10px] text-white/30 truncate">Supreme Universal</span></Link></li>
                         </ul>
                     </div>
 
                     {/* Contact Info */}
-                    <div className="lg:col-span-3">
+                    <div className="lg:col-span-2">
                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Connect</h5>
                         <ul className="space-y-6 text-white/50 font-sans font-light">
                             <li className="flex flex-col gap-1">

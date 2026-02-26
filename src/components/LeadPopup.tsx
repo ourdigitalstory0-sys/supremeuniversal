@@ -92,11 +92,12 @@ const LeadPopup = () => {
                                     className="absolute inset-0 w-full h-full object-cover opacity-60"
                                     alt="Luxury Residence"
                                     loading="lazy"
+                                    decoding="async"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-supreme-black"></div>
                             </div>
 
-                            <div className="p-8 md:p-10 w-full md:w-2/3 relative">
+                            <div className="p-6 md:p-10 w-full md:w-2/3 relative">
                                 {/* Decorative Glow */}
                                 <div className="absolute top-0 right-0 w-40 h-40 bg-supreme-gold/10 blur-[60px] rounded-full pointer-events-none"></div>
 
@@ -120,7 +121,7 @@ const LeadPopup = () => {
                                     </p>
                                 </div>
 
-                                <form onSubmit={handleSubmit} className="space-y-5">
+                                <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
                                     <input type="hidden" name="subject" value="New VIP Lead from Supreme Riverside" />
                                     <input type="hidden" name="from_name" value="Supreme Riverside System" />
                                     <div className="relative">
@@ -159,7 +160,7 @@ const LeadPopup = () => {
                                     <button
                                         type="submit"
                                         disabled={isSubmitting || submitStatus === 'success'}
-                                        className="w-full bg-supreme-gold text-white py-3 font-sans font-semibold tracking-[0.1em] uppercase text-xs hover:bg-white hover:text-supreme-black transition-colors duration-300 mt-6 disabled:opacity-50"
+                                        className="w-full bg-supreme-gold text-white min-h-[48px] md:py-3 font-sans font-semibold tracking-[0.1em] uppercase text-xs hover:bg-white hover:text-supreme-black transition-colors duration-300 mt-4 md:mt-6 disabled:opacity-50"
                                     >
                                         {isSubmitting ? 'Unlocking...' : submitStatus === 'success' ? 'Unlocked! Check Email' : 'Claim VIP Offer'}
                                     </button>

@@ -12,7 +12,7 @@ interface SEOProps {
 const SEO = ({
     title = 'Supreme Riverside | 2 & 3 BHK Homes in Punawale, Pune',
     description = 'Supreme Riverside Punawale offers ultra-luxury 2 & 3 BHK Homes near Hinjewadi. Experience premium riverside living with world-class amenities in Punawale, Pune.',
-    keywords = 'Supreme Riverside, Supreme Riverside Punawale, 2 BHK in Punawale, 3 BHK in Punawale, 2 & 3 BHK Homes in Punawale Pune, Premium Apartments Pune, Luxury Homes Hinjewadi, Riverside Apartments, Real Estate Pune, Supreme Universal Projects, Flats near Hinjewadi, Apartments near Wakad, New Launch Punawale, Gated Community Pune, Properties near Mumbai-Pune Expressway',
+    keywords = 'Supreme Riverside, Supreme Riverside Punawale, 2 BHK in Punawale, 3 BHK in Punawale, 2 & 3 BHK Homes in Punawale Pune, Premium Apartments Pune, Luxury Homes Hinjewadi, Riverside Apartments, Real Estate Pune, Supreme Universal Projects, Supreme Universal Pune, Supreme Towers Koregaon Park, Supreme Villagio Somatane, Supreme Estia Baner, Designs That Elevate The Way You Live, Timeless Luxury Real Estate, Crafting Spaces That Reflect Your Aspirations, Flats near Hinjewadi, Apartments near Wakad, New Launch Punawale, Gated Community Pune, Properties near Mumbai-Pune Expressway',
     image = '/hero-bg.png',
     url = 'https://supreme-universal.in/'
 }: SEOProps) => {
@@ -53,25 +53,14 @@ const SEO = ({
             <script type="application/ld+json">
                 {JSON.stringify({
                     "@context": "https://schema.org",
-                    "@type": "RealEstateListing",
+                    "@type": "ApartmentComplex",
                     "name": fullTitle,
                     "description": description,
-                    "image": [image],
+                    "image": [
+                        "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
+                        "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
+                    ],
                     "url": url,
-                    "datePosted": "2024-01-01",
-                    "validFrom": "2024-01-01",
-                    "offers": {
-                        "@type": "Offer",
-                        "priceCurrency": "INR",
-                        "availability": "https://schema.org/PreOrder",
-                        "url": url,
-                        "category": "Apartment",
-                        "priceSpecification": {
-                            "@type": "PriceSpecification",
-                            "priceCurrency": "INR",
-                            "description": "Call for Price"
-                        }
-                    },
                     "address": {
                         "@type": "PostalAddress",
                         "streetAddress": "Near Lotus Business School, Punawale",
@@ -85,10 +74,29 @@ const SEO = ({
                         "latitude": "18.6298",
                         "longitude": "73.7506"
                     },
+                    "hasMap": "https://maps.app.goo.gl/YourMapLink",
+                    "amenityFeature": [
+                        {
+                            "@type": "LocationFeatureSpecification",
+                            "name": "Infinity Pool",
+                            "value": "true"
+                        },
+                        {
+                            "@type": "LocationFeatureSpecification",
+                            "name": "Multi-tier Clubhouse",
+                            "value": "true"
+                        },
+                        {
+                            "@type": "LocationFeatureSpecification",
+                            "name": "Riverside Promenade",
+                            "value": "true"
+                        }
+                    ],
+                    "tourBookingPage": `${url}supreme-riverside-punawale-contact`,
+                    "petsAllowed": "True",
+                    "telephone": "+917744009295",
                     "provider": {
-                        "@type": "Organization",
-                        "name": "Supreme Universal",
-                        "url": "https://supremeuniversal.in/"
+                        "@id": "https://supreme-universal.in/#organization"
                     }
                 })}
             </script>

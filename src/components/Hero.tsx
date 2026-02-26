@@ -35,7 +35,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
                     className="mb-6 flex flex-col items-center w-full"
                 >
                     <span className="block text-xs md:text-sm font-sans tracking-[0.4em] text-supreme-gold mb-4 uppercase">
-                        The Last Chapter of Premium Life
+                        Designs That Elevate The Way You Live
                     </span>
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-tight drop-shadow-2xl">
                         Supreme <span className="italic font-light text-supreme-gold">Riverside</span>
@@ -48,7 +48,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.7, duration: 1 }}
                 >
-                    Experience the pinnacle of luxury living with our 2 & 3 BHK waterfront residences in Punawale, Pune.
+                    Experience timeless luxury and the pinnacle of real estate evolution with our premium 2 & 3 BHK waterfront residences in Punawale, Pune.
                 </motion.p>
 
                 <motion.div

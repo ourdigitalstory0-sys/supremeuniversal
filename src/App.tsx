@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -8,6 +8,7 @@ import Amenities from './components/Amenities';
 import FloorPlans from './components/FloorPlans';
 import Gallery from './components/Gallery';
 import Location from './components/Location';
+import NeighborhoodGuide from './components/NeighborhoodGuide';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
@@ -19,11 +20,18 @@ import NoiseOverlay from './components/NoiseOverlay';
 import QuickEnquireModal from './components/QuickEnquireModal';
 import LeadPopup from './components/LeadPopup';
 import FAQ from './components/FAQ';
+import BlogList from './pages/BlogList';
+import BlogPost from './pages/BlogPost';
 
 function ScrollHandler() {
   const { pathname } = useLocation();
 
   useEffect(() => {
+    // Scroll to top automatically when navigating to a new route like /blog
+    if (!pathname.includes('-')) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+
     const timer = setTimeout(() => {
       const sectionMap: Record<string, string> = {
         '/supreme-riverside-punawale-overview': '#overview',
@@ -100,6 +108,7 @@ function MainApp() {
       <FloorPlans onEnquire={() => setIsModalOpen(true)} />
       <Gallery />
       <Location />
+      <NeighborhoodGuide />
       <Contact />
       <FAQ />
       <Footer />
@@ -113,7 +122,11 @@ function App() {
   return (
     <Router>
       <ScrollHandler />
-      <MainApp />
+      <Routes>
+        <Route path="*" element={<MainApp />} />
+        <Route path="/blog" element={<BlogList />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
+      </Routes>
     </Router>
   );
 }

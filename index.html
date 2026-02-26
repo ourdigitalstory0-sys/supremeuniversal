@@ -36,13 +36,27 @@
 
   <!-- JSON-LD Structured Data for Real Estate -->
   <script type="application/ld+json">
+    [{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Supreme Riverside",
+      "url": "https://supreme-universal.in/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://supreme-universal.in/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
     {
       "@context": "https://schema.org",
       "@type": "RealEstateAgent",
-      "name": "Supreme Riverside Punawale",
+      "@id": "https://supreme-universal.in/#organization",
+      "name": "Supreme Universal",
+      "url": "https://supreme-universal.in/",
+      "logo": "https://www.supremeuniversal.com/front/img/favicon.png",
       "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
-      "url": "https://supreme-universal.in",
       "telephone": "+917744009295",
+      "priceRange": "$$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Near Lotus Business School",
@@ -50,9 +64,17 @@
         "postalCode": "411033",
         "addressCountry": "IN"
       },
-      "description": "Premium 2 & 3 BHK waterfront residences in Punawale, Pune by Supreme Universal.",
-      "priceRange": "$$$"
-    }
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.6298",
+        "longitude": "73.7506"
+      },
+      "sameAs": [
+        "https://www.facebook.com/SupremeUniversal/",
+        "https://www.instagram.com/supremeuniversal/",
+        "https://www.linkedin.com/company/supreme-universal/"
+      ]
+    }]
   </script>
 </head>
 

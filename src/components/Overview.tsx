@@ -22,6 +22,7 @@ const Overview = () => {
                                     alt="Supreme Riverside Luxury Living"
                                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-[2s] ease-out"
                                     loading="lazy"
+                                    decoding="async"
                                 />
                             </div>
 
@@ -61,7 +62,7 @@ const Overview = () => {
                             >
                                 <span className="w-12 h-[1px] bg-supreme-gold"></span>
                                 <span className="text-supreme-gold font-sans font-semibold uppercase tracking-[0.2em] text-xs">
-                                    The Philosophy
+                                    Archives of Excellence
                                 </span>
                             </motion.div>
 
@@ -72,8 +73,8 @@ const Overview = () => {
                                 transition={{ delay: 0.2, duration: 0.8 }}
                                 className="text-4xl md:text-5xl lg:text-7xl font-serif text-supreme-black mb-8 leading-tight"
                             >
-                                A Canvas for <br />
-                                <span className="italic font-light text-supreme-gold">Your Best Life</span>
+                                Crafting Spaces That <br />
+                                <span className="italic font-light text-supreme-gold">Reflect Your Aspirations</span>
                             </motion.h2>
 
                             <motion.p
@@ -83,7 +84,7 @@ const Overview = () => {
                                 transition={{ delay: 0.4, duration: 0.8 }}
                                 className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Supreme Riverside is more than a residence; it is a meticulously crafted living experience. Offering an exclusive collection of <strong>premium 2 & 3 BHK homes in Punawale</strong>, every detail has been thoughtfully designed for those who appreciate the poetry of fine living. As one of the best properties to invest in West Pune, it offers unparalleled value.
+                                Supreme Riverside is an extension of Supreme Universal's real estate evolution. Delivering timeless luxury, we offer an exclusive collection of <strong>premium 2 & 3 BHK homes in Punawale</strong>. Every detail has been thoughtfully designed for those who appreciate the highest standards in the West Pune property market.
                             </motion.p>
 
                             <motion.p

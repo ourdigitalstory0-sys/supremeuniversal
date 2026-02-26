@@ -67,6 +67,7 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                                             alt={`${activeTab} Floor Plan`}
                                             className="w-full h-full object-cover"
                                             loading="lazy"
+                                            decoding="async"
                                         />
                                     </div>
                                 </div>
