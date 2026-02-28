@@ -19,10 +19,10 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                 </div>
 
                 <div className="flex justify-center mb-12">
-                    <div className="flex space-x-8 border-b border-gray-200">
+                    <div className="flex space-x-4 md:space-x-8 border-b border-gray-200 overflow-x-auto pb-1 mt-6 hide-scrollbar justify-start md:justify-center px-4 w-full">
                         <button
                             onClick={() => setActiveTab('2BHK')}
-                            className={`pb-4 text-lg font-medium transition-all relative ${activeTab === '2BHK'
+                            className={`pb-4 text-sm md:text-lg font-medium transition-all relative flex-shrink-0 ${activeTab === '2BHK'
                                 ? 'text-supreme-black'
                                 : 'text-gray-400 hover:text-gray-600'
                                 }`}
@@ -34,13 +34,25 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                         </button>
                         <button
                             onClick={() => setActiveTab('3BHK')}
-                            className={`pb-4 text-lg font-medium transition-all relative ${activeTab === '3BHK'
+                            className={`pb-4 text-sm md:text-lg font-medium transition-all relative flex-shrink-0 ${activeTab === '3BHK'
                                 ? 'text-supreme-black'
                                 : 'text-gray-400 hover:text-gray-600'
                                 }`}
                         >
                             3 BHK Premium
                             {activeTab === '3BHK' && (
+                                <motion.div layoutId="underline" className="absolute bottom-0 left-0 w-full h-0.5 bg-supreme-gold" />
+                            )}
+                        </button>
+                        <button
+                            onClick={() => setActiveTab('Master')}
+                            className={`pb-4 text-sm md:text-lg font-medium transition-all relative flex-shrink-0 ${activeTab === 'Master'
+                                ? 'text-supreme-black'
+                                : 'text-gray-400 hover:text-gray-600'
+                                }`}
+                        >
+                            Master Layout
+                            {activeTab === 'Master' && (
                                 <motion.div layoutId="underline" className="absolute bottom-0 left-0 w-full h-0.5 bg-supreme-gold" />
                             )}
                         </button>
@@ -61,9 +73,13 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                                 <div className="w-full md:w-2/3">
                                     <div className="aspect-[4/3] bg-gray-50 border border-gray-100 overflow-hidden min-h-[400px]">
                                         <img
-                                            src={activeTab === '2BHK'
-                                                ? "https://cdn.supremeuniversal.com/media/1aejSz_FXHCOKProjectListing23min.jpg"
-                                                : "https://cdn.supremeuniversal.com/media/t4mf35_WtizuRsupremeelysiamin.jpg"}
+                                            src={
+                                                activeTab === 'Master'
+                                                    ? "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+                                                    : activeTab === '2BHK'
+                                                        ? "https://cdn.supremeuniversal.com/media/1aejSz_FXHCOKProjectListing23min.jpg"
+                                                        : "https://cdn.supremeuniversal.com/media/t4mf35_WtizuRsupremeelysiamin.jpg"
+                                            }
                                             alt={`${activeTab} Floor Plan`}
                                             className="w-full h-full object-cover"
                                             loading="lazy"
@@ -75,33 +91,56 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                                 <div className="w-full md:w-1/3 space-y-8">
                                     <div>
                                         <h3 className="text-2xl font-serif text-gray-900 mb-2">
-                                            {activeTab === '2BHK' ? 'The Classic Residence' : 'The Grand Residence'}
+                                            {activeTab === 'Master' ? 'The Visionary Master Plan' : activeTab === '2BHK' ? 'The Classic Residence' : 'The Grand Residence'}
                                         </h3>
                                         <p className="text-gray-500 font-light">
-                                            Perfect for small families looking for luxury and comfort.
+                                            {activeTab === 'Master'
+                                                ? 'A carefully designed waterfront community maximizing nature and luxury.'
+                                                : 'Perfect for families looking for luxury and comfort.'}
                                         </p>
                                     </div>
 
-                                    <div className="space-y-4 pt-4 border-t border-gray-100">
-                                        <div className="flex justify-between items-center">
-                                            <span className="text-gray-500 uppercase text-xs tracking-wider">Carpet Area</span>
-                                            <span className="font-serif text-xl text-supreme-black">
-                                                {activeTab === '2BHK' ? '750 - 850' : '1050 - 1150'} <span className="text-sm text-gray-400">Sq.ft</span>
-                                            </span>
+                                    {activeTab === 'Master' ? (
+                                        <div className="space-y-4 pt-4 border-t border-gray-100">
+                                            <div className="flex justify-between items-center">
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Project Scale</span>
+                                                <span className="font-serif text-xl text-supreme-black">Extensive Acres</span>
+                                            </div>
+                                            <div className="flex justify-between items-center">
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Open Spaces</span>
+                                                <span className="font-serif text-xl text-supreme-black">&gt; 65%</span>
+                                            </div>
+                                            <div className="flex justify-between items-center">
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Towers</span>
+                                                <span className="font-serif text-xl text-supreme-black">High Rise Cluster</span>
+                                            </div>
+                                            <div className="flex justify-between items-center">
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Amenities</span>
+                                                <span className="font-serif text-xl text-supreme-black">40+ Multi-Tier</span>
+                                            </div>
                                         </div>
-                                        <div className="flex justify-between items-center">
-                                            <span className="text-gray-500 uppercase text-xs tracking-wider">Bedrooms</span>
-                                            <span className="font-serif text-xl text-supreme-black">{activeTab === '2BHK' ? '2' : '3'}</span>
+                                    ) : (
+                                        <div className="space-y-4 pt-4 border-t border-gray-100">
+                                            <div className="flex justify-between items-center">
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Carpet Area</span>
+                                                <span className="font-serif text-xl text-supreme-black">
+                                                    {activeTab === '2BHK' ? '750 - 850' : '1050 - 1150'} <span className="text-sm text-gray-400">Sq.ft</span>
+                                                </span>
+                                            </div>
+                                            <div className="flex justify-between items-center">
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Bedrooms</span>
+                                                <span className="font-serif text-xl text-supreme-black">{activeTab === '2BHK' ? '2' : '3'}</span>
+                                            </div>
+                                            <div className="flex justify-between items-center">
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Bathrooms</span>
+                                                <span className="font-serif text-xl text-supreme-black">{activeTab === '2BHK' ? '2' : '3'}</span>
+                                            </div>
+                                            <div className="flex justify-between items-center">
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Balconies</span>
+                                                <span className="font-serif text-xl text-supreme-black">{activeTab === '2BHK' ? '2' : '3'}</span>
+                                            </div>
                                         </div>
-                                        <div className="flex justify-between items-center">
-                                            <span className="text-gray-500 uppercase text-xs tracking-wider">Bathrooms</span>
-                                            <span className="font-serif text-xl text-supreme-black">{activeTab === '2BHK' ? '2' : '3'}</span>
-                                        </div>
-                                        <div className="flex justify-between items-center">
-                                            <span className="text-gray-500 uppercase text-xs tracking-wider">Balconies</span>
-                                            <span className="font-serif text-xl text-supreme-black">{activeTab === '2BHK' ? '2' : '3'}</span>
-                                        </div>
-                                    </div>
+                                    )}
 
                                     <button
                                         onClick={onEnquire}
