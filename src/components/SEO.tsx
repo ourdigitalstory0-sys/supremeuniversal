@@ -10,13 +10,13 @@ interface SEOProps {
 }
 
 const SEO = ({
-    title = 'Supreme Riverside | 2 & 3 BHK Homes in Punawale, Pune',
-    description = 'Supreme Riverside Punawale offers ultra-luxury 2 & 3 BHK Homes near Hinjewadi. Experience premium riverside living with world-class amenities in Punawale, Pune.',
-    keywords = 'Supreme Riverside, Supreme Riverside Punawale, 2 BHK in Punawale, 3 BHK in Punawale, 2 & 3 BHK Homes in Punawale Pune, Premium Apartments Pune, Luxury Homes Hinjewadi, Riverside Apartments, Real Estate Pune, Supreme Universal Projects, Supreme Universal Pune, Supreme Towers Koregaon Park, Supreme Villagio Somatane, Supreme Estia Baner, Designs That Elevate The Way You Live, Timeless Luxury Real Estate, Crafting Spaces That Reflect Your Aspirations, Flats near Hinjewadi, Apartments near Wakad, New Launch Punawale, Gated Community Pune, Properties near Mumbai-Pune Expressway',
+    title = 'Supreme Riverside Punawale | Premium 2 & 3 BHK Pune',
+    description = 'Supreme Riverside Punawale offers ultra-luxury 2 & 3 BHK flats near Hinjewadi IT Park. Experience premium riverside living, 40+ amenities, and great property appreciation in Pune West.',
+    keywords = 'Supreme Riverside, Supreme Riverside Punawale, Supreme Riverside price, Supreme Riverside 2 BHK price, Supreme Riverside 3 BHK price, Supreme Riverside floor plan, Supreme Riverside brochure, Supreme Riverside RERA number, Supreme Riverside possession date, Supreme Riverside booking, Supreme Riverside reviews, Buy flat in Supreme Riverside, Supreme Riverside latest offers, Flats in Punawale, 2 BHK flats in Punawale, 3 BHK flats in Punawale Pune, Property in Punawale Pune, New projects in Punawale, High rise apartments in Punawale, Luxury flats in Punawale, Apartments near Hinjewadi, Flats near Hinjewadi IT Park, Property near Mumbai Pune Expressway, Premium projects in Pune West, Residential projects in Pune West',
     image = '/hero-bg.png',
     url = 'https://supreme-universal.in/'
 }: SEOProps) => {
-    const fullTitle = title === 'Supreme Riverside | Premium 2 & 3 BHK Apartments in Punawale' ? title : `${title} | Supreme Riverside`;
+    const fullTitle = title === 'Supreme Riverside Punawale | Premium 2 & 3 BHK Pune' ? title : `${title} | Supreme Riverside Punawale`;
 
     return (
         <Helmet>
@@ -32,7 +32,7 @@ const SEO = ({
             <meta property="og:title" content={fullTitle} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={image} />
-            <meta property="og:site_name" content="Supreme Riverside" />
+            <meta property="og:site_name" content="Supreme Riverside Punawale" />
 
             {/* Twitter */}
             <meta property="twitter:card" content="summary_large_image" />
@@ -45,7 +45,7 @@ const SEO = ({
             <meta name="robots" content="index, follow" />
             <meta name="author" content="Supreme Universal" />
             <meta name="geo.region" content="IN-MH" />
-            <meta name="geo.placename" content="Punawale, Pune" />
+            <meta name="geo.placename" content="Punawale, Pune West" />
             <meta name="geo.position" content="18.6298;73.7506" />
             <meta name="ICBM" content="18.6298, 73.7506" />
 
@@ -64,7 +64,7 @@ const SEO = ({
                     "address": {
                         "@type": "PostalAddress",
                         "streetAddress": "Near Lotus Business School, Punawale",
-                        "addressLocality": "Pune",
+                        "addressLocality": "Pune West",
                         "addressRegion": "Maharashtra",
                         "postalCode": "411033",
                         "addressCountry": "IN"
@@ -90,13 +90,19 @@ const SEO = ({
                             "@type": "LocationFeatureSpecification",
                             "name": "Riverside Promenade",
                             "value": "true"
+                        },
+                        {
+                            "@type": "LocationFeatureSpecification",
+                            "name": "Near Hinjewadi IT Park",
+                            "value": "true"
                         }
                     ],
                     "tourBookingPage": `${url}supreme-riverside-punawale-contact`,
                     "petsAllowed": "True",
                     "telephone": "+917744009295",
                     "provider": {
-                        "@id": "https://supreme-universal.in/#organization"
+                        "@id": "https://supreme-universal.in/#organization",
+                        "name": "Supreme Universal"
                     }
                 })}
             </script>

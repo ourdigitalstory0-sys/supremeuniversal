@@ -19,7 +19,7 @@ const Footer = () => {
                             </span>
                         </div>
                         <p className="text-white/60 font-sans font-light leading-loose text-base md:text-lg mb-8 max-w-sm">
-                            Experience the perfect blend of luxury and nature. Premium 2 & 3 BHK Homes in Punawale, Pune, designed for a higher standard of living.
+                            Searching for "<strong>Flats near me in Punawale</strong>" or "<strong>Property near me in Pune West</strong>"? Experience the perfect blend of luxury and nature. Premium 2 & 3 BHK Homes designed for a higher standard of living.
                         </p>
                     </div>
 
@@ -53,12 +53,15 @@ const Footer = () => {
                                 <span className="text-supreme-gold text-xs uppercase tracking-[0.1em]">Visit Experience Center</span>
                                 <span className="leading-loose">
                                     Near Lotus Business School,<br />
-                                    Punawale, Pune 411033
+                                    Punawale, Pune West 411033
                                 </span>
                             </li>
                             <li className="flex flex-col gap-1">
                                 <span className="text-supreme-gold text-xs uppercase tracking-[0.1em]">Direct Line</span>
                                 <a href="tel:+917744009295" className="hover:text-white transition-colors duration-300 font-medium tracking-wide">+91 77440 09295</a>
+                            </li>
+                            <li className="mt-4 text-[10px] text-white/30 truncate" title="Optimized for local search: Apartments near Hinjewadi IT Park, 2 BHK near Wakad, Projects near Mumbai Pune Expressway">
+                                Location Points: Apartments near Hinjewadi IT Park | 2 BHK near Wakad
                             </li>
                         </ul>
                     </div>

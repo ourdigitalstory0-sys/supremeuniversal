@@ -36,7 +36,7 @@ const NeighborhoodGuide = () => {
                             A High-Growth Micro Market in Pune
                         </h3>
                         <p className="text-gray-600 font-sans text-lg lg:text-xl leading-relaxed mb-8">
-                            Punawale is rapidly emerging as the top investment choice for premium homebuyers in Pune. Supreme Riverside leverages this strategic location, offering unmatched proximity to Hinjewadi, Wakad, and Tathawade.
+                            Punawale is rapidly emerging as the top investment choice for <strong>premium projects in Pune West</strong>. Supreme Riverside leverages this strategic location, offering <strong>high rise apartments in Punawale</strong> with unmatched proximity to Hinjewadi, Wakad, and Tathawade.
                         </p>
 
                         <div className="space-y-6">
@@ -45,7 +45,7 @@ const NeighborhoodGuide = () => {
                                 <p className="text-gray-600">Avoid daily traffic jams with direct access to Hinjewadi Phase 1, Phase 2, and Phase 3 via Marunji Road.</p>
                             </div>
                             <div className="border-l-2 border-supreme-gold pl-6">
-                                <h4 className="text-xl font-serif text-supreme-black mb-2">Mumbai-Pune Expressway</h4>
+                                <h4 className="text-xl font-serif text-supreme-black mb-2">Projects near Mumbai Pune Expressway</h4>
                                 <p className="text-gray-600">Zero-congestion access to the national highway makes commuting to Mumbai or Lonavala effortless.</p>
                             </div>
                             <div className="border-l-2 border-supreme-gold pl-6">
@@ -67,7 +67,7 @@ const NeighborhoodGuide = () => {
                         <div className="absolute inset-0 bg-supreme-gold/10 transform rotate-3 -z-10"></div>
                         <img
                             src="https://cdn.supremeuniversal.com/media/Punawale-Location.jpg"
-                            alt="Map visualization showing Supreme Riverside Punawale connectivity to Hinjewadi Phase 1 and Wakad, Maharashtra"
+                            alt="Supreme Riverside map showing premium residential projects in Pune West and connectivity to Hinjewadi Phase 1"
                             className="object-cover w-full h-full shadow-2xl"
                             loading="lazy"
                             decoding="async"

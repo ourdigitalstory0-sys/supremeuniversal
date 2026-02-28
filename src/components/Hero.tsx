@@ -19,7 +19,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
             >
                 <img
                     src="https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
-                    alt="Supreme Riverside Luxury Apartments"
+                    alt="Supreme Riverside Punawale exterior"
                     className="w-full h-full object-cover opacity-80 mix-blend-overlay"
                     fetchPriority="high"
                     loading="eager"
@@ -39,6 +39,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
                     </span>
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-tight drop-shadow-2xl">
                         Supreme <span className="italic font-light text-supreme-gold">Riverside</span>
+                        <span className="block text-2xl md:text-4xl mt-4 font-sans font-light tracking-wide text-white/90">Punawale</span>
                     </h1>
                 </motion.div>
 
@@ -48,7 +49,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.7, duration: 1 }}
                 >
-                    Experience timeless luxury and the pinnacle of real estate evolution with our premium 2 & 3 BHK waterfront residences in Punawale, Pune.
+                    Experience timeless luxury and the pinnacle of real estate evolution with our premium 2 & 3 BHK flats in Punawale, near Hinjewadi Pune.
                 </motion.p>
 
                 <motion.div

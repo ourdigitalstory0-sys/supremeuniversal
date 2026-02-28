@@ -84,7 +84,7 @@ const Overview = () => {
                                 transition={{ delay: 0.4, duration: 0.8 }}
                                 className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Supreme Riverside is an extension of Supreme Universal's real estate evolution. Delivering timeless luxury, we offer an exclusive collection of <strong>premium 2 & 3 BHK homes in Punawale</strong>. Every detail has been thoughtfully designed for those who appreciate the highest standards in the West Pune property market.
+                                Supreme Riverside is an extension of Supreme Universal's real estate evolution. Delivering timeless luxury, we offer an exclusive collection of <strong>premium 2 & 3 BHK homes in Punawale</strong>. Whether you are searching for the best <strong>Supreme Riverside price</strong> or looking for <strong>property near me in Pune West</strong>, every detail has been thoughtfully designed for those who appreciate the highest standards.
                             </motion.p>
 
                             <motion.p
@@ -94,7 +94,7 @@ const Overview = () => {
                                 transition={{ delay: 0.5, duration: 0.8 }}
                                 className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Here, the gentle flow of the river meets state-of-the-art architecture. Enjoy generous spaces, abundant natural light, and a community that shares your vision of grandeur in the thriving West Pune Real Estate market.
+                                Here, the gentle flow of the river meets state-of-the-art architecture. Enjoy generous spaces, abundant natural light, and a community that shares your vision of grandeur. With a firmly committed <strong>Supreme Riverside possession date</strong>, you can secure your luxury future in the most sought-after <strong>apartments near Hinjewadi IT Park</strong>.
                             </motion.p>
 
                             <motion.div

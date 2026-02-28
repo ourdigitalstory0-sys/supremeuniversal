@@ -5,28 +5,44 @@ import { Helmet } from 'react-helmet-async';
 
 const faqs = [
     {
-        question: "What configurations are available at Supreme Riverside Punawale?",
-        answer: "Supreme Riverside offers ultra-premium 2BHK and expansive 3BHK luxury apartments in Punawale. Each residence is meticulously designed to maximize natural light, offering breathtaking views of the river and setting a new benchmark for luxury flats near Wakad."
+        question: "What is the price of 2 BHK in Supreme Riverside Punawale?",
+        answer: "The Supreme Riverside 2 BHK price starts at highly competitive rates for ultra-luxury near Hinjewadi. These premium flats feature spacious layouts, river views, and world-class amenities. For exact pricing, payment plans, and the latest offers, please contact our sales team directly."
     },
     {
-        question: "How far is Supreme Riverside from Wakad and Hinjewadi IT Park?",
-        answer: "Strategically located in the heart of West Pune, Supreme Riverside is just 10 minutes from both the Wakad real estate market and the Tathawade & PCMC corridors. This provides residents with seamless, traffic-free connectivity to the Hinjewadi IT corridor and the Mumbai-Pune Expressway."
+        question: "Is Supreme Riverside a good investment?",
+        answer: "Yes, Supreme Riverside is an exceptional investment. Property appreciation in Punawale is rapidly growing due to proximity to the Hinjewadi IT Park and the Mumbai Pune Expressway. The rental income potential and high demand make it a top choice for investors in Pune West."
     },
     {
-        question: "Is Punawale a good real estate investment in West Pune?",
-        answer: "Absolutely. Punawale is globally recognized as one of the best properties to invest in West Pune. Its immediate proximity to Lotus Business School, rapid PCMC infrastructure development, and direct highway access make it a highly lucrative micro-market for massive capital appreciation, outperforming even the 3BHK in Tathawade segment."
+        question: "How far is Supreme Riverside from Hinjewadi?",
+        answer: "Supreme Riverside Punawale is strategically located just 10-15 minutes away from Hinjewadi IT Park. This allows residents to enjoy a serene, waterfront lifestyle while maintaining a rapid, traffic-free commute to major tech hubs."
     },
     {
-        question: "What amenities does this river-facing and waterfront property offer?",
-        answer: "Supreme Riverside is an architectural landmark featuring over 40+ world-class amenities. Residents enjoy exclusive access to a multi-tier luxury clubhouse, a podium-level infinity pool, landscaped waterfront promenades, and dedicated wellness sanctuaries, rivaling the finest Supreme Group projects in Pune."
+        question: "Are there river view flats in Punawale?",
+        answer: "Absolutely. Supreme Riverside Punawale specializes in offering exclusive 2 and 3 BHK river view apartments. The project is designed to maximize natural light and providing uninterrupted, panoramic views of the river for a truly premium living experience."
     },
     {
-        question: "Are there any 4BHK flats available in this specific project?",
-        answer: "Currently, the master plan focuses exclusively on crafting the ultimate 2 BHK in Pune and luxury 3 BHK apartments in Punawale to cater to young professionals and nuclear families. For ultra-spacious 4BHK in Wakad or broader 4BHK configurations, we recommend exploring other upcoming Supreme Universal new launches."
+        question: "Which is the best project in Punawale?",
+        answer: "Supreme Riverside is widely considered the best luxury project in Punawale. Backed by Supreme Universal's 40-year legacy, it offers superior multi-tier amenities, intelligent floor plans, and a unique riverside location that outclasses other residential projects in Pune West."
     },
     {
-        question: "Is the project RERA registered and when is the possession?",
-        answer: "Yes, Supreme Riverside is fully MahaRERA registered, ensuring complete transparency and compliance for home buyers entering the Pune real estate market. Please contact our sales gallery directly for the exact phasing and official possession dates for the current inventory footprint."
+        question: "What is the Supreme Riverside possession date?",
+        answer: "The official Supreme Riverside possession date aligns with our strict MahaRERA guidelines to ensure timely delivery. We are committed to a transparent construction schedule. Please visit our sales gallery for the exact phase-wise handover timeline."
+    },
+    {
+        question: "Can I get a Supreme Riverside 3 BHK price and floor plan?",
+        answer: "Yes, the Supreme Riverside 3 BHK price is tailored for families seeking expansive luxury. Detailed 3 BHK floor plans and the official project brochure are available upon request through our website or by visiting our Punawale site office."
+    },
+    {
+        question: "Are these high rise apartments near Hinjewadi Phase 1?",
+        answer: "Yes, Supreme Riverside offers stunning high rise apartments near Hinjewadi Phase 1. The elevated towers provide unparalleled views, excellent cross-ventilation, and a secure gated community environment tailored perfectly for IT professionals and their families."
+    },
+    {
+        question: "Is this a good property near schools in Punawale?",
+        answer: "Supreme Riverside is perfectly situated near top educational institutions. Located adjacent to the Lotus Business School and close to premier international schools in Wakad and Tathawade, it is the ideal family-friendly residential project in Punawale."
+    },
+    {
+        question: "How do I make a Supreme Riverside booking?",
+        answer: "You can initiate a Supreme Riverside booking by inquiring on our website or visiting the site office. Our team will guide you through the available inventory, explain the latest offers, and assist with the seamless booking process."
     }
 ];
 
