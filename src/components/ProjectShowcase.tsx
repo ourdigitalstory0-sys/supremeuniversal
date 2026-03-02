@@ -1,45 +1,7 @@
 import { motion } from 'framer-motion';
 import { MapPin, Calendar, Building2, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
-const otherProjects = [
-    {
-        name: "Supreme Towers",
-        location: "Mundhwa, Pune East",
-        type: "2, 3 & 4 BHK Apartments",
-        status: "Possession June 2027",
-        desc: "High-rise luxury living in the rising heart of East Pune.",
-        image: "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg", // Placeholder using existing high-quality image
-        link: "/projects/supreme-towers"
-    },
-    {
-        name: "Supreme Villagio",
-        location: "Somatane, Pune North",
-        type: "Luxury Villas & Row Houses",
-        status: "Phase 2 Launched",
-        desc: "A sprawling villa township inspired by European aesthetics.",
-        image: "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
-        link: "/projects/supreme-villagio"
-    },
-    {
-        name: "Supreme Estia",
-        location: "Baner, Pune West",
-        type: "2, 3 & 4 BHK Premium Flats",
-        status: "Possession Dec 2025",
-        desc: "Unmatched luxury in Pune's most preferred residential hub.",
-        image: "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
-        link: "/projects/supreme-estia"
-    },
-    {
-        name: "Supreme Wakad",
-        location: "Wakad, Pune West",
-        type: "3 & 4 BHK Luxury Residences",
-        status: "Upcoming New Launch",
-        desc: "The next benchmark of urban luxury in Pune's fastest growing hub.",
-        image: "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
-        link: "/projects/supreme-wakad"
-    }
-];
+import { portfolioProjects } from '../data/portfolioProjects';
 
 const ProjectShowcase = () => {
     return (
@@ -78,7 +40,7 @@ const ProjectShowcase = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-                    {otherProjects.map((project, index) => (
+                    {portfolioProjects.map((project, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 30 }}
@@ -90,7 +52,8 @@ const ProjectShowcase = () => {
                             <div className="md:w-2/5 relative h-64 md:h-auto overflow-hidden">
                                 <img
                                     src={project.image}
-                                    alt={project.name}
+                                    alt={`${project.name} - ${project.type} in ${project.location}`}
+                                    loading="lazy"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-supreme-black/20 group-hover:bg-supreme-black/0 transition-colors duration-500"></div>
@@ -103,7 +66,7 @@ const ProjectShowcase = () => {
                                         <span className="text-[10px] md:text-xs uppercase tracking-widest text-supreme-gold font-semibold">{project.location}</span>
                                     </div>
                                     <h3 className="text-2xl lg:text-3xl font-serif text-supreme-black mb-4 group-hover:text-supreme-gold transition-colors">{project.name}</h3>
-                                    <p className="text-gray-400 text-sm font-light mb-6 line-clamp-2">{project.desc}</p>
+                                    <p className="text-gray-400 text-sm font-light mb-6 line-clamp-2">{project.description}</p>
 
                                     <div className="space-y-3 mb-8">
                                         <div className="flex items-center gap-3 text-xs text-gray-500">
@@ -119,7 +82,7 @@ const ProjectShowcase = () => {
 
                                 <div className="flex items-center justify-between border-t border-gray-200 pt-6">
                                     <Link
-                                        to={project.link}
+                                        to={`/projects/${project.id}`}
                                         className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-bold text-supreme-black hover:text-supreme-gold transition-colors"
                                     >
                                         Explore Scope <ChevronRight className="w-3 h-3" />

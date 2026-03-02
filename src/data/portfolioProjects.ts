@@ -69,9 +69,9 @@ export const portfolioProjects: PortfolioProjectType[] = [
             "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
         ],
         seo: {
-            title: "Supreme Towers Mundhwa | Luxury 2, 3 & 4 BHK in Pune East",
-            description: "Supreme Towers by Supreme Universal in Mundhwa offers premium luxury apartments near Magarpatta City. Explore 2, 3 & 4 BHK residences with world-class amenities.",
-            keywords: "Supreme Towers Mundhwa, luxury apartments in Mundhwa, 3 BHK in Mundhwa Pune, upcoming projects in Mundhwa, Supreme Universal Mundhwa, luxury flats near Magarpatta City"
+            title: "Supreme Towers Mundhwa | Luxury 3-6 BHK near Magarpatta 2026",
+            description: "Experience the pinnacle of East Pune at Supreme Towers Mundhwa. Luxury 3, 4, 5 & 6 BHK residences with Sky Walk connectivity. Minutes from EON IT Park and Magarpatta South. Possession 2027.",
+            keywords: "Supreme Towers Mundhwa, luxury apartments in Mundhwa, 3 BHK in Mundhwa Pune, upcoming projects in Mundhwa 2026, Supreme Universal Mundhwa, luxury flats near Magarpatta City, EON IT Park residential projects, Pune Eastern growth corridor"
         },
         image: "/assets/projects/actual-towers.jpg",
         reraNumber: "MahaRERA: P52100053868"
@@ -84,7 +84,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
         type: "Luxury Villas & Row Houses",
         status: "Phase 2 Launched",
         tagline: "European Village Life in North Pune",
-        description: "Supreme Villagio brings the charm of European village living to the serene climes of Somatane. With sprawling villas and row houses, it offers a tranquil escape from the city hubbub while remaining perfectly connected via the Mumbai-Pune Expressway.",
+        description: "Supreme Villagio brings Mediterranean luxury to Somatane. 15-acre gated villa township near Mumbai-Pune Expressway. Discover European charm with 2026 appreciation potential near the upcoming Ring Road.",
         highlights: [
             "Inspired by Mediterranean architecture and Italian streetscapes",
             "15+ acres of low-density development with 50% open space",
@@ -123,9 +123,9 @@ export const portfolioProjects: PortfolioProjectType[] = [
             "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
         ],
         seo: {
-            title: "Supreme Villagio Somatane | Luxury Villas & Row Houses in Pune",
-            description: "Experience European style villa living at Supreme Villagio Somatane. Luxury row houses and villas near Mumbai-Pune Expressway by Supreme Universal.",
-            keywords: "Supreme Villagio Somatane, luxury villas in Pune, row houses in Somatane, villas near Mumbai Pune Expressway, Supreme Universal Villagio, premium gated community Pune North"
+            title: "Supreme Villagio Somatane | Mediterranean Villas & Row Houses Pune",
+            description: "European style villa living at Supreme Villagio Somatane. Luxury row houses and villas near Mumbai-Pune Expressway. 5 mins from upcoming Ring Road connectivity.",
+            keywords: "Supreme Villagio Somatane, luxury villas in Pune, row houses in Somatane, villas near Mumbai Pune Expressway, Supreme Universal Villagio, premium gated community Pune North, property near Somatane Phata, Pune Ring Road investment"
         },
         image: "/assets/projects/actual-villagio.jpg",
         reraNumber: "MahaRERA: P52100021655"
@@ -138,7 +138,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
         type: "2, 3 & 4 BHK Premium Flats",
         status: "Possession Dec 2025",
         tagline: "Elegeance Reimagined in Baner",
-        description: "Supreme Estia represents the gold standard of luxury in Baner. Located at the epicenter of Pune's most preferred residential corridor, it offers homes that are a masterclass in spatial design and aesthetic perfection, minutes away from the Balewadi High Street.",
+        description: "Supreme Estia: The gold standard of Baner living. Platinum residences walking distance from Balewadi High Street and upcoming Metro Line 3 station. Move-in ready luxury in Pune's most elite corridor.",
         highlights: [
             "Platinum location in Baner-Balewadi residential hub",
             "Art-deco inspired architectural facade with glass railings",
@@ -177,9 +177,9 @@ export const portfolioProjects: PortfolioProjectType[] = [
             "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
         ],
         seo: {
-            title: "Supreme Estia Baner | Luxury 2, 3 & 4 BHK in Pune West",
-            description: "Supreme Estia offers ultra-premium residences in the heart of Baner. Explore luxury 2, 3 & 4 BHK flats by Supreme Universal near Balewadi High Street.",
-            keywords: "Supreme Estia Baner, luxury flats in Baner, 3 BHK in Baner price, projects near Balewadi High Street, Supreme Universal Baner, premium apartments west pune"
+            title: "Supreme Estia Baner | Luxury 2, 3 & 4 BHK near Metro Line 3",
+            description: "Supreme Estia offers ultra-premium residences in the heart of Baner. Steps from Balewadi High Street and upcoming Metro Station. High-appreciation luxury flats in Pune West.",
+            keywords: "Supreme Estia Baner, luxury flats in Baner, 3 BHK in Baner price, projects near Balewadi High Street, Supreme Universal Baner, premium apartments west pune, Baner Metro Line 3 project"
         },
         image: "/assets/projects/actual-estia.jpg",
         reraNumber: "MahaRERA: P52100024783"
@@ -192,7 +192,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
         type: "3 & 4 BHK Luxury Residences",
         status: "Upcoming New Launch",
         tagline: "The Future of Urban Luxury in Wakad",
-        description: "Supreme Wakad is our upcoming flagship in the heart of West Pune's most vibrant residential hub. Designed for the futuristic lifestyle, it combines cutting-edge architecture with Supreme Universal's signature detailing, offering unprecedented connectivity to Hinjewadi Phase 1.",
+        description: "Supreme Wakad: Next-gen 3 & 4 BHK residences at the gateway of Hinjewadi IT Park Phase 1. Futuristic glass facade architecture with a rooftop sky-club. Pre-launching for 2026 dominance.",
         highlights: [
             "Next-Gen smart homes with integrated voice control",
             "Unbeatable proximity to Hinjewadi IT Park (Phase 1 Entrance)",
@@ -223,7 +223,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
             { category: "Structure", details: ["Mivan Aluminium Formwork technology", "High-speed automatic elevators"] },
             { category: "Interiors", details: ["Premium sanitary ware (Kohler/Grohe)", "Elegant granite door frames"] },
             { category: "Technology", details: ["Fibre-to-home internet connectivity", "Video door phone with intercom"] },
-            { category: "Flooring", details: ["Laminated wooden flooring in guest room", "Designer dado in bathrooms"] }
+            { category: "Flooring", details: ["Laminated wooden flooring in guest room", "Designer duo in bathrooms"] }
         ],
         gallery: [
             "/assets/projects/actual-wakad.jpg",
@@ -231,9 +231,9 @@ export const portfolioProjects: PortfolioProjectType[] = [
             "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
         ],
         seo: {
-            title: "Supreme Wakad | Luxury 3 & 4 BHK Apartments in Pune West",
-            description: "Supreme Wakad by Supreme Universal offers ultra-luxury residences in Wakad. Pre-launching 3 & 4 BHK apartments with smart home features near Hinjewadi IT Park.",
-            keywords: "Supreme Wakad, 3 BHK in Wakad, 4 BHK in Wakad price, upcoming projects in Wakad, Supreme Universal Wakad, luxury flats near Hinjewadi, pre launch projects Wakad"
+            title: "Supreme Wakad | Next-Gen Luxury 3 & 4 BHK near Hinjewadi IT Park",
+            description: "Supreme Wakad offers visionary smart residences at the Wakad-Hinjewadi Link Road. Luxury 3 & 4 BHK apartments with rooftop sky-club. Pre-launching now.",
+            keywords: "Supreme Wakad, 3 BHK in Wakad, 4 BHK in Wakad price, upcoming projects in Wakad 2026, Supreme Universal Wakad, luxury flats near Hinjewadi Phase 1, Wakad-Hinjewadi Link Road property"
         },
         image: "/assets/projects/actual-wakad.jpg",
         reraNumber: "MahaRERA: P52100056095"

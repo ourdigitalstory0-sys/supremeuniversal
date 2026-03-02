@@ -69,8 +69,9 @@ const ProjectDetails = () => {
                 <div className="absolute inset-0 z-0">
                     <img
                         src={project.image}
-                        alt={project.name}
+                        alt={`${project.name} Elevation - ${project.type} at ${project.location}`}
                         className="w-full h-full object-cover"
+                        loading="eager"
                     />
                     <div className="absolute inset-0 bg-supreme-black/40"></div>
                 </div>
@@ -179,8 +180,9 @@ const ProjectDetails = () => {
                                         <div key={idx} className={`overflow-hidden rounded-sm group ${idx === 0 ? 'md:col-span-2' : ''}`}>
                                             <img
                                                 src={img}
-                                                alt={`${project.name} Gallery ${idx + 1}`}
+                                                alt={`${project.name} Interior & Lifestyle Gallery ${idx + 1}`}
                                                 className="w-full h-64 md:h-96 object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                                loading="lazy"
                                             />
                                         </div>
                                     ))}
