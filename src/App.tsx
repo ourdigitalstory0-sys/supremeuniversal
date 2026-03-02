@@ -13,6 +13,7 @@ import NeighborhoodGuide from './components/NeighborhoodGuide';
 import ROICalculator from './components/ROICalculator';
 import ProximityIndex from './components/ProximityIndex';
 import ProjectShowcase from './components/ProjectShowcase';
+import MarketTicker from './components/MarketTicker';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
@@ -107,6 +108,7 @@ function MainApp() {
       <NoiseOverlay />
       <WhatsAppButton />
       <Navbar onEnquire={() => setIsModalOpen(true)} />
+      <MarketTicker />
       <Breadcrumbs />
       <Hero onEnquire={() => setIsModalOpen(true)} />
       <Overview />
