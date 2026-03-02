@@ -52,6 +52,7 @@ const Footer = () => {
                             <li><Link to="/projects/supreme-towers" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Towers<span className="text-[10px] text-white/30 truncate">Mundhwa, Pune East</span></Link></li>
                             <li><Link to="/projects/supreme-villagio" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Villagio<span className="text-[10px] text-white/30 truncate">Somatane, Pune North</span></Link></li>
                             <li><Link to="/projects/supreme-estia" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Estia<span className="text-[10px] text-white/30 truncate">Baner, Pune West</span></Link></li>
+                            <li><Link to="/projects/supreme-wakad" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Wakad<span className="text-[10px] text-white/30 truncate">Wakad, Pune West</span></Link></li>
                         </ul>
                     </div>
 

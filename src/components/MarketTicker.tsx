@@ -3,11 +3,13 @@ import { TrendingUp, Activity, Bell, MapPin } from 'lucide-react';
 
 const tickerItems = [
     { icon: <TrendingUp className="w-3 h-3" />, text: "3 units booked in the last 24 hours at Supreme Riverside" },
+    { icon: <Bell className="w-3 h-3" />, text: "Supreme Wakad: Pre-launch registrations now open for 3 & 4 BHK" },
+    { icon: <Activity className="w-3 h-3" />, text: "Supreme Estia: Final few premium residences reaching 95% occupancy" },
+    { icon: <TrendingUp className="w-3 h-3" />, text: "Supreme Villagio Phase 2: Rapid uptake in Somatane luxury villas" },
     { icon: <Activity className="w-3 h-3" />, text: "Punawale property appreciation up 4.2% in Q1 2026" },
     { icon: <Bell className="w-3 h-3" />, text: "Metro Line 3 testing reaches 85% completion in Hinjewadi" },
-    { icon: <MapPin className="w-3 h-3" />, text: "Exclusive 6-residences-per-floor inventory nearing 75% occupancy" },
-    { icon: <TrendingUp className="w-3 h-3" />, text: "Phoenix Mall of the Millennium footfall exceeds 1.5M monthly" },
-    { icon: <Activity className="w-3 h-3" />, text: "Supreme Universal marks 40+ years of delivery excellence" }
+    { icon: <MapPin className="w-3 h-3" />, text: "Supreme Towers: Exclusive 24-storey landmark in East Pune" },
+    { icon: <Activity className="w-3 h-3" />, text: "Supreme Universal: 40+ years of building trust and luxury landmarks" }
 ];
 
 const MarketTicker = () => {
