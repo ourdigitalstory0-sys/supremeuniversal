@@ -8,6 +8,8 @@ export interface BlogPostType {
     author: string;
     content: string;
     readTime?: string;
+    datePublished?: string;
+    dateModified?: string;
 }
 
 export const blogPosts: BlogPostType[] = [
@@ -19,6 +21,8 @@ export const blogPosts: BlogPostType[] = [
         date: 'March 05, 2026',
         category: 'Buying Guide',
         author: 'Supreme Universal Research Team',
+        datePublished: '2026-03-05T08:00:00+08:00',
+        dateModified: '2026-03-05T08:00:00+08:00',
         image: 'https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg',
         content: `
             <p className="mb-6">If you are searching for premium flats in Pune, there is one critical question currently dominating the luxury real estate conversation: <strong>Is Punawale good for investment?</strong> Recognized as the smartest investment corridor in West Pune, it is actively <em>redefining life in Punawale</em> by offering a rare combination of unclogged infrastructure, expansive green spaces, and direct connectivity to the city's largest IT hubs.</p>
@@ -193,6 +197,8 @@ export const blogPosts: BlogPostType[] = [
         author: 'Supreme Universal Editorial Team',
         image: 'https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg',
         readTime: '12 min read',
+        datePublished: '2026-03-02T10:00:00+08:00',
+        dateModified: '2026-03-02T14:00:00+08:00',
         content: `
             <p>In the rapidly evolving landscape of <strong>Pune West real estate</strong>, one project stands as a benchmark for luxury, scale, and strategic foresight: <strong>Supreme Riverside Punawale</strong>. Developed by the legendary <strong>Supreme Universal</strong>, this 15-acre riverside township is not just a residence; it is an executive statement in the <strong>Punawale property market</strong>.</p>
 

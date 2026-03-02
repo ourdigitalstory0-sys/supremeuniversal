@@ -39,8 +39,8 @@ const BlogPost = () => {
         "image": [
             post.image
         ],
-        "datePublished": "2026-02-26T08:00:00+08:00",
-        "dateModified": "2026-02-26T09:20:00+08:00",
+        "datePublished": post.datePublished || "2026-02-26T08:00:00+08:00",
+        "dateModified": post.dateModified || "2026-02-26T09:20:00+08:00",
         "author": [{
             "@type": "Organization",
             "name": post.author,
@@ -52,7 +52,7 @@ const BlogPost = () => {
         <div className="font-sans antialiased text-gray-900 bg-white">
             <SEO
                 title={`${post.title} | Supreme Riverside Blog`}
-                description="Expert analysis on why Punawale is the top real estate investment in West Pune for 2026."
+                description={post.excerpt}
                 url={`https://supreme-universal.in/blog/${id}`}
                 image={post.image}
             />
