@@ -18,6 +18,7 @@ export interface PortfolioProjectType {
         keywords: string;
     };
     image: string;
+    reraNumber: string;
 }
 
 export const portfolioProjects: PortfolioProjectType[] = [
@@ -72,7 +73,8 @@ export const portfolioProjects: PortfolioProjectType[] = [
             description: "Supreme Towers by Supreme Universal in Mundhwa offers premium luxury apartments near Magarpatta City. Explore 2, 3 & 4 BHK residences with world-class amenities.",
             keywords: "Supreme Towers Mundhwa, luxury apartments in Mundhwa, 3 BHK in Mundhwa Pune, upcoming projects in Mundhwa, Supreme Universal Mundhwa, luxury flats near Magarpatta City"
         },
-        image: "/assets/projects/actual-towers.jpg"
+        image: "/assets/projects/actual-towers.jpg",
+        reraNumber: "MahaRERA: P52100053868"
     },
     {
         id: "supreme-villagio",
@@ -125,7 +127,8 @@ export const portfolioProjects: PortfolioProjectType[] = [
             description: "Experience European style villa living at Supreme Villagio Somatane. Luxury row houses and villas near Mumbai-Pune Expressway by Supreme Universal.",
             keywords: "Supreme Villagio Somatane, luxury villas in Pune, row houses in Somatane, villas near Mumbai Pune Expressway, Supreme Universal Villagio, premium gated community Pune North"
         },
-        image: "/assets/projects/actual-villagio.jpg"
+        image: "/assets/projects/actual-villagio.jpg",
+        reraNumber: "MahaRERA: P52100021655"
     },
     {
         id: "supreme-estia",
@@ -178,7 +181,8 @@ export const portfolioProjects: PortfolioProjectType[] = [
             description: "Supreme Estia offers ultra-premium residences in the heart of Baner. Explore luxury 2, 3 & 4 BHK flats by Supreme Universal near Balewadi High Street.",
             keywords: "Supreme Estia Baner, luxury flats in Baner, 3 BHK in Baner price, projects near Balewadi High Street, Supreme Universal Baner, premium apartments west pune"
         },
-        image: "/assets/projects/actual-estia.jpg"
+        image: "/assets/projects/actual-estia.jpg",
+        reraNumber: "MahaRERA: P52100024783"
     },
     {
         id: "supreme-wakad",
@@ -231,6 +235,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
             description: "Supreme Wakad by Supreme Universal offers ultra-luxury residences in Wakad. Pre-launching 3 & 4 BHK apartments with smart home features near Hinjewadi IT Park.",
             keywords: "Supreme Wakad, 3 BHK in Wakad, 4 BHK in Wakad price, upcoming projects in Wakad, Supreme Universal Wakad, luxury flats near Hinjewadi, pre launch projects Wakad"
         },
-        image: "/assets/projects/actual-wakad.jpg"
+        image: "/assets/projects/actual-wakad.jpg",
+        reraNumber: "MahaRERA: P52100056095"
     }
 ];

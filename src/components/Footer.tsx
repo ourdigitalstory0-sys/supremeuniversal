@@ -91,13 +91,43 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 font-sans font-light tracking-wide">
+                <div className="border-t border-white/10 pt-8 mb-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 font-sans font-light tracking-wide">
                     <div className="mb-4 md:mb-0">
                         © {new Date().getFullYear()} Supreme Riverside. All rights reserved.
                     </div>
                     <div className="flex gap-8">
                         <a href="#" className="hover:text-supreme-gold transition-colors duration-300">Privacy Policy</a>
                         <a href="#" className="hover:text-supreme-gold transition-colors duration-300">Terms & Conditions</a>
+                    </div>
+                </div>
+
+                {/* Professional Disclaimer Section */}
+                <div className="border-t border-white/5 pt-8 text-[10px] md:text-[11px] leading-relaxed text-white/20 font-sans font-light text-justify md:text-left">
+                    <p className="mb-6 uppercase tracking-widest font-bold text-white/30 border-b border-white/5 pb-2 inline-block">Professional Legal Disclaimer</p>
+                    <p className="mb-4 text-supreme-gold/40">
+                        <strong>Important Notice:</strong> This website is for informational purposes only and does not constitute a legal offering. It belongs to an <strong>Authorized Marketing Partner</strong> for the projects showcased. The images and visuals depicted are artistic impressions/stock photography for representational purposes only and may not reflect actual project details.
+                    </p>
+                    <p className="mb-6">
+                        All information, including prices, availability, and project specifications, is subject to change without prior notice. Visitors are advised to contact our sales team or visit the developer's official website for the most accurate and up-to-date information. While we strive to maintain the accuracy of the data, the site owner shall not be held liable for any decisions made based on the information provided herein.
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 border-t border-white/5 pt-6">
+                        <div className="flex flex-col gap-1">
+                            <span className="text-white/40 font-bold uppercase tracking-tighter">Supreme Towers</span>
+                            <span className="text-supreme-gold/60">MahaRERA: P52100053868</span>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <span className="text-white/40 font-bold uppercase tracking-tighter">Supreme Villagio</span>
+                            <span className="text-supreme-gold/60">MahaRERA: P52100021655</span>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <span className="text-white/40 font-bold uppercase tracking-tighter">Supreme Estia</span>
+                            <span className="text-supreme-gold/60">MahaRERA: P52100024783</span>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <span className="text-white/40 font-bold uppercase tracking-tighter">Supreme Wakad</span>
+                            <span className="text-supreme-gold/60">MahaRERA: P52100056095</span>
+                        </div>
                     </div>
                 </div>
             </div>
