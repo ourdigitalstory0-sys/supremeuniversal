@@ -63,7 +63,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
             { category: "Kitchen", details: ["Granite platform with stainless steel sink", "Provision for water purifier and chimney"] }
         ],
         gallery: [
-            "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
+            "/assets/projects/actual-towers.jpg",
             "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
             "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
         ],
@@ -72,7 +72,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
             description: "Supreme Towers by Supreme Universal in Mundhwa offers premium luxury apartments near Magarpatta City. Explore 2, 3 & 4 BHK residences with world-class amenities.",
             keywords: "Supreme Towers Mundhwa, luxury apartments in Mundhwa, 3 BHK in Mundhwa Pune, upcoming projects in Mundhwa, Supreme Universal Mundhwa, luxury flats near Magarpatta City"
         },
-        image: "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+        image: "/assets/projects/actual-towers.jpg"
     },
     {
         id: "supreme-villagio",
@@ -116,7 +116,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
             { category: "Sustainability", details: ["Solar water heating systems", "Organic waste converter"] }
         ],
         gallery: [
-            "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
+            "/assets/projects/actual-villagio.jpg",
             "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
             "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
         ],
@@ -125,7 +125,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
             description: "Experience European style villa living at Supreme Villagio Somatane. Luxury row houses and villas near Mumbai-Pune Expressway by Supreme Universal.",
             keywords: "Supreme Villagio Somatane, luxury villas in Pune, row houses in Somatane, villas near Mumbai Pune Expressway, Supreme Universal Villagio, premium gated community Pune North"
         },
-        image: "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
+        image: "/assets/projects/actual-villagio.jpg"
     },
     {
         id: "supreme-estia",
@@ -169,7 +169,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
             { category: "Electrical", details: ["Concealed copper wiring (Finolex/Polycab)", "Branded modular switches"] }
         ],
         gallery: [
-            "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
+            "/assets/projects/actual-estia.jpg",
             "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
             "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
         ],
@@ -178,7 +178,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
             description: "Supreme Estia offers ultra-premium residences in the heart of Baner. Explore luxury 2, 3 & 4 BHK flats by Supreme Universal near Balewadi High Street.",
             keywords: "Supreme Estia Baner, luxury flats in Baner, 3 BHK in Baner price, projects near Balewadi High Street, Supreme Universal Baner, premium apartments west pune"
         },
-        image: "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+        image: "/assets/projects/actual-estia.jpg"
     },
     {
         id: "supreme-wakad",
@@ -222,7 +222,7 @@ export const portfolioProjects: PortfolioProjectType[] = [
             { category: "Flooring", details: ["Laminated wooden flooring in guest room", "Designer dado in bathrooms"] }
         ],
         gallery: [
-            "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
+            "/assets/projects/actual-wakad.jpg",
             "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
             "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
         ],
@@ -231,6 +231,6 @@ export const portfolioProjects: PortfolioProjectType[] = [
             description: "Supreme Wakad by Supreme Universal offers ultra-luxury residences in Wakad. Pre-launching 3 & 4 BHK apartments with smart home features near Hinjewadi IT Park.",
             keywords: "Supreme Wakad, 3 BHK in Wakad, 4 BHK in Wakad price, upcoming projects in Wakad, Supreme Universal Wakad, luxury flats near Hinjewadi, pre launch projects Wakad"
         },
-        image: "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
+        image: "/assets/projects/actual-wakad.jpg"
     }
 ];
