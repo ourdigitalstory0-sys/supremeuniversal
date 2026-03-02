@@ -37,7 +37,7 @@ const otherProjects = [
         status: "Upcoming New Launch",
         desc: "The next benchmark of urban luxury in Pune's fastest growing hub.",
         image: "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
-        link: "/"
+        link: "/projects/supreme-wakad"
     }
 ];
 

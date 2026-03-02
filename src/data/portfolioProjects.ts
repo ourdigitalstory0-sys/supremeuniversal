@@ -120,5 +120,39 @@ export const portfolioProjects: PortfolioProjectType[] = [
             keywords: "Supreme Estia Baner, luxury flats in Baner, 3 BHK in Baner price, projects near Balewadi High Street, Supreme Universal Baner, premium apartments west pune"
         },
         image: "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+    },
+    {
+        id: "supreme-wakad",
+        name: "Supreme Wakad",
+        location: "Wakad, Pune West",
+        fullLocation: "Wakad-Hinjewadi Link Road, Pune West 411057",
+        type: "3 & 4 BHK Luxury Residences",
+        status: "Upcoming New Launch",
+        tagline: "The Future of Urban Luxury in Wakad",
+        description: "Supreme Wakad is our upcoming flagship in the heart of West Pune's most vibrant residential hub. Designed for the futuristic lifestyle, it combines cutting-edge architecture with Supreme Universal's signature detailing, offering unprecedented connectivity to Hinjewadi Phase 1.",
+        highlights: [
+            "Next-Gen smart homes in Wakad",
+            "Closer to Hinjewadi IT Park (Phase 1)",
+            "Exclusive 3 & 4 BHK boutique layouts",
+            "Sky-high lifestyle amenities"
+        ],
+        connectivity: [
+            { title: "Hinjewadi Phase 1", dist: "5 mins" },
+            { title: "Bhujbal Chowk", dist: "3 mins" },
+            { title: "Indira College", dist: "2 mins" },
+            { title: "D-Mart Wakad", dist: "5 mins" }
+        ],
+        amenities: [
+            { icon: "Smartphone", title: "Smart Home Tech" },
+            { icon: "Rocket", title: "Sky Clubhouse" },
+            { icon: "Shield", title: "4-Tier Security" },
+            { icon: "Pocket", title: "Retail Plaza" }
+        ],
+        seo: {
+            title: "Supreme Wakad | Luxury 3 & 4 BHK Apartments in Pune West",
+            description: "Supreme Wakad by Supreme Universal offers ultra-luxury residences in Wakad. Pre-launching 3 & 4 BHK apartments with smart home features near Hinjewadi IT Park.",
+            keywords: "Supreme Wakad, 3 BHK in Wakad, 4 BHK in Wakad price, upcoming projects in Wakad, Supreme Universal Wakad, luxury flats near Hinjewadi, pre launch projects Wakad"
+        },
+        image: "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
     }
 ];
