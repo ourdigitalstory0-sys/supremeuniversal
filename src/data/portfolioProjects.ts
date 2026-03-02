@@ -8,6 +8,7 @@ export interface PortfolioProjectType {
     tagline: string;
     description: string;
     highlights: string[];
+    connectivity: { title: string; dist: string }[];
     amenities: { icon: string; title: string }[];
     seo: {
         title: string;
@@ -32,6 +33,12 @@ export const portfolioProjects: PortfolioProjectType[] = [
             "Panoramic views of the Mula-Mutha river",
             "Proximity to Magarpatta & Amanora Park Town",
             "Executive-grade smart home features"
+        ],
+        connectivity: [
+            { title: "Magarpatta City", dist: "10 mins" },
+            { title: "EON IT Park Kharadi", dist: "15 mins" },
+            { title: "Hadapsar Railway Station", dist: "8 mins" },
+            { title: "Season's Mall", dist: "10 mins" }
         ],
         amenities: [
             { icon: "Infinity", title: "Rooftop Infinity Pool" },
@@ -61,6 +68,12 @@ export const portfolioProjects: PortfolioProjectType[] = [
             "Direct access to Mumbai-Pune Expressway",
             "Lush green vistas and private garden spaces"
         ],
+        connectivity: [
+            { title: "Mumbai-Pune Expressway", dist: "5 mins" },
+            { title: "Lonavala / Talegaon", dist: "20 mins" },
+            { title: "Dehu Road Station", dist: "10 mins" },
+            { title: "MCA Stadium Gahunje", dist: "12 mins" }
+        ],
         amenities: [
             { icon: "Trees", title: "Themed Gardens" },
             { icon: "Bike", title: "Jogging & Cycling Track" },
@@ -88,6 +101,12 @@ export const portfolioProjects: PortfolioProjectType[] = [
             "Art-deco inspired architectural facade",
             "Walking distance to premium retail & dining",
             "Exclusive community of 100+ families"
+        ],
+        connectivity: [
+            { title: "Balewadi High Street", dist: "4 mins" },
+            { title: "Westend Mall Aundh", dist: "12 mins" },
+            { title: "Hinjewadi IT Park", dist: "15 mins" },
+            { title: "Jupiter Hospital", dist: "8 mins" }
         ],
         amenities: [
             { icon: "Library", title: "Private Library" },
