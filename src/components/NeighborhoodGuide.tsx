@@ -41,16 +41,16 @@ const NeighborhoodGuide = () => {
 
                         <div className="space-y-6">
                             <div className="border-l-2 border-supreme-gold pl-6">
-                                <h4 className="text-xl font-serif text-supreme-black mb-2">Hinjewadi IT Connectivity</h4>
-                                <p className="text-gray-600">Avoid daily traffic jams with direct access to Hinjewadi Phase 1, Phase 2, and Phase 3 via Marunji Road.</p>
+                                <h4 className="text-xl font-serif text-supreme-black mb-2">Unmatched Connectivity</h4>
+                                <p className="text-gray-600">Just 400m from the **Punawale Metro Underpass**, offering direct access to the upcoming **Pune Metro Line 3**. Rapid transit to **Phoenix Mall of the Millennium** (4.8 km) and **Wakad**.</p>
                             </div>
                             <div className="border-l-2 border-supreme-gold pl-6">
-                                <h4 className="text-xl font-serif text-supreme-black mb-2">Projects near Mumbai Pune Expressway</h4>
-                                <p className="text-gray-600">Zero-congestion access to the national highway makes commuting to Mumbai or Lonavala effortless.</p>
+                                <h4 className="text-xl font-serif text-supreme-black mb-2">Prime Retail Proximity</h4>
+                                <p className="text-gray-600">Minutes away from **D-Mart Punawale** (2.3 km) and major high-street retail hubs, ensuring everyday convenience for premium families.</p>
                             </div>
                             <div className="border-l-2 border-supreme-gold pl-6">
-                                <h4 className="text-xl font-serif text-supreme-black mb-2">Lotus Business School Proximity</h4>
-                                <p className="text-gray-600">Surrounded by premier educational institutions and bustling commercial centers driving high rental yields.</p>
+                                <h4 className="text-xl font-serif text-supreme-black mb-2">The Ring Road Advantage</h4>
+                                <p className="text-gray-600">Strategically located to benefit from the **Pune Ring Road** expansion, driving double-digit property appreciation in **West Pune** by 2026-2027.</p>
                             </div>
                         </div>
 

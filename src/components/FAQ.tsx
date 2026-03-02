@@ -43,6 +43,18 @@ const faqs = [
     {
         question: "How do I make a Supreme Riverside booking?",
         answer: "You can initiate a Supreme Riverside booking by inquiring on our website or visiting the site office. Our team will guide you through the available inventory, explain the latest offers, and assist with the seamless booking process."
+    },
+    {
+        question: "How far is the Punawale Metro station from Supreme Riverside?",
+        answer: "Supreme Riverside is exceptionally well-connected, located just 400 meters from the Punawale Underpass, which leads directly to the upcoming Pune Metro Line 3 station. This ensures rapid transit to Hinjewadi, Wakad, and central Pune."
+    },
+    {
+        question: "What are the benefits of the IGBC Green Building Certification?",
+        answer: "As an IGBC-certified green project, Supreme Riverside ensures sustainable living through energy-efficient design, rainwater harvesting, and superior natural ventilation. This leads to lower maintenance costs and a healthier, eco-friendly lifestyle for all residents."
+    },
+    {
+        question: "Punawale vs Wakad: Which is better for investment in 2026?",
+        answer: "While Wakad is established, Punawale offers a higher 'entry-to-appreciation' delta. With the 15-acre scale of Supreme Riverside and upcoming infrastructure like the Pune Ring Road, the property appreciation potential in Punawale is projected to outperform Wakad by 2026-2027."
     }
 ];
 

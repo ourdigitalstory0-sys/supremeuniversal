@@ -136,17 +136,18 @@ const SEO = ({
                         "telephone": "+917744009295",
                         "address": {
                             "@type": "PostalAddress",
-                            "streetAddress": "Near Lotus Business School, Punawale",
-                            "addressLocality": "Pune West",
-                            "addressRegion": "Maharashtra",
+                            "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road",
+                            "addressLocality": "Punawale",
+                            "addressRegion": "Pune",
                             "postalCode": "411033",
                             "addressCountry": "IN"
                         },
                         "geo": {
                             "@type": "GeoCoordinates",
-                            "latitude": "18.6298",
-                            "longitude": "73.7506"
+                            "latitude": "18.6327",
+                            "longitude": "73.7431"
                         },
+                        "award": "Global Excellence Awards 2023",
                         "openingHoursSpecification": {
                             "@type": "OpeningHoursSpecification",
                             "dayOfWeek": [
