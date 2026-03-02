@@ -34,6 +34,32 @@ const ProjectDetails = () => {
                 <meta name="description" content={project.seo.description} />
                 <meta name="keywords" content={project.seo.keywords} />
                 <link rel="canonical" href={`https://supreme-universal.in/projects/${project.id}`} />
+
+                {/* JSON-LD Structured Data for Real Estate Project */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "RealEstateListing",
+                        "name": project.name,
+                        "description": project.seo.description,
+                        "image": project.image,
+                        "url": `https://supreme-universal.in/projects/${project.id}`,
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": project.fullLocation,
+                            "addressLocality": project.location.split(',')[0],
+                            "addressRegion": "Maharashtra",
+                            "addressCountry": "IN"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Accommodation",
+                                "name": project.type
+                            }
+                        }
+                    })}
+                </script>
             </Helmet>
 
             <Navbar onEnquire={() => setIsModalOpen(true)} />

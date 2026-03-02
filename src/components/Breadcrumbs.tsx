@@ -17,7 +17,14 @@ const Breadcrumbs = () => {
                 {pathnames.map((value, index) => {
                     const last = index === pathnames.length - 1;
                     const to = `/${pathnames.slice(0, index + 1).join('/')}`;
-                    const name = value.replace(/-/g, ' ');
+
+                    // Enhanced naming logic for dynamic routes
+                    let name = value.replace(/-/g, ' ');
+                    if (value === 'projects') name = 'Portfolio';
+                    if (index > 0 && pathnames[index - 1] === 'projects') {
+                        // Capitalize project names correctly (e.g., supreme towers)
+                        name = name.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                    }
 
                     return (
                         <div key={to} className="flex items-center gap-2">
