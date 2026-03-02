@@ -12,6 +12,7 @@ import Location from './components/Location';
 import NeighborhoodGuide from './components/NeighborhoodGuide';
 import ROICalculator from './components/ROICalculator';
 import ProximityIndex from './components/ProximityIndex';
+import ProjectShowcase from './components/ProjectShowcase';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
@@ -117,6 +118,7 @@ function MainApp() {
       <NeighborhoodGuide />
       <ROICalculator onEnquire={() => setIsModalOpen(true)} />
       <ProximityIndex />
+      <ProjectShowcase />
       <Contact />
       <FAQ />
       <Footer />
