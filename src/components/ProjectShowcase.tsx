@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, MapPin, Calendar, Building2, ChevronRight } from 'lucide-react';
+import { MapPin, Calendar, Building2, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const otherProjects = [
     {
@@ -9,7 +10,7 @@ const otherProjects = [
         status: "Possession June 2027",
         desc: "High-rise luxury living in the rising heart of East Pune.",
         image: "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg", // Placeholder using existing high-quality image
-        link: "https://www.supremeuniversal.com/supreme-towers"
+        link: "/projects/supreme-towers"
     },
     {
         name: "Supreme Villagio",
@@ -18,7 +19,7 @@ const otherProjects = [
         status: "Phase 2 Launched",
         desc: "A sprawling villa township inspired by European aesthetics.",
         image: "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
-        link: "https://www.supremeuniversal.com/supreme-villagio"
+        link: "/projects/supreme-villagio"
     },
     {
         name: "Supreme Estia",
@@ -27,7 +28,7 @@ const otherProjects = [
         status: "Possession Dec 2025",
         desc: "Unmatched luxury in Pune's most preferred residential hub.",
         image: "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
-        link: "https://www.supremeuniversal.com/supreme-estia"
+        link: "/projects/supreme-estia"
     },
     {
         name: "Supreme Wakad",
@@ -36,7 +37,7 @@ const otherProjects = [
         status: "Upcoming New Launch",
         desc: "The next benchmark of urban luxury in Pune's fastest growing hub.",
         image: "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
-        link: "https://www.supremeuniversal.com/"
+        link: "/"
     }
 ];
 
@@ -117,14 +118,12 @@ const ProjectShowcase = () => {
                                 </div>
 
                                 <div className="flex items-center justify-between border-t border-gray-200 pt-6">
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                    <Link
+                                        to={project.link}
                                         className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-bold text-supreme-black hover:text-supreme-gold transition-colors"
                                     >
-                                        Explore Scope <ExternalLink className="w-3 h-3" />
-                                    </a>
+                                        Explore Scope <ChevronRight className="w-3 h-3" />
+                                    </Link>
                                     <ChevronRight className="w-5 h-5 text-gray-200 group-hover:text-supreme-gold group-hover:translate-x-2 transition-all" />
                                 </div>
                             </div>

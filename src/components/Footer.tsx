@@ -49,9 +49,9 @@ const Footer = () => {
                     <div className="lg:col-span-2">
                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Pune Portfolio</h5>
                         <ul className="space-y-4 text-white/50 font-sans font-light">
-                            <li><a href="https://www.supremeuniversal.com/supreme-towers" target="_blank" rel="noopener noreferrer" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Towers<span className="text-[10px] text-white/30 truncate">Mundhwa, Pune East</span></a></li>
-                            <li><a href="https://www.supremeuniversal.com/supreme-villagio" target="_blank" rel="noopener noreferrer" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Villagio<span className="text-[10px] text-white/30 truncate">Somatane, Pune North</span></a></li>
-                            <li><a href="https://www.supremeuniversal.com/supreme-estia" target="_blank" rel="noopener noreferrer" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Estia<span className="text-[10px] text-white/30 truncate">Baner, Pune West</span></a></li>
+                            <li><Link to="/projects/supreme-towers" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Towers<span className="text-[10px] text-white/30 truncate">Mundhwa, Pune East</span></Link></li>
+                            <li><Link to="/projects/supreme-villagio" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Villagio<span className="text-[10px] text-white/30 truncate">Somatane, Pune North</span></Link></li>
+                            <li><Link to="/projects/supreme-estia" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Estia<span className="text-[10px] text-white/30 truncate">Baner, Pune West</span></Link></li>
                         </ul>
                     </div>
 

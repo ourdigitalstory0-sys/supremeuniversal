@@ -28,6 +28,7 @@ import LeadPopup from './components/LeadPopup';
 import FAQ from './components/FAQ';
 import BlogList from './pages/BlogList';
 import BlogPost from './pages/BlogPost';
+import ProjectDetails from './pages/ProjectDetails';
 
 function ScrollHandler() {
   const { pathname } = useLocation();
@@ -138,6 +139,7 @@ function App() {
         <Route path="*" element={<MainApp />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:id" element={<BlogPost />} />
+        <Route path="/projects/:id" element={<ProjectDetails />} />
       </Routes>
     </Router>
   );
