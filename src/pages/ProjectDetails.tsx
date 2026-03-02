@@ -4,7 +4,7 @@ import { portfolioProjects } from '../data/portfolioProjects';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
-import { MapPin, Calendar, Building2, CheckCircle2, ArrowLeft } from 'lucide-react';
+import { MapPin, Calendar, Building2, CheckCircle2, ArrowLeft, Shield } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import QuickEnquireModal from '../components/QuickEnquireModal';
@@ -87,9 +87,21 @@ const ProjectDetails = () => {
                         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white mb-6">
                             {project.name}
                         </h1>
-                        <div className="flex items-center justify-center gap-2 text-white/80">
-                            <MapPin className="w-4 h-4 text-supreme-gold" />
-                            <span className="text-sm md:text-lg tracking-wider uppercase font-light">{project.location}</span>
+                        <div className="flex flex-col items-center gap-6 mt-8">
+                            <div className="flex items-center justify-center gap-2 text-white/80">
+                                <MapPin className="w-4 h-4 text-supreme-gold" />
+                                <span className="text-sm md:text-lg tracking-wider uppercase font-light">{project.location}</span>
+                            </div>
+                            <div className="flex flex-wrap items-center justify-center gap-4">
+                                <div className="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center gap-3">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-supreme-gold animate-pulse" />
+                                    <span className="text-[10px] md:text-xs font-sans font-bold uppercase tracking-widest text-white">{project.status}</span>
+                                </div>
+                                <div className="px-4 py-2 bg-supreme-gold/20 backdrop-blur-md border border-supreme-gold/30 rounded-full flex items-center gap-3">
+                                    <Shield className="w-3 h-3 text-supreme-gold" />
+                                    <span className="text-[10px] md:text-xs font-sans font-bold uppercase tracking-widest text-supreme-gold">{project.reraNumber}</span>
+                                </div>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
