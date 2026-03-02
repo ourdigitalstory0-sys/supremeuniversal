@@ -125,20 +125,59 @@ const ProjectDetails = () => {
                                 </div>
 
                                 <h3 className="text-2xl font-serif text-supreme-black mb-8">Curated Amenities</h3>
-                                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
                                     {project.amenities.map((amenity, idx) => (
-                                        <div key={idx} className="text-center p-6 border border-gray-100 hover:border-supreme-gold transition-colors duration-500">
-                                            <div className="text-supreme-gold mb-4 flex justify-center italic text-sm uppercase tracking-widest font-bold">
+                                        <div key={idx} className="text-center p-6 border border-gray-100 hover:border-supreme-gold transition-colors duration-500 group">
+                                            <div className="text-supreme-gold mb-3 flex justify-center opacity-60 group-hover:opacity-100 transition-opacity">
+                                                <Building2 className="w-5 h-5" />
+                                            </div>
+                                            <div className="text-supreme-black text-[10px] uppercase tracking-widest font-bold">
                                                 {amenity.title}
                                             </div>
                                         </div>
                                     ))}
                                 </div>
 
-                                <h3 className="text-2xl font-serif text-supreme-black mb-8 mt-16">Micro-Market Connectivity</h3>
+                                <h3 className="text-2xl font-serif text-supreme-black mb-8">Technical Specifications</h3>
+                                <div className="space-y-4 mb-16">
+                                    {project.specifications.map((spec, idx) => (
+                                        <div key={idx} className="border border-gray-100 rounded-sm overflow-hidden">
+                                            <div className="bg-gray-50 px-6 py-4 border-b border-gray-100">
+                                                <span className="text-supreme-gold font-sans font-bold uppercase tracking-widest text-[10px]">
+                                                    {spec.category}
+                                                </span>
+                                            </div>
+                                            <div className="px-6 py-6 bg-white">
+                                                <ul className="space-y-3">
+                                                    {spec.details.map((detail, dIdx) => (
+                                                        <li key={dIdx} className="flex gap-3 items-start text-sm text-gray-600 font-sans">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-supreme-gold mt-1.5 shrink-0" />
+                                                            {detail}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+
+                                <h3 className="text-2xl font-serif text-supreme-black mb-8">Project Gallery</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+                                    {project.gallery.map((img, idx) => (
+                                        <div key={idx} className={`overflow-hidden rounded-sm group ${idx === 0 ? 'md:col-span-2' : ''}`}>
+                                            <img
+                                                src={img}
+                                                alt={`${project.name} Gallery ${idx + 1}`}
+                                                className="w-full h-64 md:h-96 object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+
+                                <h3 className="text-2xl font-serif text-supreme-black mb-8">Micro-Market Connectivity</h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     {project.connectivity.map((item, idx) => (
-                                        <div key={idx} className="flex justify-between items-center p-4 border-b border-gray-100">
+                                        <div key={idx} className="flex justify-between items-center p-4 border-b border-gray-100 group hover:bg-gray-50 transition-colors">
                                             <span className="text-gray-600 font-sans text-sm tracking-wide">{item.title}</span>
                                             <span className="text-supreme-gold font-serif text-lg">{item.dist}</span>
                                         </div>
