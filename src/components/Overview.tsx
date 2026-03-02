@@ -73,8 +73,8 @@ const Overview = () => {
                                 transition={{ delay: 0.2, duration: 0.8 }}
                                 className="text-4xl md:text-5xl lg:text-7xl font-serif text-supreme-black mb-8 leading-tight"
                             >
-                                Crafting Spaces That <br />
-                                <span className="italic font-light text-supreme-gold">Reflect Your Aspirations</span>
+                                Dominating the <br />
+                                <span className="italic font-light text-supreme-gold">Pune Real Estate Market</span>
                             </motion.h2>
 
                             <motion.p
@@ -84,8 +84,18 @@ const Overview = () => {
                                 transition={{ delay: 0.4, duration: 0.8 }}
                                 className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Supreme Riverside is an extension of Supreme Universal's real estate evolution. Delivering timeless luxury, we offer an exclusive collection of <strong>premium 2 & 3 BHK homes in Punawale</strong>. Whether you are searching for the best <strong>Supreme Riverside price</strong> or looking for <strong>property near me in Pune West</strong>, every detail has been thoughtfully designed for those who appreciate the highest standards.
+                                Supreme Riverside is not just a residential development; it's a <strong>15-acre riverside township</strong> designed to dominate the <strong>Pune Real Estate Market</strong>. Featuring majestic <strong>31-storey towers</strong>, it represents the pinnacle of <strong>Supreme Universal Pune projects</strong>, offering an elevated lifestyle in the heart of <strong>West Pune</strong>. As a pioneer in the <strong>luxury lifestyle in West Pune</strong>, we offer an exclusive collection of <strong>premium 2 & 3 BHK homes in Punawale</strong>. Whether you are searching for the best <strong>Supreme Riverside price</strong> or exploring high-ROI <strong>investment properties in Pune</strong>, our project is engineered to be the definitive lead-generating benchmark for excellence.
                             </motion.p>
+
+                            <motion.h3
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.45, duration: 0.8 }}
+                                className="text-2xl md:text-3xl font-serif text-supreme-black mb-6"
+                            >
+                                Timeless Luxury. <span className="italic text-supreme-gold">Executive Execution.</span>
+                            </motion.h3>
 
                             <motion.p
                                 initial={{ opacity: 0, y: 20 }}
@@ -94,7 +104,7 @@ const Overview = () => {
                                 transition={{ delay: 0.5, duration: 0.8 }}
                                 className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Here, the gentle flow of the river meets state-of-the-art architecture. Enjoy generous spaces, abundant natural light, and a community that shares your vision of grandeur. With a firmly committed <strong>Supreme Riverside possession date</strong>, you can secure your luxury future in the most sought-after <strong>apartments near Hinjewadi IT Park</strong>.
+                                Here, the gentle flow of the river meets cutting-edge architecture. Enjoy generous spaces, abundant natural light, and a community that shares your vision of grandeur. With a firmly committed <strong>Supreme Riverside possession date</strong>, you can secure your luxury future in the most sought-after <strong>apartments near Hinjewadi IT Park</strong>.
                             </motion.p>
 
                             <motion.div

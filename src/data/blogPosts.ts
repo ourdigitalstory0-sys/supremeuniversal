@@ -7,14 +7,15 @@ export interface BlogPostType {
     image: string;
     author: string;
     content: string;
+    readTime?: string;
 }
 
 export const blogPosts: BlogPostType[] = [
     // --- HUB ARTICLE ---
     {
         id: 'ultimate-guide-buying-property-punawale-pune',
-        title: 'Is Punawale Good for Investment? The 2026 Homebuyer\'s Guide',
-        excerpt: 'Your complete resource for understanding property appreciation, rental income in Punawale, and why exactly Pune West real estate is booming.',
+        title: 'Ultimate Guide to Buying Property in Punawale, Pune (2026 Edition)',
+        excerpt: 'Everything you need to know about the Punawale real estate market, infrastructure updates, and why it is the best time to invest in Supreme Riverside.',
         date: 'March 05, 2026',
         category: 'Buying Guide',
         author: 'Supreme Universal Research Team',
@@ -182,5 +183,52 @@ export const blogPosts: BlogPostType[] = [
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Multi-Tier Clubhouses</h3>
             <p className="mb-6">A single clubhouse is no longer enough. The standard now is multi-tiered clubhouses that segregate activities—dedicated floors for wellness (spas and gymnasiums), entertainment (mini-theaters and bowling alleys), and co-working spaces. This ensures that the community caters to all age groups and lifestyle needs simultaneously.</p>
         `
-    }
+    },
+    {
+        id: 'supreme-riverside-punawale-definitive-guide-15-acre-legacy',
+        title: 'Supreme Riverside Punawale: The Definitive Guide to a 15-Acre Riverside Legacy',
+        excerpt: 'Discover why Supreme Riverside is the top-ranked project in Punawale 2026. A comprehensive look at the 15-acre IGBC township, exclusive 6-per-floor privacy, and the Supreme Universal legacy.',
+        date: 'March 02, 2026',
+        category: 'Project Spotlight',
+        author: 'Supreme Universal Editorial Team',
+        image: 'https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg',
+        readTime: '12 min read',
+        content: `
+            <p>In the rapidly evolving landscape of <strong>Pune West real estate</strong>, one project stands as a benchmark for luxury, scale, and strategic foresight: <strong>Supreme Riverside Punawale</strong>. Developed by the legendary <strong>Supreme Universal</strong>, this 15-acre riverside township is not just a residence; it is an executive statement in the <strong>Punawale property market</strong>.</p>
+
+            <h3>The Supreme Universal Legacy: 40+ Years of Excellence</h3>
+            <p>Supreme Universal has been a pioneer in luxury living since 1982. With over <strong>70 delivered projects</strong> across Mumbai and Pune, the brand is synonymous with trust and transformative design. From the award-winning <strong>Supreme Villagio</strong> to the iconic <strong>Supreme Estia</strong>, the builder's legacy is built on uncompromising quality and timely delivery, recognized by <strong>CREDAI-MCHI</strong> and the <strong>Asia Property Awards</strong>.</p>
+
+            <h3>15-Acre IGBC Certified Township: A Sustainable Oasis</h3>
+            <p>Supreme Riverside is one of the largest planned developments in the region. As an <strong>IGBC-certified green project</strong>, it integrates sustainable planning with modern engineering.
+            <ul>
+                <li><strong>Scale:</strong> 15 lush acres of master-planned development.</li>
+                <li><strong>Skyline:</strong> majestic 31-storey towers offering panoramic riverside views.</li>
+                <li><strong>Open Spaces:</strong> Optimized for over 65% open and green areas, promoting a healthier lifestyle.</li>
+            </ul></p>
+
+            <h3>The Privacy USP: Exclusive 6 Residences Per Floor</h3>
+            <p>Unlike competitors like Kohinoor Uptown Avenue or Siddhashila Eela which often feature higher density layouts, Supreme Riverside prioritizes <strong>privacy and ventilation</strong>. With only <strong>6 units per floor</strong>, residents enjoy reduced noise, better cross-ventilation, and a sense of exclusivity that is rare in the <strong>Punawale 2 & 3 BHK segment</strong>.</p>
+
+            <h3>World-Class Amenities: Elevating Your Every Day</h3>
+            <p>The project features over 40+ multi-tier amenities designed for all age groups:
+            <ul>
+                <li><strong>The Skywalk:</strong> An elevated walkway offering breathtaking views.</li>
+                <li><strong>Sports & Fitness:</strong> Infinity pool, Pickleball court, Badminton, and Squash courts.</li>
+                <li><strong>Corporate Integration:</strong> A dedicated Co-working Hub for the modern professional.</li>
+                <li><strong>Recreation:</strong> Mini-theatre, Pet Park, and a grand 3-level Clubhouse.</li>
+            </ul></p>
+
+            <h3>Strategic Location: The 2026 Connectivity Surge</h3>
+            <p>Situated near <strong>Chhatrapati Shivaji Maharaj Chowk</strong> on <strong>Tathawade Road</strong>, the project is perfectly timed with Pune's infrastructure boom:
+            <ul>
+                <li><strong>Metro Line 3:</strong> Just minutes away from the upcoming Hinjewadi-Shivajinagar corridor.</li>
+                <li><strong>Ring Road & Highway:</strong> Immediate access to the Mumbai-Pune Expressway Bypass and the proposed Pune Ring Road.</li>
+                <li><strong>IT Proximity:</strong> 15 minutes from Hinjewadi Phase 1, making it the ideal choice for IT professionals.</li>
+            </ul></p>
+
+            <h3>Conclusion: Why Supreme Riverside is the Best Choice in Punawale</h3>
+            <p>Whether you are looking for high property appreciation in 2026 or a luxurious waterfront lifestyle, <strong>Supreme Riverside Punawale</strong> is the definitive answer. With the backing of a 40-year legacy and a future-ready township design, it is arguably the <strong>top projects in Punawale 2026</strong>.</p>
+        `
+    },
 ];

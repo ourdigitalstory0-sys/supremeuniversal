@@ -49,7 +49,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.7, duration: 1 }}
                 >
-                    Experience timeless luxury and the pinnacle of real estate evolution with our premium 2 & 3 BHK flats in Punawale, near Hinjewadi Pune.
+                    Widely considered the <strong>best project in Punawale 2026</strong>. Experience unprecedented <strong>waterfront luxury</strong> and the pinnacle of real estate evolution with our premium 2 & 3 BHK flats, strategically located 15 mins from Hinjewadi IT Park.
                 </motion.p>
 
                 <motion.div

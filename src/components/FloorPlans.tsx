@@ -103,20 +103,20 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                                     {activeTab === 'Master' ? (
                                         <div className="space-y-4 pt-4 border-t border-gray-100">
                                             <div className="flex justify-between items-center">
-                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Project Scale</span>
-                                                <span className="font-serif text-xl text-supreme-black">Extensive Acres</span>
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Privacy Benchmark</span>
+                                                <span className="font-serif text-xl text-supreme-black">6 Units per Floor</span>
                                             </div>
                                             <div className="flex justify-between items-center">
-                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Open Spaces</span>
-                                                <span className="font-serif text-xl text-supreme-black">&gt; 65%</span>
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Amenity Zone</span>
+                                                <span className="font-serif text-xl text-supreme-black">40+ Worlds</span>
                                             </div>
                                             <div className="flex justify-between items-center">
                                                 <span className="text-gray-500 uppercase text-xs tracking-wider">Towers</span>
-                                                <span className="font-serif text-xl text-supreme-black">High Rise Cluster</span>
+                                                <span className="font-serif text-xl text-supreme-black">31 Storeys</span>
                                             </div>
                                             <div className="flex justify-between items-center">
-                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Amenities</span>
-                                                <span className="font-serif text-xl text-supreme-black">40+ Multi-Tier</span>
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Land Area</span>
+                                                <span className="font-serif text-xl text-supreme-black">15 Lush Acres</span>
                                             </div>
                                         </div>
                                     ) : (
@@ -128,15 +128,15 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                                                 </span>
                                             </div>
                                             <div className="flex justify-between items-center">
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Privacy Factor</span>
+                                                <span className="font-serif text-xl text-supreme-black">Exclusive 6 Per Floor</span>
+                                            </div>
+                                            <div className="flex justify-between items-center">
+                                                <span className="text-gray-500 uppercase text-xs tracking-wider">View Preference</span>
+                                                <span className="font-serif text-xl text-supreme-gold italic">Riverside / Garden</span>
+                                            </div>
+                                            <div className="flex justify-between items-center">
                                                 <span className="text-gray-500 uppercase text-xs tracking-wider">Bedrooms</span>
-                                                <span className="font-serif text-xl text-supreme-black">{activeTab === '2BHK' ? '2' : '3'}</span>
-                                            </div>
-                                            <div className="flex justify-between items-center">
-                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Bathrooms</span>
-                                                <span className="font-serif text-xl text-supreme-black">{activeTab === '2BHK' ? '2' : '3'}</span>
-                                            </div>
-                                            <div className="flex justify-between items-center">
-                                                <span className="text-gray-500 uppercase text-xs tracking-wider">Balconies</span>
                                                 <span className="font-serif text-xl text-supreme-black">{activeTab === '2BHK' ? '2' : '3'}</span>
                                             </div>
                                         </div>

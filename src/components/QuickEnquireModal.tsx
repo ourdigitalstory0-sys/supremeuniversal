@@ -72,13 +72,13 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                             <div className="p-8 md:p-12">
                                 <div className="text-center mb-10">
                                     <span className="text-supreme-gold text-xs font-sans tracking-[0.2em] uppercase mb-4 block">
-                                        Supreme Riverside
+                                        Supreme Riverside Advantage
                                     </span>
                                     <h3 className="text-3xl md:text-4xl font-serif text-white">
-                                        Register Interest
+                                        Secure Your Priority Access
                                     </h3>
                                     <p className="text-white/50 text-sm mt-4 font-light leading-relaxed">
-                                        Provide your details to unlock exclusive pricing and floor plans.
+                                        Join the elite circle. Register now to receive the official brochure, verified <strong>Punawale property market insights</strong>, and exclusive pre-launch benefits directly from Supreme Universal.
                                     </p>
                                 </div>
 

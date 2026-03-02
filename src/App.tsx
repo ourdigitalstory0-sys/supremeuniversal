@@ -4,6 +4,7 @@ import Lenis from 'lenis';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Overview from './components/Overview';
+import AuthoritySection from './components/AuthoritySection';
 import Amenities from './components/Amenities';
 import FloorPlans from './components/FloorPlans';
 import Gallery from './components/Gallery';
@@ -12,6 +13,7 @@ import NeighborhoodGuide from './components/NeighborhoodGuide';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
+import Breadcrumbs from './components/Breadcrumbs';
 import WhatsAppButton from './components/WhatsAppButton';
 import CustomCursor from './components/CustomCursor';
 import ScrollProgress from './components/ScrollProgress';
@@ -102,8 +104,10 @@ function MainApp() {
       <NoiseOverlay />
       <WhatsAppButton />
       <Navbar onEnquire={() => setIsModalOpen(true)} />
+      <Breadcrumbs />
       <Hero onEnquire={() => setIsModalOpen(true)} />
       <Overview />
+      <AuthoritySection />
       <Amenities />
       <FloorPlans onEnquire={() => setIsModalOpen(true)} />
       <Gallery />

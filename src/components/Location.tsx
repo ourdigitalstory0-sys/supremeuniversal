@@ -28,8 +28,10 @@ const Location = () => {
                             </h2>
 
                             <p className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-lg">
-                                Supreme Riverside places you at the epicenter of growth in <strong>Punawale</strong>.
-                                Strategically located off the Mumbai-Pune Expressway, and bridging the highly sought-after <strong>Wakad Real Estate Market</strong> and rapid development of <strong>Tathawade</strong>. Experience the perfect synergy of luxury flats near Wakad with serene riverside tranquility.
+                                Punawale is strategically positioned along the **Mumbai-Pune Expressway Bypass**, emerging as one of the fastest-appreciating real estate markets in **Pune West**. With the upcoming **Pune Metro Line 3 (Hinjewadi-Shivajinagar corridor)** and the proposed **Pune Ring Road**, connectivity to **Hinjewadi IT Park**, **Wakad**, and **Baner** is reaching new heights.
+                            </p>
+                            <p className="text-gray-600 font-light leading-relaxed mb-8">
+                                Our site near **Chhatrapati Shivaji Maharaj Chowk** on **Tathawade Road** offers a unique blend of urban accessibility and serene **waterfront living**, making it the premier choice for professionals seeking the **top projects in Punawale 2026**.
                             </p>
 
                             <div className="space-y-8">
