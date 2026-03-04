@@ -19,6 +19,13 @@ export interface PortfolioProjectType {
     };
     image: string;
     reraNumber: string;
+    comparisonMetrics: {
+        configuration: string;
+        possession: string;
+        usp: string;
+        connectivityScore: number;
+    };
+    appreciationMultiplier: number; // For ROI Calculator
 }
 
 export const portfolioProjects: PortfolioProjectType[] = [
@@ -74,7 +81,14 @@ export const portfolioProjects: PortfolioProjectType[] = [
             keywords: "Supreme Towers Mundhwa, luxury apartments in Mundhwa, 3 BHK in Mundhwa Pune, upcoming projects in Mundhwa 2026, Supreme Universal Mundhwa, luxury flats near Magarpatta City, EON IT Park residential projects, Pune Eastern growth corridor"
         },
         image: "/assets/projects/actual-towers.jpg",
-        reraNumber: "MahaRERA: P52100053868"
+        reraNumber: "MahaRERA: P52100053868",
+        comparisonMetrics: {
+            configuration: "2, 3 & 4 BHK",
+            possession: "June 2027",
+            usp: "Riverside Skyline Legacy",
+            connectivityScore: 9.6
+        },
+        appreciationMultiplier: 1.15
     },
     {
         id: "supreme-villagio",
@@ -128,7 +142,14 @@ export const portfolioProjects: PortfolioProjectType[] = [
             keywords: "Supreme Villagio Somatane, luxury villas in Pune, row houses in Somatane, villas near Mumbai Pune Expressway, Supreme Universal Villagio, premium gated community Pune North, property near Somatane Phata, Pune Ring Road investment"
         },
         image: "/assets/projects/actual-villagio.jpg",
-        reraNumber: "MahaRERA: P52100021655"
+        reraNumber: "MahaRERA: P52100021655",
+        comparisonMetrics: {
+            configuration: "Villas & Row Houses",
+            possession: "Phase 2 Live",
+            usp: "Mediterranean Village Life",
+            connectivityScore: 9.4
+        },
+        appreciationMultiplier: 1.25
     },
     {
         id: "supreme-estia",
@@ -182,7 +203,14 @@ export const portfolioProjects: PortfolioProjectType[] = [
             keywords: "Supreme Estia Baner, luxury flats in Baner, 3 BHK in Baner price, projects near Balewadi High Street, Supreme Universal Baner, premium apartments west pune, Baner Metro Line 3 project"
         },
         image: "/assets/projects/actual-estia.jpg",
-        reraNumber: "MahaRERA: P52100024783"
+        reraNumber: "MahaRERA: P52100024783",
+        comparisonMetrics: {
+            configuration: "2, 3 & 4 BHK",
+            possession: "Dec 2025",
+            usp: "Elite Baner Corridor",
+            connectivityScore: 9.8
+        },
+        appreciationMultiplier: 1.10
     },
     {
         id: "supreme-wakad",
@@ -236,6 +264,13 @@ export const portfolioProjects: PortfolioProjectType[] = [
             keywords: "Supreme Wakad, 3 BHK in Wakad, 4 BHK in Wakad price, upcoming projects in Wakad 2026, Supreme Universal Wakad, luxury flats near Hinjewadi Phase 1, Wakad-Hinjewadi Link Road property"
         },
         image: "/assets/projects/actual-wakad.jpg",
-        reraNumber: "MahaRERA: P52100056095"
+        reraNumber: "MahaRERA: P52100056095",
+        comparisonMetrics: {
+            configuration: "3 & 4 BHK",
+            possession: "Launching Soon",
+            usp: "Next-Gen Smart Living",
+            connectivityScore: 9.7
+        },
+        appreciationMultiplier: 1.18
     }
 ];

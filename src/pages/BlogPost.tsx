@@ -36,6 +36,7 @@ const BlogPost = () => {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": post.title,
+        "description": post.excerpt,
         "image": [
             post.image
         ],
@@ -45,7 +46,24 @@ const BlogPost = () => {
             "@type": "Organization",
             "name": post.author,
             "url": "https://supreme-universal.in/"
-        }]
+        }],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Supreme Universal",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://cdn.supremeuniversal.com/media/supreme-logo.png"
+            },
+            "url": "https://supreme-universal.in/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://supreme-universal.in/blog/${id}`
+        },
+        "keywords": `${post.category}, Supreme Riverside Punawale, Punawale real estate, Pune West property, Supreme Universal`,
+        "wordCount": post.content.replace(/<[^>]*>/g, '').split(/\s+/).length.toString(),
+        "inLanguage": "en-IN",
+        "isAccessibleForFree": true
     };
 
     return (
@@ -124,6 +142,58 @@ const BlogPost = () => {
                         className="prose prose-base sm:prose-lg lg:prose-xl max-w-none text-gray-600 font-light font-sans leading-relaxed prose-headings:font-serif prose-headings:text-supreme-black"
                         dangerouslySetInnerHTML={{ __html: post.content }}
                     />
+                </div>
+            </section>
+
+            {/* Related Articles */}
+            <section className="py-16 md:py-24 bg-supreme-gray border-t border-gray-100">
+                <div className="container mx-auto px-6 max-w-7xl">
+                    <div className="text-center mb-12">
+                        <span className="text-supreme-gold font-sans font-semibold uppercase tracking-[0.2em] text-xs block mb-4">Continue Reading</span>
+                        <h2 className="text-3xl md:text-4xl font-serif text-supreme-black">
+                            Related <span className="italic font-light text-supreme-gold">Insights</span>
+                        </h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {blogPosts
+                            .filter(p => p.id !== post.id)
+                            .slice(0, 3)
+                            .map((relatedPost) => (
+                                <Link
+                                    key={relatedPost.id}
+                                    to={`/blog/${relatedPost.id}`}
+                                    className="group bg-white flex flex-col h-full hover:shadow-xl transition-shadow duration-500"
+                                >
+                                    <div className="relative overflow-hidden aspect-[4/3]">
+                                        <img
+                                            src={relatedPost.image}
+                                            alt={relatedPost.title}
+                                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                        <div className="absolute top-3 left-3 bg-supreme-black text-white text-[10px] font-sans uppercase tracking-widest px-3 py-1">
+                                            {relatedPost.category}
+                                        </div>
+                                    </div>
+                                    <div className="p-6 flex flex-col flex-grow">
+                                        <p className="text-gray-400 text-xs font-sans mb-3">{relatedPost.date}</p>
+                                        <h3 className="text-lg font-serif text-supreme-black mb-3 leading-tight group-hover:text-supreme-gold transition-colors duration-300">
+                                            {relatedPost.title}
+                                        </h3>
+                                        <p className="text-gray-500 font-sans font-light text-sm flex-grow line-clamp-2">
+                                            {relatedPost.excerpt}
+                                        </p>
+                                        <span className="mt-4 inline-flex items-center gap-2 text-supreme-black font-sans font-semibold uppercase tracking-[0.1em] text-[10px] group-hover:text-supreme-gold transition-colors">
+                                            Read Article
+                                            <span className="w-4 h-[1px] bg-supreme-gold"></span>
+                                        </span>
+                                    </div>
+                                </Link>
+                            ))
+                        }
+                    </div>
                 </div>
             </section>
 

@@ -237,4 +237,180 @@ export const blogPosts: BlogPostType[] = [
             <p>Whether you are looking for high property appreciation in 2026 or a luxurious waterfront lifestyle, <strong>Supreme Riverside Punawale</strong> is the definitive answer. With the backing of a 40-year legacy and a future-ready township design, it is arguably the <strong>top projects in Punawale 2026</strong>.</p>
         `
     },
+
+    // --- NEW: TRANSACTIONAL INTENT ARTICLE ---
+    {
+        id: 'supreme-riverside-rera-number-price-list-booking-2026',
+        title: 'Supreme Riverside RERA Number, Price List & Booking – Complete Guide 2026',
+        excerpt: 'Get the complete Supreme Riverside RERA registration details, official price list for 2 & 3 BHK, payment plans, and step-by-step booking process for 2026.',
+        date: 'March 04, 2026',
+        category: 'Buying Guide',
+        author: 'Supreme Universal Sales Team',
+        image: 'https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg',
+        readTime: '8 min read',
+        datePublished: '2026-03-04T10:00:00+05:30',
+        dateModified: '2026-03-04T10:00:00+05:30',
+        content: `
+            <p className="mb-6">If you're searching for the <strong>Supreme Riverside RERA number</strong>, official <strong>Supreme Riverside price list</strong>, or want to understand the <strong>Supreme Riverside booking</strong> process, this is your definitive guide. We break down every detail to help you make an informed buying decision for 2026.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Supreme Riverside RERA Registration</h3>
+            <p className="mb-6">Supreme Riverside Punawale is a fully RERA-compliant project registered under the Maharashtra Real Estate Regulatory Authority (MahaRERA). The RERA registration ensures complete transparency in project timelines, carpet area declarations, and financial accountability. Buyers can verify all project details on the official <strong>MahaRERA website</strong> for complete peace of mind.</p>
+            <p className="mb-6">Supreme Universal has a spotless track record with RERA compliance across all their projects—from <a href="/projects/supreme-towers" className="text-supreme-gold underline">Supreme Towers</a> to <a href="/projects/supreme-estia" className="text-supreme-gold underline">Supreme Estia</a>—ensuring timely delivery and transparent dealings.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Supreme Riverside Price List 2026</h3>
+            <p className="mb-6">The <strong>Supreme Riverside price</strong> is positioned competitively for the ultra-luxury segment in Punawale. Here's what you need to know:</p>
+            <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>2 BHK Apartments:</strong> Starting at highly competitive rates with spacious layouts, river views, and premium finishes. These are among the best <strong>2 BHK flats in Punawale near Hinjewadi</strong>.</li>
+                <li className="mb-2"><strong>3 BHK Apartments:</strong> Expansive family residences with panoramic views, designed for those seeking the finest <strong>3 BHK river view apartments in Punawale</strong>.</li>
+                <li className="mb-2"><strong>Jodi Flats / Large Formats:</strong> Select configurations available for buyers seeking extra-large living spaces.</li>
+            </ul>
+            <p className="mb-6">For the exact <strong>Supreme Riverside 2 BHK price</strong> and <strong>Supreme Riverside 3 BHK price</strong>, including the latest festive offers and early-bird discounts, please <a href="/supreme-riverside-punawale-contact" className="text-supreme-gold underline">contact our sales team directly</a>.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Payment Plans & Bank Loan Options</h3>
+            <p className="mb-6">Supreme Riverside offers flexible payment plans tailored to different buyer profiles:</p>
+            <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>Construction-Linked Plan (CLP):</strong> Pay in stages as construction milestones are achieved.</li>
+                <li className="mb-2"><strong>Down Payment Plan:</strong> Attractive discounts for upfront payments.</li>
+                <li className="mb-2"><strong>Flexi Plan:</strong> Customized payment schedules for NRI buyers and salaried professionals.</li>
+            </ul>
+            <p className="mb-6">The project is pre-approved by all major banks including HDFC, SBI, ICICI, Axis Bank, and Bank of Baroda, ensuring seamless home loan processing.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">How to Book a Flat in Supreme Riverside</h3>
+            <p className="mb-6">The <strong>Supreme Riverside booking</strong> process is straightforward:</p>
+            <ol className="list-decimal pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>Step 1:</strong> <a href="/supreme-riverside-punawale-contact" className="text-supreme-gold underline">Submit an enquiry</a> or call +91 77440 09295.</li>
+                <li className="mb-2"><strong>Step 2:</strong> Schedule a site visit to experience the project firsthand.</li>
+                <li className="mb-2"><strong>Step 3:</strong> Select your preferred tower, floor, and apartment configuration.</li>
+                <li className="mb-2"><strong>Step 4:</strong> Complete the booking with a nominal token amount.</li>
+                <li className="mb-2"><strong>Step 5:</strong> Finalize the agreement and choose your payment plan.</li>
+            </ol>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why Buy Now in 2026?</h3>
+            <p className="mb-6">With the <a href="/blog/punawale-infrastructure-connectivity-updates-2026" className="text-supreme-gold underline">Pune Ring Road and Metro Line 3</a> progressing rapidly, <strong>property appreciation in Punawale</strong> is accelerating. Early buyers at Supreme Riverside stand to benefit from significant capital gains as infrastructure completion drives demand. Combined with the <a href="/blog/supreme-universal-luxury-legacy-west-pune" className="text-supreme-gold underline">Supreme Universal legacy</a>, this is a once-in-a-decade investment opportunity.</p>
+
+            <br />
+            <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
+                <h4 className="font-serif text-2xl text-supreme-gold mb-2">Ready to Book?</h4>
+                <p className="text-white/80 font-light mb-4">Secure your dream home at Supreme Riverside Punawale. Limited inventory available at pre-launch prices.</p>
+                <a href="/supreme-riverside-punawale-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Book Site Visit →</a>
+            </div>
+        `
+    },
+
+    // --- NEW: PRICE-SENSITIVE BUYER ARTICLE ---
+    {
+        id: 'best-2-bhk-flats-punawale-under-1-crore-2026',
+        title: 'Best 2 BHK Flats in Punawale Under 1 Crore – Supreme Riverside 2026',
+        excerpt: 'Discover the best 2 BHK flats in Punawale under 1 crore near Hinjewadi. Compare prices, amenities, and investment potential at Supreme Riverside Punawale.',
+        date: 'March 04, 2026',
+        category: 'Buying Guide',
+        author: 'Supreme Universal Research Team',
+        image: 'https://cdn.supremeuniversal.com/media/Bw3Oyo_Project-Listing-03.jpg',
+        readTime: '10 min read',
+        datePublished: '2026-03-04T12:00:00+05:30',
+        dateModified: '2026-03-04T12:00:00+05:30',
+        content: `
+            <p className="mb-6">The search for <strong>2 BHK flats in Punawale under 1 crore</strong> has skyrocketed in 2026, driven by IT professionals from Hinjewadi seeking affordable luxury near their workplace. Punawale has emerged as the smartest micro-market in West Pune, offering a rare combination of competitive pricing, rapid appreciation, and world-class infrastructure.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why Punawale for Affordable Luxury?</h3>
+            <p className="mb-6">Unlike saturated markets like Wakad and Baner where <strong>2 BHK prices</strong> have crossed well beyond ₹1 crore for basic apartments, Punawale still offers premium luxury at competitive entry points. The <a href="/blog/punawale-vs-wakad-real-estate-investment-2026" className="text-supreme-gold underline">Punawale vs Wakad comparison</a> clearly shows that Punawale delivers 25-40% more carpet area, better ventilation, and superior amenities at similar or lower price points.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">What Makes Supreme Riverside's 2 BHK Special?</h3>
+            <p className="mb-6">At <strong>Supreme Riverside Punawale</strong>, the 2 BHK apartments are engineered for maximum livability and investment returns:</p>
+            <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>Exclusive 6-per-floor layout:</strong> Unlike competitors with 8-10 units per floor, Supreme Riverside offers only 6 apartments per floor, ensuring privacy and superior cross-ventilation.</li>
+                <li className="mb-2"><strong>River views:</strong> Select units offer stunning waterfront views — a USP unmatched in the Punawale market.</li>
+                <li className="mb-2"><strong>IGBC certified:</strong> Green building standards mean lower electricity bills and a healthier living environment.</li>
+                <li className="mb-2"><strong>40+ amenities:</strong> From infinity pools to co-working hubs — residents get resort-level facilities.</li>
+                <li className="mb-2"><strong>Hinjewadi proximity:</strong> Just 10-15 minutes to Hinjewadi IT Park Phase 1, 2, and 3 via Marunji Road.</li>
+            </ul>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Investment Potential: 2 BHK in Punawale</h3>
+            <p className="mb-6">The <strong>property appreciation in Punawale</strong> has been consistently outperforming other West Pune locations. Key factors driving this appreciation include:</p>
+            <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>Pune Metro Line 3:</strong> The upcoming metro station will massively boost connectivity and demand.</li>
+                <li className="mb-2"><strong>Pune Ring Road:</strong> Direct highway-grade access bypassing city traffic entirely.</li>
+                <li className="mb-2"><strong>Rental yield:</strong> <strong>Rental income in Punawale</strong> for 2 BHK apartments near Hinjewadi ranges from ₹18,000-₹28,000/month, translating to 3.5-5% annual yield.</li>
+            </ul>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">How to Get the Best Deal</h3>
+            <p className="mb-6">To secure a <strong>2 BHK flat in Punawale near Hinjewadi</strong> at the best price, consider these tips:</p>
+            <ol className="list-decimal pl-6 mb-6 text-gray-600">
+                <li className="mb-2">Book during pre-launch or early phases for maximum discounts.</li>
+                <li className="mb-2">Opt for the <a href="/blog/supreme-riverside-rera-number-price-list-booking-2026" className="text-supreme-gold underline">construction-linked payment plan</a> to manage cash flow efficiently.</li>
+                <li className="mb-2">Compare the <strong>Supreme Riverside floor plan</strong> to competitors — the 6-per-floor advantage is real.</li>
+                <li className="mb-2">Factor in the 15-acre township premium — future resale values are always higher for large-scale developments.</li>
+            </ol>
+
+            <br />
+            <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
+                <h4 className="font-serif text-2xl text-supreme-gold mb-2">Find Your Dream 2 BHK</h4>
+                <p className="text-white/80 font-light mb-4">Explore the best 2 BHK options at Supreme Riverside Punawale. Starting at highly competitive prices with world-class amenities.</p>
+                <a href="/supreme-riverside-punawale-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Get Price List →</a>
+            </div>
+        `
+    },
+
+    // --- NEW: NRI INVESTOR ARTICLE ---
+    {
+        id: 'nri-guide-buying-property-punawale-pune-2026',
+        title: 'NRI Guide to Buying Property in Punawale, Pune – Investment & Legal Checklist 2026',
+        excerpt: 'Complete NRI guide for buying property in Punawale Pune. Covers RERA compliance, repatriation rules, power of attorney, home loans, and why Supreme Riverside is the top NRI investment.',
+        date: 'March 04, 2026',
+        category: 'Investment Guide',
+        author: 'Supreme Universal NRI Desk',
+        image: 'https://cdn.supremeuniversal.com/media/NwhG7T_x3tgCEProjectListing26min.jpg',
+        readTime: '12 min read',
+        datePublished: '2026-03-04T14:00:00+05:30',
+        dateModified: '2026-03-04T14:00:00+05:30',
+        content: `
+            <p className="mb-6">For Non-Resident Indians (NRIs) looking to invest in Indian real estate, <strong>Punawale in Pune West</strong> represents one of the most compelling opportunities in 2026. With direct connectivity to Hinjewadi IT Park, the upcoming Pune Metro Line 3, and world-class residential projects like <strong>Supreme Riverside Punawale</strong>, this guide covers everything an NRI investor needs to know.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why NRIs Are Choosing Punawale in 2026</h3>
+            <p className="mb-6">The <strong>NRI property investment in Pune</strong> landscape has shifted significantly. Punawale offers several unique advantages:</p>
+            <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>IT Proximity:</strong> Most NRI investors have family or business connections to Hinjewadi's tech ecosystem. Punawale is just 10-15 minutes away.</li>
+                <li className="mb-2"><strong>Capital Appreciation:</strong> <a href="/blog/punawale-infrastructure-connectivity-updates-2026" className="text-supreme-gold underline">Infrastructure developments</a> like the Ring Road and Metro are projected to drive 15-25% appreciation over the next 3 years.</li>
+                <li className="mb-2"><strong>Rental Income:</strong> Strong <strong>rental income potential in Punawale</strong> with IT professionals willing to pay premium rents for quality housing.</li>
+                <li className="mb-2"><strong>Quality of Life:</strong> For NRIs planning to return, projects like Supreme Riverside offer a lifestyle comparable to international standards.</li>
+            </ul>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Legal Checklist for NRI Property Purchase</h3>
+            <p className="mb-6">Here's a comprehensive legal checklist for <strong>NRI buying flat in Punawale</strong>:</p>
+            <ol className="list-decimal pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>RERA Verification:</strong> Always verify the project's MahaRERA registration. Supreme Riverside is fully RERA compliant with transparent project timelines.</li>
+                <li className="mb-2"><strong>RBI Compliance:</strong> NRIs can purchase residential properties under the Reserve Bank of India's general permission. No special approval needed.</li>
+                <li className="mb-2"><strong>Power of Attorney (PoA):</strong> If you can't be present physically, execute a Power of Attorney in favor of a trusted person. Supreme Universal's NRI desk assists with this process.</li>
+                <li className="mb-2"><strong>PAN Card:</strong> Mandatory for property registration and tax compliance in India.</li>
+                <li className="mb-2"><strong>NRE/NRO Account:</strong> Payments must be made through NRE or NRO bank accounts for repatriation eligibility.</li>
+                <li className="mb-2"><strong>TDS Compliance:</strong> A higher TDS rate (20%) applies to NRI property transactions. Plan for this in your financial calculations.</li>
+            </ol>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">NRI Home Loan Options</h3>
+            <p className="mb-6">Major banks offer specialized NRI home loan products for Indian property purchase:</p>
+            <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>SBI:</strong> Up to 80% LTV with competitive interest rates for salaried NRIs.</li>
+                <li className="mb-2"><strong>HDFC:</strong> Dedicated NRI housing finance with online application and processing.</li>
+                <li className="mb-2"><strong>ICICI Bank:</strong> Special NRI mortgage solutions with door-step service in select countries.</li>
+                <li className="mb-2"><strong>Axis Bank:</strong> Flexi home loans with balance transfer options.</li>
+            </ul>
+            <p className="mb-6">Supreme Riverside is pre-approved by all major banks, ensuring seamless loan processing for NRI buyers. Learn more about the <a href="/blog/supreme-riverside-rera-number-price-list-booking-2026" className="text-supreme-gold underline">booking process and payment plans here</a>.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why Supreme Riverside is the #1 NRI Choice</h3>
+            <p className="mb-6">Supreme Riverside stands out for NRI investors due to:</p>
+            <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>40-year developer legacy:</strong> <a href="/blog/supreme-universal-luxury-legacy-west-pune" className="text-supreme-gold underline">Supreme Universal's track record</a> of timely delivery and quality construction.</li>
+                <li className="mb-2"><strong>IGBC Green Certification:</strong> Sustainable living aligned with global environmental standards.</li>
+                <li className="mb-2"><strong>15-acre township scale:</strong> Large-format projects retain value better than standalone towers.</li>
+                <li className="mb-2"><strong>Dedicated NRI desk:</strong> Virtual site tours, PoA assistance, and end-to-end documentation support.</li>
+            </ul>
+
+            <br />
+            <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
+                <h4 className="font-serif text-2xl text-supreme-gold mb-2">NRI Investment Desk</h4>
+                <p className="text-white/80 font-light mb-4">Connect with our dedicated NRI investment team for exclusive pricing, virtual tours, and end-to-end documentation support.</p>
+                <a href="/supreme-riverside-punawale-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Connect Now →</a>
+            </div>
+        `
+    },
 ];

@@ -13,6 +13,8 @@ const ScrollProgress = () => {
         <motion.div
             className="fixed top-0 left-0 right-0 h-1 bg-supreme-gold origin-left z-[60]"
             style={{ scaleX }}
+            role="progressbar"
+            aria-label="Page scroll progress"
         />
     );
 };

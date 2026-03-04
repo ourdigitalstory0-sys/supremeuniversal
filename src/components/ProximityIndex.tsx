@@ -53,6 +53,7 @@ const ProximityIndex = () => {
                         <p className="text-gray-500 font-sans text-lg md:text-xl max-w-2xl mx-auto uppercase tracking-wider font-light">
                             Analyzing the strategic advantage of West Punawale's epicenter.
                         </p>
+                        <h3 className="sr-only">Infrastructure Proximity to Supreme Riverside Punawale — Metro, Expressway, IT Parks & Retail in West Pune 2026</h3>
                     </motion.div>
                 </div>
 

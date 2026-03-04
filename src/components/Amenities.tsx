@@ -13,8 +13,23 @@ const amenities = [
 ];
 
 const Amenities = () => {
+    const amenitySchema = {
+        "@context": "https://schema.org",
+        "@type": "Residence",
+        "name": "Supreme Riverside Punawale Amenities",
+        "description": "40+ world-class amenities at Supreme Riverside Punawale including infinity pool, gymnasium, zen garden, clubhouse, and 24/7 security.",
+        "url": "https://supreme-universal.in/supreme-riverside-punawale-amenities",
+        "amenityFeature": amenities.map(a => ({
+            "@type": "LocationFeatureSpecification",
+            "name": a.name,
+            "value": true,
+            "description": a.desc
+        }))
+    };
+
     return (
         <section id="amenities" className="py-24 md:py-32 bg-supreme-black relative overflow-hidden">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(amenitySchema) }} />
             {/* Background Texture/Gradient */}
             <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(198,168,124,0.05)_0%,transparent_50%)] pointer-events-none"></div>
 

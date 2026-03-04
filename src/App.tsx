@@ -14,6 +14,7 @@ import ROICalculator from './components/ROICalculator';
 import ProximityIndex from './components/ProximityIndex';
 import ProjectShowcase from './components/ProjectShowcase';
 import MarketTicker from './components/MarketTicker';
+import PropertyComparison from './components/PropertyComparison';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
@@ -29,6 +30,7 @@ import FAQ from './components/FAQ';
 import BlogList from './pages/BlogList';
 import BlogPost from './pages/BlogPost';
 import ProjectDetails from './pages/ProjectDetails';
+import NotFound from './pages/NotFound';
 
 function ScrollHandler() {
   const { pathname } = useLocation();
@@ -121,6 +123,7 @@ function MainApp() {
       <NeighborhoodGuide />
       <ROICalculator onEnquire={() => setIsModalOpen(true)} />
       <ProximityIndex />
+      <PropertyComparison />
       <ProjectShowcase />
       <Contact />
       <FAQ />
@@ -136,10 +139,18 @@ function App() {
     <Router>
       <ScrollHandler />
       <Routes>
-        <Route path="*" element={<MainApp />} />
+        <Route path="/" element={<MainApp />} />
+        <Route path="/supreme-riverside-punawale-overview" element={<MainApp />} />
+        <Route path="/supreme-riverside-punawale-amenities" element={<MainApp />} />
+        <Route path="/supreme-riverside-punawale-floor-plans" element={<MainApp />} />
+        <Route path="/supreme-riverside-punawale-gallery" element={<MainApp />} />
+        <Route path="/supreme-riverside-punawale-location" element={<MainApp />} />
+        <Route path="/supreme-riverside-punawale-faq" element={<MainApp />} />
+        <Route path="/supreme-riverside-punawale-contact" element={<MainApp />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/projects/:id" element={<ProjectDetails />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

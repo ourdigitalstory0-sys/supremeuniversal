@@ -9,6 +9,24 @@ import SEO from '../components/SEO';
 import { blogPosts } from '../data/blogPosts';
 
 const BlogList = () => {
+    const collectionSchema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Real Estate Blog & Market Insights | Supreme Riverside Punawale",
+        "description": "Read the latest news, market insights, and lifestyle guides about the West Pune real estate market, Punawale, Wakad, and Hinjewadi.",
+        "url": "https://supreme-universal.in/blog",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": blogPosts.map((post, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "url": `https://supreme-universal.in/blog/${post.id}`,
+                "name": post.title,
+                "image": post.image
+            }))
+        }
+    };
+
     return (
         <div className="font-sans antialiased text-gray-900 bg-white">
             <SEO
@@ -16,6 +34,7 @@ const BlogList = () => {
                 description="Read the latest news, market insights, and lifestyle guides about the West Pune real estate market, Punawale, Wakad, and Hinjewadi."
                 url="https://supreme-universal.in/blog"
             />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
             <CustomCursor />
             <NoiseOverlay />
             <Navbar />

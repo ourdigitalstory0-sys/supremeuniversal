@@ -3,7 +3,32 @@ Allow: /
 
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
+
 User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: msnbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 3
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 3
+
+User-agent: ia_archiver
 Allow: /
 
 Sitemap: https://supreme-universal.in/sitemap.xml

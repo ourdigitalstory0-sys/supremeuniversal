@@ -3,6 +3,23 @@ import { motion } from 'framer-motion';
 const NeighborhoodGuide = () => {
     return (
         <section id="neighborhood-guide" className="py-24 md:py-32 bg-white relative overflow-hidden">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "DefinedRegion",
+                    "name": "Punawale, Pune West",
+                    "description": "Punawale is a high-growth micro-market in Pune West, strategically located near Hinjewadi IT Park, Pune Metro Line 3, and Mumbai-Pune Expressway. Top choice for luxury apartments and property investment in 2026.",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "18.6327",
+                        "longitude": "73.7431"
+                    },
+                    "containedInPlace": {
+                        "@type": "City",
+                        "name": "Pune"
+                    }
+                })
+            }} />
             <div className="container mx-auto px-6 md:px-12 relative z-10 max-w-7xl">
                 <div className="flex flex-col mb-16 md:mb-24 items-center text-center">
                     <motion.div
@@ -42,15 +59,15 @@ const NeighborhoodGuide = () => {
                         <div className="space-y-6">
                             <div className="border-l-2 border-supreme-gold pl-6">
                                 <h4 className="text-xl font-serif text-supreme-black mb-2">Unmatched Connectivity</h4>
-                                <p className="text-gray-600">Just 400m from the **Punawale Metro Underpass**, offering direct access to the upcoming **Pune Metro Line 3**. Rapid transit to **Phoenix Mall of the Millennium** (4.8 km) and **Wakad**.</p>
+                                <p className="text-gray-600">Just 400m from the <strong>Punawale Metro Underpass</strong>, offering direct access to the upcoming <strong>Pune Metro Line 3</strong>. Rapid transit to <strong>Phoenix Mall of the Millennium</strong> (4.8 km) and <strong>Wakad</strong>.</p>
                             </div>
                             <div className="border-l-2 border-supreme-gold pl-6">
                                 <h4 className="text-xl font-serif text-supreme-black mb-2">Prime Retail Proximity</h4>
-                                <p className="text-gray-600">Minutes away from **D-Mart Punawale** (2.3 km) and major high-street retail hubs, ensuring everyday convenience for premium families.</p>
+                                <p className="text-gray-600">Minutes away from <strong>D-Mart Punawale</strong> (2.3 km) and major high-street retail hubs, ensuring everyday convenience for premium families.</p>
                             </div>
                             <div className="border-l-2 border-supreme-gold pl-6">
                                 <h4 className="text-xl font-serif text-supreme-black mb-2">The Ring Road Advantage</h4>
-                                <p className="text-gray-600">Strategically located to benefit from the **Pune Ring Road** expansion, driving double-digit property appreciation in **West Pune** by 2026-2027.</p>
+                                <p className="text-gray-600">Strategically located to benefit from the <strong>Pune Ring Road</strong> expansion, driving double-digit property appreciation in <strong>West Pune</strong> by 2026-2027.</p>
                             </div>
                         </div>
 

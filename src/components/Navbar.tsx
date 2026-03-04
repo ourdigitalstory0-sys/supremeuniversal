@@ -23,6 +23,7 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
         { name: 'Home', href: '/' },
         { name: 'Overview', href: '/supreme-riverside-punawale-overview' },
         { name: 'Amenities', href: '/supreme-riverside-punawale-amenities' },
+        { name: 'Floor Plans', href: '/supreme-riverside-punawale-floor-plans' },
         { name: 'Gallery', href: '/supreme-riverside-punawale-gallery' },
         { name: 'Location', href: '/supreme-riverside-punawale-location' },
         { name: 'Insights', href: '/blog' },

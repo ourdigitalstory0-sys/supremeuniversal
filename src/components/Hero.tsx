@@ -19,7 +19,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
             >
                 <img
                     src="https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
-                    alt="Supreme Riverside Punawale exterior"
+                    alt="Supreme Riverside Punawale 31-storey luxury riverside township exterior elevation near Hinjewadi IT Park Pune West"
                     className="w-full h-full object-cover opacity-80 mix-blend-overlay"
                     fetchPriority="high"
                     loading="eager"
@@ -28,6 +28,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
 
             {/* Content Container */}
             <div className="container mx-auto px-6 relative z-20 flex flex-col items-center justify-center text-center mt-20">
+                <h2 className="sr-only">Premium 2 & 3 BHK Waterfront Apartments in Punawale Near Hinjewadi — Supreme Universal Luxury Residences 2026</h2>
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -49,8 +50,10 @@ const Hero = ({ onEnquire }: HeroProps) => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.7, duration: 1 }}
                 >
-                    Widely considered the <strong>best project in Punawale 2026</strong>. Experience unprecedented <strong>waterfront luxury</strong> and the pinnacle of real estate evolution with our premium 2 & 3 BHK flats, strategically located 15 mins from Hinjewadi IT Park.
+                    Widely considered the <strong>best project in Punawale 2026</strong>. Experience unprecedented <strong>waterfront luxury</strong> and the pinnacle of real estate evolution with our premium <strong>2 & 3 BHK flats near Hinjewadi IT Park</strong>. A 15-acre IGBC certified township with <strong>31-storey towers</strong>, 40+ world-class amenities, and <strong>Pune Metro Line 3</strong> proximity.
                 </motion.p>
+                {/* Semantic heading for SEO crawlers — visually hidden */}
+                <h2 className="sr-only">Supreme Riverside Punawale – Luxury 2 & 3 BHK Waterfront Apartments Near Hinjewadi, Pune West by Supreme Universal</h2>
 
                 <motion.div
                     className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full"

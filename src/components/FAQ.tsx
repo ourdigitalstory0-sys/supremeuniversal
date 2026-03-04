@@ -55,6 +55,38 @@ const faqs = [
     {
         question: "Punawale vs Wakad: Which is better for investment in 2026?",
         answer: "While Wakad is established, Punawale offers a higher 'entry-to-appreciation' delta. With the 15-acre scale of Supreme Riverside and upcoming infrastructure like the Pune Ring Road, the property appreciation potential in Punawale is projected to outperform Wakad by 2026-2027."
+    },
+    {
+        question: "What is the Supreme Riverside RERA registration number?",
+        answer: "Supreme Riverside Punawale is a fully MahaRERA-compliant project. The RERA registration ensures complete transparency in project timelines, carpet area declarations, and financial accountability. Buyers can verify all project details on the official MahaRERA portal. For the exact registration number, please contact our sales team or visit the site office."
+    },
+    {
+        question: "What are the payment plan options for Supreme Riverside?",
+        answer: "Supreme Riverside offers 3 flexible payment plans: Construction-Linked Plan (CLP) where you pay in stages as milestones are reached, Down Payment Plan with attractive discounts for upfront payment, and a Flexi Plan for NRI buyers and salaried professionals. The project is pre-approved by HDFC, SBI, ICICI, Axis Bank, and Bank of Baroda."
+    },
+    {
+        question: "Is Supreme Riverside a good choice for NRI investors?",
+        answer: "Absolutely. Supreme Riverside is one of the top NRI investment choices in Pune West. With a dedicated NRI desk offering virtual site tours, Power of Attorney assistance, and end-to-end documentation support, the entire buying process is seamless. The IGBC-certified 15-acre township by Supreme Universal (40-year legacy) ensures your investment is safe and appreciating."
+    },
+    {
+        question: "What is the carpet area of 2 BHK and 3 BHK in Supreme Riverside?",
+        answer: "Supreme Riverside offers spacious carpet areas in both 2 BHK and 3 BHK configurations, designed for maximum livability with only 6 units per floor for superior privacy and ventilation. The exact carpet areas are available in the official floor plan brochure. Contact our sales team for the detailed layout with dimensions."
+    },
+    {
+        question: "How is the rental income potential in Punawale near Hinjewadi?",
+        answer: "Punawale offers excellent rental income potential, especially for properties near Hinjewadi IT Park. 2 BHK apartments in Supreme Riverside can command monthly rents of ₹18,000-₹28,000, translating to 3.5-5% annual yield. With Metro Line 3 and Ring Road developments, rental demand is set to increase significantly."
+    },
+    {
+        question: "What is the current construction status of Supreme Riverside Punawale?",
+        answer: "Supreme Riverside Punawale is progressing as per committed MahaRERA timelines. Supreme Universal is known for timely delivery across their 70+ delivered projects in Mumbai and Pune. For the latest construction progress, drone footage, and phase-wise updates, please schedule a site visit or contact our sales team."
+    },
+    {
+        question: "Are there bank loan options approved for Supreme Riverside?",
+        answer: "Yes, Supreme Riverside is pre-approved by all major Indian banks including HDFC, SBI, ICICI Bank, Axis Bank, and Bank of Baroda. This ensures hassle-free home loan processing with competitive interest rates. NRI-specific home loan options are also available through these banks."
+    },
+    {
+        question: "What makes Supreme Riverside different from other Punawale projects?",
+        answer: "Supreme Riverside stands apart with 5 key differentiators: (1) 15-acre IGBC-certified township — the largest in Punawale, (2) Only 6 apartments per floor for maximum privacy, (3) 31-storey towers with panoramic river views, (4) 40+ multi-tier amenities including skywalk, infinity pool, and co-working hub, and (5) Supreme Universal's 40-year legacy of premium quality and timely delivery."
     }
 ];
 

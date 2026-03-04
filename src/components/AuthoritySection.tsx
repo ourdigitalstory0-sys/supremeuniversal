@@ -25,8 +25,32 @@ const achievements = [
 ];
 
 const AuthoritySection = () => {
+    const ratingSchema = {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Supreme Universal",
+        "description": "Ultra-luxury real estate developer with 40+ years legacy and 70+ delivered projects across Mumbai and Pune.",
+        "url": "https://supreme-universal.in/",
+        "image": "https://cdn.supremeuniversal.com/media/supreme-logo.png",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "2450",
+            "reviewCount": "1870"
+        },
+        "award": [
+            "Realty Plus Excellence Award 2023",
+            "Property Guru Asia Awards",
+            "CREDAI Golden Pillar Award",
+            "Ultra Luxury Developer Award"
+        ]
+    };
+
     return (
         <section className="py-24 bg-supreme-black text-white overflow-hidden">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ratingSchema) }} />
             <div className="container mx-auto px-6 md:px-12">
                 <div className="text-center mb-16">
                     <motion.div

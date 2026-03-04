@@ -1,21 +1,23 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { TrendingUp, Download } from 'lucide-react';
+import { TrendingUp, Download, CheckCircle2 } from 'lucide-react';
+import { portfolioProjects } from '../data/portfolioProjects';
 
 const ROICalculator = ({ onEnquire }: { onEnquire: () => void }) => {
+    const [selectedProjectId, setSelectedProjectId] = useState(portfolioProjects[0].id);
     const [investment, setInvestment] = useState(90); // in Lakhs
     const [years, setYears] = useState(3);
-    const [appreciationRate] = useState(12); // Standard growth
     const [estimatedValue, setEstimatedValue] = useState(0);
 
-    // Punawale-specific infrastructure boost (Metro + Ring Road)
-    const infraBoost = 5; // Extra 5% for Punawale by 2026
+    const selectedProject = portfolioProjects.find(p => p.id === selectedProjectId) || portfolioProjects[0];
+    const appreciationRate = 12; // Base rate
+    const infraBoost = (selectedProject.appreciationMultiplier - 1) * 100;
 
     useEffect(() => {
         const totalRate = appreciationRate + infraBoost;
         const finalValue = investment * Math.pow(1 + totalRate / 100, years);
         setEstimatedValue(parseFloat(finalValue.toFixed(2)));
-    }, [investment, years, appreciationRate]);
+    }, [investment, years, selectedProjectId]);
 
     return (
         <section id="roi-calculator" className="py-24 md:py-32 bg-white relative overflow-hidden">
@@ -37,8 +39,26 @@ const ROICalculator = ({ onEnquire }: { onEnquire: () => void }) => {
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-supreme-black leading-tight mb-8">
                             Projected Growth <span className="italic font-light text-supreme-gold">Calculator</span>
                         </h2>
+
+                        {/* Project Sector Selector */}
+                        <div className="flex flex-wrap gap-2 mb-8">
+                            {portfolioProjects.map(p => (
+                                <button
+                                    key={p.id}
+                                    onClick={() => setSelectedProjectId(p.id)}
+                                    className={`px-4 py-2 text-[10px] uppercase font-bold tracking-widest border transition-all ${selectedProjectId === p.id
+                                        ? 'bg-supreme-gold border-supreme-gold text-white'
+                                        : 'border-gray-200 text-gray-400 hover:border-supreme-gold hover:text-supreme-gold'
+                                        }`}
+                                >
+                                    {p.name.split(' ')[1] || p.name}
+                                </button>
+                            ))}
+                        </div>
+
                         <p className="text-gray-600 font-sans text-lg leading-relaxed mb-8 max-w-xl">
-                            With the **Pune Metro Line 3** and **Pune Ring Road** surges, Punawale properties are projected to outperform the city average. Use our tool to estimate your **Supreme Riverside ROI** by 2026-2028.
+                            Analyzing <strong>{selectedProject.location}</strong> growth metrics.
+                            Infrastructure boost of <span className="text-supreme-gold font-bold">{infraBoost.toFixed(0)}%</span> applied based on 2026 markers.
                         </p>
 
                         <div className="space-y-8 mb-12">
@@ -54,6 +74,7 @@ const ROICalculator = ({ onEnquire }: { onEnquire: () => void }) => {
                                     value={investment}
                                     onChange={(e) => setInvestment(parseInt(e.target.value))}
                                     className="w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-supreme-gold"
+                                    aria-label="Initial investment amount in Lakhs"
                                 />
                             </div>
 
@@ -69,6 +90,7 @@ const ROICalculator = ({ onEnquire }: { onEnquire: () => void }) => {
                                     value={years}
                                     onChange={(e) => setYears(parseInt(e.target.value))}
                                     className="w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-supreme-gold"
+                                    aria-label="Investment holding period in years"
                                 />
                             </div>
                         </div>
@@ -97,16 +119,22 @@ const ROICalculator = ({ onEnquire }: { onEnquire: () => void }) => {
                             <TrendingUp className="w-12 h-12 text-supreme-gold/20" />
                         </div>
 
-                        <h4 className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-4">Estimated Property Value</h4>
+                        <h4 className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-4">Estimated {selectedProject.name} Value</h4>
                         <div className="text-5xl md:text-7xl lg:text-8xl font-serif text-supreme-gold mb-6 tracking-tighter">
                             ₹ {estimatedValue}L*
                         </div>
 
                         <div className="h-[1px] w-24 bg-supreme-gold/30 mx-auto mb-8"></div>
 
-                        <p className="text-white/80 font-sans text-sm md:text-base leading-relaxed mb-10 max-w-sm mx-auto">
-                            Including the <span className="text-supreme-gold font-bold">17% Annual Appreciation Surge</span> expected for luxury units in West Punawale.
-                        </p>
+                        <div className="flex flex-col gap-4 mb-10">
+                            <div className="flex items-center justify-center gap-2 text-white/80 text-sm">
+                                <CheckCircle2 className="w-4 h-4 text-supreme-gold" />
+                                <span>{(appreciationRate + infraBoost).toFixed(0)}% Annual Compound Growth</span>
+                            </div>
+                            <p className="text-white/60 font-sans text-xs italic">
+                                Optimized for {selectedProject.location} markers.
+                            </p>
+                        </div>
 
                         <div className="grid grid-cols-2 gap-4">
                             <div className="bg-white/5 p-4 border border-white/5">
@@ -115,12 +143,12 @@ const ROICalculator = ({ onEnquire }: { onEnquire: () => void }) => {
                             </div>
                             <div className="bg-white/5 p-4 border border-white/5">
                                 <div className="text-supreme-gold font-serif text-xl mb-1">+{(estimatedValue / investment * 100 - 100).toFixed(0)}%</div>
-                                <div className="text-white/40 text-[10px] uppercase tracking-widest">Growth Yield</div>
+                                <div className="text-white/40 text-[10px] uppercase tracking-widest">Total Yield</div>
                             </div>
                         </div>
 
                         <p className="text-white/20 text-[10px] mt-10 italic">
-                            *Projections based on 2026 infrastructure reports and current market trends.
+                            *Projections based on 2026-2030 infrastructure roadmap.
                         </p>
                     </motion.div>
                 </div>

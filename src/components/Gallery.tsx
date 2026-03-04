@@ -13,6 +13,22 @@ const Gallery = () => {
 
     return (
         <section id="gallery" className="py-24 md:py-32 bg-supreme-gray relative overflow-hidden">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "ImageGallery",
+                    "name": "Supreme Riverside Punawale Photo Gallery",
+                    "description": "Explore luxury interiors, amenities, and architectural views of Supreme Riverside Punawale 2 & 3 BHK apartments near Hinjewadi.",
+                    "url": "https://supreme-universal.in/supreme-riverside-punawale-gallery",
+                    "image": images.map(img => ({
+                        "@type": "ImageObject",
+                        "name": img.title,
+                        "contentUrl": img.src,
+                        "description": img.alt,
+                        "thumbnail": img.src
+                    }))
+                })
+            }} />
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="flex flex-col mb-16 md:mb-24 items-center text-center">
                     <motion.div

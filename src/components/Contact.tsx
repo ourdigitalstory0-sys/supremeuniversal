@@ -7,6 +7,75 @@ const Contact = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
+    const eventSchema = {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Supreme Riverside Punawale - Exclusive Site Visit",
+        "description": "Schedule a private tour of Supreme Riverside Punawale luxury 2 & 3 BHK waterfront apartments near Hinjewadi IT Park, Pune.",
+        "startDate": "2026-03-01",
+        "endDate": "2026-12-31",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+            "@type": "Place",
+            "name": "Supreme Riverside Site Experience Center",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Near Lotus Business School, Punawale",
+                "addressLocality": "Pune",
+                "addressRegion": "Maharashtra",
+                "postalCode": "411033",
+                "addressCountry": "IN"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Supreme Universal",
+            "url": "https://supreme-universal.in/"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://supreme-universal.in/supreme-riverside-punawale-contact"
+        }
+    };
+
+    const howToSchema = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Book a Flat at Supreme Riverside Punawale",
+        "description": "A simple 5-step process to book your luxury 2 or 3 BHK waterfront apartment at Supreme Riverside, near Hinjewadi, Pune.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Register Enquiry",
+                "text": "Fill out the contact form with your name, phone number, and preferred configuration (2 BHK or 3 BHK)."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Schedule a Virtual or Physical Site Visit",
+                "text": "Our sales expert will contact you to schedule a site tour at our Punawale experience center or a virtual tour via video call."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Explore Floor Plans & Inventory",
+                "text": "Visit the site to explore the master layout, sample flat, available tower inventory, and specific waterfront views."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Select Unit & Make Token Payment",
+                "text": "Block your preferred apartment by paying the initial token booking amount."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Complete Paperwork",
+                "text": "Sign the agreement and complete the registration process to officially own your home at Supreme Riverside."
+            }
+        ]
+    };
+
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
@@ -30,6 +99,8 @@ const Contact = () => {
 
     return (
         <section id="contact" className="py-24 md:py-32 bg-supreme-black text-white relative overflow-hidden">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
             {/* Decorative bg */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-supreme-gold/10 rounded-full blur-[100px] transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
 

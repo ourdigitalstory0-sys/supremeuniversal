@@ -7,6 +7,24 @@ const LeadPopup = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
+    const actionSchema = {
+        "@context": "https://schema.org",
+        "@type": "CommunicateAction",
+        "name": "Enquire About Supreme Riverside Punawale",
+        "description": "Request a callback or schedule a private site visit for Supreme Riverside luxury 2 & 3 BHK apartments in Punawale, Pune.",
+        "target": "https://supreme-universal.in/supreme-riverside-punawale-contact",
+        "agent": {
+            "@type": "Organization",
+            "name": "Supreme Universal",
+            "telephone": "+917744009295"
+        },
+        "object": {
+            "@type": "RealEstateListing",
+            "name": "Supreme Riverside Punawale",
+            "url": "https://supreme-universal.in/"
+        }
+    };
+
     useEffect(() => {
         // Check if we've already shown the popup in this session
         const hasShownPopup = sessionStorage.getItem('leadPopupShown');
@@ -75,6 +93,7 @@ const LeadPopup = () => {
         <AnimatePresence>
             {isVisible && (
                 <>
+                    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(actionSchema) }} />
                     {/* Backdrop */}
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -99,7 +118,7 @@ const LeadPopup = () => {
                                 <img
                                     src="https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
                                     className="absolute inset-0 w-full h-full object-cover opacity-60"
-                                    alt="Luxury Residence"
+                                    alt="Supreme Riverside Punawale luxury 2 and 3 BHK apartments near Hinjewadi"
                                     loading="lazy"
                                     decoding="async"
                                 />

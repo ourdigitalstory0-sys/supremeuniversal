@@ -35,29 +35,70 @@ const ProjectDetails = () => {
                 <meta name="keywords" content={project.seo.keywords} />
                 <link rel="canonical" href={`https://supreme-universal.in/projects/${project.id}`} />
 
-                {/* JSON-LD Structured Data for Real Estate Project */}
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content={project.seo.title} />
+                <meta property="og:description" content={project.seo.description} />
+                <meta property="og:image" content={project.image.startsWith('http') ? project.image : `https://supreme-universal.in${project.image}`} />
+                <meta property="og:url" content={`https://supreme-universal.in/projects/${project.id}`} />
+
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={project.seo.title} />
+                <meta name="twitter:description" content={project.seo.description} />
+
+                {/* Enhanced RealEstateListing Schema */}
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "RealEstateListing",
                         "name": project.name,
                         "description": project.seo.description,
-                        "image": project.image,
+                        "image": project.image.startsWith('http') ? project.image : `https://supreme-universal.in${project.image}`,
                         "url": `https://supreme-universal.in/projects/${project.id}`,
                         "address": {
                             "@type": "PostalAddress",
                             "streetAddress": project.fullLocation,
-                            "addressLocality": project.location.split(',')[0],
+                            "addressLocality": project.location.split(',')[0].trim(),
                             "addressRegion": "Maharashtra",
-                            "addressCountry": "IN"
+                            "addressCountry": "IN",
+                            "postalCode": project.fullLocation.match(/\d{6}/)?.[0] || ""
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": "18.6517",
+                            "longitude": "73.7483"
                         },
                         "offers": {
                             "@type": "Offer",
                             "itemOffered": {
                                 "@type": "Accommodation",
-                                "name": project.type
+                                "name": project.type,
+                                "numberOfRooms": project.type.match(/\d/)?.[0] || "3",
+                                "amenityFeature": project.amenities.map(a => ({
+                                    "@type": "LocationFeatureSpecification",
+                                    "name": a.title
+                                }))
+                            },
+                            "seller": {
+                                "@type": "RealEstateAgent",
+                                "name": "Supreme Universal",
+                                "url": "https://supreme-universal.in/"
                             }
                         }
+                    })}
+                </script>
+
+                {/* BreadcrumbList Schema */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://supreme-universal.in/" },
+                            { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://supreme-universal.in/projects" },
+                            { "@type": "ListItem", "position": 3, "name": project.name, "item": `https://supreme-universal.in/projects/${project.id}` }
+                        ]
                     })}
                 </script>
             </Helmet>

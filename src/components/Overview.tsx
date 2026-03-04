@@ -19,7 +19,7 @@ const Overview = () => {
                             <div className="aspect-[4/5] overflow-hidden rounded-t-[140px] rounded-b-none relative z-10 shadow-2xl">
                                 <img
                                     src="https://cdn.supremeuniversal.com/media/designthatelevate_jSxOmi.jpg"
-                                    alt="Supreme Riverside Luxury Living"
+                                    alt="Supreme Riverside Punawale 15-acre luxury riverside township exterior view with 31-storey towers near Hinjewadi IT Park Pune"
                                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-[2s] ease-out"
                                     loading="lazy"
                                     decoding="async"
@@ -102,9 +102,29 @@ const Overview = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5, duration: 0.8 }}
-                                className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
+                                className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
                                 Here, the gentle flow of the river meets cutting-edge architecture. Enjoy generous spaces, abundant natural light, and a community that shares your vision of grandeur. With a firmly committed <strong>Supreme Riverside possession date</strong>, you can secure your luxury future in the most sought-after <strong>apartments near Hinjewadi IT Park</strong>.
+                            </motion.p>
+
+                            <motion.h3
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.52, duration: 0.8 }}
+                                className="text-2xl md:text-3xl font-serif text-supreme-black mb-6"
+                            >
+                                RERA Certified. <span className="italic text-supreme-gold">IGBC Green.</span>
+                            </motion.h3>
+
+                            <motion.p
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.55, duration: 0.8 }}
+                                className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
+                            >
+                                As a fully <strong>MahaRERA-compliant</strong> development with <strong>IGBC Green Building Certification</strong>, Supreme Riverside represents the gold standard in sustainable luxury. Pre-approved by <strong>HDFC, SBI, ICICI, and Axis Bank</strong>, this is the most trusted <strong>new project in Punawale 2026</strong> for families, IT professionals, and <strong>NRI investors</strong> alike.
                             </motion.p>
 
                             <motion.div

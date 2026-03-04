@@ -4,8 +4,24 @@ import { Link } from 'react-router-dom';
 import { portfolioProjects } from '../data/portfolioProjects';
 
 const ProjectShowcase = () => {
+    const itemListSchema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Supreme Universal Pune Project Portfolio",
+        "description": "Explore Supreme Universal's luxury real estate portfolio across Pune's prime corridors.",
+        "numberOfItems": portfolioProjects.length,
+        "itemListElement": portfolioProjects.map((project, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": project.name,
+            "url": `https://supreme-universal.in/projects/${project.id}`,
+            "image": project.image.startsWith('http') ? project.image : `https://supreme-universal.in${project.image}`
+        }))
+    };
+
     return (
         <section id="portfolio" className="py-24 md:py-32 bg-white relative overflow-hidden">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8">
                     <motion.div

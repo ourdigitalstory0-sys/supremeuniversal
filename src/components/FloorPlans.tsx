@@ -80,7 +80,13 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                                                         ? "https://cdn.supremeuniversal.com/media/1aejSz_FXHCOKProjectListing23min.jpg"
                                                         : "https://cdn.supremeuniversal.com/media/t4mf35_WtizuRsupremeelysiamin.jpg"
                                             }
-                                            alt={`${activeTab} Floor Plan`}
+                                            alt={
+                                                activeTab === 'Master'
+                                                    ? "Supreme Riverside Punawale Master Layout Plan - 15 acre IGBC township with 31-storey towers and 40+ amenities"
+                                                    : activeTab === '2BHK'
+                                                        ? "Supreme Riverside Punawale 2 BHK Floor Plan Layout - Carpet Area 750-850 sqft with river view and cross ventilation"
+                                                        : "Supreme Riverside Punawale 3 BHK Premium Floor Plan Layout - Carpet Area 1050-1150 sqft with panoramic riverside views"
+                                            }
                                             className="w-full h-full object-cover"
                                             loading="lazy"
                                             decoding="async"

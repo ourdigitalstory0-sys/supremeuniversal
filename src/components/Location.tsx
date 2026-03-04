@@ -4,6 +4,33 @@ import { Navigation, Landmark, Train } from 'lucide-react';
 const Location = () => {
     return (
         <section id="location" className="py-24 md:py-32 bg-white relative overflow-hidden">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Place",
+                    "name": "Supreme Riverside Punawale",
+                    "description": "Ultra-luxury 2 & 3 BHK riverside apartments near Hinjewadi IT Park, Pune Metro Line 3, and Mumbai-Pune Expressway Bypass.",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road",
+                        "addressLocality": "Punawale",
+                        "addressRegion": "Pune, Maharashtra",
+                        "postalCode": "411033",
+                        "addressCountry": "IN"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "18.6327",
+                        "longitude": "73.7431"
+                    },
+                    "containedInPlace": {
+                        "@type": "City",
+                        "name": "Pune",
+                        "containedInPlace": { "@type": "State", "name": "Maharashtra" }
+                    },
+                    "hasMap": "https://maps.app.goo.gl/YourMapLink"
+                })
+            }} />
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
 
@@ -28,10 +55,10 @@ const Location = () => {
                             </h2>
 
                             <p className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-lg">
-                                Punawale is strategically positioned along the **Mumbai-Pune Expressway Bypass**, emerging as one of the fastest-appreciating real estate markets in **Pune West**. With the upcoming **Pune Metro Line 3 (Hinjewadi-Shivajinagar corridor)** and the proposed **Pune Ring Road**, connectivity to **Hinjewadi IT Park**, **Wakad**, and **Baner** is reaching new heights.
+                                Punawale is strategically positioned along the <strong>Mumbai-Pune Expressway Bypass</strong>, emerging as one of the fastest-appreciating real estate markets in <strong>Pune West</strong>. With the upcoming <strong>Pune Metro Line 3 (Hinjewadi-Shivajinagar corridor)</strong> and the proposed <strong>Pune Ring Road</strong>, connectivity to <strong>Hinjewadi IT Park</strong>, <strong>Wakad</strong>, and <strong>Baner</strong> is reaching new heights.
                             </p>
                             <p className="text-gray-600 font-light leading-relaxed mb-8">
-                                Our site near **Chhatrapati Shivaji Maharaj Chowk** on **Tathawade Road** offers a unique blend of urban accessibility and serene **waterfront living**, making it the premier choice for professionals seeking the **top projects in Punawale 2026**.
+                                Our site near <strong>Chhatrapati Shivaji Maharaj Chowk</strong> on <strong>Tathawade Road</strong> offers a unique blend of urban accessibility and serene <strong>waterfront living</strong>, making it the premier choice for professionals seeking the <strong>top projects in Punawale 2026</strong>.
                             </p>
 
                             <div className="space-y-8">
