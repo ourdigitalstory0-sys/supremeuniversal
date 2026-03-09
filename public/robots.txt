@@ -1,33 +1,24 @@
+# Optimized robots.txt for Supreme Riverside - 2026
 User-agent: *
 Allow: /
+Disallow: /*?s=
+Disallow: /*?filter=
+Disallow: /api/
+Disallow: /private/
 
+# Googlebot specific optimizations
 User-agent: Googlebot
 Allow: /
+Allow: /assets/*.js
+Allow: /assets/*.css
+Disallow: /*?search=
+Max-image-preview: large
 
-User-agent: Googlebot-Image
-Allow: /
-
+# Crawler Delay for non-Google bots (to save server resources)
 User-agent: Bingbot
-Allow: /
-Crawl-delay: 2
-
-User-agent: msnbot
-Allow: /
-Crawl-delay: 2
-
-User-agent: Slurp
-Allow: /
-Crawl-delay: 3
-
-User-agent: DuckDuckBot
-Allow: /
-Crawl-delay: 2
+Crawl-delay: 1
 
 User-agent: Yandex
-Allow: /
-Crawl-delay: 3
-
-User-agent: ia_archiver
-Allow: /
+Disallow: /
 
 Sitemap: https://supreme-universal.in/sitemap.xml

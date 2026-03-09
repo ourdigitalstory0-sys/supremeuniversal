@@ -1,165 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://supreme-universal.in/</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-riverside-overview</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-riverside-amenities</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-riverside-floor-plans</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-riverside-gallery</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-riverside-location</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-riverside-faq</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-riverside-contact</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/blog</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/ultimate-guide-buying-property-punawale-pune</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/punawale-infrastructure-connectivity-updates-2026</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/supreme-universal-luxury-legacy-west-pune</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/top-schools-hospitals-near-punawale</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/punawale-vs-wakad-real-estate-investment-2026</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/luxury-amenities-pune-apartments</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/supreme-riverside-punawale-definitive-guide-15-acre-legacy</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/supreme-riverside-rera-number-price-list-booking-2026</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/best-2-bhk-flats-punawale-under-1-crore-2026</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/nri-guide-buying-property-punawale-pune-2026</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/future-of-punawale-real-estate-pune-2026-2030</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/property-investment-near-hinjewadi-it-hub-pune</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/benefits-of-riverside-living-pune-luxury-lifestyle</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://supreme-universal.in/blog/2-bhk-vs-3-bhk-investment-punawale-pune-2026</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-towers</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://supreme-universal.in/assets/projects/actual-towers.jpg</image:loc>
+      <image:title>Supreme Towers - Luxury Apartments in Mundhwa, Pune East</image:title>
+      <image:caption>Experience the pinnacle of East Pune at Supreme Towers Mundhwa. Luxury 3, 4, 5 & 6 BHK residences with Sky Walk connectivity. Minutes from EON IT Park and Magarpatta South. Possession 2027.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-villagio</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://supreme-universal.in/assets/projects/actual-villagio.jpg</image:loc>
+      <image:title>Supreme Villagio - Luxury Apartments in Somatane, Pune North</image:title>
+      <image:caption>European style villa living at Supreme Villagio Somatane. Luxury row houses and villas near Mumbai-Pune Expressway. 5 mins from upcoming Ring Road connectivity.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-estia</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://supreme-universal.in/assets/projects/actual-estia.jpg</image:loc>
+      <image:title>Supreme Estia - Luxury Apartments in Baner, Pune West</image:title>
+      <image:caption>Supreme Estia offers ultra-premium residences in the heart of Baner. Steps from Balewadi High Street and upcoming Metro Station. High-appreciation luxury flats in Pune West.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-wakad</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://supreme-universal.in/assets/projects/actual-wakad.jpg</image:loc>
+      <image:title>Supreme Wakad - Luxury Apartments in Wakad, Pune West</image:title>
+      <image:caption>Supreme Wakad offers visionary smart residences at the Wakad-Hinjewadi Link Road. Luxury 3 & 4 BHK apartments with rooftop sky-club. Pre-launching now.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/ultimate-guide-buying-property-punawale-pune</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg</image:loc>
+      <image:title>Ultimate Guide to Buying Property in Punawale, Pune (2026 Edition)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/punawale-infrastructure-connectivity-updates-2026</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/Punawale-Location.jpg</image:loc>
+      <image:title>Upcoming Infrastructure in Punawale: Impact on IT Hub Property Demand</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/supreme-universal-luxury-legacy-west-pune</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/NwhG7T_x3tgCEProjectListing26min.jpg</image:loc>
+      <image:title>Supreme Universal: 40 Years of Luxury Real Estate Legacy in Pune</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/top-schools-hospitals-near-punawale</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/Bw3Oyo_Project-Listing-03.jpg</image:loc>
+      <image:title>Family Friendly Residential Projects in Punawale: Schools & Highlights</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/punawale-vs-wakad-real-estate-investment-2026</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/1aejSz_FXHCOKProjectListing23min.jpg</image:loc>
+      <image:title>Punawale vs Wakad: Which is the Better Real Estate Investment in 2026?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/luxury-amenities-pune-apartments</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/dPOXN1_EP32SPCopyofProjectListing29min.jpg</image:loc>
+      <image:title>3 BHK River View Apartments in Punawale: The Luxury Blueprint</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/supreme-riverside-punawale-definitive-guide-15-acre-legacy</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg</image:loc>
+      <image:title>Supreme Riverside Punawale: The Definitive Guide to a 15-Acre Riverside Legacy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/supreme-riverside-rera-number-price-list-booking-2026</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg</image:loc>
+      <image:title>Supreme Riverside RERA Number, Price List & Booking – Complete Guide 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/best-2-bhk-flats-punawale-under-1-crore-2026</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/Bw3Oyo_Project-Listing-03.jpg</image:loc>
+      <image:title>Best 2 BHK Flats in Punawale Under 1 Crore – Supreme Riverside 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/nri-guide-buying-property-punawale-pune-2026</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/NwhG7T_x3tgCEProjectListing26min.jpg</image:loc>
+      <image:title>NRI Guide to Buying Property in Punawale, Pune – Investment & Legal Checklist 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/future-of-punawale-real-estate-pune-2026-2030</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/Punawale-Location.jpg</image:loc>
+      <image:title>The Future of Punawale Real Estate: A 2026-2030 Growth Outlook</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/property-investment-near-hinjewadi-it-hub-pune</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/NwhG7T_x3tgCEProjectListing26min.jpg</image:loc>
+      <image:title>Best Property Investment Near Hinjewadi IT Hub: Why Punawale Wins</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/benefits-of-riverside-living-pune-luxury-lifestyle</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg</image:loc>
+      <image:title>The Benefits of Riverside Living: Elevate Your Lifestyle in West Pune</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/blog/2-bhk-vs-3-bhk-investment-punawale-pune-2026</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/Bw3Oyo_Project-Listing-03.jpg</image:loc>
+      <image:title>2 BHK vs 3 BHK Investment in Pune: Which Offers Better ROI?</image:title>
+    </image:image>
   </url>
 </urlset>
