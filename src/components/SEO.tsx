@@ -168,7 +168,7 @@ const SEO = ({
                                 "value": "true"
                             }
                         ],
-                        "tourBookingPage": `${url}supreme-riverside-punawale-contact`,
+                        "tourBookingPage": `${domain}/supreme-riverside-contact`,
                         "numberOfAccommodationUnits": "Multiple towers with 2 & 3 BHK apartments",
                         "petsAllowed": "True",
                         "telephone": "+917744009295",
@@ -204,8 +204,7 @@ const SEO = ({
                         "@type": "LocalBusiness",
                         "name": "Supreme Riverside Site Office",
                         "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
-                        "@id": "https://supreme-universal.in/location",
-                        "url": "https://supreme-universal.in/supreme-riverside-punawale-location",
+                        "url": "https://supreme-universal.in/supreme-riverside-location",
                         "telephone": "+917744009295",
                         "priceRange": "₹₹₹",
                         "address": {

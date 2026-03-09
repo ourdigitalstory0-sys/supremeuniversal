@@ -7,6 +7,7 @@ import Contact from '../components/Contact';
 import { MapPin, Calendar, Building2, CheckCircle2, ArrowLeft, Shield } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
+import SEO from '../components/SEO';
 import QuickEnquireModal from '../components/QuickEnquireModal';
 
 const ProjectDetails = () => {
@@ -29,24 +30,13 @@ const ProjectDetails = () => {
 
     return (
         <div className="bg-white min-h-screen">
+            <SEO
+                title={project.seo.title}
+                description={project.seo.description}
+                url={`https://supreme-universal.in/projects/${project.id}`}
+                image={project.image.startsWith('http') ? project.image : `https://supreme-universal.in${project.image}`}
+            />
             <Helmet>
-                <title>{project.seo.title}</title>
-                <meta name="description" content={project.seo.description} />
-                <meta name="keywords" content={project.seo.keywords} />
-                <link rel="canonical" href={`https://supreme-universal.in/projects/${project.id}`} />
-
-                {/* Open Graph */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content={project.seo.title} />
-                <meta property="og:description" content={project.seo.description} />
-                <meta property="og:image" content={project.image.startsWith('http') ? project.image : `https://supreme-universal.in${project.image}`} />
-                <meta property="og:url" content={`https://supreme-universal.in/projects/${project.id}`} />
-
-                {/* Twitter */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content={project.seo.title} />
-                <meta name="twitter:description" content={project.seo.description} />
-
                 {/* Enhanced RealEstateListing Schema */}
                 <script type="application/ld+json">
                     {JSON.stringify({
