@@ -38,7 +38,7 @@ const Contact = () => {
             "price": "0",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
-            "url": "https://supreme-universal.in/supreme-riverside-punawale-contact"
+            "url": "https://supreme-universal.in/supreme-riverside-contact"
         }
     };
 

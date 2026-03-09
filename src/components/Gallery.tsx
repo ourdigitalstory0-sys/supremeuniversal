@@ -19,7 +19,7 @@ const Gallery = () => {
                     "@type": "ImageGallery",
                     "name": "Supreme Riverside Punawale Photo Gallery",
                     "description": "Explore luxury interiors, amenities, and architectural views of Supreme Riverside Punawale 2 & 3 BHK apartments near Hinjewadi.",
-                    "url": "https://supreme-universal.in/supreme-riverside-punawale-gallery",
+                    "url": "https://supreme-universal.in/supreme-riverside-gallery",
                     "image": images.map(img => ({
                         "@type": "ImageObject",
                         "name": img.title,
@@ -88,7 +88,7 @@ const Gallery = () => {
                         viewport={{ once: true }}
                     >
                         <Link
-                            to="/supreme-riverside-punawale-contact"
+                            to="/supreme-riverside-contact"
                             className="inline-flex items-center justify-center gap-4 text-supreme-black font-sans font-semibold uppercase tracking-[0.15em] text-xs hover:text-supreme-gold transition-colors"
                         >
                             <span>Schedule a Visit</span>

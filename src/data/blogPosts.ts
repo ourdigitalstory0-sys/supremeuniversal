@@ -48,7 +48,7 @@ export const blogPosts: BlogPostType[] = [
             <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
                 <h4 className="font-serif text-2xl text-supreme-gold mb-2">Ready to Upgrade Your Lifestyle?</h4>
                 <p className="text-white/80 font-light mb-4">Discover Supreme Riverside Punawale—an exclusive waterfront community. From private luxury to expansive views, float where few ever reach.</p>
-                <a href="/supreme-riverside-punawale-overview#contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Enquire Now</a>
+                <a href="/supreme-riverside-overview#contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Enquire Now</a>
             </div>
         `
     },
@@ -95,7 +95,7 @@ export const blogPosts: BlogPostType[] = [
             <p className="mb-6">A Supreme Universal home is more than an apartment; it is an ecosystem. We believe that true luxury lies in the details—the sourcing of the finest global materials, the optimization of natural light, and the integration of biophilic design elements. <a href="/blog/ultimate-guide-buying-property-punawale-pune" className="text-supreme-gold underline">Homebuyers in Punawale</a> now have the opportunity to experience this <strong>timeless luxury real estate evolution</strong>.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Bringing Unmatched Luxury to Punawale</h3>
-            <p className="mb-6">With the launch of <strong>Supreme Riverside</strong>, we are elevating the residential standards of Punawale. Combining our 40-year legacy with a pristine waterfront location, this project introduces multi-tier podium amenities, intelligent home layouts, and an exclusive community atmosphere that West Pune has never seen before. <a href="/supreme-riverside-punawale-contact" className="text-supreme-gold underline">Enquire today</a> to secure your piece of Supreme luxury.</p>
+            <p className="mb-6">With the launch of <strong>Supreme Riverside</strong>, we are elevating the residential standards of Punawale. Combining our 40-year legacy with a pristine waterfront location, this project introduces multi-tier podium amenities, intelligent home layouts, and an exclusive community atmosphere that West Pune has never seen before. <a href="/supreme-riverside-contact" className="text-supreme-gold underline">Enquire today</a> to secure your piece of Supreme luxury.</p>
         `
     },
 
@@ -109,7 +109,7 @@ export const blogPosts: BlogPostType[] = [
         author: 'Supreme Universal Research Team',
         image: 'https://cdn.supremeuniversal.com/media/Bw3Oyo_Project-Listing-03.jpg',
         content: `
-            <p className="mb-6">When families consider upgrading to a premium residential community like <a href="/supreme-riverside-punawale-overview#overview" className="text-supreme-gold underline">Supreme Riverside Punawale</a>, the first question is always about the social infrastructure. A luxury home must be surrounded by world-class educational and healthcare facilities. Fortunately, <a href="/blog/ultimate-guide-buying-property-punawale-pune" className="text-supreme-gold underline">Punawale's strategic location</a> places it at the epicenter of West Pune's finest institutions.</p>
+            <p className="mb-6">When families consider upgrading to a premium residential community like <a href="/supreme-riverside-overview#overview" className="text-supreme-gold underline">Supreme Riverside Punawale</a>, the first question is always about the social infrastructure. A luxury home must be surrounded by world-class educational and healthcare facilities. Fortunately, <a href="/blog/ultimate-guide-buying-property-punawale-pune" className="text-supreme-gold underline">Punawale's strategic location</a> places it at the epicenter of West Pune's finest institutions.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Premier Educational Institutions</h3>
             <p className="mb-6">Ensuring a high-quality education for your children is effortless in Punawale. The vicinity is home to highly reputed ICSE and CBSE boards, as well as renowned higher-education campuses:</p>
@@ -161,7 +161,7 @@ export const blogPosts: BlogPostType[] = [
             <br />
             <p className="mb-6 border-l-4 border-supreme-gold pl-6 py-4 italic bg-gray-50 text-gray-700 shadow-sm rounded-r-lg">
                 Experience the finest living in West Pune at <strong>Supreme Riverside Punawale</strong>. <br/>
-                <a href="/supreme-riverside-punawale-contact" className="text-supreme-gold font-semibold uppercase text-sm tracking-widest mt-2 block hover:underline">Schedule your exclusive site visit today &rarr;</a>
+                <a href="/supreme-riverside-contact" className="text-supreme-gold font-semibold uppercase text-sm tracking-widest mt-2 block hover:underline">Schedule your exclusive site visit today &rarr;</a>
             </p>
         `
     },
@@ -264,7 +264,7 @@ export const blogPosts: BlogPostType[] = [
                 <li className="mb-2"><strong>3 BHK Apartments:</strong> Expansive family residences with panoramic views, designed for those seeking the finest <strong>3 BHK river view apartments in Punawale</strong>.</li>
                 <li className="mb-2"><strong>Jodi Flats / Large Formats:</strong> Select configurations available for buyers seeking extra-large living spaces.</li>
             </ul>
-            <p className="mb-6">For the exact <strong>Supreme Riverside 2 BHK price</strong> and <strong>Supreme Riverside 3 BHK price</strong>, including the latest festive offers and early-bird discounts, please <a href="/supreme-riverside-punawale-contact" className="text-supreme-gold underline">contact our sales team directly</a>.</p>
+            <p className="mb-6">For the exact <strong>Supreme Riverside 2 BHK price</strong> and <strong>Supreme Riverside 3 BHK price</strong>, including the latest festive offers and early-bird discounts, please <a href="/supreme-riverside-contact" className="text-supreme-gold underline">contact our sales team directly</a>.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Payment Plans & Bank Loan Options</h3>
             <p className="mb-6">Supreme Riverside offers flexible payment plans tailored to different buyer profiles:</p>
@@ -278,7 +278,7 @@ export const blogPosts: BlogPostType[] = [
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">How to Book a Flat in Supreme Riverside</h3>
             <p className="mb-6">The <strong>Supreme Riverside booking</strong> process is straightforward:</p>
             <ol className="list-decimal pl-6 mb-6 text-gray-600">
-                <li className="mb-2"><strong>Step 1:</strong> <a href="/supreme-riverside-punawale-contact" className="text-supreme-gold underline">Submit an enquiry</a> or call +91 77440 09295.</li>
+                <li className="mb-2"><strong>Step 1:</strong> <a href="/supreme-riverside-contact" className="text-supreme-gold underline">Submit an enquiry</a> or call +91 77440 09295.</li>
                 <li className="mb-2"><strong>Step 2:</strong> Schedule a site visit to experience the project firsthand.</li>
                 <li className="mb-2"><strong>Step 3:</strong> Select your preferred tower, floor, and apartment configuration.</li>
                 <li className="mb-2"><strong>Step 4:</strong> Complete the booking with a nominal token amount.</li>
@@ -292,7 +292,7 @@ export const blogPosts: BlogPostType[] = [
             <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
                 <h4 className="font-serif text-2xl text-supreme-gold mb-2">Ready to Book?</h4>
                 <p className="text-white/80 font-light mb-4">Secure your dream home at Supreme Riverside Punawale. Limited inventory available at pre-launch prices.</p>
-                <a href="/supreme-riverside-punawale-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Book Site Visit →</a>
+                <a href="/supreme-riverside-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Book Site Visit →</a>
             </div>
         `
     },
@@ -346,7 +346,7 @@ export const blogPosts: BlogPostType[] = [
             <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
                 <h4 className="font-serif text-2xl text-supreme-gold mb-2">Find Your Dream 2 BHK</h4>
                 <p className="text-white/80 font-light mb-4">Explore the best 2 BHK options at Supreme Riverside Punawale. Starting at highly competitive prices with world-class amenities.</p>
-                <a href="/supreme-riverside-punawale-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Get Price List →</a>
+                <a href="/supreme-riverside-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Get Price List →</a>
             </div>
         `
     },
@@ -409,7 +409,7 @@ export const blogPosts: BlogPostType[] = [
             <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
                 <h4 className="font-serif text-2xl text-supreme-gold mb-2">NRI Investment Desk</h4>
                 <p className="text-white/80 font-light mb-4">Connect with our dedicated NRI investment team for exclusive pricing, virtual tours, and end-to-end documentation support.</p>
-                <a href="/supreme-riverside-punawale-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Connect Now →</a>
+                <a href="/supreme-riverside-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Connect Now →</a>
             </div>
         `
     },

@@ -12,7 +12,7 @@ const LeadPopup = () => {
         "@type": "CommunicateAction",
         "name": "Enquire About Supreme Riverside Punawale",
         "description": "Request a callback or schedule a private site visit for Supreme Riverside luxury 2 & 3 BHK apartments in Punawale, Pune.",
-        "target": "https://supreme-universal.in/supreme-riverside-punawale-contact",
+        "target": "https://supreme-universal.in/supreme-riverside-contact",
         "agent": {
             "@type": "Organization",
             "name": "Supreme Universal",
