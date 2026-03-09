@@ -30,6 +30,7 @@ import FAQ from './components/FAQ';
 import BlogList from './pages/BlogList';
 import BlogPost from './pages/BlogPost';
 import ProjectDetails from './pages/ProjectDetails';
+import BlogPreview from './components/BlogPreview';
 import NotFound from './pages/NotFound';
 
 function ScrollHandler() {
@@ -43,13 +44,13 @@ function ScrollHandler() {
 
     const timer = setTimeout(() => {
       const sectionMap: Record<string, string> = {
-        '/supreme-riverside-punawale-overview': '#overview',
-        '/supreme-riverside-punawale-amenities': '#amenities',
-        '/supreme-riverside-punawale-floor-plans': '#features',
-        '/supreme-riverside-punawale-gallery': '#gallery',
-        '/supreme-riverside-punawale-location': '#location',
-        '/supreme-riverside-punawale-faq': '#faq',
-        '/supreme-riverside-punawale-contact': '#contact'
+        '/supreme-riverside-overview': '#overview',
+        '/supreme-riverside-amenities': '#amenities',
+        '/supreme-riverside-floor-plans': '#features',
+        '/supreme-riverside-gallery': '#gallery',
+        '/supreme-riverside-location': '#location',
+        '/supreme-riverside-faq': '#faq',
+        '/supreme-riverside-contact': '#contact'
       };
 
       const targetId = sectionMap[pathname];
@@ -125,6 +126,7 @@ function MainApp() {
       <ProximityIndex />
       <PropertyComparison />
       <ProjectShowcase />
+      <BlogPreview />
       <Contact />
       <FAQ />
       <Footer />
@@ -140,13 +142,13 @@ function App() {
       <ScrollHandler />
       <Routes>
         <Route path="/" element={<MainApp />} />
-        <Route path="/supreme-riverside-punawale-overview" element={<MainApp />} />
-        <Route path="/supreme-riverside-punawale-amenities" element={<MainApp />} />
-        <Route path="/supreme-riverside-punawale-floor-plans" element={<MainApp />} />
-        <Route path="/supreme-riverside-punawale-gallery" element={<MainApp />} />
-        <Route path="/supreme-riverside-punawale-location" element={<MainApp />} />
-        <Route path="/supreme-riverside-punawale-faq" element={<MainApp />} />
-        <Route path="/supreme-riverside-punawale-contact" element={<MainApp />} />
+        <Route path="/supreme-riverside-overview" element={<MainApp />} />
+        <Route path="/supreme-riverside-amenities" element={<MainApp />} />
+        <Route path="/supreme-riverside-floor-plans" element={<MainApp />} />
+        <Route path="/supreme-riverside-gallery" element={<MainApp />} />
+        <Route path="/supreme-riverside-location" element={<MainApp />} />
+        <Route path="/supreme-riverside-faq" element={<MainApp />} />
+        <Route path="/supreme-riverside-contact" element={<MainApp />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/projects/:id" element={<ProjectDetails />} />

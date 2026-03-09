@@ -8,8 +8,8 @@ const Location = () => {
                 __html: JSON.stringify({
                     "@context": "https://schema.org",
                     "@type": "Place",
-                    "name": "Supreme Riverside Punawale",
-                    "description": "Ultra-luxury 2 & 3 BHK riverside apartments near Hinjewadi IT Park, Pune Metro Line 3, and Mumbai-Pune Expressway Bypass.",
+                    "name": "Supreme Riverside Punawale — Luxury Flats in Punawale Pune",
+                    "description": "Ultra-luxury 2 & 3 BHK riverside apartments in Punawale. Premium flats near Wakad, Hinjewadi IT Park, and Pune Metro Line 3. Top choice for investment in West Pune.",
                     "address": {
                         "@type": "PostalAddress",
                         "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road",
@@ -55,10 +55,10 @@ const Location = () => {
                             </h2>
 
                             <p className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-lg">
-                                Punawale is strategically positioned along the <strong>Mumbai-Pune Expressway Bypass</strong>, emerging as one of the fastest-appreciating real estate markets in <strong>Pune West</strong>. With the upcoming <strong>Pune Metro Line 3 (Hinjewadi-Shivajinagar corridor)</strong> and the proposed <strong>Pune Ring Road</strong>, connectivity to <strong>Hinjewadi IT Park</strong>, <strong>Wakad</strong>, and <strong>Baner</strong> is reaching new heights.
+                                Punawale is strategically positioned along the <strong>Mumbai-Pune Expressway Bypass</strong>, emerging as one of the fastest-appreciating real estate markets for <strong>luxury flats in Punawale pune</strong>. With the upcoming <strong>Pune Metro Line 3</strong> and the proposed <strong>Pune Ring Road</strong>, connectivity to <strong>Hinjewadi IT Park</strong>, <strong>flats near Wakad</strong>, and <strong>Baner</strong> is reaching new heights.
                             </p>
                             <p className="text-gray-600 font-light leading-relaxed mb-8">
-                                Our site near <strong>Chhatrapati Shivaji Maharaj Chowk</strong> on <strong>Tathawade Road</strong> offers a unique blend of urban accessibility and serene <strong>waterfront living</strong>, making it the premier choice for professionals seeking the <strong>top projects in Punawale 2026</strong>.
+                                Our site near <strong>Chhatrapati Shivaji Maharaj Chowk</strong> on <strong>Tathawade Road</strong> offers <strong>waterfront living</strong>, making it the premier choice for those seeking <strong>luxury apartments in Punawale</strong> or <strong>premium flats near Wakad Pune</strong>.
                             </p>
 
                             <div className="space-y-8">

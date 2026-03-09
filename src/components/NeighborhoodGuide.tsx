@@ -53,7 +53,7 @@ const NeighborhoodGuide = () => {
                             A High-Growth Micro Market in Pune
                         </h3>
                         <p className="text-gray-600 font-sans text-lg lg:text-xl leading-relaxed mb-8">
-                            Punawale is rapidly emerging as the top investment choice for <strong>premium projects in Pune West</strong>. Supreme Riverside leverages this strategic location, offering <strong>high rise apartments in Punawale</strong> with unmatched proximity to Hinjewadi, Wakad, and Tathawade.
+                            Punawale is rapidly emerging as the top investment choice for <strong>premium residential projects punawale pune</strong>. Supreme Riverside leverages this strategic location, offering <strong>high rise apartments in Punawale</strong> with unmatched proximity to <strong>apartments near hinjewadi it park</strong>, <strong>luxury apartments wakad</strong>, and Tathawade.
                         </p>
 
                         <div className="space-y-6">

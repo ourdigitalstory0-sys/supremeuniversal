@@ -28,9 +28,9 @@ const Footer = () => {
                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Navigation</h5>
                         <ul className="space-y-4 text-white/50 font-sans font-light">
                             <li><Link to="/" className="hover:text-supreme-gold transition-colors duration-300">Home</Link></li>
-                            <li><Link to="/supreme-riverside-punawale-overview" className="hover:text-supreme-gold transition-colors duration-300">The Vision</Link></li>
-                            <li><Link to="/supreme-riverside-punawale-amenities" className="hover:text-supreme-gold transition-colors duration-300">The Master Club</Link></li>
-                            <li><Link to="/supreme-riverside-punawale-location" className="hover:text-supreme-gold transition-colors duration-300">Neighborhood</Link></li>
+                            <li><Link to="/supreme-riverside-overview" className="hover:text-supreme-gold transition-colors duration-300">The Vision</Link></li>
+                            <li><Link to="/supreme-riverside-amenities" className="hover:text-supreme-gold transition-colors duration-300">The Master Club</Link></li>
+                            <li><Link to="/supreme-riverside-location" className="hover:text-supreme-gold transition-colors duration-300">Neighborhood</Link></li>
                             <li><Link to="/blog" className="hover:text-supreme-gold transition-colors duration-300">Market Insights</Link></li>
                         </ul>
                     </div>

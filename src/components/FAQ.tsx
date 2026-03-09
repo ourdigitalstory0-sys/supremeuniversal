@@ -87,6 +87,26 @@ const faqs = [
     {
         question: "What makes Supreme Riverside different from other Punawale projects?",
         answer: "Supreme Riverside stands apart with 5 key differentiators: (1) 15-acre IGBC-certified township — the largest in Punawale, (2) Only 6 apartments per floor for maximum privacy, (3) 31-storey towers with panoramic river views, (4) 40+ multi-tier amenities including skywalk, infinity pool, and co-working hub, and (5) Supreme Universal's 40-year legacy of premium quality and timely delivery."
+    },
+    {
+        question: "What is the expected property appreciation in Punawale with the Ring Road project?",
+        answer: "Punawale is strategically located near the upcoming Pune Ring Road, which is expected to drive significant property appreciation. Analysts project a 15-25% increase in property values over the next 2-3 years as connectivity to other parts of Pune improves, making Supreme Riverside a high-growth investment asset."
+    },
+    {
+        question: "What are the rental yields for 2 & 3 BHK apartments near Hinjewadi IT Park?",
+        answer: "Luxury apartments near Hinjewadi, like those at Supreme Riverside, currently offer an attractive annual rental yield of 3.5% to 4.5%. Due to the continuous influx of IT professionals and proximity to the Metro Line 3, rental demand remains robust throughout the year."
+    },
+    {
+        question: "How does Supreme Riverside compare to luxury projects in Wakad?",
+        answer: "While Wakad is more saturated, Supreme Riverside in Punawale offers a unique 'Riverside Legacy' lifestyle with a 15-acre IGBC certified township, larger open spaces, and more competitive entry prices. Our project provides 40+ world-class amenities and 31-storey towers that set a new benchmark for West Pune's skyline."
+    },
+    {
+        question: "Can NRIs book a flat in Supreme Riverside virtually?",
+        answer: "Yes, Supreme Universal has a dedicated NRI desk that manages the entire process virtually. From immersive 3D walkthroughs and real-time drone updates to digital documentation and Power of Attorney (POA) assistance, we ensure a seamless and transparent booking experience for our international clientele."
+    },
+    {
+        question: "What sustainable features are included in this IGBC Green Building?",
+        answer: "As an IGBC Platinum/Gold certified project, Supreme Riverside includes advanced rainwater harvesting, solar water heating systems, organic waste converters, and a design that optimizes natural lighting and cross-ventilation. These features reduce the overall carbon footprint and lower monthly maintenance costs for residents."
     }
 ];
 

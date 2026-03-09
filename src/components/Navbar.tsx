@@ -21,13 +21,13 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
 
     const navLinks = [
         { name: 'Home', href: '/' },
-        { name: 'Overview', href: '/supreme-riverside-punawale-overview' },
-        { name: 'Amenities', href: '/supreme-riverside-punawale-amenities' },
-        { name: 'Floor Plans', href: '/supreme-riverside-punawale-floor-plans' },
-        { name: 'Gallery', href: '/supreme-riverside-punawale-gallery' },
-        { name: 'Location', href: '/supreme-riverside-punawale-location' },
+        { name: 'Overview', href: '/supreme-riverside-overview' },
+        { name: 'Amenities', href: '/supreme-riverside-amenities' },
+        { name: 'Floor Plans', href: '/supreme-riverside-floor-plans' },
+        { name: 'Gallery', href: '/supreme-riverside-gallery' },
+        { name: 'Location', href: '/supreme-riverside-location' },
         { name: 'Insights', href: '/blog' },
-        { name: 'Contact', href: '/supreme-riverside-punawale-contact' },
+        { name: 'Contact', href: '/supreme-riverside-contact' },
     ];
 
     return (

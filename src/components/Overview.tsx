@@ -84,7 +84,7 @@ const Overview = () => {
                                 transition={{ delay: 0.4, duration: 0.8 }}
                                 className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Supreme Riverside is not just a residential development; it's a <strong>15-acre riverside township</strong> designed to dominate the <strong>Pune Real Estate Market</strong>. Featuring majestic <strong>31-storey towers</strong>, it represents the pinnacle of <strong>Supreme Universal Pune projects</strong>, offering an elevated lifestyle in the heart of <strong>West Pune</strong>. As a pioneer in the <strong>luxury lifestyle in West Pune</strong>, we offer an exclusive collection of <strong>premium 2 & 3 BHK homes in Punawale</strong>. Whether you are searching for the best <strong>Supreme Riverside price</strong> or exploring high-ROI <strong>investment properties in Pune</strong>, our project is engineered to be the definitive lead-generating benchmark for excellence.
+                                Supreme Riverside is not just a residential development; it's a <strong>15-acre riverside township</strong> designed to dominate the <strong>Pune Real Estate Market</strong>. Featuring majestic <strong>31-storey towers</strong>, it represents the pinnacle of <strong>Supreme Universal Pune projects</strong>, offering a <strong>luxury lifestyle in West Pune</strong>. As a pioneer in <strong>luxury apartments Pune</strong>, we offer an exclusive collection of <strong>premium apartments in Punawale pune</strong>. Whether you are searching for the best <strong>Supreme Riverside price</strong> or exploring high-ROI <strong>real estate investment west pune</strong>, our project is engineered to be the definitive benchmark for excellence.
                             </motion.p>
 
                             <motion.h3
@@ -104,7 +104,7 @@ const Overview = () => {
                                 transition={{ delay: 0.5, duration: 0.8 }}
                                 className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Here, the gentle flow of the river meets cutting-edge architecture. Enjoy generous spaces, abundant natural light, and a community that shares your vision of grandeur. With a firmly committed <strong>Supreme Riverside possession date</strong>, you can secure your luxury future in the most sought-after <strong>apartments near Hinjewadi IT Park</strong>.
+                                Here, the gentle flow of the river meets cutting-edge architecture in our exclusive <strong>nature facing apartments pune</strong>. Enjoy generous spaces, abundant natural light, and a community that shares your vision of grandeur in the finest <strong>river view luxury apartments pune</strong>. With a firmly committed <strong>Supreme Riverside possession date</strong>, you can secure your luxury future in the most sought-after <strong>apartments near Hinjewadi IT Park</strong>.
                             </motion.p>
 
                             <motion.h3

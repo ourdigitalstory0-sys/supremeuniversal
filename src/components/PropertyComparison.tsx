@@ -29,8 +29,8 @@ const PropertyComparison = () => {
                 __html: JSON.stringify({
                     "@context": "https://schema.org",
                     "@type": "ItemList",
-                    "name": "Supreme Universal Property Comparison — Pune Real Estate 2026",
-                    "description": "Compare luxury residential projects by Supreme Universal across Pune's top growth corridors.",
+                    "name": "Supreme Riverside vs Puneville vs ANP Autograph — Best Luxury Flats in Punawale 2026",
+                    "description": "Compare Supreme Riverside with top projects like ANP Autograph, Puneville, Legacy Milestone, and 24K Living. Discover the best luxury flats in Punawale for investment.",
                     "numberOfItems": portfolioProjects.length,
                     "itemListElement": portfolioProjects.map((p, i) => ({
                         "@type": "ListItem",
@@ -49,10 +49,10 @@ const PropertyComparison = () => {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif text-supreme-black leading-tight mb-6">
-                            Portfolio <span className="italic font-light text-supreme-gold">Comparison</span>
+                            The <span className="italic font-light text-supreme-gold">Best Luxury Flats</span> in Punawale
                         </h2>
                         <p className="text-gray-500 font-sans text-lg max-w-2xl mx-auto uppercase tracking-widest font-light">
-                            Select up to 4 projects to find your perfect match.
+                            Compare Supreme Riverside with <strong>projects near ANP Autograph</strong>, <strong>Puneville</strong>, and <strong>Legacy Milestone</strong>.
                         </p>
                     </motion.div>
                 </div>

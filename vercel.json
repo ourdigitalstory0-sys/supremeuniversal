@@ -5,6 +5,43 @@
             "destination": "/index.html"
         }
     ],
+    "redirects": [
+        {
+            "source": "/supreme-riverside-punawale-overview",
+            "destination": "/supreme-riverside-overview",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-riverside-punawale-amenities",
+            "destination": "/supreme-riverside-amenities",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-riverside-punawale-floor-plans",
+            "destination": "/supreme-riverside-floor-plans",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-riverside-punawale-gallery",
+            "destination": "/supreme-riverside-gallery",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-riverside-punawale-location",
+            "destination": "/supreme-riverside-location",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-riverside-punawale-faq",
+            "destination": "/supreme-riverside-faq",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-riverside-punawale-contact",
+            "destination": "/supreme-riverside-contact",
+            "permanent": true
+        }
+    ],
     "headers": [
         {
             "source": "/assets/(.*)",

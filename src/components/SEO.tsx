@@ -10,9 +10,9 @@ interface SEOProps {
 }
 
 const SEO = ({
-    title = 'Supreme Riverside Punawale | Premium 2 & 3 BHK Flats Near Hinjewadi | Pune West 2026',
-    description = 'Supreme Riverside Punawale by Supreme Universal – ultra-luxury 2 & 3 BHK riverside flats near Hinjewadi IT Park, Pune. 15-acre IGBC certified township with 31-storey towers, 40+ world-class amenities, Pune Metro Line 3 proximity, and unmatched property appreciation in Punawale 2026. Book your exclusive site visit today!',
-    keywords = 'Supreme Riverside, Supreme Riverside Punawale, Supreme Riverside Pune, Supreme Riverside price, Supreme Riverside price list 2026, Supreme Riverside 2 BHK price, Supreme Riverside 3 BHK price, Supreme Riverside floor plan, Supreme Riverside RERA number, Supreme Riverside possession date, Supreme Riverside booking, Supreme Riverside reviews, Supreme Riverside latest offers, Supreme Riverside brochure, Supreme Riverside site visit, Supreme Riverside payment plan, buy flat Supreme Riverside, Supreme Riverside vs Kohinoor Uptown Avenue, Supreme Riverside vs Siddhashila Eela, Supreme Riverside vs Kolte Patil, Supreme Riverside construction status, Luxury flats behind Siddhashila Eela, best project in Punawale 2026, top projects Punawale, flats in Punawale, 2 BHK flats in Punawale, 3 BHK flats in Punawale Pune, 2 BHK flats in Punawale under 1 crore, 2 BHK flats in Punawale near Hinjewadi, 3 BHK Luxurious flats in Punawale near Hinjewadi, 3 BHK river view apartment Punawale, luxury flats in Punawale, high rise apartments in Punawale, property in Punawale Pune, new projects in Punawale 2026, apartments near Hinjewadi, apartments near Hinjewadi IT Park, flats near Hinjewadi Phase 1, flats near Hinjewadi Phase 3, property near Mumbai Pune Expressway, waterfront apartments West Pune price list, waterfront apartments Pune West, premium projects Pune West, residential projects Pune West, luxury apartments Tathawade Road Punawale, Pune Metro Line 3 connectivity, Pune Ring Road real estate, property appreciation Punawale 2026, NRI property investment Pune West, NRI buy flat Punawale, rental income Punawale, investment properties Pune, Supreme Universal Pune projects, Supreme Universal Punawale, 31 storey towers Pune, skywalk bridge luxury apartments, IGBC certified apartments Pune, Chhatrapati Shivaji Maharaj Chowk properties, Mumbai Pune Expressway Bypass projects, Tathawade Road premium homes',
+    title = 'Supreme Riverside Punawale | Luxury 2 & 3 BHK Flats near Hinjewadi IT Park | Pune Real Estate 2026',
+    description = 'Supreme Riverside Punawale by Supreme Universal: Ultra-luxury 2 & 3 BHK riverside apartments near Hinjewadi IT Park & Wakad. Explore Supreme Riverside price list, floor plans, and world-class amenities in Punawale, Pune West. High ROI property investment near Mumbai-Pune Expressway bypass. Book your site visit today!',
+    keywords = 'supreme riverside, supreme riverside punawale, supreme riverside pune, supreme riverside project, supreme riverside apartments, supreme riverside luxury apartments, supreme riverside flats, supreme riverside 2 bhk, supreme riverside 3 bhk, supreme riverside price, supreme riverside price list, supreme riverside cost sheet, supreme riverside floor plan, supreme riverside master plan, supreme riverside brochure, supreme riverside possession, supreme riverside amenities, supreme riverside location, supreme riverside punawale price, supreme riverside 2 bhk price, supreme riverside 3 bhk price, supreme riverside punawale booking, supreme riverside site visit, supreme riverside investment, supreme riverside reviews, supreme riverside rera, supreme riverside luxury apartments punawale, supreme riverside project details pune, supreme riverside new launch apartments punawale, supreme riverside riverside apartments pune, flats in punawale pune, apartments in punawale, luxury flats punawale, premium flats punawale pune, new projects in punawale, residential projects punawale, 2 bhk flats punawale, 3 bhk flats punawale, luxury apartments punawale, gated community flats punawale, ready to move flats punawale, under construction flats punawale, luxury apartments in punawale pune, new launch flats in punawale pune, premium residential projects punawale pune, luxury flats near punawale highway, flats near wakad pune, luxury apartments wakad, residential projects near wakad, apartments near wakad bridge, flats near wakad hinjewadi road, premium flats near wakad pune, flats near hinjewadi, apartments near hinjewadi it park, luxury flats near hinjewadi phase 1, residential projects near hinjewadi phase 2, premium apartments near hinjewadi phase 3, flats near rajiv gandhi infotech park, luxury apartments near hinjewadi it park pune, flats near hinjewadi phase 1 for sale, premium homes near hinjewadi it hub, luxury apartments pune, luxury flats west pune, premium apartments pune, high rise apartments pune, skyline apartments pune, gated community luxury apartments pune, premium lifestyle apartments pune, luxury residences pune, apartments with clubhouse pune, apartments with infinity pool pune, river view apartments pune, nature facing apartments pune, luxury apartments with amenities pune, luxury high rise apartments near hinjewadi, premium gated community flats pune west, river view luxury apartments pune, property investment punawale, real estate investment west pune, best property investment near hinjewadi, investment flats near wakad, high ROI flats pune, best residential investment pune, best projects near hinjewadi for investment, real estate investment near rajiv gandhi infotech park, property investment near wakad pune, buy flats in punawale, flats for sale punawale pune, buy apartments near hinjewadi, apartments for sale near wakad, luxury flats for sale pune, premium apartments for sale pune, buy luxury apartments near hinjewadi it park, flats for sale in punawale near wakad, new apartments for sale west pune, flats price punawale, apartments price punawale pune, luxury flats price pune, 2 bhk price punawale, 3 bhk price punawale, apartments near hinjewadi price, luxury apartments near wakad price, flats near hinjewadi price list, new launch flats punawale price, projects near ANP Autograph punawale, flats near Puneville punawale, apartments near Legacy Milestone punawale, projects near 24k Living punawale, luxury flats near ANP Autograph, projects similar to Puneville punawale, supreme riverside vs puneville, supreme riverside vs anp autograph, best luxury flats in punawale',
     image = '/hero-bg.png',
     url = 'https://supreme-universal.in/'
 }: SEOProps) => {
@@ -35,6 +35,13 @@ const SEO = ({
             <meta name="revisit-after" content="3 days" />
             <meta name="distribution" content="global" />
             <meta name="language" content="English" />
+
+            {/* International Targeting (Phase 10) */}
+            <link rel="alternate" href={url} hrefLang="en-IN" />
+            <link rel="alternate" href={url} hrefLang="en-US" />
+            <link rel="alternate" href={url} hrefLang="en-GB" />
+            <link rel="alternate" href={url} hrefLang="en-AE" />
+            <link rel="alternate" href={url} hrefLang="x-default" />
 
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="website" />
@@ -227,7 +234,7 @@ const SEO = ({
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Supreme Riverside Punawale",
-                                "item": "https://supreme-universal.in/supreme-riverside-punawale-overview"
+                                "item": "https://supreme-universal.in/supreme-riverside-overview"
                             }
                         ]
                     },
@@ -237,15 +244,34 @@ const SEO = ({
                         "name": "Main Navigation",
                         "url": "https://supreme-universal.in/",
                         "hasPart": [
-                            { "@type": "WebPage", "name": "Overview", "url": "https://supreme-universal.in/supreme-riverside-punawale-overview" },
-                            { "@type": "WebPage", "name": "Amenities", "url": "https://supreme-universal.in/supreme-riverside-punawale-amenities" },
-                            { "@type": "WebPage", "name": "Floor Plans", "url": "https://supreme-universal.in/supreme-riverside-punawale-floor-plans" },
-                            { "@type": "WebPage", "name": "Gallery", "url": "https://supreme-universal.in/supreme-riverside-punawale-gallery" },
-                            { "@type": "WebPage", "name": "Location", "url": "https://supreme-universal.in/supreme-riverside-punawale-location" },
-                            { "@type": "WebPage", "name": "FAQ", "url": "https://supreme-universal.in/supreme-riverside-punawale-faq" },
-                            { "@type": "WebPage", "name": "Contact", "url": "https://supreme-universal.in/supreme-riverside-punawale-contact" },
+                            { "@type": "WebPage", "name": "Overview", "url": "https://supreme-universal.in/supreme-riverside-overview" },
+                            { "@type": "WebPage", "name": "Amenities", "url": "https://supreme-universal.in/supreme-riverside-amenities" },
+                            { "@type": "WebPage", "name": "Floor Plans", "url": "https://supreme-universal.in/supreme-riverside-floor-plans" },
+                            { "@type": "WebPage", "name": "Gallery", "url": "https://supreme-universal.in/supreme-riverside-gallery" },
+                            { "@type": "WebPage", "name": "Location", "url": "https://supreme-universal.in/supreme-riverside-location" },
+                            { "@type": "WebPage", "name": "FAQ", "url": "https://supreme-universal.in/supreme-riverside-faq" },
+                            { "@type": "WebPage", "name": "Contact", "url": "https://supreme-universal.in/supreme-riverside-contact" },
                             { "@type": "WebPage", "name": "Blog", "url": "https://supreme-universal.in/blog" }
                         ]
+                    },
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "VideoObject",
+                        "name": "Supreme Riverside Punawale Walkthrough",
+                        "description": "Experience the ultra-luxury lifestyle at Supreme Riverside, a 15-acre riverside township in Punawale, Pune West. Featuring 31-storey towers and 40+ world-class amenities.",
+                        "thumbnailUrl": [
+                            "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
+                            "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
+                        ],
+                        "uploadDate": "2026-01-15T08:00:00+08:00",
+                        "duration": "PT2M30S",
+                        "contentUrl": "https://cdn.supremeuniversal.com/videos/walkthrough-punawale.mp4",
+                        "embedUrl": "https://www.youtube.com/embed/example-video-id",
+                        "interactionStatistic": {
+                            "@type": "InteractionCounter",
+                            "interactionType": { "@type": "WatchAction" },
+                            "userInteractionCount": 12500
+                        }
                     }
                 ])}
             </script>

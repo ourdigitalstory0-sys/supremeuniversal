@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 interface FloorPlansProps {
     onEnquire?: () => void;
@@ -8,8 +9,33 @@ interface FloorPlansProps {
 const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
     const [activeTab, setActiveTab] = useState('2BHK');
 
+    const floorPlanSchema = {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "name": activeTab === 'Master' ? "Supreme Riverside Master Layout" : `${activeTab} Floor Plan - Supreme Riverside`,
+        "description": activeTab === 'Master'
+            ? "Master layout plan for Supreme Riverside, a 15-acre premium township in Punawale, Pune."
+            : `Architectural floor plan for a luxury ${activeTab} apartment at Supreme Riverside, Punawale.`,
+        "contentUrl": activeTab === 'Master'
+            ? "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+            : activeTab === '2BHK'
+                ? "https://cdn.supremeuniversal.com/media/1aejSz_FXHCOKProjectListing23min.jpg"
+                : "https://cdn.supremeuniversal.com/media/t4mf35_WtizuRsupremeelysiamin.jpg",
+        "license": "https://supreme-universal.in/legal",
+        "acquireLicensePage": "https://supreme-universal.in/contact",
+        "creator": {
+            "@type": "Organization",
+            "name": "Supreme Universal"
+        }
+    };
+
     return (
         <section id="floor-plans" className="py-24 bg-white">
+            <Helmet>
+                <script type="application/ld+json">
+                    {JSON.stringify(floorPlanSchema)}
+                </script>
+            </Helmet>
             <div className="container mx-auto px-4 md:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-serif text-gray-900 mb-4">Floor Plans & Layouts</h2>
