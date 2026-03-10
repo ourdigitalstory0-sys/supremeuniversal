@@ -52,16 +52,15 @@ const Footer = () => {
 
                     {/* Pune Portfolio */}
                     <div className="lg:col-span-2">
-                        <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Pune Portfolio</h5>
+                        <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Pune West Portfolio</h5>
                         <ul className="space-y-4 text-white/50 font-sans font-light">
-                            <li><Link to="/projects/supreme-towers" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Towers<span className="text-[10px] text-white/30 truncate">Mundhwa, Pune East</span></Link></li>
-                            <li><Link to="/projects/supreme-villagio" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Villagio<span className="text-[10px] text-white/30 truncate">Somatane, Pune North</span></Link></li>
+                            <li><Link to="/projects/supreme-pallacio" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Pallacio<span className="text-[10px] text-white/30 truncate">Pan Card Club, Baner</span></Link></li>
+                            <li><Link to="/projects/supreme-vivero" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Vivero<span className="text-[10px] text-white/30 truncate">Baner Road, Pune West</span></Link></li>
                             <li><Link to="/projects/supreme-estia" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Estia<span className="text-[10px] text-white/30 truncate">Baner, Pune West</span></Link></li>
-                            <li><Link to="/projects/supreme-wakad" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Wakad<span className="text-[10px] text-white/30 truncate">Wakad, Pune West</span></Link></li>
+                            <li><Link to="/projects/supreme-amadore" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Amadore<span className="text-[10px] text-white/30 truncate">Link Road, Pune</span></Link></li>
+                            <li><Link to="/projects/supreme-wakad" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Wakad<span className="text-[10px] text-white/30 truncate">Hinjewadi Link Road</span></Link></li>
                         </ul>
                     </div>
-
-                    {/* Contact Info */}
                     <div className="lg:col-span-2">
                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Connect</h5>
                         <ul className="space-y-6 text-white/50 font-sans font-light">
@@ -116,22 +115,38 @@ const Footer = () => {
                         All information, including prices, availability, and project specifications, is subject to change without prior notice. Visitors are advised to contact our sales team or visit the developer's official website for the most accurate and up-to-date information. While we strive to maintain the accuracy of the data, the site owner shall not be held liable for any decisions made based on the information provided herein.
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 border-t border-white/5 pt-6">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 border-t border-white/5 pt-6">
                         <div className="flex flex-col gap-1">
-                            <span className="text-white/40 font-bold uppercase tracking-tighter">Supreme Towers</span>
-                            <span className="text-supreme-gold/60">MahaRERA: P52100053868</span>
+                            <span className="text-white/40 font-bold uppercase tracking-tighter text-[9px]">Supreme Towers</span>
+                            <span className="text-supreme-gold/60">P52100053868</span>
                         </div>
                         <div className="flex flex-col gap-1">
-                            <span className="text-white/40 font-bold uppercase tracking-tighter">Supreme Villagio</span>
-                            <span className="text-supreme-gold/60">MahaRERA: P52100021655</span>
+                            <span className="text-white/40 font-bold uppercase tracking-tighter text-[9px]">Supreme Villagio</span>
+                            <span className="text-supreme-gold/60">P52100021655</span>
                         </div>
                         <div className="flex flex-col gap-1">
-                            <span className="text-white/40 font-bold uppercase tracking-tighter">Supreme Estia</span>
-                            <span className="text-supreme-gold/60">MahaRERA: P52100024783</span>
+                            <span className="text-white/40 font-bold uppercase tracking-tighter text-[9px]">Supreme Estia</span>
+                            <span className="text-supreme-gold/60">P52100024783</span>
                         </div>
                         <div className="flex flex-col gap-1">
-                            <span className="text-white/40 font-bold uppercase tracking-tighter">Supreme Wakad</span>
-                            <span className="text-supreme-gold/60">MahaRERA: P52100056095</span>
+                            <span className="text-white/40 font-bold uppercase tracking-tighter text-[9px]">Supreme Wakad</span>
+                            <span className="text-supreme-gold/60">P52100056095</span>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <span className="text-white/40 font-bold uppercase tracking-tighter text-[9px]">Supreme Pallacio</span>
+                            <span className="text-supreme-gold/60">OC Received</span>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <span className="text-white/40 font-bold uppercase tracking-tighter text-[9px]">Supreme Vivero</span>
+                            <span className="text-supreme-gold/60">OC Received</span>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <span className="text-white/40 font-bold uppercase tracking-tighter text-[9px]">Supreme Amadore</span>
+                            <span className="text-supreme-gold/60">OC Received</span>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <span className="text-white/40 font-bold uppercase tracking-tighter text-[9px]">Supreme Esteban</span>
+                            <span className="text-supreme-gold/60">OC Received</span>
                         </div>
                     </div>
                 </div>

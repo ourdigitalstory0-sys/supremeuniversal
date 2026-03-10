@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, Building2, ChevronRight } from 'lucide-react';
+import { MapPin, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { portfolioProjects } from '../data/portfolioProjects';
 
@@ -18,6 +18,10 @@ const ProjectShowcase = () => {
             "image": project.image.startsWith('http') ? project.image : `https://supreme-universal.in${project.image}`
         }))
     };
+
+    // Split projects by strategic corridors
+    const puneWestProjects = portfolioProjects.filter(p => p.location.includes('Baner') || p.location.includes('Wakad') || p.location.includes('Punawale'));
+    const otherProjects = portfolioProjects.filter(p => !(p.location.includes('Baner') || p.location.includes('Wakad') || p.location.includes('Punawale')));
 
     return (
         <section id="portfolio" className="py-24 md:py-32 bg-white relative overflow-hidden">
@@ -50,64 +54,109 @@ const ProjectShowcase = () => {
                         className="max-w-md pb-2"
                     >
                         <p className="text-gray-500 font-sans font-light text-base md:text-lg leading-relaxed">
-                            Discover the wider ecosystem of Supreme Universal excellence across Pune's most strategic growth corridors.
+                            Discover the wider ecosystem of Supreme Universal excellence. With a massive stronghold in the Pune West corridor, we redefine luxury in Baner, Wakad, and now Punawale.
                         </p>
                     </motion.div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-                    {portfolioProjects.map((project, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.8, delay: index * 0.1 }}
-                            className="group relative overflow-hidden bg-gray-50 border border-gray-100 flex flex-col md:flex-row h-full hover:border-supreme-gold/30 transition-all duration-500 shadow-sm hover:shadow-2xl"
-                        >
-                            <div className="md:w-2/5 relative h-64 md:h-auto overflow-hidden">
-                                <img
-                                    src={project.image}
-                                    alt={`${project.name} - ${project.type} in ${project.location}`}
-                                    loading="lazy"
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-supreme-black/20 group-hover:bg-supreme-black/0 transition-colors duration-500"></div>
-                            </div>
-
-                            <div className="md:w-3/5 p-8 lg:p-10 flex flex-col justify-between">
-                                <div>
-                                    <div className="flex items-center gap-2 mb-4">
-                                        <MapPin className="w-3 h-3 text-supreme-gold" />
-                                        <span className="text-[10px] md:text-xs uppercase tracking-widest text-supreme-gold font-semibold">{project.location}</span>
+                {/* Pune West Dominance Section */}
+                <div className="mb-12">
+                    <h3 className="text-xl md:text-2xl font-serif text-supreme-black mb-6 border-l-4 border-supreme-gold pl-4">Pune West Dominance</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                        {puneWestProjects.map((project, index) => (
+                            <motion.div
+                                key={project.id}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8, delay: index * 0.1 }}
+                                className="group relative overflow-hidden bg-gray-50 border border-gray-100 flex flex-col h-full hover:border-supreme-gold/30 transition-all duration-500 shadow-sm hover:shadow-xl"
+                            >
+                                <div className="relative h-48 md:h-56 overflow-hidden">
+                                    <img
+                                        src={project.image}
+                                        alt={`${project.name} - ${project.type} in ${project.location}`}
+                                        loading="lazy"
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    />
+                                    <div className="absolute top-4 right-4 bg-supreme-black/80 backdrop-blur-md text-supreme-gold text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-semibold border border-supreme-gold/30">
+                                        {project.status.includes('Completed') || project.status.includes('Ready') ? 'Delivered' : 'Upcoming'}
                                     </div>
-                                    <h3 className="text-2xl lg:text-3xl font-serif text-supreme-black mb-4 group-hover:text-supreme-gold transition-colors">{project.name}</h3>
-                                    <p className="text-gray-400 text-sm font-light mb-6 line-clamp-2">{project.description}</p>
-
-                                    <div className="space-y-3 mb-8">
-                                        <div className="flex items-center gap-3 text-xs text-gray-500">
-                                            <Building2 className="w-4 h-4 text-supreme-gold/50" />
-                                            <span>{project.type}</span>
-                                        </div>
-                                        <div className="flex items-center gap-3 text-xs text-gray-500">
-                                            <Calendar className="w-4 h-4 text-supreme-gold/50" />
-                                            <span className="font-semibold text-supreme-black">{project.status}</span>
-                                        </div>
-                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-supreme-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
                                 </div>
 
-                                <div className="flex items-center justify-between border-t border-gray-200 pt-6">
-                                    <Link
-                                        to={`/projects/${project.id}`}
-                                        className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-bold text-supreme-black hover:text-supreme-gold transition-colors"
-                                    >
-                                        Explore Scope <ChevronRight className="w-3 h-3" />
-                                    </Link>
-                                    <ChevronRight className="w-5 h-5 text-gray-200 group-hover:text-supreme-gold group-hover:translate-x-2 transition-all" />
+                                <div className="p-6 lg:p-8 flex flex-col flex-grow justify-between">
+                                    <div>
+                                        <div className="flex items-center gap-2 mb-3">
+                                            <MapPin className="w-3 h-3 text-supreme-gold" />
+                                            <span className="text-[10px] md:text-xs uppercase tracking-widest text-supreme-gold font-semibold">{project.location}</span>
+                                        </div>
+                                        <h3 className="text-xl lg:text-2xl font-serif text-supreme-black mb-3 group-hover:text-supreme-gold transition-colors">{project.name}</h3>
+                                        <p className="text-gray-500 text-xs font-light mb-6 line-clamp-2">{project.description}</p>
+                                    </div>
+
+                                    <div className="flex items-center justify-between border-t border-gray-200 pt-4 mt-auto">
+                                        <Link
+                                            to={`/projects/${project.id}`}
+                                            className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-bold text-supreme-black hover:text-supreme-gold transition-colors"
+                                        >
+                                            Explore Scope <ChevronRight className="w-3 h-3" />
+                                        </Link>
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.div>
-                    ))}
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Other Strategic Locations */}
+                <div className="mb-8">
+                    <h3 className="text-xl md:text-2xl font-serif text-supreme-black mb-6 border-l-4 border-supreme-gold pl-4 mt-16 mt-16 border-gray-200">Other Strategic Locations</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                        {otherProjects.map((project, index) => (
+                            <motion.div
+                                key={project.id}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8, delay: index * 0.1 }}
+                                className="group relative overflow-hidden bg-gray-50 border border-gray-100 flex flex-col h-full hover:border-supreme-gold/30 transition-all duration-500 shadow-sm hover:shadow-xl"
+                            >
+                                <div className="relative h-48 md:h-56 overflow-hidden">
+                                    <img
+                                        src={project.image}
+                                        alt={`${project.name} - ${project.type} in ${project.location}`}
+                                        loading="lazy"
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    />
+                                    <div className="absolute top-4 right-4 bg-supreme-black/80 backdrop-blur-md text-supreme-gold text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-semibold border border-supreme-gold/30">
+                                        {project.status.includes('Completed') || project.status.includes('Ready') ? 'Delivered' : 'Upcoming'}
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-supreme-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                                </div>
+
+                                <div className="p-6 lg:p-8 flex flex-col flex-grow justify-between">
+                                    <div>
+                                        <div className="flex items-center gap-2 mb-3">
+                                            <MapPin className="w-3 h-3 text-supreme-gold" />
+                                            <span className="text-[10px] md:text-xs uppercase tracking-widest text-supreme-gold font-semibold">{project.location}</span>
+                                        </div>
+                                        <h3 className="text-xl lg:text-2xl font-serif text-supreme-black mb-3 group-hover:text-supreme-gold transition-colors">{project.name}</h3>
+                                        <p className="text-gray-500 text-xs font-light mb-6 line-clamp-2">{project.description}</p>
+                                    </div>
+
+                                    <div className="flex items-center justify-between border-t border-gray-200 pt-4 mt-auto">
+                                        <Link
+                                            to={`/projects/${project.id}`}
+                                            className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-bold text-supreme-black hover:text-supreme-gold transition-colors"
+                                        >
+                                            Explore Scope <ChevronRight className="w-3 h-3" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
 
                 <motion.div
