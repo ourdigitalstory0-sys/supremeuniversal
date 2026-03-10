@@ -346,6 +346,41 @@ const SEO = ({
                             "interactionType": { "@type": "WatchAction" },
                             "userInteractionCount": 12500
                         }
+                    },
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "Event",
+                        "name": "Supreme Rivana Punawale — Exclusive Site Visit & Open House",
+                        "description": "Schedule your exclusive VIP site visit to Supreme Rivana Punawale. Walk through our luxurious 15-acre riverside township, explore show flats, and meet our sales team for personalized pricing.",
+                        "startDate": "2026-03-01",
+                        "endDate": "2026-12-31",
+                        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                        "eventStatus": "https://schema.org/EventScheduled",
+                        "location": {
+                            "@type": "Place",
+                            "name": "Supreme Rivana Sales Gallery, Punawale",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road",
+                                "addressLocality": "Punawale, Pune",
+                                "postalCode": "411033",
+                                "addressCountry": "IN"
+                            }
+                        },
+                        "organizer": {
+                            "@type": "Organization",
+                            "name": "Supreme Universal",
+                            "url": "https://supreme-universal.in/"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "url": "https://supreme-universal.in/supreme-rivana-contact",
+                            "price": "0",
+                            "priceCurrency": "INR",
+                            "availability": "https://schema.org/InStock",
+                            "validFrom": "2026-03-01"
+                        },
+                        "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
                     }
                 ])}
             </script>
