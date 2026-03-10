@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { seoKeywords } from '../data/seoKeywords';
 
 const Footer = () => {
     return (
@@ -149,6 +150,21 @@ const Footer = () => {
                             <span className="text-supreme-gold/60">OC Received</span>
                         </div>
                     </div>
+                </div>
+
+                {/* Visually Hidden Yet Semantic SEO Keyword Block */}
+                <div className="sr-only" aria-hidden="true" itemScope itemType="https://schema.org/WebPage">
+                    <h2>Premium Real Estate Search Trends - Supreme Rivana Punawale</h2>
+                    <p>
+                        Explore the finest selection of ultra-luxury residences in Pune West. Discover {seoKeywords.substring(0, 1500)}...
+                    </p>
+                    <ul>
+                        <li><a href="/supreme-rivana-location">2 BHK Flats in Punawale</a></li>
+                        <li><a href="/supreme-rivana-location">3 BHK Premium Apartments near Hinjewadi IT Park</a></li>
+                        <li><a href="/supreme-rivana-location">Luxury Homes in Wakad and Tathawade</a></li>
+                        <li><a href="/supreme-rivana-overview">Supreme Rivana RERA PM1261012502656</a></li>
+                        <li><a href="/supreme-rivana-price-list">Price of new launch flats in PCMC</a></li>
+                    </ul>
                 </div>
             </div>
         </footer>

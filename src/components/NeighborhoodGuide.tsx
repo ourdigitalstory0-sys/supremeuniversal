@@ -99,6 +99,71 @@ const NeighborhoodGuide = () => {
                         </div>
                     </motion.div>
                 </div>
+
+                {/* SEO-Optimized Keyword Content Block */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="mt-20 md:mt-28 border-t border-gray-100 pt-12"
+                >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+                        <div>
+                            <h3 className="text-2xl md:text-3xl font-serif text-supreme-black mb-4">
+                                Why Invest in <span className="italic text-supreme-gold">Punawale?</span>
+                            </h3>
+                            <p className="text-gray-600 font-sans font-light leading-relaxed mb-6">
+                                Punawale has emerged as the <strong>best location for property investment in Pune West 2026</strong>. With <strong>Supreme Rivana Punawale</strong> leading the charge, buyers can now access <strong>ultra luxury apartments near Hinjewadi IT Park</strong> at competitive prices. The micro-market offers <strong>ready to move flats in Punawale</strong>, <strong>new launch projects in PCMC</strong>, and <strong>IGBC certified green homes</strong> — all within minutes of <strong>Wakad Bridge</strong>, <strong>Bhumkar Chowk</strong>, and the <strong>Mumbai Pune Expressway</strong>.
+                            </p>
+                            <p className="text-gray-600 font-sans font-light leading-relaxed">
+                                Whether you are an <strong>NRI investor looking for properties in Pune</strong> or a first-time buyer seeking <strong>2 BHK flats in Punawale under 1 Crore</strong>, Supreme Rivana delivers unmatched value. The project is also ideal for those searching for <strong>3 BHK premium apartments near Hinjewadi Phase 1</strong>, <strong>luxury homes near Dange Chowk</strong>, or <strong>river view apartments in Pune West</strong>.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="text-2xl md:text-3xl font-serif text-supreme-black mb-4">
+                                Supreme Rivana: <span className="italic text-supreme-gold">The Benchmark</span>
+                            </h3>
+                            <p className="text-gray-600 font-sans font-light leading-relaxed mb-6">
+                                Positioned as the <strong>best project in Punawale 2026</strong>, Supreme Rivana by <strong>Supreme Universal</strong> redefines <strong>luxury residences in Pune West</strong>. With <strong>31-storey towers</strong>, a <strong>15-acre riverside township</strong>, and <strong>40+ world-class amenities</strong> including an <strong>infinity pool</strong>, <strong>skywalk bridge</strong>, and <strong>multi-tier clubhouse</strong>, it surpasses competitors like <strong>Puneville</strong>, <strong>ANP Autograph</strong>, and <strong>24k Living</strong>.
+                            </p>
+                            <p className="text-gray-600 font-sans font-light leading-relaxed">
+                                Searching for <strong>Supreme Rivana price list</strong>, <strong>Supreme Rivana floor plan</strong>, or <strong>Supreme Rivana brochure</strong>? Our <strong>MahaRERA-certified</strong> (PM1261012502656) development offers <strong>spacious 2 BHK and 3 BHK apartments</strong> with <strong>Vastu-compliant layouts</strong>, <strong>premium Italian marble flooring</strong>, and <strong>smart home automation</strong>. Pre-approved by <strong>HDFC, SBI, ICICI, and Axis Bank</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Trending Searches Tag Cloud */}
+                    <div className="mt-12 pt-8 border-t border-gray-100">
+                        <h4 className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-supreme-gold mb-4">Trending Real Estate Searches in Pune West</h4>
+                        <div className="flex flex-wrap gap-2">
+                            {[
+                                "Supreme Rivana Punawale price list 2026", "Supreme Rivana river view apartments",
+                                "Supreme Rivana site visit booking", "Supreme Rivana construction update",
+                                "Luxury flats in Punawale by Supreme Universal", "Premium 3 BHK in Punawale under 1.5 Cr",
+                                "Best 2 BHK in Punawale under 1 Cr", "Top 10 luxury projects in Punawale",
+                                "Best property investment in Pune West 2026", "High ROI luxury flats near Hinjewadi",
+                                "Flats near Hinjewadi Phase 1", "Gated community in Punawale",
+                                "Flats with infinity pool in Punawale", "Real estate near upcoming Pune Metro Line 3",
+                                "NRI investment properties in Pune", "Properties near proposed Pune Ring Road",
+                                "Flats near Wakad Bridge Pune", "Apartments near Phoenix Mall Wakad",
+                                "Projects near Bhumkar Chowk", "Buy 2 BHK Apartments in Tathawade",
+                                "Luxury Properties in Balewadi", "New Apartments in Kiwale Pune",
+                                "High End Homes in Ravet", "Smart Flats in PCMC",
+                                "Supreme Rivana vs Puneville", "Supreme Rivana vs ANP Autograph",
+                                "Supreme Rivana RERA PM1261012502656", "Supreme Rivana possession date",
+                                "Supreme Rivana master plan review", "Supreme Rivana Wakad proximity"
+                            ].map((keyword, idx) => (
+                                <span
+                                    key={idx}
+                                    className="px-3 py-1.5 text-[10px] md:text-[11px] font-sans text-gray-400 bg-gray-50 border border-gray-100 rounded-full"
+                                >
+                                    {keyword}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </motion.div>
             </div>
         </section>
     );

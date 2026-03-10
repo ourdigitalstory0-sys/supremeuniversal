@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
+import { seoKeywords } from '../data/seoKeywords';
 
 interface SEOProps {
     title?: string;
@@ -12,7 +13,7 @@ interface SEOProps {
 const SEO = ({
     title: propTitle,
     description: propDescription,
-    keywords = 'Supreme Rivana, Supreme Rivana punawale, Supreme Rivana pune, Supreme Rivana project, Supreme Rivana apartments, Supreme Rivana luxury apartments, Supreme Rivana flats, Supreme Rivana 2 bhk, Supreme Rivana 3 bhk, Supreme Rivana price, Supreme Rivana price list, Supreme Rivana cost sheet, Supreme Rivana floor plan, Supreme Rivana master plan, Supreme Rivana brochure, Supreme Rivana possession, Supreme Rivana amenities, Supreme Rivana location, Supreme Rivana punawale price, Supreme Rivana 2 bhk price, Supreme Rivana 3 bhk price, Supreme Rivana punawale booking, Supreme Rivana site visit, Supreme Rivana investment, Supreme Rivana reviews, Supreme Rivana rera, Supreme Rivana luxury apartments punawale, Supreme Rivana project details pune, Supreme Rivana new launch apartments punawale, Supreme Rivana riverside apartments pune, flats in punawale pune, apartments in punawale, luxury flats punawale, premium flats punawale pune, new projects in punawale, residential projects punawale, 2 bhk flats punawale, 3 bhk flats punawale, luxury apartments punawale, gated community flats punawale, ready to move flats punawale, under construction flats punawale, luxury apartments in punawale pune, new launch flats in punawale pune, premium residential projects punawale pune, luxury flats near punawale highway, flats near wakad pune, luxury apartments wakad, residential projects near wakad, apartments near wakad bridge, flats near wakad hinjewadi road, premium flats near wakad pune, flats near hinjewadi, apartments near hinjewadi it park, luxury flats near hinjewadi phase 1, residential projects near hinjewadi phase 2, premium apartments near hinjewadi phase 3, flats near rajiv gandhi infotech park, luxury apartments near hinjewadi it park pune, flats near hinjewadi phase 1 for sale, premium homes near hinjewadi it hub, luxury apartments pune, luxury flats west pune, premium apartments pune, high rise apartments pune, skyline apartments pune, gated community luxury apartments pune, premium lifestyle apartments pune, luxury residences pune, apartments with clubhouse pune, apartments with infinity pool pune, river view apartments pune, nature facing apartments pune, luxury apartments with amenities pune, luxury high rise apartments near hinjewadi, premium gated community flats pune west, river view luxury apartments pune, property investment punawale, real estate investment west pune, best property investment near hinjewadi, investment flats near wakad, high ROI flats pune, best residential investment pune, best projects near hinjewadi for investment, real estate investment near rajiv gandhi infotech park, property investment near wakad pune, buy flats in punawale, flats for sale punawale pune, buy apartments near hinjewadi, apartments for sale near wakad, luxury flats for sale pune, premium apartments for sale pune, buy luxury apartments near hinjewadi it park, flats for sale in punawale near wakad, new apartments for sale west pune, flats price punawale, apartments price punawale pune, luxury flats price pune, 2 bhk price punawale, 3 bhk price punawale, apartments near hinjewadi price, luxury apartments near wakad price, flats near hinjewadi price list, new launch flats punawale price, projects near ANP Autograph punawale, flats near Puneville punawale, apartments near Legacy Milestone punawale, projects near 24k Living punawale, luxury flats near ANP Autograph, projects similar to Puneville punawale, Supreme Rivana vs puneville, Supreme Rivana vs anp autograph, best luxury flats in punawale',
+    keywords = seoKeywords,
     image = '/hero-bg.png',
     url: propUrl
 }: SEOProps) => {
@@ -221,6 +222,7 @@ const SEO = ({
                             "longitude": "73.7431"
                         },
                         "award": "Global Excellence Awards 2023",
+                        "keywords": seoKeywords,
                         "openingHoursSpecification": {
                             "@type": "OpeningHoursSpecification",
                             "dayOfWeek": [
@@ -277,6 +279,36 @@ const SEO = ({
                                 "position": 2,
                                 "name": "Supreme Rivana Punawale",
                                 "item": "https://supreme-universal.in/supreme-rivana-overview"
+                            }
+                        ]
+                    },
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "What are the configuration options available at Supreme Rivana Punawale?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Supreme Rivana offers spacious ultra-luxury 2 BHK and premium 3 BHK apartments in Punawale, near Wakad and Hinjewadi IT Park."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "What is the price of a 2 BHK or 3 BHK flat at Supreme Rivana?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "The price for premium luxury river-view flats at Supreme Rivana Punawale is incredibly competitive for Pune West. Please download our cost sheet or contact sales for detailed pricing on our 2 and 3 BHK variants."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Where is Supreme Rivana located?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "It is strategically located in Punawale, PCMC, Pune West, offering seamless connectivity to the Mumbai Pune Expressway, Hinjewadi Phase 1, Baner, and Wakad."
+                                }
                             }
                         ]
                     },
