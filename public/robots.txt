@@ -1,4 +1,4 @@
-# Optimized robots.txt for Supreme Riverside - 2026
+# Optimized robots.txt for Supreme Rivana - 2026
 User-agent: *
 Allow: /
 Disallow: /*?s=

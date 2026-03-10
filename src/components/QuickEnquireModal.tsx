@@ -72,7 +72,7 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                             <div className="p-8 md:p-12">
                                 <div className="text-center mb-10">
                                     <span className="text-supreme-gold text-xs font-sans tracking-[0.2em] uppercase mb-4 block">
-                                        Supreme Riverside Advantage
+                                        Supreme Rivana Advantage
                                     </span>
                                     <h3 className="text-3xl md:text-4xl font-serif text-white">
                                         Secure Your Priority Access
@@ -83,8 +83,8 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                                 </div>
 
                                 <form onSubmit={handleSubmit} className="space-y-6">
-                                    <input type="hidden" name="subject" value="New Quick Enquiry from Supreme Riverside" />
-                                    <input type="hidden" name="from_name" value="Supreme Riverside System" />
+                                    <input type="hidden" name="subject" value="New Quick Enquiry from Supreme Rivana" />
+                                    <input type="hidden" name="from_name" value="Supreme Rivana System" />
                                     <div className="space-y-4">
                                         <div className="relative">
                                             <input

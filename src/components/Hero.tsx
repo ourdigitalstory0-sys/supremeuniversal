@@ -19,7 +19,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
             >
                 <img
                     src="/hero-refined.png"
-                    alt="Supreme Riverside Punawale luxury villa architectural visualization — premium hilltop living with swimming pool near Hinjewadi"
+                    alt="Supreme Rivana Punawale luxury villa architectural visualization — premium hilltop living with swimming pool near Hinjewadi"
                     className="w-full h-full object-cover opacity-80 mix-blend-overlay"
                     fetchPriority="high"
                     loading="eager"
@@ -28,7 +28,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
 
             {/* Content Container */}
             <div className="container mx-auto px-6 relative z-20 flex flex-col items-center justify-center text-center mt-20">
-                <h2 className="sr-only">Buy luxury apartments in Punawale near Hinjewadi IT Park — Supreme Riverside premium flats for sale Punawale Pune 2026</h2>
+                <h2 className="sr-only">Buy luxury apartments in Punawale near Hinjewadi IT Park — Supreme Rivana premium flats for sale Punawale Pune 2026</h2>
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -38,9 +38,10 @@ const Hero = ({ onEnquire }: HeroProps) => {
                     <span className="block text-xs md:text-sm font-sans tracking-[0.4em] text-supreme-gold mb-4 uppercase">
                         Premium Lifestyle Apartments Pune | Luxury Residences Pune
                     </span>
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-tight drop-shadow-2xl">
-                        Supreme <span className="italic font-light text-supreme-gold">Riverside</span>
-                        <span className="block text-2xl md:text-4xl mt-4 font-sans font-light tracking-wide text-white/90">Punawale</span>
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-tight drop-shadow-2xl flex flex-col items-center">
+                        <span className="uppercase tracking-widest mb-2 font-normal">Supreme</span>
+                        <span className="uppercase tracking-widest font-normal text-supreme-gold">Rivana</span>
+                        <span className="block text-xl md:text-2xl mt-8 font-sans font-light tracking-wide text-white/90">2 & 3 Bed Riverside Residences Punawale</span>
                     </h1>
                 </motion.div>
 
@@ -53,7 +54,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
                     Widely considered the <strong>best project in Punawale 2026</strong>. Experience unprecedented <strong>waterfront luxury</strong> and the pinnacle of real estate evolution with our premium <strong>2 & 3 BHK flats near Hinjewadi IT Park</strong>. A 15-acre IGBC certified township with <strong>31-storey towers</strong>, 40+ world-class amenities, and <strong>Pune Metro Line 3</strong> proximity.
                 </motion.p>
                 {/* Semantic heading for SEO crawlers — visually hidden */}
-                <h2 className="sr-only">Supreme Riverside Punawale – Luxury 2 & 3 BHK waterfront apartments for sale in Punawale near Wakad, Pune West</h2>
+                <h2 className="sr-only">Supreme Rivana Punawale – Luxury 2 & 3 BHK waterfront apartments for sale in Punawale near Wakad, Pune West</h2>
 
                 <motion.div
                     className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full"
@@ -70,7 +71,7 @@ const Hero = ({ onEnquire }: HeroProps) => {
                     </button>
 
                     <Link
-                        to="/supreme-riverside-overview"
+                        to="/supreme-rivana-overview"
                         className="group relative px-8 py-4 rounded-full font-sans font-semibold uppercase tracking-widest text-sm transition-all w-full sm:w-auto text-white border border-white/30 hover:border-white hover:bg-white/10"
                     >
                         Explore Project

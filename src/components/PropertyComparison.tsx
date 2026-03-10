@@ -29,8 +29,8 @@ const PropertyComparison = () => {
                 __html: JSON.stringify({
                     "@context": "https://schema.org",
                     "@type": "ItemList",
-                    "name": "Supreme Riverside vs Puneville vs ANP Autograph — Best Luxury Flats in Punawale 2026",
-                    "description": "Compare Supreme Riverside with top projects like ANP Autograph, Puneville, Legacy Milestone, and 24K Living. Discover the best luxury flats in Punawale for investment.",
+                    "name": "Supreme Rivana vs Puneville vs ANP Autograph — Best Luxury Flats in Punawale 2026",
+                    "description": "Compare Supreme Rivana with top projects like ANP Autograph, Puneville, Legacy Milestone, and 24K Living. Discover the best luxury flats in Punawale for investment.",
                     "numberOfItems": portfolioProjects.length,
                     "itemListElement": portfolioProjects.map((p, i) => ({
                         "@type": "ListItem",
@@ -52,7 +52,7 @@ const PropertyComparison = () => {
                             The <span className="italic font-light text-supreme-gold">Best Luxury Flats</span> in Punawale
                         </h2>
                         <p className="text-gray-500 font-sans text-lg max-w-2xl mx-auto uppercase tracking-widest font-light">
-                            Compare Supreme Riverside with <strong>projects near ANP Autograph</strong>, <strong>Puneville</strong>, and <strong>Legacy Milestone</strong>.
+                            Compare Supreme Rivana with <strong>projects near ANP Autograph</strong>, <strong>Puneville</strong>, and <strong>Legacy Milestone</strong>.
                         </p>
                     </motion.div>
                 </div>

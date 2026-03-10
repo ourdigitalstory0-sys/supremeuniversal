@@ -17,7 +17,7 @@ export const blogPosts: BlogPostType[] = [
     {
         id: 'ultimate-guide-buying-property-punawale-pune',
         title: 'Ultimate Guide to Buying Property in Punawale, Pune (2026 Edition)',
-        excerpt: 'Everything you need to know about the Punawale real estate market, infrastructure updates, and why it is the best time to invest in Supreme Riverside.',
+        excerpt: 'Everything you need to know about the Punawale real estate market, infrastructure updates, and why it is the best time to invest in Supreme Rivana.',
         date: 'March 05, 2026',
         category: 'Buying Guide',
         author: 'Supreme Universal Research Team',
@@ -39,7 +39,7 @@ export const blogPosts: BlogPostType[] = [
             <p className="mb-6">When buying a home, social infrastructure is paramount. Punawale is surrounded by a robust network of <a href="/blog/top-schools-hospitals-near-punawale" className="text-supreme-gold underline">premium schools (like Lotus Business School), multi-specialty hospitals, and high-end retail</a>. You don't have to sacrifice urban conveniences for peaceful living.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Archives of Excellence: The Legacy Guarantee</h3>
-            <p className="mb-6">The single biggest mistake buyers make is choosing a project solely on price rather than the developer's track record. A luxury home is only as good as the builder behind it. Exploring the <a href="/blog/supreme-universal-luxury-legacy-west-pune" className="text-supreme-gold underline">archives of excellence from Supreme Universal</a> reveals a 40-year legacy of delivering iconic luxury projects (like <strong>Supreme Towers</strong> in Koregaon Park and <strong>Supreme Villagio</strong> in Somatane) that elevate the way you live. Now, that legacy arrives in Punawale through their newest masterpiece, <strong>Supreme Riverside</strong>.</p>
+            <p className="mb-6">The single biggest mistake buyers make is choosing a project solely on price rather than the developer's track record. A luxury home is only as good as the builder behind it. Exploring the <a href="/blog/supreme-universal-luxury-legacy-west-pune" className="text-supreme-gold underline">archives of excellence from Supreme Universal</a> reveals a 40-year legacy of delivering iconic luxury projects (like <strong>Supreme Towers</strong> in Koregaon Park and <strong>Supreme Villagio</strong> in Somatane) that elevate the way you live. Now, that legacy arrives in Punawale through their newest masterpiece, <strong>Supreme Rivana</strong>.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Final Thoughts for Homebuyers</h3>
             <p className="mb-6">If you are looking for a spacious 2 BHK or 3 BHK flat in Pune that offers high capital appreciation, resort-level amenities, and a serene riverside environment, finding the best <strong>2 BHK flats in Punawale near Hinjewadi under 1 crore</strong> is entirely possible. Punawale should be at the top of your list.</p>
@@ -47,8 +47,8 @@ export const blogPosts: BlogPostType[] = [
             <br />
             <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
                 <h4 className="font-serif text-2xl text-supreme-gold mb-2">Ready to Upgrade Your Lifestyle?</h4>
-                <p className="text-white/80 font-light mb-4">Discover Supreme Riverside Punawale—an exclusive waterfront community. From private luxury to expansive views, float where few ever reach.</p>
-                <a href="/supreme-riverside-overview#contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Enquire Now</a>
+                <p className="text-white/80 font-light mb-4">Discover Supreme Rivana Punawale—an exclusive waterfront community. From private luxury to expansive views, float where few ever reach.</p>
+                <a href="/supreme-rivana-overview#contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Enquire Now</a>
             </div>
         `
     },
@@ -69,7 +69,7 @@ export const blogPosts: BlogPostType[] = [
             <p className="mb-6">The proposed Pune Metropolitan Region Development Authority (PMRDA) Ring Road is a massive high-speed corridor designed to divert heavy traffic outside the city limits. Because this Ring Road passes in extreme proximity to Punawale, residents will gain incredibly fast access to the Pune-Mumbai Expressway, the national highways, and future commercial nodes. For <a href="/blog/ultimate-guide-buying-property-punawale-pune" className="text-supreme-gold underline">investors eyeing Punawale</a>, the completion of the Ring Road guarantees a massive spike in property valuations.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Seamless Marunji Link to Hinjewadi</h3>
-            <p className="mb-6">Ask any IT professional in Pune—the daily commute to Hinjewadi Phase 1, 2, and 3 can be exhausting if you live in dense suburbs. Punawale's strategic ace-in-the-hole is the Marunji Road connection. This alternate route allows professionals residing in luxury projects like <strong>Supreme Riverside</strong> to reach their tech parks in minutes, entirely bypassing the Wakad bridge bottleneck.</p>
+            <p className="mb-6">Ask any IT professional in Pune—the daily commute to Hinjewadi Phase 1, 2, and 3 can be exhausting if you live in dense suburbs. Punawale's strategic ace-in-the-hole is the Marunji Road connection. This alternate route allows professionals residing in luxury projects like <strong>Supreme Rivana</strong> to reach their tech parks in minutes, entirely bypassing the Wakad bridge bottleneck.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Future Metro Proximity</h3>
             <p className="mb-6">With the Pune Metro system actively expanding its reach across the Hinjewadi-Shivajinagar corridor (Line 3), Punawale residents will soon enjoy last-mile connectivity to high-speed public transit. This turns Punawale from a car-dependent suburb into a hyper-connected multi-modal transit hub.</p>
@@ -95,7 +95,7 @@ export const blogPosts: BlogPostType[] = [
             <p className="mb-6">A Supreme Universal home is more than an apartment; it is an ecosystem. We believe that true luxury lies in the details—the sourcing of the finest global materials, the optimization of natural light, and the integration of biophilic design elements. <a href="/blog/ultimate-guide-buying-property-punawale-pune" className="text-supreme-gold underline">Homebuyers in Punawale</a> now have the opportunity to experience this <strong>timeless luxury real estate evolution</strong>.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Bringing Unmatched Luxury to Punawale</h3>
-            <p className="mb-6">With the launch of <strong>Supreme Riverside</strong>, we are elevating the residential standards of Punawale. Combining our 40-year legacy with a pristine waterfront location, this project introduces multi-tier podium amenities, intelligent home layouts, and an exclusive community atmosphere that West Pune has never seen before. <a href="/supreme-riverside-contact" className="text-supreme-gold underline">Enquire today</a> to secure your piece of Supreme luxury.</p>
+            <p className="mb-6">With the launch of <strong>Supreme Rivana</strong>, we are elevating the residential standards of Punawale. Combining our 40-year legacy with a pristine waterfront location, this project introduces multi-tier podium amenities, intelligent home layouts, and an exclusive community atmosphere that West Pune has never seen before. <a href="/supreme-rivana-contact" className="text-supreme-gold underline">Enquire today</a> to secure your piece of Supreme luxury.</p>
         `
     },
 
@@ -109,7 +109,7 @@ export const blogPosts: BlogPostType[] = [
         author: 'Supreme Universal Research Team',
         image: 'https://cdn.supremeuniversal.com/media/Bw3Oyo_Project-Listing-03.jpg',
         content: `
-            <p className="mb-6">When families consider upgrading to a premium residential community like <a href="/supreme-riverside-overview#overview" className="text-supreme-gold underline">Supreme Riverside Punawale</a>, the first question is always about the social infrastructure. A luxury home must be surrounded by world-class educational and healthcare facilities. Fortunately, <a href="/blog/ultimate-guide-buying-property-punawale-pune" className="text-supreme-gold underline">Punawale's strategic location</a> places it at the epicenter of West Pune's finest institutions.</p>
+            <p className="mb-6">When families consider upgrading to a premium residential community like <a href="/supreme-rivana-overview#overview" className="text-supreme-gold underline">Supreme Rivana Punawale</a>, the first question is always about the social infrastructure. A luxury home must be surrounded by world-class educational and healthcare facilities. Fortunately, <a href="/blog/ultimate-guide-buying-property-punawale-pune" className="text-supreme-gold underline">Punawale's strategic location</a> places it at the epicenter of West Pune's finest institutions.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Premier Educational Institutions</h3>
             <p className="mb-6">Ensuring a high-quality education for your children is effortless in Punawale. The vicinity is home to highly reputed ICSE and CBSE boards, as well as renowned higher-education campuses:</p>
@@ -150,7 +150,7 @@ export const blogPosts: BlogPostType[] = [
             <p className="mb-6">While Wakad struggles with massive traffic bottlenecks during peak hours, Punawale boasts superior, unhindered connectivity. Situated directly on the Mumbai-Pune Expressway, it offers a seamless commute to Hinjewadi Phase 1, Phase 2, and Phase 3 via Marunji Road. The upcoming Pune Ring Road will further amplify Punawale's connectivity, completely bypassing the inner-city congestion.</p>
             
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">3. Greenery and Lifestyle Space</h3>
-            <p className="mb-6">As Wakad has grown into a concrete jungle, developers are forced to build on smaller land parcels, compromising on open spaces. Punawale, on the other hand, offers expansive land for development. Projects like <strong>Supreme Riverside Punawale</strong> capitalize on this by offering acres of lush green spaces, riverside promenades, and massive podium-level amenities that simply aren't possible in Wakad anymore.</p>
+            <p className="mb-6">As Wakad has grown into a concrete jungle, developers are forced to build on smaller land parcels, compromising on open spaces. Punawale, on the other hand, offers expansive land for development. Projects like <strong>Supreme Rivana Punawale</strong> capitalize on this by offering acres of lush green spaces, riverside promenades, and massive podium-level amenities that simply aren't possible in Wakad anymore.</p>
             
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">4. Education and Social Infrastructure</h3>
             <p className="mb-6">Punawale is no longer "upcoming"—it has arrived. With top-rated educational institutions like Lotus Business School, Indira Group of Institutes, and numerous reputed healthcare facilities within a 5km radius, the social infrastructure rivals Wakad's without the associated density and noise.</p>
@@ -160,8 +160,8 @@ export const blogPosts: BlogPostType[] = [
             
             <br />
             <p className="mb-6 border-l-4 border-supreme-gold pl-6 py-4 italic bg-gray-50 text-gray-700 shadow-sm rounded-r-lg">
-                Experience the finest living in West Pune at <strong>Supreme Riverside Punawale</strong>. <br/>
-                <a href="/supreme-riverside-contact" className="text-supreme-gold font-semibold uppercase text-sm tracking-widest mt-2 block hover:underline">Schedule your exclusive site visit today &rarr;</a>
+                Experience the finest living in West Pune at <strong>Supreme Rivana Punawale</strong>. <br/>
+                <a href="/supreme-rivana-contact" className="text-supreme-gold font-semibold uppercase text-sm tracking-widest mt-2 block hover:underline">Schedule your exclusive site visit today &rarr;</a>
             </p>
         `
     },
@@ -182,16 +182,16 @@ export const blogPosts: BlogPostType[] = [
             <p className="mb-6">See how <a href="/blog/supreme-universal-luxury-legacy-west-pune" className="text-supreme-gold underline">Supreme Universal's luxury legacy</a> influences their podium level designs.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Waterfront Promenades & Infinity Pools</h3>
-            <p className="mb-6">At projects like Supreme Riverside, water elements take center stage. An infinity pool overlooking lush greenery provides a daily retreat from the urban hustle. Riverside promenades offer residents a serene space for evening walks, perfectly blending nature with luxury.</p>
+            <p className="mb-6">At projects like Supreme Rivana, water elements take center stage. An infinity pool overlooking lush greenery provides a daily retreat from the urban hustle. Riverside promenades offer residents a serene space for evening walks, perfectly blending nature with luxury.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Multi-Tier Clubhouses</h3>
             <p className="mb-6">A single clubhouse is no longer enough. The standard now is multi-tiered clubhouses that segregate activities—dedicated floors for wellness (spas and gymnasiums), entertainment (mini-theaters and bowling alleys), and co-working spaces. This ensures that the community caters to all age groups and lifestyle needs simultaneously.</p>
         `
     },
     {
-        id: 'supreme-riverside-punawale-definitive-guide-15-acre-legacy',
-        title: 'Supreme Riverside Punawale: The Definitive Guide to a 15-Acre Riverside Legacy',
-        excerpt: 'Discover why Supreme Riverside is the top-ranked project in Punawale 2026. A comprehensive look at the 15-acre IGBC township, exclusive 6-per-floor privacy, and the Supreme Universal legacy.',
+        id: 'supreme-rivana-punawale-definitive-guide-15-acre-legacy',
+        title: 'Supreme Rivana Punawale: The Definitive Guide to a 15-Acre Riverside Legacy',
+        excerpt: 'Discover why Supreme Rivana is the top-ranked project in Punawale 2026. A comprehensive look at the 15-acre IGBC township, exclusive 6-per-floor privacy, and the Supreme Universal legacy.',
         date: 'March 02, 2026',
         category: 'Project Spotlight',
         author: 'Supreme Universal Editorial Team',
@@ -200,13 +200,13 @@ export const blogPosts: BlogPostType[] = [
         datePublished: '2026-03-02T10:00:00+08:00',
         dateModified: '2026-03-02T14:00:00+08:00',
         content: `
-            <p>In the rapidly evolving landscape of <strong>Pune West real estate</strong>, one project stands as a benchmark for luxury, scale, and strategic foresight: <strong>Supreme Riverside Punawale</strong>. Developed by the legendary <strong>Supreme Universal</strong>, this 15-acre riverside township is not just a residence; it is an executive statement in the <strong>Punawale property market</strong>.</p>
+            <p>In the rapidly evolving landscape of <strong>Pune West real estate</strong>, one project stands as a benchmark for luxury, scale, and strategic foresight: <strong>Supreme Rivana Punawale</strong>. Developed by the legendary <strong>Supreme Universal</strong>, this 15-acre riverside township is not just a residence; it is an executive statement in the <strong>Punawale property market</strong>.</p>
 
             <h3>The Supreme Universal Legacy: 40+ Years of Excellence</h3>
             <p>Supreme Universal has been a pioneer in luxury living since 1982. With over <strong>70 delivered projects</strong> across Mumbai and Pune, the brand is synonymous with trust and transformative design. From the award-winning <strong>Supreme Villagio</strong> to the iconic <strong>Supreme Estia</strong>, the builder's legacy is built on uncompromising quality and timely delivery, recognized by <strong>CREDAI-MCHI</strong> and the <strong>Asia Property Awards</strong>.</p>
 
             <h3>15-Acre IGBC Certified Township: A Sustainable Oasis</h3>
-            <p>Supreme Riverside is one of the largest planned developments in the region. As an <strong>IGBC-certified green project</strong>, it integrates sustainable planning with modern engineering.
+            <p>Supreme Rivana is one of the largest planned developments in the region. As an <strong>IGBC-certified green project</strong>, it integrates sustainable planning with modern engineering.
             <ul>
                 <li><strong>Scale:</strong> 15 lush acres of master-planned development.</li>
                 <li><strong>Skyline:</strong> majestic 31-storey towers offering panoramic riverside views.</li>
@@ -214,7 +214,7 @@ export const blogPosts: BlogPostType[] = [
             </ul></p>
 
             <h3>The Privacy USP: Exclusive 6 Residences Per Floor</h3>
-            <p>Unlike competitors like Kohinoor Uptown Avenue or Siddhashila Eela which often feature higher density layouts, Supreme Riverside prioritizes <strong>privacy and ventilation</strong>. With only <strong>6 units per floor</strong>, residents enjoy reduced noise, better cross-ventilation, and a sense of exclusivity that is rare in the <strong>Punawale 2 & 3 BHK segment</strong>.</p>
+            <p>Unlike competitors like Kohinoor Uptown Avenue or Siddhashila Eela which often feature higher density layouts, Supreme Rivana prioritizes <strong>privacy and ventilation</strong>. With only <strong>6 units per floor</strong>, residents enjoy reduced noise, better cross-ventilation, and a sense of exclusivity that is rare in the <strong>Punawale 2 & 3 BHK segment</strong>.</p>
 
             <h3>World-Class Amenities: Elevating Your Every Day</h3>
             <p>The project features over 40+ multi-tier amenities designed for all age groups:
@@ -233,16 +233,16 @@ export const blogPosts: BlogPostType[] = [
                 <li><strong>IT Proximity:</strong> 15 minutes from Hinjewadi Phase 1, making it the ideal choice for IT professionals.</li>
             </ul></p>
 
-            <h3>Conclusion: Why Supreme Riverside is the Best Choice in Punawale</h3>
-            <p>Whether you are looking for high property appreciation in 2026 or a luxurious waterfront lifestyle, <strong>Supreme Riverside Punawale</strong> is the definitive answer. With the backing of a 40-year legacy and a future-ready township design, it is arguably the <strong>top projects in Punawale 2026</strong>.</p>
+            <h3>Conclusion: Why Supreme Rivana is the Best Choice in Punawale</h3>
+            <p>Whether you are looking for high property appreciation in 2026 or a luxurious waterfront lifestyle, <strong>Supreme Rivana Punawale</strong> is the definitive answer. With the backing of a 40-year legacy and a future-ready township design, it is arguably the <strong>top projects in Punawale 2026</strong>.</p>
         `
     },
 
     // --- NEW: TRANSACTIONAL INTENT ARTICLE ---
     {
-        id: 'supreme-riverside-rera-number-price-list-booking-2026',
-        title: 'Supreme Riverside RERA Number, Price List & Booking – Complete Guide 2026',
-        excerpt: 'Get the complete Supreme Riverside RERA registration details, official price list for 2 & 3 BHK, payment plans, and step-by-step booking process for 2026.',
+        id: 'supreme-rivana-rera-number-price-list-booking-2026',
+        title: 'Supreme Rivana RERA Number, Price List & Booking – Complete Guide 2026',
+        excerpt: 'Get the complete Supreme Rivana RERA registration details, official price list for 2 & 3 BHK, payment plans, and step-by-step booking process for 2026.',
         date: 'March 04, 2026',
         category: 'Buying Guide',
         author: 'Supreme Universal Sales Team',
@@ -251,23 +251,23 @@ export const blogPosts: BlogPostType[] = [
         datePublished: '2026-03-04T10:00:00+05:30',
         dateModified: '2026-03-04T10:00:00+05:30',
         content: `
-            <p className="mb-6">If you're searching for the <strong>Supreme Riverside RERA number</strong>, official <strong>Supreme Riverside price list</strong>, or want to understand the <strong>Supreme Riverside booking</strong> process, this is your definitive guide. We break down every detail to help you make an informed buying decision for 2026.</p>
+            <p className="mb-6">If you're searching for the <strong>Supreme Rivana RERA number</strong>, official <strong>Supreme Rivana price list</strong>, or want to understand the <strong>Supreme Rivana booking</strong> process, this is your definitive guide. We break down every detail to help you make an informed buying decision for 2026.</p>
 
-            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Supreme Riverside RERA Registration</h3>
-            <p className="mb-6">Supreme Riverside Punawale is a fully RERA-compliant project registered under the Maharashtra Real Estate Regulatory Authority (MahaRERA). The RERA registration ensures complete transparency in project timelines, carpet area declarations, and financial accountability. Buyers can verify all project details on the official <strong>MahaRERA website</strong> for complete peace of mind.</p>
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Supreme Rivana RERA Registration</h3>
+            <p className="mb-6">Supreme Rivana Punawale is a fully RERA-compliant project registered under the Maharashtra Real Estate Regulatory Authority (MahaRERA). The RERA registration ensures complete transparency in project timelines, carpet area declarations, and financial accountability. Buyers can verify all project details on the official <strong>MahaRERA website</strong> for complete peace of mind.</p>
             <p className="mb-6">Supreme Universal has a spotless track record with RERA compliance across all their projects—from <a href="/projects/supreme-towers" className="text-supreme-gold underline">Supreme Towers</a> to <a href="/projects/supreme-estia" className="text-supreme-gold underline">Supreme Estia</a>—ensuring timely delivery and transparent dealings.</p>
 
-            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Supreme Riverside Price List 2026</h3>
-            <p className="mb-6">The <strong>Supreme Riverside price</strong> is positioned competitively for the ultra-luxury segment in Punawale. Here's what you need to know:</p>
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Supreme Rivana Price List 2026</h3>
+            <p className="mb-6">The <strong>Supreme Rivana price</strong> is positioned competitively for the ultra-luxury segment in Punawale. Here's what you need to know:</p>
             <ul className="list-disc pl-6 mb-6 text-gray-600">
                 <li className="mb-2"><strong>2 BHK Apartments:</strong> Starting at highly competitive rates with spacious layouts, river views, and premium finishes. These are among the best <strong>2 BHK flats in Punawale near Hinjewadi</strong>.</li>
                 <li className="mb-2"><strong>3 BHK Apartments:</strong> Expansive family residences with panoramic views, designed for those seeking the finest <strong>3 BHK river view apartments in Punawale</strong>.</li>
                 <li className="mb-2"><strong>Jodi Flats / Large Formats:</strong> Select configurations available for buyers seeking extra-large living spaces.</li>
             </ul>
-            <p className="mb-6">For the exact <strong>Supreme Riverside 2 BHK price</strong> and <strong>Supreme Riverside 3 BHK price</strong>, including the latest festive offers and early-bird discounts, please <a href="/supreme-riverside-contact" className="text-supreme-gold underline">contact our sales team directly</a>.</p>
+            <p className="mb-6">For the exact <strong>Supreme Rivana 2 BHK price</strong> and <strong>Supreme Rivana 3 BHK price</strong>, including the latest festive offers and early-bird discounts, please <a href="/supreme-rivana-contact" className="text-supreme-gold underline">contact our sales team directly</a>.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Payment Plans & Bank Loan Options</h3>
-            <p className="mb-6">Supreme Riverside offers flexible payment plans tailored to different buyer profiles:</p>
+            <p className="mb-6">Supreme Rivana offers flexible payment plans tailored to different buyer profiles:</p>
             <ul className="list-disc pl-6 mb-6 text-gray-600">
                 <li className="mb-2"><strong>Construction-Linked Plan (CLP):</strong> Pay in stages as construction milestones are achieved.</li>
                 <li className="mb-2"><strong>Down Payment Plan:</strong> Attractive discounts for upfront payments.</li>
@@ -275,10 +275,10 @@ export const blogPosts: BlogPostType[] = [
             </ul>
             <p className="mb-6">The project is pre-approved by all major banks including HDFC, SBI, ICICI, Axis Bank, and Bank of Baroda, ensuring seamless home loan processing.</p>
 
-            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">How to Book a Flat in Supreme Riverside</h3>
-            <p className="mb-6">The <strong>Supreme Riverside booking</strong> process is straightforward:</p>
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">How to Book a Flat in Supreme Rivana</h3>
+            <p className="mb-6">The <strong>Supreme Rivana booking</strong> process is straightforward:</p>
             <ol className="list-decimal pl-6 mb-6 text-gray-600">
-                <li className="mb-2"><strong>Step 1:</strong> <a href="/supreme-riverside-contact" className="text-supreme-gold underline">Submit an enquiry</a> or call +91 77440 09295.</li>
+                <li className="mb-2"><strong>Step 1:</strong> <a href="/supreme-rivana-contact" className="text-supreme-gold underline">Submit an enquiry</a> or call +91 77440 09295.</li>
                 <li className="mb-2"><strong>Step 2:</strong> Schedule a site visit to experience the project firsthand.</li>
                 <li className="mb-2"><strong>Step 3:</strong> Select your preferred tower, floor, and apartment configuration.</li>
                 <li className="mb-2"><strong>Step 4:</strong> Complete the booking with a nominal token amount.</li>
@@ -286,13 +286,13 @@ export const blogPosts: BlogPostType[] = [
             </ol>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why Buy Now in 2026?</h3>
-            <p className="mb-6">With the <a href="/blog/punawale-infrastructure-connectivity-updates-2026" className="text-supreme-gold underline">Pune Ring Road and Metro Line 3</a> progressing rapidly, <strong>property appreciation in Punawale</strong> is accelerating. Early buyers at Supreme Riverside stand to benefit from significant capital gains as infrastructure completion drives demand. Combined with the <a href="/blog/supreme-universal-luxury-legacy-west-pune" className="text-supreme-gold underline">Supreme Universal legacy</a>, this is a once-in-a-decade investment opportunity.</p>
+            <p className="mb-6">With the <a href="/blog/punawale-infrastructure-connectivity-updates-2026" className="text-supreme-gold underline">Pune Ring Road and Metro Line 3</a> progressing rapidly, <strong>property appreciation in Punawale</strong> is accelerating. Early buyers at Supreme Rivana stand to benefit from significant capital gains as infrastructure completion drives demand. Combined with the <a href="/blog/supreme-universal-luxury-legacy-west-pune" className="text-supreme-gold underline">Supreme Universal legacy</a>, this is a once-in-a-decade investment opportunity.</p>
 
             <br />
             <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
                 <h4 className="font-serif text-2xl text-supreme-gold mb-2">Ready to Book?</h4>
-                <p className="text-white/80 font-light mb-4">Secure your dream home at Supreme Riverside Punawale. Limited inventory available at pre-launch prices.</p>
-                <a href="/supreme-riverside-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Book Site Visit →</a>
+                <p className="text-white/80 font-light mb-4">Secure your dream home at Supreme Rivana Punawale. Limited inventory available at pre-launch prices.</p>
+                <a href="/supreme-rivana-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Book Site Visit →</a>
             </div>
         `
     },
@@ -300,8 +300,8 @@ export const blogPosts: BlogPostType[] = [
     // --- NEW: PRICE-SENSITIVE BUYER ARTICLE ---
     {
         id: 'best-2-bhk-flats-punawale-under-1-crore-2026',
-        title: 'Best 2 BHK Flats in Punawale Under 1 Crore – Supreme Riverside 2026',
-        excerpt: 'Discover the best 2 BHK flats in Punawale under 1 crore near Hinjewadi. Compare prices, amenities, and investment potential at Supreme Riverside Punawale.',
+        title: 'Best 2 BHK Flats in Punawale Under 1 Crore – Supreme Rivana 2026',
+        excerpt: 'Discover the best 2 BHK flats in Punawale under 1 crore near Hinjewadi. Compare prices, amenities, and investment potential at Supreme Rivana Punawale.',
         date: 'March 04, 2026',
         category: 'Buying Guide',
         author: 'Supreme Universal Research Team',
@@ -315,10 +315,10 @@ export const blogPosts: BlogPostType[] = [
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why Punawale for Affordable Luxury?</h3>
             <p className="mb-6">Unlike saturated markets like Wakad and Baner where <strong>2 BHK prices</strong> have crossed well beyond ₹1 crore for basic apartments, Punawale still offers premium luxury at competitive entry points. The <a href="/blog/punawale-vs-wakad-real-estate-investment-2026" className="text-supreme-gold underline">Punawale vs Wakad comparison</a> clearly shows that Punawale delivers 25-40% more carpet area, better ventilation, and superior amenities at similar or lower price points.</p>
 
-            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">What Makes Supreme Riverside's 2 BHK Special?</h3>
-            <p className="mb-6">At <strong>Supreme Riverside Punawale</strong>, the 2 BHK apartments are engineered for maximum livability and investment returns:</p>
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">What Makes Supreme Rivana's 2 BHK Special?</h3>
+            <p className="mb-6">At <strong>Supreme Rivana Punawale</strong>, the 2 BHK apartments are engineered for maximum livability and investment returns:</p>
             <ul className="list-disc pl-6 mb-6 text-gray-600">
-                <li className="mb-2"><strong>Exclusive 6-per-floor layout:</strong> Unlike competitors with 8-10 units per floor, Supreme Riverside offers only 6 apartments per floor, ensuring privacy and superior cross-ventilation.</li>
+                <li className="mb-2"><strong>Exclusive 6-per-floor layout:</strong> Unlike competitors with 8-10 units per floor, Supreme Rivana offers only 6 apartments per floor, ensuring privacy and superior cross-ventilation.</li>
                 <li className="mb-2"><strong>River views:</strong> Select units offer stunning waterfront views — a USP unmatched in the Punawale market.</li>
                 <li className="mb-2"><strong>IGBC certified:</strong> Green building standards mean lower electricity bills and a healthier living environment.</li>
                 <li className="mb-2"><strong>40+ amenities:</strong> From infinity pools to co-working hubs — residents get resort-level facilities.</li>
@@ -337,16 +337,16 @@ export const blogPosts: BlogPostType[] = [
             <p className="mb-6">To secure a <strong>2 BHK flat in Punawale near Hinjewadi</strong> at the best price, consider these tips:</p>
             <ol className="list-decimal pl-6 mb-6 text-gray-600">
                 <li className="mb-2">Book during pre-launch or early phases for maximum discounts.</li>
-                <li className="mb-2">Opt for the <a href="/blog/supreme-riverside-rera-number-price-list-booking-2026" className="text-supreme-gold underline">construction-linked payment plan</a> to manage cash flow efficiently.</li>
-                <li className="mb-2">Compare the <strong>Supreme Riverside floor plan</strong> to competitors — the 6-per-floor advantage is real.</li>
+                <li className="mb-2">Opt for the <a href="/blog/supreme-rivana-rera-number-price-list-booking-2026" className="text-supreme-gold underline">construction-linked payment plan</a> to manage cash flow efficiently.</li>
+                <li className="mb-2">Compare the <strong>Supreme Rivana floor plan</strong> to competitors — the 6-per-floor advantage is real.</li>
                 <li className="mb-2">Factor in the 15-acre township premium — future resale values are always higher for large-scale developments.</li>
             </ol>
 
             <br />
             <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
                 <h4 className="font-serif text-2xl text-supreme-gold mb-2">Find Your Dream 2 BHK</h4>
-                <p className="text-white/80 font-light mb-4">Explore the best 2 BHK options at Supreme Riverside Punawale. Starting at highly competitive prices with world-class amenities.</p>
-                <a href="/supreme-riverside-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Get Price List →</a>
+                <p className="text-white/80 font-light mb-4">Explore the best 2 BHK options at Supreme Rivana Punawale. Starting at highly competitive prices with world-class amenities.</p>
+                <a href="/supreme-rivana-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Get Price List →</a>
             </div>
         `
     },
@@ -355,7 +355,7 @@ export const blogPosts: BlogPostType[] = [
     {
         id: 'nri-guide-buying-property-punawale-pune-2026',
         title: 'NRI Guide to Buying Property in Punawale, Pune – Investment & Legal Checklist 2026',
-        excerpt: 'Complete NRI guide for buying property in Punawale Pune. Covers RERA compliance, repatriation rules, power of attorney, home loans, and why Supreme Riverside is the top NRI investment.',
+        excerpt: 'Complete NRI guide for buying property in Punawale Pune. Covers RERA compliance, repatriation rules, power of attorney, home loans, and why Supreme Rivana is the top NRI investment.',
         date: 'March 04, 2026',
         category: 'Investment Guide',
         author: 'Supreme Universal NRI Desk',
@@ -364,7 +364,7 @@ export const blogPosts: BlogPostType[] = [
         datePublished: '2026-03-04T14:00:00+05:30',
         dateModified: '2026-03-04T14:00:00+05:30',
         content: `
-            <p className="mb-6">For Non-Resident Indians (NRIs) looking to invest in Indian real estate, <strong>Punawale in Pune West</strong> represents one of the most compelling opportunities in 2026. With direct connectivity to Hinjewadi IT Park, the upcoming Pune Metro Line 3, and world-class residential projects like <strong>Supreme Riverside Punawale</strong>, this guide covers everything an NRI investor needs to know.</p>
+            <p className="mb-6">For Non-Resident Indians (NRIs) looking to invest in Indian real estate, <strong>Punawale in Pune West</strong> represents one of the most compelling opportunities in 2026. With direct connectivity to Hinjewadi IT Park, the upcoming Pune Metro Line 3, and world-class residential projects like <strong>Supreme Rivana Punawale</strong>, this guide covers everything an NRI investor needs to know.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why NRIs Are Choosing Punawale in 2026</h3>
             <p className="mb-6">The <strong>NRI property investment in Pune</strong> landscape has shifted significantly. Punawale offers several unique advantages:</p>
@@ -372,13 +372,13 @@ export const blogPosts: BlogPostType[] = [
                 <li className="mb-2"><strong>IT Proximity:</strong> Most NRI investors have family or business connections to Hinjewadi's tech ecosystem. Punawale is just 10-15 minutes away.</li>
                 <li className="mb-2"><strong>Capital Appreciation:</strong> <a href="/blog/punawale-infrastructure-connectivity-updates-2026" className="text-supreme-gold underline">Infrastructure developments</a> like the Ring Road and Metro are projected to drive 15-25% appreciation over the next 3 years.</li>
                 <li className="mb-2"><strong>Rental Income:</strong> Strong <strong>rental income potential in Punawale</strong> with IT professionals willing to pay premium rents for quality housing.</li>
-                <li className="mb-2"><strong>Quality of Life:</strong> For NRIs planning to return, projects like Supreme Riverside offer a lifestyle comparable to international standards.</li>
+                <li className="mb-2"><strong>Quality of Life:</strong> For NRIs planning to return, projects like Supreme Rivana offer a lifestyle comparable to international standards.</li>
             </ul>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Legal Checklist for NRI Property Purchase</h3>
             <p className="mb-6">Here's a comprehensive legal checklist for <strong>NRI buying flat in Punawale</strong>:</p>
             <ol className="list-decimal pl-6 mb-6 text-gray-600">
-                <li className="mb-2"><strong>RERA Verification:</strong> Always verify the project's MahaRERA registration. Supreme Riverside is fully RERA compliant with transparent project timelines.</li>
+                <li className="mb-2"><strong>RERA Verification:</strong> Always verify the project's MahaRERA registration. Supreme Rivana is fully RERA compliant with transparent project timelines.</li>
                 <li className="mb-2"><strong>RBI Compliance:</strong> NRIs can purchase residential properties under the Reserve Bank of India's general permission. No special approval needed.</li>
                 <li className="mb-2"><strong>Power of Attorney (PoA):</strong> If you can't be present physically, execute a Power of Attorney in favor of a trusted person. Supreme Universal's NRI desk assists with this process.</li>
                 <li className="mb-2"><strong>PAN Card:</strong> Mandatory for property registration and tax compliance in India.</li>
@@ -394,10 +394,10 @@ export const blogPosts: BlogPostType[] = [
                 <li className="mb-2"><strong>ICICI Bank:</strong> Special NRI mortgage solutions with door-step service in select countries.</li>
                 <li className="mb-2"><strong>Axis Bank:</strong> Flexi home loans with balance transfer options.</li>
             </ul>
-            <p className="mb-6">Supreme Riverside is pre-approved by all major banks, ensuring seamless loan processing for NRI buyers. Learn more about the <a href="/blog/supreme-riverside-rera-number-price-list-booking-2026" className="text-supreme-gold underline">booking process and payment plans here</a>.</p>
+            <p className="mb-6">Supreme Rivana is pre-approved by all major banks, ensuring seamless loan processing for NRI buyers. Learn more about the <a href="/blog/supreme-rivana-rera-number-price-list-booking-2026" className="text-supreme-gold underline">booking process and payment plans here</a>.</p>
 
-            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why Supreme Riverside is the #1 NRI Choice</h3>
-            <p className="mb-6">Supreme Riverside stands out for NRI investors due to:</p>
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why Supreme Rivana is the #1 NRI Choice</h3>
+            <p className="mb-6">Supreme Rivana stands out for NRI investors due to:</p>
             <ul className="list-disc pl-6 mb-6 text-gray-600">
                 <li className="mb-2"><strong>40-year developer legacy:</strong> <a href="/blog/supreme-universal-luxury-legacy-west-pune" className="text-supreme-gold underline">Supreme Universal's track record</a> of timely delivery and quality construction.</li>
                 <li className="mb-2"><strong>IGBC Green Certification:</strong> Sustainable living aligned with global environmental standards.</li>
@@ -409,14 +409,14 @@ export const blogPosts: BlogPostType[] = [
             <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
                 <h4 className="font-serif text-2xl text-supreme-gold mb-2">NRI Investment Desk</h4>
                 <p className="text-white/80 font-light mb-4">Connect with our dedicated NRI investment team for exclusive pricing, virtual tours, and end-to-end documentation support.</p>
-                <a href="/supreme-riverside-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Connect Now →</a>
+                <a href="/supreme-rivana-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Connect Now →</a>
             </div>
         `
     },
     {
         id: 'future-of-punawale-real-estate-pune-2026-2030',
         title: 'The Future of Punawale Real Estate: A 2026-2030 Growth Outlook',
-        excerpt: 'Why Punawale is the fastest growing area in Pune. In-depth analysis of property appreciation, infrastructure updates, and why Supreme Riverside is the top project in Punawale 2026.',
+        excerpt: 'Why Punawale is the fastest growing area in Pune. In-depth analysis of property appreciation, infrastructure updates, and why Supreme Rivana is the top project in Punawale 2026.',
         date: 'March 09, 2026',
         category: 'Market Insights',
         author: 'Supreme Universal Research Team',
@@ -425,7 +425,7 @@ export const blogPosts: BlogPostType[] = [
             <p className="mb-6">Punawale has officially transitioned from an "upcoming" micro-market to West Pune's most dominant residential hub. As we look at the <strong>future of Punawale real estate</strong>, the trajectory is clear: double-digit capital appreciation, world-class social infrastructure, and absolute connectivity to Pune's IT corridors.</p>
             
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why Punawale is the Fastest Growing Area in Pune</h3>
-            <p className="mb-6">Several factors contribute to Punawale's exponential growth. The <strong>Pune Ring Road</strong> and <strong>Pune Metro Line 3</strong> are turning this region into a multi-modal transit hub. For those looking for <strong>new projects in Punawale</strong>, the opportunity for capital gains is unparalleled. Projects like <strong>Supreme Riverside Punawale</strong> are at the forefront of this evolution, offering early investors a significant <strong>high ROI flats Pune</strong> opportunity.</p>
+            <p className="mb-6">Several factors contribute to Punawale's exponential growth. The <strong>Pune Ring Road</strong> and <strong>Pune Metro Line 3</strong> are turning this region into a multi-modal transit hub. For those looking for <strong>new projects in Punawale</strong>, the opportunity for capital gains is unparalleled. Projects like <strong>Supreme Rivana Punawale</strong> are at the forefront of this evolution, offering early investors a significant <strong>high ROI flats Pune</strong> opportunity.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Property Appreciation in Punawale: What to Expect</h3>
             <p className="mb-6">Historically, <strong>apartments in Punawale</strong> have seen a steady 12-15% annual growth. With the bypass widening and the Marunji link bridge, accessibility is no longer a bottleneck. This has made <strong>property investment Punawale</strong> the preferred choice for both end-users and long-term investors aiming for <strong>best residential investment Pune</strong>.</p>
@@ -434,7 +434,7 @@ export const blogPosts: BlogPostType[] = [
     {
         id: 'property-investment-near-hinjewadi-it-hub-pune',
         title: 'Best Property Investment Near Hinjewadi IT Hub: Why Punawale Wins',
-        excerpt: 'Discover the best property investment near Hinjewadi. Compare investment flats near Wakad and explore why IT professionals are choosing Supreme Riverside Punawale.',
+        excerpt: 'Discover the best property investment near Hinjewadi. Compare investment flats near Wakad and explore why IT professionals are choosing Supreme Rivana Punawale.',
         date: 'March 09, 2026',
         category: 'Investment Guide',
         author: 'Supreme Universal Sales Team',
@@ -443,7 +443,7 @@ export const blogPosts: BlogPostType[] = [
             <p className="mb-6">For IT professionals working in Hinjewadi Phase 1, 2, or 3, finding the <strong>best property investment near Hinjewadi</strong> is a top priority. While Wakad and Baner were traditional choices, 2026 belongs to Punawale. <strong>Investment flats near Wakad</strong> are often overpriced and cramped, whereas Punawale offers <strong>premium lifestyle apartments Pune</strong> at a fraction of the cost.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">ROI Potential Near Rajiv Gandhi Infotech Park</h3>
-            <p className="mb-6">Being close to the <strong>Rajiv Gandhi Infotech Park</strong> ensures high rental demand. <strong>Apartments near Hinjewadi IT Park</strong> command premium rents, especially if they are part of a 15-acre township like Supreme Riverside. If you are looking for <strong>best projects near Hinjewadi for investment</strong>, focus on developers with a legacy like Supreme Universal.</p>
+            <p className="mb-6">Being close to the <strong>Rajiv Gandhi Infotech Park</strong> ensures high rental demand. <strong>Apartments near Hinjewadi IT Park</strong> command premium rents, especially if they are part of a 15-acre township like Supreme Rivana. If you are looking for <strong>best projects near Hinjewadi for investment</strong>, focus on developers with a legacy like Supreme Universal.</p>
         `
     },
     {
@@ -455,7 +455,7 @@ export const blogPosts: BlogPostType[] = [
         author: 'Supreme Universal Editorial Team',
         image: 'https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg',
         content: `
-            <p className="mb-6">In a bustling city like Pune, <strong>riverside living</strong> offers a rare escape. <strong>River view luxury apartments Pune</strong> are not just about the aesthetics; they are about wellness, cleaner air, and a tranquil environment. At Supreme Riverside, we’ve designed <strong>nature facing apartments Pune</strong> that maximize these benefits.</p>
+            <p className="mb-6">In a bustling city like Pune, <strong>riverside living</strong> offers a rare escape. <strong>River view luxury apartments Pune</strong> are not just about the aesthetics; they are about wellness, cleaner air, and a tranquil environment. At Supreme Rivana, we’ve designed <strong>nature facing apartments Pune</strong> that maximize these benefits.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Luxury High Rise Apartments Near Hinjewadi</h3>
             <p className="mb-6">Imagine waking up to the gentle flow of the river while being minutes away from work. <strong>Skyline apartments Pune</strong> with river views are in high demand among those seeking <strong>premium lifestyle apartments Pune</strong>. Our 31-storey towers provide the perfect vantage point for a <strong>luxury residences Pune</strong> experience.</p>
@@ -473,7 +473,7 @@ export const blogPosts: BlogPostType[] = [
             <p className="mb-6">Deciding between a 2 BHK and a 3 BHK is a common dilemma. In the Punawale market, <strong>2 BHK price Punawale</strong> is highly attractive for younger professionals, whereas <strong>3 BHK price Punawale</strong> offers better long-term appreciation for growing families.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Rental Yield vs Capital Gain</h3>
-            <p className="mb-6"><strong>2 BHK flats in Punawale pune</strong> typically offer a higher rental yield relative to the investment. However, <strong>3 BHK luxury apartments Punawale</strong> are rarer and often see higher capital gains due to scarcity. Whether you <strong>buy flats in Punawale</strong> for self-use or investment, Supreme Riverside provides the <strong>best residential investment Pune</strong> options in both configurations.</p>
+            <p className="mb-6"><strong>2 BHK flats in Punawale pune</strong> typically offer a higher rental yield relative to the investment. However, <strong>3 BHK luxury apartments Punawale</strong> are rarer and often see higher capital gains due to scarcity. Whether you <strong>buy flats in Punawale</strong> for self-use or investment, Supreme Rivana provides the <strong>best residential investment Pune</strong> options in both configurations.</p>
         `
     }
 ];

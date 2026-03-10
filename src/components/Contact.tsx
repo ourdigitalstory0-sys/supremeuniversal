@@ -10,15 +10,15 @@ const Contact = () => {
     const eventSchema = {
         "@context": "https://schema.org",
         "@type": "Event",
-        "name": "Supreme Riverside Punawale - Exclusive Site Visit",
-        "description": "Schedule a private tour of Supreme Riverside Punawale luxury 2 & 3 BHK waterfront apartments near Hinjewadi IT Park, Pune.",
+        "name": "Supreme Rivana Punawale - Exclusive Site Visit",
+        "description": "Schedule a private tour of Supreme Rivana Punawale luxury 2 & 3 BHK waterfront apartments near Hinjewadi IT Park, Pune.",
         "startDate": "2026-03-01",
         "endDate": "2026-12-31",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
             "@type": "Place",
-            "name": "Supreme Riverside Site Experience Center",
+            "name": "Supreme Rivana Site Experience Center",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Near Lotus Business School, Punawale",
@@ -38,15 +38,15 @@ const Contact = () => {
             "price": "0",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
-            "url": "https://supreme-universal.in/supreme-riverside-contact"
+            "url": "https://supreme-universal.in/supreme-rivana-contact"
         }
     };
 
     const howToSchema = {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": "How to Book a Flat at Supreme Riverside Punawale",
-        "description": "A simple 5-step process to book your luxury 2 or 3 BHK waterfront apartment at Supreme Riverside, near Hinjewadi, Pune.",
+        "name": "How to Book a Flat at Supreme Rivana Punawale",
+        "description": "A simple 5-step process to book your luxury 2 or 3 BHK waterfront apartment at Supreme Rivana, near Hinjewadi, Pune.",
         "step": [
             {
                 "@type": "HowToStep",
@@ -71,7 +71,7 @@ const Contact = () => {
             {
                 "@type": "HowToStep",
                 "name": "Complete Paperwork",
-                "text": "Sign the agreement and complete the registration process to officially own your home at Supreme Riverside."
+                "text": "Sign the agreement and complete the registration process to officially own your home at Supreme Rivana."
             }
         ]
     };
@@ -139,7 +139,7 @@ const Contact = () => {
                         >
                             <h3 className="text-2xl font-serif text-supreme-gold">Site Experience Center</h3>
                             <p className="text-white/70 font-sans font-light leading-loose text-lg">
-                                Supreme Riverside<br />
+                                Supreme Rivana<br />
                                 Near Lotus Business School,<br />
                                 Punawale, Pune, Maharashtra - 411033
                             </p>
@@ -184,7 +184,7 @@ const Contact = () => {
                             className="space-y-8 bg-white/5 p-8 md:p-12 border border-white/10"
                         >
                             <input type="hidden" name="subject" value="New Website Contact Enquiry" />
-                            <input type="hidden" name="from_name" value="Supreme Riverside System" />
+                            <input type="hidden" name="from_name" value="Supreme Rivana System" />
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <div className="relative group">

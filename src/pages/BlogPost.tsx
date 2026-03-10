@@ -60,7 +60,7 @@ const BlogPost = () => {
             "@type": "WebPage",
             "@id": `https://supreme-universal.in/blog/${id}`
         },
-        "keywords": `${post.category}, Supreme Riverside Punawale, Punawale real estate, Pune West property, Supreme Universal`,
+        "keywords": `${post.category}, Supreme Rivana Punawale, Punawale real estate, Pune West property, Supreme Universal`,
         "wordCount": post.content.replace(/<[^>]*>/g, '').split(/\s+/).length.toString(),
         "inLanguage": "en-IN",
         "isAccessibleForFree": true
@@ -69,7 +69,7 @@ const BlogPost = () => {
     return (
         <div className="font-sans antialiased text-gray-900 bg-white">
             <SEO
-                title={`${post.title} | Supreme Riverside Blog`}
+                title={`${post.title} | Supreme Rivana Blog`}
                 description={post.excerpt}
                 url={`https://supreme-universal.in/blog/${id}`}
                 image={post.image}

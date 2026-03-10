@@ -12,7 +12,7 @@ const BlogList = () => {
     const collectionSchema = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "Real Estate Blog & Market Insights | Supreme Riverside Punawale",
+        "name": "Real Estate Blog & Market Insights | Supreme Rivana Punawale",
         "description": "Read the latest news, market insights, and lifestyle guides about the West Pune real estate market, Punawale, Wakad, and Hinjewadi.",
         "url": "https://supreme-universal.in/blog",
         "mainEntity": {
@@ -30,7 +30,7 @@ const BlogList = () => {
     return (
         <div className="font-sans antialiased text-gray-900 bg-white">
             <SEO
-                title="Real Estate Blog & Market Insights | Supreme Riverside Punawale"
+                title="Real Estate Blog & Market Insights | Supreme Rivana Punawale"
                 description="Read the latest news, market insights, and lifestyle guides about the West Pune real estate market, Punawale, Wakad, and Hinjewadi."
                 url="https://supreme-universal.in/blog"
             />

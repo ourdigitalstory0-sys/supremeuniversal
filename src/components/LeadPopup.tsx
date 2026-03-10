@@ -10,9 +10,9 @@ const LeadPopup = () => {
     const actionSchema = {
         "@context": "https://schema.org",
         "@type": "CommunicateAction",
-        "name": "Enquire About Supreme Riverside Punawale",
-        "description": "Request a callback or schedule a private site visit for Supreme Riverside luxury 2 & 3 BHK apartments in Punawale, Pune.",
-        "target": "https://supreme-universal.in/supreme-riverside-contact",
+        "name": "Enquire About Supreme Rivana Punawale",
+        "description": "Request a callback or schedule a private site visit for Supreme Rivana luxury 2 & 3 BHK apartments in Punawale, Pune.",
+        "target": "https://supreme-universal.in/supreme-rivana-contact",
         "agent": {
             "@type": "Organization",
             "name": "Supreme Universal",
@@ -20,7 +20,7 @@ const LeadPopup = () => {
         },
         "object": {
             "@type": "RealEstateListing",
-            "name": "Supreme Riverside Punawale",
+            "name": "Supreme Rivana Punawale",
             "url": "https://supreme-universal.in/"
         }
     };
@@ -118,7 +118,7 @@ const LeadPopup = () => {
                                 <img
                                     src="https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
                                     className="absolute inset-0 w-full h-full object-cover opacity-60"
-                                    alt="Supreme Riverside Punawale luxury 2 and 3 BHK apartments near Hinjewadi"
+                                    alt="Supreme Rivana Punawale luxury 2 and 3 BHK apartments near Hinjewadi"
                                     loading="lazy"
                                     decoding="async"
                                 />
@@ -150,8 +150,8 @@ const LeadPopup = () => {
                                 </div>
 
                                 <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
-                                    <input type="hidden" name="subject" value="New VIP Lead from Supreme Riverside" />
-                                    <input type="hidden" name="from_name" value="Supreme Riverside System" />
+                                    <input type="hidden" name="subject" value="New VIP Lead from Supreme Rivana" />
+                                    <input type="hidden" name="from_name" value="Supreme Rivana System" />
                                     <div className="relative">
                                         <input
                                             type="text"

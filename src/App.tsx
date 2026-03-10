@@ -44,13 +44,13 @@ function ScrollHandler() {
 
     const timer = setTimeout(() => {
       const sectionMap: Record<string, string> = {
-        '/supreme-riverside-overview': '#overview',
-        '/supreme-riverside-amenities': '#amenities',
-        '/supreme-riverside-floor-plans': '#features',
-        '/supreme-riverside-gallery': '#gallery',
-        '/supreme-riverside-location': '#location',
-        '/supreme-riverside-faq': '#faq',
-        '/supreme-riverside-contact': '#contact'
+        '/supreme-rivana-overview': '#overview',
+        '/supreme-rivana-amenities': '#amenities',
+        '/supreme-rivana-floor-plans': '#features',
+        '/supreme-rivana-gallery': '#gallery',
+        '/supreme-rivana-location': '#location',
+        '/supreme-rivana-faq': '#faq',
+        '/supreme-rivana-contact': '#contact'
       };
 
       const targetId = sectionMap[pathname];
@@ -142,13 +142,13 @@ function App() {
       <ScrollHandler />
       <Routes>
         <Route path="/" element={<MainApp />} />
-        <Route path="/supreme-riverside-overview" element={<MainApp />} />
-        <Route path="/supreme-riverside-amenities" element={<MainApp />} />
-        <Route path="/supreme-riverside-floor-plans" element={<MainApp />} />
-        <Route path="/supreme-riverside-gallery" element={<MainApp />} />
-        <Route path="/supreme-riverside-location" element={<MainApp />} />
-        <Route path="/supreme-riverside-faq" element={<MainApp />} />
-        <Route path="/supreme-riverside-contact" element={<MainApp />} />
+        <Route path="/supreme-rivana-overview" element={<MainApp />} />
+        <Route path="/supreme-rivana-amenities" element={<MainApp />} />
+        <Route path="/supreme-rivana-floor-plans" element={<MainApp />} />
+        <Route path="/supreme-rivana-gallery" element={<MainApp />} />
+        <Route path="/supreme-rivana-location" element={<MainApp />} />
+        <Route path="/supreme-rivana-faq" element={<MainApp />} />
+        <Route path="/supreme-rivana-contact" element={<MainApp />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/projects/:id" element={<ProjectDetails />} />

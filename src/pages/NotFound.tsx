@@ -11,8 +11,8 @@ const NotFound = () => {
     return (
         <div className="font-sans antialiased text-gray-900 bg-white">
             <SEO
-                title="Page Not Found | Supreme Riverside Punawale"
-                description="The page you are looking for does not exist. Explore Supreme Riverside Punawale — premium 2 & 3 BHK luxury flats near Hinjewadi IT Park, Pune West."
+                title="Page Not Found | Supreme Rivana Punawale"
+                description="The page you are looking for does not exist. Explore Supreme Rivana Punawale — premium 2 & 3 BHK luxury flats near Hinjewadi IT Park, Pune West."
                 url="https://supreme-universal.in/404"
             />
 
@@ -56,11 +56,11 @@ const NotFound = () => {
                         >
                             <Home className="w-6 h-6 text-supreme-gold" />
                             <span className="text-white text-sm font-sans uppercase tracking-wider">Home</span>
-                            <span className="text-white/40 text-xs">Supreme Riverside</span>
+                            <span className="text-white/40 text-xs">Supreme Rivana</span>
                         </Link>
 
                         <Link
-                            to="/supreme-riverside-overview"
+                            to="/supreme-rivana-overview"
                             className="group flex flex-col items-center gap-3 p-6 border border-white/10 hover:border-supreme-gold/40 bg-white/5 hover:bg-white/10 transition-all duration-500"
                         >
                             <MapPin className="w-6 h-6 text-supreme-gold" />
@@ -78,7 +78,7 @@ const NotFound = () => {
                         </Link>
 
                         <Link
-                            to="/supreme-riverside-contact"
+                            to="/supreme-rivana-contact"
                             className="group flex flex-col items-center gap-3 p-6 border border-white/10 hover:border-supreme-gold/40 bg-white/5 hover:bg-white/10 transition-all duration-500"
                         >
                             <Phone className="w-6 h-6 text-supreme-gold" />

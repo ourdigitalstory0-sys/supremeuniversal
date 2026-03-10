@@ -11,11 +11,14 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="lg:col-span-4">
                         <div className="flex flex-col items-start gap-1 mb-6">
-                            <span className="text-3xl font-serif text-white tracking-widest uppercase leading-none">
-                                Supreme
+                            <svg className="w-10 h-5 mb-3 opacity-90" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 50 A 40 40 0 0 1 90 50 Z" fill="#DD6B4D" />
+                            </svg>
+                            <span className="text-3xl font-serif text-white tracking-widest uppercase leading-none mb-1">
+                                SUPREME
                             </span>
-                            <span className="text-sm font-serif italic text-supreme-gold">
-                                Riverside
+                            <span className="text-2xl font-serif text-white tracking-widest uppercase leading-none">
+                                RIVANA
                             </span>
                         </div>
                         <p className="text-white/60 font-sans font-light leading-loose text-base md:text-lg mb-8 max-w-sm">
@@ -28,9 +31,9 @@ const Footer = () => {
                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Navigation</h5>
                         <ul className="space-y-4 text-white/50 font-sans font-light">
                             <li><Link to="/" className="hover:text-supreme-gold transition-colors duration-300">Home</Link></li>
-                            <li><Link to="/supreme-riverside-overview" className="hover:text-supreme-gold transition-colors duration-300">The Vision</Link></li>
-                            <li><Link to="/supreme-riverside-amenities" className="hover:text-supreme-gold transition-colors duration-300">The Master Club</Link></li>
-                            <li><Link to="/supreme-riverside-location" className="hover:text-supreme-gold transition-colors duration-300">Neighborhood</Link></li>
+                            <li><Link to="/supreme-rivana-overview" className="hover:text-supreme-gold transition-colors duration-300">The Vision</Link></li>
+                            <li><Link to="/supreme-rivana-amenities" className="hover:text-supreme-gold transition-colors duration-300">The Master Club</Link></li>
+                            <li><Link to="/supreme-rivana-location" className="hover:text-supreme-gold transition-colors duration-300">Neighborhood</Link></li>
                             <li><Link to="/blog" className="hover:text-supreme-gold transition-colors duration-300">Market Insights</Link></li>
                         </ul>
                     </div>
@@ -41,7 +44,7 @@ const Footer = () => {
                         <ul className="space-y-4 text-white/50 font-sans font-light">
                             <li><Link to="/blog/ultimate-guide-buying-property-punawale-pune" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Punawale Guide<span className="text-[10px] text-white/30 truncate">Real Estate 2026</span></Link></li>
                             <li><Link to="/blog/punawale-infrastructure-connectivity-updates-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Connectivity<span className="text-[10px] text-white/30 truncate">Ring Road Updates</span></Link></li>
-                            <li><Link to="/blog/supreme-riverside-rera-number-price-list-booking-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">RERA & Booking<span className="text-[10px] text-white/30 truncate">Price List 2026</span></Link></li>
+                            <li><Link to="/blog/supreme-rivana-rera-number-price-list-booking-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">RERA & Booking<span className="text-[10px] text-white/30 truncate">Price List 2026</span></Link></li>
                             <li><Link to="/blog/best-2-bhk-flats-punawale-under-1-crore-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">2 BHK Under ₹1 Cr<span className="text-[10px] text-white/30 truncate">Best Deals 2026</span></Link></li>
                             <li><Link to="/blog/nri-guide-buying-property-punawale-pune-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">NRI Investment<span className="text-[10px] text-white/30 truncate">Legal Checklist</span></Link></li>
                         </ul>
@@ -94,8 +97,8 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-white/10 pt-8 mb-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 font-sans font-light tracking-wide">
-                    <div className="mb-4 md:mb-0">
-                        © {new Date().getFullYear()} Supreme Riverside. All rights reserved.
+                    <div className="mb-4 md:mb-0 text-white/50">
+                        © {new Date().getFullYear()} Supreme Rivana. All rights reserved. <span className="mx-2 hidden md:inline">|</span> <span className="block md:inline text-white/80 mt-2 md:mt-0">MahaRERA No. PM1261012502656</span>
                     </div>
                     <div className="flex gap-8">
                         <a href="#" className="hover:text-supreme-gold transition-colors duration-300">Privacy Policy</a>

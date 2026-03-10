@@ -8,7 +8,7 @@ const Location = () => {
                 __html: JSON.stringify({
                     "@context": "https://schema.org",
                     "@type": "Place",
-                    "name": "Supreme Riverside Punawale — Luxury Flats in Punawale Pune",
+                    "name": "Supreme Rivana Punawale — Luxury Flats in Punawale Pune",
                     "description": "Ultra-luxury 2 & 3 BHK riverside apartments in Punawale. Premium flats near Wakad, Hinjewadi IT Park, and Pune Metro Line 3. Top choice for investment in West Pune.",
                     "address": {
                         "@type": "PostalAddress",
@@ -124,7 +124,7 @@ const Location = () => {
                                     style={{ border: 0 }}
                                     allowFullScreen={true}
                                     loading="lazy"
-                                    title="Supreme Riverside Location Map"
+                                    title="Supreme Rivana Location Map"
                                     className="absolute inset-0 w-full h-full filter grayscale hover:grayscale-0 transition-all duration-[2s] ease-in-out"
                                 ></iframe>
                             </div>

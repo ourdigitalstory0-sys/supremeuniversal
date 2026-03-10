@@ -53,7 +53,7 @@ const NeighborhoodGuide = () => {
                             A High-Growth Micro Market in Pune
                         </h3>
                         <p className="text-gray-600 font-sans text-lg lg:text-xl leading-relaxed mb-8">
-                            Punawale is rapidly emerging as the top investment choice for <strong>premium residential projects punawale pune</strong>. Supreme Riverside leverages this strategic location, offering <strong>high rise apartments in Punawale</strong> with unmatched proximity to <strong>apartments near hinjewadi it park</strong>, <strong>luxury apartments wakad</strong>, and Tathawade.
+                            Punawale is rapidly emerging as the top investment choice for <strong>premium residential projects punawale pune</strong>. Supreme Rivana leverages this strategic location, offering <strong>high rise apartments in Punawale</strong> with unmatched proximity to <strong>apartments near hinjewadi it park</strong>, <strong>luxury apartments wakad</strong>, and Tathawade.
                         </p>
 
                         <div className="space-y-6">
@@ -84,7 +84,7 @@ const NeighborhoodGuide = () => {
                         <div className="absolute inset-0 bg-supreme-gold/10 transform rotate-3 -z-10"></div>
                         <img
                             src="https://cdn.supremeuniversal.com/media/Punawale-Location.jpg"
-                            alt="Supreme Riverside map showing premium residential projects in Pune West and connectivity to Hinjewadi Phase 1"
+                            alt="Supreme Rivana map showing premium residential projects in Pune West and connectivity to Hinjewadi Phase 1"
                             className="object-cover w-full h-full shadow-2xl"
                             loading="lazy"
                             decoding="async"

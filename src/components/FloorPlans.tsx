@@ -12,10 +12,10 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
     const floorPlanSchema = {
         "@context": "https://schema.org",
         "@type": "ImageObject",
-        "name": activeTab === 'Master' ? "Supreme Riverside Master Layout" : `${activeTab} Floor Plan - Supreme Riverside`,
+        "name": activeTab === 'Master' ? "Supreme Rivana Master Layout" : `${activeTab} Floor Plan - Supreme Rivana`,
         "description": activeTab === 'Master'
-            ? "Master layout plan for Supreme Riverside, a 15-acre premium township in Punawale, Pune."
-            : `Architectural floor plan for a luxury ${activeTab} apartment at Supreme Riverside, Punawale.`,
+            ? "Master layout plan for Supreme Rivana, a 15-acre premium township in Punawale, Pune."
+            : `Architectural floor plan for a luxury ${activeTab} apartment at Supreme Rivana, Punawale.`,
         "contentUrl": activeTab === 'Master'
             ? "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
             : activeTab === '2BHK'
@@ -108,10 +108,10 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                                             }
                                             alt={
                                                 activeTab === 'Master'
-                                                    ? "Supreme Riverside Punawale Master Layout Plan - 15 acre IGBC township with 31-storey towers and 40+ amenities"
+                                                    ? "Supreme Rivana Punawale Master Layout Plan - 15 acre IGBC township with 31-storey towers and 40+ amenities"
                                                     : activeTab === '2BHK'
-                                                        ? "Supreme Riverside Punawale 2 BHK Floor Plan Layout - Carpet Area 750-850 sqft with river view and cross ventilation"
-                                                        : "Supreme Riverside Punawale 3 BHK Premium Floor Plan Layout - Carpet Area 1050-1150 sqft with panoramic riverside views"
+                                                        ? "Supreme Rivana Punawale 2 BHK Floor Plan Layout - Carpet Area 750-850 sqft with river view and cross ventilation"
+                                                        : "Supreme Rivana Punawale 3 BHK Premium Floor Plan Layout - Carpet Area 1050-1150 sqft with panoramic riverside views"
                                             }
                                             className="w-full h-full object-cover"
                                             loading="lazy"

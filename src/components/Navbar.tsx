@@ -21,13 +21,13 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
 
     const navLinks = [
         { name: 'Home', href: '/' },
-        { name: 'Overview', href: '/supreme-riverside-overview' },
-        { name: 'Amenities', href: '/supreme-riverside-amenities' },
-        { name: 'Floor Plans', href: '/supreme-riverside-floor-plans' },
-        { name: 'Gallery', href: '/supreme-riverside-gallery' },
-        { name: 'Location', href: '/supreme-riverside-location' },
+        { name: 'Overview', href: '/supreme-rivana-overview' },
+        { name: 'Amenities', href: '/supreme-rivana-amenities' },
+        { name: 'Floor Plans', href: '/supreme-rivana-floor-plans' },
+        { name: 'Gallery', href: '/supreme-rivana-gallery' },
+        { name: 'Location', href: '/supreme-rivana-location' },
         { name: 'Insights', href: '/blog' },
-        { name: 'Contact', href: '/supreme-riverside-contact' },
+        { name: 'Contact', href: '/supreme-rivana-contact' },
     ];
 
     return (
@@ -52,11 +52,14 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
 
                         {/* Logo Section - Center */}
                         <Link to="/" className="flex flex-col items-center group flex-shrink-0 mx-4 lg:mx-8">
-                            <span className="text-xl md:text-3xl font-serif text-white tracking-widest uppercase leading-none mb-1">
-                                Supreme
+                            <svg className="w-8 h-4 mb-2 opacity-90" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 50 A 40 40 0 0 1 90 50 Z" fill="#DD6B4D" />
+                            </svg>
+                            <span className="text-xl md:text-2xl font-serif text-white tracking-widest uppercase leading-none mb-1">
+                                SUPREME
                             </span>
-                            <span className="text-xs md:text-sm font-serif italic text-supreme-gold">
-                                Riverside
+                            <span className="text-xl md:text-2xl font-serif text-white tracking-widest uppercase leading-none">
+                                RIVANA
                             </span>
                         </Link>
 
