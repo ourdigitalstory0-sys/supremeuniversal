@@ -9,13 +9,13 @@ const DATE = new Date().toISOString().split('T')[0];
 
 const staticRoutes = [
   { path: '/', priority: '1.0', changefreq: 'daily' },
-  { path: '/supreme-riverside-overview', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-riverside-amenities', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-riverside-floor-plans', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-riverside-gallery', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-riverside-location', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-riverside-faq', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-riverside-contact', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-overview', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-amenities', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-floor-plans', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-gallery', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-location', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-faq', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-contact', priority: '0.9', changefreq: 'weekly' },
   { path: '/blog', priority: '0.9', changefreq: 'weekly' },
 ];
 
