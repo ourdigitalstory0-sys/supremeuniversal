@@ -493,5 +493,137 @@ export const blogPosts: BlogPostType[] = [
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">The Supreme Rivana Punawale Advantage: Both Configurations Win</h3>
             <p className="mb-6">At <strong>Supreme Rivana Punawale</strong>, both the <strong>2 BHK</strong> and <strong>3 BHK</strong> configurations are designed for maximum ROI. The <strong>Supreme Rivana 2 BHK price</strong> is incredibly competitive for the luxury segment, while the <strong>Supreme Rivana 3 BHK price</strong> positions itself as a premium offering with <strong>river views</strong> and <strong>exclusive 6-per-floor privacy</strong>. With <strong>Supreme Universal's 40-year legacy</strong> and a <strong>15-acre IGBC-certified township</strong>, both options outperform alternatives like Puneville, ANP Autograph, and 24k Living. <a href="/supreme-rivana-floor-plans" className="text-supreme-gold underline">Compare our floor plans</a>.</p>
         `
+    },
+
+    // --- NEW: COMPARISON ARTICLE (P0 Priority) ---
+    {
+        id: 'supreme-rivana-vs-puneville-comparison-2026',
+        title: 'Supreme Rivana vs Puneville Punawale: Honest Comparison 2026 — Price, Amenities, RERA',
+        excerpt: 'Comprehensive Supreme Rivana vs Puneville comparison for 2026. Compare price per sqft, carpet area, amenities, RERA status, builder legacy, and investment potential in Punawale.',
+        date: 'March 10, 2026',
+        category: 'Comparison',
+        author: 'Supreme Universal Research Team',
+        image: 'https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg',
+        readTime: '10 min read',
+        datePublished: '2026-03-10T10:00:00+05:30',
+        dateModified: '2026-03-10T10:00:00+05:30',
+        content: `
+            <p className="mb-6">If you're searching for <strong>luxury flats in Punawale</strong> in 2026, two projects dominate the conversation: <strong>Supreme Rivana Punawale</strong> by Supreme Universal and <strong>Puneville</strong> by Panchshil Realty. This unbiased comparison breaks down every factor — from <strong>Supreme Rivana vs Puneville price</strong> and carpet area to amenities, builder track record, and long-term investment potential — to help you make the smartest buying decision.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Project Overview: Supreme Rivana vs Puneville</h3>
+            <div className="overflow-x-auto mb-8">
+                <table className="w-full text-sm">
+                    <thead className="bg-gray-100">
+                        <tr>
+                            <th className="p-3 text-left font-semibold">Parameter</th>
+                            <th className="p-3 text-left font-semibold text-supreme-gold">Supreme Rivana Punawale</th>
+                            <th className="p-3 text-left font-semibold">Puneville Punawale</th>
+                        </tr>
+                    </thead>
+                    <tbody className="divide-y">
+                        <tr><td className="p-3 font-medium">Developer</td><td className="p-3">Supreme Universal (40+ years)</td><td className="p-3">Panchshil Realty</td></tr>
+                        <tr><td className="p-3 font-medium">Township Area</td><td className="p-3 text-supreme-gold font-semibold">15 Acres</td><td className="p-3">10 Acres</td></tr>
+                        <tr><td className="p-3 font-medium">Tower Height</td><td className="p-3 text-supreme-gold font-semibold">31 Storeys</td><td className="p-3">25 Storeys</td></tr>
+                        <tr><td className="p-3 font-medium">Units Per Floor</td><td className="p-3 text-supreme-gold font-semibold">6 (Max Privacy)</td><td className="p-3">8</td></tr>
+                        <tr><td className="p-3 font-medium">Configurations</td><td className="p-3">2 BHK & 3 BHK</td><td className="p-3">1, 2, 3 BHK</td></tr>
+                        <tr><td className="p-3 font-medium">Total Amenities</td><td className="p-3 text-supreme-gold font-semibold">40+</td><td className="p-3">30+</td></tr>
+                        <tr><td className="p-3 font-medium">Green Certification</td><td className="p-3 text-supreme-gold font-semibold">IGBC Certified</td><td className="p-3">Not Certified</td></tr>
+                        <tr><td className="p-3 font-medium">River Views</td><td className="p-3 text-supreme-gold font-semibold">Yes — Panoramic</td><td className="p-3">Limited</td></tr>
+                        <tr><td className="p-3 font-medium">Hinjewadi Distance</td><td className="p-3">10-15 minutes</td><td className="p-3">10-15 minutes</td></tr>
+                        <tr><td className="p-3 font-medium">RERA Status</td><td className="p-3 text-supreme-gold font-semibold">MahaRERA Registered</td><td className="p-3">MahaRERA Registered</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">1. Supreme Rivana vs Puneville: Price Comparison</h3>
+            <p className="mb-6">Both projects offer competitive pricing in the <strong>Punawale luxury segment</strong>. The <strong>Supreme Rivana 2 BHK price</strong> and <strong>Supreme Rivana 3 BHK price</strong> are positioned for maximum value — especially considering the 15-acre township scale, IGBC certification, and only 6 units per floor. For the latest <strong>Supreme Rivana price list</strong> and comparison with Puneville rates, <a href="/supreme-rivana-contact" className="text-supreme-gold underline">contact our sales team</a>.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">2. Amenities & Lifestyle Comparison</h3>
+            <p className="mb-6"><strong>Supreme Rivana Punawale</strong> sets the bar with <strong>40+ multi-tier amenities</strong> including an infinity pool, skywalk bridge, co-working hub, pet park, mini-theatre, and a 3-level clubhouse. The project's <strong>riverside promenade</strong> and <strong>panoramic river views</strong> from 31-storey towers are unique differentiators that no other Punawale project offers at this scale.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">3. Builder Legacy & Trust Factor</h3>
+            <p className="mb-6"><strong>Supreme Universal</strong> brings a <strong>40+ year legacy</strong> with <strong>70+ delivered projects</strong> across Mumbai and Pune. Award-winning projects like <strong>Supreme Towers</strong> (Koregaon Park), <strong>Supreme Estia</strong> (Baner), and <strong>Supreme Villagio</strong> (Somatane) establish an unmatched track record of premium quality and timely delivery — recognized by CREDAI-MCHI and Asia Property Awards.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">4. Investment Potential: Supreme Rivana Punawale</h3>
+            <p className="mb-6">With the <strong>Pune Ring Road</strong> and <strong>Metro Line 3</strong> set to transform Punawale's connectivity, <strong>property appreciation in Punawale</strong> is expected to outpace all other West Pune micro-markets. <strong>Supreme Rivana Punawale</strong> — with its 15-acre scale, IGBC certification, and riverside USP — is positioned for the <strong>highest capital appreciation</strong> among all Punawale projects including Puneville, ANP Autograph, and 24k Living.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">The Verdict: Why Supreme Rivana Punawale Wins</h3>
+            <p className="mb-6">While Puneville is a respectable project, <strong>Supreme Rivana Punawale</strong> outperforms on every critical parameter: larger township (15 vs 10 acres), taller towers (31 vs 25 storeys), fewer units per floor (6 vs 8), more amenities (40+ vs 30+), IGBC certified, and a 40-year developer legacy. For families, IT professionals, and investors seeking the <strong>best project in Punawale 2026</strong>, Supreme Rivana is the definitive choice.</p>
+
+            <br />
+            <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
+                <h4 className="font-serif text-2xl text-supreme-gold mb-2">Make the Right Choice</h4>
+                <p className="text-white/80 font-light mb-4">Compare Supreme Rivana Punawale with any project — the numbers speak for themselves. Schedule a site visit today.</p>
+                <a href="/supreme-rivana-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Book Site Visit →</a>
+            </div>
+        `
+    },
+
+    // --- NEW: PRICE LIST ARTICLE (P0 Priority) ---
+    {
+        id: 'supreme-rivana-punawale-price-list-2026-all-configurations',
+        title: 'Supreme Rivana Punawale Price List 2026: 2 BHK & 3 BHK Rates, EMI Calculator & Offers',
+        excerpt: 'Complete Supreme Rivana Punawale price list for 2026. Get 2 BHK and 3 BHK per sqft rates, carpet area details, EMI estimates, payment plans, and current booking offers at Supreme Rivana.',
+        date: 'March 10, 2026',
+        category: 'Buying Guide',
+        author: 'Supreme Universal Sales Team',
+        image: 'https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg',
+        readTime: '8 min read',
+        datePublished: '2026-03-10T12:00:00+05:30',
+        dateModified: '2026-03-10T12:00:00+05:30',
+        content: `
+            <p className="mb-6">Looking for the latest <strong>Supreme Rivana Punawale price list</strong>? This is your complete guide to <strong>Supreme Rivana 2 BHK price</strong>, <strong>Supreme Rivana 3 BHK price</strong>, carpet area details, EMI estimates, and the best current booking offers. Whether you're an IT professional in Hinjewadi, an NRI investor, or a family upgrading to premium living, this guide covers everything you need to make an informed buying decision.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Supreme Rivana Price Overview 2026</h3>
+            <p className="mb-6"><strong>Supreme Rivana Punawale</strong> is positioned in the ultra-luxury segment at highly competitive rates for Punawale. The pricing reflects the premium quality, 15-acre township scale, IGBC certification, and Supreme Universal's 40-year legacy. Here's what makes the <strong>Supreme Rivana price</strong> exceptional value:</p>
+            <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>Only 6 units per floor</strong> — you pay for privacy, not density</li>
+                <li className="mb-2"><strong>31-storey towers</strong> with panoramic river views</li>
+                <li className="mb-2"><strong>40+ multi-tier amenities</strong> included in the price</li>
+                <li className="mb-2"><strong>IGBC certified</strong> — lower maintenance costs long-term</li>
+                <li className="mb-2"><strong>15-acre township</strong> — larger projects retain value better</li>
+            </ul>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Supreme Rivana 2 BHK Price & Configuration</h3>
+            <p className="mb-6">The <strong>Supreme Rivana 2 BHK</strong> apartments are designed for maximum livability and investment returns. Features include spacious living areas, river-facing balconies, premium bathroom fittings, and modular kitchen-ready layouts. The <strong>2 BHK carpet area</strong> at Supreme Rivana is among the most generous in the Punawale segment, ensuring you get true value for money.</p>
+            <p className="mb-6">For the exact <strong>Supreme Rivana 2 BHK price</strong> with the latest festive offers and early-bird discounts, <a href="/supreme-rivana-contact" className="text-supreme-gold underline">contact our sales team directly</a> or schedule a site visit.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Supreme Rivana 3 BHK Price & Configuration</h3>
+            <p className="mb-6">The <strong>Supreme Rivana 3 BHK</strong> residences cater to growing families seeking expansive luxury. With premium finishes, dedicated utility areas, servant quarters (in select units), and multiple balconies offering river and garden views, these are among the <strong>best 3 BHK apartments in Punawale</strong>.</p>
+            <p className="mb-6">The <strong>Supreme Rivana 3 BHK price</strong> is carefully positioned to deliver the best value in the luxury segment. <a href="/supreme-rivana-floor-plans" className="text-supreme-gold underline">Download the detailed floor plan brochure</a> to see exact carpet areas and layout options.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">EMI Estimates for Supreme Rivana Punawale</h3>
+            <p className="mb-6">With home loan interest rates at attractive levels in 2026, EMIs for <strong>Supreme Rivana Punawale</strong> are highly affordable:</p>
+            <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>2 BHK EMI:</strong> Estimated ₹25,000 - ₹40,000/month (based on 80% LTV, 20-year tenure)</li>
+                <li className="mb-2"><strong>3 BHK EMI:</strong> Estimated ₹40,000 - ₹65,000/month (based on 80% LTV, 20-year tenure)</li>
+            </ul>
+            <p className="mb-6">Use our <a href="/supreme-rivana-overview#roi-calculator" className="text-supreme-gold underline">ROI Calculator</a> for personalized EMI estimates based on your loan amount and tenure.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Payment Plans & Booking Offers</h3>
+            <p className="mb-6"><strong>Supreme Rivana</strong> offers 3 flexible payment plans:</p>
+            <ol className="list-decimal pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>Construction-Linked Plan (CLP):</strong> Pay in stages as construction milestones are achieved. Most popular among salaried professionals.</li>
+                <li className="mb-2"><strong>Down Payment Plan:</strong> Attractive discounts for upfront payments — ideal for investors and cash buyers.</li>
+                <li className="mb-2"><strong>Flexi Plan:</strong> Customized payment schedules for NRI buyers and high-net-worth individuals.</li>
+            </ol>
+            <p className="mb-6">The project is <strong>pre-approved by HDFC, SBI, ICICI, Axis Bank, and Bank of Baroda</strong> for seamless home loan processing. <a href="/blog/supreme-rivana-rera-number-price-list-booking-2026" className="text-supreme-gold underline">Read our complete booking guide</a>.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why Buy Supreme Rivana Punawale Now?</h3>
+            <p className="mb-6">The <strong>Supreme Rivana price</strong> is currently at pre-launch levels. With the Pune Ring Road and Metro Line 3 progressing, <strong>property appreciation in Punawale</strong> is accelerating at 15-25% annually. Early buyers will benefit from:</p>
+            <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li className="mb-2">Pre-launch pricing advantage (lowest entry point)</li>
+                <li className="mb-2">Floor and tower selection priority</li>
+                <li className="mb-2">Maximum capital appreciation as infrastructure completes</li>
+                <li className="mb-2">Supreme Universal's guaranteed construction quality and timely delivery</li>
+            </ul>
+
+            <br />
+            <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
+                <h4 className="font-serif text-2xl text-supreme-gold mb-2">Get the Official Price List</h4>
+                <p className="text-white/80 font-light mb-4">Request the complete Supreme Rivana Punawale price list with carpet area details, floor plans, and the latest offers directly from our sales team.</p>
+                <a href="/supreme-rivana-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Get Price List →</a>
+            </div>
+        `
     }
 ];
