@@ -19,7 +19,7 @@ const Footer = () => {
                                 SUPREME
                             </span>
                             <span className="text-2xl font-serif text-white tracking-widest uppercase leading-none">
-                                RIVANA
+                                RIVANA PUNAWALE
                             </span>
                         </div>
                         <p className="text-white/60 font-sans font-light leading-loose text-base md:text-lg mb-8 max-w-sm">
@@ -33,7 +33,8 @@ const Footer = () => {
                         <ul className="space-y-4 text-white/50 font-sans font-light">
                             <li><Link to="/" className="hover:text-supreme-gold transition-colors duration-300">Home</Link></li>
                             <li><Link to="/supreme-rivana-overview" className="hover:text-supreme-gold transition-colors duration-300">The Vision</Link></li>
-                            <li><Link to="/supreme-rivana-amenities" className="hover:text-supreme-gold transition-colors duration-300">The Master Club</Link></li>
+                            <li><Link to="/supreme-rivana-price-list" className="hover:text-supreme-gold transition-colors duration-300">Cost Sheets</Link></li>
+                            <li><Link to="/supreme-rivana-comparison" className="hover:text-supreme-gold transition-colors duration-300">Compare Projects</Link></li>
                             <li><Link to="/supreme-rivana-location" className="hover:text-supreme-gold transition-colors duration-300">Neighborhood</Link></li>
                             <li><Link to="/blog" className="hover:text-supreme-gold transition-colors duration-300">Market Insights</Link></li>
                         </ul>
@@ -85,7 +86,7 @@ const Footer = () => {
                     {/* CTA Column */}
                     <div className="lg:col-span-2 text-left lg:text-right">
                         <a
-                            href="https://wa.me/917744009295?text=I%20want%20to%20schedule%20a%20site%20visit%20for%20Supreme%20Riverside"
+                            href="https://wa.me/917744009295?text=I%20want%20to%20schedule%20a%20site%20visit%20for%20Supreme%20Rivana%20Punawale"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-4 text-supreme-gold font-sans font-semibold uppercase tracking-[0.15em] text-xs hover:text-white transition-colors duration-300"
@@ -98,7 +99,7 @@ const Footer = () => {
 
                 <div className="border-t border-white/10 pt-8 mb-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 font-sans font-light tracking-wide">
                     <div className="mb-4 md:mb-0 text-white/50">
-                        © {new Date().getFullYear()} Supreme Rivana. All rights reserved. <span className="mx-2 hidden md:inline">|</span> <span className="block md:inline text-white/80 mt-2 md:mt-0">MahaRERA No. PM1261012502656</span>
+                        © {new Date().getFullYear()} Supreme Rivana Punawale. All rights reserved. <span className="mx-2 hidden md:inline">|</span> <span className="block md:inline text-white/80 mt-2 md:mt-0">MahaRERA No. PM1261012502656</span>
                     </div>
                     <div className="flex gap-8">
                         <a href="#" className="hover:text-supreme-gold transition-colors duration-300">Privacy Policy</a>
@@ -163,7 +164,8 @@ const Footer = () => {
                         <li><a href="/supreme-rivana-location">3 BHK Premium Apartments near Hinjewadi IT Park</a></li>
                         <li><a href="/supreme-rivana-location">Luxury Homes in Wakad and Tathawade</a></li>
                         <li><a href="/supreme-rivana-overview">Supreme Rivana RERA PM1261012502656</a></li>
-                        <li><a href="/supreme-rivana-price-list">Price of new launch flats in PCMC</a></li>
+                        <li><a href="/supreme-rivana-price-list">Supreme Rivana Punawale Price List 2026</a></li>
+                        <li><a href="/supreme-rivana-comparison">Supreme Rivana vs Puneville Comparison</a></li>
                     </ul>
                 </div>
             </div>

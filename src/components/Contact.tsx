@@ -18,7 +18,7 @@ const Contact = () => {
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
             "@type": "Place",
-            "name": "Supreme Rivana Site Experience Center",
+            "name": "Supreme Rivana Punawale Site Experience Center",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Near Lotus Business School, Punawale",
@@ -46,7 +46,7 @@ const Contact = () => {
         "@context": "https://schema.org",
         "@type": "HowTo",
         "name": "How to Book a Flat at Supreme Rivana Punawale",
-        "description": "A simple 5-step process to book your luxury 2 or 3 BHK waterfront apartment at Supreme Rivana, near Hinjewadi, Pune.",
+        "description": "A simple 5-step process to book your luxury 2 or 3 BHK waterfront apartment at Supreme Rivana Punawale, near Hinjewadi, Pune.",
         "step": [
             {
                 "@type": "HowToStep",
@@ -71,7 +71,7 @@ const Contact = () => {
             {
                 "@type": "HowToStep",
                 "name": "Complete Paperwork",
-                "text": "Sign the agreement and complete the registration process to officially own your home at Supreme Rivana."
+                "text": "Sign the agreement and complete the registration process to officially own your home at Supreme Rivana Punawale."
             }
         ]
     };
@@ -139,7 +139,7 @@ const Contact = () => {
                         >
                             <h3 className="text-2xl font-serif text-supreme-gold">Site Experience Center</h3>
                             <p className="text-white/70 font-sans font-light leading-loose text-lg">
-                                Supreme Rivana<br />
+                                Supreme Rivana Punawale<br />
                                 Near Lotus Business School,<br />
                                 Punawale, Pune, Maharashtra - 411033
                             </p>
@@ -184,7 +184,7 @@ const Contact = () => {
                             className="space-y-8 bg-white/5 p-8 md:p-12 border border-white/10"
                         >
                             <input type="hidden" name="subject" value="New Website Contact Enquiry" />
-                            <input type="hidden" name="from_name" value="Supreme Rivana System" />
+                            <input type="hidden" name="from_name" value="Supreme Rivana Punawale System" />
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <div className="relative group">

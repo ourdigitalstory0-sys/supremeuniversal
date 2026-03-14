@@ -19,7 +19,7 @@ const Overview = () => {
                             <div className="aspect-[4/5] overflow-hidden rounded-t-[140px] rounded-b-none relative z-10 shadow-2xl">
                                 <img
                                     src="https://cdn.supremeuniversal.com/media/designthatelevate_jSxOmi.jpg"
-                                    alt="Supreme Rivana Punawale 15-acre luxury riverside township exterior view with 31-storey towers near Hinjewadi IT Park Pune"
+                                    alt="Supreme Rivana by Supreme Universal — 15-acre luxury township in Punawale with 31-storey towers. View Supreme Rivana master plan and construction status near Hinjewadi."
                                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-[2s] ease-out"
                                     loading="lazy"
                                     decoding="async"
@@ -84,7 +84,7 @@ const Overview = () => {
                                 transition={{ delay: 0.4, duration: 0.8 }}
                                 className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Supreme Rivana is not just a residential development; it's a <strong>15-acre riverside township</strong> designed to dominate the <strong>Pune Real Estate Market</strong>. Featuring majestic <strong>31-storey towers</strong>, it represents the pinnacle of <strong>Supreme Universal Pune projects</strong>, offering a <strong>luxury lifestyle in West Pune</strong>. As a pioneer in <strong>luxury apartments Pune</strong>, we offer an exclusive collection of <strong>premium apartments in Punawale pune</strong>. Whether you are searching for the best <strong>Supreme Rivana price</strong> or exploring high-ROI <strong>real estate investment west pune</strong>, our project is engineered to be the definitive benchmark for excellence.
+                                Supreme Rivana by Supreme Universal is not just a residential development; it's a 15-acre riverside township designed to dominate the <strong>Pune Real Estate Market</strong>. Featuring majestic <strong>31-storey towers</strong>, it represents the pinnacle of <strong>Supreme Universal Pune projects</strong>, offering a <strong>luxury lifestyle in West Pune</strong>. As a pioneer in <strong>luxury apartments Pune</strong>, we offer an exclusive collection of <strong>premium apartments in Punawale pune</strong>. Whether you are searching for the best <strong>Supreme Rivana Punawale price</strong>, downloading the <strong>Supreme Rivana brochure</strong>, or exploring high-ROI <strong>real estate investment west pune</strong>, our project is engineered to be the definitive benchmark for excellence. Check the <strong>Supreme Rivana construction status</strong> and <strong>master plan</strong> to see your future home take shape.
                             </motion.p>
 
                             <motion.h3
@@ -104,7 +104,7 @@ const Overview = () => {
                                 transition={{ delay: 0.5, duration: 0.8 }}
                                 className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Here, the gentle flow of the river meets cutting-edge architecture in our exclusive <strong>nature facing apartments pune</strong>. Enjoy generous spaces, abundant natural light, and a community that shares your vision of grandeur in the finest <strong>river view luxury apartments pune</strong>. With a firmly committed <strong>Supreme Rivana possession date</strong>, you can secure your luxury future in the most sought-after <strong>apartments near Hinjewadi IT Park</strong>.
+                                Here, the gentle flow of the river meets cutting-edge architecture in our exclusive <strong>nature facing apartments pune</strong>. Enjoy generous spaces, abundant natural light, and a community that shares your vision of grandeur in the finest <strong>river view luxury apartments pune</strong>. With a firmly committed <strong>Supreme Rivana Punawale possession date</strong>, you can secure your luxury future in the most sought-after <strong>apartments near Hinjewadi IT Park</strong>.
                             </motion.p>
 
                             <motion.h3
@@ -124,7 +124,7 @@ const Overview = () => {
                                 transition={{ delay: 0.55, duration: 0.8 }}
                                 className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                As a fully <strong>MahaRERA-compliant</strong> development with <strong>IGBC Green Building Certification</strong>, Supreme Rivana represents the gold standard in sustainable luxury. Pre-approved by <strong>HDFC, SBI, ICICI, and Axis Bank</strong>, this is the most trusted <strong>new project in Punawale 2026</strong> for families, IT professionals, and <strong>NRI investors</strong> alike.
+                                As a fully <strong>MahaRERA-compliant</strong> development with <strong>IGBC Green Building Certification</strong>, Supreme Rivana Punawale represents the gold standard in sustainable luxury. Pre-approved by <strong>HDFC, SBI, ICICI, and Axis Bank</strong>, this is the most trusted <strong>new project in Punawale 2026</strong> for families, IT professionals, and <strong>NRI investors</strong> alike.
                             </motion.p>
 
                             <motion.div

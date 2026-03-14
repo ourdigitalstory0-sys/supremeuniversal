@@ -3,62 +3,74 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://supreme-universal.in/</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://supreme-universal.in</loc>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-rivana-overview</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-rivana-amenities</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-rivana-floor-plans</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-rivana-gallery</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-rivana-location</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-rivana-faq</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/supreme-rivana-contact</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/supreme-rivana-price-list</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://supreme-universal.in/supreme-rivana-comparison</loc>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/blog</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-towers</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -69,7 +81,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-villagio</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -80,7 +92,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-estia</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -91,7 +103,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-wakad</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -102,7 +114,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-pallacio</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -113,7 +125,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-vivero</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -124,7 +136,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-amadore</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -135,7 +147,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-estado</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -146,7 +158,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/projects/supreme-esteban</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -167,7 +179,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/blog/punawale-infrastructure-connectivity-updates-2026</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -177,7 +189,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/blog/supreme-universal-luxury-legacy-west-pune</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -187,7 +199,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/blog/top-schools-hospitals-near-punawale</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -197,7 +209,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/blog/punawale-vs-wakad-real-estate-investment-2026</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -207,7 +219,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/blog/luxury-amenities-pune-apartments</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -257,7 +269,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/blog/future-of-punawale-real-estate-pune-2026-2030</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -267,7 +279,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/blog/property-investment-near-hinjewadi-it-hub-pune</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -277,7 +289,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/blog/benefits-of-riverside-living-pune-luxury-lifestyle</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -287,7 +299,7 @@
   </url>
   <url>
     <loc>https://supreme-universal.in/blog/2-bhk-vs-3-bhk-investment-punawale-pune-2026</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>

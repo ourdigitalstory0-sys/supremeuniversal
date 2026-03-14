@@ -1,0 +1,6 @@
+Contact: mailto:propsmartrealty@gmail.com
+Expires: 2027-03-11T13:54:22.000Z
+Acknowledgments: https://supreme-universal.in/humans.txt
+Preferred-Languages: en
+Canonical: https://supreme-universal.in/.well-known/security.txt
+Policy: https://supreme-universal.in/privacy-policy

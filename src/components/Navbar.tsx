@@ -22,10 +22,10 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
     const navLinks = [
         { name: 'Home', href: '/' },
         { name: 'Overview', href: '/supreme-rivana-overview' },
-        { name: 'Amenities', href: '/supreme-rivana-amenities' },
+        { name: 'Pricing', href: '/supreme-rivana-price-list' },
+        { name: 'Compare', href: '/supreme-rivana-comparison' },
         { name: 'Floor Plans', href: '/supreme-rivana-floor-plans' },
         { name: 'Gallery', href: '/supreme-rivana-gallery' },
-        { name: 'Location', href: '/supreme-rivana-location' },
         { name: 'Insights', href: '/blog' },
         { name: 'Contact', href: '/supreme-rivana-contact' },
     ];
@@ -58,8 +58,11 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
                             <span className="text-xl md:text-2xl font-serif text-white tracking-widest uppercase leading-none mb-1">
                                 SUPREME
                             </span>
-                            <span className="text-xl md:text-2xl font-serif text-white tracking-widest uppercase leading-none">
+                            <span className="text-xl md:text-2xl font-serif text-white tracking-widest uppercase leading-none mb-1">
                                 RIVANA
+                            </span>
+                            <span className="text-[10px] md:text-xs font-serif text-supreme-gold tracking-[0.4em] uppercase leading-none">
+                                PUNAWALE
                             </span>
                         </Link>
 

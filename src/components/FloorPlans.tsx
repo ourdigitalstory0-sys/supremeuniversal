@@ -12,10 +12,10 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
     const floorPlanSchema = {
         "@context": "https://schema.org",
         "@type": "ImageObject",
-        "name": activeTab === 'Master' ? "Supreme Rivana Master Layout" : `${activeTab} Floor Plan - Supreme Rivana`,
+        "name": activeTab === 'Master' ? "Supreme Rivana Punawale Master Layout" : `${activeTab} Floor Plan - Supreme Rivana Punawale`,
         "description": activeTab === 'Master'
-            ? "Master layout plan for Supreme Rivana, a 15-acre premium township in Punawale, Pune."
-            : `Architectural floor plan for a luxury ${activeTab} apartment at Supreme Rivana, Punawale.`,
+            ? "Master layout plan for Supreme Rivana Punawale, a 15-acre premium township in Punawale, Pune."
+            : `Architectural floor plan for a luxury ${activeTab} apartment at Supreme Rivana Punawale, Punawale.`,
         "contentUrl": activeTab === 'Master'
             ? "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
             : activeTab === '2BHK'

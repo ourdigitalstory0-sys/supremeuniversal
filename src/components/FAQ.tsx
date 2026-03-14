@@ -6,14 +6,14 @@ import { Helmet } from 'react-helmet-async';
 const faqs = [
     {
         question: "What is the price of 2 BHK in Supreme Rivana Punawale?",
-        answer: "The Supreme Rivana 2 BHK price starts at highly competitive rates for ultra-luxury near Hinjewadi. These premium flats feature spacious layouts, river views, and world-class amenities. For exact pricing, payment plans, and the latest offers, please contact our sales team directly."
+        answer: "The Supreme Rivana Punawale 2 BHK price starts at highly competitive rates for ultra-luxury near Hinjewadi. These premium flats feature spacious layouts, river views, and world-class amenities. For exact pricing, payment plans, and the latest offers, please contact our sales team directly."
     },
     {
-        question: "Is Supreme Rivana a good investment?",
-        answer: "Yes, Supreme Rivana is an exceptional investment. Property appreciation in Punawale is rapidly growing due to proximity to the Hinjewadi IT Park and the Mumbai Pune Expressway. The rental income potential and high demand make it a top choice for investors in Pune West."
+        question: "Is Supreme Rivana Punawale a good investment?",
+        answer: "Yes, Supreme Rivana Punawale is an exceptional investment. Property appreciation in Punawale is rapidly growing due to proximity to the Hinjewadi IT Park and the Mumbai Pune Expressway. The rental income potential and high demand make it a top choice for investors in Pune West."
     },
     {
-        question: "How far is Supreme Rivana from Hinjewadi?",
+        question: "How far is Supreme Rivana Punawale from Hinjewadi?",
         answer: "Supreme Rivana Punawale is strategically located just 10-15 minutes away from Hinjewadi IT Park. This allows residents to enjoy a serene, waterfront lifestyle while maintaining a rapid, traffic-free commute to major tech hubs."
     },
     {
@@ -22,55 +22,55 @@ const faqs = [
     },
     {
         question: "Which is the best project in Punawale?",
-        answer: "Supreme Rivana is widely considered the best luxury project in Punawale. Backed by Supreme Universal's 40-year legacy, it offers superior multi-tier amenities, intelligent floor plans, and a unique riverside location that outclasses other residential projects in Pune West."
+        answer: "Supreme Rivana Punawale is widely considered the best luxury project in Punawale. Backed by Supreme Universal's 40-year legacy, it offers superior multi-tier amenities, intelligent floor plans, and a unique riverside location that outclasses other residential projects in Pune West."
     },
     {
-        question: "What is the Supreme Rivana possession date?",
-        answer: "The official Supreme Rivana possession date aligns with our strict MahaRERA guidelines to ensure timely delivery. We are committed to a transparent construction schedule. Please visit our sales gallery for the exact phase-wise handover timeline."
+        question: "What is the Supreme Rivana Punawale possession date?",
+        answer: "The official Supreme Rivana Punawale possession date aligns with our strict MahaRERA guidelines to ensure timely delivery. We are committed to a transparent construction schedule. Please visit our sales gallery for the exact phase-wise handover timeline."
     },
     {
-        question: "Can I get a Supreme Rivana 3 BHK price and floor plan?",
-        answer: "Yes, the Supreme Rivana 3 BHK price is tailored for families seeking expansive luxury. Detailed 3 BHK floor plans and the official project brochure are available upon request through our website or by visiting our Punawale site office."
+        question: "Can I get a Supreme Rivana Punawale 3 BHK price and floor plan?",
+        answer: "Yes, the Supreme Rivana Punawale 3 BHK price is tailored for families seeking expansive luxury. Detailed 3 BHK floor plans and the official project brochure are available upon request through our website or by visiting our Punawale site office."
     },
     {
         question: "Are these high rise apartments near Hinjewadi Phase 1?",
-        answer: "Yes, Supreme Rivana offers stunning high rise apartments near Hinjewadi Phase 1. The elevated towers provide unparalleled views, excellent cross-ventilation, and a secure gated community environment tailored perfectly for IT professionals and their families."
+        answer: "Yes, Supreme Rivana Punawale offers stunning high rise apartments near Hinjewadi Phase 1. The elevated towers provide unparalleled views, excellent cross-ventilation, and a secure gated community environment tailored perfectly for IT professionals and their families."
     },
     {
         question: "Is this a good property near schools in Punawale?",
-        answer: "Supreme Rivana is perfectly situated near top educational institutions. Located adjacent to the Lotus Business School and close to premier international schools in Wakad and Tathawade, it is the ideal family-friendly residential project in Punawale."
+        answer: "Supreme Rivana Punawale is perfectly situated near top educational institutions. Located adjacent to the Lotus Business School and close to premier international schools in Wakad and Tathawade, it is the ideal family-friendly residential project in Punawale."
     },
     {
-        question: "How do I make a Supreme Rivana booking?",
-        answer: "You can initiate a Supreme Rivana booking by inquiring on our website or visiting the site office. Our team will guide you through the available inventory, explain the latest offers, and assist with the seamless booking process."
+        question: "How do I make a Supreme Rivana Punawale booking?",
+        answer: "You can initiate a Supreme Rivana Punawale booking by inquiring on our website or visiting the site office. Our team will guide you through the available inventory, explain the latest offers, and assist with the seamless booking process."
     },
     {
-        question: "How far is the Punawale Metro station from Supreme Rivana?",
-        answer: "Supreme Rivana is exceptionally well-connected, located just 400 meters from the Punawale Underpass, which leads directly to the upcoming Pune Metro Line 3 station. This ensures rapid transit to Hinjewadi, Wakad, and central Pune."
+        question: "How far is the Punawale Metro station from Supreme Rivana Punawale?",
+        answer: "Supreme Rivana Punawale is exceptionally well-connected, located just 400 meters from the Punawale Underpass, which leads directly to the upcoming Pune Metro Line 3 station. This ensures rapid transit to Hinjewadi, Wakad, and central Pune."
     },
     {
         question: "What are the benefits of the IGBC Green Building Certification?",
-        answer: "As an IGBC-certified green project, Supreme Rivana ensures sustainable living through energy-efficient design, rainwater harvesting, and superior natural ventilation. This leads to lower maintenance costs and a healthier, eco-friendly lifestyle for all residents."
+        answer: "As an IGBC-certified green project, Supreme Rivana Punawale ensures sustainable living through energy-efficient design, rainwater harvesting, and superior natural ventilation. This leads to lower maintenance costs and a healthier, eco-friendly lifestyle for all residents."
     },
     {
         question: "Punawale vs Wakad: Which is better for investment in 2026?",
-        answer: "While Wakad is established, Punawale offers a higher 'entry-to-appreciation' delta. With the 15-acre scale of Supreme Rivana and upcoming infrastructure like the Pune Ring Road, the property appreciation potential in Punawale is projected to outperform Wakad by 2026-2027."
+        answer: "While Wakad is established, Punawale offers a higher 'entry-to-appreciation' delta. With the 15-acre scale of Supreme Rivana Punawale and upcoming infrastructure like the Pune Ring Road, the property appreciation potential in Punawale is projected to outperform Wakad by 2026-2027."
     },
     {
-        question: "What is the Supreme Rivana RERA registration number?",
+        question: "What is the Supreme Rivana Punawale RERA registration number?",
         answer: "Supreme Rivana Punawale is a fully MahaRERA-compliant project. The RERA registration ensures complete transparency in project timelines, carpet area declarations, and financial accountability. Buyers can verify all project details on the official MahaRERA portal. For the exact registration number, please contact our sales team or visit the site office."
     },
     {
-        question: "What are the payment plan options for Supreme Rivana?",
-        answer: "Supreme Rivana offers 3 flexible payment plans: Construction-Linked Plan (CLP) where you pay in stages as milestones are reached, Down Payment Plan with attractive discounts for upfront payment, and a Flexi Plan for NRI buyers and salaried professionals. The project is pre-approved by HDFC, SBI, ICICI, Axis Bank, and Bank of Baroda."
+        question: "What are the payment plan options for Supreme Rivana Punawale?",
+        answer: "Supreme Rivana Punawale offers 3 flexible payment plans: Construction-Linked Plan (CLP) where you pay in stages as milestones are reached, Down Payment Plan with attractive discounts for upfront payment, and a Flexi Plan for NRI buyers and salaried professionals. The project is pre-approved by HDFC, SBI, ICICI, Axis Bank, and Bank of Baroda."
     },
     {
-        question: "Is Supreme Rivana a good choice for NRI investors?",
-        answer: "Absolutely. Supreme Rivana is one of the top NRI investment choices in Pune West. With a dedicated NRI desk offering virtual site tours, Power of Attorney assistance, and end-to-end documentation support, the entire buying process is seamless. The IGBC-certified 15-acre township by Supreme Universal (40-year legacy) ensures your investment is safe and appreciating."
+        question: "Is Supreme Rivana Punawale a good choice for NRI investors?",
+        answer: "Absolutely. Supreme Rivana Punawale is one of the top NRI investment choices in Pune West. With a dedicated NRI desk offering virtual site tours, Power of Attorney assistance, and end-to-end documentation support, the entire buying process is seamless. The IGBC-certified 15-acre township by Supreme Universal (40-year legacy) ensures your investment is safe and appreciating."
     },
     {
-        question: "What is the carpet area of 2 BHK and 3 BHK in Supreme Rivana?",
-        answer: "Supreme Rivana offers spacious carpet areas in both 2 BHK and 3 BHK configurations, designed for maximum livability with only 6 units per floor for superior privacy and ventilation. The exact carpet areas are available in the official floor plan brochure. Contact our sales team for the detailed layout with dimensions."
+        question: "What is the carpet area of 2 BHK and 3 BHK in Supreme Rivana Punawale?",
+        answer: "Supreme Rivana Punawale offers spacious carpet areas in both 2 BHK and 3 BHK configurations, designed for maximum livability with only 6 units per floor for superior privacy and ventilation. The exact carpet areas are available in the official floor plan brochure. Contact our sales team for the detailed layout with dimensions."
     },
     {
         question: "How is the rental income potential in Punawale near Hinjewadi?",
@@ -81,32 +81,32 @@ const faqs = [
         answer: "Supreme Rivana Punawale is progressing as per committed MahaRERA timelines. Supreme Universal is known for timely delivery across their 70+ delivered projects in Mumbai and Pune. For the latest construction progress, drone footage, and phase-wise updates, please schedule a site visit or contact our sales team."
     },
     {
-        question: "Are there bank loan options approved for Supreme Rivana?",
-        answer: "Yes, Supreme Rivana is pre-approved by all major Indian banks including HDFC, SBI, ICICI Bank, Axis Bank, and Bank of Baroda. This ensures hassle-free home loan processing with competitive interest rates. NRI-specific home loan options are also available through these banks."
+        question: "Are there bank loan options approved for Supreme Rivana Punawale?",
+        answer: "Yes, Supreme Rivana Punawale is pre-approved by all major Indian banks including HDFC, SBI, ICICI Bank, Axis Bank, and Bank of Baroda. This ensures hassle-free home loan processing with competitive interest rates. NRI-specific home loan options are also available through these banks."
     },
     {
-        question: "What makes Supreme Rivana different from other Punawale projects?",
-        answer: "Supreme Rivana stands apart with 5 key differentiators: (1) 15-acre IGBC-certified township — the largest in Punawale, (2) Only 6 apartments per floor for maximum privacy, (3) 31-storey towers with panoramic river views, (4) 40+ multi-tier amenities including skywalk, infinity pool, and co-working hub, and (5) Supreme Universal's 40-year legacy of premium quality and timely delivery."
+        question: "What makes Supreme Rivana Punawale different from other Punawale projects?",
+        answer: "Supreme Rivana Punawale stands apart with 5 key differentiators: (1) 15-acre IGBC-certified township — the largest in Punawale, (2) Only 6 apartments per floor for maximum privacy, (3) 31-storey towers with panoramic river views, (4) 40+ multi-tier amenities including skywalk, infinity pool, and co-working hub, and (5) Supreme Universal's 40-year legacy of premium quality and timely delivery."
     },
     {
         question: "What is the expected property appreciation in Punawale with the Ring Road project?",
-        answer: "Punawale is strategically located near the upcoming Pune Ring Road, which is expected to drive significant property appreciation. Analysts project a 15-25% increase in property values over the next 2-3 years as connectivity to other parts of Pune improves, making Supreme Rivana a high-growth investment asset."
+        answer: "Punawale is strategically located near the upcoming Pune Ring Road, which is expected to drive significant property appreciation. Analysts project a 15-25% increase in property values over the next 2-3 years as connectivity to other parts of Pune improves, making Supreme Rivana Punawale a high-growth investment asset."
     },
     {
-        question: "What are the rental yields for 2 & 3 BHK apartments near Hinjewadi IT Park?",
-        answer: "Luxury apartments near Hinjewadi, like those at Supreme Rivana, currently offer an attractive annual rental yield of 3.5% to 4.5%. Due to the continuous influx of IT professionals and proximity to the Metro Line 3, rental demand remains robust throughout the year."
+        question: "What are the rental yields for 2 & 3 BHK apartments at Supreme Rivana Punawale?",
+        answer: "Luxury apartments near Hinjewadi, like those at Supreme Rivana Punawale, currently offer an attractive annual rental yield of 3.5% to 4.5%. Due to the continuous influx of IT professionals and proximity to the Metro Line 3, rental demand remains robust throughout the year."
     },
     {
-        question: "How does Supreme Rivana compare to luxury projects in Wakad?",
-        answer: "While Wakad is more saturated, Supreme Rivana in Punawale offers a unique 'Riverside Legacy' lifestyle with a 15-acre IGBC certified township, larger open spaces, and more competitive entry prices. Our project provides 40+ world-class amenities and 31-storey towers that set a new benchmark for West Pune's skyline."
+        question: "How does Supreme Rivana Punawale compare to luxury projects in Wakad?",
+        answer: "While Wakad is more saturated, Supreme Rivana Punawale in Punawale offers a unique 'Riverside Legacy' lifestyle with a 15-acre IGBC certified township, larger open spaces, and more competitive entry prices. Our project provides 40+ world-class amenities and 31-storey towers that set a new benchmark for West Pune's skyline."
     },
     {
-        question: "Can NRIs book a flat in Supreme Rivana virtually?",
+        question: "Can NRIs book a flat in Supreme Rivana Punawale virtually?",
         answer: "Yes, Supreme Universal has a dedicated NRI desk that manages the entire process virtually. From immersive 3D walkthroughs and real-time drone updates to digital documentation and Power of Attorney (POA) assistance, we ensure a seamless and transparent booking experience for our international clientele."
     },
     {
         question: "What sustainable features are included in this IGBC Green Building?",
-        answer: "As an IGBC Platinum/Gold certified project, Supreme Rivana includes advanced rainwater harvesting, solar water heating systems, organic waste converters, and a design that optimizes natural lighting and cross-ventilation. These features reduce the overall carbon footprint and lower monthly maintenance costs for residents."
+        answer: "As an IGBC Platinum/Gold certified project, Supreme Rivana Punawale includes advanced rainwater harvesting, solar water heating systems, organic waste converters, and a design that optimizes natural lighting and cross-ventilation. These features reduce the overall carbon footprint and lower monthly maintenance costs for residents."
     }
 ];
 

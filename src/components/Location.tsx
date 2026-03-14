@@ -8,11 +8,11 @@ const Location = () => {
                 __html: JSON.stringify({
                     "@context": "https://schema.org",
                     "@type": "Place",
-                    "name": "Supreme Rivana Punawale — Luxury Flats in Punawale Pune",
-                    "description": "Ultra-luxury 2 & 3 BHK riverside apartments in Punawale. Premium flats near Wakad, Hinjewadi IT Park, and Pune Metro Line 3. Top choice for investment in West Pune.",
+                    "name": "Supreme Rivana Punawale — Luxury 2 BHK & 3 BHK Flats in Punawale Pune",
+                    "description": "Supreme Rivana by Supreme Universal: Ultra-luxury 2 & 3 BHK riverside apartments in Punawale. Premium flats near Wakad, Hinjewadi IT Park, and Pune Metro Line 3. Top choice for investment in West Pune with high appreciation potential.",
                     "address": {
                         "@type": "PostalAddress",
-                        "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road",
+                        "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road, Punawale",
                         "addressLocality": "Punawale",
                         "addressRegion": "Pune, Maharashtra",
                         "postalCode": "411033",
@@ -28,6 +28,7 @@ const Location = () => {
                         "name": "Pune",
                         "containedInPlace": { "@type": "State", "name": "Maharashtra" }
                     },
+                    "keywords": "supreme rivana punawale, luxury flats in punawale, 2 bhk flats punawale, 3 bhk price punawale, supreme universal punawale project",
                     "hasMap": "https://maps.app.goo.gl/YourMapLink"
                 })
             }} />
@@ -55,10 +56,10 @@ const Location = () => {
                             </h2>
 
                             <p className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-lg">
-                                Punawale is strategically positioned along the <strong>Mumbai-Pune Expressway Bypass</strong>, emerging as one of the fastest-appreciating real estate markets for <strong>luxury flats in Punawale pune</strong>. With the upcoming <strong>Pune Metro Line 3</strong> and the proposed <strong>Pune Ring Road</strong>, connectivity to <strong>Hinjewadi IT Park</strong>, <strong>flats near Wakad</strong>, and <strong>Baner</strong> is reaching new heights.
+                                Supreme Rivana Punawale is strategically positioned along the <strong>Mumbai-Pune Expressway Bypass</strong>, emerging as one of the fastest-appreciating real estate markets for <strong>luxury flats in Punawale pune</strong>. With the upcoming <strong>Pune Metro Line 3</strong> and the proposed <strong>Pune Ring Road</strong>, connectivity from <strong>Supreme Rivana location</strong> to <strong>Hinjewadi IT Park</strong>, <strong>flats near Wakad</strong>, <strong>Baner</strong>, and <strong>Tathawade</strong> is reaching new heights. 
                             </p>
                             <p className="text-gray-600 font-light leading-relaxed mb-8">
-                                Our site near <strong>Chhatrapati Shivaji Maharaj Chowk</strong> on <strong>Tathawade Road</strong> offers <strong>waterfront living</strong>, making it the premier choice for those seeking <strong>luxury apartments in Punawale</strong> or <strong>premium flats near Wakad Pune</strong>.
+                                Our site near <strong>Chhatrapati Shivaji Maharaj Chowk</strong> on <strong>Tathawade Road</strong> offers <strong>waterfront living</strong>, making it the premier choice for those seeking <strong>luxury apartments in Punawale</strong> or <strong>premium flats near Wakad Pune</strong>. Experience the best of <strong>Supreme Rivana connectivity</strong> with easy access to <strong>Balewadi High Street</strong> and <strong>Phoenix Mall of the Millennium</strong>.
                             </p>
 
                             <div className="space-y-8">

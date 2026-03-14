@@ -11,7 +11,7 @@ const LeadPopup = () => {
         "@context": "https://schema.org",
         "@type": "CommunicateAction",
         "name": "Enquire About Supreme Rivana Punawale",
-        "description": "Request a callback or schedule a private site visit for Supreme Rivana luxury 2 & 3 BHK apartments in Punawale, Pune.",
+        "description": "Request a callback or schedule a private site visit for Supreme Rivana Punawale luxury 2 & 3 BHK apartments in Punawale, Pune.",
         "target": "https://supreme-universal.in/supreme-rivana-contact",
         "agent": {
             "@type": "Organization",
@@ -150,8 +150,8 @@ const LeadPopup = () => {
                                 </div>
 
                                 <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
-                                    <input type="hidden" name="subject" value="New VIP Lead from Supreme Rivana" />
-                                    <input type="hidden" name="from_name" value="Supreme Rivana System" />
+                                    <input type="hidden" name="subject" value="New VIP Lead from Supreme Rivana Punawale" />
+                                    <input type="hidden" name="from_name" value="Supreme Rivana Punawale System" />
                                     <div className="relative">
                                         <input
                                             type="text"

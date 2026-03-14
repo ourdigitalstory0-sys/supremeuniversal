@@ -32,6 +32,8 @@ import BlogPost from './pages/BlogPost';
 import ProjectDetails from './pages/ProjectDetails';
 import BlogPreview from './components/BlogPreview';
 import NotFound from './pages/NotFound';
+import PriceList from './pages/PriceList';
+import Comparison from './pages/Comparison';
 
 function ScrollHandler() {
   const { pathname } = useLocation();
@@ -152,6 +154,8 @@ function App() {
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/projects/:id" element={<ProjectDetails />} />
+        <Route path="/supreme-rivana-price-list" element={<PriceList />} />
+        <Route path="/supreme-rivana-comparison" element={<Comparison />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

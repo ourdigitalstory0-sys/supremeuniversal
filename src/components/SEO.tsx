@@ -23,43 +23,54 @@ const SEO = ({
     // Route-specific metadata mapping for section routes
     const routeMetadata: Record<string, { title: string; description: string }> = {
         '/': {
-            title: 'Supreme Rivana Punawale | Luxury 2 & 3 BHK Flats near Hinjewadi | Pune Real Estate 2026',
-            description: 'Supreme Rivana Punawale by Supreme Universal: Ultra-luxury 2 & 3 BHK riverside apartments near Hinjewadi IT Park & Wakad. Explore Supreme Rivana price list, floor plans, and world-class amenities in Punawale, Pune West. High ROI property investment near Mumbai-Pune Expressway bypass. Book your site visit today!'
+            title: 'Supreme Rivana Punawale | Luxury 2 & 3 BHK Flats near Hinjewadi | Supreme Rivana Price & Brochure',
+            description: 'Supreme Rivana Punawale by Supreme Universal: Official site for ultra-luxury 2 & 3 BHK riverside apartments near Hinjewadi IT Park. Explore Supreme Rivana Punawale floor plans, 2 BHK price list, construction status, and 40+ world-class amenities in Punawale, West Pune. High ROI investment near Mumbai-Pune Expressway. Book Site Visit!'
         },
         '/supreme-rivana-overview': {
-            title: 'Project Overview | Supreme Rivana Punawale | Luxury Township Pune West',
-            description: 'Discover the vision behind Supreme Rivana Punawale. A 15-acre IGBC certified riverside township featuring 31-storey ultra-luxury towers near Wakad-Hinjewadi link road.'
+            title: 'Supreme Rivana Punawale Project Overview | 15-Acre Riverside Township Pune',
+            description: 'Discover Supreme Rivana Punawale, a 15-acre IGBC certified luxury township by Supreme Universal. Featuring 31-storey towers, riverside living, and premium 2 & 3 BHK Flats near Wakad-Hinjewadi Link Road. The benchmark of Real Estate in West Pune 2026.'
         },
         '/supreme-rivana-amenities': {
-            title: 'Luxury Amenities | Infinite Pool & Skywalk | Supreme Rivana Punawale',
-            description: 'Explore 40+ world-class amenities at Supreme Rivana Punawale. Features include an infinity pool, skywalk bridge, multi-tier clubhouse, and riverside promenade for an elite lifestyle.'
+            title: '40+ Luxury Amenities | Supreme Rivana Punawale | Infinity Pool & Skywalk',
+            description: 'Experience elite living at Supreme Rivana Punawale with 40+ world-class amenities: Infinity Pool, Skywalk Bridge, Pro-Level Sports Courts, Multi-tier Clubhouse, and Riverside Promenade. Luxury apartments in Punawale designed for the modern executive.'
         },
         '/supreme-rivana-floor-plans': {
-            title: 'Floor Plans & Price List | 2 & 3 BHK Apartments | Supreme Rivana Punawale',
-            description: 'View detailed floor plans and price list for 2 & 3 BHK luxury flats at Supreme Rivana Punawale. Optimized layouts for maximum natural light and ventilation near Hinjewadi IT Park.'
+            title: 'Supreme Rivana Floor Plan & Price List | 2 & 3 BHK Configurations Punawale',
+            description: 'View detailed Supreme Rivana floor plans and carpet area for 2 BHK and 3 BHK luxury flats. Optimized Vastu-compliant layouts with maximum ventilation near Hinjewadi IT Park. Get the official Supreme Rivana Punawale price list and cost sheets today.'
         },
         '/supreme-rivana-gallery': {
-            title: 'Project Gallery | See the Lifestyle at Supreme Rivana Punawale',
-            description: 'Visual tour of Supreme Rivana Punawale. View actual site photos, show flat images, and artistic impressions of Punawale\'s most awaited riverside development.'
+            title: 'Supreme Rivana Gallery | Actual Site Photos & Show Flat Images',
+            description: 'A visual tour of Supreme Rivana Punawale. View artistic impressions, actual construction status, and show flat images of the most premium riverside residences in Pune West. See the 15-acre township lifestyle.'
         },
         '/supreme-rivana-location': {
-            title: 'Location & Connectivity | Near Hinjewadi & Wakad | Supreme Rivana Punawale',
-            description: 'Strategically located in Punawale, West Pune. Excellent connectivity to Hinjewadi IT Park, Mumbai-Pune Expressway, and upcoming Metro Line 3 from Supreme Rivana.'
+            title: 'Supreme Rivana Location & Connectivity | Near Hinjewadi IT Park & Wakad',
+            description: 'Strategically located at Chhatrapati Shivaji Maharaj Chowk, Punawale. Supreme Rivana offers unmatched connectivity to Hinjewadi Phase 1, Mumbai-Pune Expressway Bypass, and upcoming Pune Metro Line 3. Prime luxury apartments in West Pune.'
         },
         '/supreme-rivana-faq': {
-            title: 'Frequently Asked Questions | RERA & Details | Supreme Rivana Punawale',
-            description: 'Get answers to all questions regarding Supreme Rivana Punawale. RERA registration number, possession dates, maintenance, and booking process details.'
+            title: 'Supreme Rivana FAQ | RERA Number, Possession Date & Booking Details',
+            description: 'Find answers to every question about Supreme Rivana Punawale: MahaRERA number, possession dates, maintenance costs, and booking process. Your complete guide to buying property in Punawale by Supreme Universal.'
         },
         '/supreme-rivana-contact': {
-            title: 'Contact Sales | Book Your Site Visit | Supreme Rivana Punawale',
-            description: 'Schedule a VIP site visit to Supreme Rivana Punawale. Contact our authorized sales team for exclusive offers, inventory updates, and personalized price presentations.'
+            title: 'Contact Supreme Rivana Punawale Sales | Book A VIP Site Visit',
+            description: 'Schedule your VIP site visit to Supreme Rivana Punawale. Contact our authorized sales gallery for exclusive early-bird offers, inventory updates, and personalized price presentations for 2 & 3 BHK flats.'
+        },
+        '/supreme-rivana-price-list': {
+            title: 'Supreme Rivana Punawale Price List 2026 | 2 BHK & 3 BHK Cost Sheets',
+            description: 'Official Supreme Rivana Price List 2026. Get all-inclusive cost sheets for 2 BHK and 3 BHK luxury apartments in Punawale. Explore limited-time booking offers and down-payment discounts near Hinjewadi.'
+        },
+        '/supreme-rivana-comparison': {
+            title: 'Supreme Rivana vs Puneville | Comparison Review 2026 | Best Project in Punawale',
+            description: 'Supreme Rivana Punawale vs Puneville vs ANP Autograph. See why Supreme Universal\'s 15-acre riverside township is the #1 choice for investment and luxury living in West Pune based on price, amenities, and legacy.'
         }
     };
 
     const currentMetadata = routeMetadata[pathname] || routeMetadata['/'];
     const title = propTitle || currentMetadata.title;
     const description = propDescription || currentMetadata.description;
-    const url = propUrl || `${domain}${pathname === '/' ? '' : pathname}`;
+    
+    // Standardize URL: Remove trailing slash from non-home paths to match sitemap/GSC
+    const cleanPathname = pathname === '/' ? '' : pathname.replace(/\/$/, '');
+    const url = propUrl || `${domain}${cleanPathname}`;
     const fullTitle = title.includes('Supreme Rivana') ? title : `${title} | Supreme Rivana Punawale`;
 
     return (
@@ -176,7 +187,12 @@ const SEO = ({
                         "provider": {
                             "@id": "https://supreme-universal.in/#organization",
                             "name": "Supreme Universal"
-                        }
+                        },
+                        "sameAs": [
+                            "https://en.wikipedia.org/wiki/Pune",
+                            "https://en.wikipedia.org/wiki/PCMC",
+                            "https://en.wikipedia.org/wiki/Real_estate_in_India"
+                        ]
                     },
                     {
                         "@context": "https://schema.org",
@@ -190,7 +206,8 @@ const SEO = ({
                         "sameAs": [
                             "https://www.facebook.com/SupremeUniversal/",
                             "https://www.instagram.com/supreme_universal/",
-                            "https://www.linkedin.com/company/supreme-universal/"
+                            "https://www.linkedin.com/company/supreme-universal/",
+                            "https://en.wikipedia.org/wiki/Supreme_Universal"
                         ],
                         "contactPoint": {
                             "@type": "ContactPoint",
@@ -203,7 +220,7 @@ const SEO = ({
                     {
                         "@context": "https://schema.org",
                         "@type": "LocalBusiness",
-                        "name": "Supreme Rivana Site Office",
+                        "name": "Supreme Rivana Punawale Site Office",
                         "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
                         "url": "https://supreme-universal.in/supreme-rivana-location",
                         "telephone": "+917744009295",
@@ -309,6 +326,22 @@ const SEO = ({
                                     "@type": "Answer",
                                     "text": "It is strategically located in Punawale, PCMC, Pune West, offering seamless connectivity to the Mumbai Pune Expressway, Hinjewadi Phase 1, Baner, and Wakad."
                                 }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Is Punawale good for real estate investment in 2026?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Punawale is currently West Pune's fastest-growing residential hub. With the upcoming Pune Ring Road and Metro Line 3, property values at Supreme Rivana are projected to see significant capital appreciation, making it a top priority for investors."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "What are the nearest landmarks to Supreme Rivana?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Supreme Rivana is located near Chhatrapati Shivaji Maharaj Chowk in Punawale, providing quick access to Lotus Business School, Indira College, and the Hinjewadi IT Park."
+                                }
                             }
                         ]
                     },
@@ -332,7 +365,7 @@ const SEO = ({
                         "@context": "https://schema.org",
                         "@type": "VideoObject",
                         "name": "Supreme Rivana Punawale Walkthrough",
-                        "description": "Experience the ultra-luxury lifestyle at Supreme Rivana, a 15-acre riverside township in Punawale, Pune West. Featuring 31-storey towers and 40+ world-class amenities.",
+                        "description": "Experience the ultra-luxury lifestyle at Supreme Rivana Punawale, a 15-acre riverside township in Punawale, Pune West. Featuring 31-storey towers and 40+ world-class amenities.",
                         "thumbnailUrl": [
                             "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
                             "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"

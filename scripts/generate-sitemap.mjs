@@ -8,7 +8,7 @@ const SITEMAP_PATH = path.join(process.cwd(), 'public', 'sitemap.xml');
 const DATE = new Date().toISOString().split('T')[0];
 
 const staticRoutes = [
-  { path: '/', priority: '1.0', changefreq: 'daily' },
+  { path: '', priority: '1.0', changefreq: 'daily' },
   { path: '/supreme-rivana-overview', priority: '0.9', changefreq: 'weekly' },
   { path: '/supreme-rivana-amenities', priority: '0.9', changefreq: 'weekly' },
   { path: '/supreme-rivana-floor-plans', priority: '0.9', changefreq: 'weekly' },
@@ -16,6 +16,8 @@ const staticRoutes = [
   { path: '/supreme-rivana-location', priority: '0.9', changefreq: 'weekly' },
   { path: '/supreme-rivana-faq', priority: '0.9', changefreq: 'weekly' },
   { path: '/supreme-rivana-contact', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-price-list', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-comparison', priority: '0.9', changefreq: 'weekly' },
   { path: '/blog', priority: '0.9', changefreq: 'weekly' },
 ];
 

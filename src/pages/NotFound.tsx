@@ -56,7 +56,7 @@ const NotFound = () => {
                         >
                             <Home className="w-6 h-6 text-supreme-gold" />
                             <span className="text-white text-sm font-sans uppercase tracking-wider">Home</span>
-                            <span className="text-white/40 text-xs">Supreme Rivana</span>
+                            <span className="text-white/40 text-xs">Supreme Rivana Punawale</span>
                         </Link>
 
                         <Link

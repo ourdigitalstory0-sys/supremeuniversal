@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import CustomCursor from '../components/CustomCursor';
 import NoiseOverlay from '../components/NoiseOverlay';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 import { blogPosts } from '../data/blogPosts';
 
@@ -63,13 +64,25 @@ const BlogPost = () => {
         "keywords": `${post.category}, Supreme Rivana Punawale, Punawale real estate, Pune West property, Supreme Universal`,
         "wordCount": post.content.replace(/<[^>]*>/g, '').split(/\s+/).length.toString(),
         "inLanguage": "en-IN",
-        "isAccessibleForFree": true
+        "isAccessibleForFree": true,
+        "about": [
+            {
+                "@type": "Place",
+                "name": "Punawale",
+                "sameAs": "https://en.wikipedia.org/wiki/Punawale"
+            },
+            {
+                "@type": "Thing",
+                "name": "Real Estate in Pune",
+                "sameAs": "https://en.wikipedia.org/wiki/Real_estate_in_India"
+            }
+        ]
     };
 
     return (
         <div className="font-sans antialiased text-gray-900 bg-white">
             <SEO
-                title={`${post.title} | Supreme Rivana Blog`}
+                title={`${post.title} | Supreme Rivana Punawale Blog`}
                 description={post.excerpt}
                 url={`https://supreme-universal.in/blog/${id}`}
                 image={post.image}
@@ -83,6 +96,9 @@ const BlogPost = () => {
             <CustomCursor />
             <NoiseOverlay />
             <Navbar />
+            <div className="pt-20">
+                <Breadcrumbs />
+            </div>
 
             {/* Article Header */}
             <section className="pt-24 md:pt-32 pb-0 bg-white relative">
@@ -151,10 +167,10 @@ const BlogPost = () => {
                     <h3 className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-supreme-gold mb-6">Related Searches for Supreme Rivana Punawale</h3>
                     <div className="flex flex-wrap gap-2 mb-10">
                         {[
-                            "Supreme Rivana Punawale", "Supreme Rivana price list 2026", "Supreme Rivana floor plan",
-                            "Supreme Rivana RERA number", "Supreme Rivana 2 BHK price", "Supreme Rivana 3 BHK price",
-                            "Supreme Rivana Punawale brochure", "Supreme Rivana possession date", "Supreme Rivana amenities",
-                            "Supreme Rivana site visit", "Supreme Rivana reviews", "Supreme Rivana master plan",
+                            "Supreme Rivana Punawale", "Supreme Rivana Punawale price list 2026", "Supreme Rivana Punawale floor plan",
+                            "Supreme Rivana Punawale RERA number", "Supreme Rivana Punawale 2 BHK price", "Supreme Rivana Punawale 3 BHK price",
+                            "Supreme Rivana Punawale brochure", "Supreme Rivana Punawale possession date", "Supreme Rivana Punawale amenities",
+                            "Supreme Rivana Punawale site visit", "Supreme Rivana Punawale reviews", "Supreme Rivana Punawale master plan",
                             "Flats in Punawale", "2 BHK flats Punawale near Hinjewadi", "3 BHK apartments Punawale",
                             "Luxury apartments Pune West", "New launch projects PCMC", "Property investment Punawale 2026",
                             "Best project in Punawale", "Flats near Hinjewadi IT Park", "Apartments near Wakad",
@@ -163,8 +179,8 @@ const BlogPost = () => {
                             "Supreme Universal projects Pune", "High ROI flats Pune West",
                             "Gated community Punawale", "Ready to move flats near Hinjewadi",
                             "Luxury residences Punawale Pune", "Under construction flats Punawale",
-                            "Supreme Rivana vs Puneville", "Supreme Rivana vs ANP Autograph",
-                            "Best 2 BHK under 1 crore Punawale", "Supreme Rivana construction update"
+                            "Supreme Rivana Punawale vs Puneville", "Supreme Rivana Punawale vs ANP Autograph",
+                            "Best 2 BHK under 1 crore Punawale", "Supreme Rivana Punawale construction update"
                         ].map((keyword, idx) => (
                             <Link
                                 key={idx}

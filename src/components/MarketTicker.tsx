@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { TrendingUp, Activity, Bell, MapPin } from 'lucide-react';
 
 const tickerItems = [
-    { icon: <TrendingUp className="w-3 h-3" />, text: "3 units booked in the last 24 hours at Supreme Rivana" },
+    { icon: <TrendingUp className="w-3 h-3" />, text: "3 units booked in the last 24 hours at Supreme Rivana Punawale" },
     { icon: <Bell className="w-3 h-3" />, text: "Supreme Wakad: Pre-launch registrations now open for 3 & 4 BHK" },
     { icon: <Activity className="w-3 h-3" />, text: "Supreme Estia: Final few premium residences reaching 95% occupancy" },
     { icon: <TrendingUp className="w-3 h-3" />, text: "Supreme Villagio Phase 2: Rapid uptake in Somatane luxury villas" },

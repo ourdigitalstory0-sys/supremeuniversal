@@ -53,7 +53,7 @@ const NeighborhoodGuide = () => {
                             A High-Growth Micro Market in Pune
                         </h3>
                         <p className="text-gray-600 font-sans text-lg lg:text-xl leading-relaxed mb-8">
-                            Punawale is rapidly emerging as the top investment choice for <strong>premium residential projects punawale pune</strong>. Supreme Rivana leverages this strategic location, offering <strong>high rise apartments in Punawale</strong> with unmatched proximity to <strong>apartments near hinjewadi it park</strong>, <strong>luxury apartments wakad</strong>, and Tathawade.
+                            Punawale is rapidly emerging as the top investment choice for <strong>premium residential projects punawale pune</strong>. Supreme Rivana Punawale leverages this strategic location, offering <strong>high rise apartments in Punawale</strong> with unmatched proximity to <strong>apartments near hinjewadi it park</strong>, <strong>luxury apartments wakad</strong>, and Tathawade.
                         </p>
 
                         <div className="space-y-6">
@@ -84,7 +84,7 @@ const NeighborhoodGuide = () => {
                         <div className="absolute inset-0 bg-supreme-gold/10 transform rotate-3 -z-10"></div>
                         <img
                             src="https://cdn.supremeuniversal.com/media/Punawale-Location.jpg"
-                            alt="Supreme Rivana map showing premium residential projects in Pune West and connectivity to Hinjewadi Phase 1"
+                            alt="Supreme Rivana Punawale map showing premium residential projects in Pune West and connectivity to Hinjewadi Phase 1"
                             className="object-cover w-full h-full shadow-2xl"
                             loading="lazy"
                             decoding="async"
@@ -122,13 +122,13 @@ const NeighborhoodGuide = () => {
                         </div>
                         <div>
                             <h3 className="text-2xl md:text-3xl font-serif text-supreme-black mb-4">
-                                Supreme Rivana: <span className="italic text-supreme-gold">The Benchmark</span>
+                                Supreme Rivana Punawale: <span className="italic text-supreme-gold">The Benchmark</span>
                             </h3>
                             <p className="text-gray-600 font-sans font-light leading-relaxed mb-6">
-                                Positioned as the <strong>best project in Punawale 2026</strong>, Supreme Rivana by <strong>Supreme Universal</strong> redefines <strong>luxury residences in Pune West</strong>. With <strong>31-storey towers</strong>, a <strong>15-acre riverside township</strong>, and <strong>40+ world-class amenities</strong> including an <strong>infinity pool</strong>, <strong>skywalk bridge</strong>, and <strong>multi-tier clubhouse</strong>, it surpasses competitors like <strong>Puneville</strong>, <strong>ANP Autograph</strong>, and <strong>24k Living</strong>.
+                                Positioned as the <strong>best project in Punawale 2026</strong>, Supreme Rivana Punawale by <strong>Supreme Universal</strong> redefines <strong>luxury residences in Pune West</strong>. With <strong>31-storey towers</strong>, a <strong>15-acre riverside township</strong>, and <strong>40+ world-class amenities</strong> including an <strong>infinity pool</strong>, <strong>skywalk bridge</strong>, and <strong>multi-tier clubhouse</strong>, it surpasses competitors like <strong>Puneville</strong>, <strong>ANP Autograph</strong>, and <strong>24k Living</strong>.
                             </p>
                             <p className="text-gray-600 font-sans font-light leading-relaxed">
-                                Searching for <strong>Supreme Rivana price list</strong>, <strong>Supreme Rivana floor plan</strong>, or <strong>Supreme Rivana brochure</strong>? Our <strong>MahaRERA-certified</strong> (PM1261012502656) development offers <strong>spacious 2 BHK and 3 BHK apartments</strong> with <strong>Vastu-compliant layouts</strong>, <strong>premium Italian marble flooring</strong>, and <strong>smart home automation</strong>. Pre-approved by <strong>HDFC, SBI, ICICI, and Axis Bank</strong>.
+                                Searching for <strong>Supreme Rivana Punawale price list</strong>, <strong>Supreme Rivana Punawale floor plan</strong>, or <strong>Supreme Rivana Punawale brochure</strong>? Our <strong>MahaRERA-certified</strong> (PM1261012502656) development offers <strong>spacious 2 BHK and 3 BHK apartments</strong> with <strong>Vastu-compliant layouts</strong>, <strong>premium Italian marble flooring</strong>, and <strong>smart home automation</strong>. Pre-approved by <strong>HDFC, SBI, ICICI, and Axis Bank</strong>.
                             </p>
                         </div>
                     </div>
