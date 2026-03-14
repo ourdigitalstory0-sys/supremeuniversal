@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Lenis from 'lenis';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -34,6 +34,36 @@ import BlogPreview from './components/BlogPreview';
 import NotFound from './pages/NotFound';
 import PriceList from './pages/PriceList';
 import Comparison from './pages/Comparison';
+
+/**
+ * RedirectHandler: Resolves GSC "Alternative page with proper canonical tag" issues
+ * by mapping old 'riverside' paths to new 'rivana' paths.
+ */
+function RedirectHandler() {
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const redirectMap: Record<string, string> = {
+      '/supreme-riverside-punawale-overview': '/supreme-rivana-overview',
+      '/supreme-riverside-punawale-amenities': '/supreme-rivana-amenities',
+      '/supreme-riverside-punawale-floor-plans': '/supreme-rivana-floor-plans',
+      '/supreme-riverside-punawale-gallery': '/supreme-rivana-gallery',
+      '/supreme-riverside-punawale-location': '/supreme-rivana-location',
+      '/supreme-riverside-punawale-faq': '/supreme-rivana-faq',
+      '/supreme-riverside-punawale-contact': '/supreme-rivana-contact',
+      '/supreme-riverside-punawale': '/'
+    };
+
+    const target = redirectMap[pathname.replace(/\/$/, '')];
+    if (target) {
+      console.log(`[SEO-Redirect] Mapping old path ${pathname} to ${target}`);
+      navigate(target, { replace: true });
+    }
+  }, [pathname, navigate]);
+
+  return null;
+}
 
 function ScrollHandler() {
   const { pathname } = useLocation();
@@ -141,6 +171,7 @@ function MainApp() {
 function App() {
   return (
     <Router>
+      <RedirectHandler />
       <ScrollHandler />
       <Routes>
         <Route path="/" element={<MainApp />} />

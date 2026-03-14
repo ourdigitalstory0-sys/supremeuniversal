@@ -68,9 +68,9 @@ const SEO = ({
     const title = propTitle || currentMetadata.title;
     const description = propDescription || currentMetadata.description;
     
-    // Standardize URL: Remove trailing slash from non-home paths to match sitemap/GSC
+    // Standardize URL: Force non-www and remove trailing slashes for GSC consistency
     const cleanPathname = pathname === '/' ? '' : pathname.replace(/\/$/, '');
-    const url = propUrl || `${domain}${cleanPathname}`;
+    const url = propUrl || `https://supreme-universal.in${cleanPathname}`;
     const fullTitle = title.includes('Supreme Rivana') ? title : `${title} | Supreme Rivana Punawale`;
 
     return (
