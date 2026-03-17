@@ -18,8 +18,8 @@ const Hero = ({ onEnquire }: HeroProps) => {
                 transition={{ duration: 15, ease: "easeOut" }}
             >
                 <img
-                    src="/hero-refined.png"
-                    alt="Supreme Rivana Punawale luxury apartments — premium 2 BHK & 3 BHK flats for sale in Punawale near Hinjewadi IT Park. Explore Supreme Rivana price, floor plans, and possession date."
+                    src="https://cdn.supremeuniversal.com/media/Supreme-Rivana-Web-Banner_fzjUZ4.jpeg"
+                    alt="Supreme Rivana Punawale luxury apartments — premium 2 BHK & 3 BHK flats for sale in Punawale near Hinjewadi IT Park."
                     className="w-full h-full object-cover opacity-80 mix-blend-overlay"
                     fetchPriority="high"
                     loading="eager"

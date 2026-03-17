@@ -101,10 +101,10 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                                         <img
                                             src={
                                                 activeTab === 'Master'
-                                                    ? "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+                                                    ? "https://cdn.supremeuniversal.com/media/Supreme-Rivana-Web-Banner_fzjUZ4.jpeg"
                                                     : activeTab === '2BHK'
-                                                        ? "https://cdn.supremeuniversal.com/media/1aejSz_FXHCOKProjectListing23min.jpg"
-                                                        : "https://cdn.supremeuniversal.com/media/t4mf35_WtizuRsupremeelysiamin.jpg"
+                                                        ? "https://cdn.supremeuniversal.com/media/Supreme-Rivana-Ph-1_oAgU7k.jpeg"
+                                                        : "https://cdn.supremeuniversal.com/media/Supreme-Rivana_zrFdYC.png"
                                             }
                                             alt={
                                                 activeTab === 'Master'
