@@ -11,6 +11,26 @@ keywords.add("Supreme Rivana");
 keywords.add("Supreme Rivana Punawale");
 keywords.add("Supreme Rivana Pune");
 keywords.add("Supreme Universal Punawale");
+keywords.add("Supreme Punawale");
+keywords.add("Supreme Punawale 2 BHK");
+keywords.add("Supreme Punawale 3 BHK");
+keywords.add("Supreme Punawale price");
+keywords.add("Supreme Punawale location");
+keywords.add("Supreme Punawale reviews");
+keywords.add("Supreme Punawale floor plan");
+keywords.add("Supreme Universal Punawale project");
+keywords.add("Supreme Punawale by Supreme Universal");
+keywords.add("Rivana by Supreme Punawale");
+keywords.add("Supreme Punawale possession date");
+keywords.add("Supreme Punawale construction status");
+keywords.add("Supreme Punawale sample flat");
+keywords.add("Supreme Punawale site address");
+keywords.add("Supreme Punawale contact number");
+keywords.add("Best project in Supreme Punawale");
+keywords.add("Luxury homes in Supreme Punawale");
+keywords.add("Supreme Punawale 3 BHK luxury");
+keywords.add("Supreme Punawale 2 BHK premium");
+keywords.add("Supreme Punawale riverfront flats");
 
 // Method 1: Config + Type + Location
 for (const config of configurations) {
