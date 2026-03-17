@@ -103,7 +103,7 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                                                 activeTab === 'Master'
                                                     ? "https://cdn.supremeuniversal.com/media/Supreme-Rivana-Web-Banner_fzjUZ4.jpeg"
                                                     : activeTab === '2BHK'
-                                                        ? "https://cdn.supremeuniversal.com/media/Supreme-Rivana-Ph-1_oAgU7k.jpeg"
+                                                        ? "https://cdn.supremeuniversal.com/media/Supreme-Rivana-2_Fda9Xu.png"
                                                         : "https://cdn.supremeuniversal.com/media/Supreme-Rivana_zrFdYC.png"
                                             }
                                             alt={

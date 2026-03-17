@@ -162,13 +162,14 @@ const Contact = () => {
                                 </div>
                             </a>
 
+                            {/* Email removed as per request */}
                             <div className="flex items-center gap-6 group cursor-pointer">
                                 <div className="p-4 bg-white/5 border border-white/10 rounded-full group-hover:border-supreme-gold transition-colors duration-500">
                                     <Mail className="text-supreme-gold w-5 h-5" />
                                 </div>
-                                <div>
-                                    <p className="text-xs uppercase tracking-[0.2em] font-sans text-white/40 mb-1 group-hover:text-supreme-gold transition-colors duration-300">Email Us</p>
-                                    <p className="text-xl text-white font-sans font-light tracking-wide group-hover:text-supreme-gold transition-colors duration-300">sales@supremeriverside.com</p>
+                                <div className="opacity-0 pointer-events-none">
+                                    <p className="text-xs uppercase tracking-[0.2em] font-sans text-white/40 mb-1">Email Us</p>
+                                    <p className="text-xl text-white font-sans font-light tracking-wide">sales@supremeriverside.com</p>
                                 </div>
                             </div>
                         </motion.div>
