@@ -9,10 +9,7 @@ Disallow: /private/
 # Googlebot specific optimizations
 User-agent: Googlebot
 Allow: /
-Allow: /assets/*.js
-Allow: /assets/*.css
 Disallow: /*?search=
-Max-image-preview: large
 
 # Crawler Delay for non-Google bots (to save server resources)
 User-agent: Bingbot

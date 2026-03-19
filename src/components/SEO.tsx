@@ -284,20 +284,29 @@ const SEO = ({
                     {
                         "@context": "https://schema.org",
                         "@type": "BreadcrumbList",
-                        "itemListElement": [
-                            {
-                                "@type": "ListItem",
-                                "position": 1,
-                                "name": "Home",
-                                "item": "https://www.supreme-universal.in/"
-                            },
-                            {
-                                "@type": "ListItem",
-                                "position": 2,
-                                "name": "Supreme Rivana Punawale",
-                                "item": "https://www.supreme-universal.in/supreme-rivana-overview"
-                            }
-                        ]
+                        "itemListElement": pathname === '/' 
+                            ? [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Home",
+                                    "item": "https://www.supreme-universal.in/"
+                                }
+                            ]
+                            : [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Home",
+                                    "item": "https://www.supreme-universal.in/"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "name": fullTitle.split('|')[0].trim(),
+                                    "item": url
+                                }
+                            ]
                     },
                     {
                         "@context": "https://schema.org",
