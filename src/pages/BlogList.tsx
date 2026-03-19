@@ -14,13 +14,13 @@ const BlogList = () => {
         "@type": "CollectionPage",
         "name": "Real Estate Blog & Market Insights | Supreme Rivana Punawale",
         "description": "Read the latest news, market insights, and lifestyle guides about the West Pune real estate market, Punawale, Wakad, and Hinjewadi.",
-        "url": "https://supreme-universal.in/blog",
+        "url": "https://www.supreme-universal.in/blog",
         "mainEntity": {
             "@type": "ItemList",
             "itemListElement": blogPosts.map((post, index) => ({
                 "@type": "ListItem",
                 "position": index + 1,
-                "url": `https://supreme-universal.in/blog/${post.id}`,
+                "url": `https://www.supreme-universal.in/blog/${post.id}`,
                 "name": post.title,
                 "image": post.image
             }))
@@ -32,7 +32,7 @@ const BlogList = () => {
             <SEO
                 title="Real Estate Blog & Market Insights | Supreme Rivana Punawale"
                 description="Read the latest news, market insights, and lifestyle guides about the West Pune real estate market, Punawale, Wakad, and Hinjewadi."
-                url="https://supreme-universal.in/blog"
+                url="https://www.supreme-universal.in/blog"
             />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
             <CustomCursor />

@@ -21,4 +21,4 @@ Crawl-delay: 1
 User-agent: Yandex
 Disallow: /
 
-Sitemap: https://supreme-universal.in/sitemap.xml
+Sitemap: https://www.supreme-universal.in/sitemap.xml

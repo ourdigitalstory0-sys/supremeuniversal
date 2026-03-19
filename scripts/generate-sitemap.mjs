@@ -3,7 +3,7 @@ import path from 'path';
 import { portfolioProjects } from '../src/data/portfolioProjects.ts';
 import { blogPosts } from '../src/data/blogPosts.ts';
 
-const DOMAIN = 'https://supreme-universal.in';
+const DOMAIN = 'https://www.supreme-universal.in';
 const SITEMAP_PATH = path.join(process.cwd(), 'public', 'sitemap.xml');
 const DATE = new Date().toISOString().split('T')[0];
 

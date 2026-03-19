@@ -36,7 +36,7 @@ const PropertyComparison = () => {
                         "@type": "ListItem",
                         "position": i + 1,
                         "name": p.name,
-                        "url": `https://supreme-universal.in/projects/${p.id}`,
+                        "url": `https://www.supreme-universal.in/projects/${p.id}`,
                         "description": `${p.type} at ${p.location} — ${p.comparisonMetrics.usp}`
                     }))
                 })

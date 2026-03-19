@@ -12,7 +12,7 @@ const LeadPopup = () => {
         "@type": "CommunicateAction",
         "name": "Enquire About Supreme Rivana Punawale",
         "description": "Request a callback or schedule a private site visit for Supreme Rivana Punawale luxury 2 & 3 BHK apartments in Punawale, Pune.",
-        "target": "https://supreme-universal.in/supreme-rivana-contact",
+        "target": "https://www.supreme-universal.in/supreme-rivana-contact",
         "agent": {
             "@type": "Organization",
             "name": "Supreme Universal",
@@ -21,7 +21,7 @@ const LeadPopup = () => {
         "object": {
             "@type": "RealEstateListing",
             "name": "Supreme Rivana Punawale",
-            "url": "https://supreme-universal.in/"
+            "url": "https://www.supreme-universal.in/"
         }
     };
 

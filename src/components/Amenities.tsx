@@ -18,7 +18,7 @@ const Amenities = () => {
         "@type": "Residence",
         "name": "Supreme Rivana Punawale Amenities",
         "description": "40+ world-class amenities at Supreme Rivana Punawale including infinity pool, gymnasium, zen garden, clubhouse, and 24/7 security.",
-        "url": "https://supreme-universal.in/supreme-rivana-amenities",
+        "url": "https://www.supreme-universal.in/supreme-rivana-amenities",
         "amenityFeature": amenities.map(a => ({
             "@type": "LocationFeatureSpecification",
             "name": a.name,

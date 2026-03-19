@@ -14,8 +14,8 @@ const ProjectShowcase = () => {
             "@type": "ListItem",
             "position": index + 1,
             "name": project.name,
-            "url": `https://supreme-universal.in/projects/${project.id}`,
-            "image": project.image.startsWith('http') ? project.image : `https://supreme-universal.in${project.image}`
+            "url": `https://www.supreme-universal.in/projects/${project.id}`,
+            "image": project.image.startsWith('http') ? project.image : `https://www.supreme-universal.in${project.image}`
         }))
     };
 

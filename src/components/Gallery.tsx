@@ -19,7 +19,7 @@ const Gallery = () => {
                     "@type": "ImageGallery",
                     "name": "Supreme Rivana Punawale Photo Gallery",
                     "description": "Explore luxury interiors, amenities, and architectural views of Supreme Rivana Punawale 2 & 3 BHK apartments near Hinjewadi.",
-                    "url": "https://supreme-universal.in/supreme-rivana-punawale-gallery",
+                    "url": "https://www.supreme-universal.in/supreme-rivana-punawale-gallery",
                     "image": images.map(img => ({
                         "@type": "ImageObject",
                         "name": img.title,

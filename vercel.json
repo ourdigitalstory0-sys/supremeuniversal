@@ -7,6 +7,17 @@
     ],
     "redirects": [
         {
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "supreme-universal.in"
+                }
+            ],
+            "destination": "https://www.supreme-universal.in/$1",
+            "permanent": true
+        },
+        {
             "source": "/supreme-riverside-punawale-overview",
             "destination": "/supreme-riverside-overview",
             "permanent": true

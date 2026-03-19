@@ -31,14 +31,14 @@ const Contact = () => {
         "organizer": {
             "@type": "Organization",
             "name": "Supreme Universal",
-            "url": "https://supreme-universal.in/"
+            "url": "https://www.supreme-universal.in/"
         },
         "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
-            "url": "https://supreme-universal.in/supreme-rivana-contact"
+            "url": "https://www.supreme-universal.in/supreme-rivana-contact"
         }
     };
 

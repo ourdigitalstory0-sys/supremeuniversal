@@ -30,7 +30,7 @@ const AuthoritySection = () => {
         "@type": "RealEstateAgent",
         "name": "Supreme Universal",
         "description": "Ultra-luxury real estate developer with 40+ years legacy and 70+ delivered projects across Mumbai and Pune.",
-        "url": "https://supreme-universal.in/",
+        "url": "https://www.supreme-universal.in/",
         "image": "https://cdn.supremeuniversal.com/media/supreme-logo.png",
         "aggregateRating": {
             "@type": "AggregateRating",

@@ -13,7 +13,7 @@ const NotFound = () => {
             <SEO
                 title="Page Not Found | Supreme Rivana Punawale"
                 description="The page you are looking for does not exist. Explore Supreme Rivana Punawale — premium 2 & 3 BHK luxury flats near Hinjewadi IT Park, Pune West."
-                url="https://supreme-universal.in/404"
+                url="https://www.supreme-universal.in/404"
             />
 
             <CustomCursor />

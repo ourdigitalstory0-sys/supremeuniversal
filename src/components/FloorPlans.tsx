@@ -21,8 +21,8 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
             : activeTab === '2BHK'
                 ? "https://cdn.supremeuniversal.com/media/1aejSz_FXHCOKProjectListing23min.jpg"
                 : "https://cdn.supremeuniversal.com/media/t4mf35_WtizuRsupremeelysiamin.jpg",
-        "license": "https://supreme-universal.in/legal",
-        "acquireLicensePage": "https://supreme-universal.in/contact",
+        "license": "https://www.supreme-universal.in/legal",
+        "acquireLicensePage": "https://www.supreme-universal.in/contact",
         "creator": {
             "@type": "Organization",
             "name": "Supreme Universal"

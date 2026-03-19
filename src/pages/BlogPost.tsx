@@ -46,7 +46,7 @@ const BlogPost = () => {
         "author": [{
             "@type": "Organization",
             "name": post.author,
-            "url": "https://supreme-universal.in/"
+            "url": "https://www.supreme-universal.in/"
         }],
         "publisher": {
             "@type": "Organization",
@@ -55,11 +55,11 @@ const BlogPost = () => {
                 "@type": "ImageObject",
                 "url": "https://cdn.supremeuniversal.com/media/supreme-logo.png"
             },
-            "url": "https://supreme-universal.in/"
+            "url": "https://www.supreme-universal.in/"
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": `https://supreme-universal.in/blog/${id}`
+            "@id": `https://www.supreme-universal.in/blog/${id}`
         },
         "keywords": `${post.category}, Supreme Rivana Punawale, Punawale real estate, Pune West property, Supreme Universal`,
         "wordCount": post.content.replace(/<[^>]*>/g, '').split(/\s+/).length.toString(),
@@ -84,7 +84,7 @@ const BlogPost = () => {
             <SEO
                 title={`${post.title} | Supreme Rivana Punawale Blog`}
                 description={post.excerpt}
-                url={`https://supreme-universal.in/blog/${id}`}
+                url={`https://www.supreme-universal.in/blog/${id}`}
                 image={post.image}
             />
             <Helmet>

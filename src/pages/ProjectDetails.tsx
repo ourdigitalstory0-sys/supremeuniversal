@@ -33,8 +33,8 @@ const ProjectDetails = () => {
             <SEO
                 title={project.seo.title}
                 description={project.seo.description}
-                url={`https://supreme-universal.in/projects/${project.id}`}
-                image={project.image.startsWith('http') ? project.image : `https://supreme-universal.in${project.image}`}
+                url={`https://www.supreme-universal.in/projects/${project.id}`}
+                image={project.image.startsWith('http') ? project.image : `https://www.supreme-universal.in${project.image}`}
             />
             <Helmet>
                 {/* Enhanced RealEstateListing Schema */}
@@ -44,8 +44,8 @@ const ProjectDetails = () => {
                         "@type": "RealEstateListing",
                         "name": project.name,
                         "description": project.seo.description,
-                        "image": project.image.startsWith('http') ? project.image : `https://supreme-universal.in${project.image}`,
-                        "url": `https://supreme-universal.in/projects/${project.id}`,
+                        "image": project.image.startsWith('http') ? project.image : `https://www.supreme-universal.in${project.image}`,
+                        "url": `https://www.supreme-universal.in/projects/${project.id}`,
                         "address": {
                             "@type": "PostalAddress",
                             "streetAddress": project.fullLocation,
@@ -73,7 +73,7 @@ const ProjectDetails = () => {
                             "seller": {
                                 "@type": "RealEstateAgent",
                                 "name": "Supreme Universal",
-                                "url": "https://supreme-universal.in/"
+                                "url": "https://www.supreme-universal.in/"
                             }
                         }
                     })}
@@ -85,9 +85,9 @@ const ProjectDetails = () => {
                         "@context": "https://schema.org",
                         "@type": "BreadcrumbList",
                         "itemListElement": [
-                            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://supreme-universal.in/" },
-                            { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://supreme-universal.in/projects" },
-                            { "@type": "ListItem", "position": 3, "name": project.name, "item": `https://supreme-universal.in/projects/${project.id}` }
+                            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.supreme-universal.in/" },
+                            { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://www.supreme-universal.in/projects" },
+                            { "@type": "ListItem", "position": 3, "name": project.name, "item": `https://www.supreme-universal.in/projects/${project.id}` }
                         ]
                     })}
                 </script>

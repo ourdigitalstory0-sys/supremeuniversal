@@ -18,7 +18,7 @@ const SEO = ({
     url: propUrl
 }: SEOProps) => {
     const { pathname } = useLocation();
-    const domain = 'https://supreme-universal.in';
+    const domain = 'https://www.supreme-universal.in';
 
     // Route-specific metadata mapping for section routes
     const routeMetadata: Record<string, { title: string; description: string }> = {
@@ -70,7 +70,7 @@ const SEO = ({
     
     // Standardize URL: Force non-www and remove trailing slashes for GSC consistency
     const cleanPathname = pathname === '/' ? '' : pathname.replace(/\/$/, '');
-    const url = propUrl || `https://supreme-universal.in${cleanPathname}`;
+    const url = propUrl || `https://www.supreme-universal.in${cleanPathname}`;
     const fullTitle = title.includes('Supreme Rivana') ? title : `${title} | Supreme Rivana Punawale`;
 
     return (
@@ -185,7 +185,7 @@ const SEO = ({
                         "petsAllowed": "True",
                         "telephone": "+917744009295",
                         "provider": {
-                            "@id": "https://supreme-universal.in/#organization",
+                            "@id": "https://www.supreme-universal.in/#organization",
                             "name": "Supreme Universal"
                         },
                         "sameAs": [
@@ -197,9 +197,9 @@ const SEO = ({
                     {
                         "@context": "https://schema.org",
                         "@type": "Organization",
-                        "@id": "https://supreme-universal.in/#organization",
+                        "@id": "https://www.supreme-universal.in/#organization",
                         "name": "Supreme Universal",
-                        "url": "https://supreme-universal.in/",
+                        "url": "https://www.supreme-universal.in/",
                         "logo": "https://cdn.supremeuniversal.com/media/supreme-logo.png",
                         "foundingDate": "1982",
                         "description": "Supreme Universal is a premium real estate developer with 40+ years of legacy, delivering 70+ iconic projects across Mumbai and Pune. Recognized by CREDAI-MCHI and Asia Property Awards.",
@@ -222,7 +222,7 @@ const SEO = ({
                         "@type": "LocalBusiness",
                         "name": "Supreme Rivana Punawale Site Office",
                         "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
-                        "url": "https://supreme-universal.in/supreme-rivana-location",
+                        "url": "https://www.supreme-universal.in/supreme-rivana-location",
                         "telephone": "+917744009295",
                         "priceRange": "₹₹₹",
                         "address": {
@@ -289,59 +289,13 @@ const SEO = ({
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://supreme-universal.in/"
+                                "item": "https://www.supreme-universal.in/"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Supreme Rivana Punawale",
-                                "item": "https://supreme-universal.in/supreme-rivana-overview"
-                            }
-                        ]
-                    },
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "What are the configuration options available at Supreme Rivana Punawale?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Supreme Rivana offers spacious ultra-luxury 2 BHK and premium 3 BHK apartments in Punawale, near Wakad and Hinjewadi IT Park."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "What is the price of a 2 BHK or 3 BHK flat at Supreme Rivana?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "The price for premium luxury river-view flats at Supreme Rivana Punawale is incredibly competitive for Pune West. Please download our cost sheet or contact sales for detailed pricing on our 2 and 3 BHK variants."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Where is Supreme Rivana located?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "It is strategically located in Punawale, PCMC, Pune West, offering seamless connectivity to the Mumbai Pune Expressway, Hinjewadi Phase 1, Baner, and Wakad."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Is Punawale good for real estate investment in 2026?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Punawale is currently West Pune's fastest-growing residential hub. With the upcoming Pune Ring Road and Metro Line 3, property values at Supreme Rivana are projected to see significant capital appreciation, making it a top priority for investors."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "What are the nearest landmarks to Supreme Rivana?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Supreme Rivana is located near Chhatrapati Shivaji Maharaj Chowk in Punawale, providing quick access to Lotus Business School, Indira College, and the Hinjewadi IT Park."
-                                }
+                                "item": "https://www.supreme-universal.in/supreme-rivana-overview"
                             }
                         ]
                     },
@@ -349,16 +303,16 @@ const SEO = ({
                         "@context": "https://schema.org",
                         "@type": "SiteNavigationElement",
                         "name": "Main Navigation",
-                        "url": "https://supreme-universal.in/",
+                        "url": "https://www.supreme-universal.in/",
                         "hasPart": [
-                            { "@type": "WebPage", "name": "Overview", "url": "https://supreme-universal.in/supreme-rivana-overview" },
-                            { "@type": "WebPage", "name": "Amenities", "url": "https://supreme-universal.in/supreme-rivana-amenities" },
-                            { "@type": "WebPage", "name": "Floor Plans", "url": "https://supreme-universal.in/supreme-rivana-floor-plans" },
-                            { "@type": "WebPage", "name": "Gallery", "url": "https://supreme-universal.in/supreme-rivana-gallery" },
-                            { "@type": "WebPage", "name": "Location", "url": "https://supreme-universal.in/supreme-rivana-location" },
-                            { "@type": "WebPage", "name": "FAQ", "url": "https://supreme-universal.in/supreme-rivana-faq" },
-                            { "@type": "WebPage", "name": "Contact", "url": "https://supreme-universal.in/supreme-rivana-contact" },
-                            { "@type": "WebPage", "name": "Blog", "url": "https://supreme-universal.in/blog" }
+                            { "@type": "WebPage", "name": "Overview", "url": "https://www.supreme-universal.in/supreme-rivana-overview" },
+                            { "@type": "WebPage", "name": "Amenities", "url": "https://www.supreme-universal.in/supreme-rivana-amenities" },
+                            { "@type": "WebPage", "name": "Floor Plans", "url": "https://www.supreme-universal.in/supreme-rivana-floor-plans" },
+                            { "@type": "WebPage", "name": "Gallery", "url": "https://www.supreme-universal.in/supreme-rivana-gallery" },
+                            { "@type": "WebPage", "name": "Location", "url": "https://www.supreme-universal.in/supreme-rivana-location" },
+                            { "@type": "WebPage", "name": "FAQ", "url": "https://www.supreme-universal.in/supreme-rivana-faq" },
+                            { "@type": "WebPage", "name": "Contact", "url": "https://www.supreme-universal.in/supreme-rivana-contact" },
+                            { "@type": "WebPage", "name": "Blog", "url": "https://www.supreme-universal.in/blog" }
                         ]
                     },
                     {
@@ -403,11 +357,11 @@ const SEO = ({
                         "organizer": {
                             "@type": "Organization",
                             "name": "Supreme Universal",
-                            "url": "https://supreme-universal.in/"
+                            "url": "https://www.supreme-universal.in/"
                         },
                         "offers": {
                             "@type": "Offer",
-                            "url": "https://supreme-universal.in/supreme-rivana-contact",
+                            "url": "https://www.supreme-universal.in/supreme-rivana-contact",
                             "price": "0",
                             "priceCurrency": "INR",
                             "availability": "https://schema.org/InStock",

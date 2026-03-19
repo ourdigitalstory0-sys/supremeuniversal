@@ -10,7 +10,7 @@ const Breadcrumbs = () => {
 
     // Build breadcrumb items for schema
     const breadcrumbItems = [
-        { name: 'Home', url: 'https://supreme-universal.in/' }
+        { name: 'Home', url: 'https://www.supreme-universal.in/' }
     ];
 
     pathnames.forEach((value, index) => {
@@ -19,7 +19,7 @@ const Breadcrumbs = () => {
         if (index > 0 && pathnames[index - 1] === 'projects') {
             name = name.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
         }
-        const url = `https://supreme-universal.in/${pathnames.slice(0, index + 1).join('/')}`;
+        const url = `https://www.supreme-universal.in/${pathnames.slice(0, index + 1).join('/')}`;
         breadcrumbItems.push({ name, url });
     });
 
