@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 
 interface HeroProps {
     onEnquire?: () => void;
+    onDownload?: () => void;
 }
 
-const Hero = ({ onEnquire }: HeroProps) => {
+const Hero = ({ onEnquire, onDownload }: HeroProps) => {
     return (
         <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-supreme-black">
             {/* Background Image with Dark Overlay */}
@@ -68,6 +69,13 @@ const Hero = ({ onEnquire }: HeroProps) => {
                     >
                         <span className="relative z-10 transition-colors duration-300 group-hover:text-supreme-black">Enquire Now</span>
                         <div className="absolute inset-0 h-full w-full transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out bg-white"></div>
+                    </button>
+
+                    <button
+                        onClick={onDownload}
+                        className="group relative px-8 py-4 rounded-full font-sans font-semibold uppercase tracking-widest text-sm transition-all w-full sm:w-auto text-white border border-white/30 hover:border-white hover:bg-white/10 flex items-center justify-center gap-2"
+                    >
+                        Download Brochure
                     </button>
 
                     <Link

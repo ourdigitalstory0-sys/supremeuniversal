@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, Moon, Sun } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 interface NavbarProps {
     onEnquire?: () => void;
+    onDownload?: () => void;
+    isDarkMode?: boolean;
+    onToggleTheme?: () => void;
 }
 
-const Navbar = ({ onEnquire }: NavbarProps) => {
+const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation();
@@ -72,12 +75,25 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
                                 <Link
                                     key={link.name}
                                     to={link.href}
-                                    className={`relative text-xs font-sans font-medium uppercase tracking-[0.15em] hover:text-supreme-gold transition-colors group py-2 ${location.pathname === link.href ? 'text-supreme-gold' : 'text-white/80'}`}
+                                    className={`relative text-xs font-sans font-medium uppercase tracking-[0.15em] hover:text-supreme-gold transition-colors group py-2 ${location.pathname === link.href ? 'text-supreme-gold' : (isDarkMode ? 'text-white/80' : 'text-supreme-black/80')}`}
                                 >
                                     {link.name}
                                     <span className={`absolute bottom-0 left-0 h-[1px] bg-supreme-gold transition-all duration-300 ${location.pathname === link.href ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                                 </Link>
                             ))}
+                            <button
+                                onClick={onDownload}
+                                className="text-[11px] font-sans font-semibold uppercase tracking-widest text-white/60 hover:text-supreme-gold transition-colors"
+                            >
+                                Brochure
+                            </button>
+                            <button
+                                onClick={onToggleTheme}
+                                className="p-2 text-supreme-gold hover:bg-supreme-gold/10 rounded-full transition-colors"
+                                aria-label="Toggle Theme"
+                            >
+                                {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
+                            </button>
                             <button
                                 onClick={onEnquire}
                                 className="flex items-center gap-2 border border-supreme-gold/50 text-supreme-gold px-5 py-2 rounded-full hover:bg-supreme-gold hover:text-supreme-black transition-all duration-500 text-[11px] font-sans tracking-[0.1em] uppercase font-semibold"
@@ -113,6 +129,17 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
                             {link.name}
                         </Link>
                     ))}
+                    <button
+                        onClick={() => {
+                            setIsOpen(false);
+                            onToggleTheme?.();
+                        }}
+                        className={`text-2xl font-serif flex items-center gap-3 transition-all duration-500 tracking-wide ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'} ${isDarkMode ? 'text-white' : 'text-supreme-black'}`}
+                        style={{ transitionDelay: '900ms' }}
+                    >
+                        {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
+                        <span>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
+                    </button>
                     <button
                         onClick={() => {
                             setIsOpen(false);

@@ -18,38 +18,43 @@
             "permanent": true
         },
         {
+            "source": "/supreme-riverside-punawale",
+            "destination": "/",
+            "permanent": true
+        },
+        {
             "source": "/supreme-riverside-punawale-overview",
-            "destination": "/supreme-riverside-overview",
+            "destination": "/supreme-rivana-overview",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-amenities",
-            "destination": "/supreme-riverside-amenities",
+            "destination": "/supreme-rivana-amenities",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-floor-plans",
-            "destination": "/supreme-riverside-floor-plans",
+            "destination": "/supreme-rivana-floor-plans",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-gallery",
-            "destination": "/supreme-riverside-gallery",
+            "destination": "/supreme-rivana-gallery",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-location",
-            "destination": "/supreme-riverside-location",
+            "destination": "/supreme-rivana-location",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-faq",
-            "destination": "/supreme-riverside-faq",
+            "destination": "/supreme-rivana-faq",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-contact",
-            "destination": "/supreme-riverside-contact",
+            "destination": "/supreme-rivana-contact",
             "permanent": true
         }
     ],

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Navigation, Landmark, Train } from 'lucide-react';
+import InteractiveMap from './InteractiveMap';
 
 const Location = () => {
     return (
@@ -116,18 +117,8 @@ const Location = () => {
                             transition={{ duration: 0.8 }}
                             className="relative aspect-square md:aspect-[4/3] w-full"
                         >
-                            <div className="absolute inset-0 bg-gray-100 rounded-none overflow-hidden shadow-2xl relative group h-full w-full">
-                                <div className="absolute inset-0 bg-supreme-black/5 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none"></div>
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.273673767426!2d73.74830131489467!3d18.65172698733273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9c7b0b0b0b1%3A0x0!2sPunawale!5e0!3m2!1sen!2sin!4v1629789000000!5m2!1sen!2sin"
-                                    width="100%"
-                                    height="100%"
-                                    style={{ border: 0 }}
-                                    allowFullScreen={true}
-                                    loading="lazy"
-                                    title="Supreme Rivana Location Map"
-                                    className="absolute inset-0 w-full h-full filter grayscale hover:grayscale-0 transition-all duration-[2s] ease-in-out"
-                                ></iframe>
+                            <div className="absolute inset-0 bg-gray-100 rounded-none overflow-hidden shadow-2xl relative group h-full w-full border border-supreme-gold/20">
+                                <InteractiveMap />
                             </div>
                             {/* Decorative elements */}
                             <div className="absolute -top-4 -right-4 w-24 h-24 border-t border-r border-supreme-gold/30 z-0"></div>
