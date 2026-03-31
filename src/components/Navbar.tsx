@@ -27,7 +27,6 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
         { name: 'Overview', href: '/supreme-rivana-overview' },
         { name: 'Pricing', href: '/supreme-rivana-price-list' },
         { name: 'Compare', href: '/supreme-rivana-comparison' },
-        { name: 'Floor Plans', href: '/supreme-rivana-floor-plans' },
         { name: 'Gallery', href: '/supreme-rivana-gallery' },
         { name: 'Insights', href: '/blog' },
         { name: 'Contact', href: '/supreme-rivana-contact' },

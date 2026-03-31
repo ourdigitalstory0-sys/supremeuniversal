@@ -34,6 +34,7 @@ const Footer = () => {
                             <li><Link to="/" className="hover:text-supreme-gold transition-colors duration-300">Home</Link></li>
                             <li><Link to="/supreme-rivana-overview" className="hover:text-supreme-gold transition-colors duration-300">The Vision</Link></li>
                             <li><Link to="/supreme-rivana-price-list" className="hover:text-supreme-gold transition-colors duration-300">Cost Sheets</Link></li>
+                            <li><Link to="/supreme-rivana-floor-plans" className="hover:text-supreme-gold transition-colors duration-300">Floor Plans</Link></li>
                             <li><Link to="/supreme-rivana-comparison" className="hover:text-supreme-gold transition-colors duration-300">Compare Projects</Link></li>
                             <li><Link to="/supreme-rivana-location" className="hover:text-supreme-gold transition-colors duration-300">Neighborhood</Link></li>
                             <li><Link to="/blog" className="hover:text-supreme-gold transition-colors duration-300">Market Insights</Link></li>
