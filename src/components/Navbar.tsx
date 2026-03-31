@@ -94,9 +94,16 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
                             >
                                 {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
                             </button>
-                            <div className="flex flex-col items-end gap-1 px-4 border-r border-white/10 group cursor-pointer">
-                                <span className="text-[9px] font-bold text-supreme-gold/80 uppercase tracking-tighter leading-none">MahaRERA Reg.</span>
-                                <span className="text-[11px] font-medium text-white/90 tracking-tighter leading-none group-hover:text-supreme-gold transition-colors">PM1261012502656</span>
+                            <div className="flex items-center gap-3 px-4 border-r border-white/10 group cursor-pointer bg-supreme-gold/5 rounded-lg py-1 border border-supreme-gold/20 hover:border-supreme-gold/40 transition-all duration-300">
+                                <img 
+                                    src="/rivana-rera-qr.png" 
+                                    alt="RERA QR" 
+                                    className="w-8 h-8 rounded shadow-lg border border-white/10 group-hover:scale-110 transition-transform duration-300"
+                                />
+                                <div className="flex flex-col items-end gap-1">
+                                    <span className="text-[9px] font-bold text-supreme-gold uppercase tracking-tighter leading-none animate-pulse">MahaRERA Reg.</span>
+                                    <span className="text-[11px] font-bold text-white tracking-tighter leading-none">PM1261012502656</span>
+                                </div>
                             </div>
                             <button
                                 onClick={onEnquire}
@@ -149,14 +156,17 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
                             setIsOpen(false);
                             onEnquire?.();
                         }}
-                        className={`mt-8 flex flex-col items-center gap-2 transition-all duration-500 delay-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
+                        className={`mt-8 flex flex-col items-center gap-4 transition-all duration-500 delay-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
                     >
-                        <div className="bg-supreme-gold text-supreme-black px-8 py-4 rounded-full text-sm font-sans tracking-[0.15em] uppercase font-semibold flex items-center gap-3">
+                        <div className="bg-supreme-gold text-supreme-black px-8 py-4 rounded-full text-sm font-sans tracking-[0.15em] uppercase font-semibold flex items-center gap-3 shadow-xl">
                             <Phone size={16} />
                             <span>Enquire Now</span>
                         </div>
-                        <div className="text-[10px] text-white/50 tracking-widest uppercase font-bold mt-2">
-                            MahaRERA: PM1261012502656
+                        <div className="flex flex-col items-center gap-2 bg-supreme-gold/10 p-4 rounded-2xl border border-supreme-gold/20">
+                            <img src="/rivana-rera-qr.png" alt="RERA QR" className="w-20 h-20 rounded-lg shadow-2xl" />
+                            <div className="text-[11px] text-supreme-gold tracking-widest uppercase font-bold text-center">
+                                MahaRERA: PM1261012502656
+                            </div>
                         </div>
                     </button>
                 </div>
