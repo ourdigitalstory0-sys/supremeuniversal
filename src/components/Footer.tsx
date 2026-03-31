@@ -97,6 +97,27 @@ const Footer = () => {
                     </div>
                 </div>
 
+                {/* Dedicated RERA Section */}
+                <div className="border-t border-white/10 py-16">
+                    <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
+                        <div className="flex-1 text-center md:text-left">
+                            <h2 className="text-3xl md:text-4xl font-serif mb-6">RERA Details</h2>
+                            <p className="text-white/60 font-sans font-light leading-relaxed max-w-2xl">
+                                Supreme Rivana Phase I - <span className="text-white font-medium">PM1261012502656</span> <br className="hidden md:block" />
+                                Available at <a href="https://maharera.maharashtra.gov.in/" target="_blank" rel="noopener noreferrer" className="text-supreme-gold hover:underline decoration-supreme-gold/30 underline-offset-4 transition-all">https://maharera.maharashtra.gov.in/</a> under registered projects. <br />
+                                <span className="text-[10px] mt-2 block opacity-40">*T&C apply.</span>
+                            </p>
+                        </div>
+                        <div className="flex-shrink-0 bg-white p-4 rounded-xl shadow-2xl shadow-supreme-gold/10 hover:scale-105 transition-transform duration-500">
+                            <img 
+                                src="/rivana-rera-qr.png" 
+                                alt="MahaRERA QR Code - Supreme Rivana Phase I" 
+                                className="w-32 h-32 md:w-36 md:h-36"
+                            />
+                        </div>
+                    </div>
+                </div>
+
                 <div className="border-t border-white/10 pt-8 mb-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 font-sans font-light tracking-wide">
                     <div className="mb-4 md:mb-0 text-white/50">
                         © {new Date().getFullYear()} Supreme Rivana Punawale. All rights reserved. <span className="mx-2 hidden md:inline">|</span> <span className="block md:inline text-white/80 mt-2 md:mt-0">MahaRERA No. PM1261012502656</span>

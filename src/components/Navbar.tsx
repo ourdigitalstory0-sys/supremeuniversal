@@ -94,6 +94,10 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
                             >
                                 {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
                             </button>
+                            <div className="flex flex-col items-end gap-1 px-4 border-r border-white/10 group cursor-pointer">
+                                <span className="text-[9px] font-bold text-supreme-gold/80 uppercase tracking-tighter leading-none">MahaRERA Reg.</span>
+                                <span className="text-[11px] font-medium text-white/90 tracking-tighter leading-none group-hover:text-supreme-gold transition-colors">PM1261012502656</span>
+                            </div>
                             <button
                                 onClick={onEnquire}
                                 className="flex items-center gap-2 border border-supreme-gold/50 text-supreme-gold px-5 py-2 rounded-full hover:bg-supreme-gold hover:text-supreme-black transition-all duration-500 text-[11px] font-sans tracking-[0.1em] uppercase font-semibold"
@@ -145,10 +149,15 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
                             setIsOpen(false);
                             onEnquire?.();
                         }}
-                        className={`mt-8 flex items-center gap-3 bg-supreme-gold text-supreme-black px-8 py-4 rounded-full text-sm font-sans tracking-[0.15em] uppercase font-semibold transition-all duration-500 delay-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
+                        className={`mt-8 flex flex-col items-center gap-2 transition-all duration-500 delay-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
                     >
-                        <Phone size={16} />
-                        <span>Enquire Now</span>
+                        <div className="bg-supreme-gold text-supreme-black px-8 py-4 rounded-full text-sm font-sans tracking-[0.15em] uppercase font-semibold flex items-center gap-3">
+                            <Phone size={16} />
+                            <span>Enquire Now</span>
+                        </div>
+                        <div className="text-[10px] text-white/50 tracking-widest uppercase font-bold mt-2">
+                            MahaRERA: PM1261012502656
+                        </div>
                     </button>
                 </div>
             </div>
