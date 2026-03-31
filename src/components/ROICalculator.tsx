@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp, Download, CheckCircle2 } from 'lucide-react';
 import { portfolioProjects } from '../data/portfolioProjects';
@@ -7,17 +7,14 @@ const ROICalculator = ({ onEnquire }: { onEnquire: () => void }) => {
     const [selectedProjectId, setSelectedProjectId] = useState(portfolioProjects[0].id);
     const [investment, setInvestment] = useState(90); // in Lakhs
     const [years, setYears] = useState(3);
-    const [estimatedValue, setEstimatedValue] = useState(0);
 
     const selectedProject = portfolioProjects.find(p => p.id === selectedProjectId) || portfolioProjects[0];
     const appreciationRate = 12; // Base rate
     const infraBoost = (selectedProject.appreciationMultiplier - 1) * 100;
 
-    useEffect(() => {
-        const totalRate = appreciationRate + infraBoost;
-        const finalValue = investment * Math.pow(1 + totalRate / 100, years);
-        setEstimatedValue(parseFloat(finalValue.toFixed(2)));
-    }, [investment, years, selectedProjectId]);
+    const totalRate = appreciationRate + infraBoost;
+    const finalValue = investment * Math.pow(1 + totalRate / 100, years);
+    const estimatedValue = parseFloat(finalValue.toFixed(2));
 
     return (
         <section id="roi-calculator" className="py-24 md:py-32 bg-white relative overflow-hidden">
