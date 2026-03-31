@@ -111,7 +111,7 @@ const Footer = () => {
                         </div>
                         <div className="flex-shrink-0 bg-white p-4 rounded-xl shadow-2xl shadow-supreme-gold/10 hover:scale-105 transition-transform duration-500">
                             <img 
-                                src="/rivana-rera-qr.png" 
+                                src="/rivana-rera-qr.png?v=1.0.2" 
                                 alt="MahaRERA QR Code - Supreme Rivana Phase I" 
                                 className="w-32 h-32 md:w-36 md:h-36"
                             />

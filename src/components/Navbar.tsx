@@ -95,7 +95,7 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
                             </button>
                             <div className="flex items-center gap-3 px-4 border-r border-white/10 group cursor-pointer bg-supreme-gold/5 rounded-lg py-1 border border-supreme-gold/20 hover:border-supreme-gold/40 transition-all duration-300">
                                 <img 
-                                    src="/rivana-rera-qr.png" 
+                                    src="/rivana-rera-qr.png?v=1.0.2" 
                                     alt="RERA QR" 
                                     className="w-8 h-8 rounded shadow-lg border border-white/10 group-hover:scale-110 transition-transform duration-300"
                                 />
@@ -162,7 +162,7 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
                             <span>Enquire Now</span>
                         </div>
                         <div className="flex flex-col items-center gap-2 bg-supreme-gold/10 p-4 rounded-2xl border border-supreme-gold/20">
-                            <img src="/rivana-rera-qr.png" alt="RERA QR" className="w-20 h-20 rounded-lg shadow-2xl" />
+                            <img src="/rivana-rera-qr.png?v=1.0.2" alt="RERA QR" className="w-20 h-20 rounded-lg shadow-2xl" />
                             <div className="text-[11px] text-supreme-gold tracking-widest uppercase font-bold text-center">
                                 MahaRERA: PM1261012502656
                             </div>
