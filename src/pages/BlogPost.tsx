@@ -61,10 +61,15 @@ const BlogPost = () => {
             "@type": "WebPage",
             "@id": `https://www.supreme-universal.in/blog/${id}`
         },
+        "articleSection": post.category,
         "keywords": `${post.category}, Supreme Rivana Punawale, Punawale real estate, Pune West property, Supreme Universal`,
         "wordCount": post.content.replace(/<[^>]*>/g, '').split(/\s+/).length.toString(),
         "inLanguage": "en-IN",
         "isAccessibleForFree": true,
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", ".prose p:first-of-type"]
+        },
         "about": [
             {
                 "@type": "Place",
@@ -173,18 +178,20 @@ const BlogPost = () => {
                             "Supreme Rivana Punawale site visit", "Supreme Rivana Punawale reviews", "Supreme Rivana Punawale master plan",
                             "Flats in Punawale", "2 BHK flats Punawale near Hinjewadi", "3 BHK apartments Punawale",
                             "Luxury apartments Pune West", "New launch projects PCMC", "Property investment Punawale 2026",
-                            "Best project in Punawale", "Flats near Hinjewadi IT Park", "Apartments near Wakad",
+                            "Best project in Punawale 2026", "Flats near Hinjewadi IT Park", "Apartments near Wakad",
                             "River view apartments Pune", "Premium flats near Mumbai Pune Expressway",
                             "IGBC certified homes Punawale", "NRI property investment Pune",
                             "Supreme Universal projects Pune", "High ROI flats Pune West",
                             "Gated community Punawale", "Ready to move flats near Hinjewadi",
                             "Luxury residences Punawale Pune", "Under construction flats Punawale",
                             "Supreme Rivana Punawale vs Puneville", "Supreme Rivana Punawale vs ANP Autograph",
+                            "Supreme Rivana vs Kohinoor Uptown", "Supreme Rivana vs 24k Living",
+                            "Supreme Rivana vs all competitors 2026", "Best project Punawale comparison",
                             "Best 2 BHK under 1 crore Punawale", "Supreme Rivana Punawale construction update"
                         ].map((keyword, idx) => (
                             <Link
                                 key={idx}
-                                to="/supreme-rivana-location"
+                                to="/supreme-rivana-punawale-location"
                                 className="px-3 py-1.5 text-[10px] md:text-[11px] font-sans text-gray-500 bg-gray-50 border border-gray-100 rounded-full hover:bg-supreme-gold/10 hover:border-supreme-gold/30 hover:text-supreme-black transition-all duration-300 whitespace-nowrap"
                             >
                                 {keyword}
@@ -218,8 +225,9 @@ const BlogPost = () => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {blogPosts
+                        {[...blogPosts]
                             .filter(p => p.id !== post.id)
+                            .sort((a, b) => (a.category === post.category ? -1 : 1) - (b.category === post.category ? -1 : 1))
                             .slice(0, 3)
                             .map((relatedPost) => (
                                 <Link
