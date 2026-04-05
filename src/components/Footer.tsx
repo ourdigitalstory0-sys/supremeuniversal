@@ -127,6 +127,10 @@ const Footer = () => {
                                 src="/rivana-rera-qr.png?v=1.0.2" 
                                 alt="MahaRERA QR Code - Supreme Rivana Phase I" 
                                 className="w-32 h-32 md:w-36 md:h-36"
+                                loading="lazy"
+                                decoding="async"
+                                width="144"
+                                height="144"
                             />
                         </div>
                     </div>

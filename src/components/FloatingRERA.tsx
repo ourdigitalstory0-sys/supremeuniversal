@@ -7,6 +7,10 @@ const FloatingRERA = () => {
                     src={`/rivana-rera-qr.png?v=1.0.2`} 
                     alt="MahaRERA QR Code - Supreme Rivana" 
                     className="w-12 h-12 md:w-16 md:h-16 object-contain"
+                    loading="lazy"
+                    decoding="async"
+                    width="64"
+                    height="64"
                 />
             </div>
             <div className="flex flex-col items-center">
