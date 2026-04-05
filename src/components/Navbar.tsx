@@ -24,12 +24,12 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
 
     const navLinks = [
         { name: 'Home', href: '/' },
-        { name: 'Overview', href: '/supreme-rivana-overview' },
-        { name: 'Pricing', href: '/supreme-rivana-price-list' },
-        { name: 'Compare', href: '/supreme-rivana-comparison' },
-        { name: 'Gallery', href: '/supreme-rivana-gallery' },
+        { name: 'Overview', href: '/supreme-rivana-punawale-overview' },
+        { name: 'Pricing', href: '/supreme-rivana-punawale-price-list' },
+        { name: 'Compare', href: '/supreme-rivana-punawale-comparison' },
+        { name: 'Gallery', href: '/supreme-rivana-punawale-gallery' },
         { name: 'Insights', href: '/blog' },
-        { name: 'Contact', href: '/supreme-rivana-contact' },
+        { name: 'Contact', href: '/supreme-rivana-punawale-contact' },
     ];
 
     return (

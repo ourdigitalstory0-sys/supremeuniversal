@@ -4,9 +4,18 @@ import { Link } from 'react-router-dom';
 interface HeroProps {
     onEnquire?: () => void;
     onDownload?: () => void;
+    title?: React.ReactNode;
+    subtitle?: string;
+    description?: React.ReactNode;
 }
 
-const Hero = ({ onEnquire, onDownload }: HeroProps) => {
+const Hero = ({ 
+    onEnquire, 
+    onDownload, 
+    title, 
+    subtitle = "2 & 3 Bed Riverside Residences",
+    description 
+}: HeroProps) => {
     return (
         <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-supreme-black">
             {/* Background Image with Dark Overlay */}
@@ -40,9 +49,13 @@ const Hero = ({ onEnquire, onDownload }: HeroProps) => {
                         Premium Lifestyle Apartments Pune | Luxury Residences Pune
                     </span>
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-tight drop-shadow-2xl flex flex-col items-center">
-                        <span className="uppercase tracking-widest mb-2 font-normal">Supreme</span>
-                        <span className="uppercase tracking-widest font-normal text-supreme-gold text-center">Rivana Punawale</span>
-                        <span className="block text-xl md:text-2xl mt-8 font-sans font-light tracking-wide text-white/90">2 & 3 Bed Riverside Residences</span>
+                        {title || (
+                            <>
+                                <span className="uppercase tracking-widest mb-2 font-normal">Supreme</span>
+                                <span className="uppercase tracking-widest font-normal text-supreme-gold text-center">Rivana Punawale</span>
+                            </>
+                        )}
+                        <span className="block text-xl md:text-2xl mt-8 font-sans font-light tracking-wide text-white/90">{subtitle}</span>
                     </h1>
                 </motion.div>
 
@@ -52,7 +65,11 @@ const Hero = ({ onEnquire, onDownload }: HeroProps) => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.7, duration: 1 }}
                 >
-                    Widely considered the <strong>best project in Punawale 2026</strong>. Experience unprecedented <strong>waterfront luxury</strong> and the pinnacle of real estate evolution with our premium <strong>2 & 3 BHK flats near Hinjewadi IT Park</strong>. A 15-acre IGBC certified township with <strong>31-storey towers</strong>, 40+ world-class amenities, and <strong>Pune Metro Line 3</strong> proximity.
+                    {description || (
+                        <>
+                            Widely considered the <strong>best project in Punawale 2026</strong>. Experience unprecedented <strong>waterfront luxury</strong> and the pinnacle of real estate evolution with our premium <strong>2 & 3 BHK flats near Hinjewadi IT Park</strong>. A 15-acre IGBC certified township with <strong>31-storey towers</strong>, 40+ world-class amenities, and <strong>Pune Metro Line 3</strong> proximity.
+                        </>
+                    )}
                 </motion.p>
                 {/* Semantic heading for SEO crawlers — visually hidden */}
                 <h2 className="sr-only">Supreme Rivana Punawale brochure download — Luxury 2 & 3 BHK waterfront residences for sale in Punawale near Wakad and Tathawade. Best residential project by Supreme Universal.</h2>

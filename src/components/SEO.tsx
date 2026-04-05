@@ -26,39 +26,39 @@ const SEO = ({
             title: 'Supreme Rivana Punawale | Luxury 2 & 3 BHK Flats near Hinjewadi | Supreme Rivana Price & Brochure',
             description: 'Supreme Rivana Punawale by Supreme Universal: Official site for ultra-luxury 2 & 3 BHK riverside apartments near Hinjewadi IT Park. Explore Supreme Rivana Punawale floor plans, 2 BHK price list, construction status, and 40+ world-class amenities in Punawale, West Pune. High ROI investment near Mumbai-Pune Expressway. Book Site Visit!'
         },
-        '/supreme-rivana-overview': {
+        '/supreme-rivana-punawale-overview': {
             title: 'Supreme Rivana Punawale Project Overview | 15-Acre Riverside Township Pune',
             description: 'Discover Supreme Rivana Punawale, a 15-acre IGBC certified luxury township by Supreme Universal. Featuring 31-storey towers, riverside living, and premium 2 & 3 BHK Flats near Wakad-Hinjewadi Link Road. The benchmark of Real Estate in West Pune 2026.'
         },
-        '/supreme-rivana-amenities': {
+        '/supreme-rivana-punawale-amenities': {
             title: '40+ Luxury Amenities | Supreme Rivana Punawale | Infinity Pool & Skywalk',
             description: 'Experience elite living at Supreme Rivana Punawale with 40+ world-class amenities: Infinity Pool, Skywalk Bridge, Pro-Level Sports Courts, Multi-tier Clubhouse, and Riverside Promenade. Luxury apartments in Punawale designed for the modern executive.'
         },
-        '/supreme-rivana-floor-plans': {
+        '/supreme-rivana-punawale-floor-plans': {
             title: 'Supreme Rivana Floor Plan & Price List | 2 & 3 BHK Configurations Punawale',
             description: 'View detailed Supreme Rivana floor plans and carpet area for 2 BHK and 3 BHK luxury flats. Optimized Vastu-compliant layouts with maximum ventilation near Hinjewadi IT Park. Get the official Supreme Rivana Punawale price list and cost sheets today.'
         },
-        '/supreme-rivana-gallery': {
+        '/supreme-rivana-punawale-gallery': {
             title: 'Supreme Rivana Gallery | Actual Site Photos & Show Flat Images',
             description: 'A visual tour of Supreme Rivana Punawale. View artistic impressions, actual construction status, and show flat images of the most premium riverside residences in Pune West. See the 15-acre township lifestyle.'
         },
-        '/supreme-rivana-location': {
+        '/supreme-rivana-punawale-location': {
             title: 'Supreme Rivana Location & Connectivity | Near Hinjewadi IT Park & Wakad',
             description: 'Strategically located at Chhatrapati Shivaji Maharaj Chowk, Punawale. Supreme Rivana offers unmatched connectivity to Hinjewadi Phase 1, Mumbai-Pune Expressway Bypass, and upcoming Pune Metro Line 3. Prime luxury apartments in West Pune.'
         },
-        '/supreme-rivana-faq': {
+        '/supreme-rivana-punawale-faq': {
             title: 'Supreme Rivana FAQ | RERA Number, Possession Date & Booking Details',
             description: 'Find answers to every question about Supreme Rivana Punawale: MahaRERA number, possession dates, maintenance costs, and booking process. Your complete guide to buying property in Punawale by Supreme Universal.'
         },
-        '/supreme-rivana-contact': {
+        '/supreme-rivana-punawale-contact': {
             title: 'Contact Supreme Rivana Punawale Sales | Book A VIP Site Visit',
             description: 'Schedule your VIP site visit to Supreme Rivana Punawale. Contact our authorized sales gallery for exclusive early-bird offers, inventory updates, and personalized price presentations for 2 & 3 BHK flats.'
         },
-        '/supreme-rivana-price-list': {
+        '/supreme-rivana-punawale-price-list': {
             title: 'Supreme Rivana Punawale Price List 2026 | 2 BHK & 3 BHK Cost Sheets',
             description: 'Official Supreme Rivana Price List 2026. Get all-inclusive cost sheets for 2 BHK and 3 BHK luxury apartments in Punawale. Explore limited-time booking offers and down-payment discounts near Hinjewadi.'
         },
-        '/supreme-rivana-comparison': {
+        '/supreme-rivana-punawale-comparison': {
             title: 'Supreme Rivana vs Puneville | Comparison Review 2026 | Best Project in Punawale',
             description: 'Supreme Rivana Punawale vs Puneville vs ANP Autograph. See why Supreme Universal\'s 15-acre riverside township is the #1 choice for investment and luxury living in West Pune based on price, amenities, and legacy.'
         }
@@ -68,8 +68,8 @@ const SEO = ({
     const title = propTitle || currentMetadata.title;
     const description = propDescription || currentMetadata.description;
     
-    // Standardize URL: Force non-www and remove trailing slashes for GSC consistency
-    const cleanPathname = pathname === '/' ? '' : pathname.replace(/\/$/, '');
+    // Standardize URL: Force non-www and enforce trailing slashes for root/GSC consistency
+    const cleanPathname = pathname === '/' ? '/' : pathname.replace(/\/$/, '');
     const url = propUrl || `https://www.supreme-universal.in${cleanPathname}`;
     const fullTitle = title.includes('Supreme Rivana') ? title : `${title} | Supreme Rivana Punawale`;
 
@@ -314,13 +314,13 @@ const SEO = ({
                         "name": "Main Navigation",
                         "url": "https://www.supreme-universal.in/",
                         "hasPart": [
-                            { "@type": "WebPage", "name": "Overview", "url": "https://www.supreme-universal.in/supreme-rivana-overview" },
-                            { "@type": "WebPage", "name": "Amenities", "url": "https://www.supreme-universal.in/supreme-rivana-amenities" },
-                            { "@type": "WebPage", "name": "Floor Plans", "url": "https://www.supreme-universal.in/supreme-rivana-floor-plans" },
-                            { "@type": "WebPage", "name": "Gallery", "url": "https://www.supreme-universal.in/supreme-rivana-gallery" },
-                            { "@type": "WebPage", "name": "Location", "url": "https://www.supreme-universal.in/supreme-rivana-location" },
-                            { "@type": "WebPage", "name": "FAQ", "url": "https://www.supreme-universal.in/supreme-rivana-faq" },
-                            { "@type": "WebPage", "name": "Contact", "url": "https://www.supreme-universal.in/supreme-rivana-contact" },
+                            { "@type": "WebPage", "name": "Overview", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-overview" },
+                            { "@type": "WebPage", "name": "Amenities", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-amenities" },
+                            { "@type": "WebPage", "name": "Floor Plans", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-floor-plans" },
+                            { "@type": "WebPage", "name": "Gallery", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-gallery" },
+                            { "@type": "WebPage", "name": "Location", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-location" },
+                            { "@type": "WebPage", "name": "FAQ", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-faq" },
+                            { "@type": "WebPage", "name": "Contact", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-contact" },
                             { "@type": "WebPage", "name": "Blog", "url": "https://www.supreme-universal.in/blog" }
                         ]
                     },

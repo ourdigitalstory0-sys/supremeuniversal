@@ -32,11 +32,11 @@ const Footer = () => {
                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Navigation</h5>
                         <ul className="space-y-4 text-white/50 font-sans font-light">
                             <li><Link to="/" className="hover:text-supreme-gold transition-colors duration-300">Home</Link></li>
-                            <li><Link to="/supreme-rivana-overview" className="hover:text-supreme-gold transition-colors duration-300">The Vision</Link></li>
-                            <li><Link to="/supreme-rivana-price-list" className="hover:text-supreme-gold transition-colors duration-300">Cost Sheets</Link></li>
-                            <li><Link to="/supreme-rivana-floor-plans" className="hover:text-supreme-gold transition-colors duration-300">Floor Plans</Link></li>
-                            <li><Link to="/supreme-rivana-comparison" className="hover:text-supreme-gold transition-colors duration-300">Compare Projects</Link></li>
-                            <li><Link to="/supreme-rivana-location" className="hover:text-supreme-gold transition-colors duration-300">Neighborhood</Link></li>
+                            <li><Link to="/supreme-rivana-punawale-overview" className="hover:text-supreme-gold transition-colors duration-300">The Vision</Link></li>
+                            <li><Link to="/supreme-rivana-punawale-price-list" className="hover:text-supreme-gold transition-colors duration-300">Cost Sheets</Link></li>
+                            <li><Link to="/supreme-rivana-punawale-floor-plans" className="hover:text-supreme-gold transition-colors duration-300">Floor Plans</Link></li>
+                            <li><Link to="/supreme-rivana-punawale-comparison" className="hover:text-supreme-gold transition-colors duration-300">Compare Projects</Link></li>
+                            <li><Link to="/supreme-rivana-punawale-location" className="hover:text-supreme-gold transition-colors duration-300">Neighborhood</Link></li>
                             <li><Link to="/blog" className="hover:text-supreme-gold transition-colors duration-300">Market Insights</Link></li>
                         </ul>
                     </div>
@@ -50,18 +50,31 @@ const Footer = () => {
                             <li><Link to="/blog/supreme-rivana-rera-number-price-list-booking-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">RERA & Booking<span className="text-[10px] text-white/30 truncate">Price List 2026</span></Link></li>
                             <li><Link to="/blog/best-2-bhk-flats-punawale-under-1-crore-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">2 BHK Under ₹1 Cr<span className="text-[10px] text-white/30 truncate">Best Deals 2026</span></Link></li>
                             <li><Link to="/blog/nri-guide-buying-property-punawale-pune-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">NRI Investment<span className="text-[10px] text-white/30 truncate">Legal Checklist</span></Link></li>
+                            <li><Link to="/blog/supreme-rivana-punawale-vs-all-competitors-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supremacy Report<span className="text-[10px] text-white/30 truncate">vs All Competitors</span></Link></li>
                         </ul>
                     </div>
 
                     {/* Pune Portfolio */}
                     <div className="lg:col-span-2">
-                        <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Pune West Portfolio</h5>
+                        <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Asset Portfolio</h5>
                         <ul className="space-y-4 text-white/50 font-sans font-light">
-                            <li><Link to="/projects/supreme-pallacio" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Pallacio<span className="text-[10px] text-white/30 truncate">Pan Card Club, Baner</span></Link></li>
-                            <li><Link to="/projects/supreme-vivero" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Vivero<span className="text-[10px] text-white/30 truncate">Baner Road, Pune West</span></Link></li>
-                            <li><Link to="/projects/supreme-estia" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Estia<span className="text-[10px] text-white/30 truncate">Baner, Pune West</span></Link></li>
-                            <li><Link to="/projects/supreme-amadore" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Amadore<span className="text-[10px] text-white/30 truncate">Link Road, Pune</span></Link></li>
-                            <li><Link to="/projects/supreme-wakad" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supreme Wakad<span className="text-[10px] text-white/30 truncate">Hinjewadi Link Road</span></Link></li>
+                            <li><Link to="/projects/supreme-pallacio" className="hover:text-supreme-gold transition-colors duration-300">Supreme Pallacio</Link></li>
+                            <li><Link to="/projects/supreme-estia" className="hover:text-supreme-gold transition-colors duration-300">Supreme Estia</Link></li>
+                            <li><Link to="/projects/supreme-wakad" className="hover:text-supreme-gold transition-colors duration-300">Supreme Wakad</Link></li>
+                            <li><Link to="/projects/supreme-amadore" className="hover:text-supreme-gold transition-colors duration-300">Supreme Amadore</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Programmatic SEO Mesh Column */}
+                    <div className="lg:col-span-2">
+                        <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Keyword Explore</h5>
+                        <ul className="space-y-4 text-white/50 font-sans font-light text-[11px] uppercase tracking-wider">
+                            <li><Link to="/supreme-rivana-punawale-price" className="hover:text-supreme-gold transition-colors duration-300">Rivana Price</Link></li>
+                            <li><Link to="/supreme-rivana-punawale-reviews" className="hover:text-supreme-gold transition-colors duration-300">Rivana Reviews</Link></li>
+                            <li><Link to="/supreme-rivana-punawale-floor-plan" className="hover:text-supreme-gold transition-colors duration-300">Floor Plans</Link></li>
+                            <li><Link to="/supreme-2bhk-punawale-flats" className="hover:text-supreme-gold transition-colors duration-300">2 BHK Punawale</Link></li>
+                            <li><Link to="/supreme-3bhk-punawale-flats" className="hover:text-supreme-gold transition-colors duration-300">3 BHK Punawale</Link></li>
+                            <li><Link to="/supreme-riverside-punawale-photos" className="hover:text-supreme-gold transition-colors duration-300">Riverside Photos</Link></li>
                         </ul>
                     </div>
                     <div className="lg:col-span-2">
@@ -182,12 +195,13 @@ const Footer = () => {
                         Explore the finest selection of ultra-luxury residences in Pune West. Discover {seoKeywords.substring(0, 1500)}...
                     </p>
                     <ul>
-                        <li><a href="/supreme-rivana-location">2 BHK Flats in Punawale</a></li>
-                        <li><a href="/supreme-rivana-location">3 BHK Premium Apartments near Hinjewadi IT Park</a></li>
-                        <li><a href="/supreme-rivana-location">Luxury Homes in Wakad and Tathawade</a></li>
-                        <li><a href="/supreme-rivana-overview">Supreme Rivana RERA PM1261012502656</a></li>
-                        <li><a href="/supreme-rivana-price-list">Supreme Rivana Punawale Price List 2026</a></li>
-                        <li><a href="/supreme-rivana-comparison">Supreme Rivana vs Puneville Comparison</a></li>
+                        <li><Link to="/supreme-rivana-punawale-location">2 BHK Flats in Punawale</Link></li>
+                        <li><Link to="/supreme-rivana-punawale-location">3 BHK Premium Apartments near Hinjewadi IT Park</Link></li>
+                        <li><Link to="/supreme-rivana-punawale-location">Luxury Homes in Wakad and Tathawade</Link></li>
+                        <li><Link to="/supreme-rivana-punawale-overview">Supreme Rivana RERA PM1261012502656</Link></li>
+                        <li><Link to="/supreme-rivana-punawale-price-list">Supreme Rivana Punawale Price List 2026</Link></li>
+                        <li><Link to="/supreme-rivana-punawale-comparison">Supreme Rivana vs Puneville Comparison</Link></li>
+                        <li><Link to="/blog/supreme-rivana-punawale-vs-all-competitors-2026">Supreme Rivana vs All Competitors Punawale 2026</Link></li>
                     </ul>
                 </div>
             </div>

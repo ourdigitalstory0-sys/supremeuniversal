@@ -37,6 +37,9 @@ const BlogPreview = lazy(() => import('./components/BlogPreview'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const PriceList = lazy(() => import('./pages/PriceList'));
 const Comparison = lazy(() => import('./pages/Comparison'));
+const ProgrammaticLanding = lazy(() => import('./components/ProgrammaticLanding'));
+
+import { pseoRoutes } from './data/pseoRoutes';
 
 /**
  * RedirectHandler: Resolves GSC "Alternative page with proper canonical tag" issues
@@ -48,14 +51,23 @@ function RedirectHandler() {
 
   useEffect(() => {
     const redirectMap: Record<string, string> = {
-      '/supreme-riverside-punawale-overview': '/supreme-rivana-overview',
-      '/supreme-riverside-punawale-amenities': '/supreme-rivana-amenities',
-      '/supreme-riverside-punawale-floor-plans': '/supreme-rivana-floor-plans',
-      '/supreme-riverside-punawale-gallery': '/supreme-rivana-gallery',
-      '/supreme-riverside-punawale-location': '/supreme-rivana-location',
-      '/supreme-riverside-punawale-faq': '/supreme-rivana-faq',
-      '/supreme-riverside-punawale-contact': '/supreme-rivana-contact',
-      '/supreme-riverside-punawale': '/'
+      '/supreme-riverside-punawale-overview': '/supreme-rivana-punawale-overview',
+      '/supreme-riverside-punawale-amenities': '/supreme-rivana-punawale-amenities',
+      '/supreme-riverside-punawale-floor-plans': '/supreme-rivana-punawale-floor-plans',
+      '/supreme-riverside-punawale-gallery': '/supreme-rivana-punawale-gallery',
+      '/supreme-riverside-punawale-location': '/supreme-rivana-punawale-location',
+      '/supreme-riverside-punawale-faq': '/supreme-rivana-punawale-faq',
+      '/supreme-riverside-punawale-contact': '/supreme-rivana-punawale-contact',
+      '/supreme-riverside-punawale': '/',
+      '/supreme-rivana-overview': '/supreme-rivana-punawale-overview',
+      '/supreme-rivana-amenities': '/supreme-rivana-punawale-amenities',
+      '/supreme-rivana-floor-plans': '/supreme-rivana-punawale-floor-plans',
+      '/supreme-rivana-gallery': '/supreme-rivana-punawale-gallery',
+      '/supreme-rivana-location': '/supreme-rivana-punawale-location',
+      '/supreme-rivana-faq': '/supreme-rivana-punawale-faq',
+      '/supreme-rivana-contact': '/supreme-rivana-punawale-contact',
+      '/supreme-rivana-price-list': '/supreme-rivana-punawale-price-list',
+      '/supreme-rivana-comparison': '/supreme-rivana-punawale-comparison'
     };
 
     const target = redirectMap[pathname.replace(/\/$/, '')];
@@ -79,13 +91,13 @@ function ScrollHandler() {
 
     const timer = setTimeout(() => {
       const sectionMap: Record<string, string> = {
-        '/supreme-rivana-overview': '#overview',
-        '/supreme-rivana-amenities': '#amenities',
-        '/supreme-rivana-floor-plans': '#features',
-        '/supreme-rivana-gallery': '#gallery',
-        '/supreme-rivana-location': '#location',
-        '/supreme-rivana-faq': '#faq',
-        '/supreme-rivana-contact': '#contact'
+        '/supreme-rivana-punawale-overview': '#overview',
+        '/supreme-rivana-punawale-amenities': '#amenities',
+        '/supreme-rivana-punawale-floor-plans': '#features',
+        '/supreme-rivana-punawale-gallery': '#gallery',
+        '/supreme-rivana-punawale-location': '#location',
+        '/supreme-rivana-punawale-faq': '#faq',
+        '/supreme-rivana-punawale-contact': '#contact'
       };
 
       const targetId = sectionMap[pathname];
@@ -197,18 +209,21 @@ function App() {
       <Suspense fallback={<div className="h-screen bg-white" />}>
         <Routes>
           <Route path="/" element={<MainApp />} />
-          <Route path="/supreme-rivana-overview" element={<MainApp />} />
-          <Route path="/supreme-rivana-amenities" element={<MainApp />} />
-          <Route path="/supreme-rivana-floor-plans" element={<MainApp />} />
-          <Route path="/supreme-rivana-gallery" element={<MainApp />} />
-          <Route path="/supreme-rivana-location" element={<MainApp />} />
-          <Route path="/supreme-rivana-faq" element={<MainApp />} />
-          <Route path="/supreme-rivana-contact" element={<MainApp />} />
+          <Route path="/supreme-rivana-punawale-overview" element={<MainApp />} />
+          <Route path="/supreme-rivana-punawale-amenities" element={<MainApp />} />
+          <Route path="/supreme-rivana-punawale-floor-plans" element={<MainApp />} />
+          <Route path="/supreme-rivana-punawale-gallery" element={<MainApp />} />
+          <Route path="/supreme-rivana-punawale-location" element={<MainApp />} />
+          <Route path="/supreme-rivana-punawale-faq" element={<MainApp />} />
+          <Route path="/supreme-rivana-punawale-contact" element={<MainApp />} />
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/projects/:id" element={<ProjectDetails />} />
-          <Route path="/supreme-rivana-price-list" element={<PriceList />} />
-          <Route path="/supreme-rivana-comparison" element={<Comparison />} />
+          <Route path="/supreme-rivana-punawale-price-list" element={<PriceList />} />
+          <Route path="/supreme-rivana-punawale-comparison" element={<Comparison />} />
+          {pseoRoutes.map(route => (
+            <Route key={route.path} path={route.path} element={<ProgrammaticLanding />} />
+          ))}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

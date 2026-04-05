@@ -24,37 +24,82 @@
         },
         {
             "source": "/supreme-riverside-punawale-overview",
-            "destination": "/supreme-rivana-overview",
+            "destination": "/supreme-rivana-punawale-overview",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-amenities",
-            "destination": "/supreme-rivana-amenities",
+            "destination": "/supreme-rivana-punawale-amenities",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-floor-plans",
-            "destination": "/supreme-rivana-floor-plans",
+            "destination": "/supreme-rivana-punawale-floor-plans",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-gallery",
-            "destination": "/supreme-rivana-gallery",
+            "destination": "/supreme-rivana-punawale-gallery",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-location",
-            "destination": "/supreme-rivana-location",
+            "destination": "/supreme-rivana-punawale-location",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-faq",
-            "destination": "/supreme-rivana-faq",
+            "destination": "/supreme-rivana-punawale-faq",
             "permanent": true
         },
         {
             "source": "/supreme-riverside-punawale-contact",
-            "destination": "/supreme-rivana-contact",
+            "destination": "/supreme-rivana-punawale-contact",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-rivana-overview",
+            "destination": "/supreme-rivana-punawale-overview",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-rivana-amenities",
+            "destination": "/supreme-rivana-punawale-amenities",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-rivana-floor-plans",
+            "destination": "/supreme-rivana-punawale-floor-plans",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-rivana-gallery",
+            "destination": "/supreme-rivana-punawale-gallery",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-rivana-location",
+            "destination": "/supreme-rivana-punawale-location",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-rivana-faq",
+            "destination": "/supreme-rivana-punawale-faq",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-rivana-contact",
+            "destination": "/supreme-rivana-punawale-contact",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-rivana-price-list",
+            "destination": "/supreme-rivana-punawale-price-list",
+            "permanent": true
+        },
+        {
+            "source": "/supreme-rivana-comparison",
+            "destination": "/supreme-rivana-punawale-comparison",
             "permanent": true
         }
     ],

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { portfolioProjects } from '../src/data/portfolioProjects.ts';
 import { blogPosts } from '../src/data/blogPosts.ts';
+import { pseoRoutes } from '../src/data/pseoRoutes.ts';
 
 const DOMAIN = 'https://www.supreme-universal.in';
 const SITEMAP_PATH = path.join(process.cwd(), 'public', 'sitemap.xml');
@@ -9,15 +10,15 @@ const DATE = new Date().toLocaleDateString('sv-SE'); // 'sv-SE' gives 'YYYY-MM-D
 
 const staticRoutes = [
   { path: '', priority: '1.0', changefreq: 'daily' },
-  { path: '/supreme-rivana-overview', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-amenities', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-floor-plans', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-gallery', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-location', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-faq', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-contact', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-price-list', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-comparison', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-punawale-overview', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-punawale-amenities', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-punawale-floor-plans', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-punawale-gallery', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-punawale-location', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-punawale-faq', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-punawale-contact', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-punawale-price-list', priority: '0.9', changefreq: 'weekly' },
+  { path: '/supreme-rivana-punawale-comparison', priority: '0.9', changefreq: 'weekly' },
   { path: '/blog', priority: '0.9', changefreq: 'weekly' },
 ];
 
@@ -79,6 +80,17 @@ function generateSitemap() {
       <image:loc>${post.image.startsWith('http') ? post.image : DOMAIN + post.image}</image:loc>
       <image:title>${escapeXml(post.title)}</image:title>
     </image:image>
+  </url>`;
+  });
+
+  // Programmatic SEO Routes
+  pseoRoutes.forEach(route => {
+    xml += `
+  <url>
+    <loc>${DOMAIN}${route.path}</loc>
+    <lastmod>${DATE}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>`;
   });
 
