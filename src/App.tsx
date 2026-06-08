@@ -121,6 +121,8 @@ function ScrollHandler() {
 
 import BrochureModal from './components/BrochureModal';
 
+import MobileStickyBar from './components/MobileStickyBar';
+
 function MainApp() {
   const [isLoading, setIsLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -162,7 +164,7 @@ function MainApp() {
   }, []);
 
   return (
-    <div className="font-sans antialiased text-gray-900 bg-white cursor-none md:cursor-auto transition-colors duration-500">
+    <div className="font-sans antialiased text-gray-900 bg-white cursor-none md:cursor-auto transition-colors duration-500 pb-16 md:pb-0">
       <SEO />
       <Preloader isLoading={isLoading} />
       <CustomCursor />
@@ -199,6 +201,7 @@ function MainApp() {
       <QuickEnquireModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <BrochureModal isOpen={isBrochureModalOpen} onClose={() => setIsBrochureModalOpen(false)} />
       <LeadPopup />
+      <MobileStickyBar onEnquire={() => setIsModalOpen(true)} />
     </div>
   );
 }
