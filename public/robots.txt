@@ -18,4 +18,22 @@ Crawl-delay: 1
 User-agent: Yandex
 Disallow: /
 
+# Block SEO Scrapers & Competitor Analysis Bots
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /
+User-agent: Rogerbot
+Disallow: /
+User-agent: BLEXBot
+Disallow: /
+User-agent: PetalBot
+Disallow: /
+User-agent: DataForSeoBot
+Disallow: /
+
 Sitemap: https://www.supreme-universal.in/sitemap.xml
