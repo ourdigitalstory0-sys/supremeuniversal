@@ -70,7 +70,12 @@ const SEO = ({
     
     // Standardize URL: Force non-www and enforce trailing slashes for root/GSC consistency
     const cleanPathname = pathname === '/' ? '/' : pathname.replace(/\/$/, '');
-    const url = propUrl || `https://www.supreme-universal.in${cleanPathname}`;
+    
+    // Canonical URL Fix: If this is a scroll-anchor route mapping to MainApp, the canonical MUST be the root domain to avoid duplicate content penalties.
+    const isAnchorRoute = Object.keys(routeMetadata).includes(pathname) && pathname !== '/';
+    const canonicalPath = isAnchorRoute ? '/' : cleanPathname;
+    
+    const url = propUrl || `https://www.supreme-universal.in${canonicalPath}`;
     const fullTitle = title.includes('Supreme Rivana') ? title : `${title} | Supreme Rivana Punawale`;
 
     return (
@@ -123,7 +128,6 @@ const SEO = ({
 
             {/* JSON-LD Schema Markup */}
             <script type="application/ld+json">
-                {JSON.stringify([
                     {
                         "@context": "https://schema.org",
                         "@type": "ApartmentComplex",
@@ -147,7 +151,6 @@ const SEO = ({
                             "latitude": "18.6327",
                             "longitude": "73.7431"
                         },
-                        "hasMap": "https://maps.app.goo.gl/YourMapLink",
                         "amenityFeature": [
                             {
                                 "@type": "LocationFeatureSpecification",
@@ -163,36 +166,14 @@ const SEO = ({
                                 "@type": "LocationFeatureSpecification",
                                 "name": "Riverside Promenade",
                                 "value": "true"
-                            },
-                            {
-                                "@type": "LocationFeatureSpecification",
-                                "name": "Skywalk Bridge",
-                                "value": "true"
-                            },
-                            {
-                                "@type": "LocationFeatureSpecification",
-                                "name": "Co-working Hub",
-                                "value": "true"
-                            },
-                            {
-                                "@type": "LocationFeatureSpecification",
-                                "name": "Near Hinjewadi IT Park",
-                                "value": "true"
                             }
                         ],
                         "tourBookingPage": `${domain}/supreme-rivana-contact`,
-                        "numberOfAccommodationUnits": "Multiple towers with 2 & 3 BHK apartments",
-                        "petsAllowed": "True",
                         "telephone": "+917744009295",
                         "provider": {
                             "@id": "https://www.supreme-universal.in/#organization",
                             "name": "Supreme Universal"
-                        },
-                        "sameAs": [
-                            "https://en.wikipedia.org/wiki/Pune",
-                            "https://en.wikipedia.org/wiki/PCMC",
-                            "https://en.wikipedia.org/wiki/Real_estate_in_India"
-                        ]
+                        }
                     },
                     {
                         "@context": "https://schema.org",
@@ -206,8 +187,7 @@ const SEO = ({
                         "sameAs": [
                             "https://www.facebook.com/SupremeUniversal/",
                             "https://www.instagram.com/supreme_universal/",
-                            "https://www.linkedin.com/company/supreme-universal/",
-                            "https://en.wikipedia.org/wiki/Supreme_Universal"
+                            "https://www.linkedin.com/company/supreme-universal/"
                         ],
                         "contactPoint": {
                             "@type": "ContactPoint",
@@ -215,44 +195,6 @@ const SEO = ({
                             "contactType": "sales",
                             "areaServed": "IN",
                             "availableLanguage": ["en", "hi", "mr"]
-                        }
-                    },
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "LocalBusiness",
-                        "name": "Supreme Rivana Punawale Site Office",
-                        "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
-                        "url": "https://www.supreme-universal.in/supreme-rivana-location",
-                        "telephone": "+917744009295",
-                        "priceRange": "₹₹₹",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road",
-                            "addressLocality": "Punawale",
-                            "addressRegion": "Pune",
-                            "postalCode": "411033",
-                            "addressCountry": "IN"
-                        },
-                        "geo": {
-                            "@type": "GeoCoordinates",
-                            "latitude": "18.6327",
-                            "longitude": "73.7431"
-                        },
-                        "award": "Global Excellence Awards 2023",
-                        "keywords": seoKeywords,
-                        "openingHoursSpecification": {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Monday",
-                                "Tuesday",
-                                "Wednesday",
-                                "Thursday",
-                                "Friday",
-                                "Saturday",
-                                "Sunday"
-                            ],
-                            "opens": "10:00",
-                            "closes": "20:00"
                         }
                     },
                     {
@@ -323,60 +265,6 @@ const SEO = ({
                             { "@type": "WebPage", "name": "Contact", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-contact" },
                             { "@type": "WebPage", "name": "Blog", "url": "https://www.supreme-universal.in/blog" }
                         ]
-                    },
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "VideoObject",
-                        "name": "Supreme Rivana Punawale Walkthrough",
-                        "description": "Experience the ultra-luxury lifestyle at Supreme Rivana Punawale, a 15-acre riverside township in Punawale, Pune West. Featuring 31-storey towers and 40+ world-class amenities.",
-                        "thumbnailUrl": [
-                            "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
-                            "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
-                        ],
-                        "uploadDate": "2026-01-15T08:00:00+08:00",
-                        "duration": "PT2M30S",
-                        "contentUrl": "https://cdn.supremeuniversal.com/videos/walkthrough-punawale.mp4",
-                        "embedUrl": "https://www.youtube.com/embed/example-video-id",
-                        "interactionStatistic": {
-                            "@type": "InteractionCounter",
-                            "interactionType": { "@type": "WatchAction" },
-                            "userInteractionCount": 12500
-                        }
-                    },
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "Event",
-                        "name": "Supreme Rivana Punawale — Exclusive Site Visit & Open House",
-                        "description": "Schedule your exclusive VIP site visit to Supreme Rivana Punawale. Walk through our luxurious 15-acre riverside township, explore show flats, and meet our sales team for personalized pricing.",
-                        "startDate": "2026-03-01",
-                        "endDate": "2026-12-31",
-                        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-                        "eventStatus": "https://schema.org/EventScheduled",
-                        "location": {
-                            "@type": "Place",
-                            "name": "Supreme Rivana Sales Gallery, Punawale",
-                            "address": {
-                                "@type": "PostalAddress",
-                                "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road",
-                                "addressLocality": "Punawale, Pune",
-                                "postalCode": "411033",
-                                "addressCountry": "IN"
-                            }
-                        },
-                        "organizer": {
-                            "@type": "Organization",
-                            "name": "Supreme Universal",
-                            "url": "https://www.supreme-universal.in/"
-                        },
-                        "offers": {
-                            "@type": "Offer",
-                            "url": "https://www.supreme-universal.in/supreme-rivana-contact",
-                            "price": "0",
-                            "priceCurrency": "INR",
-                            "availability": "https://schema.org/InStock",
-                            "validFrom": "2026-03-01"
-                        },
-                        "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
                     }
                 ])}
             </script>
