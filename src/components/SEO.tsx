@@ -11,7 +11,7 @@ interface SEOProps {
 const SEO = ({
     title: propTitle,
     description: propDescription,
-    image = '/hero-bg.png',
+    image = 'https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg',
     url: propUrl
 }: SEOProps) => {
     const { pathname } = useLocation();
@@ -68,11 +68,16 @@ const SEO = ({
     // Standardize URL: Force non-www and enforce trailing slashes for root/GSC consistency
     const cleanPathname = pathname === '/' ? '/' : pathname.replace(/\/$/, '');
     
-    // Canonical URL Fix: If this is a scroll-anchor route mapping to MainApp, the canonical MUST be the root domain to avoid duplicate content penalties.
-    const isAnchorRoute = Object.keys(routeMetadata).includes(pathname) && pathname !== '/';
-    const canonicalPath = isAnchorRoute ? '/' : cleanPathname;
-    
-    const url = propUrl || `https://www.supreme-universal.in${canonicalPath}`;
+    // Canonical URL Fix: If a propUrl is explicitly passed (e.g., from BlogPost or ProgrammaticLanding), always use it.
+    // Otherwise, if this is a scroll-anchor route mapping to MainApp, the canonical MUST be the root domain.
+    let url: string;
+    if (propUrl) {
+        url = propUrl;
+    } else {
+        const isAnchorRoute = Object.keys(routeMetadata).includes(pathname) && pathname !== '/';
+        const canonicalPath = isAnchorRoute ? '/' : cleanPathname;
+        url = `https://www.supreme-universal.in${canonicalPath}`;
+    }
     const fullTitle = title.includes('Supreme Rivana') ? title : `${title} | Supreme Rivana Punawale`;
 
     // Define which routes should get the heavy commercial schema
