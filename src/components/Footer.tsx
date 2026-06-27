@@ -192,22 +192,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Visually Hidden Yet Semantic SEO Keyword Block */}
-                <div className="sr-only" aria-hidden="true" itemScope itemType="https://schema.org/WebPage">
-                    <h2>Premium Real Estate Search Trends - Supreme Rivana Punawale</h2>
-                    <p>
-                        Explore the finest selection of ultra-luxury residences in Pune West. Discover {seoKeywords.substring(0, 1500)}...
-                    </p>
-                    <ul>
-                        <li><Link to="/supreme-rivana-punawale-location">2 BHK Flats in Punawale</Link></li>
-                        <li><Link to="/supreme-rivana-punawale-location">3 BHK Premium Apartments near Hinjewadi IT Park</Link></li>
-                        <li><Link to="/supreme-rivana-punawale-location">Luxury Homes in Wakad and Tathawade</Link></li>
-                        <li><Link to="/supreme-rivana-punawale-overview">Supreme Rivana RERA PM1261012502656</Link></li>
-                        <li><Link to="/supreme-rivana-punawale-price-list">Supreme Rivana Punawale Price List 2026</Link></li>
-                        <li><Link to="/supreme-rivana-punawale-comparison">Supreme Rivana vs Puneville Comparison</Link></li>
-                        <li><Link to="/blog/supreme-rivana-punawale-vs-all-competitors-2026">Supreme Rivana vs All Competitors Punawale 2026</Link></li>
-                    </ul>
-                </div>
+
             </div>
         </footer>
     );
