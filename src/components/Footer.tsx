@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { seoKeywords } from '../data/seoKeywords';
 
 const Footer = () => {
     return (
