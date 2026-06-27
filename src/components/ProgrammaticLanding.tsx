@@ -91,29 +91,91 @@ const ProgrammaticLanding = () => {
                 <div className="py-20 bg-supreme-black text-white px-6">
                     <div className="container mx-auto max-w-4xl border border-supreme-gold/20 p-8 md:p-12 rounded-2xl bg-white/5 backdrop-blur-sm">
                         <h2 className="text-4xl font-serif mb-8 text-supreme-gold">{routeData.h1}</h2>
-                        <div className="prose prose-invert prose-lg max-w-none text-white/80 leading-relaxed">
+                        
+                        {/* Dynamic Structured Prose */}
+                        <div className="prose prose-invert prose-lg max-w-none text-white/80 leading-relaxed space-y-6">
                             <p>{routeData.content}</p>
-                            <p>Supreme Rivana Punawale is setting new standards for residential excellence in Pune West. As an IGBC certified 15-acre township, it offers the perfect blend of natural riverside beauty and modern structural brilliance.</p>
-                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 list-none p-0">
-                                <li className="flex items-center gap-3"><span className="text-supreme-gold">✓</span> 31-Storey Iconic Towers</li>
-                                <li className="flex items-center gap-3"><span className="text-supreme-gold">✓</span> Riverside Promenade</li>
-                                <li className="flex items-center gap-3"><span className="text-supreme-gold">✓</span> 40+ Lifestyle Amenities</li>
-                                <li className="flex items-center gap-3"><span className="text-supreme-gold">✓</span> Near Hinjewadi IT Park</li>
-                            </ul>
+                            <p>{routeData.longContent}</p>
+                            
+                            {/* Dynamic Specifications Table */}
+                            {routeData.table && routeData.table.length > 0 && (
+                                <div className="my-8 overflow-hidden rounded-xl border border-supreme-gold/10 bg-white/5 backdrop-blur-md">
+                                    <table className="w-full text-left border-collapse text-sm">
+                                        <thead>
+                                            <tr className="border-b border-supreme-gold/20 bg-supreme-gold/10">
+                                                <th className="p-4 font-serif text-supreme-gold uppercase tracking-wider">Specifications</th>
+                                                <th className="p-4 font-serif text-supreme-gold uppercase tracking-wider">Parameters</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {routeData.table.map((row, idx) => (
+                                                <tr key={idx} className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                                                    <td className="p-4 font-medium text-white/90">{row.label}</td>
+                                                    <td className="p-4 text-white/60">{row.value}</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            )}
+
+                            {/* Dynamic Highlights List */}
+                            {routeData.highlights && routeData.highlights.length > 0 && (
+                                <div className="my-8">
+                                    <h3 className="text-xl font-serif text-supreme-gold mb-4 uppercase tracking-wider">Key Architectural Highlights</h3>
+                                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none p-0">
+                                        {routeData.highlights.map((highlight, idx) => (
+                                            <li key={idx} className="flex items-start gap-3 text-white/80 text-sm">
+                                                <span className="text-supreme-gold font-bold mt-0.5">✓</span>
+                                                <span>{highlight}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
+                            {/* Intent-focused FAQs */}
+                            {routeData.faqs && routeData.faqs.length > 0 && (
+                                <div className="mt-12 pt-8 border-t border-white/10">
+                                    <h3 className="text-2xl font-serif text-supreme-gold mb-6 uppercase tracking-wider">Frequently Asked Questions</h3>
+                                    <div className="space-y-6">
+                                        {routeData.faqs.map((faq, idx) => (
+                                            <div key={idx} className="border border-white/5 bg-white/[0.02] p-6 rounded-xl hover:border-supreme-gold/20 transition-all duration-300">
+                                                <h4 className="text-base font-serif text-white/95 mb-2 font-medium">Q: {faq.q}</h4>
+                                                <p className="text-sm text-white/60 leading-relaxed">A: {faq.a}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </div>
-                        <div className="mt-12">
+
+                        {/* Call To Action */}
+                        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row gap-6 items-center justify-between">
                             <button 
                                 onClick={() => setIsModalOpen(true)}
-                                className="bg-supreme-gold text-white px-10 py-4 rounded-full uppercase tracking-widest text-sm font-semibold hover:bg-white hover:text-supreme-black transition-all duration-500"
+                                className="w-full sm:w-auto bg-supreme-gold text-white px-10 py-4 rounded-full uppercase tracking-widest text-sm font-semibold hover:bg-white hover:text-supreme-black transition-all duration-500 shadow-lg shadow-supreme-gold/10"
                             >
                                 Request Pricing & Brochure
                             </button>
-                        </div>
-                        <div className="mt-8 pt-8 border-t border-supreme-gold/10">
-                            <a href="/blog/supreme-rivana-punawale-vs-all-competitors-2026" className="inline-flex items-center gap-3 text-supreme-gold/80 hover:text-supreme-gold transition-colors text-sm font-light uppercase tracking-widest group">
-                                <span>Read the Supremacy Report: Rivana vs All Competitors</span>
-                                <span className="w-6 h-[1px] bg-supreme-gold/40 group-hover:w-10 transition-all duration-300"></span>
-                            </a>
+
+                            {/* Dynamic Semantic Interlinking Box */}
+                            <div className="flex flex-col gap-2 text-right sm:text-right">
+                                <span className="text-[10px] uppercase tracking-widest text-white/30 font-sans">Related Resources</span>
+                                <div className="flex flex-wrap gap-x-4 gap-y-1 justify-end">
+                                    {pseoRoutes
+                                        .filter(r => r.path !== routeData.path && r.category === routeData.category)
+                                        .slice(0, 2)
+                                        .map(r => (
+                                            <a key={r.path} href={r.path} className="text-xs text-supreme-gold/70 hover:text-supreme-gold transition-colors underline">
+                                                {r.keyword}
+                                            </a>
+                                        ))}
+                                    <a href="/blog/supreme-rivana-punawale-vs-all-competitors-2026" className="text-xs text-supreme-gold/70 hover:text-supreme-gold transition-colors underline">
+                                        Competitor Showdown
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
