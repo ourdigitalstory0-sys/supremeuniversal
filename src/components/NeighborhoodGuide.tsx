@@ -53,7 +53,7 @@ const NeighborhoodGuide = () => {
                             A High-Growth Micro Market in Pune
                         </h3>
                         <p className="text-gray-600 font-sans text-lg lg:text-xl leading-relaxed mb-8">
-                            Punawale is rapidly emerging as the top investment choice for <strong>premium residential projects punawale pune</strong>. Supreme Rivana Punawale leverages this strategic location, offering <strong>high rise apartments in Punawale</strong> with unmatched proximity to <strong>apartments near hinjewadi it park</strong>, <strong>luxury apartments wakad</strong>, and Tathawade.
+                            Punawale is rapidly emerging as the top investment choice for premium residential projects in Pune. Supreme Rivana Punawale leverages this strategic location, offering high-rise luxury apartments with unmatched proximity to Hinjewadi IT Park, Wakad, and Tathawade.
                         </p>
 
                         <div className="space-y-6">
@@ -114,10 +114,10 @@ const NeighborhoodGuide = () => {
                                 Why Invest in <span className="italic text-supreme-gold">Punawale?</span>
                             </h3>
                             <p className="text-gray-600 font-sans font-light leading-relaxed mb-6">
-                                Punawale has emerged as the <strong>best location for property investment in Pune West 2026</strong>. With <strong>Supreme Rivana Punawale</strong> leading the charge, buyers can now access <strong>ultra luxury apartments near Hinjewadi IT Park</strong> at competitive prices. The micro-market offers <strong>ready to move flats in Punawale</strong>, <strong>new launch projects in PCMC</strong>, and <strong>IGBC certified green homes</strong> — all within minutes of <strong>Wakad Bridge</strong>, <strong>Bhumkar Chowk</strong>, and the <strong>Mumbai Pune Expressway</strong>.
+                                Punawale has emerged as the premier location for property investment in Pune West. With Supreme Rivana Punawale leading the charge, buyers can now access ultra-luxury apartments near Hinjewadi IT Park at competitive prices. The micro-market offers IGBC certified green homes just minutes from Wakad Bridge and the Mumbai-Pune Expressway.
                             </p>
                             <p className="text-gray-600 font-sans font-light leading-relaxed">
-                                Whether you are an <strong>NRI investor looking for properties in Pune</strong> or a first-time buyer seeking <strong>2 BHK flats in Punawale under 1 Crore</strong>, Supreme Rivana delivers unmatched value. The project is also ideal for those searching for <strong>3 BHK premium apartments near Hinjewadi Phase 1</strong>, <strong>luxury homes near Dange Chowk</strong>, or <strong>river view apartments in Pune West</strong>.
+                                Whether you are an NRI investor looking for properties in Pune or a homebuyer seeking premium 2 BHK and 3 BHK flats, Supreme Rivana delivers unmatched value with panoramic river views and elevated community living.
                             </p>
                         </div>
                         <div>
@@ -125,45 +125,15 @@ const NeighborhoodGuide = () => {
                                 Supreme Rivana Punawale: <span className="italic text-supreme-gold">The Benchmark</span>
                             </h3>
                             <p className="text-gray-600 font-sans font-light leading-relaxed mb-6">
-                                Positioned as the <strong>best project in Punawale 2026</strong>, Supreme Rivana Punawale by <strong>Supreme Universal</strong> redefines <strong>luxury residences in Pune West</strong>. With <strong>31-storey towers</strong>, a <strong>15-acre riverside township</strong>, and <strong>40+ world-class amenities</strong> including an <strong>infinity pool</strong>, <strong>skywalk bridge</strong>, and <strong>multi-tier clubhouse</strong>, it surpasses competitors like <strong>Puneville</strong>, <strong>ANP Autograph</strong>, and <strong>24k Living</strong>.
+                                Positioned as the defining project of 2026, Supreme Rivana Punawale by Supreme Universal redefines luxury residences in Pune West. With 31-storey towers, a 15-acre riverside township, and 40+ world-class amenities including an infinity pool, skywalk bridge, and multi-tier clubhouse, it stands in a class of its own.
                             </p>
                             <p className="text-gray-600 font-sans font-light leading-relaxed">
-                                Searching for <strong>Supreme Rivana Punawale price list</strong>, <strong>Supreme Rivana Punawale floor plan</strong>, or <strong>Supreme Rivana Punawale brochure</strong>? Our <strong>MahaRERA-certified</strong> (PM1261012502656) development offers <strong>spacious 2 BHK and 3 BHK apartments</strong> with <strong>Vastu-compliant layouts</strong>, <strong>premium Italian marble flooring</strong>, and <strong>smart home automation</strong>. Pre-approved by <strong>HDFC, SBI, ICICI, and Axis Bank</strong>.
+                                Our MahaRERA-certified development offers spacious apartments with Vastu-compliant layouts, premium Italian marble flooring, and smart home automation. Pre-approved by top financial institutions including HDFC, SBI, ICICI, and Axis Bank.
                             </p>
                         </div>
                     </div>
 
-                    {/* Trending Searches Tag Cloud */}
-                    <div className="mt-12 pt-8 border-t border-gray-100">
-                        <h4 className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-supreme-gold mb-4">Trending Real Estate Searches in Pune West</h4>
-                        <div className="flex flex-wrap gap-2">
-                            {[
-                                "Supreme Rivana Punawale price list 2026", "Supreme Rivana river view apartments",
-                                "Supreme Rivana site visit booking", "Supreme Rivana construction update",
-                                "Luxury flats in Punawale by Supreme Universal", "Premium 3 BHK in Punawale under 1.5 Cr",
-                                "Best 2 BHK in Punawale under 1 Cr", "Top 10 luxury projects in Punawale",
-                                "Best property investment in Pune West 2026", "High ROI luxury flats near Hinjewadi",
-                                "Flats near Hinjewadi Phase 1", "Gated community in Punawale",
-                                "Flats with infinity pool in Punawale", "Real estate near upcoming Pune Metro Line 3",
-                                "NRI investment properties in Pune", "Properties near proposed Pune Ring Road",
-                                "Flats near Wakad Bridge Pune", "Apartments near Phoenix Mall Wakad",
-                                "Projects near Bhumkar Chowk", "Buy 2 BHK Apartments in Tathawade",
-                                "Luxury Properties in Balewadi", "New Apartments in Kiwale Pune",
-                                "High End Homes in Ravet", "Smart Flats in PCMC",
-                                "Supreme Rivana vs Puneville", "Supreme Rivana vs ANP Autograph",
-                                "Supreme Rivana RERA PM1261012502656", "Supreme Rivana possession date",
-                                "Supreme Rivana master plan review", "Supreme Rivana Wakad proximity"
-                            ].map((keyword, idx) => (
-                                <span
-                                    key={idx}
-                                    className="px-3 py-1.5 text-[10px] md:text-[11px] font-sans text-gray-400 bg-gray-50 border border-gray-100 rounded-full"
-                                >
-                                    {keyword}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-                </motion.div>
+
             </div>
         </section>
     );

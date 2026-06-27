@@ -57,10 +57,10 @@ const Location = () => {
                             </h2>
 
                             <p className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-lg">
-                                Supreme Rivana Punawale is strategically positioned along the <strong>Mumbai-Pune Expressway Bypass</strong>, emerging as one of the fastest-appreciating real estate markets for <strong>luxury flats in Punawale pune</strong>. With the upcoming <strong>Pune Metro Line 3</strong> and the proposed <strong>Pune Ring Road</strong>, connectivity from <strong>Supreme Rivana location</strong> to <strong>Hinjewadi IT Park</strong>, <strong>flats near Wakad</strong>, <strong>Baner</strong>, and <strong>Tathawade</strong> is reaching new heights. 
+                                Supreme Rivana Punawale is strategically positioned along the Mumbai-Pune Expressway Bypass, emerging as one of the fastest-appreciating real estate markets in Pune. With the upcoming Pune Metro Line 3 and the proposed Pune Ring Road, connectivity to Hinjewadi IT Park, Wakad, Baner, and Tathawade is reaching new heights. 
                             </p>
                             <p className="text-gray-600 font-light leading-relaxed mb-8">
-                                Our site near <strong>Chhatrapati Shivaji Maharaj Chowk</strong> on <strong>Tathawade Road</strong> offers <strong>waterfront living</strong>, making it the premier choice for those seeking <strong>luxury apartments in Punawale</strong> or <strong>premium flats near Wakad Pune</strong>. Experience the best of <strong>Supreme Rivana connectivity</strong> with easy access to <strong>Balewadi High Street</strong> and <strong>Phoenix Mall of the Millennium</strong>.
+                                Our site near Chhatrapati Shivaji Maharaj Chowk on Tathawade Road offers true waterfront living, making it the premier choice for those seeking luxury apartments in Punawale. Experience seamless connectivity with easy access to Balewadi High Street and Phoenix Mall of the Millennium.
                             </p>
 
                             <div className="space-y-8">
@@ -128,49 +128,7 @@ const Location = () => {
 
                 </div>
 
-                {/* Popular Searches — Keyword Cluster Block */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="mt-20 md:mt-28 border-t border-gray-100 pt-12"
-                >
-                    <h3 className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-supreme-gold mb-6">Popular Searches near Supreme Rivana Punawale</h3>
-                    <div className="flex flex-wrap gap-2 md:gap-3">
-                        {[
-                            "2 BHK Flats in Punawale", "3 BHK Apartments near Hinjewadi", "Luxury Flats Wakad",
-                            "Premium Apartments Tathawade", "New Launch Projects PCMC", "Flats near Mumbai Pune Expressway",
-                            "Property Investment Punawale 2026", "Ready to Move Flats Baner", "Under Construction Flats Balewadi",
-                            "Supreme Rivana Price List", "Supreme Rivana Floor Plan", "Supreme Rivana Brochure",
-                            "High ROI Flats Pune West", "Luxury Homes near Hinjewadi IT Park", "River View Apartments Pune",
-                            "IGBC Certified Green Homes Punawale", "NRI Investment Properties Pune", "Gated Community Flats Punawale",
-                            "Flats near Wakad Bridge", "Apartments near Bhumkar Chowk", "Projects near Dange Chowk",
-                            "3 BHK Premium Flats PCMC", "Supreme Universal Projects Pune", "Luxury Residences Pune West",
-                            "Buy Flats in Punawale", "Apartments for Sale near Wakad", "Flats near Hinjewadi Phase 1",
-                            "Properties near Pune Ring Road", "Real Estate Investment West Pune", "Spacious 2 BHK Punawale",
-                            "Ultra Luxury Apartments Pune", "Best Projects near Hinjewadi 2026", "Upcoming Projects in Punawale",
-                            "Smart Homes Punawale", "Exclusive Residences Pune West", "Flats with Infinity Pool Punawale",
-                            "Supreme Rivana vs Puneville", "Supreme Rivana vs ANP Autograph", "Supreme Rivana vs 24k Living",
-                            "Flats near Lotus Business School", "Apartments near Indira College Punawale",
-                            "Properties near Phoenix Mall Wakad", "Premium Flats near Mumbai Pune Highway",
-                            "New Projects in Kiwale", "Luxury Apartments Ravet", "High End Flats Tathawade",
-                            "Supreme Rivana RERA Number", "Supreme Rivana Possession Date", "Supreme Rivana Site Visit",
-                            "Supreme Rivana Construction Update", "Supreme Rivana Amenities", "Supreme Rivana Master Plan",
-                            "2 BHK under 1 Crore Punawale", "3 BHK under 1.5 Crore Punawale", "Best 2 BHK Flats Pune West",
-                            "Top 10 Luxury Projects Punawale", "Newly Built Apartments Wakad", "Pre Launch Flats Hinjewadi",
-                            "Green Homes Punawale Pune", "Exclusive Projects near Expressway", "Buy Luxury Apartments Hinjewadi IT Park"
-                        ].map((keyword, idx) => (
-                            <a
-                                key={idx}
-                                href="/supreme-rivana-location"
-                                className="px-3 py-1.5 text-[10px] md:text-[11px] font-sans text-gray-500 bg-gray-50 border border-gray-100 rounded-full hover:bg-supreme-gold/10 hover:border-supreme-gold/30 hover:text-supreme-black transition-all duration-300 whitespace-nowrap"
-                            >
-                                {keyword}
-                            </a>
-                        ))}
-                    </div>
-                </motion.div>
+
             </div>
         </section>
     );
