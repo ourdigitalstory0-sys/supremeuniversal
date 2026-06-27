@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Home, BookOpen, Phone, MapPin } from 'lucide-react';
 import Navbar from '../components/Navbar';
@@ -15,6 +16,10 @@ const NotFound = () => {
                 description="The page you are looking for does not exist. Explore Supreme Rivana Punawale — premium 2 & 3 BHK luxury flats near Hinjewadi IT Park, Pune West."
                 url="https://www.supreme-universal.in/404"
             />
+            <Helmet>
+                <meta name="robots" content="noindex, nofollow" />
+                <meta name="googlebot" content="noindex, nofollow" />
+            </Helmet>
 
             <CustomCursor />
             <NoiseOverlay />
@@ -60,7 +65,7 @@ const NotFound = () => {
                         </Link>
 
                         <Link
-                            to="/supreme-rivana-overview"
+                            to="/supreme-rivana-punawale-overview"
                             className="group flex flex-col items-center gap-3 p-6 border border-white/10 hover:border-supreme-gold/40 bg-white/5 hover:bg-white/10 transition-all duration-500"
                         >
                             <MapPin className="w-6 h-6 text-supreme-gold" />
@@ -78,7 +83,7 @@ const NotFound = () => {
                         </Link>
 
                         <Link
-                            to="/supreme-rivana-contact"
+                            to="/supreme-rivana-punawale-contact"
                             className="group flex flex-col items-center gap-3 p-6 border border-white/10 hover:border-supreme-gold/40 bg-white/5 hover:bg-white/10 transition-all duration-500"
                         >
                             <Phone className="w-6 h-6 text-supreme-gold" />
