@@ -1,11 +1,9 @@
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
-import { seoKeywords } from '../data/seoKeywords';
 
 interface SEOProps {
     title?: string;
     description?: string;
-    keywords?: string;
     image?: string;
     url?: string;
 }
@@ -13,7 +11,6 @@ interface SEOProps {
 const SEO = ({
     title: propTitle,
     description: propDescription,
-    keywords = seoKeywords,
     image = '/hero-bg.png',
     url: propUrl
 }: SEOProps) => {
@@ -83,7 +80,6 @@ const SEO = ({
             {/* Standard Metadata */}
             <title>{fullTitle}</title>
             <meta name="description" content={description} />
-            <meta name="keywords" content={keywords} />
             <link rel="canonical" href={url} />
 
             {/* Multi-Engine Directives */}
