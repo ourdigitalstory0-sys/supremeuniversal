@@ -1,5 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import SEO from './SEO';
@@ -45,6 +46,19 @@ const ProgrammaticLanding = () => {
         document.documentElement.classList.toggle('light-theme');
     };
 
+    const faqSchema = routeData.faqs && routeData.faqs.length > 0 ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": routeData.faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a
+            }
+        }))
+    } : null;
+
     return (
         <div className="font-sans antialiased text-gray-900 bg-white transition-colors duration-500">
             <SEO 
@@ -52,6 +66,13 @@ const ProgrammaticLanding = () => {
                 description={routeData.description}
                 url={`https://www.supreme-universal.in${routeData.path}`}
             />
+            {faqSchema && (
+                <Helmet>
+                    <script type="application/ld+json">
+                        {JSON.stringify(faqSchema)}
+                    </script>
+                </Helmet>
+            )}
             <Preloader isLoading={isLoading} />
             <CustomCursor />
             <ScrollProgress />
