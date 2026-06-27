@@ -10,13 +10,6 @@ const DATE = new Date().toLocaleDateString('sv-SE'); // 'sv-SE' gives 'YYYY-MM-D
 
 const staticRoutes = [
   { path: '', priority: '1.0', changefreq: 'daily' },
-  { path: '/supreme-rivana-punawale-overview', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-punawale-amenities', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-punawale-floor-plans', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-punawale-gallery', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-punawale-location', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-punawale-faq', priority: '0.9', changefreq: 'weekly' },
-  { path: '/supreme-rivana-punawale-contact', priority: '0.9', changefreq: 'weekly' },
   { path: '/supreme-rivana-punawale-price-list', priority: '0.9', changefreq: 'weekly' },
   { path: '/supreme-rivana-punawale-comparison', priority: '0.9', changefreq: 'weekly' },
   { path: '/blog', priority: '0.9', changefreq: 'weekly' },
