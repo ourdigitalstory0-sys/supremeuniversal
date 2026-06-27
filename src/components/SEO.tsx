@@ -128,6 +128,7 @@ const SEO = ({
 
             {/* JSON-LD Schema Markup */}
             <script type="application/ld+json">
+                {JSON.stringify([
                     {
                         "@context": "https://schema.org",
                         "@type": "ApartmentComplex",
