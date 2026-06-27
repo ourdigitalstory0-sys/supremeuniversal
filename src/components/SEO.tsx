@@ -75,6 +75,170 @@ const SEO = ({
     const url = propUrl || `https://www.supreme-universal.in${canonicalPath}`;
     const fullTitle = title.includes('Supreme Rivana') ? title : `${title} | Supreme Rivana Punawale`;
 
+    // Define which routes should get the heavy commercial schema
+    const commercialRoutes = [
+        '/',
+        '/supreme-rivana-punawale-overview',
+        '/supreme-rivana-punawale-amenities',
+        '/supreme-rivana-punawale-floor-plans',
+        '/supreme-rivana-punawale-gallery',
+        '/supreme-rivana-punawale-location',
+        '/supreme-rivana-punawale-price-list',
+        '/supreme-2bhk-punawale-flats',
+        '/supreme-3bhk-punawale-flats',
+        '/supreme-rivana-punawale-price',
+        '/supreme-rivana-punawale-floor-plan'
+    ];
+    const isCommercialRoute = commercialRoutes.includes(cleanPathname);
+
+    // Build the Base Schema (Safe for all pages)
+    const schemaArray: any[] = [
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.supreme-universal.in/#organization",
+            "name": "Supreme Universal",
+            "url": "https://www.supreme-universal.in/",
+            "logo": "https://cdn.supremeuniversal.com/media/supreme-logo.png",
+            "foundingDate": "1982",
+            "description": "Supreme Universal is a premium real estate developer with 40+ years of legacy, delivering 70+ iconic projects across Mumbai and Pune. Recognized by CREDAI-MCHI and Asia Property Awards.",
+            "sameAs": [
+                "https://www.facebook.com/SupremeUniversal/",
+                "https://www.instagram.com/supreme_universal/",
+                "https://www.linkedin.com/company/supreme-universal/"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-7744009295",
+                "contactType": "sales",
+                "areaServed": "IN",
+                "availableLanguage": ["en", "hi", "mr"]
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": pathname === '/' 
+                ? [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.supreme-universal.in/"
+                    }
+                ]
+                : [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.supreme-universal.in/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": fullTitle.split('|')[0].trim(),
+                        "item": url
+                    }
+                ]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "SiteNavigationElement",
+            "name": "Main Navigation",
+            "url": "https://www.supreme-universal.in/",
+            "hasPart": [
+                { "@type": "WebPage", "name": "Overview", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-overview" },
+                { "@type": "WebPage", "name": "Amenities", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-amenities" },
+                { "@type": "WebPage", "name": "Floor Plans", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-floor-plans" },
+                { "@type": "WebPage", "name": "Gallery", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-gallery" },
+                { "@type": "WebPage", "name": "Location", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-location" },
+                { "@type": "WebPage", "name": "FAQ", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-faq" },
+                { "@type": "WebPage", "name": "Contact", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-contact" },
+                { "@type": "WebPage", "name": "Blog", "url": "https://www.supreme-universal.in/blog" }
+            ]
+        }
+    ];
+
+    // Conditionally Add Commercial Schema (ApartmentComplex & RealEstateListing)
+    if (isCommercialRoute) {
+        schemaArray.push(
+            {
+                "@context": "https://schema.org",
+                "@type": "ApartmentComplex",
+                "name": fullTitle,
+                "description": description,
+                "image": [
+                    "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
+                    "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
+                ],
+                "url": url,
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road",
+                    "addressLocality": "Punawale",
+                    "addressRegion": "Pune",
+                    "postalCode": "411033",
+                    "addressCountry": "IN"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "18.6327",
+                    "longitude": "73.7431"
+                },
+                "amenityFeature": [
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": "Infinity Pool",
+                        "value": "true"
+                    },
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": "Multi-tier Clubhouse",
+                        "value": "true"
+                    },
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": "Riverside Promenade",
+                        "value": "true"
+                    }
+                ],
+                "tourBookingPage": `${domain}/supreme-rivana-contact`,
+                "telephone": "+917744009295",
+                "provider": {
+                    "@id": "https://www.supreme-universal.in/#organization",
+                    "name": "Supreme Universal"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "RealEstateListing",
+                "name": "Supreme Rivana Punawale - Premium 2 & 3 BHK Flats",
+                "description": "Ultra-luxury 2 & 3 BHK riverside apartments in a 15-acre IGBC certified township. 31-storey towers with 6 units per floor for maximum privacy. 40+ world-class amenities including infinity pool, skywalk, and multi-tier clubhouse.",
+                "url": url,
+                "datePosted": "2026-01-01",
+                "offers": [
+                    {
+                        "@type": "Offer",
+                        "name": "2 BHK Luxury Apartment",
+                        "description": "Spacious 2 BHK waterfront apartment with river views, premium finishes, and smart layouts",
+                        "priceCurrency": "INR",
+                        "availability": "https://schema.org/InStock",
+                        "areaServed": "Punawale, Pune West"
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "3 BHK Premium Apartment",
+                        "description": "Expansive 3 BHK luxury apartment with panoramic river views, premium flooring, and exclusive community access",
+                        "priceCurrency": "INR",
+                        "availability": "https://schema.org/InStock",
+                        "areaServed": "Punawale, Pune West"
+                    }
+                ]
+            }
+        );
+    }
+
     return (
         <Helmet>
             {/* Standard Metadata */}
@@ -124,146 +288,7 @@ const SEO = ({
 
             {/* JSON-LD Schema Markup */}
             <script type="application/ld+json">
-                {JSON.stringify([
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "ApartmentComplex",
-                        "name": fullTitle,
-                        "description": description,
-                        "image": [
-                            "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
-                            "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
-                        ],
-                        "url": url,
-                        "address": {
-                            "@type": "PostalAddress",
-                            "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road",
-                            "addressLocality": "Punawale",
-                            "addressRegion": "Pune",
-                            "postalCode": "411033",
-                            "addressCountry": "IN"
-                        },
-                        "geo": {
-                            "@type": "GeoCoordinates",
-                            "latitude": "18.6327",
-                            "longitude": "73.7431"
-                        },
-                        "amenityFeature": [
-                            {
-                                "@type": "LocationFeatureSpecification",
-                                "name": "Infinity Pool",
-                                "value": "true"
-                            },
-                            {
-                                "@type": "LocationFeatureSpecification",
-                                "name": "Multi-tier Clubhouse",
-                                "value": "true"
-                            },
-                            {
-                                "@type": "LocationFeatureSpecification",
-                                "name": "Riverside Promenade",
-                                "value": "true"
-                            }
-                        ],
-                        "tourBookingPage": `${domain}/supreme-rivana-contact`,
-                        "telephone": "+917744009295",
-                        "provider": {
-                            "@id": "https://www.supreme-universal.in/#organization",
-                            "name": "Supreme Universal"
-                        }
-                    },
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "Organization",
-                        "@id": "https://www.supreme-universal.in/#organization",
-                        "name": "Supreme Universal",
-                        "url": "https://www.supreme-universal.in/",
-                        "logo": "https://cdn.supremeuniversal.com/media/supreme-logo.png",
-                        "foundingDate": "1982",
-                        "description": "Supreme Universal is a premium real estate developer with 40+ years of legacy, delivering 70+ iconic projects across Mumbai and Pune. Recognized by CREDAI-MCHI and Asia Property Awards.",
-                        "sameAs": [
-                            "https://www.facebook.com/SupremeUniversal/",
-                            "https://www.instagram.com/supreme_universal/",
-                            "https://www.linkedin.com/company/supreme-universal/"
-                        ],
-                        "contactPoint": {
-                            "@type": "ContactPoint",
-                            "telephone": "+91-7744009295",
-                            "contactType": "sales",
-                            "areaServed": "IN",
-                            "availableLanguage": ["en", "hi", "mr"]
-                        }
-                    },
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "RealEstateListing",
-                        "name": "Supreme Rivana Punawale - Premium 2 & 3 BHK Flats",
-                        "description": "Ultra-luxury 2 & 3 BHK riverside apartments in a 15-acre IGBC certified township. 31-storey towers with 6 units per floor for maximum privacy. 40+ world-class amenities including infinity pool, skywalk, and multi-tier clubhouse.",
-                        "url": url,
-                        "datePosted": "2026-01-01",
-                        "offers": [
-                            {
-                                "@type": "Offer",
-                                "name": "2 BHK Luxury Apartment",
-                                "description": "Spacious 2 BHK waterfront apartment with river views, premium finishes, and smart layouts",
-                                "priceCurrency": "INR",
-                                "availability": "https://schema.org/InStock",
-                                "areaServed": "Punawale, Pune West"
-                            },
-                            {
-                                "@type": "Offer",
-                                "name": "3 BHK Premium Apartment",
-                                "description": "Expansive 3 BHK luxury apartment with panoramic river views, premium flooring, and exclusive community access",
-                                "priceCurrency": "INR",
-                                "availability": "https://schema.org/InStock",
-                                "areaServed": "Punawale, Pune West"
-                            }
-                        ]
-                    },
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "BreadcrumbList",
-                        "itemListElement": pathname === '/' 
-                            ? [
-                                {
-                                    "@type": "ListItem",
-                                    "position": 1,
-                                    "name": "Home",
-                                    "item": "https://www.supreme-universal.in/"
-                                }
-                            ]
-                            : [
-                                {
-                                    "@type": "ListItem",
-                                    "position": 1,
-                                    "name": "Home",
-                                    "item": "https://www.supreme-universal.in/"
-                                },
-                                {
-                                    "@type": "ListItem",
-                                    "position": 2,
-                                    "name": fullTitle.split('|')[0].trim(),
-                                    "item": url
-                                }
-                            ]
-                    },
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "SiteNavigationElement",
-                        "name": "Main Navigation",
-                        "url": "https://www.supreme-universal.in/",
-                        "hasPart": [
-                            { "@type": "WebPage", "name": "Overview", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-overview" },
-                            { "@type": "WebPage", "name": "Amenities", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-amenities" },
-                            { "@type": "WebPage", "name": "Floor Plans", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-floor-plans" },
-                            { "@type": "WebPage", "name": "Gallery", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-gallery" },
-                            { "@type": "WebPage", "name": "Location", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-location" },
-                            { "@type": "WebPage", "name": "FAQ", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-faq" },
-                            { "@type": "WebPage", "name": "Contact", "url": "https://www.supreme-universal.in/supreme-rivana-punawale-contact" },
-                            { "@type": "WebPage", "name": "Blog", "url": "https://www.supreme-universal.in/blog" }
-                        ]
-                    }
-                ])}
+                {JSON.stringify(schemaArray)}
             </script>
         </Helmet>
     );
