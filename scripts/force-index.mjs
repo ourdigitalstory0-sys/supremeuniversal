@@ -1,84 +1,36 @@
-import https from 'https';
-
-/**
- * Supreme Rivana — Hard-Force Indexing Engine v2
- * 
- * Methods:
- *   1. IndexNow API (Bing/Yandex/Naver) — batch URL submission ✅
- *   2. Google Search Console URL Inspection — manual trigger required
- * 
- * NOTE: Google deprecated their sitemap ping endpoint in June 2023.
- * For Google, use Search Console > URL Inspection > Request Indexing
- * OR set up the Google Indexing API with a service account.
- * 
- * Usage: node scripts/force-index.mjs
- */
+import fs from 'fs';
+import path from 'path';
 
 const DOMAIN = 'https://www.supreme-universal.in';
 const INDEXNOW_KEY = 'supremerivana2026indexkey';
+const SITEMAP_FILE = path.join(process.cwd(), 'public', 'sitemap.xml');
 
-// ===== ALL URLS TO FORCE-INDEX =====
-const URLS = [
-    // Core Pages
-    '/',
-    '/supreme-rivana-punawale-overview',
-    '/supreme-rivana-punawale-amenities',
-    '/supreme-rivana-punawale-floor-plans',
-    '/supreme-rivana-punawale-gallery',
-    '/supreme-rivana-punawale-location',
-    '/supreme-rivana-punawale-faq',
-    '/supreme-rivana-punawale-contact',
-    '/supreme-rivana-punawale-price-list',
-    '/supreme-rivana-punawale-comparison',
-    '/blog',
+// ===== DYNAMICALLY EXTRACT ALL URLS FROM SITEMAP =====
+function getUrlsFromSitemap() {
+    if (!fs.existsSync(SITEMAP_FILE)) {
+        console.log('⚠️ WARNING: sitemap.xml not found. Using fallback URL.');
+        return [`${DOMAIN}/`];
+    }
 
-    // HIGH-PRIORITY: Supremacy Report
-    '/blog/supreme-rivana-punawale-vs-all-competitors-2026',
+    const sitemapContent = fs.readFileSync(SITEMAP_FILE, 'utf-8');
+    const urlRegex = /<loc>(.*?)<\/loc>/g;
+    const urls = [];
+    let match;
 
-    // Blog Posts
-    '/blog/ultimate-guide-buying-property-punawale-pune',
-    '/blog/punawale-infrastructure-connectivity-updates-2026',
-    '/blog/supreme-universal-luxury-legacy-west-pune',
-    '/blog/top-schools-hospitals-near-punawale',
-    '/blog/punawale-vs-wakad-real-estate-investment-2026',
-    '/blog/luxury-amenities-pune-apartments',
-    '/blog/supreme-rivana-punawale-definitive-guide-15-acre-legacy',
-    '/blog/supreme-rivana-rera-number-price-list-booking-2026',
-    '/blog/best-2-bhk-flats-punawale-under-1-crore-2026',
-    '/blog/nri-guide-buying-property-punawale-pune-2026',
-    '/blog/future-of-punawale-real-estate-pune-2026-2030',
-    '/blog/property-investment-near-hinjewadi-it-hub-pune',
-    '/blog/benefits-of-riverside-living-pune-luxury-lifestyle',
-    '/blog/2-bhk-vs-3-bhk-investment-punawale-pune-2026',
-    '/blog/supreme-rivana-vs-puneville-comparison-2026',
-    '/blog/supreme-rivana-punawale-price-list-2026-all-configurations',
+    while ((match = urlRegex.exec(sitemapContent)) !== null) {
+        urls.push(match[1]);
+    }
 
-    // pSEO Landing Pages
-    '/supreme-rivana-punawale-price',
-    '/supreme-rivana-punawale-reviews',
-    '/supreme-rivana-punawale-floor-plan',
-    '/supreme-rivana-punawale-possession-date',
-    '/supreme-riverside-punawale-photos',
-    '/supreme-2bhk-punawale-flats',
-    '/supreme-3bhk-punawale-flats',
+    return urls.slice(0, 10000); // IndexNow supports up to 10,000 URLs per batch
+}
 
-    // Portfolio
-    '/projects/supreme-towers',
-    '/projects/supreme-villagio',
-    '/projects/supreme-estia',
-    '/projects/supreme-wakad',
-    '/projects/supreme-pallacio',
-    '/projects/supreme-vivero',
-    '/projects/supreme-amadore',
-    '/projects/supreme-estado',
-    '/projects/supreme-esteban',
-];
+const ALL_URLS = getUrlsFromSitemap();
 
 // ============================================
 // IndexNow API (Bing, Yandex, Naver, Seznam)
 // ============================================
 async function submitIndexNow() {
-    const fullUrls = URLS.map(u => `${DOMAIN}${u}`);
+    const fullUrls = ALL_URLS; // Already absolute URLs from sitemap
     
     const payload = JSON.stringify({
         host: 'www.supreme-universal.in',
@@ -170,7 +122,7 @@ async function main() {
     console.log('═══════════════════════════════════════════════════');
     console.log('  SUPREME RIVANA — HARD-FORCE INDEXING ENGINE v2');
     console.log('  Target: www.supreme-universal.in');
-    console.log(`  Total URLs: ${URLS.length}`);
+    console.log(`  Total URLs: ${ALL_URLS.length}`);
     console.log(`  Timestamp: ${new Date().toISOString()}`);
     console.log('═══════════════════════════════════════════════════');
 
