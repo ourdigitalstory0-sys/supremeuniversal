@@ -16,7 +16,8 @@ User-agent: Bingbot
 Crawl-delay: 1
 
 User-agent: Yandex
-Disallow: /
+Allow: /
+Crawl-delay: 2
 
 # Block SEO Scrapers & Competitor Analysis Bots
 User-agent: AhrefsBot
