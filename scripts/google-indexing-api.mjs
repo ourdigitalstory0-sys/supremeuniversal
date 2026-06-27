@@ -19,6 +19,7 @@ import path from 'path';
  */
 
 const KEY_FILE = path.join(process.cwd(), 'service-account.json');
+const SITEMAP_FILE = path.join(process.cwd(), 'public', 'sitemap.xml');
 
 // Check if credentials exist
 if (!fs.existsSync(KEY_FILE)) {
@@ -27,14 +28,30 @@ if (!fs.existsSync(KEY_FILE)) {
     process.exit(1);
 }
 
-// These are the absolute highest priority URLs that need instant indexing
-const PRIORITY_URLS = [
-    'https://www.supreme-universal.in/blog/supreme-rivana-punawale-vs-all-competitors-2026',
-    'https://www.supreme-universal.in/',
-    'https://www.supreme-universal.in/supreme-rivana-punawale-overview',
-    'https://www.supreme-universal.in/supreme-rivana-punawale-price-list',
-    'https://www.supreme-universal.in/supreme-rivana-punawale-comparison',
-];
+// Function to extract URLs from sitemap
+function getUrlsFromSitemap() {
+    if (!fs.existsSync(SITEMAP_FILE)) {
+        console.log('⚠️ WARNING: sitemap.xml not found. Generating dummy list or skipping.');
+        return [
+            'https://www.supreme-universal.in/'
+        ];
+    }
+    
+    const sitemapContent = fs.readFileSync(SITEMAP_FILE, 'utf-8');
+    const urlRegex = /<loc>(.*?)<\/loc>/g;
+    const urls = [];
+    let match;
+    
+    while ((match = urlRegex.exec(sitemapContent)) !== null) {
+        urls.push(match[1]);
+    }
+    
+    // Google Indexing API limit is 200 URLs per request batch/day.
+    // We will slice the array to the first 200 just in case to avoid API limit errors.
+    return urls.slice(0, 200);
+}
+
+const PRIORITY_URLS = getUrlsFromSitemap();
 
 async function submitIndexRequest() {
     try {
