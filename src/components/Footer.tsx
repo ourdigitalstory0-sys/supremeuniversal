@@ -64,7 +64,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Programmatic SEO Mesh Column */}
+                    {/* Programmatic SEO Mesh Column 1 */}
                     <div className="lg:col-span-2">
                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Keyword Explore</h5>
                         <ul className="space-y-4 text-white/50 font-sans font-light text-[11px] uppercase tracking-wider">
@@ -76,7 +76,31 @@ const Footer = () => {
                             <li><Link to="/supreme-riverside-punawale-photos" className="hover:text-supreme-gold transition-colors duration-300">Riverside Photos</Link></li>
                         </ul>
                     </div>
-                    <div className="lg:col-span-2">
+
+                    {/* Programmatic SEO Mesh Column 2 (Market Intel) */}
+                    <div className="lg:col-span-2 lg:col-start-5 mt-10 lg:mt-0">
+                        <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Market Intel</h5>
+                        <ul className="space-y-4 text-white/50 font-sans font-light text-[11px] uppercase tracking-wider">
+                            <li><Link to="/punawale-real-estate-market-trends" className="hover:text-supreme-gold transition-colors duration-300">Punawale Trends</Link></li>
+                            <li><Link to="/best-residential-projects-punawale-pune" className="hover:text-supreme-gold transition-colors duration-300">Top Projects</Link></li>
+                            <li><Link to="/west-pune-real-estate-investment-guide" className="hover:text-supreme-gold transition-colors duration-300">West Pune ROI</Link></li>
+                            <li><Link to="/luxury-apartments-pune-real-estate-market" className="hover:text-supreme-gold transition-colors duration-300">Pune Luxury</Link></li>
+                            <li><Link to="/apartments-near-hinjewadi-it-park-pune" className="hover:text-supreme-gold transition-colors duration-300">Near Hinjewadi</Link></li>
+                        </ul>
+                    </div>
+                    
+                    {/* Programmatic SEO Mesh Column 3 (Project Data) */}
+                    <div className="lg:col-span-2 mt-10 lg:mt-0">
+                        <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Project Data</h5>
+                        <ul className="space-y-4 text-white/50 font-sans font-light text-[11px] uppercase tracking-wider">
+                            <li><Link to="/supreme-rivana-punawale-data-sheet" className="hover:text-supreme-gold transition-colors duration-300">Data Sheet</Link></li>
+                            <li><Link to="/supreme-rivana-punawale-market-analysis" className="hover:text-supreme-gold transition-colors duration-300">Market Analysis</Link></li>
+                            <li><Link to="/supreme-rivana-punawale-faq-guide" className="hover:text-supreme-gold transition-colors duration-300">FAQ Guide</Link></li>
+                            <li><Link to="/supreme-rivana-punawale-possession-date" className="hover:text-supreme-gold transition-colors duration-300">Possession Date</Link></li>
+                        </ul>
+                    </div>
+
+                    <div className="lg:col-span-2 mt-10 lg:mt-0">
                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Connect</h5>
                         <ul className="space-y-6 text-white/50 font-sans font-light">
                             <li className="flex flex-col gap-1">

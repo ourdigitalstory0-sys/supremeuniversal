@@ -9,6 +9,7 @@ export interface PSEORoute {
 }
 
 export const pseoRoutes: PSEORoute[] = [
+    // Core Project Assets
     {
         path: '/supreme-rivana-punawale-price',
         keyword: 'Supreme Rivana Price',
@@ -70,6 +71,84 @@ export const pseoRoutes: PSEORoute[] = [
         description: 'Discover expansive 3 BHK apartments in Punawale at Supreme Rivana. Experience elite riverside living with premium specifications, multi-tier security, and panoramic views of Pune West.',
         h1: 'Supreme Rivana: Premium 3 BHK Apartments in Punawale',
         content: 'Designed for those who settle for nothing but the best. Our 3 BHK luxury residences at Supreme Rivana Punawale offer sprawling layouts, premium finishes, and exclusive access to 15 acres of landscaped greens and riverside amenities.',
+        category: 'configuration'
+    },
+
+    // New Data & Analytical Silos
+    {
+        path: '/supreme-rivana-punawale-data-sheet',
+        keyword: 'Supreme Rivana Data Sheet',
+        title: 'Supreme Rivana Punawale Data Sheet | Specifications & Fact File 2026',
+        description: 'Access the official Supreme Rivana Punawale data sheet. Get detailed technical specifications, exact carpet areas, RERA registration numbers, land parcel size, and material grades used in construction.',
+        h1: 'Supreme Rivana Punawale: Official Fact File & Data Sheet',
+        content: 'The Supreme Rivana Data Sheet provides a granular breakdown of our engineering excellence. From the 15-acre land parcel to the exact dimensions of our 40+ lifestyle amenities, review the structural framework and premium specifications that define Pune\'s best luxury project.',
+        category: 'possession'
+    },
+    {
+        path: '/supreme-rivana-punawale-market-analysis',
+        keyword: 'Supreme Rivana Market Analysis',
+        title: 'Supreme Rivana Punawale Market Analysis | High ROI Investment Pune West',
+        description: 'In-depth market analysis for Supreme Rivana Punawale. Understand why this 15-acre riverside township offers the highest property appreciation potential and rental yield near Hinjewadi IT Park.',
+        h1: 'Supreme Rivana Punawale: Real Estate Market Analysis',
+        content: 'A comprehensive market analysis indicates that Supreme Rivana Punawale is positioned for double-digit appreciation. By analyzing infrastructure developments like the Pune Metro Line 3 and the Ring Road, our report demonstrates why early investors are securing maximum ROI in West Pune.',
+        category: 'reviews'
+    },
+    {
+        path: '/supreme-rivana-punawale-faq-guide',
+        keyword: 'Supreme Rivana FAQs',
+        title: 'Supreme Rivana Punawale FAQs | Ultimate Buyer\'s Guide & Answers',
+        description: 'Get answers to all your questions about Supreme Rivana Punawale. Detailed FAQs regarding MahaRERA, construction updates, maintenance costs, bank approvals, and the VIP booking process.',
+        h1: 'Supreme Rivana Punawale: The Ultimate FAQ Guide',
+        content: 'Our comprehensive FAQ guide covers everything from the exact possession timeline to the nuances of our flexible payment plans. Whether you are an NRI investor or a local homebuyer, find clarity on maintenance charges, RERA compliance, and the world-class amenities included in your luxury residence.',
+        category: 'price'
+    },
+
+    // Micro-Market Silos (Punawale)
+    {
+        path: '/punawale-real-estate-market-trends',
+        keyword: 'Punawale Real Estate Market',
+        title: 'Punawale Real Estate Market Trends 2026 | Investment Analysis',
+        description: 'Explore the latest Punawale real estate market trends. Discover why Punawale has become the #1 investment destination in Pune West for luxury apartments and high ROI properties.',
+        h1: 'Punawale Real Estate Market Trends: 2026 Analysis',
+        content: 'Punawale is witnessing unprecedented growth in the luxury real estate sector. Driven by its proximity to Hinjewadi Phase 1, Wakad, and the Mumbai-Pune Expressway, property values are surging. Supreme Rivana stands at the forefront of this transformation, offering premium living at highly attractive entry points.',
+        category: 'legacy'
+    },
+    {
+        path: '/best-residential-projects-punawale-pune',
+        keyword: 'Best Residential Projects Punawale',
+        title: 'Best Residential Projects in Punawale Pune | Luxury Apartments Guide',
+        description: 'A curated guide to the best residential projects in Punawale, Pune. Compare top developers, amenities, and RERA compliance. See why Supreme Rivana is ranked as the leading luxury township.',
+        h1: 'The Best Residential Projects in Punawale, Pune West',
+        content: 'When evaluating the best residential projects in Punawale, homebuyers prioritize construction quality, legacy, and lifestyle amenities. Supreme Rivana by Supreme Universal emerges as the undisputed leader, offering an unparalleled 15-acre riverside living experience with 31-storey towers.',
+        category: 'reviews'
+    },
+
+    // Macro-Market Silos (West Pune / Pune Real Estate)
+    {
+        path: '/west-pune-real-estate-investment-guide',
+        keyword: 'West Pune Real Estate',
+        title: 'West Pune Real Estate Investment Guide | High ROI Corridors',
+        description: 'The ultimate investment guide for West Pune real estate. Analyze property appreciation, rental yields, and the impact of the upcoming Pune Ring Road on luxury apartments in Punawale and Wakad.',
+        h1: 'West Pune Real Estate Investment Guide: Maximizing ROI',
+        content: 'West Pune is the economic engine of the city\'s real estate sector. With massive infrastructure upgrades including the Metro Line 3 and Ring Road, corridors like Punawale and Tathawade offer exceptional investment opportunities. Supreme Rivana provides a secure, high-yield asset for discerning investors.',
+        category: 'possession'
+    },
+    {
+        path: '/luxury-apartments-pune-real-estate-market',
+        keyword: 'Pune Real Estate Market',
+        title: 'Luxury Apartments in Pune Real Estate Market | 2026 Outlook',
+        description: 'An expert overview of luxury apartments in the Pune Real Estate market. Understand shifting buyer preferences towards premium gated communities, IGBC green homes, and extensive amenities.',
+        h1: 'Luxury Apartments in the Pune Real Estate Market',
+        content: 'The Pune Real Estate market is experiencing a massive shift toward ultra-luxury, holistic living. Today\'s homebuyers demand sprawling integrated townships, world-class clubhouses, and sustainable architecture. Supreme Rivana Punawale exemplifies this evolution with its IGBC certification and 40+ lifestyle amenities.',
+        category: 'reviews'
+    },
+    {
+        path: '/apartments-near-hinjewadi-it-park-pune',
+        keyword: 'Apartments near Hinjewadi',
+        title: 'Premium Apartments Near Hinjewadi IT Park | Supreme Rivana',
+        description: 'Find premium 2 & 3 BHK apartments near Hinjewadi IT Park. Supreme Rivana in Punawale offers a 15-minute seamless commute to Phase 1, offering the perfect work-life balance for IT professionals.',
+        h1: 'Premium Luxury Apartments Near Hinjewadi IT Park',
+        content: 'Minimize your daily commute and maximize your lifestyle. Located just 15 minutes from Hinjewadi Phase 1, Supreme Rivana offers the finest luxury apartments near Pune\'s largest IT hub. Escape the traffic and come home to a serene, riverside sanctuary equipped with world-class amenities.',
         category: 'configuration'
     }
 ];
