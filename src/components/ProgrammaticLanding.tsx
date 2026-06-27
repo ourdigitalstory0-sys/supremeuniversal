@@ -77,10 +77,10 @@ const ProgrammaticLanding = () => {
                 description={
                     <div className="flex flex-col gap-4">
                         <p className="text-lg md:text-xl text-white/90 leading-relaxed italic">
-                            "{routeData.content}"
+                            {routeData.content}
                         </p>
                         <p className="text-sm md:text-base text-white/60 font-light uppercase tracking-[0.2em]">
-                            Targeting: {routeData.keyword}
+                            Supreme Rivana Punawale — By Supreme Universal
                         </p>
                     </div>
                 }
