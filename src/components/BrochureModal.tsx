@@ -88,7 +88,7 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                                                 <h3 className="text-2xl font-serif text-white uppercase tracking-widest">Digital Brochure</h3>
                                             </div>
                                             <p className="text-white/60 font-sans font-light text-sm mb-8 leading-relaxed">
-                                                Enter your details to receive the official floor plans, price list, and the comprehensive <strong>Supreme Rivana project brochure</strong>.
+                                                Enter your details to receive the floor plans, price list, and the comprehensive <strong>Supreme Rivana project brochure</strong>.
                                             </p>
 
                                             <form onSubmit={handleSubmit} className="space-y-6">

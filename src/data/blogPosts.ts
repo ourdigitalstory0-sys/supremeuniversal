@@ -248,7 +248,7 @@ export const blogPosts: BlogPostType[] = [
     {
         id: 'supreme-rivana-rera-number-price-list-booking-2026',
         title: 'Supreme Rivana RERA Number, Price List & Booking – Complete Guide 2026',
-        excerpt: 'Get the complete Supreme Rivana RERA registration details, official price list for 2 & 3 BHK, payment plans, and step-by-step booking process for 2026.',
+        excerpt: 'Get the complete Supreme Rivana RERA registration details, price list for 2 & 3 BHK, payment plans, and step-by-step booking process for 2026.',
         date: 'March 04, 2026',
         category: 'Buying Guide',
         author: 'Supreme Universal Sales Team',
@@ -257,10 +257,10 @@ export const blogPosts: BlogPostType[] = [
         datePublished: '2026-03-04T10:00:00+05:30',
         dateModified: '2026-03-04T10:00:00+05:30',
         content: `
-            <p className="mb-6">If you're searching for the <strong>Supreme Rivana RERA number</strong>, official <strong>Supreme Rivana price list</strong>, or want to understand the <strong>Supreme Rivana booking</strong> process, this is your definitive guide. We break down every detail to help you make an informed buying decision for 2026.</p>
+            <p className="mb-6">If you're searching for the <strong>Supreme Rivana RERA number</strong>, <strong>Supreme Rivana price list</strong>, or want to understand the <strong>Supreme Rivana booking</strong> process, this is your definitive guide. We break down every detail to help you make an informed buying decision for 2026.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Supreme Rivana RERA Registration</h3>
-            <p className="mb-6">Supreme Rivana Punawale is a fully RERA-compliant project registered under the Maharashtra Real Estate Regulatory Authority (MahaRERA). The RERA registration ensures complete transparency in project timelines, carpet area declarations, and financial accountability. Buyers can verify all project details on the official <strong>MahaRERA website</strong> for complete peace of mind.</p>
+            <p className="mb-6">Supreme Rivana Punawale is a fully RERA-compliant project registered under the Maharashtra Real Estate Regulatory Authority (MahaRERA). The RERA registration ensures complete transparency in project timelines, carpet area declarations, and financial accountability. Buyers can verify all project details on the <strong>MahaRERA website</strong> for complete peace of mind.</p>
             <p className="mb-6">Supreme Universal has a spotless track record with RERA compliance across all their projects—from <a href="/projects/supreme-towers" className="text-supreme-gold underline">Supreme Towers</a> to <a href="/projects/supreme-estia" className="text-supreme-gold underline">Supreme Estia</a>—ensuring timely delivery and transparent dealings.</p>
 
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Supreme Rivana Price List 2026</h3>
@@ -428,7 +428,7 @@ export const blogPosts: BlogPostType[] = [
         author: 'Supreme Universal Research Team',
         image: 'https://cdn.supremeuniversal.com/media/Punawale-Location.jpg',
         content: `
-            <p className="mb-6">Punawale has officially transitioned from an "upcoming" micro-market to West Pune's most dominant residential hub. As we look at the <strong>future of Punawale real estate</strong>, the trajectory is clear: double-digit capital appreciation, world-class social infrastructure, and absolute connectivity to Pune's IT corridors.</p>
+            <p className="mb-6">Punawale has transitioned from an "upcoming" micro-market to West Pune's most dominant residential hub. As we look at the <strong>future of Punawale real estate</strong>, the trajectory is clear: double-digit capital appreciation, world-class social infrastructure, and absolute connectivity to Pune's IT corridors.</p>
             
             <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Why Punawale is the Fastest Growing Area in Pune</h3>
             <p className="mb-6">Several factors contribute to Punawale's exponential growth. The <strong>Pune Ring Road</strong> and <strong>Pune Metro Line 3</strong> are turning this region into a multi-modal transit hub. For those looking for <strong>new projects in Punawale</strong>, the opportunity for capital gains is unparalleled. Projects like <strong>Supreme Rivana Punawale</strong> are at the forefront of this evolution, offering early investors a significant <strong>high ROI flats Pune</strong> opportunity.</p>
@@ -620,7 +620,7 @@ export const blogPosts: BlogPostType[] = [
 
             <br />
             <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
-                <h4 className="font-serif text-2xl text-supreme-gold mb-2">Get the Official Price List</h4>
+                <h4 className="font-serif text-2xl text-supreme-gold mb-2">Get the Price List</h4>
                 <p className="text-white/80 font-light mb-4">Request the complete Supreme Rivana Punawale price list with carpet area details, floor plans, and the latest offers directly from our sales team.</p>
                 <a href="/supreme-rivana-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Get Price List →</a>
             </div>

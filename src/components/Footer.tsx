@@ -176,7 +176,7 @@ const Footer = () => {
                         <strong>Important Notice:</strong> This website is for informational purposes only and does not constitute a legal offering. It belongs to an <strong>Authorized Marketing Partner</strong> for the projects showcased. The images and visuals depicted are artistic impressions/stock photography for representational purposes only and may not reflect actual project details.
                     </p>
                     <p className="mb-6">
-                        All information, including prices, availability, and project specifications, is subject to change without prior notice. Visitors are advised to contact our sales team or visit the developer's official website for the most accurate and up-to-date information. While we strive to maintain the accuracy of the data, the site owner shall not be held liable for any decisions made based on the information provided herein.
+                        All information, including prices, availability, and project specifications, is subject to change without prior notice. Visitors are advised to contact our sales team or visit the developer's website for the most accurate and up-to-date information. While we strive to maintain the accuracy of the data, the site owner shall not be held liable for any decisions made based on the information provided herein.
                     </p>
 
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 border-t border-white/5 pt-6">

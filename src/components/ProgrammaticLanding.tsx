@@ -73,7 +73,7 @@ const ProgrammaticLanding = () => {
                         {routeData.h1}
                     </span>
                 }
-                subtitle="Supreme Rivana Punawale Official"
+                subtitle="Supreme Rivana Punawale"
                 description={
                     <div className="flex flex-col gap-4">
                         <p className="text-lg md:text-xl text-white/90 leading-relaxed italic">

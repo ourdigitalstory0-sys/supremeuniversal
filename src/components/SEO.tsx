@@ -21,7 +21,7 @@ const SEO = ({
     const routeMetadata: Record<string, { title: string; description: string }> = {
         '/': {
             title: 'Supreme Rivana Punawale | Luxury 2 & 3 BHK Flats near Hinjewadi | Supreme Rivana Price & Brochure',
-            description: 'Supreme Rivana Punawale by Supreme Universal: Official site for ultra-luxury 2 & 3 BHK riverside apartments near Hinjewadi IT Park. Explore Supreme Rivana Punawale floor plans, 2 BHK price list, construction status, and 40+ world-class amenities in Punawale, West Pune. High ROI investment near Mumbai-Pune Expressway. Book Site Visit!'
+            description: 'Supreme Rivana Punawale by Supreme Universal: Premium ultra-luxury 2 & 3 BHK riverside apartments near Hinjewadi IT Park. Explore Supreme Rivana Punawale floor plans, 2 BHK price list, construction status, and 40+ world-class amenities in Punawale, West Pune. High ROI investment near Mumbai-Pune Expressway. Book Site Visit!'
         },
         '/supreme-rivana-punawale-overview': {
             title: 'Supreme Rivana Punawale Project Overview | 15-Acre Riverside Township Pune',
@@ -33,7 +33,7 @@ const SEO = ({
         },
         '/supreme-rivana-punawale-floor-plans': {
             title: 'Supreme Rivana Floor Plan & Price List | 2 & 3 BHK Configurations Punawale',
-            description: 'View detailed Supreme Rivana floor plans and carpet area for 2 BHK and 3 BHK luxury flats. Optimized Vastu-compliant layouts with maximum ventilation near Hinjewadi IT Park. Get the official Supreme Rivana Punawale price list and cost sheets today.'
+            description: 'View detailed Supreme Rivana floor plans and carpet area for 2 BHK and 3 BHK luxury flats. Optimized Vastu-compliant layouts with maximum ventilation near Hinjewadi IT Park. Get the Supreme Rivana Punawale price list and cost sheets today.'
         },
         '/supreme-rivana-punawale-gallery': {
             title: 'Supreme Rivana Gallery | Actual Site Photos & Show Flat Images',
@@ -53,7 +53,7 @@ const SEO = ({
         },
         '/supreme-rivana-punawale-price-list': {
             title: 'Supreme Rivana Punawale Price List 2026 | 2 BHK & 3 BHK Cost Sheets',
-            description: 'Official Supreme Rivana Price List 2026. Get all-inclusive cost sheets for 2 BHK and 3 BHK luxury apartments in Punawale. Explore limited-time booking offers and down-payment discounts near Hinjewadi.'
+            description: 'Supreme Rivana Price List 2026. Get all-inclusive cost sheets for 2 BHK and 3 BHK luxury apartments in Punawale. Explore limited-time booking offers and down-payment discounts near Hinjewadi.'
         },
         '/supreme-rivana-punawale-comparison': {
             title: 'Supreme Rivana vs Puneville | Comparison Review 2026 | Best Project in Punawale',

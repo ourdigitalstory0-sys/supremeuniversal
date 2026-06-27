@@ -50,7 +50,7 @@ const PriceList = () => {
         <div className="bg-white min-h-screen">
             <Helmet>
                 <title>Price List 2026 | Supreme Rivana Punawale | 2 & 3 BHK Cost Sheets</title>
-                <meta name="description" content="Official Supreme Rivana Punawale Price List 2026. Get 2 BHK and 3 BHK cost sheets, carpet area details, and limited-time booking offers near Hinjewadi IT Park." />
+                <meta name="description" content="Supreme Rivana Punawale Price List 2026. Get 2 BHK and 3 BHK cost sheets, carpet area details, and limited-time booking offers near Hinjewadi IT Park." />
                 <script type="application/ld+json">
                     {JSON.stringify(priceSchema)}
                 </script>

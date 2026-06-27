@@ -78,7 +78,7 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                                         Secure Your Priority Access
                                     </h3>
                                     <p className="text-white/50 text-sm mt-4 font-light leading-relaxed">
-                                        Join the elite circle. Register now to receive the official brochure, verified <strong>Punawale property market insights</strong>, and exclusive pre-launch benefits directly from Supreme Universal.
+                                        Join the elite circle. Register now to receive the brochure, verified <strong>Punawale property market insights</strong>, and exclusive pre-launch benefits directly from Supreme Universal.
                                     </p>
                                 </div>
 
