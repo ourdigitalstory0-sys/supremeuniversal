@@ -132,7 +132,7 @@ const NeighborhoodGuide = () => {
                             </p>
                         </div>
                     </div>
-
+                </motion.div>
 
             </div>
         </section>
