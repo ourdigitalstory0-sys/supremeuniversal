@@ -208,8 +208,9 @@ const SEO = ({
                         "value": "true"
                     }
                 ],
-                "tourBookingPage": `${domain}/supreme-rivana-contact`,
+                "tourBookingPage": `${domain}/supreme-rivana-punawale-contact`,
                 "telephone": "+917744009295",
+                "hasMap": "https://www.google.com/maps/search/Supreme+Rivana+Punawale+Pune",
                 "provider": {
                     "@id": "https://www.supreme-universal.in/#organization",
                     "name": "Supreme Universal"
@@ -227,6 +228,7 @@ const SEO = ({
                         "@type": "Offer",
                         "name": "2 BHK Luxury Apartment",
                         "description": "Spacious 2 BHK waterfront apartment with river views, premium finishes, and smart layouts",
+                        "price": "7500000",
                         "priceCurrency": "INR",
                         "availability": "https://schema.org/InStock",
                         "areaServed": "Punawale, Pune West"
@@ -235,6 +237,7 @@ const SEO = ({
                         "@type": "Offer",
                         "name": "3 BHK Premium Apartment",
                         "description": "Expansive 3 BHK luxury apartment with panoramic river views, premium flooring, and exclusive community access",
+                        "price": "11000000",
                         "priceCurrency": "INR",
                         "availability": "https://schema.org/InStock",
                         "areaServed": "Punawale, Pune West"

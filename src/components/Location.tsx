@@ -30,7 +30,7 @@ const Location = () => {
                         "containedInPlace": { "@type": "State", "name": "Maharashtra" }
                     },
                     "keywords": "supreme rivana punawale, luxury flats in punawale, 2 bhk flats punawale, 3 bhk price punawale, supreme universal punawale project",
-                    "hasMap": "https://maps.app.goo.gl/YourMapLink"
+                    "hasMap": "https://www.google.com/maps/search/Supreme+Rivana+Punawale+Pune"
                 })
             }} />
             <div className="container mx-auto px-6 md:px-12 relative z-10">

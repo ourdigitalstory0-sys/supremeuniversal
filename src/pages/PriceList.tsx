@@ -15,6 +15,7 @@ const PriceList = () => {
             type: "2 BHK Luxury",
             carpet: "750 - 850 Sq.ft",
             price: "Request Price",
+            numPrice: "7500000",
             booking: "₹ 1,00,000",
             status: "New Launch",
             highlights: ["River Facing Balcony", "Premium Fittings", "Vastu Compliant"]
@@ -23,6 +24,7 @@ const PriceList = () => {
             type: "3 BHK Premium",
             carpet: "1050 - 1150 Sq.ft",
             price: "Request Price",
+            numPrice: "11000000",
             booking: "₹ 2,00,000",
             status: "Limited Inventory",
             highlights: ["Panoramic Views", "Servant Room Space", "6 Units Per Floor"]
@@ -40,6 +42,7 @@ const PriceList = () => {
             "@type": "Offer",
             "name": p.type,
             "description": `${p.type} with ${p.carpet} carpet area at Supreme Rivana Punawale`,
+            "price": p.numPrice,
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
             "areaServed": "Punawale, Pune West"

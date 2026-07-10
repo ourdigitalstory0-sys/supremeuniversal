@@ -40,45 +40,58 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* SEO Hub Links */}
-                    <div className="lg:col-span-2">
-                        <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Top Guides</h5>
-                        <ul className="space-y-4 text-white/50 font-sans font-light">
-                            <li><Link to="/blog/ultimate-guide-buying-property-punawale-pune" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Punawale Guide<span className="text-[10px] text-white/30 truncate">Real Estate 2026</span></Link></li>
-                            <li><Link to="/blog/punawale-infrastructure-connectivity-updates-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Connectivity<span className="text-[10px] text-white/30 truncate">Ring Road Updates</span></Link></li>
-                            <li><Link to="/blog/supreme-rivana-rera-number-price-list-booking-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">RERA & Booking<span className="text-[10px] text-white/30 truncate">Price List 2026</span></Link></li>
-                            <li><Link to="/blog/best-2-bhk-flats-punawale-under-1-crore-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">2 BHK Under ₹1 Cr<span className="text-[10px] text-white/30 truncate">Best Deals 2026</span></Link></li>
-                            <li><Link to="/blog/nri-guide-buying-property-punawale-pune-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">NRI Investment<span className="text-[10px] text-white/30 truncate">Legal Checklist</span></Link></li>
-                            <li><Link to="/blog/supreme-rivana-punawale-vs-all-competitors-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supremacy Report<span className="text-[10px] text-white/30 truncate">vs All Competitors</span></Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Pune Portfolio */}
-                    <div className="lg:col-span-2">
-                        <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Asset Portfolio</h5>
-                        <ul className="space-y-4 text-white/50 font-sans font-light">
-                            <li><Link to="/projects/supreme-pallacio" className="hover:text-supreme-gold transition-colors duration-300">Supreme Pallacio</Link></li>
-                            <li><Link to="/projects/supreme-estia" className="hover:text-supreme-gold transition-colors duration-300">Supreme Estia</Link></li>
-                            <li><Link to="/projects/supreme-wakad" className="hover:text-supreme-gold transition-colors duration-300">Supreme Wakad</Link></li>
-                            <li><Link to="/projects/supreme-amadore" className="hover:text-supreme-gold transition-colors duration-300">Supreme Amadore</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Programmatic SEO Mesh Column 1 */}
-                    <div className="lg:col-span-2">
-                        <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Keyword Explore</h5>
-                        <ul className="space-y-4 text-white/50 font-sans font-light text-[11px] uppercase tracking-wider">
-                            <li><Link to="/supreme-rivana-punawale-price" className="hover:text-supreme-gold transition-colors duration-300">Rivana Price</Link></li>
-                            <li><Link to="/supreme-rivana-punawale-reviews" className="hover:text-supreme-gold transition-colors duration-300">Rivana Reviews</Link></li>
-                            <li><Link to="/supreme-rivana-punawale-floor-plan" className="hover:text-supreme-gold transition-colors duration-300">Floor Plans</Link></li>
-                            <li><Link to="/supreme-2bhk-punawale-flats" className="hover:text-supreme-gold transition-colors duration-300">2 BHK Punawale</Link></li>
-                            <li><Link to="/supreme-3bhk-punawale-flats" className="hover:text-supreme-gold transition-colors duration-300">3 BHK Punawale</Link></li>
-                            <li><Link to="/supreme-riverside-punawale-photos" className="hover:text-supreme-gold transition-colors duration-300">Riverside Photos</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Programmatic SEO Mesh Column 2 (Market Intel) */}
-                    <div className="lg:col-span-2 lg:col-start-5 mt-10 lg:mt-0">
+                     {/* SEO Hub Links */}
+                     <div className="lg:col-span-2">
+                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Top Guides</h5>
+                         <ul className="space-y-4 text-white/50 font-sans font-light">
+                             <li><Link to="/blog/pune-real-estate-market-supreme-rivana-guide-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Pune Market 2026<span className="text-[10px] text-supreme-gold/70 truncate">Supreme Rivana Guide</span></Link></li>
+                             <li><Link to="/blog/ultimate-guide-buying-property-punawale-pune" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Punawale Guide<span className="text-[10px] text-white/30 truncate">Real Estate 2026</span></Link></li>
+                             <li><Link to="/blog/punawale-infrastructure-connectivity-updates-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Connectivity<span className="text-[10px] text-white/30 truncate">Ring Road Updates</span></Link></li>
+                             <li><Link to="/blog/supreme-rivana-rera-number-price-list-booking-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">RERA & Booking<span className="text-[10px] text-white/30 truncate">Price List 2026</span></Link></li>
+                             <li><Link to="/blog/best-2-bhk-flats-punawale-under-1-crore-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">2 BHK Under ₹1 Cr<span className="text-[10px] text-white/30 truncate">Best Deals 2026</span></Link></li>
+                             <li><Link to="/blog/nri-guide-buying-property-punawale-pune-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">NRI Investment<span className="text-[10px] text-white/30 truncate">Legal Checklist</span></Link></li>
+                             <li><Link to="/blog/supreme-rivana-punawale-vs-all-competitors-2026" className="hover:text-supreme-gold transition-colors duration-300 flex flex-col gap-1">Supremacy Report<span className="text-[10px] text-white/30 truncate">vs All Competitors</span></Link></li>
+                         </ul>
+                     </div>
+ 
+                     {/* Pune Portfolio */}
+                     <div className="lg:col-span-2">
+                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Asset Portfolio</h5>
+                         <ul className="space-y-4 text-white/50 font-sans font-light">
+                             <li><Link to="/projects/supreme-pallacio" className="hover:text-supreme-gold transition-colors duration-300">Supreme Pallacio</Link></li>
+                             <li><Link to="/projects/supreme-estia" className="hover:text-supreme-gold transition-colors duration-300">Supreme Estia</Link></li>
+                             <li><Link to="/projects/supreme-wakad" className="hover:text-supreme-gold transition-colors duration-300">Supreme Wakad</Link></li>
+                             <li><Link to="/projects/supreme-amadore" className="hover:text-supreme-gold transition-colors duration-300">Supreme Amadore</Link></li>
+                         </ul>
+                     </div>
+ 
+                     {/* Programmatic SEO Mesh Column 1 */}
+                     <div className="lg:col-span-2">
+                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Keyword Explore</h5>
+                         <ul className="space-y-4 text-white/50 font-sans font-light text-[11px] uppercase tracking-wider">
+                             <li><Link to="/supreme-rivana-punawale-price" className="hover:text-supreme-gold transition-colors duration-300">Rivana Price</Link></li>
+                             <li><Link to="/supreme-rivana-punawale-reviews" className="hover:text-supreme-gold transition-colors duration-300">Rivana Reviews</Link></li>
+                             <li><Link to="/supreme-rivana-punawale-floor-plan" className="hover:text-supreme-gold transition-colors duration-300">Floor Plans</Link></li>
+                             <li><Link to="/supreme-2bhk-punawale-flats" className="hover:text-supreme-gold transition-colors duration-300">2 BHK Punawale</Link></li>
+                             <li><Link to="/supreme-3bhk-punawale-flats" className="hover:text-supreme-gold transition-colors duration-300">3 BHK Punawale</Link></li>
+                             <li><Link to="/supreme-riverside-punawale-photos" className="hover:text-supreme-gold transition-colors duration-300">Riverside Photos</Link></li>
+                         </ul>
+                     </div>
+ 
+                     {/* Pune Real Estate Hub */}
+                     <div className="lg:col-span-2 lg:col-start-3 mt-10 lg:mt-0">
+                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Pune Hub</h5>
+                         <ul className="space-y-4 text-white/50 font-sans font-light text-[11px] uppercase tracking-wider">
+                             <li><Link to="/apartments-near-hinjewadi-it-park-pune" className="hover:text-supreme-gold transition-colors duration-300">2 BHK Hinjewadi</Link></li>
+                             <li><Link to="/punawale-real-estate-market-trends" className="hover:text-supreme-gold transition-colors duration-300">3 BHK Wakad</Link></li>
+                             <li><Link to="/luxury-apartments-pune-real-estate-market" className="hover:text-supreme-gold transition-colors duration-300">4 BHK Baner</Link></li>
+                             <li><Link to="/best-residential-projects-punawale-pune" className="hover:text-supreme-gold transition-colors duration-300">4 BHK Mahalunge</Link></li>
+                             <li><Link to="/projects/supreme-estia" className="hover:text-supreme-gold transition-colors duration-300">Estia Baner</Link></li>
+                         </ul>
+                     </div>
+ 
+                     {/* Programmatic SEO Mesh Column 2 (Market Intel) */}
+                     <div className="lg:col-span-2 lg:col-start-5 mt-10 lg:mt-0">
                         <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Market Intel</h5>
                         <ul className="space-y-4 text-white/50 font-sans font-light text-[11px] uppercase tracking-wider">
                             <li><Link to="/punawale-real-estate-market-trends" className="hover:text-supreme-gold transition-colors duration-300">Punawale Trends</Link></li>
