@@ -58,7 +58,7 @@ const BlogList = () => {
                             Real Estate <br className="md:hidden" /><span className="italic font-light text-supreme-gold">Insights</span>
                         </h1>
                         <p className="text-white/70 max-w-2xl mx-auto font-light text-base md:text-lg px-2">
-                            Expert analysis, lifestyle trends, and investment strategies for West Pune.
+                            Expert analysis, lifestyle trends, and investment strategies for West Pune, featuring the latest updates on Supreme Rivana Punawale.
                         </p>
                     </motion.div>
                 </div>

@@ -294,6 +294,11 @@ const ProjectDetails = () => {
                         <p className="text-gray-500 font-sans text-lg mb-12 max-w-2xl mx-auto">
                             Join the elite circle of homeowners. Download the latest price list and brochures for our {project.location} landmark.
                         </p>
+                        {project.id !== 'supreme-rivana-punawale' && (
+                            <p className="text-xs text-gray-400 font-sans font-light mt-[-2rem] mb-12 max-w-2xl mx-auto italic">
+                                Looking for premium waterfront residential opportunities near Hinjewadi and Pune West? Explore our new launch township, <Link to="/supreme-rivana-punawale-overview" className="text-supreme-gold hover:underline font-medium">Supreme Rivana Punawale</Link>.
+                            </p>
+                        )}
                         <button
                             onClick={() => setIsModalOpen(true)}
                             className="bg-supreme-black text-white px-12 py-6 text-xs font-bold uppercase tracking-[0.2em] hover:bg-supreme-gold transition-all duration-500"

@@ -172,29 +172,52 @@ const BlogPost = () => {
                     <h3 className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-supreme-gold mb-6">Related Searches for Supreme Rivana Punawale</h3>
                     <div className="flex flex-wrap gap-2 mb-10">
                         {[
-                            "Supreme Rivana Punawale", "Supreme Rivana Punawale price list 2026", "Supreme Rivana Punawale floor plan",
-                            "Supreme Rivana Punawale RERA number", "Supreme Rivana Punawale 2 BHK price", "Supreme Rivana Punawale 3 BHK price",
-                            "Supreme Rivana Punawale brochure", "Supreme Rivana Punawale possession date", "Supreme Rivana Punawale amenities",
-                            "Supreme Rivana Punawale site visit", "Supreme Rivana Punawale reviews", "Supreme Rivana Punawale master plan",
-                            "Flats in Punawale", "2 BHK flats Punawale near Hinjewadi", "3 BHK apartments Punawale",
-                            "Luxury apartments Pune West", "New launch projects PCMC", "Property investment Punawale 2026",
-                            "Best project in Punawale 2026", "Flats near Hinjewadi IT Park", "Apartments near Wakad",
-                            "River view apartments Pune", "Premium flats near Mumbai Pune Expressway",
-                            "IGBC certified homes Punawale", "NRI property investment Pune",
-                            "Supreme Universal projects Pune", "High ROI flats Pune West",
-                            "Gated community Punawale", "Ready to move flats near Hinjewadi",
-                            "Luxury residences Punawale Pune", "Under construction flats Punawale",
-                            "Supreme Rivana Punawale vs Puneville", "Supreme Rivana Punawale vs ANP Autograph",
-                            "Supreme Rivana vs Kohinoor Uptown", "Supreme Rivana vs 24k Living",
-                            "Supreme Rivana vs all competitors 2026", "Best project Punawale comparison",
-                            "Best 2 BHK under 1 crore Punawale", "Supreme Rivana Punawale construction update"
-                        ].map((keyword, idx) => (
+                            { k: "Supreme Rivana Punawale", l: "/" },
+                            { k: "Supreme Rivana Punawale price list 2026", l: "/supreme-rivana-punawale-price-list" },
+                            { k: "Supreme Rivana Punawale floor plan", l: "/supreme-rivana-punawale-floor-plan" },
+                            { k: "Supreme Rivana Punawale RERA number", l: "/blog/supreme-rivana-rera-number-price-list-booking-2026" },
+                            { k: "Supreme Rivana Punawale 2 BHK price", l: "/supreme-2bhk-punawale-flats" },
+                            { k: "Supreme Rivana Punawale 3 BHK price", l: "/supreme-3bhk-punawale-flats" },
+                            { k: "Supreme Rivana Punawale brochure", l: "/blog/supreme-rivana-rera-number-price-list-booking-2026" },
+                            { k: "Supreme Rivana Punawale possession date", l: "/supreme-rivana-punawale-possession-date" },
+                            { k: "Supreme Rivana Punawale amenities", l: "/supreme-rivana-punawale-amenities" },
+                            { k: "Supreme Rivana Punawale site visit", l: "/supreme-rivana-punawale-contact" },
+                            { k: "Supreme Rivana Punawale reviews", l: "/supreme-rivana-punawale-reviews" },
+                            { k: "Supreme Rivana Punawale master plan", l: "/supreme-rivana-punawale-data-sheet" },
+                            { k: "Flats in Punawale", l: "/best-residential-projects-punawale-pune" },
+                            { k: "2 BHK flats Punawale near Hinjewadi", l: "/apartments-near-hinjewadi-it-park-pune" },
+                            { k: "3 BHK apartments Punawale", l: "/supreme-3bhk-punawale-flats" },
+                            { k: "Luxury apartments Pune West", l: "/luxury-apartments-pune-real-estate-market" },
+                            { k: "New launch projects PCMC", l: "/best-residential-projects-punawale-pune" },
+                            { k: "Property investment Punawale 2026", l: "/west-pune-real-estate-investment-guide" },
+                            { k: "Best project in Punawale 2026", l: "/best-residential-projects-punawale-pune" },
+                            { k: "Flats near Hinjewadi IT Park", l: "/apartments-near-hinjewadi-it-park-pune" },
+                            { k: "Apartments near Wakad", l: "/punawale-real-estate-market-trends" },
+                            { k: "River view apartments Pune", l: "/blog/benefits-of-riverside-living-pune-luxury-lifestyle" },
+                            { k: "Premium flats near Mumbai Pune Expressway", l: "/blog/punawale-infrastructure-connectivity-updates-2026" },
+                            { k: "IGBC certified homes Punawale", l: "/blog/supreme-rivana-punawale-definitive-guide-15-acre-legacy" },
+                            { k: "NRI property investment Pune", l: "/blog/nri-guide-buying-property-punawale-pune-2026" },
+                            { k: "Supreme Universal projects Pune", l: "/blog/supreme-universal-luxury-legacy-west-pune" },
+                            { k: "High ROI flats Pune West", l: "/west-pune-real-estate-investment-guide" },
+                            { k: "Gated community Punawale", l: "/blog/ultimate-guide-buying-property-punawale-pune" },
+                            { k: "Ready to move flats near Hinjewadi", l: "/blog/property-investment-near-hinjewadi-it-hub-pune" },
+                            { k: "Luxury residences Punawale Pune", l: "/blog/luxury-amenities-pune-apartments" },
+                            { k: "Under construction flats Punawale", l: "/blog/future-of-punawale-real-estate-pune-2026-2030" },
+                            { k: "Supreme Rivana Punawale vs Puneville", l: "/blog/supreme-rivana-vs-puneville-comparison-2026" },
+                            { k: "Supreme Rivana Punawale vs ANP Autograph", l: "/blog/supreme-rivana-punawale-vs-all-competitors-2026" },
+                            { k: "Supreme Rivana vs Kohinoor Uptown", l: "/blog/supreme-rivana-punawale-vs-all-competitors-2026" },
+                            { k: "Supreme Rivana vs 24k Living", l: "/blog/supreme-rivana-punawale-vs-all-competitors-2026" },
+                            { k: "Supreme Rivana vs all competitors 2026", l: "/blog/supreme-rivana-punawale-vs-all-competitors-2026" },
+                            { k: "Best project Punawale comparison", l: "/supreme-rivana-punawale-comparison" },
+                            { k: "Best 2 BHK under 1 crore Punawale", l: "/blog/best-2-bhk-flats-punawale-under-1-crore-2026" },
+                            { k: "Supreme Rivana Punawale construction update", l: "/blog/supreme-rivana-rera-number-price-list-booking-2026" }
+                        ].map((item, idx) => (
                             <Link
                                 key={idx}
-                                to="/supreme-rivana-punawale-location"
+                                to={item.l}
                                 className="px-3 py-1.5 text-[10px] md:text-[11px] font-sans text-gray-500 bg-gray-50 border border-gray-100 rounded-full hover:bg-supreme-gold/10 hover:border-supreme-gold/30 hover:text-supreme-black transition-all duration-300 whitespace-nowrap"
                             >
-                                {keyword}
+                                {item.k}
                             </Link>
                         ))}
                     </div>
