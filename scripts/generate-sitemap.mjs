@@ -5,7 +5,7 @@ import { blogPosts } from '../src/data/blogPosts.ts';
 import { pseoRoutes } from '../src/data/pseoRoutes.ts';
 
 const DOMAIN = 'https://www.supreme-universal.in';
-const SITEMAP_PATH = path.join(process.cwd(), 'public', 'sitemap.xml');
+const SITEMAP_PATH = path.join(process.cwd(), 'public', 'sitemap-core.xml');
 const DATE = new Date().toLocaleDateString('sv-SE'); // 'sv-SE' gives 'YYYY-MM-DD'
 
 const staticRoutes = [

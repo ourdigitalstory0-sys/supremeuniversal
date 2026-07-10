@@ -40,6 +40,7 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 const PriceList = lazy(() => import('./pages/PriceList'));
 const Comparison = lazy(() => import('./pages/Comparison'));
 const ProgrammaticLanding = lazy(() => import('./components/ProgrammaticLanding'));
+const DynamicPseoPage = lazy(() => import('./components/DynamicPseoPage'));
 
 import { pseoRoutes } from './data/pseoRoutes';
 
@@ -226,6 +227,7 @@ function App() {
           <Route path="/projects/:id" element={<ProjectDetails />} />
           <Route path="/supreme-rivana-punawale-price-list" element={<PriceList />} />
           <Route path="/supreme-rivana-punawale-comparison" element={<Comparison />} />
+          <Route path="/pune-real-estate/:slug" element={<DynamicPseoPage />} />
           {pseoRoutes.map(route => (
             <Route key={route.path} path={route.path} element={<ProgrammaticLanding />} />
           ))}
