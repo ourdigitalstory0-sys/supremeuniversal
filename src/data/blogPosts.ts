@@ -777,5 +777,97 @@ export const blogPosts: BlogPostType[] = [
                 <a href="/supreme-rivana-punawale-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Book Site Visit →</a>
             </div>
         `
+    },
+    {
+        id: "supreme-estia-baner-luxury-living-guide-2026",
+        title: "Supreme Estia Baner: Gated Community Living & Art Deco Elegance in West Pune",
+        date: "July 02, 2026",
+        readTime: "8 min read",
+        category: "Project Guide",
+        author: "Supreme Universal Research Team",
+        image: "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
+        excerpt: "A comprehensive look at Supreme Estia in Baner. Discover how this iconic project combines Art Deco architectural design, massive clubhouses, and unmatched green living.",
+        content: `
+            <p className="lead mb-6 text-lg font-light text-gray-600">Located in the premium Western suburb of Baner, <strong>Supreme Estia</strong> represents the gold standard of gated community living in Pune West. With over 40 years of luxury development legacy, Supreme Universal has created a residential enclave that combines timeless Art Deco design elements with state-of-the-art modern comforts. If you are searching for a <strong>2 BHK, 3 BHK, or 4 BHK flat in Baner</strong>, Supreme Estia offers a completed luxury residential option with its Occupancy Certificate (OC) received, ensuring instant possession and zero risk.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">The Landmark Location: Baner-Balewadi Corridor</h3>
+            <p className="mb-6">Baner has evolved into Pune’s most sought-after upscale residential address. Backed by excellent connectivity to the Hinjewadi IT Park and immediate access to the Bangalore-Mumbai Highway, residents of Baner enjoy high-end retail, premium schools (like The Orchid School), and multispecialty healthcare facilities. Supreme Estia sits adjacent to the lush Baner Hills Biodiversity Park, giving residents panoramic green views and clean air, which is a rare luxury in fast-growing urban environments.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Premium Art Deco Architecture and 3 Clubhouses</h3>
+            <p className="mb-6">The hallmark of Supreme Estia is its architectural design. Drawing inspiration from classic Art Deco aesthetics, the facade features elegant geometric lines, symmetrical window layouts, and premium external finishes that elevate the Baner skyline. Additionally, the development boasts three exclusive clubhouses catering to different age groups and lifestyles:</p>
+            <ul className="list-disc pl-6 mb-6 text-gray-600">
+                <li className="mb-2"><strong>The Social Hub:</strong> A space for community gatherings, banquet halls, and outdoor party lawns.</li>
+                <li className="mb-2"><strong>The Fitness Arena:</strong> Equipped with a high-tech gym, indoor game courts, yoga studios, and swimming facilities.</li>
+                <li className="mb-2"><strong>The Kids and Seniors Retreat:</strong> Safe play zones, seating decks, and reflexology pathways.</li>
+            </ul>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Secure Gated Community with High-End Security</h3>
+            <p className="mb-6">Safety is a top priority at Supreme Estia. The project is designed with a multi-tier security system, including RFID vehicle access, 24/7 video monitoring, biometric locks, and professional security patrols. The vehicle-free podium design ensures that children can play freely and seniors can stroll safely without any traffic hazards. For luxury homebuyers, Supreme Estia stands as one of the finest security-first residential landmarks in Pune West.</p>
+
+            <br />
+            <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
+                <h4 className="font-serif text-2xl text-supreme-gold mb-2">Explore Gated Luxury</h4>
+                <p className="text-white/80 font-light mb-4">Learn more about layout details, current availability, and ready possession offers directly from our Baner sales desk.</p>
+                <a href="/supreme-rivana-punawale-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Book Site Visit →</a>
+            </div>
+        `
+    },
+    {
+        id: "supreme-villagio-somatane-luxury-villas-2026",
+        title: "Supreme Villagio Somatane: Gated Luxury Villas Near Pune-Mumbai Expressway",
+        date: "July 05, 2026",
+        readTime: "7 min read",
+        category: "Villa Guide",
+        author: "Supreme Universal Research Team",
+        image: "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
+        excerpt: "Explore Supreme Villagio in Somatane. Learn how these luxury villas and townhouses offer a peaceful second-home getaway with seamless highway connectivity.",
+        content: `
+            <p className="lead mb-6 text-lg font-light text-gray-600">For families seeking an escape from city traffic without losing urban connectivity, <strong>Supreme Villagio</strong> in Somatane, Pune, offers a pristine gated enclave of luxury villas and townhouses. Located right off the Somatane Toll Exit on the Pune-Mumbai Expressway, this development provides a second-home resort lifestyle with scenic mountain views and clean mountain breezes. If you are looking for premium independent villas or twin townhouses in Pune, Supreme Villagio delivers the ultimate low-density residential community.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">The Somatane Location Advantage</h3>
+            <p className="mb-6">Somatane sits at a strategic location that connects Pune and Mumbai. It is a 20-minute drive from the Hinjewadi IT Park Phase 3 and 15 minutes from the automobile industrial hubs of Talegaon and Akurdi. This makes Supreme Villagio a popular choice for corporate executives and business owners who need quick access to industrial sectors while enjoying the peace of hill-station living. The nearby Somatane Phata provides schools, hospitals, and daily conveniences within a 2-kilometer radius.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Independent Villa and Townhouse Architecture</h3>
+            <p className="mb-6">Supreme Villagio is planned with independent structures that maximize private space. The homes feature spacious double-height living areas, private lawns, customizable layouts, and massive terraces. With low unit density, residents enjoy absolute privacy. The community is built around European-style cobblestone pathways, central parks, water fountains, and manicured gardens that create a holiday feel every day.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Resort-Style Amenities & Club Infrastructure</h3>
+            <p className="mb-6">The project features a dedicated clubhouse with lifestyle amenities, including a swimming pool with pool-side decks, a fitness center, sports courts, pet-friendly zones, and tree-lined jogging paths. Supreme Universal’s quality craftsmanship is evident in every corner, from the structural brickwork to the premium tiling and fittings, ensuring that your villa remains a legacy asset for generations.</p>
+
+            <br />
+            <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
+                <h4 className="font-serif text-2xl text-supreme-gold mb-2">Schedule a Private Villa Tour</h4>
+                <p className="text-white/80 font-light mb-4">Experience independent villa living off the Expressway. Get cost sheets, payment plans, and booking procedures.</p>
+                <a href="/supreme-rivana-punawale-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Book Private Tour →</a>
+            </div>
+        `
+    },
+    {
+        id: "supreme-towers-koregaon-park-luxury-flats-2026",
+        title: "Supreme Towers Koregaon Park: Skyline Luxury in East Pune's Premium Address",
+        date: "July 08, 2026",
+        readTime: "9 min read",
+        category: "Project Guide",
+        author: "Supreme Universal Research Team",
+        image: "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
+        excerpt: "A look inside Supreme Towers in Koregaon Park. See how this signature development brings luxury residential design and panoramic river views to Pune's lifestyle hub.",
+        content: `
+            <p className="lead mb-6 text-lg font-light text-gray-600">Koregaon Park stands as Pune’s elite residential and lifestyle neighborhood. Through <strong>Supreme Towers</strong>, Supreme Universal has created a residential landmark that towers over this iconic zone. Offering ultra-luxury residences with panoramic views of the Mula-Mutha river and Koregaon Park's green canopy, Supreme Towers is designed for those who appreciate bespoke design and premium locations.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Koregaon Park: The Lifestyle Capital of Pune</h3>
+            <p className="mb-6">Living in Koregaon Park means being surrounded by Pune's finest dining, premium shopping malls, and upscale lifestyle lounges. With tree-lined lanes, cultural hubs, and high-end spas, the neighborhood attracts corporate leaders, NRI buyers, and creative professionals. Supreme Towers sits at a location that provides quick access to Kalyani Nagar, Viman Nagar, and the Pune Airport, making it highly connected for business and travel.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Bespoke Interiors & Panoramic Skyline Balconies</h3>
+            <p className="mb-6">Every residence in Supreme Towers is built with high-end finishes, imported marble flooring, floor-to-ceiling glass windows, and spacious balconies. The layouts are designed to maximize natural ventilation and light while ensuring privacy between homes. With only a few apartments per floor, the towers provide a quiet community experience that matches the neighborhood's lifestyle standards.</p>
+
+            <h3 className="text-3xl font-serif text-supreme-black mb-4 mt-12">Sky-Level Lounge and High-End Concierge</h3>
+            <p className="mb-6">Supreme Towers features a collection of premium amenities: a sky-level sky lounge for panoramic views, a private mini-theater, a business hub, a fitness center, and a dedicated concierge service. This project represents the pinnacle of Supreme Universal's design-led luxury, standing as a legacy investment in East Pune’s most stable real estate market.</p>
+
+            <br />
+            <div className="mb-6 border-l-4 border-supreme-gold pl-6 py-6 bg-supreme-black text-white shadow-xl">
+                <h4 className="font-serif text-2xl text-supreme-gold mb-2">Request Bespoke Brochure</h4>
+                <p className="text-white/80 font-light mb-4">Get the detailed digital catalog, specifications, and custom layouts for Supreme Towers Koregaon Park.</p>
+                <a href="/supreme-rivana-punawale-contact" className="inline-block bg-supreme-gold text-supreme-black px-6 py-3 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Enquire Now →</a>
+            </div>
+        `
     }
 ];
