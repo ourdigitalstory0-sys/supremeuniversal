@@ -96,6 +96,28 @@ const DynamicPseoPage = () => {
         }))
     };
 
+    const listingSchema = {
+        "@context": "https://schema.org",
+        "@type": "RealEstateListing",
+        "name": `${config.name} ${propType.name} in ${locality.name} - ${theme.name}`,
+        "description": metaDescription,
+        "url": `https://www.supreme-universal.in/pune-real-estate/${slug}`,
+        "offers": {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Accommodation",
+                "name": `${config.name} ${propType.name} in ${locality.name}`
+            },
+            "seller": {
+                "@type": "RealEstateAgent",
+                "name": "Supreme Universal",
+                "url": "https://www.supreme-universal.in/"
+            }
+        }
+    };
+
+    const combinedSchemas = [faqSchema, listingSchema];
+
     return (
         <div className="font-sans antialiased text-gray-900 bg-white transition-colors duration-500 pb-16 md:pb-0">
             <SEO 
@@ -105,7 +127,7 @@ const DynamicPseoPage = () => {
             />
             <Helmet>
                 <script type="application/ld+json">
-                    {JSON.stringify(faqSchema)}
+                    {JSON.stringify(combinedSchemas)}
                 </script>
             </Helmet>
 
