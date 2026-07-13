@@ -15,7 +15,23 @@ function generateSitemapIndex() {
       <lastmod>${DATE}</lastmod>
    </sitemap>
    <sitemap>
-      <loc>${DOMAIN}/sitemap-pune.xml</loc>
+      <loc>${DOMAIN}/sitemap-pune-1.xml</loc>
+      <lastmod>${DATE}</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>${DOMAIN}/sitemap-pune-2.xml</loc>
+      <lastmod>${DATE}</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>${DOMAIN}/sitemap-pune-3.xml</loc>
+      <lastmod>${DATE}</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>${DOMAIN}/sitemap-pune-4.xml</loc>
+      <lastmod>${DATE}</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>${DOMAIN}/sitemap-pune-5.xml</loc>
       <lastmod>${DATE}</lastmod>
    </sitemap>
 </sitemapindex>`;
