@@ -34,6 +34,10 @@ function generateSitemapIndex() {
       <loc>${DOMAIN}/sitemap-pune-5.xml</loc>
       <lastmod>${DATE}</lastmod>
    </sitemap>
+   <sitemap>
+      <loc>${DOMAIN}/sitemap-projects.xml</loc>
+      <lastmod>${DATE}</lastmod>
+   </sitemap>
 </sitemapindex>`;
 
     fs.writeFileSync(INDEX_PATH, xml.trim());
