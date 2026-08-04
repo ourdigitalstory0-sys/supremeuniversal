@@ -62,10 +62,10 @@ const DynamicPseoPage = () => {
         document.documentElement.classList.toggle('light-theme');
     };
 
-    // Generate semantic, custom keyword page copy
-    const titleText = `${config.name} ${propType.name} in ${locality.name} ${theme.name} | Supreme Rivana`;
+    // Generate semantic, custom keyword page copy (Pixel-hardened for SERP limits)
+    const titleText = `${config.name} ${propType.name} in ${locality.name} (${theme.name})`;
     const headingText = `${config.name} ${propType.name} in ${locality.name}`;
-    const metaDescription = `Looking for ${config.name} ${propType.name} in ${locality.name}? Get detailed ${theme.name.toLowerCase()} analysis. Explore Supreme Rivana Punawale for the ultimate luxury township investment in Pune West.`;
+    const metaDescription = `Get detailed ${theme.name} for ${config.name} ${propType.name} in ${locality.name}. Explore Supreme Rivana Punawale: the luxury township benchmark in Pune West.`;
 
     // Dynamic FAQ builder
     const customFaqs = [

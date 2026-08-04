@@ -100,6 +100,18 @@ const SEO = ({
     const schemaArray: any[] = [
         {
             "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.supreme-universal.in/#website",
+            "name": "Supreme Universal",
+            "url": "https://www.supreme-universal.in/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.supreme-universal.in/blog?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@context": "https://schema.org",
             "@type": "Organization",
             "@id": "https://www.supreme-universal.in/#organization",
             "name": "Supreme Universal",
