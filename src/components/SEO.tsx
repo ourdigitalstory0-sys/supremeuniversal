@@ -243,6 +243,47 @@ const SEO = ({
                         "areaServed": "Punawale, Pune West"
                     }
                 ]
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "RealEstateAgent",
+                "@id": "https://www.supreme-universal.in/#realestateagent",
+                "name": "Supreme Rivana Punawale Sales Office",
+                "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
+                "telephone": "+917744009295",
+                "url": "https://www.supreme-universal.in/",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road",
+                    "addressLocality": "Punawale",
+                    "addressRegion": "Pune",
+                    "postalCode": "411033",
+                    "addressCountry": "IN"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "18.6327",
+                    "longitude": "73.7431"
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "20:00"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "1248"
+                }
             }
         );
     }
