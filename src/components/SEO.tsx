@@ -203,6 +203,30 @@ const SEO = ({
                     "latitude": "18.6327",
                     "longitude": "73.7431"
                 },
+                "floorPlan": [
+                    {
+                        "@type": "FloorPlan",
+                        "name": "2 BHK Luxury Apartment",
+                        "numberOfRooms": "2",
+                        "floorSize": {
+                            "@type": "QuantitativeValue",
+                            "value": "785",
+                            "unitText": "Sq.Ft"
+                        },
+                        "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+                    },
+                    {
+                        "@type": "FloorPlan",
+                        "name": "3 BHK Premium Apartment",
+                        "numberOfRooms": "3",
+                        "floorSize": {
+                            "@type": "QuantitativeValue",
+                            "value": "1120",
+                            "unitText": "Sq.Ft"
+                        },
+                        "image": "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
+                    }
+                ],
                 "amenityFeature": [
                     {
                         "@type": "LocationFeatureSpecification",
