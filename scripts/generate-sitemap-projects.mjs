@@ -53,9 +53,19 @@ function generateSitemapProjects() {
     for (const proj of projects) {
         for (const config of configs) {
             for (const theme of themes) {
-                const slug = `${proj.id}-${config}-${theme}`;
-                const title = `${proj.name} ${configLabels[config]} - ${themeLabels[theme]}`;
-                const caption = `View verified ${themeLabels[theme].toLowerCase()} details for ${configLabels[config]} configurations at ${proj.name} in ${proj.location} by Supreme Universal.`;
+                let activeConfig = config;
+                let activeConfigLabel = configLabels[config];
+
+                if (proj.id === 'supreme-villagio' && config === 'penthouse') {
+                    activeConfig = 'townhouses';
+                    activeConfigLabel = 'Townhouses';
+                }
+
+                const slug = `${proj.id}-${activeConfig}-${theme}`;
+                const title = `${proj.name} ${activeConfigLabel} - ${themeLabels[theme]}`;
+                const caption = proj.id === 'supreme-villagio' && activeConfig === 'townhouses'
+                    ? `View verified ${themeLabels[theme].toLowerCase()} details for Townhouses at ${proj.name} in ${proj.location} by Supreme Universal.`
+                    : `View verified ${themeLabels[theme].toLowerCase()} details for ${configLabels[config]} configurations at ${proj.name} in ${proj.location} by Supreme Universal.`;
 
                 xml += `
   <url>

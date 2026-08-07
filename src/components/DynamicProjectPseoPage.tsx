@@ -54,7 +54,16 @@ const DynamicProjectPseoPage = () => {
     const projectId = remaining.substring(0, lastDashIndex);
 
     const project = portfolioProjects.find(p => p.id === projectId);
-    const config = configs.find(c => c.id === configId);
+    
+    // Override 'penthouse' config lookup for Supreme Villagio to 'townhouses'
+    let config = configs.find(c => c.id === configId);
+    if (projectId === 'supreme-villagio' && configId === 'townhouses') {
+        config = {
+            id: 'townhouses',
+            name: 'Townhouses',
+            description: 'Mediterranean style row houses and luxury twin townhouses featuring private garden lawns.'
+        };
+    }
 
     // Strict validation to prevent garbage pages
     if (!project || !config) {
