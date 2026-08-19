@@ -1,6 +1,9 @@
 name: SEO Indexing Engine
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # Runs at 00:00 UTC every day (approx. 5:30 AM IST)
     - cron: '0 0 * * *'
@@ -23,6 +26,9 @@ jobs:
 
       - name: Install Dependencies
         run: npm ci
+
+      - name: Compile Sitemap Matrix Fresh
+        run: npm run prebuild
 
       - name: Create Google Service Account Key
         # This takes the base64 encoded JSON string from GitHub Secrets and reconstructs the file
