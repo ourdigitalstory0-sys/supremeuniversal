@@ -74,7 +74,7 @@ const Footer = () => {
                              <li><Link to="/supreme-rivana-punawale-floor-plan" className="hover:text-supreme-gold transition-colors duration-300">Floor Plans</Link></li>
                              <li><Link to="/supreme-2bhk-punawale-flats" className="hover:text-supreme-gold transition-colors duration-300">2 BHK Punawale</Link></li>
                              <li><Link to="/supreme-3bhk-punawale-flats" className="hover:text-supreme-gold transition-colors duration-300">3 BHK Punawale</Link></li>
-                             <li><Link to="/supreme-riverside-punawale-photos" className="hover:text-supreme-gold transition-colors duration-300">Riverside Photos</Link></li>
+                             <li><Link to="/supreme-rivana-punawale-gallery" className="hover:text-supreme-gold transition-colors duration-300">Rivana Photos</Link></li>
                          </ul>
                      </div>
  
