@@ -28,27 +28,42 @@ if (!fs.existsSync(KEY_FILE)) {
     process.exit(1);
 }
 
-// Function to extract URLs from sitemap
+// Function to extract URLs from core and projects sitemaps
 function getUrlsFromSitemap() {
-    if (!fs.existsSync(SITEMAP_FILE)) {
-        console.log('⚠️ WARNING: sitemap.xml not found. Generating dummy list or skipping.');
-        return [
-            'https://www.supreme-universal.in/'
-        ];
+    const urls = new Set();
+    const coreSitemap = path.join(process.cwd(), 'public', 'sitemap-core.xml');
+    const projectsSitemap = path.join(process.cwd(), 'public', 'sitemap-projects.xml');
+    
+    const urlRegex = /<loc>(.*?)<\/loc>/g;
+    
+    // Add core URLs
+    if (fs.existsSync(coreSitemap)) {
+        const content = fs.readFileSync(coreSitemap, 'utf-8');
+        let match;
+        while ((match = urlRegex.exec(content)) !== null) {
+            urls.add(match[1]);
+        }
     }
     
-    const sitemapContent = fs.readFileSync(SITEMAP_FILE, 'utf-8');
-    const urlRegex = /<loc>(.*?)<\/loc>/g;
-    const urls = [];
-    let match;
-    
-    while ((match = urlRegex.exec(sitemapContent)) !== null) {
-        urls.push(match[1]);
+    // Add project programmatic URLs
+    if (fs.existsSync(projectsSitemap)) {
+        const content = fs.readFileSync(projectsSitemap, 'utf-8');
+        let match;
+        // Reset regex index
+        urlRegex.lastIndex = 0;
+        while ((match = urlRegex.exec(content)) !== null) {
+            urls.add(match[1]);
+        }
+    }
+
+    const urlArray = Array.from(urls);
+    if (urlArray.length === 0) {
+        return ['https://www.supreme-universal.in/'];
     }
     
     // Google Indexing API limit is 200 URLs per request batch/day.
-    // We will slice the array to the first 200 just in case to avoid API limit errors.
-    return urls.slice(0, 200);
+    // We reserve 10 slots for safety and return the first 190 high-priority page URLs.
+    return urlArray.slice(0, 190);
 }
 
 const PRIORITY_URLS = getUrlsFromSitemap();
