@@ -114,6 +114,18 @@ const DynamicProjectPseoPage = () => {
         }))
     };
 
+    const configPrices: Record<string, string> = {
+        '2bhk': '7500000',
+        '3bhk': '11000000',
+        '4bhk': '15000000',
+        '5bhk': '22500000',
+        'simplex': '13000000',
+        'duplex': '20000000',
+        'penthouse': '25000000',
+        'townhouses': '18000000'
+    };
+    const startingPrice = configPrices[configId] || '7500000';
+
     const listingSchema = {
         "@context": "https://schema.org",
         "@type": "RealEstateListing",
@@ -122,6 +134,9 @@ const DynamicProjectPseoPage = () => {
         "url": `https://www.supreme-universal.in/pune-projects/${slug}`,
         "offers": {
             "@type": "Offer",
+            "price": startingPrice,
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
             "itemOffered": {
                 "@type": "Accommodation",
                 "name": `${project.name} ${config.name} Configuration`
