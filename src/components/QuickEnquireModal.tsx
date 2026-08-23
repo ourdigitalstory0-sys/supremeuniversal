@@ -18,6 +18,11 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
 
         const formData = new FormData(e.currentTarget);
         formData.append("access_key", "8d14bafa-306b-4e68-bc3f-791c5fbf5dc1");
+        
+        const emailVal = formData.get("email");
+        if (emailVal) {
+            formData.append("replyto", emailVal as string);
+        }
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
@@ -85,6 +90,7 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                                 <form onSubmit={handleSubmit} className="space-y-6">
                                     <input type="hidden" name="subject" value="New Quick Enquiry from Supreme Rivana" />
                                     <input type="hidden" name="from_name" value="Supreme Rivana System" />
+                                    <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
                                     <div className="space-y-4">
                                         <div className="relative">
                                             <input
@@ -108,6 +114,8 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                                                 type="tel"
                                                 name="phone"
                                                 id="modal-phone"
+                                                pattern="[0-9]{10}"
+                                                title="Please enter a valid 10-digit phone number"
                                                 className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder-transparent focus:outline-none focus:border-supreme-gold transition-colors peer font-light text-sm"
                                                 placeholder="Phone"
                                                 required

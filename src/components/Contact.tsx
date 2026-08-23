@@ -71,6 +71,10 @@ const Contact = () => {
         submissionData.append("access_key", "8d14bafa-306b-4e68-bc3f-791c5fbf5dc1");
         submissionData.append("subject", `New Multi-step Enquiry: ${formData.interest}`);
         submissionData.append("from_name", "Supreme Rivana Punawale");
+        
+        if (formData.email) {
+            submissionData.append("replyto", formData.email);
+        }
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
@@ -275,6 +279,8 @@ const Contact = () => {
                                                         type="tel"
                                                         name="phone"
                                                         placeholder="Phone Number *"
+                                                        pattern="[0-9]{10}"
+                                                        title="Please enter a valid 10-digit phone number"
                                                         required
                                                         value={formData.phone}
                                                         onChange={handleInputChange}

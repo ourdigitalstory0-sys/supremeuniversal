@@ -18,6 +18,11 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
         const formData = new FormData(e.currentTarget);
         formData.append("access_key", "8d14bafa-306b-4e68-bc3f-791c5fbf5dc1");
         formData.append("subject", "Brochure Download Request - Supreme Rivana");
+        
+        const emailVal = formData.get("email");
+        if (emailVal) {
+            formData.append("replyto", emailVal as string);
+        }
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
@@ -93,6 +98,7 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
 
                                             <form onSubmit={handleSubmit} className="space-y-6">
                                                 <div className="space-y-4">
+                                                    <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
                                                     <input
                                                         type="text"
                                                         name="name"
@@ -104,6 +110,8 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                                                         type="tel"
                                                         name="phone"
                                                         placeholder="Phone Number *"
+                                                        pattern="[0-9]{10}"
+                                                        title="Please enter a valid 10-digit phone number"
                                                         required
                                                         className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-supreme-gold transition-colors font-sans text-sm"
                                                     />
