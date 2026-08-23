@@ -116,7 +116,7 @@ const SEO = ({
             "@id": "https://www.supreme-universal.in/#organization",
             "name": "Supreme Universal",
             "url": "https://www.supreme-universal.in/",
-            "logo": "https://cdn.supremeuniversal.com/media/supreme-logo.png",
+            "logo": "https://www.supremeuniversal.com/front/img/logo.svg",
             "foundingDate": "1982",
             "description": "Supreme Universal is a premium real estate developer with 40+ years of legacy, delivering 70+ iconic projects across Mumbai and Pune. Recognized by CREDAI-MCHI and Asia Property Awards.",
             "sameAs": [

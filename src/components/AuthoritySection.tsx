@@ -31,7 +31,7 @@ const AuthoritySection = () => {
         "name": "Supreme Universal",
         "description": "Ultra-luxury real estate developer with 40+ years legacy and 70+ delivered projects across Mumbai and Pune.",
         "url": "https://www.supreme-universal.in/",
-        "image": "https://cdn.supremeuniversal.com/media/supreme-logo.png",
+        "image": "https://www.supremeuniversal.com/front/img/logo.svg",
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
