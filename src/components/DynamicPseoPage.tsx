@@ -65,7 +65,18 @@ const DynamicPseoPage = () => {
     // Generate semantic, custom keyword page copy (Pixel-hardened for SERP limits)
     const titleText = `${config.name} ${propType.name} in ${locality.name} (${theme.name})`;
     const headingText = `${config.name} ${propType.name} in ${locality.name}`;
-    const metaDescription = `Get detailed ${theme.name} for ${config.name} ${propType.name} in ${locality.name}. Explore Supreme Rivana Punawale: the luxury township benchmark in Pune West.`;
+    
+    const themeDescriptions: Record<string, string> = {
+        'price': `Check carpet price list & pre-launch cost sheets for ${config.name} ${propType.name.toLowerCase()} in ${locality.name}. Compare Supreme Rivana Pune rates.`,
+        'reviews': `Real customer reviews & project ratings for ${config.name} ${propType.name.toLowerCase()} in ${locality.name}. Find out why Supreme Rivana is highly rated.`,
+        'floor-plan': `Download layout details & floor plans for ${config.name} ${propType.name.toLowerCase()} in ${locality.name}. Inspect Vastu-compliant layouts.`,
+        'possession-date': `Check possession updates, RERA construction status & delivery timelines for ${config.name} ${propType.name.toLowerCase()} in ${locality.name}.`,
+        'amenities': `Explore amenities, central clubhouses, and recreational options for ${config.name} ${propType.name.toLowerCase()} in ${locality.name}.`,
+        'location-map': `Get maps, school connectivity, & road distance indexes for ${config.name} ${propType.name.toLowerCase()} in ${locality.name}.`,
+        'brochure': `Download official PDF brochures, floor sheets, & master layouts for ${config.name} ${propType.name.toLowerCase()} in ${locality.name}.`,
+        'rera': `MahaRERA registration certificate numbers, verification states, & timeline legalities for ${config.name} ${propType.name.toLowerCase()} in ${locality.name}.`
+    };
+    const metaDescription = themeDescriptions[parsedThemeId] || `Get detailed ${theme.name} for ${config.name} ${propType.name} in ${locality.name}. Explore Supreme Rivana Punawale.`;
 
     // Dynamic FAQ builder
     const customFaqs = [

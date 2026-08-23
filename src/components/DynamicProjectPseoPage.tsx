@@ -83,7 +83,18 @@ const DynamicProjectPseoPage = () => {
     // Generate custom keywords copy
     const titleText = `${project.name} ${config.name} ${theme.name} | Supreme Universal`;
     const headingText = `${project.name} ${config.name}`;
-    const metaDescription = `Looking for details on ${project.name} ${config.name}? Explore carpet area, layouts, possession updates and custom ${theme.name.toLowerCase()} analysis for our landmark development in ${project.location}.`;
+    
+    const themeDescriptions: Record<string, string> = {
+        'price': `Check carpet price list & cost sheets for ${config.name} at ${project.name} in ${project.location}. Compare rates & pre-launch discount schedules.`,
+        'reviews': `Real customer reviews & project ratings for ${config.name} at ${project.name} in ${project.location}. Learn about construction quality and feedback.`,
+        'floor-plan': `Download carpet area layouts, floor plans & structural maps for ${config.name} at ${project.name} in ${project.location}. Vastu compliances.`,
+        'possession-date': `Check possession date, RERA timelines & construction photos/status for ${config.name} at ${project.name} in ${project.location}.`,
+        'amenities': `Explore clubhouses, swimming pools, sports facilities & central layout features for ${config.name} at ${project.name} in ${project.location}.`,
+        'location-map': `Get location maps, Google coordinates & transit connectivity details for ${config.name} at ${project.name} in ${project.location}.`,
+        'brochure': `Download PDF brochure, layout sheets & master floor layouts for ${config.name} at ${project.name} in ${project.location}.`,
+        'rera': `MahaRERA registration certificate verification status & delivery deadlines for ${config.name} at ${project.name} in ${project.location}.`
+    };
+    const metaDescription = themeDescriptions[theme.id] || `Looking for details on ${project.name} ${config.name}? Explore carpet area, layouts & theme insights for our landmark.`;
 
     // Dynamic FAQ builder
     const customFaqs = [
