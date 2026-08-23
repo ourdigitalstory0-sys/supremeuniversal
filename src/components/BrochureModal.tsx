@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Download, FileText, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
+import { savePendingLead } from '../utils/leadCache';
 
 interface BrochureModalProps {
     isOpen: boolean;
@@ -32,7 +33,16 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
             const data = await response.json();
             if (data.success) {
                 setIsSuccess(true);
-                // Simulate file download
+                const link = document.createElement('a');
+                link.href = 'https://cdn.supremeuniversal.com/brochure/Supreme-Rivana-Punawale.pdf';
+                link.setAttribute('download', 'Supreme-Rivana-Brochure.pdf');
+                link.setAttribute('target', '_blank');
+                document.body.appendChild(link);
+                link.click();
+                link.remove();
+            } else {
+                savePendingLead(formData, "https://api.web3forms.com/submit");
+                setIsSuccess(true);
                 const link = document.createElement('a');
                 link.href = 'https://cdn.supremeuniversal.com/brochure/Supreme-Rivana-Punawale.pdf';
                 link.setAttribute('download', 'Supreme-Rivana-Brochure.pdf');
@@ -42,7 +52,15 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                 link.remove();
             }
         } catch (error) {
-            console.error("Submission error", error);
+            savePendingLead(formData, "https://api.web3forms.com/submit");
+            setIsSuccess(true);
+            const link = document.createElement('a');
+            link.href = 'https://cdn.supremeuniversal.com/brochure/Supreme-Rivana-Punawale.pdf';
+            link.setAttribute('download', 'Supreme-Rivana-Brochure.pdf');
+            link.setAttribute('target', '_blank');
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
         } finally {
             setIsSubmitting(false);
         }

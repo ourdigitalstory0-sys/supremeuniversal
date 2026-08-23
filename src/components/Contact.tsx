@@ -2,6 +2,7 @@
 import { Phone, ArrowRight, ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
+import { savePendingLead } from '../utils/leadCache';
 
 const Contact = () => {
     const [step, setStep] = useState(1);
@@ -84,8 +85,14 @@ const Contact = () => {
             const data = await response.json();
             if (data.success) {
                 setSubmitStatus('success');
-            } else { setSubmitStatus('error'); }
-        } catch { setSubmitStatus('error'); }
+            } else {
+                savePendingLead(submissionData, "https://api.web3forms.com/submit");
+                setSubmitStatus('success');
+            }
+        } catch {
+            savePendingLead(submissionData, "https://api.web3forms.com/submit");
+            setSubmitStatus('success');
+        }
         setIsSubmitting(false);
     };
 

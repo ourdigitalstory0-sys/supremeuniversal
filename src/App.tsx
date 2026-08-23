@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from '@vercel/analytics/react';
 import Lenis from 'lenis';
+import ErrorBoundary from './components/ErrorBoundary';
+import { syncPendingLeads } from './utils/leadCache';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Overview from './components/Overview';
@@ -209,36 +211,47 @@ function MainApp() {
 }
 
 function App() {
+  useEffect(() => {
+    // Sync any pending leads from previous offline attempts on mount
+    syncPendingLeads();
+    
+    // Listen for online events to sync immediately
+    window.addEventListener('online', syncPendingLeads);
+    return () => window.removeEventListener('online', syncPendingLeads);
+  }, []);
+
   return (
-    <Router>
-      <RedirectHandler />
-      <ScrollHandler />
-      <Suspense fallback={<div className="h-screen bg-white" />}>
-        <Routes>
-          <Route path="/" element={<MainApp />} />
-          <Route path="/supreme-rivana-punawale-overview" element={<MainApp />} />
-          <Route path="/supreme-rivana-punawale-amenities" element={<MainApp />} />
-          <Route path="/supreme-rivana-punawale-floor-plans" element={<MainApp />} />
-          <Route path="/supreme-rivana-punawale-gallery" element={<MainApp />} />
-          <Route path="/supreme-rivana-punawale-location" element={<MainApp />} />
-          <Route path="/supreme-rivana-punawale-faq" element={<MainApp />} />
-          <Route path="/supreme-rivana-punawale-contact" element={<MainApp />} />
-          <Route path="/blog" element={<BlogList />} />
-          <Route path="/blog/:id" element={<BlogPost />} />
-          <Route path="/projects/:id" element={<ProjectDetails />} />
-          <Route path="/supreme-rivana-punawale-price-list" element={<PriceList />} />
-          <Route path="/supreme-rivana-punawale-comparison" element={<Comparison />} />
-          <Route path="/pune-real-estate/:slug" element={<DynamicPseoPage />} />
-          <Route path="/pune-projects/:slug" element={<DynamicProjectPseoPage />} />
-          {pseoRoutes.map(route => (
-            <Route key={route.path} path={route.path} element={<ProgrammaticLanding />} />
-          ))}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
-      <SpeedInsights />
-      <Analytics />
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        <RedirectHandler />
+        <ScrollHandler />
+        <Suspense fallback={<div className="h-screen bg-white" />}>
+          <Routes>
+            <Route path="/" element={<MainApp />} />
+            <Route path="/supreme-rivana-punawale-overview" element={<MainApp />} />
+            <Route path="/supreme-rivana-punawale-amenities" element={<MainApp />} />
+            <Route path="/supreme-rivana-punawale-floor-plans" element={<MainApp />} />
+            <Route path="/supreme-rivana-punawale-gallery" element={<MainApp />} />
+            <Route path="/supreme-rivana-punawale-location" element={<MainApp />} />
+            <Route path="/supreme-rivana-punawale-faq" element={<MainApp />} />
+            <Route path="/supreme-rivana-punawale-contact" element={<MainApp />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
+            <Route path="/supreme-rivana-punawale-price-list" element={<PriceList />} />
+            <Route path="/supreme-rivana-punawale-comparison" element={<Comparison />} />
+            <Route path="/pune-real-estate/:slug" element={<DynamicPseoPage />} />
+            <Route path="/pune-projects/:slug" element={<DynamicProjectPseoPage />} />
+            {pseoRoutes.map(route => (
+              <Route key={route.path} path={route.path} element={<ProgrammaticLanding />} />
+            ))}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+        <SpeedInsights />
+        <Analytics />
+      </Router>
+    </ErrorBoundary>
   );
 }
 

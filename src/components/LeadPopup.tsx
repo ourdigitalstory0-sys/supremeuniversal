@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
+import { savePendingLead } from '../utils/leadCache';
 
 const LeadPopup = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -91,8 +92,20 @@ const LeadPopup = () => {
                 setTimeout(() => {
                     closePopup();
                 }, 3000);
-            } else { setSubmitStatus('error'); }
-        } catch { setSubmitStatus('error'); }
+            } else {
+                savePendingLead(formData, "https://api.web3forms.com/submit");
+                setSubmitStatus('success');
+                setTimeout(() => {
+                    closePopup();
+                }, 3000);
+            }
+        } catch {
+            savePendingLead(formData, "https://api.web3forms.com/submit");
+            setSubmitStatus('success');
+            setTimeout(() => {
+                closePopup();
+            }, 3000);
+        }
         setIsSubmitting(false);
     };
 

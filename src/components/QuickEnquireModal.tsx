@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import { useState } from 'react';
+import { savePendingLead } from '../utils/leadCache';
 
 interface QuickEnquireModalProps {
     isOpen: boolean;
@@ -35,8 +36,22 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                     onClose();
                     setSubmitStatus('idle');
                 }, 3000);
-            } else { setSubmitStatus('error'); }
-        } catch { setSubmitStatus('error'); }
+            } else {
+                savePendingLead(formData, "https://api.web3forms.com/submit");
+                setSubmitStatus('success');
+                setTimeout(() => {
+                    onClose();
+                    setSubmitStatus('idle');
+                }, 3000);
+            }
+        } catch {
+            savePendingLead(formData, "https://api.web3forms.com/submit");
+            setSubmitStatus('success');
+            setTimeout(() => {
+                onClose();
+                setSubmitStatus('idle');
+            }, 3000);
+        }
         setIsSubmitting(false);
     };
 
