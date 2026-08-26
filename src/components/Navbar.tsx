@@ -36,31 +36,17 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
         <>
             <nav className={`fixed w-full z-50 transition-all duration-700 ease-in-out border-b border-white/5 ${isScrolled ? 'bg-supreme-black/95 backdrop-blur-xl py-4 shadow-2xl' : 'bg-transparent py-5 lg:py-8'}`}>
                 <div className="container mx-auto px-6 md:px-12">
-                    <div className="flex justify-between items-center relative">
+                    <div className="flex items-center gap-10 w-full">
 
-                        {/* Desktop Navigation - Left */}
-                        <div className="hidden lg:flex items-center space-x-8 flex-1">
-                            {navLinks.slice(0, 3).map((link) => (
-                                <Link
-                                    key={link.name}
-                                    to={link.href}
-                                    className={`relative text-xs font-sans font-medium uppercase tracking-[0.15em] hover:text-supreme-gold transition-colors group py-2 ${location.pathname === link.href ? 'text-supreme-gold' : 'text-white/80'}`}
-                                >
-                                    {link.name}
-                                    <span className={`absolute bottom-0 left-0 h-[1px] bg-supreme-gold transition-all duration-300 ${location.pathname === link.href ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
-                                </Link>
-                            ))}
-                        </div>
-
-                        {/* Logo Section - Center */}
-                        <Link to="/" className="flex flex-col items-center group flex-shrink-0 mx-4 lg:mx-8">
-                            <svg className="w-8 h-4 mb-2 opacity-90" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                        {/* Logo Section - Left */}
+                        <Link to="/" className="flex flex-col items-start group flex-shrink-0">
+                            <svg className="w-8 h-4 mb-1 opacity-90" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 50 A 40 40 0 0 1 90 50 Z" fill="#DD6B4D" />
                             </svg>
-                            <span className="text-xl md:text-2xl font-serif text-white tracking-widest uppercase leading-none mb-1">
+                            <span className="text-xl md:text-2xl font-serif text-white tracking-widest uppercase leading-none">
                                 SUPREME
                             </span>
-                            <span className="text-xl md:text-2xl font-serif text-white tracking-widest uppercase leading-none mb-1">
+                            <span className="text-xl md:text-2xl font-serif text-white tracking-widest uppercase leading-none">
                                 RIVANA
                             </span>
                             <span className="text-[10px] md:text-xs font-serif text-supreme-gold tracking-[0.4em] uppercase leading-none">
@@ -68,13 +54,13 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
                             </span>
                         </Link>
 
-                        {/* Desktop Navigation - Right */}
-                        <div className="hidden lg:flex items-center space-x-8 flex-1 justify-end">
-                            {navLinks.slice(3).map((link) => (
+                        {/* Desktop Navigation - All links right of logo */}
+                        <div className="hidden lg:flex items-center gap-7 ml-auto">
+                            {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
                                     to={link.href}
-                                    className={`relative text-xs font-sans font-medium uppercase tracking-[0.15em] hover:text-supreme-gold transition-colors group py-2 ${location.pathname === link.href ? 'text-supreme-gold' : (isDarkMode ? 'text-white/80' : 'text-supreme-black/80')}`}
+                                    className={`relative text-xs font-sans font-medium uppercase tracking-[0.15em] hover:text-supreme-gold transition-colors group py-2 ${location.pathname === link.href ? 'text-supreme-gold' : 'text-white/80'}`}
                                 >
                                     {link.name}
                                     <span className={`absolute bottom-0 left-0 h-[1px] bg-supreme-gold transition-all duration-300 ${location.pathname === link.href ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
@@ -93,10 +79,10 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
                             >
                                 {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
                             </button>
-                            <div className="flex items-center gap-3 px-4 border-r border-white/10 group cursor-pointer bg-supreme-gold/5 rounded-lg py-1 border border-supreme-gold/20 hover:border-supreme-gold/40 transition-all duration-300">
-                                <img 
-                                    src="/rivana-rera-qr.png?v=1.0.2" 
-                                    alt="RERA QR" 
+                            <div className="flex items-center gap-3 px-4 group cursor-pointer bg-supreme-gold/5 rounded-lg py-1 border border-supreme-gold/20 hover:border-supreme-gold/40 transition-all duration-300">
+                                <img
+                                    src="/rivana-rera-qr.png?v=1.0.2"
+                                    alt="RERA QR"
                                     className="w-8 h-8 rounded shadow-lg border border-white/10 group-hover:scale-110 transition-transform duration-300"
                                 />
                                 <div className="flex flex-col items-end gap-1">
