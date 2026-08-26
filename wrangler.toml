@@ -1,10 +1,10 @@
 # Cloudflare Pages Deployment Configuration
-# NOTE: Bindings (KV, AI, R2) are managed via Cloudflare Dashboard API — not here.
-# The [ai], [[kv_namespaces]], [[r2_buckets]] blocks are not supported in Pages wrangler.toml
-# and cause deploy failures. Bindings confirmed active via API PATCH on the project.
-
 name = "supremeuniversal"
 pages_build_output_dir = "dist"
+
+[vars]
+NODE_VERSION = "24.x"
+NPM_VERSION = "10.x"
 
 compatibility_date = "2026-08-26"
 compatibility_flags = [ "nodejs_compat" ]
