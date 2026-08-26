@@ -56,21 +56,24 @@ export async function onRequestPost(context: {
             { role: 'user', content: message }
         ];
 
-        // Run Workers AI inference
-        const aiResponse = await env.AI.run('@cf/meta/llama-2-7b-chat-int8', { messages });
+        // Run Workers AI inference (Llama 3.1 8B Instruct)
+        const aiResponse = await env.AI.run('@cf/meta/llama-3.1-8b-instruct', { messages });
 
-        const reply = (aiResponse as { response: string }).response || 'I\'m here to help! Please call us at +91-7744009295 for detailed information.';
+        const reply = (aiResponse as { response?: string }).response || 'I\'m here to help! Please call us at +91-7744009295 for detailed information.';
 
         return new Response(JSON.stringify({
             success: true,
             reply: reply.trim()
         }), { status: 200, headers: corsHeaders });
 
-    } catch {
+    } catch (err: unknown) {
+        const errorMsg = err instanceof Error ? err.message : String(err);
+        console.error('Workers AI error:', errorMsg);
         return new Response(JSON.stringify({
             success: false,
-            reply: 'I\'m having trouble connecting right now. Please call us at +91-7744009295 or fill the enquiry form!'
-        }), { status: 500, headers: corsHeaders });
+            reply: 'Supreme Rivana offers luxury 2 & 3 BHK residences in Punawale starting from ₹94 Lakhs*. For floor plans and exclusive offers, please call +91-7744009295 or enquire now!',
+            debug: errorMsg
+        }), { status: 200, headers: corsHeaders });
     }
 }
 
