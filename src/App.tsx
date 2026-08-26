@@ -30,7 +30,7 @@ const NeighborhoodGuide = lazy(() => import('./components/NeighborhoodGuide'));
 const ROICalculator = lazy(() => import('./components/ROICalculator'));
 const ProximityIndex = lazy(() => import('./components/ProximityIndex'));
 const ProjectShowcase = lazy(() => import('./components/ProjectShowcase'));
-const MarketTicker = lazy(() => import('./components/MarketTicker'));
+
 const PropertyComparison = lazy(() => import('./components/PropertyComparison'));
 const Contact = lazy(() => import('./components/Contact'));
 const FAQ = lazy(() => import('./components/FAQ'));
@@ -132,12 +132,6 @@ function MainApp() {
   const [isLoading, setIsLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isBrochureModalOpen, setIsBrochureModalOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(true); // Default to dark for premium feel
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle('light-theme');
-  };
 
   useEffect(() => {
     // Initialize Lenis Smooth Scroll
@@ -176,13 +170,7 @@ function MainApp() {
       <ScrollProgress />
       <NoiseOverlay />
       <WhatsAppButton />
-      <Navbar 
-        onEnquire={() => setIsModalOpen(true)} 
-        onDownload={() => setIsBrochureModalOpen(true)} 
-        isDarkMode={isDarkMode}
-        onToggleTheme={toggleTheme}
-      />
-      <MarketTicker />
+      <Navbar onEnquire={() => setIsModalOpen(true)} />
       <Breadcrumbs />
       <Hero onEnquire={() => setIsModalOpen(true)} onDownload={() => setIsBrochureModalOpen(true)} />
       <Overview />

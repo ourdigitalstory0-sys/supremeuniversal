@@ -17,8 +17,8 @@ binding = "AI"
 # Advanced Cloudflare KV — Dynamic Pricing + Rate Limiting
 [[kv_namespaces]]
 binding = "PRICE_STORE"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
-preview_id = "REPLACE_WITH_YOUR_KV_PREVIEW_NAMESPACE_ID"
+id = "a56588d148fd4b55b59ba0d07fb1256c"
+preview_id = "9661d1155a5c4fde92fb5a1307795d29"
 
 # Advanced Cloudflare R2 Storage bindings
 # Bind your R2 media buckets for zero-egress asset hosting

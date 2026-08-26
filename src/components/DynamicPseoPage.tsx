@@ -15,7 +15,6 @@ import QuickEnquireModal from './QuickEnquireModal';
 import LeadPopup from './LeadPopup';
 import FloatingRERA from './FloatingRERA';
 import BrochureModal from './BrochureModal';
-import MarketTicker from './MarketTicker';
 import Breadcrumbs from './Breadcrumbs';
 
 // Lazy load layout sections
@@ -28,7 +27,6 @@ const DynamicPseoPage = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isBrochureModalOpen, setIsBrochureModalOpen] = useState(false);
-    const [isDarkMode, setIsDarkMode] = useState(true);
 
     useEffect(() => {
         const timer = setTimeout(() => setIsLoading(false), 1200);
@@ -39,7 +37,6 @@ const DynamicPseoPage = () => {
     if (!slug) return <Navigate to="/404" replace />;
 
     // Parse slug: config-type-in-location-theme
-    // Examples: 3bhk-apartments-in-wakad-price, 2bhk-flats-in-hinjewadi-reviews
     const regex = /^([a-z0-9]+)-([a-z0-9]+)-in-([a-z0-9-]+)-([a-z0-9-]+)$/;
     const match = slug.match(regex);
 
@@ -52,15 +49,9 @@ const DynamicPseoPage = () => {
     const propType = propertyTypes.find(t => t.id === parsedTypeId);
     const theme = themes.find(t => t.id === parsedThemeId);
 
-    // Strict validation to ensure no random paths generate garbage pages
     if (!locality || !config || !propType || !theme) {
         return <Navigate to="/404" replace />;
     }
-
-    const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode);
-        document.documentElement.classList.toggle('light-theme');
-    };
 
     // Generate semantic, custom keyword page copy (Pixel-hardened for SERP limits)
     const titleText = `${config.name} ${propType.name} in ${locality.name} (${theme.name})`;
@@ -162,13 +153,7 @@ const DynamicPseoPage = () => {
             <NoiseOverlay />
             <WhatsAppButton />
             
-            <Navbar 
-                onEnquire={() => setIsModalOpen(true)} 
-                onDownload={() => setIsBrochureModalOpen(true)} 
-                isDarkMode={isDarkMode}
-                onToggleTheme={toggleTheme}
-            />
-            <MarketTicker />
+            <Navbar onEnquire={() => setIsModalOpen(true)} />
 
             <div className="pt-24 md:pt-32">
                 <Breadcrumbs />

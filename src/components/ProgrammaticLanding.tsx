@@ -13,7 +13,6 @@ import QuickEnquireModal from './QuickEnquireModal';
 import LeadPopup from './LeadPopup';
 import FloatingRERA from './FloatingRERA';
 import BrochureModal from './BrochureModal';
-import MarketTicker from './MarketTicker';
 import { pseoRoutes } from '../data/pseoRoutes';
 
 // Lazy load standard sections
@@ -31,7 +30,6 @@ const ProgrammaticLanding = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isBrochureModalOpen, setIsBrochureModalOpen] = useState(false);
-    const [isDarkMode, setIsDarkMode] = useState(true);
 
     const routeData = pseoRoutes.find(r => r.path === pathname) || pseoRoutes[0];
 
@@ -40,11 +38,6 @@ const ProgrammaticLanding = () => {
         window.scrollTo(0, 0);
         return () => clearTimeout(timer);
     }, [pathname]);
-
-    const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode);
-        document.documentElement.classList.toggle('light-theme');
-    };
 
     const faqSchema = routeData.faqs && routeData.faqs.length > 0 ? {
         "@context": "https://schema.org",
@@ -78,13 +71,7 @@ const ProgrammaticLanding = () => {
             <ScrollProgress />
             <NoiseOverlay />
             <WhatsAppButton />
-            <Navbar 
-                onEnquire={() => setIsModalOpen(true)} 
-                onDownload={() => setIsBrochureModalOpen(true)} 
-                isDarkMode={isDarkMode}
-                onToggleTheme={toggleTheme}
-            />
-            <MarketTicker />
+            <Navbar onEnquire={() => setIsModalOpen(true)} />
             
             <Hero 
                 onEnquire={() => setIsModalOpen(true)} 

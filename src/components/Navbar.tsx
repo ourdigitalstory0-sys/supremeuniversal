@@ -1,15 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Phone, Moon, Sun } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 interface NavbarProps {
     onEnquire?: () => void;
-    onDownload?: () => void;
-    isDarkMode?: boolean;
-    onToggleTheme?: () => void;
 }
 
-const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProps) => {
+const Navbar = ({ onEnquire }: NavbarProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation();
@@ -34,68 +31,49 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
 
     return (
         <>
-            <nav className={`fixed w-full z-50 transition-all duration-700 ease-in-out border-b border-white/5 ${isScrolled ? 'bg-supreme-black/95 backdrop-blur-xl py-4 shadow-2xl' : 'bg-transparent py-5 lg:py-8'}`}>
+            <nav className={`fixed w-full z-50 transition-all duration-700 ease-in-out ${isScrolled ? 'bg-supreme-black/95 backdrop-blur-xl py-3 shadow-xl border-b border-white/5' : 'bg-transparent py-5 lg:py-7'}`}>
                 <div className="container mx-auto px-6 md:px-12">
-                    <div className="flex items-center gap-10 w-full">
+                    <div className="flex items-center w-full">
 
-                        {/* Logo Section - Left */}
-                        <Link to="/" className="flex flex-col items-start group flex-shrink-0">
-                            <svg className="w-8 h-4 mb-1 opacity-90" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                        {/* Logo — Left */}
+                        <Link to="/" className="flex flex-col items-start flex-shrink-0">
+                            <svg className="w-7 h-3.5 mb-0.5 opacity-90" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 50 A 40 40 0 0 1 90 50 Z" fill="#DD6B4D" />
                             </svg>
-                            <span className="text-xl md:text-2xl font-serif text-white tracking-widest uppercase leading-none">
+                            <span className="text-lg md:text-xl font-serif text-white tracking-widest uppercase leading-none">
                                 SUPREME
                             </span>
-                            <span className="text-xl md:text-2xl font-serif text-white tracking-widest uppercase leading-none">
+                            <span className="text-lg md:text-xl font-serif text-white tracking-widest uppercase leading-none">
                                 RIVANA
                             </span>
-                            <span className="text-[10px] md:text-xs font-serif text-supreme-gold tracking-[0.4em] uppercase leading-none">
+                            <span className="text-[9px] font-serif text-supreme-gold tracking-[0.4em] uppercase leading-none">
                                 PUNAWALE
                             </span>
                         </Link>
 
-                        {/* Desktop Navigation - All links right of logo */}
-                        <div className="hidden lg:flex items-center gap-7 ml-auto">
+                        {/* Desktop Nav — Right */}
+                        <div className="hidden lg:flex items-center gap-8 ml-auto">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
                                     to={link.href}
-                                    className={`relative text-xs font-sans font-medium uppercase tracking-[0.15em] hover:text-supreme-gold transition-colors group py-2 ${location.pathname === link.href ? 'text-supreme-gold' : 'text-white/80'}`}
+                                    className={`relative text-[11px] font-sans font-medium uppercase tracking-[0.18em] hover:text-supreme-gold transition-colors duration-300 group py-1 ${location.pathname === link.href ? 'text-supreme-gold' : 'text-white/70'}`}
                                 >
                                     {link.name}
-                                    <span className={`absolute bottom-0 left-0 h-[1px] bg-supreme-gold transition-all duration-300 ${location.pathname === link.href ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                                    <span className={`absolute bottom-0 left-0 h-px bg-supreme-gold transition-all duration-300 ${location.pathname === link.href ? 'w-full' : 'w-0 group-hover:w-full'}`} />
                                 </Link>
                             ))}
-                            <button
-                                onClick={onDownload}
-                                className="text-[11px] font-sans font-semibold uppercase tracking-widest text-white/60 hover:text-supreme-gold transition-colors"
-                            >
-                                Brochure
-                            </button>
-                            <button
-                                onClick={onToggleTheme}
-                                className="p-2 text-supreme-gold hover:bg-supreme-gold/10 rounded-full transition-colors"
-                                aria-label="Toggle Theme"
-                            >
-                                {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
-                            </button>
-                            <div className="flex items-center gap-3 px-4 group cursor-pointer bg-supreme-gold/5 rounded-lg py-1 border border-supreme-gold/20 hover:border-supreme-gold/40 transition-all duration-300">
-                                <img
-                                    src="/rivana-rera-qr.png?v=1.0.2"
-                                    alt="RERA QR"
-                                    className="w-8 h-8 rounded shadow-lg border border-white/10 group-hover:scale-110 transition-transform duration-300"
-                                />
-                                <div className="flex flex-col items-end gap-1">
-                                    <span className="text-[9px] font-bold text-supreme-gold uppercase tracking-tighter leading-none animate-pulse">MahaRERA Reg.</span>
-                                    <span className="text-[11px] font-bold text-white tracking-tighter leading-none">PM1261012502656</span>
-                                </div>
-                            </div>
+
+                            {/* Divider */}
+                            <span className="w-px h-5 bg-white/10" />
+
+                            {/* Enquire CTA */}
                             <button
                                 onClick={onEnquire}
-                                className="flex items-center gap-2 border border-supreme-gold/50 text-supreme-gold px-5 py-2 rounded-full hover:bg-supreme-gold hover:text-supreme-black transition-all duration-500 text-[11px] font-sans tracking-[0.1em] uppercase font-semibold"
+                                className="flex items-center gap-2 bg-supreme-gold text-white px-5 py-2 text-[11px] font-sans font-semibold tracking-[0.15em] uppercase hover:bg-white hover:text-supreme-black transition-all duration-300"
                             >
-                                <Phone size={14} />
-                                <span>Enquire</span>
+                                <Phone size={13} />
+                                Enquire Now
                             </button>
                         </div>
 
@@ -105,7 +83,7 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
                             onClick={() => setIsOpen(!isOpen)}
                             aria-label="Toggle Navigation Menu"
                         >
-                            {isOpen ? <X size={28} /> : <Menu size={28} />}
+                            {isOpen ? <X size={26} /> : <Menu size={26} />}
                         </button>
                     </div>
                 </div>
@@ -125,17 +103,6 @@ const Navbar = ({ onEnquire, onDownload, isDarkMode, onToggleTheme }: NavbarProp
                             {link.name}
                         </Link>
                     ))}
-                    <button
-                        onClick={() => {
-                            setIsOpen(false);
-                            onToggleTheme?.();
-                        }}
-                        className={`text-2xl font-serif flex items-center gap-3 transition-all duration-500 tracking-wide ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'} ${isDarkMode ? 'text-white' : 'text-supreme-black'}`}
-                        style={{ transitionDelay: '900ms' }}
-                    >
-                        {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
-                        <span>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
-                    </button>
                     <button
                         onClick={() => {
                             setIsOpen(false);

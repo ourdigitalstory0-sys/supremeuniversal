@@ -16,7 +16,6 @@ import QuickEnquireModal from './QuickEnquireModal';
 import LeadPopup from './LeadPopup';
 import FloatingRERA from './FloatingRERA';
 import BrochureModal from './BrochureModal';
-import MarketTicker from './MarketTicker';
 import Breadcrumbs from './Breadcrumbs';
 
 // Lazy load layout sections
@@ -29,7 +28,6 @@ const DynamicProjectPseoPage = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isBrochureModalOpen, setIsBrochureModalOpen] = useState(false);
-    const [isDarkMode, setIsDarkMode] = useState(true);
 
     useEffect(() => {
         const timer = setTimeout(() => setIsLoading(false), 1200);
@@ -45,7 +43,7 @@ const DynamicProjectPseoPage = () => {
 
     // Extract remaining part of slug before the theme
     const remaining = slug.substring(0, slug.length - theme.id.length - 1);
-    
+
     // Find the last dash index to separate config and project ID
     const lastDashIndex = remaining.lastIndexOf('-');
     if (lastDashIndex === -1) return <Navigate to="/404" replace />;
@@ -54,7 +52,7 @@ const DynamicProjectPseoPage = () => {
     const projectId = remaining.substring(0, lastDashIndex);
 
     const project = portfolioProjects.find(p => p.id === projectId);
-    
+
     // Override 'penthouse' config lookup for Supreme Villagio to 'townhouses'
     let config = configs.find(c => c.id === configId);
     if (projectId === 'supreme-villagio') {
@@ -65,7 +63,6 @@ const DynamicProjectPseoPage = () => {
                 description: 'Mediterranean style row houses and luxury twin townhouses featuring private garden lawns.'
             };
         } else if (configId === 'penthouse') {
-            // Block penthouse configurations for Supreme Villagio
             config = undefined;
         }
     }
@@ -75,12 +72,6 @@ const DynamicProjectPseoPage = () => {
         return <Navigate to="/404" replace />;
     }
 
-    const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode);
-        document.documentElement.classList.toggle('light-theme');
-    };
-
-    // Generate custom keywords copy
     const titleText = `${project.name} ${config.name} ${theme.name} | Supreme Universal`;
     const headingText = `${project.name} ${config.name}`;
     
@@ -181,13 +172,7 @@ const DynamicProjectPseoPage = () => {
             <NoiseOverlay />
             <WhatsAppButton />
             
-            <Navbar 
-                onEnquire={() => setIsModalOpen(true)} 
-                onDownload={() => setIsBrochureModalOpen(true)} 
-                isDarkMode={isDarkMode}
-                onToggleTheme={toggleTheme}
-            />
-            <MarketTicker />
+            <Navbar onEnquire={() => setIsModalOpen(true)} />
 
             <div className="pt-24 md:pt-32">
                 <Breadcrumbs />
