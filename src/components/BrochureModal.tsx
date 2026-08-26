@@ -140,6 +140,32 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                                                         required
                                                         className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-supreme-gold transition-colors font-sans text-sm"
                                                     />
+                                                    {/* Configuration Selector */}
+                                                    <div className="pt-1">
+                                                        <p className="text-white/40 text-xs uppercase tracking-widest mb-3">Interested Configuration *</p>
+                                                        <div className="flex flex-wrap gap-4">
+                                                            {['2 BHK', '3 BHK', 'Both (2 & 3 BHK)'].map((config) => (
+                                                                <label key={config} className="flex items-center gap-2 cursor-pointer group">
+                                                                    <input
+                                                                        type="radio"
+                                                                        name="interest"
+                                                                        value={config}
+                                                                        required
+                                                                        className="accent-supreme-gold w-4 h-4"
+                                                                    />
+                                                                    <span className="text-white/70 text-xs font-sans group-hover:text-white transition-colors">{config}</span>
+                                                                </label>
+                                                            ))}
+                                                        </div>
+                                                    </div>
+                                                    {/* Site Visit Date */}
+                                                    <input
+                                                        type="date"
+                                                        name="visit_date"
+                                                        min={new Date().toISOString().split('T')[0]}
+                                                        placeholder="Tentative Site Visit Date"
+                                                        className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white/70 focus:outline-none focus:border-supreme-gold transition-colors font-sans text-sm [color-scheme:dark]"
+                                                    />
                                                 </div>
                                                 <button
                                                     type="submit"

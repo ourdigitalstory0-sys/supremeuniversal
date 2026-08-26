@@ -208,6 +208,38 @@ const LeadPopup = () => {
                                         </label>
                                     </div>
 
+                                    {/* Configuration Selector */}
+                                    <div className="pt-1">
+                                        <p className="text-white/40 text-[10px] uppercase tracking-widest mb-2">Interested Configuration *</p>
+                                        <div className="flex flex-wrap gap-3">
+                                            {['2 BHK', '3 BHK', 'Both (2 & 3 BHK)'].map((config) => (
+                                                <label key={config} className="flex items-center gap-2 cursor-pointer group">
+                                                    <input
+                                                        type="radio"
+                                                        name="interest"
+                                                        value={config}
+                                                        required
+                                                        className="accent-supreme-gold w-3.5 h-3.5"
+                                                    />
+                                                    <span className="text-white/70 text-[11px] font-sans group-hover:text-white transition-colors">{config}</span>
+                                                </label>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    {/* Site Visit Date */}
+                                    <div className="relative">
+                                        <input
+                                            type="date"
+                                            name="visit_date"
+                                            min={new Date().toISOString().split('T')[0]}
+                                            className="w-full bg-transparent border-b border-white/20 py-2 text-white/70 focus:outline-none focus:border-supreme-gold transition-colors font-light text-sm [color-scheme:dark]"
+                                        />
+                                        <label className="absolute left-0 -top-3.5 text-white/40 text-[10px] uppercase tracking-widest">
+                                            Tentative Site Visit Date
+                                        </label>
+                                    </div>
+
                                     <button
                                         type="submit"
                                         disabled={isSubmitting || submitStatus === 'success'}
