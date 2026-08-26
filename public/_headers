@@ -2,13 +2,16 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Cache control for image files
+# Cache control + WebP negotiation for image files
 /*.jpg
   Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept
 /*.png
   Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept
 /*.webp
   Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept
 
 # Cache control and MIME type overrides for sitemaps
 /sitemap.xml

@@ -18,6 +18,7 @@ import NoiseOverlay from './components/NoiseOverlay';
 import QuickEnquireModal from './components/QuickEnquireModal';
 import LeadPopup from './components/LeadPopup';
 import FloatingRERA from './components/FloatingRERA';
+import ChatWidget from './components/ChatWidget';
 
 // Lazy load below-the-fold components to reduce initial bundle size
 const AuthoritySection = lazy(() => import('./components/AuthoritySection'));
@@ -205,6 +206,7 @@ function MainApp() {
       <QuickEnquireModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <BrochureModal isOpen={isBrochureModalOpen} onClose={() => setIsBrochureModalOpen(false)} />
       <LeadPopup />
+      <ChatWidget />
       <MobileStickyBar onEnquire={() => setIsModalOpen(true)} />
     </div>
   );
