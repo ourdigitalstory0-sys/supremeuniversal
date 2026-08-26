@@ -1,9 +1,20 @@
-# Cache control for asset chunks
+# ─── HTML Shell — Edge Cache (Cloudflare CDN caches, origin rested) ───────────
+/
+  Cache-Control: public, max-age=0, s-maxage=60, stale-while-revalidate=86400
+  Link: <https://cdn.supremeuniversal.com/media/Supreme-Rivana-Web-Banner_fzjUZ4.jpeg>; rel=preload; as=image; fetchpriority=high
+
+/*.html
+  Cache-Control: public, max-age=0, s-maxage=60, stale-while-revalidate=86400
+
+# ─── JS/CSS Asset Chunks — Immutable (content-hashed filenames) ───────────────
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Cache control + WebP negotiation for image files
+# ─── Images — Long cache + WebP negotiation via Vary: Accept ─────────────────
 /*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept
+/*.jpeg
   Cache-Control: public, max-age=31536000, immutable
   Vary: Accept
 /*.png
@@ -12,8 +23,11 @@
 /*.webp
   Cache-Control: public, max-age=31536000, immutable
   Vary: Accept
+/*.avif
+  Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept
 
-# Cache control and MIME type overrides for sitemaps
+# ─── Sitemaps ─────────────────────────────────────────────────────────────────
 /sitemap.xml
   Cache-Control: public, max-age=3600, must-revalidate
   Content-Type: application/xml
@@ -27,16 +41,17 @@
   Cache-Control: public, max-age=3600, must-revalidate
   Content-Type: application/xml
 
-# Cache control and MIME type overrides for robots.txt
+# ─── Robots ───────────────────────────────────────────────────────────────────
 /robots.txt
   Cache-Control: public, max-age=3600, must-revalidate
   Content-Type: text/plain
 
-# Global Security Headers
+# ─── Global Security + Performance Headers ────────────────────────────────────
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.google.com https://*.googleapis.com https://*.google-analytics.com https://*.googletagmanager.com https://maps.googleapis.com https://api.web3forms.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://*.google.com https://*.google-analytics.com https://maps.gstatic.com https://maps.googleapis.com https://cdn.supremeuniversal.com https://www.supremeuniversal.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.google-analytics.com https://api.web3forms.com; frame-src 'self' https://www.google.com https://maps.google.com;
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.google.com https://*.googleapis.com https://*.google-analytics.com https://*.googletagmanager.com https://maps.googleapis.com https://api.web3forms.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://*.google.com https://*.google-analytics.com https://maps.gstatic.com https://maps.googleapis.com https://cdn.supremeuniversal.com https://www.supremeuniversal.com https://imagedelivery.net; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://*.google-analytics.com https://api.web3forms.com https://cloudflareinsights.com https://static.cloudflareinsights.com; frame-src 'self' https://www.google.com https://maps.google.com; worker-src 'self' blob:;
