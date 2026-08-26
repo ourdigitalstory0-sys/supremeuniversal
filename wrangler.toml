@@ -1,0 +1,18 @@
+# Cloudflare Pages Advanced Deployment Configuration
+name = "supremeuniversal"
+pages_build_output_dir = "dist"
+
+[vars]
+NODE_VERSION = "20.x"
+NPM_VERSION = "10.x"
+
+# Advanced Edge compatibility variables
+compatibility_date = "2026-08-26"
+compatibility_flags = [ "nodejs_compat" ]
+
+# Advanced Cloudflare R2 Storage bindings
+# Bind your R2 media buckets for zero-egress asset hosting
+[[r2_buckets]]
+binding = "ASSETS_BUCKET"
+bucket_name = "supreme-universal-media"
+preview_bucket_name = "supreme-universal-media-preview"
