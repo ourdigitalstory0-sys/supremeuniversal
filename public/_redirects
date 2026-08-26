@@ -1,0 +1,21 @@
+# Legacy redirects
+/supreme-riverside-punawale / 301
+/supreme-riverside-punawale-overview /supreme-rivana-punawale-overview 301
+/supreme-riverside-punawale-amenities /supreme-rivana-punawale-amenities 301
+/supreme-riverside-punawale-floor-plans /supreme-rivana-punawale-floor-plans 301
+/supreme-riverside-punawale-gallery /supreme-rivana-punawale-gallery 301
+/supreme-riverside-punawale-location /supreme-rivana-punawale-location 301
+/supreme-riverside-punawale-faq /supreme-rivana-punawale-faq 301
+/supreme-riverside-punawale-contact /supreme-rivana-punawale-contact 301
+/supreme-rivana-overview /supreme-rivana-punawale-overview 301
+/supreme-rivana-amenities /supreme-rivana-punawale-amenities 301
+/supreme-rivana-floor-plans /supreme-rivana-punawale-floor-plans 301
+/supreme-rivana-gallery /supreme-rivana-punawale-gallery 301
+/supreme-rivana-location /supreme-rivana-punawale-location 301
+/supreme-rivana-faq /supreme-rivana-punawale-faq 301
+/supreme-rivana-contact /supreme-rivana-punawale-contact 301
+/supreme-rivana-price-list /supreme-rivana-punawale-price-list 301
+/supreme-rivana-comparison /supreme-rivana-punawale-comparison 301
+
+# SPA Routing Fallback
+/* /index.html 200
