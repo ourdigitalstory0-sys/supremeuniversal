@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Award, ShieldCheck, Trophy, History } from 'lucide-react';
+import { Award, ShieldCheck, Trophy, History, Star } from 'lucide-react';
 
 const achievements = [
     {
@@ -34,12 +34,16 @@ const AuthoritySection = () => {
         "image": "https://www.supremeuniversal.com/front/img/logo.svg",
         "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "4.8",
+            "ratingValue": "4.9",
             "bestRating": "5",
             "worstRating": "1",
             "ratingCount": "2450",
             "reviewCount": "1870"
         },
+        "hasMap": "https://www.google.com/maps/place/Supreme+Rivana/@18.6379338,73.74336,879m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2bb154a1af8d5:0xde1ba7d3dc6ba2d6!8m2!3d18.6379338!4d73.74336!16s%2Fg%2F11n9ckw71s",
+        "sameAs": [
+            "https://maps.google.com/?cid=16004655655787471574"
+        ],
         "award": [
             "Realty Plus Excellence Award 2023",
             "Property Guru Asia Awards",
@@ -98,6 +102,28 @@ const AuthoritySection = () => {
                             </p>
                         </motion.div>
                     ))}
+                </div>
+
+                {/* Google Verified Review & Rating Badge */}
+                <div className="mt-16 text-center">
+                    <div className="inline-flex flex-wrap items-center justify-center gap-4 bg-white/5 border border-supreme-gold/30 px-6 py-4 rounded-xl backdrop-blur-md">
+                        <div className="flex items-center gap-1.5 text-yellow-400">
+                            {[...Array(5)].map((_, i) => (
+                                <Star key={i} className="w-4 h-4 fill-current" />
+                            ))}
+                        </div>
+                        <span className="text-sm font-semibold text-white">4.9 / 5 Rating</span>
+                        <span className="text-white/40">•</span>
+                        <span className="text-xs text-white/70 font-light">Verified on Google Reviews</span>
+                        <a
+                            href="https://search.google.com/local/writereview?placeid=ChIJ1fgaShW7wjsR1qJr3NOnG94"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ml-2 px-3 py-1.5 bg-supreme-gold text-supreme-black text-[10px] font-bold uppercase tracking-wider hover:bg-white transition-colors rounded"
+                        >
+                            Rate Us on Google &rarr;
+                        </a>
+                    </div>
                 </div>
 
                 {/* Awards Bar */}

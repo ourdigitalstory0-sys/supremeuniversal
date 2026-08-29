@@ -20,6 +20,7 @@ import Breadcrumbs from './Breadcrumbs';
 // Lazy load layout sections
 const Amenities = lazy(() => import('./Amenities'));
 const LocationSection = lazy(() => import('./Location'));
+const ROICalculator = lazy(() => import('./ROICalculator'));
 const Footer = lazy(() => import('./Footer'));
 
 const DynamicPseoPage = () => {
@@ -361,6 +362,11 @@ const DynamicPseoPage = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Interactive Investment & ROI Growth Calculator */}
+            <Suspense fallback={<div className="h-40 bg-white" />}>
+                <ROICalculator onEnquire={() => setIsModalOpen(true)} />
+            </Suspense>
 
             {/* Amenities Section */}
             <Suspense fallback={<div className="h-40 bg-white" />}>
