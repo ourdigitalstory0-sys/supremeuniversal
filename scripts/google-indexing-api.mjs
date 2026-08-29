@@ -56,6 +56,36 @@ function getUrlsFromSitemap() {
         }
     }
 
+    // High-priority core & tier-1 intent pages to guarantee daily indexation
+    const topPriorityList = [
+        'https://www.supreme-universal.in/',
+        'https://www.supreme-universal.in/pune-real-estate',
+        'https://www.supreme-universal.in/supreme-rivana-punawale-price-list',
+        'https://www.supreme-universal.in/supreme-rivana-punawale-overview',
+        'https://www.supreme-universal.in/supreme-rivana-punawale-floor-plan',
+        'https://www.supreme-universal.in/pune-real-estate/2bhk-apartments-in-punawale-price',
+        'https://www.supreme-universal.in/pune-real-estate/3bhk-apartments-in-punawale-price',
+        'https://www.supreme-universal.in/pune-real-estate/2bhk-apartments-in-wakad-price',
+        'https://www.supreme-universal.in/pune-real-estate/3bhk-apartments-in-wakad-price',
+        'https://www.supreme-universal.in/pune-real-estate/2bhk-apartments-in-hinjewadi-price',
+        'https://www.supreme-universal.in/pune-real-estate/3bhk-apartments-in-hinjewadi-price',
+        'https://www.supreme-universal.in/pune-real-estate/2bhk-apartments-in-baner-price',
+        'https://www.supreme-universal.in/pune-real-estate/3bhk-apartments-in-baner-price',
+        'https://www.supreme-universal.in/pune-real-estate/2bhk-apartments-in-balewadi-price',
+        'https://www.supreme-universal.in/pune-real-estate/3bhk-apartments-in-balewadi-price',
+        'https://www.supreme-universal.in/pune-real-estate/2bhk-apartments-in-tathawade-price',
+        'https://www.supreme-universal.in/pune-real-estate/3bhk-apartments-in-tathawade-price',
+        'https://www.supreme-universal.in/pune-real-estate/2bhk-apartments-in-ravet-price',
+        'https://www.supreme-universal.in/pune-real-estate/3bhk-apartments-in-ravet-price',
+        'https://www.supreme-universal.in/pune-real-estate/2bhk-apartments-in-kiwale-price',
+        'https://www.supreme-universal.in/pune-real-estate/3bhk-apartments-in-kiwale-price',
+        'https://www.supreme-universal.in/pune-real-estate/2bhk-apartments-in-mahalunge-price',
+        'https://www.supreme-universal.in/pune-real-estate/3bhk-apartments-in-mahalunge-price',
+        'https://www.supreme-universal.in/pune-real-estate/2bhk-apartments-in-pimple-saudagar-price',
+        'https://www.supreme-universal.in/pune-real-estate/3bhk-apartments-in-pimple-saudagar-price',
+    ];
+    topPriorityList.forEach(u => urls.add(u));
+
     const urlArray = Array.from(urls);
     if (urlArray.length === 0) {
         return ['https://www.supreme-universal.in/'];

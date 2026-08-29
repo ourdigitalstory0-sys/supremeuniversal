@@ -1,5 +1,5 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Check, Download, HelpCircle } from 'lucide-react';
 import { portfolioProjects } from '../data/portfolioProjects';
@@ -277,6 +277,97 @@ const DynamicProjectPseoPage = () => {
                                 <span className="text-supreme-gold font-serif text-base">{item.dist}</span>
                             </div>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ─── Internal Linking Mesh (Project & Portfolio Hub) ─── */}
+            <section className="py-16 bg-white border-b border-gray-200/60 text-supreme-black">
+                <div className="container mx-auto px-6 max-w-6xl">
+                    <div className="mb-10 text-center">
+                        <span className="text-supreme-gold font-sans font-bold uppercase tracking-[0.2em] text-xs mb-2 block">
+                            Portfolio Navigation &amp; Typology Network
+                        </span>
+                        <h3 className="text-2xl md:text-4xl font-serif">
+                            Explore {project.name} &amp; Pune Developments
+                        </h3>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {/* Cluster 1: Other Configurations in this Project */}
+                        <div className="bg-gray-50/70 p-6 rounded-xl border border-gray-200/80 shadow-sm hover:border-supreme-gold/50 transition-colors">
+                            <h4 className="font-serif text-lg text-supreme-black mb-4 border-b border-gray-200 pb-3 flex items-center justify-between">
+                                <span>{project.name} Layouts</span>
+                                <span className="text-[10px] text-supreme-gold font-sans uppercase tracking-wider font-semibold">Configs</span>
+                            </h4>
+                            <ul className="space-y-2.5">
+                                {configs.filter(c => c.id !== configId).slice(0, 5).map(c => (
+                                    <li key={c.id}>
+                                        <Link 
+                                            to={`/pune-projects/${projectId}-${c.id}-${theme.id}`}
+                                            className="text-xs text-gray-600 hover:text-supreme-gold flex items-center justify-between py-1 transition-colors group"
+                                        >
+                                            <span className="group-hover:translate-x-1 transition-transform">{project.name} {c.name}</span>
+                                            <span className="text-[10px] text-gray-400 font-mono">&rarr;</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Cluster 2: Other Supreme Developments in Pune */}
+                        <div className="bg-gray-50/70 p-6 rounded-xl border border-gray-200/80 shadow-sm hover:border-supreme-gold/50 transition-colors">
+                            <h4 className="font-serif text-lg text-supreme-black mb-4 border-b border-gray-200 pb-3 flex items-center justify-between">
+                                <span>Supreme Universal Landmarks</span>
+                                <span className="text-[10px] text-supreme-gold font-sans uppercase tracking-wider font-semibold">Projects</span>
+                            </h4>
+                            <ul className="space-y-2.5">
+                                {portfolioProjects.filter(p => p.id !== projectId).slice(0, 5).map(p => (
+                                    <li key={p.id}>
+                                        <Link 
+                                            to={`/pune-projects/${p.id}-${configId}-${theme.id}`}
+                                            className="text-xs text-gray-600 hover:text-supreme-gold flex items-center justify-between py-1 transition-colors group"
+                                        >
+                                            <span className="group-hover:translate-x-1 transition-transform">{p.name} ({p.location.split(',')[0]})</span>
+                                            <span className="text-[10px] text-gray-400 font-mono">&rarr;</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Cluster 3: Intent Guides for this Project */}
+                        <div className="bg-gray-50/70 p-6 rounded-xl border border-gray-200/80 shadow-sm hover:border-supreme-gold/50 transition-colors">
+                            <h4 className="font-serif text-lg text-supreme-black mb-4 border-b border-gray-200 pb-3 flex items-center justify-between">
+                                <span>{project.name} Resource Guides</span>
+                                <span className="text-[10px] text-supreme-gold font-sans uppercase tracking-wider font-semibold">Guides</span>
+                            </h4>
+                            <ul className="space-y-2.5">
+                                {themes.filter(t => t.id !== theme.id).slice(0, 5).map(t => (
+                                    <li key={t.id}>
+                                        <Link 
+                                            to={`/pune-projects/${projectId}-${configId}-${t.id}`}
+                                            className="text-xs text-gray-600 hover:text-supreme-gold flex items-center justify-between py-1 transition-colors group"
+                                        >
+                                            <span className="group-hover:translate-x-1 transition-transform">{project.name} {t.name}</span>
+                                            <span className="text-[10px] text-gray-400 font-mono">&rarr;</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Master Directory Link */}
+                    <div className="mt-10 pt-6 border-t border-gray-200 flex flex-wrap items-center justify-between gap-4 text-xs text-gray-500">
+                        <span>Viewing: <strong className="text-gray-900">{project.name} {config.name} ({theme.name})</strong></span>
+                        <Link 
+                            to="/pune-real-estate"
+                            className="text-supreme-gold hover:underline font-semibold flex items-center gap-1.5"
+                        >
+                            <span>Browse All 50+ Pune Real Estate Micro-Markets &amp; Directory Hub</span>
+                            <span>&rarr;</span>
+                        </Link>
                     </div>
                 </div>
             </section>

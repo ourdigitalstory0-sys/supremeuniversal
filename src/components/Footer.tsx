@@ -78,10 +78,10 @@ const Footer = () => {
                          </ul>
                      </div>
  
-                     {/* Pune Real Estate Hub */}
                      <div className="lg:col-span-2 lg:col-start-3 mt-10 lg:mt-0">
                          <h5 className="text-white font-sans font-semibold uppercase tracking-[0.2em] text-xs mb-8">Pune Hub</h5>
                          <ul className="space-y-4 text-white/50 font-sans font-light text-[11px] uppercase tracking-wider">
+                             <li><Link to="/pune-real-estate" className="text-supreme-gold font-semibold hover:underline flex items-center gap-1">Directory Hub &rarr;</Link></li>
                              <li><Link to="/apartments-near-hinjewadi-it-park-pune" className="hover:text-supreme-gold transition-colors duration-300">2 BHK Hinjewadi</Link></li>
                              <li><Link to="/punawale-real-estate-market-trends" className="hover:text-supreme-gold transition-colors duration-300">3 BHK Wakad</Link></li>
                              <li><Link to="/luxury-apartments-pune-real-estate-market" className="hover:text-supreme-gold transition-colors duration-300">4 BHK Baner</Link></li>

@@ -1,5 +1,5 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Check, Download, HelpCircle } from 'lucide-react';
 import { localities, configs, propertyTypes, themes } from '../data/punePseoData';
@@ -197,16 +197,37 @@ const DynamicPseoPage = () => {
                                 While {locality.name} offers various options, <strong>Supreme Rivana Punawale</strong> provides a superior township alternative. Sitting on a 15-acre riverfront plot with 31-storey towers and only 6 units per floor, Supreme Rivana delivers better privacy, ventilation, and resort-level amenities compared to standalone plots in {locality.name}.
                             </p>
 
-                            <div className="grid grid-cols-2 gap-6 pt-6 border-t border-gray-100">
-                                <div>
-                                    <span className="block text-3xl font-serif text-supreme-gold mb-1">{locality.nearbyIT}</span>
-                                    <span className="text-xs uppercase tracking-wider text-gray-400">To Hinjewadi IT Park</span>
+                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-gray-100">
+                                <div className="p-3 bg-gray-50 rounded-lg">
+                                    <span className="block text-xl font-serif text-supreme-gold mb-0.5">{locality.nearbyIT}</span>
+                                    <span className="text-[10px] uppercase tracking-wider text-gray-500">To Hinjewadi IT</span>
                                 </div>
-                                <div>
-                                    <span className="block text-3xl font-serif text-supreme-gold mb-1">{locality.highwayDistance}</span>
-                                    <span className="text-xs uppercase tracking-wider text-gray-400">To NH48 Expressway</span>
+                                <div className="p-3 bg-gray-50 rounded-lg">
+                                    <span className="block text-xl font-serif text-supreme-gold mb-0.5">{locality.highwayDistance}</span>
+                                    <span className="text-[10px] uppercase tracking-wider text-gray-500">To Expressway</span>
+                                </div>
+                                <div className="p-3 bg-gray-50 rounded-lg">
+                                    <span className="block text-xl font-serif text-supreme-gold mb-0.5">{locality.rentalYield || '4.8%'}</span>
+                                    <span className="text-[10px] uppercase tracking-wider text-gray-500">Avg Rental Yield</span>
+                                </div>
+                                <div className="p-3 bg-gray-50 rounded-lg">
+                                    <span className="block text-xl font-serif text-supreme-gold mb-0.5">{locality.avgRate.split(' ')[0]}</span>
+                                    <span className="text-[10px] uppercase tracking-wider text-gray-500">Starting Rate</span>
                                 </div>
                             </div>
+
+                            {locality.landmarks && locality.landmarks.length > 0 && (
+                                <div className="pt-2">
+                                    <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider block mb-2">Key Micro-Market Landmarks:</span>
+                                    <div className="flex flex-wrap gap-2">
+                                        {locality.landmarks.map((lm, i) => (
+                                            <span key={i} className="text-xs px-2.5 py-1 bg-gray-100 text-gray-700 rounded-full font-sans">
+                                                📍 {lm}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </div>
 
                         {/* Conversion Box */}
@@ -226,7 +247,7 @@ const DynamicPseoPage = () => {
                                 </li>
                                 <li className="flex items-center gap-3 text-sm text-gray-600">
                                     <Check className="w-4 h-4 text-supreme-gold" />
-                                    Waterfront Promenade & Skywalk
+                                    Waterfront Promenade &amp; Skywalk
                                 </li>
                                 <li className="flex items-center gap-3 text-sm text-gray-600">
                                     <Check className="w-4 h-4 text-supreme-gold" />
@@ -236,12 +257,107 @@ const DynamicPseoPage = () => {
 
                             <button
                                 onClick={() => setIsModalOpen(true)}
-                                className="w-full flex items-center justify-between bg-supreme-black text-white px-8 py-5 text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-supreme-gold transition-all duration-500 group"
+                                className="w-full flex items-center justify-between bg-supreme-black text-white px-8 py-5 text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-supreme-gold transition-all duration-500 group cursor-pointer"
                             >
-                                Get Price & Layout Details
+                                Get Price &amp; Layout Details
                                 <Download className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
                             </button>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ─── Internal Linking Mesh (Google Rank #1 Crawl Architecture) ─── */}
+            <section className="py-16 bg-gray-50/60 border-t border-b border-gray-200/60 text-supreme-black">
+                <div className="container mx-auto px-6 max-w-6xl">
+                    <div className="mb-10 text-center">
+                        <span className="text-supreme-gold font-sans font-bold uppercase tracking-[0.2em] text-xs mb-2 block">
+                            Internal Real Estate Mesh &amp; Cross-Market Hub
+                        </span>
+                        <h3 className="text-2xl md:text-4xl font-serif">
+                            Explore {locality.name} Real Estate Network
+                        </h3>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {/* Cluster 1: Other Configurations in this Locality */}
+                        <div className="bg-white p-6 rounded-xl border border-gray-200/80 shadow-sm hover:border-supreme-gold/50 transition-colors">
+                            <h4 className="font-serif text-lg text-supreme-black mb-4 border-b border-gray-100 pb-3 flex items-center justify-between">
+                                <span>Other Typologies in {locality.name}</span>
+                                <span className="text-[10px] text-supreme-gold font-sans uppercase tracking-wider font-semibold">Configs</span>
+                            </h4>
+                            <ul className="space-y-2.5">
+                                {configs.filter(c => c.id !== parsedConfigId).slice(0, 5).map(c => (
+                                    <li key={c.id}>
+                                        <Link 
+                                            to={`/pune-real-estate/${c.id}-${parsedTypeId}-in-${parsedLocId}-${parsedThemeId}`}
+                                            className="text-xs text-gray-600 hover:text-supreme-gold flex items-center justify-between py-1 transition-colors group"
+                                        >
+                                            <span className="group-hover:translate-x-1 transition-transform">{c.name} {propType.name} in {locality.name}</span>
+                                            <span className="text-[10px] text-gray-400 font-mono">&rarr;</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Cluster 2: Neighboring Micro-Markets */}
+                        <div className="bg-white p-6 rounded-xl border border-gray-200/80 shadow-sm hover:border-supreme-gold/50 transition-colors">
+                            <h4 className="font-serif text-lg text-supreme-black mb-4 border-b border-gray-100 pb-3 flex items-center justify-between">
+                                <span>Neighboring Micro-Markets</span>
+                                <span className="text-[10px] text-supreme-gold font-sans uppercase tracking-wider font-semibold">Nearby</span>
+                            </h4>
+                            <ul className="space-y-2.5">
+                                {(locality.nearbyLocalities || ['tathawade', 'wakad', 'hinjewadi', 'ravet']).map(neighborId => {
+                                    const neighbor = localities.find(l => l.id === neighborId);
+                                    if (!neighbor) return null;
+                                    return (
+                                        <li key={neighborId}>
+                                            <Link 
+                                                to={`/pune-real-estate/${parsedConfigId}-${parsedTypeId}-in-${neighborId}-${parsedThemeId}`}
+                                                className="text-xs text-gray-600 hover:text-supreme-gold flex items-center justify-between py-1 transition-colors group"
+                                            >
+                                                <span className="group-hover:translate-x-1 transition-transform">{config.name} in {neighbor.name}</span>
+                                                <span className="text-[10px] text-gray-400 font-mono">{neighbor.avgRate.split('-')[0]}</span>
+                                            </Link>
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                        </div>
+
+                        {/* Cluster 3: Intent & Resource Guides */}
+                        <div className="bg-white p-6 rounded-xl border border-gray-200/80 shadow-sm hover:border-supreme-gold/50 transition-colors">
+                            <h4 className="font-serif text-lg text-supreme-black mb-4 border-b border-gray-100 pb-3 flex items-center justify-between">
+                                <span>{locality.name} Knowledge Guides</span>
+                                <span className="text-[10px] text-supreme-gold font-sans uppercase tracking-wider font-semibold">Guides</span>
+                            </h4>
+                            <ul className="space-y-2.5">
+                                {themes.filter(t => t.id !== parsedThemeId).slice(0, 5).map(t => (
+                                    <li key={t.id}>
+                                        <Link 
+                                            to={`/pune-real-estate/${parsedConfigId}-${parsedTypeId}-in-${parsedLocId}-${t.id}`}
+                                            className="text-xs text-gray-600 hover:text-supreme-gold flex items-center justify-between py-1 transition-colors group"
+                                        >
+                                            <span className="group-hover:translate-x-1 transition-transform">{config.name} {t.name}</span>
+                                            <span className="text-[10px] text-gray-400 font-mono">&rarr;</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Master Directory Link */}
+                    <div className="mt-10 pt-6 border-t border-gray-200/70 flex flex-wrap items-center justify-between gap-4 text-xs text-gray-500">
+                        <span>Viewing: <strong className="text-gray-900">{config.name} {propType.name} in {locality.name} ({theme.name})</strong></span>
+                        <Link 
+                            to="/pune-real-estate"
+                            className="text-supreme-gold hover:underline font-semibold flex items-center gap-1.5"
+                        >
+                            <span>Browse All 50+ Pune Real Estate Micro-Markets &amp; Directory Hub</span>
+                            <span>&rarr;</span>
+                        </Link>
                     </div>
                 </div>
             </section>

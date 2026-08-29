@@ -45,6 +45,7 @@ const Comparison = lazy(() => import('./pages/Comparison'));
 const ProgrammaticLanding = lazy(() => import('./components/ProgrammaticLanding'));
 const DynamicPseoPage = lazy(() => import('./components/DynamicPseoPage'));
 const DynamicProjectPseoPage = lazy(() => import('./components/DynamicProjectPseoPage'));
+const PuneRealEstateHub = lazy(() => import('./pages/PuneRealEstateHub'));
 
 import { pseoRoutes } from './data/pseoRoutes';
 
@@ -230,6 +231,7 @@ function App() {
             <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/supreme-rivana-punawale-price-list" element={<PriceList />} />
             <Route path="/supreme-rivana-punawale-comparison" element={<Comparison />} />
+            <Route path="/pune-real-estate" element={<PuneRealEstateHub />} />
             <Route path="/pune-real-estate/:slug" element={<DynamicPseoPage />} />
             <Route path="/pune-projects/:slug" element={<DynamicProjectPseoPage />} />
             {pseoRoutes.map(route => (
