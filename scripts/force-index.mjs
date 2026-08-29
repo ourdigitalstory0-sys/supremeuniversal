@@ -6,23 +6,31 @@ const DOMAIN = 'https://www.supreme-universal.in';
 const INDEXNOW_KEY = 'supremerivana2026indexkey';
 const SITEMAP_FILE = path.join(process.cwd(), 'public', 'sitemap.xml');
 
-// ===== DYNAMICALLY EXTRACT ALL URLS FROM SITEMAP =====
+// ===== DYNAMICALLY EXTRACT ALL ACTUAL PAGE URLS FROM SUB-SITEMAPS =====
 function getUrlsFromSitemap() {
-    if (!fs.existsSync(SITEMAP_FILE)) {
-        console.log('⚠️ WARNING: sitemap.xml not found. Using fallback URL.');
+    const urls = new Set();
+    const publicDir = path.join(process.cwd(), 'public');
+    const sitemapFiles = fs.readdirSync(publicDir)
+        .filter(f => f.startsWith('sitemap-') && f.endsWith('.xml'));
+
+    if (sitemapFiles.length === 0) {
+        console.log('⚠️ WARNING: No sub-sitemaps found. Using fallback URL.');
         return [`${DOMAIN}/`];
     }
 
-    const sitemapContent = fs.readFileSync(SITEMAP_FILE, 'utf-8');
     const urlRegex = /<loc>(.*?)<\/loc>/g;
-    const urls = [];
-    let match;
-
-    while ((match = urlRegex.exec(sitemapContent)) !== null) {
-        urls.push(match[1]);
+    for (const file of sitemapFiles) {
+        const filePath = path.join(publicDir, file);
+        const content = fs.readFileSync(filePath, 'utf-8');
+        let match;
+        while ((match = urlRegex.exec(content)) !== null) {
+            urls.add(match[1]);
+        }
     }
 
-    return urls.slice(0, 10000); // IndexNow supports up to 10,000 URLs per batch
+    const urlArray = Array.from(urls);
+    console.log(`📊 Loaded ${urlArray.length} actual page URLs across ${sitemapFiles.length} sitemaps.`);
+    return urlArray.slice(0, 10000); // IndexNow supports up to 10,000 URLs per batch
 }
 
 const ALL_URLS = getUrlsFromSitemap();
