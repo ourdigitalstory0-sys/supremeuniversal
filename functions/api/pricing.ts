@@ -13,29 +13,29 @@ interface Env {
 }
 
 const DEFAULT_PRICING = {
-    lastUpdated: '2026-08-26',
+    lastUpdated: '2026-08-29',
     currency: 'INR',
     configurations: [
         {
             type: '2 BHK',
-            label: '2 BHK Luxury Apartment',
+            label: '2 BHK Luxury Waterfront Residence',
             carpetArea: '785 sq.ft onwards',
-            startingPrice: 7500000,
-            displayPrice: '₹75 Lakhs*',
+            startingPrice: 9400000,
+            displayPrice: '₹94 Lakhs*',
             availability: 'Available',
-            highlights: ['River View', 'IGBC Certified', 'Vastu Compliant']
+            highlights: ['Pawana River View', 'IGBC Certified', 'Private Balcony', 'Vastu Compliant']
         },
         {
             type: '3 BHK',
-            label: '3 BHK Sky Residence',
-            carpetArea: '1045 sq.ft onwards',
-            startingPrice: 11000000,
-            displayPrice: '₹1.10 Cr*',
+            label: '3 BHK Grand Riverside Suite',
+            carpetArea: '1050 - 1150 sq.ft',
+            startingPrice: 15500000,
+            displayPrice: '₹1.55 Cr*',
             availability: 'Limited Units',
-            highlights: ['Panoramic Views', 'Private Deck', 'Premium Finishes']
+            highlights: ['Panoramic River Views', 'Private Balcony', '60,000 sq.ft Clubhouse', 'Premium Finishes']
         }
     ],
-    note: '*Prices are indicative and subject to change. Contact sales for current pricing.'
+    note: '*Prices are indicative and subject to change. MahaRERA: PM1261012502656. Contact sales for detailed cost sheet.'
 };
 
 export async function onRequestGet(context: {

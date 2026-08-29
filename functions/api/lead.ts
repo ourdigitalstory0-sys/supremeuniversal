@@ -15,6 +15,16 @@ const WEB3FORMS_KEY = '8d14bafa-306b-4e68-bc3f-791c5fbf5dc1';
 const RATE_LIMIT_MAX = 3;
 const RATE_LIMIT_WINDOW = 3600;
 
+export async function onRequestOptions(): Promise<Response> {
+    return new Response(null, {
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type',
+        }
+    });
+}
+
 export async function onRequestPost(context: {
     request: Request;
     env: Env;
@@ -22,7 +32,9 @@ export async function onRequestPost(context: {
     const { request, env } = context;
 
     const corsHeaders = {
-        'Access-Control-Allow-Origin': 'https://supreme-universal.in',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
         'Content-Type': 'application/json',
     };
 

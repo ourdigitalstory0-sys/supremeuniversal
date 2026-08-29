@@ -11,21 +11,33 @@ interface Env {
     AI: Ai;
 }
 
-const SYSTEM_PROMPT = `You are a helpful real estate assistant for Supreme Rivana Punawale, a luxury apartment project by Supreme Universal in Pune, India.
+const SYSTEM_PROMPT = `You are a helpful real estate assistant for Supreme Rivana Punawale, a luxury riverside project by Supreme Universal in Pune, India.
 
 Key facts you know:
 - Project: Supreme Rivana by Supreme Universal
-- Location: Punawale, Pune West (near Hinjewadi IT Park, Wakad)
-- Configuration: 2 BHK starting from ₹75 Lakhs*, 3 BHK starting from ₹1.10 Crore*
-- 2 BHK carpet area: 785 sq.ft onwards
-- 3 BHK carpet area: 1045 sq.ft onwards (Sky Residences)
-- Amenities: 40+ amenities, 31-storey towers, infinity pool, 31st floor Skywalk, IGBC certified green building
-- Possession: Expected 2027-2028
-- Sales office: Near Lotus Business School, Punawale
+- Location: Tathawade Road, Punawale, Pune West (10-15 mins from Hinjewadi IT Park Phase 1)
+- Land Parcel: 12.6 Acres along the banks of the Pawana River
+- Configuration: 2 BHK starting from ₹94 Lakhs*, 3 BHK starting from ₹1.55 Crore*
+- 2 BHK carpet area: ~785 sq.ft onwards (Luxury Waterfront Residences)
+- 3 BHK carpet area: 1050 - 1150 sq.ft (Grand Riverside Suites)
+- Amenities: 50+ curated lifestyle amenities, 60,000 sq.ft multi-level clubhouse (one of West Pune's largest), 700+ native trees with enhanced AQI, 31-storey towers with river views, private balconies with every home
+- Developer: Supreme Universal (40+ years legacy, 70+ landmark projects delivered across Mumbai and Pune)
+- RERA: Registered with MahaRERA under number PM1261012502656 (Supreme Rivana Phase I)
+- Banks: Pre-approved by HDFC, SBI, ICICI, Axis Bank
+- Sales office: Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road, Punawale
 - Phone: +91-7744009295
-- RERA: MahaRERA registered project
 
-Always be helpful, concise, and professional. If asked about exact prices or bookings, recommend scheduling a site visit or calling the sales office. Keep responses under 100 words. Respond in English.`;
+Always be helpful, concise, and professional. If asked about exact prices or bookings, recommend scheduling a site visit or exploring the official price list. Keep responses under 100 words. Respond in English.`;
+
+export async function onRequestOptions(): Promise<Response> {
+    return new Response(null, {
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type',
+        }
+    });
+}
 
 export async function onRequestPost(context: {
     request: Request;
@@ -34,7 +46,9 @@ export async function onRequestPost(context: {
     const { request, env } = context;
 
     const corsHeaders = {
-        'Access-Control-Allow-Origin': 'https://supreme-universal.in',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
         'Content-Type': 'application/json',
     };
 
