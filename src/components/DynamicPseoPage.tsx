@@ -82,7 +82,7 @@ const DynamicPseoPage = () => {
         },
         {
             q: `Is the RERA registry verified for Supreme Rivana?`,
-            a: `Yes, Supreme Rivana is registered under MahaRERA No: P52100056095, ensuring transparency, scheduled delivery timeline compliance, and bank pre-approvals.`
+            a: `Yes, Supreme Rivana is registered under MahaRERA No: PM1261012502656, ensuring transparency, scheduled delivery timeline compliance, and bank pre-approvals.`
         }
     ];
 

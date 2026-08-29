@@ -38,9 +38,9 @@ const Overview = () => {
                                 className="absolute -bottom-8 -right-4 md:-right-12 bg-white p-8 md:p-10 shadow-2xl z-20 rounded-none border-b-2 border-supreme-gold"
                             >
                                 <p className="text-5xl md:text-6xl font-serif text-supreme-black mb-2 flex items-baseline gap-1 relative">
-                                    10<span className="text-supreme-gold text-4xl absolute -top-2 -right-6">+</span>
+                                    50<span className="text-supreme-gold text-4xl absolute -top-2 -right-6">+</span>
                                 </p>
-                                <p className="text-[10px] md:text-xs font-sans tracking-[0.2em] uppercase text-gray-500 mt-4 leading-relaxed">World Class <br /> Amenities</p>
+                                <p className="text-[10px] md:text-xs font-sans tracking-[0.2em] uppercase text-gray-500 mt-4 leading-relaxed">Curated Lifestyle <br /> Amenities</p>
                             </motion.div>
                         </motion.div>
                     </div>
@@ -84,7 +84,7 @@ const Overview = () => {
                                 transition={{ delay: 0.4, duration: 0.8 }}
                                 className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Supreme Rivana Punawale by Supreme Universal is not just a residential development; it's a 15-acre riverside township designed to set the benchmark in Pune West. Featuring majestic 31-storey towers, it represents the pinnacle of luxury living. We offer an exclusive collection of premium apartments that cater to those seeking uncompromising quality. Whether you are exploring our price list, downloading the brochure, or looking for a high-ROI real estate investment, our project is engineered for excellence. Check our construction status and master plan to see your future home take shape.
+                                Supreme Rivana Punawale by Supreme Universal is set across 12.6 acres along the quiet banks of the Pawana River, bringing rare riverside living to Punawale's most premium corridor between NH 48 and Aundh–Ravet BRTS Road. Featuring majestic towers with uninterrupted views and enhanced AQI, it boasts one of West Pune's largest clubhouses at 60,000 sq.ft and over 50 curated lifestyle amenities.
                             </motion.p>
 
                             <motion.h3
@@ -104,7 +104,7 @@ const Overview = () => {
                                 transition={{ delay: 0.5, duration: 0.8 }}
                                 className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Here, the gentle flow of the river meets cutting-edge architecture. Enjoy generous spaces, abundant natural light, and a community that shares your vision of grandeur. With a firmly committed possession timeline, you can secure your luxury future in one of the most sought-after locations near Hinjewadi IT Park.
+                                Here, the gentle flow of the river meets cutting-edge architecture. Enjoy generous 2 &amp; 3 Bed riverside residences with private balconies with every home, surrounded by 700+ native trees and shrubs. With a firmly committed possession timeline, you can secure your luxury future in one of the most sought-after locations near Hinjewadi IT Park.
                             </motion.p>
 
                             <motion.h3
@@ -124,7 +124,7 @@ const Overview = () => {
                                 transition={{ delay: 0.55, duration: 0.8 }}
                                 className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                As a fully MahaRERA-compliant development with IGBC Green Building Certification, Supreme Rivana Punawale represents the gold standard in sustainable luxury. Pre-approved by HDFC, SBI, ICICI, and Axis Bank, this is the most trusted new project in Punawale for families, IT professionals, and investors alike.
+                                As a fully MahaRERA-registered project (Phase I - PM1261012502656), Supreme Rivana Punawale represents the gold standard in riverside luxury. Pre-approved by leading banks, this is the most trusted new launch in Punawale for families, IT professionals, and investors alike.
                             </motion.p>
 
                             <motion.div

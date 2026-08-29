@@ -35,11 +35,11 @@ const PriceList = () => {
         "@context": "https://schema.org",
         "@type": "PriceSpecification",
         "name": "Supreme Rivana Punawale Price List 2026",
-        "description": "Latest 2 BHK (₹94 Lakhs*) and 3 BHK (₹1.55 Cr*) price list for Supreme Rivana Punawale. MahaRERA: P52100056095. Get detailed cost sheets, payment plans, and booking offers.",
+        "description": "Latest 2 BHK (₹94 Lakhs*) and 3 BHK (₹1.55 Cr*) price list for Supreme Rivana Punawale. MahaRERA: PM1261012502656. Get detailed cost sheets, payment plans, and booking offers.",
         "priceCurrency": "INR",
         "valueAddedTaxIncluded": "true",
         "url": "https://www.supreme-universal.in/supreme-rivana-punawale-price-list",
-        "identifier": "P52100056095",
+        "identifier": "PM1261012502656",
         "offers": priceData.map(p => ({
             "@type": "Offer",
             "name": p.type,

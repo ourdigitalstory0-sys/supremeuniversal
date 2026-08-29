@@ -121,7 +121,7 @@ const Location = () => {
                                     <Navigation className="w-4 h-4 text-supreme-gold group-hover:text-supreme-black transition-colors" />
                                     <span>Get Directions on Google Maps</span>
                                 </a>
-                                <span className="text-xs text-gray-500 font-sans">MahaRERA: P52100056095</span>
+                                <span className="text-xs text-gray-500 font-sans">MahaRERA: PM1261012502656</span>
                             </div>
                         </motion.div>
                     </div>

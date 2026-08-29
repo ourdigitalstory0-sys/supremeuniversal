@@ -100,7 +100,7 @@ const PROJECTS: Record<string, { name: string; location: string; rera: string }>
     'supreme-towers': { name: 'Supreme Towers', location: 'Mundhwa, Pune East', rera: 'P52100051877' },
     'supreme-estia': { name: 'Supreme Estia', location: 'Baner, Pune West', rera: 'P52100028795' },
     'supreme-villagio': { name: 'Supreme Villagio', location: 'Somatane, Pune Express Way', rera: 'P52100049942' },
-    'supreme-rivana': { name: 'Supreme Rivana', location: 'Punawale, Pune West', rera: 'P52100056095' },
+    'supreme-rivana': { name: 'Supreme Rivana', location: 'Punawale, Pune West', rera: 'PM1261012502656' },
     'supreme-palacio': { name: 'Supreme Palacio', location: 'Baner, Pune West', rera: 'P52100032104' },
     'supreme-vador': { name: 'Supreme Vador', location: 'Koregaon Park, Pune', rera: 'P52100030588' }
 };
@@ -114,12 +114,12 @@ const FLAGSHIP_PAGES: Record<string, {
 }> = {
     '/supreme-rivana-punawale-price-list': {
         title: 'Supreme Rivana Punawale Price List 2026 | 2 & 3 BHK Cost Sheets & Payment Plans',
-        description: 'Official 2026 Price List for Supreme Rivana Punawale by Supreme Universal. 2 BHK starting from ₹94 Lakhs*, 3 BHK starting from ₹1.55 Cr*. MahaRERA: P52100056095. Download complete cost sheet.',
+        description: 'Official 2026 Price List for Supreme Rivana Punawale by Supreme Universal. 2 BHK starting from ₹94 Lakhs*, 3 BHK starting from ₹1.55 Cr*. MahaRERA: PM1261012502656. Download complete cost sheet.',
         h1: 'Supreme Rivana Punawale — Price List & Cost Sheets 2026',
         breadcrumb: 'Price List',
         faqs: [
             { q: 'What is the starting price of 2 BHK and 3 BHK at Supreme Rivana?', a: 'Luxury 2 BHK residences start from ₹94 Lakhs* onwards, and spacious 3 BHK premium apartments start from ₹1.55 Cr* onwards.' },
-            { q: 'What is the MahaRERA registration number for Supreme Rivana?', a: 'Supreme Rivana Punawale is registered with MahaRERA under number P52100056095.' },
+            { q: 'What is the MahaRERA registration number for Supreme Rivana?', a: 'Supreme Rivana Punawale is registered with MahaRERA under number PM1261012502656.' },
             { q: 'Are bank home loans approved for Supreme Rivana?', a: 'Yes, home loans are pre-approved by leading financial institutions including SBI, HDFC, ICICI, and Axis Bank with flexible payment subvention options.' }
         ]
     },
@@ -153,7 +153,7 @@ const FLAGSHIP_PAGES: Record<string, {
     },
     '/supreme-rivana-punawale-overview': {
         title: 'Supreme Rivana Punawale | Luxury 15-Acre Riverside Township Pune',
-        description: 'Discover Supreme Rivana Punawale by Supreme Universal: 31-storey high-rise towers spanning 15 acres. Luxury 2 & 3 BHK riverside apartments 10 mins from Hinjewadi IT Park. MahaRERA: P52100056095.',
+        description: 'Discover Supreme Rivana Punawale by Supreme Universal: 31-storey high-rise towers spanning 15 acres. Luxury 2 & 3 BHK riverside apartments 10 mins from Hinjewadi IT Park. MahaRERA: PM1261012502656.',
         h1: 'Supreme Rivana Punawale — 15-Acre Riverside Township',
         breadcrumb: 'Overview',
         faqs: [
@@ -206,12 +206,12 @@ const FLAGSHIP_PAGES: Record<string, {
         ]
     },
     '/supreme-rivana-punawale-possession-date': {
-        title: 'Supreme Rivana Possession Date & Construction Status | MahaRERA P52100056095',
-        description: 'Check MahaRERA approved possession timelines and construction status for Supreme Rivana Punawale. Registered with MahaRERA under number P52100056095.',
+        title: 'Supreme Rivana Possession Date & Construction Status | MahaRERA PM1261012502656',
+        description: 'Check MahaRERA approved possession timelines and construction status for Supreme Rivana Punawale. Registered with MahaRERA under number PM1261012502656.',
         h1: 'Supreme Rivana Punawale — Possession Timelines & Status',
         breadcrumb: 'Possession Date',
         faqs: [
-            { q: 'What is the possession date for Supreme Rivana?', a: 'Possession is scheduled in phased milestones in accordance with MahaRERA registration number P52100056095.' }
+            { q: 'What is the possession date for Supreme Rivana?', a: 'Possession is scheduled in phased milestones in accordance with MahaRERA registration number PM1261012502656.' }
         ]
     },
     '/supreme-rivana-punawale-contact': {
@@ -234,7 +234,7 @@ const FLAGSHIP_PAGES: Record<string, {
     },
     '/supreme-2bhk-punawale-flats': {
         title: '2 BHK Flats in Punawale — Supreme Rivana Starting ₹94 Lakhs*',
-        description: 'Spacious 2 BHK luxury flats in Punawale at Supreme Rivana. River-facing balconies, 750-850 sq.ft carpet, 10 mins to Hinjewadi Phase 1. Starting ₹94 Lakhs*. MahaRERA: P52100056095.',
+        description: 'Spacious 2 BHK luxury flats in Punawale at Supreme Rivana. River-facing balconies, 750-850 sq.ft carpet, 10 mins to Hinjewadi Phase 1. Starting ₹94 Lakhs*. MahaRERA: PM1261012502656.',
         h1: 'Supreme Rivana — Luxury 2 BHK Apartments in Punawale',
         breadcrumb: '2 BHK Flats',
         faqs: [
@@ -243,7 +243,7 @@ const FLAGSHIP_PAGES: Record<string, {
     },
     '/supreme-3bhk-punawale-flats': {
         title: '3 BHK Luxury Flats in Punawale — Supreme Rivana Starting ₹1.55 Cr*',
-        description: 'Ultra-luxury 3 BHK apartments in Punawale at Supreme Rivana. Panoramic views, 1050-1150 sq.ft carpet, only 6 flats per floor, resort clubhouse. Starting ₹1.55 Cr*. MahaRERA: P52100056095.',
+        description: 'Ultra-luxury 3 BHK apartments in Punawale at Supreme Rivana. Panoramic views, 1050-1150 sq.ft carpet, only 6 flats per floor, resort clubhouse. Starting ₹1.55 Cr*. MahaRERA: PM1261012502656.',
         h1: 'Supreme Rivana — Grand 3 BHK Residences in Punawale',
         breadcrumb: '3 BHK Flats',
         faqs: [
@@ -285,7 +285,7 @@ export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
                 'url': canonical,
                 'description': flagship.description,
                 'telephone': '+917744009295',
-                'identifier': 'P52100056095',
+                'identifier': 'PM1261012502656',
                 'geo': {
                     '@type': 'GeoCoordinates',
                     'latitude': '18.637934',
@@ -371,7 +371,7 @@ export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
             },
             {
                 q: `Is Supreme Rivana RERA approved?`,
-                a: `Yes, Supreme Rivana is registered with MahaRERA under registration number P52100056095, guaranteeing title transparency and timeline compliance.`
+                a: `Yes, Supreme Rivana is registered with MahaRERA under registration number PM1261012502656, guaranteeing title transparency and timeline compliance.`
             }
         ];
 
