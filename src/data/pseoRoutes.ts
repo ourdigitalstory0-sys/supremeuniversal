@@ -30,9 +30,9 @@ export const pseoRoutes: PSEORoute[] = [
         ],
         table: [
             { label: 'Configuration Type', value: 'Pricing Ranges (Starting From)' },
-            { label: '2 BHK Smart Layouts', value: 'Request Price' },
-            { label: '2 BHK Premium Decks', value: 'Request Price' },
-            { label: '3 BHK Grand Suites', value: 'Request Price' },
+            { label: '2 BHK Smart Layouts', value: '₹ 94 Lakhs* Onwards' },
+            { label: '2 BHK Premium Decks', value: '₹ 98 Lakhs* Onwards' },
+            { label: '3 BHK Grand Suites', value: '₹ 1.55 Cr* Onwards' },
             { label: 'Booking Token Amount', value: 'INR 1,00,000' }
         ],
         faqs: [

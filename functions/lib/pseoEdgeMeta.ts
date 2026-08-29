@@ -105,8 +105,241 @@ const PROJECTS: Record<string, { name: string; location: string; rera: string }>
     'supreme-vador': { name: 'Supreme Vador', location: 'Koregaon Park, Pune', rera: 'P52100030588' }
 };
 
+const FLAGSHIP_PAGES: Record<string, {
+    title: string;
+    description: string;
+    h1: string;
+    breadcrumb: string;
+    faqs: { q: string; a: string }[];
+}> = {
+    '/supreme-rivana-punawale-price-list': {
+        title: 'Supreme Rivana Punawale Price List 2026 | 2 & 3 BHK Cost Sheets & Payment Plans',
+        description: 'Official 2026 Price List for Supreme Rivana Punawale by Supreme Universal. 2 BHK starting from ₹94 Lakhs*, 3 BHK starting from ₹1.55 Cr*. MahaRERA: P52100056095. Download complete cost sheet.',
+        h1: 'Supreme Rivana Punawale — Price List & Cost Sheets 2026',
+        breadcrumb: 'Price List',
+        faqs: [
+            { q: 'What is the starting price of 2 BHK and 3 BHK at Supreme Rivana?', a: 'Luxury 2 BHK residences start from ₹94 Lakhs* onwards, and spacious 3 BHK premium apartments start from ₹1.55 Cr* onwards.' },
+            { q: 'What is the MahaRERA registration number for Supreme Rivana?', a: 'Supreme Rivana Punawale is registered with MahaRERA under number P52100056095.' },
+            { q: 'Are bank home loans approved for Supreme Rivana?', a: 'Yes, home loans are pre-approved by leading financial institutions including SBI, HDFC, ICICI, and Axis Bank with flexible payment subvention options.' }
+        ]
+    },
+    '/supreme-rivana-punawale-price': {
+        title: 'Supreme Rivana Punawale Price | 2 & 3 BHK Cost Breakdown 2026',
+        description: 'Get verified pricing and payment schedules for Supreme Rivana Punawale. 2 BHK from ₹94 Lakhs*, 3 BHK from ₹1.55 Cr*. Just 10 Mins to Hinjewadi IT Park.',
+        h1: 'Supreme Rivana Punawale Pricing Structure',
+        breadcrumb: 'Price',
+        faqs: [
+            { q: 'What are the current pricing slabs at Supreme Rivana Punawale?', a: '2 BHK apartments range from ₹94 Lakhs* to ₹98 Lakhs*, and 3 BHK premium residences start from ₹1.55 Cr*.' }
+        ]
+    },
+    '/supreme-rivana-punawale-floor-plans': {
+        title: 'Supreme Rivana Floor Plans & Layouts | 2 & 3 BHK Carpet Areas Punawale',
+        description: 'Download official floor plans and master layout for Supreme Rivana Punawale. 2 BHK (750-850 Sq.ft) & 3 BHK (1050-1150 Sq.ft) river-facing residences with only 6 flats per floor.',
+        h1: 'Supreme Rivana Punawale — Floor Plans & Unit Layouts',
+        breadcrumb: 'Floor Plans',
+        faqs: [
+            { q: 'What are the carpet areas for 2 BHK and 3 BHK at Supreme Rivana?', a: 'The 2 BHK configurations offer 750 to 850 Sq.ft carpet area, while 3 BHK units offer 1050 to 1150 Sq.ft carpet area.' },
+            { q: 'How many apartments are there per floor in Supreme Rivana?', a: 'Supreme Rivana features exclusive low-density planning with only 6 residences per floor and high-speed elevators.' }
+        ]
+    },
+    '/supreme-rivana-punawale-floor-plan': {
+        title: 'Supreme Rivana Floor Plans | 2 & 3 BHK Master Layout Punawale',
+        description: 'Explore 2D and 3D architectural floor plans for Supreme Rivana Punawale by Supreme Universal. Optimized living spaces, private balconies, and cross-ventilation.',
+        h1: 'Supreme Rivana Master Floor Plans',
+        breadcrumb: 'Floor Plan',
+        faqs: [
+            { q: 'Does Supreme Rivana have Vastu compliant floor plans?', a: 'Yes, layouts are designed with East-West orientation and Vastu compliance ensuring ample daylight and natural airflow.' }
+        ]
+    },
+    '/supreme-rivana-punawale-overview': {
+        title: 'Supreme Rivana Punawale | Luxury 15-Acre Riverside Township Pune',
+        description: 'Discover Supreme Rivana Punawale by Supreme Universal: 31-storey high-rise towers spanning 15 acres. Luxury 2 & 3 BHK riverside apartments 10 mins from Hinjewadi IT Park. MahaRERA: P52100056095.',
+        h1: 'Supreme Rivana Punawale — 15-Acre Riverside Township',
+        breadcrumb: 'Overview',
+        faqs: [
+            { q: 'What makes Supreme Rivana unique in Punawale?', a: 'It is a 15-acre riverside integrated development with 31-storey towers, over 40 resort amenities, and 10-minute connectivity to Hinjewadi IT Park.' }
+        ]
+    },
+    '/supreme-rivana-punawale-comparison': {
+        title: 'Supreme Rivana Punawale vs Competitors | Project Comparison 2026',
+        description: 'Compare Supreme Rivana with Puneville, Kohinoor, and Vilas Javdekar in Punawale. Evaluate carpet area efficiency, 40+ resort amenities, riverfront lifestyle, and 2026 pricing.',
+        h1: 'Supreme Rivana Punawale vs Competitors — Comparative Analysis',
+        breadcrumb: 'Comparison',
+        faqs: [
+            { q: 'How does Supreme Rivana compare to other Punawale projects?', a: 'Supreme Rivana offers larger carpet areas, exclusive 6-flats-per-floor privacy, 40+ resort amenities, and the 40+ year heritage of Supreme Universal.' }
+        ]
+    },
+    '/supreme-rivana-punawale-location': {
+        title: 'Supreme Rivana Location Map | Near Hinjewadi IT Park & Expressway Punawale',
+        description: 'Supreme Rivana Punawale exact location map: Tathawade Road, Punawale, Pune 411033. Just 10 Mins to Hinjewadi IT Park Phase 1, 5 Mins to Mumbai-Pune Expressway, and near upcoming Metro Line 3.',
+        h1: 'Supreme Rivana Punawale — Location & Transit Connectivity',
+        breadcrumb: 'Location',
+        faqs: [
+            { q: 'How far is Supreme Rivana from Hinjewadi Phase 1?', a: 'Supreme Rivana is located just 10-15 minutes from Hinjewadi IT Park Phase 1 via Marunji Road.' }
+        ]
+    },
+    '/supreme-rivana-punawale-amenities': {
+        title: 'Supreme Rivana Amenities | 40+ Luxury Lifestyle Amenities in Punawale',
+        description: 'Experience 40+ curated resort-style amenities at Supreme Rivana Punawale: Infinity edge pool, 25,000 sq.ft clubhouse, sky lounge, riverside promenade, and sports arena.',
+        h1: 'Supreme Rivana Punawale — 40+ Curated Resort Amenities',
+        breadcrumb: 'Amenities',
+        faqs: [
+            { q: 'What amenities are available at Supreme Rivana?', a: 'Over 40 amenities including an infinity swimming pool, multi-tier clubhouse, fitness center, banquet hall, squash court, and riverside walking trail.' }
+        ]
+    },
+    '/supreme-rivana-punawale-gallery': {
+        title: 'Supreme Rivana Gallery & Sample Flat Tour | Photos & Renders Punawale',
+        description: 'High-resolution photo gallery and 360-degree sample flat walkthrough of Supreme Rivana Punawale. Discover luxurious architectural finishes by Supreme Universal.',
+        h1: 'Supreme Rivana Punawale — Photo Gallery & Sample Residence',
+        breadcrumb: 'Gallery',
+        faqs: [
+            { q: 'Can I visit the sample flat at Supreme Rivana?', a: 'Yes, fully furnished 2 BHK and 3 BHK sample flats are available for viewing at the on-site experience gallery.' }
+        ]
+    },
+    '/supreme-rivana-punawale-reviews': {
+        title: 'Supreme Rivana Reviews & Ratings | Resident Testimonials Punawale',
+        description: 'Read verified buyer reviews and architectural ratings for Supreme Rivana Punawale. Rated 4.9/5 on Google for construction quality, privacy, and timely MahaRERA compliance.',
+        h1: 'Supreme Rivana Punawale — Verified Reviews & Ratings',
+        breadcrumb: 'Reviews',
+        faqs: [
+            { q: 'What is the Google rating for Supreme Rivana Punawale?', a: 'Supreme Rivana holds an exceptional 4.9 / 5 rating based on verified customer feedback and construction quality assessments.' }
+        ]
+    },
+    '/supreme-rivana-punawale-possession-date': {
+        title: 'Supreme Rivana Possession Date & Construction Status | MahaRERA P52100056095',
+        description: 'Check MahaRERA approved possession timelines and construction status for Supreme Rivana Punawale. Registered with MahaRERA under number P52100056095.',
+        h1: 'Supreme Rivana Punawale — Possession Timelines & Status',
+        breadcrumb: 'Possession Date',
+        faqs: [
+            { q: 'What is the possession date for Supreme Rivana?', a: 'Possession is scheduled in phased milestones in accordance with MahaRERA registration number P52100056095.' }
+        ]
+    },
+    '/supreme-rivana-punawale-contact': {
+        title: 'Contact Supreme Rivana Sales Office | Book Site Visit & Cost Sheet',
+        description: 'Schedule an exclusive site visit to Supreme Rivana Punawale. Call +91-7744009295 for real-time inventory, sample flat walkthrough, and limited launch pricing offers.',
+        h1: 'Contact Supreme Rivana Punawale Sales Experience Center',
+        breadcrumb: 'Contact',
+        faqs: [
+            { q: 'How can I schedule a site visit to Supreme Rivana?', a: 'You can call +91-7744009295 or submit the online enquiry form to schedule a site tour and pick-and-drop assistance.' }
+        ]
+    },
+    '/supreme-rivana-punawale-faq': {
+        title: 'Supreme Rivana FAQs | Complete Buyer Guide, Pricing & RERA Answers',
+        description: 'Answers to top buyer questions on Supreme Rivana Punawale: 2 & 3 BHK pricing, carpet areas, home loan banks, maintenance charges, and Hinjewadi commute.',
+        h1: 'Supreme Rivana Punawale — Frequently Asked Questions',
+        breadcrumb: 'FAQ',
+        faqs: [
+            { q: 'Is Supreme Rivana Punawale a good investment?', a: 'Yes, with upcoming Metro Line 3, Ring Road expansion, and 10-minute proximity to Hinjewadi IT Park, Punawale is experiencing 12-14% annual capital appreciation.' }
+        ]
+    },
+    '/supreme-2bhk-punawale-flats': {
+        title: '2 BHK Flats in Punawale — Supreme Rivana Starting ₹94 Lakhs*',
+        description: 'Spacious 2 BHK luxury flats in Punawale at Supreme Rivana. River-facing balconies, 750-850 sq.ft carpet, 10 mins to Hinjewadi Phase 1. Starting ₹94 Lakhs*. MahaRERA: P52100056095.',
+        h1: 'Supreme Rivana — Luxury 2 BHK Apartments in Punawale',
+        breadcrumb: '2 BHK Flats',
+        faqs: [
+            { q: 'What is the price of 2 BHK in Supreme Rivana Punawale?', a: '2 BHK luxury residences start from ₹94 Lakhs* with premium imported specifications and riverfront views.' }
+        ]
+    },
+    '/supreme-3bhk-punawale-flats': {
+        title: '3 BHK Luxury Flats in Punawale — Supreme Rivana Starting ₹1.55 Cr*',
+        description: 'Ultra-luxury 3 BHK apartments in Punawale at Supreme Rivana. Panoramic views, 1050-1150 sq.ft carpet, only 6 flats per floor, resort clubhouse. Starting ₹1.55 Cr*. MahaRERA: P52100056095.',
+        h1: 'Supreme Rivana — Grand 3 BHK Residences in Punawale',
+        breadcrumb: '3 BHK Flats',
+        faqs: [
+            { q: 'What is the price of 3 BHK in Supreme Rivana Punawale?', a: '3 BHK grand residences start from ₹1.55 Cr* featuring expansive deck balconies and master bedroom suites.' }
+        ]
+    },
+    '/pune-real-estate': {
+        title: 'Pune Real Estate Directory & Micro-Market Intelligence Hub | Supreme Universal',
+        description: 'Comprehensive micro-market real estate guide for 50+ Pune localities. Explore 2 & 3 BHK prices, carpet area layouts, rental yields & connectivity indices across West, East & Central Pune.',
+        h1: 'Pune Real Estate Directory & Micro-Market Intelligence Hub',
+        breadcrumb: 'Pune Directory',
+        faqs: [
+            { q: 'Which are the best micro-markets to buy property in Pune?', a: 'West Pune (Punawale, Wakad, Hinjewadi, Baner, Balewadi) is leading demand due to proximity to IT hubs and the Mumbai-Pune Expressway.' }
+        ]
+    }
+};
+
 export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
     const cleanPath = pathname.replace(/\/$/, '');
+
+    // 0. Flagship Supreme Rivana & Directory Routes (Direct Edge SSR Pre-rendering)
+    const flagship = FLAGSHIP_PAGES[cleanPath];
+    if (flagship) {
+        const canonical = `https://www.supreme-universal.in${cleanPath}`;
+        const schema = [
+            {
+                '@context': 'https://schema.org',
+                '@type': 'BreadcrumbList',
+                'itemListElement': [
+                    { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.supreme-universal.in/' },
+                    { '@type': 'ListItem', 'position': 2, 'name': 'Supreme Rivana Punawale', 'item': 'https://www.supreme-universal.in/supreme-rivana-punawale-overview' },
+                    { '@type': 'ListItem', 'position': 3, 'name': flagship.breadcrumb, 'item': canonical }
+                ]
+            },
+            {
+                '@context': 'https://schema.org',
+                '@type': 'ApartmentComplex',
+                'name': 'Supreme Rivana Punawale',
+                'url': canonical,
+                'description': flagship.description,
+                'telephone': '+917744009295',
+                'identifier': 'P52100056095',
+                'geo': {
+                    '@type': 'GeoCoordinates',
+                    'latitude': '18.637934',
+                    'longitude': '73.743360'
+                },
+                'hasMap': 'https://www.google.com/maps/place/Supreme+Rivana/@18.6379338,73.74336,879m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2bb154a1af8d5:0xde1ba7d3dc6ba2d6!8m2!3d18.6379338!4d73.74336!16s%2Fg%2F11n9ckw71s',
+                'sameAs': [
+                    'https://maps.google.com/?cid=16004655655787471574',
+                    'https://www.google.com/maps/place/Supreme+Rivana'
+                ],
+                'aggregateRating': {
+                    '@type': 'AggregateRating',
+                    'ratingValue': '4.9',
+                    'reviewCount': '1248'
+                },
+                'offers': [
+                    {
+                        '@type': 'Offer',
+                        'name': '2 BHK Luxury Waterfront Residence',
+                        'price': '9400000',
+                        'priceCurrency': 'INR',
+                        'availability': 'https://schema.org/InStock',
+                        'areaServed': 'Punawale, Pune West'
+                    },
+                    {
+                        '@type': 'Offer',
+                        'name': '3 BHK Grand Suite',
+                        'price': '15500000',
+                        'priceCurrency': 'INR',
+                        'availability': 'https://schema.org/InStock',
+                        'areaServed': 'Punawale, Pune West'
+                    }
+                ]
+            },
+            {
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                'mainEntity': flagship.faqs.map(f => ({
+                    '@type': 'Question',
+                    'name': f.q,
+                    'acceptedAnswer': { '@type': 'Answer', 'text': f.a }
+                }))
+            }
+        ];
+
+        return {
+            title: flagship.title,
+            description: flagship.description,
+            canonical,
+            h1: flagship.h1,
+            faqs: flagship.faqs,
+            schema
+        };
+    }
 
     // 1. Regional Pune Real Estate PSEO Route
     if (cleanPath.startsWith('/pune-real-estate/')) {

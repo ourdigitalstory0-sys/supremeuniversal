@@ -14,8 +14,8 @@ const PriceList = () => {
         {
             type: "2 BHK Luxury",
             carpet: "750 - 850 Sq.ft",
-            price: "Request Price",
-            numPrice: "7500000",
+            price: "₹ 94 Lakhs*",
+            numPrice: "9400000",
             booking: "₹ 1,00,000",
             status: "New Launch",
             highlights: ["River Facing Balcony", "Premium Fittings", "Vastu Compliant"]
@@ -23,8 +23,8 @@ const PriceList = () => {
         {
             type: "3 BHK Premium",
             carpet: "1050 - 1150 Sq.ft",
-            price: "Request Price",
-            numPrice: "11000000",
+            price: "₹ 1.55 Cr*",
+            numPrice: "15500000",
             booking: "₹ 2,00,000",
             status: "Limited Inventory",
             highlights: ["Panoramic Views", "Servant Room Space", "6 Units Per Floor"]
@@ -35,9 +35,11 @@ const PriceList = () => {
         "@context": "https://schema.org",
         "@type": "PriceSpecification",
         "name": "Supreme Rivana Punawale Price List 2026",
-        "description": "Latest 2 BHK and 3 BHK price list for Supreme Rivana Punawale. Get detailed cost sheets, payment plans, and booking offers.",
+        "description": "Latest 2 BHK (₹94 Lakhs*) and 3 BHK (₹1.55 Cr*) price list for Supreme Rivana Punawale. MahaRERA: P52100056095. Get detailed cost sheets, payment plans, and booking offers.",
         "priceCurrency": "INR",
         "valueAddedTaxIncluded": "true",
+        "url": "https://www.supreme-universal.in/supreme-rivana-punawale-price-list",
+        "identifier": "P52100056095",
         "offers": priceData.map(p => ({
             "@type": "Offer",
             "name": p.type,
