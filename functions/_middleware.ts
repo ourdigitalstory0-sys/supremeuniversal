@@ -33,6 +33,14 @@ export async function onRequest(context: {
     const url = new URL(request.url);
     const ua = (request.headers.get('user-agent') || '').toLowerCase();
 
+    // 0. Canonical Domain Enforcer (Consolidate 100% PageRank into www)
+    if (url.hostname === 'supreme-universal.in') {
+        const targetUrl = new URL(request.url);
+        targetUrl.hostname = 'www.supreme-universal.in';
+        targetUrl.protocol = 'https:';
+        return Response.redirect(targetUrl.toString(), 301);
+    }
+
     // 1. Block known scraper bots (keep search bots allowed)
     const isScraper = BLOCKED_BOT_PATTERNS.some(bot => ua.includes(bot));
     if (isScraper) {
