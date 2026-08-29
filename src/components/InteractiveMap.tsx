@@ -51,7 +51,7 @@ const landmarks: Landmark[] = [
     { name: 'Expressway Bypass', coords: [18.6400, 73.7300], category: 'Transit', distance: '5 Mins' },
 ];
 
-const projectCoords: [number, number] = [18.6327, 73.7431];
+const projectCoords: [number, number] = [18.637934, 73.743360];
 
 // Auto-zoomer component
 function MapResizer() {
@@ -87,7 +87,15 @@ const InteractiveMap = () => {
                     <Popup className="custom-popup">
                         <div className="text-center py-2">
                             <h4 className="font-serif text-supreme-gold text-lg mb-1">Supreme Rivana</h4>
-                            <p className="font-sans text-xs text-white/70 uppercase tracking-widest">Skyline Waterfront Homes</p>
+                            <p className="font-sans text-xs text-white/70 uppercase tracking-widest mb-2">Skyline Waterfront Homes</p>
+                            <a 
+                                href="https://maps.google.com/?cid=16004655655787471574"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block px-3 py-1 bg-supreme-gold text-supreme-black text-[10px] uppercase tracking-wider font-bold hover:bg-white transition-colors rounded"
+                            >
+                                Open on Google Maps &rarr;
+                            </a>
                         </div>
                     </Popup>
                 </Marker>
@@ -108,9 +116,16 @@ const InteractiveMap = () => {
                 ))}
             </MapContainer>
 
-            {/* Hint Overlay */}
-            <div className="absolute bottom-4 right-4 bg-supreme-black/80 backdrop-blur-md px-4 py-2 border border-supreme-gold/30 pointer-events-none z-[1000] opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-[10px] text-supreme-gold uppercase tracking-[0.2em]">Interactive Map &bull; Click Markers</p>
+            {/* Google Maps Direct Pin Overlay */}
+            <div className="absolute bottom-4 right-4 z-[1000]">
+                <a 
+                    href="https://maps.google.com/?cid=16004655655787471574"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 bg-supreme-black/90 backdrop-blur-md px-3.5 py-2 border border-supreme-gold/40 text-supreme-gold hover:bg-supreme-gold hover:text-supreme-black text-[10px] uppercase tracking-widest font-bold transition-all shadow-lg"
+                >
+                    <span>📍 View on Google Maps</span>
+                </a>
             </div>
         </div>
     );

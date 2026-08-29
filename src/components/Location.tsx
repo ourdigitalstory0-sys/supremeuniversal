@@ -21,8 +21,8 @@ const Location = () => {
                     },
                     "geo": {
                         "@type": "GeoCoordinates",
-                        "latitude": "18.6327",
-                        "longitude": "73.7431"
+                        "latitude": "18.637934",
+                        "longitude": "73.743360"
                     },
                     "containedInPlace": {
                         "@type": "City",
@@ -30,7 +30,11 @@ const Location = () => {
                         "containedInPlace": { "@type": "State", "name": "Maharashtra" }
                     },
                     "keywords": "supreme rivana punawale, luxury flats in punawale, 2 bhk flats punawale, 3 bhk price punawale, supreme universal punawale project",
-                    "hasMap": "https://www.google.com/maps/search/Supreme+Rivana+Punawale+Pune"
+                    "hasMap": "https://www.google.com/maps/place/Supreme+Rivana/@18.6379338,73.74336,879m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2bb154a1af8d5:0xde1ba7d3dc6ba2d6!8m2!3d18.6379338!4d73.74336!16s%2Fg%2F11n9ckw71s",
+                    "sameAs": [
+                        "https://maps.google.com/?cid=16004655655787471574",
+                        "https://www.google.com/maps/place/Supreme+Rivana"
+                    ]
                 })
             }} />
             <div className="container mx-auto px-6 md:px-12 relative z-10">
@@ -104,6 +108,20 @@ const Location = () => {
                                         </ul>
                                     </div>
                                 </div>
+                            </div>
+
+                            {/* Verified Google Maps Direction CTA */}
+                            <div className="mt-10 pt-8 border-t border-gray-100 flex flex-wrap items-center gap-4">
+                                <a
+                                    href="https://maps.google.com/?cid=16004655655787471574"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-supreme-black text-white hover:bg-supreme-gold text-xs uppercase tracking-widest font-bold transition-all duration-300 group shadow-md"
+                                >
+                                    <Navigation className="w-4 h-4 text-supreme-gold group-hover:text-supreme-black transition-colors" />
+                                    <span>Get Directions on Google Maps</span>
+                                </a>
+                                <span className="text-xs text-gray-500 font-sans">MahaRERA: P52100056095</span>
                             </div>
                         </motion.div>
                     </div>

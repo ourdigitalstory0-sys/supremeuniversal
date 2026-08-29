@@ -166,7 +166,13 @@ export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
                     'availability': 'https://schema.org/InStock',
                     'itemOffered': {
                         '@type': 'Accommodation',
-                        'name': `${configName} Residence in ${locality.name}`
+                        'name': `${configName} Residence in ${locality.name}`,
+                        'geo': {
+                            '@type': 'GeoCoordinates',
+                            'latitude': '18.637934',
+                            'longitude': '73.743360'
+                        },
+                        'hasMap': 'https://www.google.com/maps/place/Supreme+Rivana/@18.6379338,73.74336,879m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2bb154a1af8d5:0xde1ba7d3dc6ba2d6!8m2!3d18.6379338!4d73.74336!16s%2Fg%2F11n9ckw71s'
                     }
                 }
             },
