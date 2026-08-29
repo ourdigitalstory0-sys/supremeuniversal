@@ -9,6 +9,7 @@
 
 interface Env {
     AI: Ai;
+    PRICE_STORE?: KVNamespace;
 }
 
 const SYSTEM_PROMPT = `You are a helpful real estate assistant for Supreme Rivana Punawale, a luxury riverside project by Supreme Universal in Pune, India.
@@ -56,18 +57,34 @@ export async function onRequestPost(context: {
         const body = await request.json() as { message: string; history?: Array<{ role: string; content: string }> };
         const { message, history = [] } = body;
 
-        if (!message || message.trim().length === 0) {
+        const cleanMessage = (message || '').trim().slice(0, 400);
+
+        if (!cleanMessage) {
             return new Response(JSON.stringify({ success: false, reply: 'Please send a message.' }), {
                 status: 400,
                 headers: corsHeaders
             });
         }
 
-        // Build conversation messages
+        // IP-based rate limiting to protect Workers AI GPU compute
+        if (env.PRICE_STORE) {
+            const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
+            const key = `chat_rate:${ip}`;
+            const count = parseInt((await env.PRICE_STORE.get(key)) || '0', 10);
+            if (count >= 30) {
+                return new Response(JSON.stringify({
+                    success: true,
+                    reply: 'You have reached the chat limit for this session. Please call our sales desk directly at +91-7744009295.'
+                }), { status: 200, headers: corsHeaders });
+            }
+            await env.PRICE_STORE.put(key, String(count + 1), { expirationTtl: 3600 });
+        }
+
+        // Build conversation messages with safe history truncation
         const messages = [
             { role: 'system', content: SYSTEM_PROMPT },
-            ...history.slice(-6), // keep last 3 exchanges
-            { role: 'user', content: message }
+            ...history.slice(-4), // keep last 2 exchanges
+            { role: 'user', content: cleanMessage }
         ];
 
         // Run Workers AI inference (Llama 3.1 8B Instruct)

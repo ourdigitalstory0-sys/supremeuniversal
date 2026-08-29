@@ -55,6 +55,25 @@ export async function onRequest(context: {
         });
     }
 
+    // 0c. Trailing Slash Canonical Normalizer (Consolidates duplicates for Rank #1 SEO)
+    if (url.pathname.length > 1 && url.pathname.endsWith('/')) {
+        const targetUrl = new URL(request.url);
+        targetUrl.pathname = targetUrl.pathname.slice(0, -1);
+        return Response.redirect(targetUrl.toString(), 301);
+    }
+
+    // 0d. Edge Attack & Vulnerability Probing Shield (Blocks path traversal, .env, .git, php probes in <1ms)
+    const MALICIOUS_PATTERNS = [
+        '..', '.env', '.git', '.php', 'wp-admin', 'wp-login', 'xmlrpc', 
+        '/etc/passwd', '/bin/', '/eval('
+    ];
+    if (MALICIOUS_PATTERNS.some(pat => url.pathname.toLowerCase().includes(pat))) {
+        return new Response('Access denied by Edge Security Shield.', {
+            status: 403,
+            headers: { 'Content-Type': 'text/plain', 'X-Robots-Tag': 'noindex, nofollow' }
+        });
+    }
+
     // Google Infrastructure & Verified Bot Detection
     const isGooglebot = ua.includes('googlebot') || 
                         ua.includes('google-inspectiontool') || 
