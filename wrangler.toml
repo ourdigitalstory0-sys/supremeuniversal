@@ -8,3 +8,18 @@ NPM_VERSION = "10.x"
 
 compatibility_date = "2026-08-26"
 compatibility_flags = [ "nodejs_compat" ]
+
+# Cloudflare KV Store (Live Dynamic Pricing & Edge Lead Archive)
+[[kv_namespaces]]
+binding = "PRICE_STORE"
+id = "a56588d148fd4b55b59ba0d07fb1256c"
+preview_id = "9661d1155a5c4fde92fb5a1307795d29"
+
+# Cloudflare R2 Object Storage (Zero-Egress High Performance Media Assets)
+[[r2_buckets]]
+binding = "MEDIA_BUCKET"
+bucket_name = "supremeuniversal-assets"
+
+# Cloudflare Workers AI (Llama 3.1 8B Luxury Advisory LLM)
+[ai]
+binding = "AI"
