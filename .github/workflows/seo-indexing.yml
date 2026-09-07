@@ -13,10 +13,14 @@ jobs:
   force-index:
     name: Run Google & Bing Indexing APIs
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -31,7 +35,6 @@ jobs:
         run: npm run prebuild
 
       - name: Create Google Service Account Key
-        # This takes the base64 encoded JSON string from GitHub Secrets and reconstructs the file
         run: echo "${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}" > service-account.json
 
       - name: Execute Google Indexing API
@@ -46,3 +49,10 @@ jobs:
 
       - name: Cleanup Secrets
         run: rm -f service-account.json
+
+      - name: Commit & Push Stateful Indexing Progress
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/indexing_state.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "SEO Engine: Nightly index batch progress update [skip ci]" && git push)
