@@ -24,6 +24,26 @@ const BLOCKED_BOT_PATTERNS = [
 const RATE_LIMIT_MAX = 10;      // max requests per window
 const RATE_LIMIT_WINDOW = 3600; // 1 hour in seconds
 
+const LEGACY_301_REDIRECTS: Record<string, string> = {
+    '/supreme-riverside-punawale-overview': '/supreme-rivana-punawale-overview',
+    '/supreme-riverside-punawale-amenities': '/supreme-rivana-punawale-amenities',
+    '/supreme-riverside-punawale-floor-plans': '/supreme-rivana-punawale-floor-plans',
+    '/supreme-riverside-punawale-gallery': '/supreme-rivana-punawale-gallery',
+    '/supreme-riverside-punawale-location': '/supreme-rivana-punawale-location',
+    '/supreme-riverside-punawale-faq': '/supreme-rivana-punawale-faq',
+    '/supreme-riverside-punawale-contact': '/supreme-rivana-punawale-contact',
+    '/supreme-riverside-punawale': '/',
+    '/supreme-rivana-overview': '/supreme-rivana-punawale-overview',
+    '/supreme-rivana-amenities': '/supreme-rivana-punawale-amenities',
+    '/supreme-rivana-floor-plans': '/supreme-rivana-punawale-floor-plans',
+    '/supreme-rivana-gallery': '/supreme-rivana-punawale-gallery',
+    '/supreme-rivana-location': '/supreme-rivana-punawale-location',
+    '/supreme-rivana-faq': '/supreme-rivana-punawale-faq',
+    '/supreme-rivana-contact': '/supreme-rivana-punawale-contact',
+    '/supreme-rivana-price-list': '/supreme-rivana-punawale-price-list',
+    '/supreme-rivana-comparison': '/supreme-rivana-punawale-comparison'
+};
+
 export async function onRequest(context: {
     request: Request;
     next: () => Promise<Response>;
@@ -38,6 +58,15 @@ export async function onRequest(context: {
         const targetUrl = new URL(request.url);
         targetUrl.hostname = 'www.supreme-universal.in';
         targetUrl.protocol = 'https:';
+        return Response.redirect(targetUrl.toString(), 301);
+    }
+
+    // 0a. Edge 301 Permanent Redirects for Legacy URLs (Instant Googlebot Wave 1 PageRank Consolidation)
+    const normalizedPath = url.pathname.replace(/\/$/, '');
+    const legacyRedirectTarget = LEGACY_301_REDIRECTS[normalizedPath];
+    if (legacyRedirectTarget) {
+        const targetUrl = new URL(request.url);
+        targetUrl.pathname = legacyRedirectTarget;
         return Response.redirect(targetUrl.toString(), 301);
     }
 
@@ -148,21 +177,31 @@ export async function onRequest(context: {
                         e.append(`<meta property="og:description" content="${pseoMeta.description.replace(/"/g, '&quot;')}" />`, { html: true });
                         e.append(`<meta property="og:url" content="${pseoMeta.canonical}" />`, { html: true });
                         e.append(`<meta property="og:type" content="website" />`, { html: true });
+                        e.append(`<meta property="og:site_name" content="Supreme Rivana Punawale" />`, { html: true });
+                        e.append(`<meta property="og:image" content="https://cdn.supremeuniversal.com/media/Supreme-Rivana-Web-Banner_fzjUZ4.jpeg" />`, { html: true });
+                        e.append(`<meta property="og:image:width" content="1200" />`, { html: true });
+                        e.append(`<meta property="og:image:height" content="630" />`, { html: true });
                         e.append(`<meta name="twitter:card" content="summary_large_image" />`, { html: true });
                         e.append(`<meta name="twitter:title" content="${pseoMeta.title.replace(/"/g, '&quot;')}" />`, { html: true });
                         e.append(`<meta name="twitter:description" content="${pseoMeta.description.replace(/"/g, '&quot;')}" />`, { html: true });
+                        e.append(`<meta name="twitter:image" content="https://cdn.supremeuniversal.com/media/Supreme-Rivana-Web-Banner_fzjUZ4.jpeg" />`, { html: true });
                         e.append(`<script type="application/ld+json">${JSON.stringify(pseoMeta.schema)}</script>`, { html: true });
                     }
                 })
                 .on('div#root', {
                     element(e) {
-                        // Pre-rendered semantic crawler fallback for Googlebot Wave 1 crawl
+                        // Semantic crawler fallback complying 100% with Google Webmaster Standards
                         const prerenderHtml = `
-<div id="ssr-edge-preview" style="display:none;" aria-hidden="true">
-    <h1>${pseoMeta.h1}</h1>
-    <p>${pseoMeta.description}</p>
-    ${pseoMeta.faqs.map(f => `<div><h3>${f.q}</h3><p>${f.a}</p></div>`).join('')}
-</div>`;
+<noscript id="ssr-edge-fallback">
+    <article style="padding: 2rem; max-width: 1200px; margin: 0 auto; font-family: sans-serif;">
+        <h1>${pseoMeta.h1}</h1>
+        <p>${pseoMeta.description}</p>
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            ${pseoMeta.faqs.map(f => `<div><h3>${f.q}</h3><p>${f.a}</p></div>`).join('')}
+        </section>
+    </article>
+</noscript>`;
                         e.append(prerenderHtml, { html: true });
                     }
                 });
@@ -174,6 +213,7 @@ export async function onRequest(context: {
             newHeaders.set('X-Edge-Prerender', 'active');
             newHeaders.set('Timing-Allow-Origin', '*');
             newHeaders.set('Server-Timing', 'cf-google-peering;desc="Cloudflare to Google AS15169 Direct PNI", dur=2');
+            newHeaders.set('Cache-Tag', 'supreme-rivana-core, supreme-pune-pseo, supreme-edge-ssr');
 
             return rewriter.transform(new Response(response.body, {
                 status: response.status,

@@ -112,6 +112,18 @@ const FLAGSHIP_PAGES: Record<string, {
     breadcrumb: string;
     faqs: { q: string; a: string }[];
 }> = {
+    '/': {
+        title: 'Supreme Rivana Punawale | Luxury 2 & 3 BHK Riverside Apartments Pune',
+        description: 'Supreme Rivana by Supreme Universal in Punawale, Pune West. 2 & 3 BHK riverside residences across 12.6 acres with 60,000 sq.ft clubhouse & 50+ amenities near Hinjewadi IT Park. MahaRERA: PM1261012502656.',
+        h1: 'Supreme Rivana Punawale — 12.6-Acre Riverside Development',
+        breadcrumb: 'Home',
+        faqs: [
+            { q: 'What is Supreme Rivana in Punawale?', a: 'Supreme Rivana is a premium 12.6-acre riverside residential development by Supreme Universal featuring 2 & 3 BHK luxury residences, West Pune\'s largest 60,000 sq.ft clubhouse, 50+ lifestyle amenities, and 700+ native trees.' },
+            { q: 'What is the starting price for 2 BHK and 3 BHK at Supreme Rivana?', a: 'Luxury 2 BHK residences start from ₹94 Lakhs* onwards, and grand 3 BHK suites start from ₹1.55 Cr* onwards.' },
+            { q: 'What is the MahaRERA number for Supreme Rivana?', a: 'Supreme Rivana Phase I is registered with MahaRERA under registration number PM1261012502656.' },
+            { q: 'How far is Supreme Rivana from Hinjewadi IT Park?', a: 'Supreme Rivana is situated just 10-15 minutes from Hinjewadi IT Park Phase 1 via Marunji Road with rapid connectivity to Mumbai-Pune Expressway.' }
+        ]
+    },
     '/supreme-rivana-punawale-price-list': {
         title: 'Supreme Rivana Punawale Price List 2026 | 2 & 3 BHK Cost Sheets & Payment Plans',
         description: 'Official 2026 Price List for Supreme Rivana Punawale by Supreme Universal. 2 BHK starting from ₹94 Lakhs*, 3 BHK starting from ₹1.55 Cr*. MahaRERA: PM1261012502656. Download complete cost sheet.',
@@ -134,11 +146,11 @@ const FLAGSHIP_PAGES: Record<string, {
     },
     '/supreme-rivana-punawale-floor-plans': {
         title: 'Supreme Rivana Floor Plans & Layouts | 2 & 3 BHK Carpet Areas Punawale',
-        description: 'Download official floor plans and master layout for Supreme Rivana Punawale. 2 BHK (750-850 Sq.ft) & 3 BHK (1050-1150 Sq.ft) river-facing residences with only 6 flats per floor.',
+        description: 'Download official floor plans and master layout for Supreme Rivana Punawale. 2 BHK (785+ Sq.ft) & 3 BHK (1050-1150 Sq.ft) river-facing residences with only 6 flats per floor.',
         h1: 'Supreme Rivana Punawale — Floor Plans & Unit Layouts',
         breadcrumb: 'Floor Plans',
         faqs: [
-            { q: 'What are the carpet areas for 2 BHK and 3 BHK at Supreme Rivana?', a: 'The 2 BHK configurations offer 750 to 850 Sq.ft carpet area, while 3 BHK units offer 1050 to 1150 Sq.ft carpet area.' },
+            { q: 'What are the carpet areas for 2 BHK and 3 BHK at Supreme Rivana?', a: 'The 2 BHK configurations offer 785 sq.ft onwards carpet area, while 3 BHK units offer 1050 to 1150 Sq.ft carpet area.' },
             { q: 'How many apartments are there per floor in Supreme Rivana?', a: 'Supreme Rivana features exclusive low-density planning with only 6 residences per floor and high-speed elevators.' }
         ]
     },
@@ -152,21 +164,21 @@ const FLAGSHIP_PAGES: Record<string, {
         ]
     },
     '/supreme-rivana-punawale-overview': {
-        title: 'Supreme Rivana Punawale | Luxury 15-Acre Riverside Township Pune',
-        description: 'Discover Supreme Rivana Punawale by Supreme Universal: 31-storey high-rise towers spanning 15 acres. Luxury 2 & 3 BHK riverside apartments 10 mins from Hinjewadi IT Park. MahaRERA: PM1261012502656.',
-        h1: 'Supreme Rivana Punawale — 15-Acre Riverside Township',
+        title: 'Supreme Rivana Punawale | Luxury 12.6-Acre Riverside Township Pune',
+        description: 'Discover Supreme Rivana Punawale by Supreme Universal: 31-storey high-rise towers spanning 12.6 acres along Pawana River. Luxury 2 & 3 BHK riverside apartments 10 mins from Hinjewadi IT Park. MahaRERA: PM1261012502656.',
+        h1: 'Supreme Rivana Punawale — 12.6-Acre Riverside Township',
         breadcrumb: 'Overview',
         faqs: [
-            { q: 'What makes Supreme Rivana unique in Punawale?', a: 'It is a 15-acre riverside integrated development with 31-storey towers, over 40 resort amenities, and 10-minute connectivity to Hinjewadi IT Park.' }
+            { q: 'What makes Supreme Rivana unique in Punawale?', a: 'It is a 12.6-acre riverside integrated development with 31-storey towers, 60,000 sq.ft multi-level clubhouse, 50+ curated lifestyle amenities, 700+ native trees, and 10-minute connectivity to Hinjewadi IT Park.' }
         ]
     },
     '/supreme-rivana-punawale-comparison': {
         title: 'Supreme Rivana Punawale vs Competitors | Project Comparison 2026',
-        description: 'Compare Supreme Rivana with Puneville, Kohinoor, and Vilas Javdekar in Punawale. Evaluate carpet area efficiency, 40+ resort amenities, riverfront lifestyle, and 2026 pricing.',
+        description: 'Compare Supreme Rivana with Puneville, Kohinoor, and Vilas Javdekar in Punawale. Evaluate carpet area efficiency, 50+ resort amenities, 60,000 sq.ft clubhouse, riverfront lifestyle, and 2026 pricing.',
         h1: 'Supreme Rivana Punawale vs Competitors — Comparative Analysis',
         breadcrumb: 'Comparison',
         faqs: [
-            { q: 'How does Supreme Rivana compare to other Punawale projects?', a: 'Supreme Rivana offers larger carpet areas, exclusive 6-flats-per-floor privacy, 40+ resort amenities, and the 40+ year heritage of Supreme Universal.' }
+            { q: 'How does Supreme Rivana compare to other Punawale projects?', a: 'Supreme Rivana offers larger carpet areas, exclusive 6-flats-per-floor privacy, 60,000 sq.ft clubhouse, 50+ amenities, and the 40+ year heritage of Supreme Universal.' }
         ]
     },
     '/supreme-rivana-punawale-location': {
@@ -179,12 +191,12 @@ const FLAGSHIP_PAGES: Record<string, {
         ]
     },
     '/supreme-rivana-punawale-amenities': {
-        title: 'Supreme Rivana Amenities | 40+ Luxury Lifestyle Amenities in Punawale',
-        description: 'Experience 40+ curated resort-style amenities at Supreme Rivana Punawale: Infinity edge pool, 25,000 sq.ft clubhouse, sky lounge, riverside promenade, and sports arena.',
-        h1: 'Supreme Rivana Punawale — 40+ Curated Resort Amenities',
+        title: 'Supreme Rivana Amenities | 50+ Luxury Lifestyle Amenities in Punawale',
+        description: 'Experience 50+ curated resort-style amenities at Supreme Rivana Punawale: 60,000 sq.ft multi-level clubhouse, infinity pool, 700+ trees, riverside promenade, and sports arena.',
+        h1: 'Supreme Rivana Punawale — 50+ Curated Resort Amenities',
         breadcrumb: 'Amenities',
         faqs: [
-            { q: 'What amenities are available at Supreme Rivana?', a: 'Over 40 amenities including an infinity swimming pool, multi-tier clubhouse, fitness center, banquet hall, squash court, and riverside walking trail.' }
+            { q: 'What amenities are available at Supreme Rivana?', a: 'Over 50 lifestyle amenities including a 60,000 sq.ft multi-level clubhouse, infinity swimming pool, fitness center, banquet hall, squash court, and riverside walking trail.' }
         ]
     },
     '/supreme-rivana-punawale-gallery': {
@@ -234,7 +246,7 @@ const FLAGSHIP_PAGES: Record<string, {
     },
     '/supreme-2bhk-punawale-flats': {
         title: '2 BHK Flats in Punawale — Supreme Rivana Starting ₹94 Lakhs*',
-        description: 'Spacious 2 BHK luxury flats in Punawale at Supreme Rivana. River-facing balconies, 750-850 sq.ft carpet, 10 mins to Hinjewadi Phase 1. Starting ₹94 Lakhs*. MahaRERA: PM1261012502656.',
+        description: 'Spacious 2 BHK luxury flats in Punawale at Supreme Rivana. River-facing balconies, 785 sq.ft onwards carpet, 10 mins to Hinjewadi Phase 1. Starting ₹94 Lakhs*. MahaRERA: PM1261012502656.',
         h1: 'Supreme Rivana — Luxury 2 BHK Apartments in Punawale',
         breadcrumb: '2 BHK Flats',
         faqs: [
@@ -243,7 +255,7 @@ const FLAGSHIP_PAGES: Record<string, {
     },
     '/supreme-3bhk-punawale-flats': {
         title: '3 BHK Luxury Flats in Punawale — Supreme Rivana Starting ₹1.55 Cr*',
-        description: 'Ultra-luxury 3 BHK apartments in Punawale at Supreme Rivana. Panoramic views, 1050-1150 sq.ft carpet, only 6 flats per floor, resort clubhouse. Starting ₹1.55 Cr*. MahaRERA: PM1261012502656.',
+        description: 'Ultra-luxury 3 BHK apartments in Punawale at Supreme Rivana. Panoramic views, 1050-1150 sq.ft carpet, only 6 flats per floor, 60,000 sq.ft clubhouse. Starting ₹1.55 Cr*. MahaRERA: PM1261012502656.',
         h1: 'Supreme Rivana — Grand 3 BHK Residences in Punawale',
         breadcrumb: '3 BHK Flats',
         faqs: [
@@ -258,25 +270,38 @@ const FLAGSHIP_PAGES: Record<string, {
         faqs: [
             { q: 'Which are the best micro-markets to buy property in Pune?', a: 'West Pune (Punawale, Wakad, Hinjewadi, Baner, Balewadi) is leading demand due to proximity to IT hubs and the Mumbai-Pune Expressway.' }
         ]
+    },
+    '/blog': {
+        title: 'Punawale & Pune Real Estate Insights & Guides | Supreme Universal Blog',
+        description: 'Expert research, infrastructure updates, and price trends for Punawale, Hinjewadi, Wakad, and Pune West real estate by Supreme Universal.',
+        h1: 'Supreme Universal Real Estate Blog & Market Intelligence',
+        breadcrumb: 'Blog',
+        faqs: [
+            { q: 'What topics does the Supreme Universal blog cover?', a: 'We publish in-depth analyses on Punawale infrastructure, comparison guides, home loan advice, RERA verification, and West Pune property investment.' }
+        ]
     }
 };
 
 export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
-    const cleanPath = pathname.replace(/\/$/, '');
+    const cleanPath = pathname.replace(/\/$/, '') || '/';
 
     // 0. Flagship Supreme Rivana & Directory Routes (Direct Edge SSR Pre-rendering)
     const flagship = FLAGSHIP_PAGES[cleanPath];
     if (flagship) {
-        const canonical = `https://www.supreme-universal.in${cleanPath}`;
+        const canonical = cleanPath === '/' ? 'https://www.supreme-universal.in/' : `https://www.supreme-universal.in${cleanPath}`;
+        const breadcrumbItems = cleanPath === '/' 
+            ? [{ '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.supreme-universal.in/' }]
+            : [
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.supreme-universal.in/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Supreme Rivana Punawale', 'item': 'https://www.supreme-universal.in/supreme-rivana-punawale-overview' },
+                { '@type': 'ListItem', 'position': 3, 'name': flagship.breadcrumb, 'item': canonical }
+            ];
+
         const schema = [
             {
                 '@context': 'https://schema.org',
                 '@type': 'BreadcrumbList',
-                'itemListElement': [
-                    { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.supreme-universal.in/' },
-                    { '@type': 'ListItem', 'position': 2, 'name': 'Supreme Rivana Punawale', 'item': 'https://www.supreme-universal.in/supreme-rivana-punawale-overview' },
-                    { '@type': 'ListItem', 'position': 3, 'name': flagship.breadcrumb, 'item': canonical }
-                ]
+                'itemListElement': breadcrumbItems
             },
             {
                 '@context': 'https://schema.org',
@@ -339,6 +364,75 @@ export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
             faqs: flagship.faqs,
             schema
         };
+    }
+
+    // 0b. Dynamic Blog Post Routes (Direct Edge SSR Pre-rendering)
+    if (cleanPath.startsWith('/blog/')) {
+        const slug = cleanPath.replace('/blog/', '');
+        const formattedTitle = slug
+            .split('-')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
+
+        const title = `${formattedTitle} | Supreme Universal Real Estate Guide`;
+        const description = `Read our comprehensive guide on ${formattedTitle}. Verified insights on Punawale real estate, investment metrics, and Supreme Rivana project details.`;
+        const canonical = `https://www.supreme-universal.in/blog/${slug}`;
+        const h1 = formattedTitle;
+
+        const faqs = [
+            {
+                q: `What are the key insights from this Punawale real estate guide?`,
+                a: `This analysis covers infrastructure growth, investment returns, and comparative advantages of Supreme Rivana in Punawale, Pune West.`
+            },
+            {
+                q: `Is Supreme Rivana MahaRERA approved?`,
+                a: `Yes, Supreme Rivana Phase I is registered under MahaRERA number PM1261012502656.`
+            }
+        ];
+
+        const schema = [
+            {
+                '@context': 'https://schema.org',
+                '@type': 'BreadcrumbList',
+                'itemListElement': [
+                    { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.supreme-universal.in/' },
+                    { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.supreme-universal.in/blog' },
+                    { '@type': 'ListItem', 'position': 3, 'name': formattedTitle, 'item': canonical }
+                ]
+            },
+            {
+                '@context': 'https://schema.org',
+                '@type': 'BlogPosting',
+                'headline': formattedTitle,
+                'description': description,
+                'url': canonical,
+                'author': {
+                    '@type': 'Organization',
+                    'name': 'Supreme Universal',
+                    'url': 'https://www.supreme-universal.in/'
+                },
+                'publisher': {
+                    '@type': 'Organization',
+                    'name': 'Supreme Universal',
+                    'logo': {
+                        '@type': 'ImageObject',
+                        'url': 'https://www.supremeuniversal.com/front/img/favicon.png'
+                    }
+                },
+                'mainEntityOfPage': canonical
+            },
+            {
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                'mainEntity': faqs.map(f => ({
+                    '@type': 'Question',
+                    'name': f.q,
+                    'acceptedAnswer': { '@type': 'Answer', 'text': f.a }
+                }))
+            }
+        ];
+
+        return { title, description, canonical, h1, faqs, schema };
     }
 
     // 1. Regional Pune Real Estate PSEO Route

@@ -21,15 +21,15 @@ const SEO = ({
     const routeMetadata: Record<string, { title: string; description: string }> = {
         '/': {
             title: 'Supreme Rivana Punawale | Luxury 2 & 3 BHK near Hinjewadi',
-            description: 'Explore Supreme Rivana Punawale: luxury 2 & 3 BHK riverside flats in Punawale, Pune West by Supreme Universal. View price lists & book VIP site visits!'
+            description: 'Explore Supreme Rivana Punawale: luxury 2 & 3 BHK riverside flats in Punawale, Pune West by Supreme Universal. 12.6 acres with 60,000 sq.ft clubhouse & 50+ amenities.'
         },
         '/supreme-rivana-punawale-overview': {
             title: 'Project Overview | Supreme Rivana Punawale Riverside',
-            description: 'Discover Supreme Rivana Punawale: a 15-acre luxury township near Wakad-Hinjewadi Link Road by Supreme Universal. Explore the master plans and layout.'
+            description: 'Discover Supreme Rivana Punawale: a 12.6-acre luxury riverside development near Wakad-Hinjewadi Link Road by Supreme Universal. 60,000 sq.ft clubhouse & 50+ amenities.'
         },
         '/supreme-rivana-punawale-amenities': {
             title: 'Luxury Amenities | Supreme Rivana Punawale Riverside',
-            description: 'Experience 40+ amenities at Supreme Rivana: infinity pool, sports courts, skywalk, and riverside promenade. View the luxury lifestyle guide in Pune.'
+            description: 'Experience 50+ amenities at Supreme Rivana: 60,000 sq.ft clubhouse, infinity pool, sports courts, skywalk, and riverside promenade.'
         },
         '/supreme-rivana-punawale-floor-plans': {
             title: 'Floor Plan & Price List | Supreme Rivana Punawale',
@@ -45,7 +45,7 @@ const SEO = ({
         },
         '/supreme-rivana-punawale-faq': {
             title: 'FAQs & Booking Details | Supreme Rivana Punawale',
-            description: 'Find official details on Supreme Rivana Punawale: MahaRERA certificate registration number, construction updates, timelines, and booking info.'
+            description: 'Find official details on Supreme Rivana Punawale: MahaRERA certificate PM1261012502656, construction updates, timelines, and booking info.'
         },
         '/supreme-rivana-punawale-contact': {
             title: 'Contact Sales Office | Supreme Rivana Punawale',
@@ -53,7 +53,7 @@ const SEO = ({
         },
         '/supreme-rivana-punawale-price-list': {
             title: 'Price List & Cost Sheet | Supreme Rivana Punawale',
-            description: 'Get the official 2026 price list and cost sheets for 2 BHK and 3 BHK luxury flats at Supreme Rivana Punawale. Review all-inclusive payment plans.'
+            description: 'Get the official 2026 price list and cost sheets for 2 BHK (₹94L*) and 3 BHK (₹1.55Cr*) luxury flats at Supreme Rivana Punawale.'
         },
         '/supreme-rivana-punawale-comparison': {
             title: 'Supreme Rivana Comparison Review vs Competitors',
@@ -65,17 +65,15 @@ const SEO = ({
     const title = propTitle || currentMetadata.title;
     const description = propDescription || currentMetadata.description;
     
-    // Standardize URL: Force non-www and enforce trailing slashes for root/GSC consistency
+    // Standardize URL: Force clean canonical matching Edge HTMLRewriter exactly
     const cleanPathname = pathname === '/' ? '/' : pathname.replace(/\/$/, '');
     
-    // Canonical URL Fix: If a propUrl is explicitly passed (e.g., from BlogPost or ProgrammaticLanding), always use it.
-    // Otherwise, if this is a scroll-anchor route mapping to MainApp, the canonical MUST be the root domain.
+    // Canonical URL: Exact match with Edge SSR Prerenderer (eliminates soft canonical mismatch)
     let url: string;
     if (propUrl) {
         url = propUrl;
     } else {
-        const isAnchorRoute = Object.keys(routeMetadata).includes(pathname) && pathname !== '/';
-        const canonicalPath = isAnchorRoute ? '/' : cleanPathname;
+        const canonicalPath = cleanPathname === '/' ? '/' : cleanPathname;
         url = `https://www.supreme-universal.in${canonicalPath}`;
     }
     const fullTitle = title.includes('Supreme Rivana') ? title : `${title} | Supreme Rivana Punawale`;
