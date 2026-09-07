@@ -20,8 +20,8 @@ const SEO = ({
     // Route-specific metadata mapping for section routes
     const routeMetadata: Record<string, { title: string; description: string }> = {
         '/': {
-            title: 'Supreme Rivana Punawale | Luxury 2 & 3 BHK near Hinjewadi',
-            description: 'Explore Supreme Rivana Punawale: luxury 2 & 3 BHK riverside flats in Punawale, Pune West by Supreme Universal. 12.6 acres with 60,000 sq.ft clubhouse & 50+ amenities.'
+            title: 'Supreme Rivana Punawale | Luxury 2 & 3 BHK Riverside Apartments Pune',
+            description: 'Supreme Rivana by Supreme Universal in Punawale, Pune West. 2 & 3 BHK riverside residences across 12.6 acres with 60,000 sq.ft clubhouse & 50+ amenities near Hinjewadi IT Park. MahaRERA: PM1261012502656.'
         },
         '/supreme-rivana-punawale-overview': {
             title: 'Project Overview | Supreme Rivana Punawale Riverside',

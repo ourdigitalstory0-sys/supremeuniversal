@@ -229,9 +229,9 @@ const BlogPost = () => {
                             Discover why <strong className="text-white">Supreme Rivana Punawale</strong> is the top-ranked luxury project in Pune West 2026 — featuring 31-storey towers, 15-acre riverside township, and 40+ world-class amenities near Hinjewadi IT Park.
                         </p>
                         <div className="flex flex-wrap gap-3">
-                            <Link to="/supreme-rivana-overview" className="inline-block bg-supreme-gold text-supreme-black px-5 py-2.5 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Project Overview</Link>
-                            <Link to="/supreme-rivana-floor-plans" className="inline-block border border-white/30 text-white px-5 py-2.5 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white/10 transition-colors">Floor Plans</Link>
-                            <Link to="/supreme-rivana-contact" className="inline-block border border-white/30 text-white px-5 py-2.5 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white/10 transition-colors">Get Price List</Link>
+                            <Link to="/supreme-rivana-punawale-overview" className="inline-block bg-supreme-gold text-supreme-black px-5 py-2.5 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white transition-colors">Project Overview</Link>
+                            <Link to="/supreme-rivana-punawale-floor-plans" className="inline-block border border-white/30 text-white px-5 py-2.5 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white/10 transition-colors">Floor Plans</Link>
+                            <Link to="/supreme-rivana-punawale-contact" className="inline-block border border-white/30 text-white px-5 py-2.5 font-sans font-semibold uppercase tracking-widest text-xs hover:bg-white/10 transition-colors">Get Price List</Link>
                         </div>
                     </div>
                 </div>

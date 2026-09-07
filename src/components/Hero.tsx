@@ -96,7 +96,7 @@ const Hero = ({
                     </button>
 
                     <Link
-                        to="/supreme-rivana-overview"
+                        to="/supreme-rivana-punawale-overview"
                         className="group relative px-8 py-4 rounded-full font-sans font-semibold uppercase tracking-widest text-sm transition-all w-full sm:w-auto text-white border border-white/30 hover:border-white hover:bg-white/10"
                     >
                         Explore Project
