@@ -17,8 +17,8 @@ interface Env {
 
 const BLOCKED_BOT_PATTERNS = [
     'scrapy', 'ahrefsbot', 'semrushbot', 'dotbot', 'mj12bot',
-    'blexbot', 'petalbot', 'baiduspider', 'yandexbot', 'bytespider',
-    'dataforseobot', 'serpstatbot', 'seokicks-robot'
+    'blexbot', 'petalbot', 'bytespider', 'dataforseobot',
+    'serpstatbot', 'seokicks-robot'
 ];
 
 const RATE_LIMIT_MAX = 10;      // max requests per window
@@ -103,15 +103,22 @@ export async function onRequest(context: {
         });
     }
 
-    // Google Infrastructure & Verified Bot Detection
-    const isGooglebot = ua.includes('googlebot') || 
+    // Verified Search Engines & Crawlers Detection (Google, Bing, IndexNow, Yandex, DuckDuckGo)
+    const isSearchBot = ua.includes('googlebot') || 
                         ua.includes('google-inspectiontool') || 
                         ua.includes('chrome-lighthouse') || 
                         ua.includes('storebot-google') ||
-                        ua.includes('google-pagerenderer');
+                        ua.includes('google-pagerenderer') ||
+                        ua.includes('bingbot') ||
+                        ua.includes('bingpreview') ||
+                        ua.includes('indexnow') ||
+                        ua.includes('yandex') ||
+                        ua.includes('duckduckbot') ||
+                        ua.includes('slurp') ||
+                        ua.includes('baiduspider');
 
     // 1. Block known scraper bots (keep search bots allowed)
-    if (!isGooglebot) {
+    if (!isSearchBot) {
         const isScraper = BLOCKED_BOT_PATTERNS.some(bot => ua.includes(bot));
         if (isScraper) {
             return new Response('Access denied.', {
@@ -121,8 +128,8 @@ export async function onRequest(context: {
         }
     }
 
-    // 2. IP Rate Limiting for API routes only (Googlebot bypassed)
-    if (!isGooglebot && url.pathname.startsWith('/api/') && env.PRICE_STORE) {
+    // 2. IP Rate Limiting for API routes only (Search bots bypassed)
+    if (!isSearchBot && url.pathname.startsWith('/api/') && env.PRICE_STORE) {
         const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
         const rateLimitKey = `rate:${ip}:${url.pathname}`;
 
