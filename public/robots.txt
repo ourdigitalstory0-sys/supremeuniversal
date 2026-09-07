@@ -6,13 +6,34 @@ Disallow: /*?filter=
 Disallow: /api/
 Disallow: /private/
 
-# Googlebot specific optimizations
+# Googlebot VIP Directives (Full Unrestricted Indexation)
 User-agent: Googlebot
 Allow: /
-Disallow: /*?search=
+Disallow: /api/
 
-# Crawl-delay for non-Google bots (to save server resources)
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Storebot-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
 User-agent: Bingbot
+Allow: /
 Crawl-delay: 1
 
 User-agent: Yandex
