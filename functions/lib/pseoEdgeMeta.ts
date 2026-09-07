@@ -438,16 +438,28 @@ export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
     // 1. Regional Pune Real Estate PSEO Route
     if (cleanPath.startsWith('/pune-real-estate/')) {
         const slug = cleanPath.replace('/pune-real-estate/', '');
-        const match = slug.match(/^([a-z0-9]+)-([a-z0-9]+)-in-([a-z0-9-]+)-([a-z0-9-]+)$/);
-        if (!match) return null;
+        const inIndex = slug.indexOf('-in-');
+        if (inIndex === -1) return null;
 
-        const [_, configId, typeId, locId, themeId] = match;
-        const locality = LOCALITIES[locId];
-        const configName = CONFIGS[configId];
+        const prefix = slug.substring(0, inIndex);
+        const suffix = slug.substring(inIndex + 4);
+
+        const configEntry = Object.entries(CONFIGS).find(([id]) => prefix.startsWith(id + '-'));
+        if (!configEntry) return null;
+        const [configId, configName] = configEntry;
+
+        const typeId = prefix.substring(configId.length + 1);
         const typeName = PROPERTY_TYPES[typeId];
-        const theme = THEMES[themeId];
+        if (!typeName) return null;
 
-        if (!locality || !configName || !typeName || !theme) return null;
+        const sortedThemeEntries = Object.entries(THEMES).sort((a, b) => b[0].length - a[0].length);
+        const themeEntry = sortedThemeEntries.find(([id]) => suffix.endsWith('-' + id) || suffix === id);
+        if (!themeEntry) return null;
+        const [themeId, theme] = themeEntry;
+
+        const locId = suffix.substring(0, suffix.length - themeId.length - 1);
+        const locality = LOCALITIES[locId];
+        if (!locality) return null;
 
         const title = `${configName} ${typeName} in ${locality.name} (${theme.name}) | Supreme Rivana Pune`;
         const description = `Looking for ${configName} ${typeName.toLowerCase()} in ${locality.name}? Explore ${theme.suffix} with Supreme Rivana Punawale. Average rate in ${locality.name}: ${locality.avgRate}. Just ${locality.nearbyIT} to Hinjewadi IT Park.`;

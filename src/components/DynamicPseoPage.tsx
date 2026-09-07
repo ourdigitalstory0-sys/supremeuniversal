@@ -37,22 +37,31 @@ const DynamicPseoPage = () => {
 
     if (!slug) return <Navigate to="/404" replace />;
 
-    // Parse slug: config-type-in-location-theme
-    const regex = /^([a-z0-9]+)-([a-z0-9]+)-in-([a-z0-9-]+)-([a-z0-9-]+)$/;
-    const match = slug.match(regex);
+    // Parse slug: config-type-in-location-theme (Robust against multi-hyphen locations and themes)
+    const inIndex = slug.indexOf('-in-');
+    if (inIndex === -1) return <Navigate to="/404" replace />;
 
-    if (!match) return <Navigate to="/404" replace />;
+    const prefix = slug.substring(0, inIndex);
+    const suffix = slug.substring(inIndex + 4);
 
-    const [_, parsedConfigId, parsedTypeId, parsedLocId, parsedThemeId] = match;
+    const config = configs.find(c => prefix.startsWith(c.id + '-'));
+    if (!config) return <Navigate to="/404" replace />;
 
-    const locality = localities.find(l => l.id === parsedLocId);
-    const config = configs.find(c => c.id === parsedConfigId);
+    const parsedTypeId = prefix.substring(config.id.length + 1);
     const propType = propertyTypes.find(t => t.id === parsedTypeId);
-    const theme = themes.find(t => t.id === parsedThemeId);
+    if (!propType) return <Navigate to="/404" replace />;
 
-    if (!locality || !config || !propType || !theme) {
-        return <Navigate to="/404" replace />;
-    }
+    // Sort themes by length descending so multi-word themes match first
+    const sortedThemes = [...themes].sort((a, b) => b.id.length - a.id.length);
+    const theme = sortedThemes.find(t => suffix.endsWith('-' + t.id) || suffix === t.id);
+    if (!theme) return <Navigate to="/404" replace />;
+
+    const parsedLocId = suffix.substring(0, suffix.length - theme.id.length - 1);
+    const locality = localities.find(l => l.id === parsedLocId);
+    if (!locality) return <Navigate to="/404" replace />;
+
+    const parsedConfigId = config.id;
+    const parsedThemeId = theme.id;
 
     // Generate semantic, custom keyword page copy (Pixel-hardened for SERP limits)
     const titleText = `${config.name} ${propType.name} in ${locality.name} (${theme.name})`;
