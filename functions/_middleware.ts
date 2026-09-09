@@ -84,14 +84,30 @@ export async function onRequest(context: {
         });
     }
 
-    // 0c. Trailing Slash Canonical Normalizer (Consolidates duplicates for Rank #1 SEO)
+    // 0c. Case Normalization & Slashes Normalizer (Preserves 100% PageRank into canonical lowercase)
+    if (!url.pathname.startsWith('/api/') && !url.pathname.startsWith('/assets/')) {
+        let cleanedPath = url.pathname;
+        if (cleanedPath.includes('//')) {
+            cleanedPath = cleanedPath.replace(/\/+/g, '/');
+        }
+        if (/[A-Z]/.test(cleanedPath)) {
+            cleanedPath = cleanedPath.toLowerCase();
+        }
+        if (cleanedPath !== url.pathname) {
+            const targetUrl = new URL(request.url);
+            targetUrl.pathname = cleanedPath;
+            return Response.redirect(targetUrl.toString(), 301);
+        }
+    }
+
+    // 0d. Trailing Slash Canonical Normalizer (Consolidates duplicates for Rank #1 SEO)
     if (url.pathname.length > 1 && url.pathname.endsWith('/')) {
         const targetUrl = new URL(request.url);
         targetUrl.pathname = targetUrl.pathname.slice(0, -1);
         return Response.redirect(targetUrl.toString(), 301);
     }
 
-    // 0d. Edge Attack & Vulnerability Probing Shield (Blocks path traversal, .env, .git, php probes in <1ms)
+    // 0e. Edge Attack & Vulnerability Probing Shield (Blocks path traversal, .env, .git, php probes in <1ms)
     const MALICIOUS_PATTERNS = [
         '..', '.env', '.git', '.php', 'wp-admin', 'wp-login', 'xmlrpc', 
         '/etc/passwd', '/bin/', '/eval('
@@ -101,6 +117,36 @@ export async function onRequest(context: {
             status: 403,
             headers: { 'Content-Type': 'text/plain', 'X-Robots-Tag': 'noindex, nofollow' }
         });
+    }
+
+    // 0f. True Edge 404 for Invalid PSEO Routes (Eliminates Google Soft-404 Penalties)
+    if (url.pathname.startsWith('/pune-real-estate/') || url.pathname.startsWith('/pune-projects/')) {
+        const pseoMeta = resolvePseoMetadata(url.pathname);
+        if (!pseoMeta) {
+            return new Response(`<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page Not Found | Supreme Universal</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body style="background:#0F1014;color:#FFFFFF;font-family:sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:2rem;text-align:center;">
+  <div>
+    <h1 style="font-size:3rem;color:#C6A87C;margin-bottom:1rem;">404</h1>
+    <p style="font-size:1.25rem;color:#D1D5DB;margin-bottom:2rem;">The requested real estate configuration was not found or has been moved.</p>
+    <a href="/" style="display:inline-block;background:#C6A87C;color:#0F1014;padding:0.75rem 2rem;border-radius:9999px;font-weight:600;text-decoration:none;text-transform:uppercase;letter-spacing:0.1em;font-size:0.875rem;">Return Home</a>
+  </div>
+</body>
+</html>`, {
+                status: 404,
+                headers: {
+                    'Content-Type': 'text/html; charset=utf-8',
+                    'X-Robots-Tag': 'noindex, nofollow',
+                    'Cache-Control': 'public, max-age=3600'
+                }
+            });
+        }
     }
 
     // Verified Search Engines & Crawlers Detection (Google, Bing, IndexNow, Yandex, DuckDuckGo)
