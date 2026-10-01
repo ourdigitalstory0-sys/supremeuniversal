@@ -117,6 +117,7 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                                             <form onSubmit={handleSubmit} className="space-y-6">
                                                 <div className="space-y-4">
                                                     <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+                                                    <input type="text" name="website" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
                                                     <input
                                                         type="text"
                                                         name="name"
@@ -128,8 +129,8 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                                                         type="tel"
                                                         name="phone"
                                                         placeholder="Phone Number *"
-                                                        pattern="[0-9]{10}"
-                                                        title="Please enter a valid 10-digit phone number"
+                                                        pattern="[6-9][0-9]{9}"
+                                                        title="Please enter a valid 10-digit Indian mobile number"
                                                         required
                                                         className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-supreme-gold transition-colors font-sans text-sm"
                                                     />

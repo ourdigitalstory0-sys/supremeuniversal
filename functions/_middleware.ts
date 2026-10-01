@@ -18,7 +18,10 @@ interface Env {
 const BLOCKED_BOT_PATTERNS = [
     'scrapy', 'ahrefsbot', 'semrushbot', 'dotbot', 'mj12bot',
     'blexbot', 'petalbot', 'bytespider', 'dataforseobot',
-    'serpstatbot', 'seokicks-robot'
+    'serpstatbot', 'seokicks-robot', 'megaindex', 'zoominfobot',
+    'sqlmap', 'nikto', 'acunetix', 'nmap', 'masscan', 'wpscan',
+    'zgrab', 'censys', 'shodan', 'gobuster', 'dirbuster', 'nuclei',
+    'openvas', 'nessus', 'qualys', 'havij'
 ];
 
 const RATE_LIMIT_MAX = 10;      // max requests per window
@@ -107,19 +110,58 @@ export async function onRequest(context: {
         return Response.redirect(targetUrl.toString(), 301);
     }
 
-    // 0e. Edge Attack & Vulnerability Probing Shield (Blocks path traversal, .env, .git, php probes in <1ms)
-    const MALICIOUS_PATTERNS = [
-        '..', '.env', '.git', '.php', 'wp-admin', 'wp-login', 'xmlrpc', 
-        '/etc/passwd', '/bin/', '/eval('
-    ];
-    if (MALICIOUS_PATTERNS.some(pat => url.pathname.toLowerCase().includes(pat))) {
-        return new Response('Access denied by Edge Security Shield.', {
-            status: 403,
-            headers: { 'Content-Type': 'text/plain', 'X-Robots-Tag': 'noindex, nofollow' }
+    // 0e. HTTP Method Guard (Only allow GET, HEAD, OPTIONS outside of /api/)
+    if (!url.pathname.startsWith('/api/') && request.method !== 'GET' && request.method !== 'HEAD' && request.method !== 'OPTIONS') {
+        return new Response('Method Not Allowed', {
+            status: 405,
+            headers: {
+                'Allow': 'GET, HEAD, OPTIONS',
+                'Content-Type': 'text/plain',
+                'X-Content-Type-Options': 'nosniff'
+            }
         });
     }
 
-    // 0f. True Edge 404 for Invalid PSEO Routes (Eliminates Google Soft-404 Penalties)
+    // 0f. Edge Attack & Vulnerability Probing Shield (Blocks path traversal, .env, .git, php probes in <1ms)
+    const MALICIOUS_PATTERNS = [
+        '..', '%2e%2e', '.env', '.git', '.svn', '.htaccess', '.htpasswd', 
+        'web.config', 'wp-config', '.php', 'wp-admin', 'wp-login', 'xmlrpc', 
+        '/etc/passwd', '/etc/shadow', '/proc/self', '/bin/', '/eval(', 
+        'base64_decode', 'cmd.exe', 'phpinfo', '<script'
+    ];
+    const pathLower = url.pathname.toLowerCase();
+    if (MALICIOUS_PATTERNS.some(pat => pathLower.includes(pat))) {
+        return new Response('Access denied by Edge Security Shield.', {
+            status: 403,
+            headers: { 
+                'Content-Type': 'text/plain', 
+                'X-Content-Type-Options': 'nosniff',
+                'X-Robots-Tag': 'noindex, nofollow' 
+            }
+        });
+    }
+
+    // 0g. Query String Injection Shield (Blocks SQLi & XSS probing on all URLs)
+    const rawSearch = url.search ? decodeURIComponent(url.search).toLowerCase() : '';
+    if (rawSearch) {
+        const INJECTION_PATTERNS = [
+            '<script', 'javascript:', 'onload=', 'onerror=', 'union select',
+            'order by', 'information_schema', 'sleep(', 'benchmark(',
+            'drop table', 'exec(', 'eval('
+        ];
+        if (INJECTION_PATTERNS.some(pat => rawSearch.includes(pat))) {
+            return new Response('Invalid request parameters detected.', {
+                status: 403,
+                headers: { 
+                    'Content-Type': 'text/plain', 
+                    'X-Content-Type-Options': 'nosniff',
+                    'X-Robots-Tag': 'noindex, nofollow' 
+                }
+            });
+        }
+    }
+
+    // 0h. True Edge 404 for Invalid PSEO Routes (Eliminates Google Soft-404 Penalties)
     if (url.pathname.startsWith('/pune-real-estate/') || url.pathname.startsWith('/pune-projects/')) {
         const pseoMeta = resolvePseoMetadata(url.pathname);
         if (!pseoMeta) {
@@ -149,7 +191,7 @@ export async function onRequest(context: {
         }
     }
 
-    // Verified Search Engines & Crawlers Detection (Google, Bing, IndexNow, Yandex, DuckDuckGo)
+    // Verified Search Engines & Crawlers Detection (Google, Bing, IndexNow, Yandex, DuckDuckGo, Social Previews)
     const isSearchBot = ua.includes('googlebot') || 
                         ua.includes('google-inspectiontool') || 
                         ua.includes('chrome-lighthouse') || 
@@ -161,7 +203,12 @@ export async function onRequest(context: {
                         ua.includes('yandex') ||
                         ua.includes('duckduckbot') ||
                         ua.includes('slurp') ||
-                        ua.includes('baiduspider');
+                        ua.includes('baiduspider') ||
+                        ua.includes('applebot') ||
+                        ua.includes('facebookexternalhit') ||
+                        ua.includes('twitterbot') ||
+                        ua.includes('linkedinbot') ||
+                        ua.includes('whatsapp');
 
     // 1. Block known scraper bots (keep search bots allowed)
     if (!isSearchBot) {
@@ -263,6 +310,11 @@ export async function onRequest(context: {
             newHeaders.set('X-Robots-Tag', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
             newHeaders.set('X-DNS-Prefetch-Control', 'on');
             newHeaders.set('X-XSS-Protection', '1; mode=block');
+            newHeaders.set('X-Content-Type-Options', 'nosniff');
+            newHeaders.set('X-Frame-Options', 'SAMEORIGIN');
+            newHeaders.set('X-Permitted-Cross-Domain-Policies', 'none');
+            newHeaders.set('X-Download-Options', 'noopen');
+            newHeaders.set('Referrer-Policy', 'strict-origin-when-cross-origin');
             newHeaders.set('X-Edge-Prerender', 'active');
             newHeaders.set('Timing-Allow-Origin', '*');
             newHeaders.set('Server-Timing', 'cf-google-peering;desc="Cloudflare to Google AS15169 Direct PNI", dur=2');
@@ -281,6 +333,11 @@ export async function onRequest(context: {
     newHeaders.set('X-Robots-Tag', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
     newHeaders.set('X-DNS-Prefetch-Control', 'on');
     newHeaders.set('X-XSS-Protection', '1; mode=block');
+    newHeaders.set('X-Content-Type-Options', 'nosniff');
+    newHeaders.set('X-Frame-Options', 'SAMEORIGIN');
+    newHeaders.set('X-Permitted-Cross-Domain-Policies', 'none');
+    newHeaders.set('X-Download-Options', 'noopen');
+    newHeaders.set('Referrer-Policy', 'strict-origin-when-cross-origin');
     newHeaders.set('Timing-Allow-Origin', '*');
     newHeaders.set('Server-Timing', 'cf-google-peering;desc="Cloudflare to Google AS15169 Direct PNI", dur=2');
 

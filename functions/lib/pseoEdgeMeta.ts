@@ -234,11 +234,11 @@ const FLAGSHIP_PAGES: Record<string, {
     },
     '/supreme-rivana-punawale-contact': {
         title: 'Contact Supreme Rivana Sales Office | Book Site Visit & Cost Sheet',
-        description: 'Schedule an exclusive site visit to Supreme Rivana Punawale. Call +91-7744009295 for real-time inventory, sample flat walkthrough, and limited launch pricing offers.',
+        description: 'Schedule an exclusive site visit to Supreme Rivana Punawale. Call +91 97390 00354 for real-time inventory, sample flat walkthrough, and limited launch pricing offers.',
         h1: 'Contact Supreme Rivana Punawale Sales Experience Center',
         breadcrumb: 'Contact',
         faqs: [
-            { q: 'How can I schedule a site visit to Supreme Rivana?', a: 'You can call +91-7744009295 or submit the online enquiry form to schedule a site tour and pick-and-drop assistance.' }
+            { q: 'How can I schedule a site visit to Supreme Rivana?', a: 'You can call +91 97390 00354 or submit the online enquiry form to schedule a site tour and pick-and-drop assistance.' }
         ]
     },
     '/supreme-rivana-punawale-faq': {

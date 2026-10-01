@@ -14,7 +14,7 @@ const MobileStickyBar = ({ onEnquire }: MobileStickyBarProps) => {
             className="md:hidden fixed bottom-0 left-0 w-full z-50 flex h-16 shadow-[0_-4px_20px_rgba(0,0,0,0.15)]"
         >
             <a 
-                href="tel:+917744009295" 
+                href="tel:+919739000354" 
                 className="flex-1 bg-white flex flex-col items-center justify-center border-r border-gray-200 text-supreme-black hover:bg-gray-50 transition-colors"
                 aria-label="Call Sales"
             >

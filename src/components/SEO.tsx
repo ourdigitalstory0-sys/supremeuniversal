@@ -124,7 +124,7 @@ const SEO = ({
             ],
             "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+91-7744009295",
+                "telephone": "+919739000354",
                 "contactType": "sales",
                 "areaServed": "IN",
                 "availableLanguage": ["en", "hi", "mr"]

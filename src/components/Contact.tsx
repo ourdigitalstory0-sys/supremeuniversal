@@ -157,11 +157,11 @@ const Contact = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="space-y-8"
                         >
-                            <a href="tel:+917744009295" className="flex items-center gap-6 group">
+                            <a href="tel:+919739000354" className="flex items-center gap-6 group">
                                 <div className="p-4 bg-white/5 border border-white/10 rounded-full group-hover:border-supreme-gold transition-colors duration-500">
                                     <Phone className="text-supreme-gold w-5 h-5" />
                                 </div>
-                                <p className="text-xl text-white font-sans font-light tracking-wide group-hover:text-supreme-gold transition-colors duration-300">+91 77440 09295</p>
+                                <p className="text-xl text-white font-sans font-light tracking-wide group-hover:text-supreme-gold transition-colors duration-300">+91 97390 00354</p>
                             </a>
                         </motion.div>
                     </div>
@@ -253,6 +253,7 @@ const Contact = () => {
                                         </div>
                                         
                                         <form onSubmit={handleSubmit} className="space-y-6">
+                                            <input type="text" name="website" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                                 <div className="relative">
                                                     <input
@@ -293,8 +294,8 @@ const Contact = () => {
                                                         type="tel"
                                                         name="phone"
                                                         placeholder="Phone Number *"
-                                                        pattern="[0-9]{10}"
-                                                        title="Please enter a valid 10-digit phone number"
+                                                        pattern="[6-9][0-9]{9}"
+                                                        title="Please enter a valid 10-digit Indian mobile number"
                                                         required
                                                         value={formData.phone}
                                                         onChange={handleInputChange}

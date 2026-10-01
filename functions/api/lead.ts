@@ -31,19 +31,26 @@ export async function onRequestPost(context: {
 }): Promise<Response> {
     const { request, env } = context;
 
+    const origin = request.headers.get('Origin') || '';
+    const isAllowedOrigin = !origin || 
+                            origin.endsWith('supreme-universal.in') || 
+                            origin.includes('localhost') || 
+                            origin.includes('127.0.0.1');
+
     const corsHeaders = {
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': isAllowedOrigin ? origin : 'https://www.supreme-universal.in',
         'Access-Control-Allow-Methods': 'POST, OPTIONS',
         'Access-Control-Allow-Headers': 'Content-Type',
         'Content-Type': 'application/json',
+        'X-Content-Type-Options': 'nosniff'
     };
 
     try {
         // Parse incoming JSON body
         const body = await request.json() as Record<string, string>;
 
-        // 1. Honeypot Anti-Spam Trap: Bots fill hidden inputs
-        if (body.website || body.b_comment || body._honeypot) {
+        // 1. Multi-Honeypot Anti-Spam Trap: Automated bots fill hidden inputs
+        if (body.website || body.company || body.b_comment || body._honeypot || body.address_line_2 || body.phone_confirm) {
             return new Response(JSON.stringify({
                 success: true,
                 message: 'Thank you! Our sales desk will contact you shortly.'
@@ -52,7 +59,7 @@ export async function onRequestPost(context: {
 
         // 2. Strict Input Sanitization
         const sanitize = (str?: string) => (str || '').replace(/[<>]/g, '').trim();
-        const name = sanitize(body.name).slice(0, 100);
+        const name = sanitize(body.name).slice(0, 70);
         const phone = sanitize(body.phone).replace(/\s+/g, '');
         const email = sanitize(body.email).slice(0, 100);
         const interest = sanitize(body.interest).slice(0, 50);
@@ -60,16 +67,16 @@ export async function onRequestPost(context: {
         const message = sanitize(body.message).slice(0, 500);
 
         // Validate required fields
-        if (!name || !phone) {
+        if (!name || name.length < 2 || !phone) {
             return new Response(JSON.stringify({
                 success: false,
-                message: 'Name and phone are required fields.'
+                message: 'Please provide a valid name and phone number.'
             }), { status: 400, headers: corsHeaders });
         }
 
-        // Validate phone format (standard 10-digit India or with +91)
+        // Validate phone format (strict 10-digit Indian mobile starting with 6, 7, 8, or 9)
         const cleanPhone = phone.replace(/^(\+91|91|0)/, '');
-        if (!/^[0-9]{10}$/.test(cleanPhone)) {
+        if (!/^[6-9][0-9]{9}$/.test(cleanPhone)) {
             return new Response(JSON.stringify({
                 success: false,
                 message: 'Please provide a valid 10-digit mobile number.'
@@ -85,7 +92,7 @@ export async function onRequestPost(context: {
             if (count >= RATE_LIMIT_MAX) {
                 return new Response(JSON.stringify({
                     success: false,
-                    message: 'Too many enquiries from this network. Please call us directly at +91-7744009295.'
+                    message: 'Too many enquiries from this network. Please call us directly at +91 97390 00354.'
                 }), { status: 429, headers: corsHeaders });
             }
 
@@ -134,7 +141,7 @@ export async function onRequestPost(context: {
     } catch {
         return new Response(JSON.stringify({
             success: false,
-            message: 'Your inquiry was recorded. You may also call us directly at +91-7744009295.'
+            message: 'Your inquiry was recorded. You may also call us directly at +91 97390 00354.'
         }), { status: 500, headers: corsHeaders });
     }
 }

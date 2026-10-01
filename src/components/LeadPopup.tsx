@@ -17,7 +17,7 @@ const LeadPopup = () => {
         "agent": {
             "@type": "Organization",
             "name": "Supreme Universal",
-            "telephone": "+917744009295"
+            "telephone": "+919739000354"
         },
         "object": {
             "@type": "RealEstateListing",
@@ -173,6 +173,7 @@ const LeadPopup = () => {
                                     <input type="hidden" name="subject" value="New VIP Lead from Supreme Rivana Punawale" />
                                     <input type="hidden" name="from_name" value="Supreme Rivana Punawale System" />
                                     <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+                                    <input type="text" name="website" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
                                     <div className="relative">
                                         <input
                                             type="text"
@@ -194,8 +195,8 @@ const LeadPopup = () => {
                                             type="tel"
                                             name="phone"
                                             id="exit-phone"
-                                            pattern="[0-9]{10}"
-                                            title="Please enter a valid 10-digit phone number"
+                                            pattern="[6-9][0-9]{9}"
+                                            title="Please enter a valid 10-digit Indian mobile number"
                                             className="w-full bg-transparent border-b border-white/20 py-2 text-white placeholder-transparent focus:outline-none focus:border-supreme-gold transition-colors peer font-light text-sm"
                                             placeholder="Phone"
                                             required

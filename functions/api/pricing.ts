@@ -13,41 +13,48 @@ interface Env {
 }
 
 const DEFAULT_PRICING = {
-    lastUpdated: '2026-08-29',
+    lastUpdated: '2026-10-01',
     currency: 'INR',
     configurations: [
         {
             type: '2 BHK',
-            label: '2 BHK Luxury Waterfront Residence',
-            carpetArea: '785 sq.ft onwards',
-            startingPrice: 9400000,
-            displayPrice: '₹94 Lakhs*',
+            label: '2 BHK Premier & Grand Luxury Residence',
+            carpetArea: '746 - 786 sq.ft',
+            startingPrice: 9700000,
+            displayPrice: '₹97 Lakhs*',
             availability: 'Available',
-            highlights: ['Pawana River View', 'IGBC Certified', 'Private Balcony', 'Vastu Compliant']
+            highlights: ['Pawana River View', 'Club Rivana Access', 'Private Balcony', 'Vastu Compliant']
         },
         {
             type: '3 BHK',
-            label: '3 BHK Grand Riverside Suite',
-            carpetArea: '1050 - 1150 sq.ft',
-            startingPrice: 15500000,
-            displayPrice: '₹1.55 Cr*',
+            label: '3 BHK Signature, Regal & Elite Grand Suite',
+            carpetArea: '1050 - 1166 sq.ft',
+            startingPrice: 14200000,
+            displayPrice: '₹1.42 Cr*',
             availability: 'Limited Units',
-            highlights: ['Panoramic River Views', 'Private Balcony', '60,000 sq.ft Clubhouse', 'Premium Finishes']
+            highlights: ['Panoramic River Views', '60,000 sq.ft Clubhouse', 'Private Sun Deck', 'Premium Finishes']
         }
     ],
-    note: '*Prices are indicative and subject to change. MahaRERA: PM1261012502656. Contact sales for detailed cost sheet.'
+    note: '*Government taxes, registration & stamp duty extra. Base starting price. MahaRERA: PM1261012502656. Contact sales desk at +91 97390 00354 for verified cost sheet.'
 };
 
 export async function onRequestGet(context: {
     request: Request;
     env: Env;
 }): Promise<Response> {
-    const { env } = context;
+    const { request, env } = context;
+
+    const origin = request.headers.get('Origin') || '';
+    const isAllowedOrigin = !origin || 
+                            origin.endsWith('supreme-universal.in') || 
+                            origin.includes('localhost') || 
+                            origin.includes('127.0.0.1');
 
     const corsHeaders = {
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': isAllowedOrigin ? origin : 'https://www.supreme-universal.in',
         'Content-Type': 'application/json',
         'Cache-Control': 'public, max-age=300', // 5 min CDN cache
+        'X-Content-Type-Options': 'nosniff'
     };
 
     try {

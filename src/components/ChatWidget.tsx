@@ -64,12 +64,12 @@ const ChatWidget = () => {
 
             setMessages(prev => [...prev, {
                 role: 'assistant',
-                content: data.reply || 'Please call us at +91-7744009295 for more details!'
+                content: data.reply || 'Please call our sales desk at +91 97390 00354 for more details!'
             }]);
         } catch {
             setMessages(prev => [...prev, {
                 role: 'assistant',
-                content: 'Connection issue. Please call us directly at +91-7744009295!'
+                content: 'Connection issue. Please call us directly at +91 97390 00354!'
             }]);
         } finally {
             setIsLoading(false);

@@ -77,8 +77,8 @@ export async function onRequestGet(context: {
         project: "Supreme Rivana Punawale",
         reraNumber: "PM1261012502656",
         pricing: {
-            "2BHK": "₹94 Lakhs* Onwards",
-            "3BHK": "₹1.55 Cr* Onwards"
+            "2BHK": "₹97 Lakhs* Onwards",
+            "3BHK": "₹1.42 Cr* Onwards"
         },
         specifications: {
             landParcel: "12.6 Acres Riverside",
@@ -92,7 +92,8 @@ export async function onRequestGet(context: {
         headers: {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',
-            'Cache-Control': 'no-cache'
+            'Cache-Control': 'no-cache',
+            'X-Content-Type-Options': 'nosniff'
         }
     });
 }
