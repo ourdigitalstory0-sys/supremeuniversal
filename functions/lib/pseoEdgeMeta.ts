@@ -341,11 +341,6 @@ export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
                     'https://maps.google.com/?cid=16004655655787471574',
                     'https://www.google.com/maps/place/Supreme+Rivana'
                 ],
-                'aggregateRating': {
-                    '@type': 'AggregateRating',
-                    'ratingValue': '4.9',
-                    'reviewCount': '1248'
-                },
                 'offers': [
                     {
                         '@type': 'Offer',
@@ -364,6 +359,40 @@ export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
                         'areaServed': 'Punawale, Pune West'
                     }
                 ]
+            },
+            {
+                '@context': 'https://schema.org',
+                '@type': 'RealEstateAgent',
+                '@id': 'https://www.supreme-universal.in/#realestateagent',
+                'name': 'Supreme Rivana Punawale Sales Office',
+                'image': 'https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg',
+                'telephone': '+919739000354',
+                'url': 'https://www.supreme-universal.in/',
+                'address': {
+                    '@type': 'PostalAddress',
+                    'streetAddress': 'Tathawade Road, Punawale, Pimpri-Chinchwad',
+                    'addressLocality': 'Punawale',
+                    'addressRegion': 'Maharashtra',
+                    'postalCode': '411033',
+                    'addressCountry': 'IN'
+                },
+                'geo': {
+                    '@type': 'GeoCoordinates',
+                    'latitude': '18.637934',
+                    'longitude': '73.743360'
+                },
+                'hasMap': 'https://www.google.com/maps/place/Supreme+Rivana/@18.6379338,73.74336,879m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2bb154a1af8d5:0xde1ba7d3dc6ba2d6!8m2!3d18.6379338!4d73.74336!16s%2Fg%2F11n9ckw71s',
+                'openingHoursSpecification': {
+                    '@type': 'OpeningHoursSpecification',
+                    'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+                    'opens': '09:00',
+                    'closes': '20:00'
+                },
+                'aggregateRating': {
+                    '@type': 'AggregateRating',
+                    'ratingValue': '4.9',
+                    'reviewCount': '1248'
+                }
             },
             {
                 '@context': 'https://schema.org',

@@ -36,6 +36,13 @@ const Contact = () => {
         "endDate": "2026-12-31",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
+        "image": [
+            "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+        ],
+        "performer": {
+            "@type": "Organization",
+            "name": "Supreme Universal Advisory Team"
+        },
         "location": {
             "@type": "Place",
             "name": "Supreme Rivana Punawale Site Experience Center",

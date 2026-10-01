@@ -25,6 +25,8 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                     : "/assets/floorplans/3bhk-regal.jpg",
         "license": "https://www.supreme-universal.in/legal",
         "acquireLicensePage": "https://www.supreme-universal.in/contact",
+        "creditText": "Supreme Universal",
+        "copyrightNotice": "© 2026 Supreme Universal. All rights reserved.",
         "creator": {
             "@type": "Organization",
             "name": "Supreme Universal"

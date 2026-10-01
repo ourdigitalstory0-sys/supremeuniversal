@@ -25,7 +25,11 @@ const Gallery = () => {
                         "name": img.title,
                         "contentUrl": img.src,
                         "description": img.alt,
-                        "thumbnail": img.src
+                        "thumbnail": img.src,
+                        "license": "https://www.supreme-universal.in/legal",
+                        "acquireLicensePage": "https://www.supreme-universal.in/contact",
+                        "creditText": "Supreme Universal",
+                        "copyrightNotice": "© 2026 Supreme Universal. All rights reserved."
                     }))
                 })
             }} />
