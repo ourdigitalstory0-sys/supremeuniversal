@@ -204,22 +204,44 @@ const SEO = ({
                 "floorPlan": [
                     {
                         "@type": "FloorPlan",
-                        "name": "2 BHK Luxury Apartment",
+                        "name": "2 BHK Premier Apartment",
                         "numberOfRooms": "2",
                         "floorSize": {
                             "@type": "QuantitativeValue",
-                            "value": "785",
+                            "value": "746",
                             "unitText": "Sq.Ft"
                         },
                         "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
                     },
                     {
                         "@type": "FloorPlan",
-                        "name": "3 BHK Premium Apartment",
+                        "name": "2 BHK Grand Apartment",
+                        "numberOfRooms": "2",
+                        "floorSize": {
+                            "@type": "QuantitativeValue",
+                            "value": "786",
+                            "unitText": "Sq.Ft"
+                        },
+                        "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+                    },
+                    {
+                        "@type": "FloorPlan",
+                        "name": "3 BHK Regal Apartment",
                         "numberOfRooms": "3",
                         "floorSize": {
                             "@type": "QuantitativeValue",
-                            "value": "1120",
+                            "value": "1100",
+                            "unitText": "Sq.Ft"
+                        },
+                        "image": "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
+                    },
+                    {
+                        "@type": "FloorPlan",
+                        "name": "3 BHK Elite Apartment",
+                        "numberOfRooms": "3",
+                        "floorSize": {
+                            "@type": "QuantitativeValue",
+                            "value": "1166",
                             "unitText": "Sq.Ft"
                         },
                         "image": "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
@@ -228,22 +250,32 @@ const SEO = ({
                 "amenityFeature": [
                     {
                         "@type": "LocationFeatureSpecification",
-                        "name": "Infinity Pool",
+                        "name": "Club Rivana (60,000 Sq.Ft Multi-Level Clubhouse)",
                         "value": "true"
                     },
                     {
                         "@type": "LocationFeatureSpecification",
-                        "name": "Multi-tier Clubhouse",
+                        "name": "Aqua Arena (2 Swimming Pools & Deck)",
                         "value": "true"
                     },
                     {
                         "@type": "LocationFeatureSpecification",
-                        "name": "Riverside Promenade",
+                        "name": "700+ Native Trees & Pawana Riverside Living",
+                        "value": "true"
+                    },
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": "Racquet Arena (Badminton, Pickleball & Squash)",
+                        "value": "true"
+                    },
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": "Pet Park & Senior Citizen Reflexology Trail",
                         "value": "true"
                     }
                 ],
                 "tourBookingPage": `${domain}/supreme-rivana-punawale-contact`,
-                "telephone": "+917744009295",
+                "telephone": "+919739000354",
                 "identifier": "PM1261012502656",
                 "hasMap": "https://www.google.com/maps/place/Supreme+Rivana/@18.6379338,73.74336,879m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2bb154a1af8d5:0xde1ba7d3dc6ba2d6!8m2!3d18.6379338!4d73.74336!16s%2Fg%2F11n9ckw71s",
                 "sameAs": [
@@ -289,13 +321,13 @@ const SEO = ({
                 "@id": "https://www.supreme-universal.in/#realestateagent",
                 "name": "Supreme Rivana Punawale Sales Office",
                 "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
-                "telephone": "+917744009295",
+                "telephone": "+919739000354",
                 "url": "https://www.supreme-universal.in/",
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Near Chhatrapati Shivaji Maharaj Chowk, Tathawade Road",
+                    "streetAddress": "Tathawade Road, Punawale, Pimpri-Chinchwad",
                     "addressLocality": "Punawale",
-                    "addressRegion": "Pune",
+                    "addressRegion": "Maharashtra",
                     "postalCode": "411033",
                     "addressCountry": "IN"
                 },

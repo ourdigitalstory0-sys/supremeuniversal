@@ -12,9 +12,9 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
     const floorPlanSchema = {
         "@context": "https://schema.org",
         "@type": "ImageObject",
-        "name": activeTab === 'Master' ? "Supreme Rivana Punawale Master Layout" : `${activeTab.replace('-', ' ')} Floor Plan - Supreme Rivana Punawale`,
+        "name": activeTab === 'Master' ? "Supreme Rivana Punawale 12.6-Acre Master Layout Plan" : `${activeTab.replace('-', ' ')} Floor Plan - Supreme Rivana Punawale`,
         "description": activeTab === 'Master'
-            ? "Master layout plan for Supreme Rivana Punawale, a 15-acre premium township in Punawale, Pune."
+            ? "12.6-Acre riverside master layout plan for Supreme Rivana Punawale by Supreme Universal along Pawana River."
             : `Architectural floor plan for a luxury ${activeTab.replace('-', ' ')} apartment at Supreme Rivana Punawale, Punawale.`,
         "contentUrl": activeTab === 'Master'
             ? "/assets/floorplans/master-plan.jpg"
@@ -34,8 +34,10 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
     const tabs = [
         { id: '2BHK-Premier', label: '2 BHK Premier', area: '746', img: '/assets/floorplans/2bhk-premier.jpg' },
         { id: '2BHK-Grand', label: '2 BHK Grand', area: '786', img: '/assets/floorplans/2bhk-grand.jpg' },
+        { id: '3BHK-Signature', label: '3 BHK Signature', area: '1050', img: '/assets/floorplans/3bhk-regal.jpg' },
         { id: '3BHK-Regal', label: '3 BHK Regal', area: '1100', img: '/assets/floorplans/3bhk-regal.jpg' },
-        { id: 'Master', label: 'Master Layout', area: '', img: '/assets/floorplans/master-plan.jpg' }
+        { id: '3BHK-Elite', label: '3 BHK Elite', area: '1166', img: '/assets/floorplans/3bhk-regal.jpg' },
+        { id: 'Master', label: '12.6-Acre Master Plan', area: '', img: '/assets/floorplans/master-plan.jpg' }
     ];
 
     const currentTab = tabs.find(t => t.id === activeTab) || tabs[0];

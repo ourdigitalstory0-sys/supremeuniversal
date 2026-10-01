@@ -1,24 +1,26 @@
-import { Dumbbell, Waves, Trees, Coffee, Users, Shield, Car, Library } from 'lucide-react';
+import { Dumbbell, Waves, Trees, Coffee, Shield, Trophy, Activity, Heart, Smile, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const amenities = [
-    { icon: <Dumbbell className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Gymnasium', desc: 'State-of-the-art fitness center' },
-    { icon: <Waves className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Infinity Pool', desc: 'Temperature controlled lap pool' },
-    { icon: <Trees className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Zen Garden', desc: 'Lush greenery and walking paths' },
-    { icon: <Coffee className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Café Lounge', desc: 'Premium lounge and cafe area' },
-    { icon: <Users className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Clubhouse', desc: 'Exclusive community center' },
-    { icon: <Shield className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: '24/7 Security', desc: 'Gated Community with surveillance' },
-    { icon: <Car className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Grand Parking', desc: 'Dedicated parking spaces' },
-    { icon: <Library className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Library', desc: 'Quiet reading and study zones' },
+    { icon: <Trophy className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Club Rivana (60,000 Sq.Ft)', desc: "West Pune's largest multi-level clubhouse with cinema lounge & 2 banquet halls" },
+    { icon: <Waves className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Aqua Arena (2 Pools)', desc: 'Temperature-controlled lap pool, kids pool, and riverfront pool deck' },
+    { icon: <Activity className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Racquet & Sports Arena', desc: 'Badminton courts, outdoor pickleball court, and professional squash court' },
+    { icon: <Trees className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: '700+ Native Trees & Greens', desc: 'Pawana riverside promenade, palm grove, hammocks & lantern pavilions' },
+    { icon: <Dumbbell className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Elite Gymnasium & Fitness', desc: 'Modern fitness center, outdoor gym, yoga deck & aerobics studio' },
+    { icon: <Heart className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Senior Wellness & Reflexology', desc: 'Acupressure reflexology path, shaded pavilions & peaceful meditation grove' },
+    { icon: <Smile className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Junior Adventure & Play', desc: "Children's adventure play area, toddler zone, crèche & skating rink" },
+    { icon: <Sparkles className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Pet Park & Social Greens', desc: 'Dedicated pet friendly park, barbecue counter, open lawn & amphitheatre' },
+    { icon: <Coffee className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: 'Café & Co-Working Lounge', desc: 'Smart co-working cabins, business center, and artisan coffee lounge' },
+    { icon: <Shield className="w-8 h-8 md:w-10 md:h-10 text-supreme-gold" />, name: '3-Tier Gated Security', desc: '24/7 CCTV surveillance, biometric access, and boom barrier vehicle entry' }
 ];
 
 const Amenities = () => {
     const amenitySchema = {
         "@context": "https://schema.org",
         "@type": "Residence",
-        "name": "Supreme Rivana Punawale Amenities",
-        "description": "40+ world-class amenities at Supreme Rivana Punawale including infinity pool, gymnasium, zen garden, clubhouse, and 24/7 security.",
-        "url": "https://www.supreme-universal.in/supreme-rivana-amenities",
+        "name": "Supreme Rivana Punawale — Club Rivana & 50+ Lifestyle Amenities",
+        "description": "50+ curated lifestyle amenities at Supreme Rivana Punawale featuring Club Rivana (60,000 sq.ft multi-level clubhouse), Aqua Arena with 2 swimming pools, pickleball, squash, 700+ native trees, and Pawana riverfront living.",
+        "url": "https://www.supreme-universal.in/supreme-rivana-punawale-amenities",
         "amenityFeature": amenities.map(a => ({
             "@type": "LocationFeatureSpecification",
             "name": a.name,

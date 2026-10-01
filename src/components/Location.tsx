@@ -73,11 +73,12 @@ const Location = () => {
                                         <Navigation strokeWidth={1.5} size={28} />
                                     </div>
                                     <div className="border-b border-gray-100 pb-6 w-full">
-                                        <h3 className="text-xl font-serif text-supreme-black mb-3">Seamless Commute</h3>
+                                        <h3 className="text-xl font-serif text-supreme-black mb-3">Highways &amp; IT Corridors</h3>
                                         <ul className="text-gray-500 font-sans font-light space-y-2 text-sm md:text-base">
-                                            <li className="flex justify-between"><span>Mumbai-Pune Expressway</span> <span className="text-supreme-gold font-medium">5 Mins</span></li>
-                                            <li className="flex justify-between"><span>Hinjewadi IT Park</span> <span className="text-supreme-gold font-medium">15 Mins</span></li>
-                                            <li className="flex justify-between"><span>Bhumkar Chowk</span> <span className="text-supreme-gold font-medium">10 Mins</span></li>
+                                            <li className="flex justify-between"><span>NH48 (Mumbai–Bangalore Hwy)</span> <span className="text-supreme-gold font-medium">1 Min / 400m</span></li>
+                                            <li className="flex justify-between"><span>Mumbai–Pune Expressway</span> <span className="text-supreme-gold font-medium">5 Mins</span></li>
+                                            <li className="flex justify-between"><span>Hinjewadi IT Park (Phase 1)</span> <span className="text-supreme-gold font-medium">15 Mins</span></li>
+                                            <li className="flex justify-between"><span>Bhumkar Chowk (Wakad)</span> <span className="text-supreme-gold font-medium">8 Mins</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -87,10 +88,12 @@ const Location = () => {
                                         <Train strokeWidth={1.5} size={28} />
                                     </div>
                                     <div className="border-b border-gray-100 pb-6 w-full">
-                                        <h3 className="text-xl font-serif text-supreme-black mb-3">Transport Hubs</h3>
+                                        <h3 className="text-xl font-serif text-supreme-black mb-3">Metro &amp; Public Transit</h3>
                                         <ul className="text-gray-500 font-sans font-light space-y-2 text-sm md:text-base">
+                                            <li className="flex justify-between"><span>Wakad Chowk Metro Station</span> <span className="text-supreme-gold font-medium">12 Mins</span></li>
+                                            <li className="flex justify-between"><span>Aundh–Ravet BRTS Corridor</span> <span className="text-supreme-gold font-medium">3 Mins</span></li>
                                             <li className="flex justify-between"><span>Akurdi Railway Station</span> <span className="text-supreme-gold font-medium">10 Mins</span></li>
-                                            <li className="flex justify-between"><span>Pune Airport</span> <span className="text-supreme-gold font-medium">45 Mins</span></li>
+                                            <li className="flex justify-between"><span>Pune International Airport</span> <span className="text-supreme-gold font-medium">45 Mins</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -100,11 +103,12 @@ const Location = () => {
                                         <Landmark strokeWidth={1.5} size={28} />
                                     </div>
                                     <div className="w-full">
-                                        <h3 className="text-xl font-serif text-supreme-black mb-3">Social Infrastructure</h3>
+                                        <h3 className="text-xl font-serif text-supreme-black mb-3">Social &amp; Retail Hubs</h3>
                                         <ul className="text-gray-500 font-sans font-light space-y-2 text-sm md:text-base">
-                                            <li className="flex justify-between"><span>Lotus Business School & Indira</span> <span className="text-supreme-gold font-medium">5 Mins</span></li>
-                                            <li className="flex justify-between"><span>Phoenix Mall of the Millennium</span> <span className="text-supreme-gold font-medium">15 Mins</span></li>
-                                            <li className="flex justify-between"><span>Aditya Birla Hospital</span> <span className="text-supreme-gold font-medium">15 Mins</span></li>
+                                            <li className="flex justify-between"><span>Lotus Business School</span> <span className="text-supreme-gold font-medium">2 Mins</span></li>
+                                            <li className="flex justify-between"><span>Indira &amp; Adhira International</span> <span className="text-supreme-gold font-medium">6 Mins</span></li>
+                                            <li className="flex justify-between"><span>Phoenix Mall of the Millennium</span> <span className="text-supreme-gold font-medium">13 Mins</span></li>
+                                            <li className="flex justify-between"><span>Punawale &amp; Ojas Multispecialty</span> <span className="text-supreme-gold font-medium">5 Mins</span></li>
                                         </ul>
                                     </div>
                                 </div>

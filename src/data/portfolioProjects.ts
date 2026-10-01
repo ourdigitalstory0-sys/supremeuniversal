@@ -30,6 +30,70 @@ export interface PortfolioProjectType {
 
 export const portfolioProjects: PortfolioProjectType[] = [
     {
+        id: "supreme-rivana",
+        name: "Supreme Rivana",
+        location: "Punawale, Pune West",
+        fullLocation: "Tathawade Road, Punawale, Pimpri-Chinchwad, Pune West 411033",
+        type: "2 & 3 BHK Riverside Residences",
+        status: "Under Construction (Possession Dec 2031)",
+        tagline: "Life by the River — 12.6-Acre Waterfront Development",
+        description: "Supreme Rivana Punawale is an iconic 12.6-acre riverside development situated along the quiet banks of the Pawana River in Punawale, West Pune. Featuring 2 BHK (Premier & Grand) and 3 BHK (Signature, Regal & Elite) residences, West Pune's largest 60,000 sq.ft multi-level clubhouse 'Club Rivana', 50+ lifestyle amenities, and 700+ native trees and shrubs. Strategically connected to NH48, Mumbai-Pune Expressway, Wakad, and Hinjawadi IT Park.",
+        highlights: [
+            "12.6-Acre riverside development along the serene Pawana River",
+            "Club Rivana: 60,000 sq.ft multi-level clubhouse with Aqua Arena",
+            "50+ curated lifestyle amenities including 2 swimming pools, pickleball & squash",
+            "700+ native trees & shrubs with enhanced AQI & natural river breeze cross-ventilation",
+            "2 BHK (Premier 746 sq.ft, Grand 786 sq.ft) & 3 BHK (Regal 1100 sq.ft, Elite 1166 sq.ft)",
+            "400m from NH48 Mumbai-Bangalore Highway & 5 mins to Mumbai-Pune Expressway",
+            "12 mins to Wakad Chowk Metro Station & 15 mins to Hinjawadi IT Park Phase 1",
+            "MahaRERA Registered Phase I: PM1261012502656 with scheduled delivery compliance"
+        ],
+        connectivity: [
+            { title: "NH48 (Mumbai-Bangalore Hwy)", dist: "1 min / 400m" },
+            { title: "Mumbai-Pune Expressway", dist: "5 mins" },
+            { title: "Wakad Chowk Metro Station", dist: "12 mins" },
+            { title: "Phoenix Mall of the Millennium", dist: "13 mins" },
+            { title: "Hinjawadi IT Park Phase 1", dist: "15 mins" },
+            { title: "Bhumkar Chowk Wakad", dist: "8 mins" }
+        ],
+        amenities: [
+            { icon: "Waves", title: "Aqua Arena (2 Pools)" },
+            { icon: "Trophy", title: "Club Rivana (60,000 Sq.Ft)" },
+            { icon: "Dumbbell", title: "Elite Fitness Center" },
+            { icon: "Trees", title: "700+ Native Trees & Zen Garden" },
+            { icon: "Activity", title: "Pickleball & Squash Courts" },
+            { icon: "Film", title: "Cinema Lounge & Mini Theatre" },
+            { icon: "Heart", title: "Senior Wellness & Reflexology" },
+            { icon: "Smile", title: "Pet Park & Kids Play Area" }
+        ],
+        specifications: [
+            { category: "Structure", details: ["RCC framed earthquake-resistant structure", "30+ storey high-rise residential towers"] },
+            { category: "Flooring", details: ["Imported marble-finish vitrified tiles", "Anti-skid tiles in river-facing balconies"] },
+            { category: "Kitchen", details: ["Granite platform with stainless steel sink", "Provision for water purifier & exhaust fan"] },
+            { category: "Doors & Windows", details: ["Digital smart lock on main entrance", "Powder-coated aluminum sliding windows with mosquito mesh"] },
+            { category: "Electrical", details: ["Concealed copper wiring with modular switches", "AC points in all bedrooms & living room"] }
+        ],
+        gallery: [
+            "https://cdn.supremeuniversal.com/media/designthatelevate_jSxOmi.jpg",
+            "/assets/projects/actual-estia.jpg",
+            "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
+        ],
+        seo: {
+            title: "Supreme Rivana Punawale | 2 & 3 BHK Riverside Apartments Pune",
+            description: "Explore Supreme Rivana Punawale: 12.6-acre riverside development with 60,000 sq.ft clubhouse Club Rivana, 50+ amenities, and 700+ native trees. MahaRERA PM1261012502656.",
+            keywords: "Supreme Rivana, Supreme Rivana Punawale, Supreme Rivana 2 BHK, Supreme Rivana 3 BHK, Club Rivana, Pawana River apartments, luxury flats Punawale"
+        },
+        image: "https://cdn.supremeuniversal.com/media/designthatelevate_jSxOmi.jpg",
+        reraNumber: "PM1261012502656",
+        comparisonMetrics: {
+            configuration: "2 & 3 BHK Premier, Grand, Signature, Regal & Elite",
+            possession: "Dec 2031 (MahaRERA Phased)",
+            usp: "12.6-Acre Pawana Riverfront Living with 60,000 Sq.Ft Club Rivana",
+            connectivityScore: 9.8
+        },
+        appreciationMultiplier: 1.35
+    },
+    {
         id: "supreme-towers",
         name: "Supreme Towers",
         location: "Mundhwa, Pune East",

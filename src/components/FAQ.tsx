@@ -5,32 +5,32 @@ import { Helmet } from 'react-helmet-async';
 
 const faqs = [
     {
-        question: "What is the price of 2 BHK in Supreme Rivana Punawale?",
-        answer: "The starting price for a 2 BHK at Supreme Rivana Punawale is approximately ₹68 Lakhs* (all-inclusive). We offer premium riverside 2 BHK flats with carpet areas starting from 785 sq.ft. for luxury living near Hinjewadi. Contact our sales office for the complete inventory list and latest 2026 offers."
+        question: "What is the price of 2 BHK and 3 BHK at Supreme Rivana Punawale?",
+        answer: "Supreme Rivana offers 2 BHK residences starting from ₹97 Lakh onwards (Premier 746 sq.ft, Grand 786 sq.ft) and 3 BHK luxury residences starting from ₹1.42 Crore onwards (Signature, Regal 1,100 sq.ft, Elite 1,166 sq.ft). Detailed dynamic cost sheets with floor-wise pricing, all-inclusive estimates, and flexible construction-linked payment plans are available through the sales office."
     },
     {
-        question: "How far is Lotus Business School and other top schools from Supreme Rivana?",
-        answer: "Supreme Rivana is ideally located just 2 minutes from Lotus Business School. Other premier institutes like Indira World School, JSPM Rajarshi Shahu College, and Blossom Public School are within a 3-5 km radius, making it a top choice for families moving to Punawale."
+        question: "What is the official MahaRERA registration number for Supreme Rivana?",
+        answer: "Supreme Rivana Phase I is registered with MahaRERA under registration number PM1261012502656. The project is completely approved with verified title certificates, scheduled possession timeline commitments, and pre-approved home loan facilities from leading banks including SBI, HDFC, ICICI, and Axis Bank."
     },
     {
-        question: "What is the 3 BHK carpet area and price at Supreme Rivana Punawale?",
-        answer: "Our ultra-luxury 3 BHK 'Sky Residences' start from 1045 sq.ft. carpet area. The Supreme Rivana 3 BHK price is designed for those seeking expansive waterfront views and maximum ventilation with only 6 units per floor. Pricing starts from ₹95 Lakhs*."
+        question: "What amenities are featured in the 60,000 sq.ft Club Rivana?",
+        answer: "Club Rivana is West Pune's premier 60,000 sq.ft multi-level clubhouse featuring an Aqua Arena with 2 swimming pools (lap pool and kids pool), indoor badminton courts, outdoor pickleball court, squash court, cinema lounge, elite fitness center, and 2 banquet halls. The 12.6-acre grounds also host 700+ native trees, riverside promenade, yoga deck, and a dedicated pet park."
     },
     {
-        question: "Is Punawale better for investment than Wakad or Mamurdi?",
-        answer: "Punawale is currently the highest-performing micro-market in West Pune. While Wakad is saturated, Punawale offers a 15-20% higher ROI potential due to the upcoming Pune Ring Road and the 15-acre scale of Supreme Rivana. It bridges the gap between the IT hub (Hinjewadi) and the Expressway (Mamurdi)."
+        question: "What is the exact location and connectivity of Supreme Rivana Punawale?",
+        answer: "Supreme Rivana is located on Tathawade Road, Punawale, Pimpri-Chinchwad, Pune 411033. It enjoys unmatched connectivity: just 400 metres (1 min) to NH48 Mumbai–Bangalore Highway, 5 mins to Mumbai–Pune Expressway, 12 mins to Wakad Chowk Metro Station, 13 mins to Phoenix Mall of the Millennium, and 15 mins to Hinjewadi IT Park Phase 1."
     },
     {
-        question: "Which hospitals are near Supreme Rivana Punawale?",
-        answer: "Residents have access to world-class healthcare with Lifepoint Multispecialty Hospital, Surya Mother and Child Super Specialty Hospital, and Ruby Hall Clinic (Hinjewadi) all within a 10-15 minute drive from the project."
+        question: "What are the configuration sizes and carpet areas available?",
+        answer: "The project offers Vastu-compliant homes designed with only 6 residences per floor. Available layouts include 2 BHK Premier (746 sq.ft), 2 BHK Grand (786 sq.ft), 3 BHK Signature (1,050 sq.ft), 3 BHK Regal (1,100 sq.ft), and 3 BHK Elite (1,166 sq.ft), all featuring private river-view balconies and cross-ventilation."
     },
     {
-        question: "What are the key amenities in the 15-acre Supreme Rivana township?",
-        answer: "Supreme Rivana features 40+ multi-tier lifestyle amenities including a 31st-floor Skywalk with river views, a glass-walled gymnasium, an infinity-edge swimming pool, co-working spaces for IT professionals, and sustainable green spaces certified by IGBC."
+        question: "What is the construction status and possession timeline?",
+        answer: "Supreme Rivana is actively under construction with 30+ storey towers (Buildings A, B, and D) undergoing excavation and RCC staging in 2026. Handover timelines are scheduled in phased milestones in accordance with MahaRERA guidelines, starting from December 2031."
     },
     {
-        question: "How does the Pune Metro Line 3 benefit Supreme Rivana residents?",
-        answer: "The upcoming Punawale metro station (part of Metro Line 3 - Hinjewadi to Shivajinagar) is just 5-7 minutes away. This will provide traffic-free connectivity to major commercial hubs, increasing the property value and rental demand for Supreme Rivana apartments."
+        question: "How can I book a site visit and sample flat walkthrough?",
+        answer: "Prospective buyers can schedule an exclusive site visit and 2 & 3 BHK sample flat walkthrough by calling the official advisory desk at +919739000354 or registering via the online enquiry form. Complimentary pick-and-drop assistance is available from Hinjewadi, Wakad, and Baner."
     }
 ];
 

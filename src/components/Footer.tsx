@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { footerKeywords } from '../data/footerKeywords';
 
 const Footer = () => {
     return (
@@ -119,16 +120,16 @@ const Footer = () => {
                             <li className="flex flex-col gap-1">
                                 <span className="text-supreme-gold text-xs uppercase tracking-[0.1em]">Visit Experience Center</span>
                                 <span className="leading-loose">
-                                    Near Lotus Business School,<br />
-                                    Punawale, Pune West 411033
+                                    Tathawade Road, Punawale,<br />
+                                    Pimpri-Chinchwad, Pune 411033
                                 </span>
                             </li>
                             <li className="flex flex-col gap-1">
                                 <span className="text-supreme-gold text-xs uppercase tracking-[0.1em]">Direct Line</span>
-                                <a href="tel:+917744009295" className="hover:text-white transition-colors duration-300 font-medium tracking-wide">+91 77440 09295</a>
+                                <a href="tel:+919739000354" className="hover:text-white transition-colors duration-300 font-medium tracking-wide">+91 97390 00354</a>
                             </li>
                             <li className="mt-4 text-[10px] text-white/30 truncate" title="Optimized for local search: Apartments near Hinjewadi IT Park, 2 BHK near Wakad, Projects near Mumbai Pune Expressway">
-                                Location Points: Apartments near Hinjewadi IT Park | 2 BHK near Wakad
+                                Location Points: NH48 (400m) | Hinjewadi IT Park (15 Mins) | Wakad (8 Mins)
                             </li>
                         </ul>
                     </div>
@@ -136,7 +137,7 @@ const Footer = () => {
                     {/* CTA Column */}
                     <div className="lg:col-span-2 text-left lg:text-right">
                         <a
-                            href="https://wa.me/917744009295?text=I%20want%20to%20schedule%20a%20site%20visit%20for%20Supreme%20Rivana%20Punawale"
+                            href="https://wa.me/919739000354?text=I%20want%20to%20schedule%20a%20site%20visit%20for%20Supreme%20Rivana%20Punawale"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-4 text-supreme-gold font-sans font-semibold uppercase tracking-[0.15em] text-xs hover:text-white transition-colors duration-300"
@@ -169,6 +170,26 @@ const Footer = () => {
                                 height="144"
                             />
                         </div>
+                    </div>
+                </div>
+
+                {/* Supreme Rivana Topical Ecosystem Keyword Matrix */}
+                <div className="border-t border-white/10 py-12">
+                    <div className="flex items-center gap-3 mb-6">
+                        <span className="w-8 h-[1px] bg-supreme-gold"></span>
+                        <h4 className="text-white/70 font-sans font-semibold uppercase tracking-[0.2em] text-xs">
+                            Supreme Rivana Punawale — Topical Real Estate Directory
+                        </h4>
+                    </div>
+                    <div className="flex flex-wrap gap-2 text-[11px] font-sans font-light">
+                        {footerKeywords.map((kw, i) => (
+                            <span 
+                                key={i} 
+                                className="bg-white/5 border border-white/10 text-white/50 px-3.5 py-1.5 rounded-full hover:border-supreme-gold/60 hover:text-supreme-gold hover:bg-white/10 transition-all duration-300"
+                            >
+                                {kw}
+                            </span>
+                        ))}
                     </div>
                 </div>
 

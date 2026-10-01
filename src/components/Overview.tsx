@@ -84,7 +84,7 @@ const Overview = () => {
                                 transition={{ delay: 0.4, duration: 0.8 }}
                                 className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Supreme Rivana Punawale by Supreme Universal is set across 12.6 acres along the quiet banks of the Pawana River, bringing rare riverside living to Punawale's most premium corridor between NH 48 and Aundh–Ravet BRTS Road. Featuring majestic towers with uninterrupted views and enhanced AQI, it boasts one of West Pune's largest clubhouses at 60,000 sq.ft and over 50 curated lifestyle amenities.
+                                <strong>Supreme Rivana Punawale</strong> by Supreme Universal is an iconic 12.6-acre riverside development situated along the calm banks of the Pawana River in Punawale, West Pune. Ideally nestled between NH48 Mumbai–Bangalore Highway (just 400m / 1 min away) and Aundh–Ravet BRTS Road on Tathawade Road, Supreme Rivana delivers a rare waterfront lifestyle with enhanced AQI, natural river breeze, and uninterrupted views across 30+ storey high-rise residential towers.
                             </motion.p>
 
                             <motion.h3
@@ -94,7 +94,7 @@ const Overview = () => {
                                 transition={{ delay: 0.45, duration: 0.8 }}
                                 className="text-2xl md:text-3xl font-serif text-supreme-black mb-6"
                             >
-                                Timeless Luxury. <span className="italic text-supreme-gold">Executive Execution.</span>
+                                Club Rivana &amp; <span className="italic text-supreme-gold">50+ Curated Amenities</span>
                             </motion.h3>
 
                             <motion.p
@@ -104,7 +104,7 @@ const Overview = () => {
                                 transition={{ delay: 0.5, duration: 0.8 }}
                                 className="text-gray-600 mb-6 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                Here, the gentle flow of the river meets cutting-edge architecture. Enjoy generous 2 &amp; 3 Bed riverside residences with private balconies with every home, surrounded by 700+ native trees and shrubs. With a firmly committed possession timeline, you can secure your luxury future in one of the most sought-after locations near Hinjewadi IT Park.
+                                At the heart of the community stands <strong>Club Rivana</strong>—West Pune's premier 60,000 sq.ft multi-level clubhouse featuring an Aqua Arena with 2 swimming pools, state-of-the-art gymnasium, outdoor pickleball court, squash court, badminton courts, cinema lounge, and 2 grand banquet halls. The 12.6-acre landscape campus is enriched with 700+ native trees and shrubs, elevated walkways, zen gardens, lantern pavilions, and dedicated pet parks.
                             </motion.p>
 
                             <motion.h3
@@ -114,7 +114,7 @@ const Overview = () => {
                                 transition={{ delay: 0.52, duration: 0.8 }}
                                 className="text-2xl md:text-3xl font-serif text-supreme-black mb-6"
                             >
-                                RERA Certified. <span className="italic text-supreme-gold">IGBC Green.</span>
+                                Thoughtful Configurations. <span className="italic text-supreme-gold">MahaRERA Verified.</span>
                             </motion.h3>
 
                             <motion.p
@@ -124,7 +124,7 @@ const Overview = () => {
                                 transition={{ delay: 0.55, duration: 0.8 }}
                                 className="text-gray-600 mb-12 leading-loose text-base md:text-lg font-sans font-light max-w-2xl"
                             >
-                                As a fully MahaRERA-registered project (Phase I - PM1261012502656), Supreme Rivana Punawale represents the gold standard in riverside luxury. Pre-approved by leading banks, this is the most trusted new launch in Punawale for families, IT professionals, and investors alike.
+                                Choose between meticulously engineered <strong>2 BHK (Premier &amp; Grand, 746–786 sq.ft)</strong> and expansive <strong>3 BHK (Signature, Regal &amp; Elite, 1,100–1,166 sq.ft)</strong> residences featuring Vastu-compliant layouts, private river-view balconies, and maximum cross-ventilation with only 6 residences per floor. Fully registered under <strong>MahaRERA Phase I: PM1261012502656</strong>, the project provides complete regulatory compliance, scheduled delivery timelines, and bank loan approvals from India's premier financial institutions.
                             </motion.p>
 
                             <motion.div
