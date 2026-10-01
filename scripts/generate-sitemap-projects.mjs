@@ -6,11 +6,12 @@ const SITEMAP_PATH = path.join(process.cwd(), 'public', 'sitemap-projects.xml');
 const DATE = new Date().toLocaleDateString('sv-SE'); // 'sv-SE' gives 'YYYY-MM-DD'
 
 const projects = [
+    { id: 'supreme-rivana', name: 'Supreme Rivana', location: 'Punawale', image: 'https://cdn.supremeuniversal.com/media/designthatelevate_jSxOmi.jpg' },
     { id: 'supreme-towers', name: 'Supreme Towers', location: 'Mundhwa', image: 'https://www.supreme-universal.in/assets/projects/actual-towers.jpg' },
     { id: 'supreme-villagio', name: 'Supreme Villagio', location: 'Somatane', image: 'https://www.supreme-universal.in/assets/projects/actual-villagio.jpg' },
     { id: 'supreme-estia', name: 'Supreme Estia', location: 'Baner', image: 'https://www.supreme-universal.in/assets/projects/actual-estia.jpg' },
     { id: 'supreme-wakad', name: 'Supreme Wakad', location: 'Wakad', image: 'https://www.supreme-universal.in/assets/projects/actual-wakad.jpg' },
-    { id: 'supreme-pallacio', name: 'Supreme Pallacio', location: 'Kalyani Nagar', image: 'https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg' },
+    { id: 'supreme-pallacio', name: 'Supreme Pallacio', location: 'Baner', image: 'https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg' },
     { id: 'supreme-vivero', name: 'Supreme Vivero', location: 'Baner', image: 'https://www.supreme-universal.in/assets/projects/actual-towers.jpg' },
     { id: 'supreme-amadore', name: 'Supreme Amadore', location: 'Baner', image: 'https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg' },
     { id: 'supreme-estado', name: 'Supreme Estado', location: 'Baner', image: 'https://www.supreme-universal.in/assets/projects/actual-wakad.jpg' },
