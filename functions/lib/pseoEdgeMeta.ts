@@ -97,11 +97,17 @@ const THEMES: Record<string, { name: string; suffix: string }> = {
 };
 
 const PROJECTS: Record<string, { name: string; location: string; rera: string }> = {
-    'supreme-towers': { name: 'Supreme Towers', location: 'Mundhwa, Pune East', rera: 'P52100051877' },
-    'supreme-estia': { name: 'Supreme Estia', location: 'Baner, Pune West', rera: 'P52100028795' },
-    'supreme-villagio': { name: 'Supreme Villagio', location: 'Somatane, Pune Express Way', rera: 'P52100049942' },
+    'supreme-towers': { name: 'Supreme Towers', location: 'Mundhwa, Pune East', rera: 'P52100053868' },
+    'supreme-villagio': { name: 'Supreme Villagio', location: 'Somatane, Pune North', rera: 'P52100021655' },
+    'supreme-estia': { name: 'Supreme Estia', location: 'Baner, Pune West', rera: 'P52100024783' },
+    'supreme-wakad': { name: 'Supreme Wakad', location: 'Wakad, Pune West', rera: 'P52100056095' },
+    'supreme-pallacio': { name: 'Supreme Pallacio', location: 'Baner, Pune West', rera: 'Ready to Move / OC Received' },
+    'supreme-palacio': { name: 'Supreme Pallacio', location: 'Baner, Pune West', rera: 'Ready to Move / OC Received' },
+    'supreme-vivero': { name: 'Supreme Vivero', location: 'Baner, Pune West', rera: 'Completed / OC Received' },
+    'supreme-amadore': { name: 'Supreme Amadore', location: 'Baner, Pune West', rera: 'Completed / OC Received' },
+    'supreme-estado': { name: 'Supreme Estado', location: 'Baner, Pune West', rera: 'Completed / OC Received' },
+    'supreme-esteban': { name: 'Supreme Esteban', location: 'Koregaon Park, Pune East', rera: 'Completed / OC Received' },
     'supreme-rivana': { name: 'Supreme Rivana', location: 'Punawale, Pune West', rera: 'PM1261012502656' },
-    'supreme-palacio': { name: 'Supreme Palacio', location: 'Baner, Pune West', rera: 'P52100032104' },
     'supreme-vador': { name: 'Supreme Vador', location: 'Koregaon Park, Pune', rera: 'P52100030588' }
 };
 
