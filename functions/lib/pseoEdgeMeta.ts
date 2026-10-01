@@ -487,18 +487,19 @@ export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
             }
         ];
 
-        const schema = [
-            {
-                '@context': 'https://schema.org',
-                '@type': 'BreadcrumbList',
-                'itemListElement': [
-                    { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.supreme-universal.in/' },
-                    { '@type': 'ListItem', 'position': 2, 'name': 'Pune Real Estate', 'item': 'https://www.supreme-universal.in/pune-real-estate' },
-                    { '@type': 'ListItem', 'position': 3, 'name': locality.name, 'item': `https://www.supreme-universal.in/pune-real-estate/${configId}-${typeId}-in-${locId}-price` },
-                    { '@type': 'ListItem', 'position': 4, 'name': `${configName} ${theme.name}`, 'item': canonical }
-                ]
-            },
-            {
+        const breadcrumbSchema = {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            'itemListElement': [
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.supreme-universal.in/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Pune Real Estate', 'item': 'https://www.supreme-universal.in/pune-real-estate' },
+                { '@type': 'ListItem', 'position': 3, 'name': locality.name, 'item': `https://www.supreme-universal.in/pune-real-estate/${configId}-${typeId}-in-${locId}-price` },
+                { '@type': 'ListItem', 'position': 4, 'name': `${configName} ${theme.name}`, 'item': canonical }
+            ]
+        };
+
+        const pageSchema = locId === 'punawale'
+            ? {
                 '@context': 'https://schema.org',
                 '@type': 'RealEstateListing',
                 'name': title,
@@ -511,7 +512,7 @@ export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
                     'availability': 'https://schema.org/InStock',
                     'itemOffered': {
                         '@type': 'Accommodation',
-                        'name': `${configName} Residence in ${locality.name}`,
+                        'name': `${configName} Residence in Punawale`,
                         'geo': {
                             '@type': 'GeoCoordinates',
                             'latitude': '18.637934',
@@ -520,16 +521,39 @@ export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
                         'hasMap': 'https://www.google.com/maps/place/Supreme+Rivana/@18.6379338,73.74336,879m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2bb154a1af8d5:0xde1ba7d3dc6ba2d6!8m2!3d18.6379338!4d73.74336!16s%2Fg%2F11n9ckw71s'
                     }
                 }
-            },
-            {
-                '@context': 'https://schema.org',
-                '@type': 'FAQPage',
-                'mainEntity': faqs.map(f => ({
-                    '@type': 'Question',
-                    'name': f.q,
-                    'acceptedAnswer': { '@type': 'Answer', 'text': f.a }
-                }))
             }
+            : {
+                '@context': 'https://schema.org',
+                '@type': 'WebPage',
+                'name': title,
+                'description': description,
+                'url': canonical,
+                'mainEntity': {
+                    '@type': 'Article',
+                    'headline': `${configName} ${typeName} in ${locality.name} vs Supreme Rivana Punawale`,
+                    'description': description,
+                    'author': {
+                        '@type': 'Organization',
+                        'name': 'Supreme Universal',
+                        'url': 'https://www.supreme-universal.in/'
+                    }
+                }
+            };
+
+        const faqSchema = {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            'mainEntity': faqs.map(f => ({
+                '@type': 'Question',
+                'name': f.q,
+                'acceptedAnswer': { '@type': 'Answer', 'text': f.a }
+            }))
+        };
+
+        const schema = [
+            breadcrumbSchema,
+            pageSchema,
+            faqSchema
         ];
 
         return { title, description, canonical, h1, faqs, schema };

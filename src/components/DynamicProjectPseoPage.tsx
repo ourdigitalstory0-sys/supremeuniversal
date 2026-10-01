@@ -117,8 +117,8 @@ const DynamicProjectPseoPage = () => {
     };
 
     const configPrices: Record<string, string> = {
-        '2bhk': '7500000',
-        '3bhk': '11000000',
+        '2bhk': '9400000',
+        '3bhk': '15500000',
         '4bhk': '15000000',
         '5bhk': '22500000',
         'simplex': '13000000',
@@ -126,7 +126,7 @@ const DynamicProjectPseoPage = () => {
         'penthouse': '25000000',
         'townhouses': '18000000'
     };
-    const startingPrice = configPrices[configId] || '7500000';
+    const startingPrice = configPrices[configId] || '9400000';
 
     const listingSchema = {
         "@context": "https://schema.org",

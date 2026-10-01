@@ -109,40 +109,58 @@ const DynamicPseoPage = () => {
     };
 
     const configPrices: Record<string, string> = {
-        '2bhk': '7500000',
-        '3bhk': '11000000',
+        '2bhk': '9400000',
+        '3bhk': '15500000',
         '4bhk': '15000000',
         '5bhk': '22500000',
         'simplex': '13000000',
         'duplex': '20000000',
         'penthouse': '25000000'
     };
-    const startingPrice = configPrices[parsedConfigId] || '7500000';
+    const startingPrice = configPrices[parsedConfigId] || '9400000';
 
-    const listingSchema = {
-        "@context": "https://schema.org",
-        "@type": "RealEstateListing",
-        "name": `${config.name} ${propType.name} in ${locality.name} - ${theme.name}`,
-        "description": metaDescription,
-        "url": `https://www.supreme-universal.in/pune-real-estate/${slug}`,
-        "offers": {
-            "@type": "Offer",
-            "price": startingPrice,
-            "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock",
-            "itemOffered": {
-                "@type": "Accommodation",
-                "name": `${config.name} ${propType.name} in ${locality.name}`
-            },
-            "seller": {
-                "@type": "RealEstateAgent",
-                "name": "Supreme Universal",
-                "url": "https://www.supreme-universal.in/"
+    const pageSchema = parsedLocId === 'punawale'
+        ? {
+            "@context": "https://schema.org",
+            "@type": "RealEstateListing",
+            "name": `${config.name} ${propType.name} in ${locality.name} - ${theme.name}`,
+            "description": metaDescription,
+            "url": `https://www.supreme-universal.in/pune-real-estate/${slug}`,
+            "offers": {
+                "@type": "Offer",
+                "price": startingPrice,
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock",
+                "itemOffered": {
+                    "@type": "Accommodation",
+                    "name": `${config.name} ${propType.name} in ${locality.name}`
+                },
+                "seller": {
+                    "@type": "RealEstateAgent",
+                    "name": "Supreme Universal",
+                    "url": "https://www.supreme-universal.in/"
+                }
             }
         }
-    };
+        : {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": `${config.name} ${propType.name} in ${locality.name} - ${theme.name}`,
+            "description": metaDescription,
+            "url": `https://www.supreme-universal.in/pune-real-estate/${slug}`,
+            "mainEntity": {
+                "@type": "Article",
+                "headline": `${config.name} ${propType.name} in ${locality.name} vs Supreme Rivana Punawale`,
+                "description": metaDescription,
+                "author": {
+                    "@type": "Organization",
+                    "name": "Supreme Universal",
+                    "url": "https://www.supreme-universal.in/"
+                }
+            }
+        };
 
-    const combinedSchemas = [faqSchema, listingSchema];
+    const combinedSchemas = [faqSchema, pageSchema];
 
     return (
         <div className="font-sans antialiased text-gray-900 bg-white transition-colors duration-500 pb-16 md:pb-0">

@@ -259,7 +259,7 @@ const SEO = ({
                 "@context": "https://schema.org",
                 "@type": "RealEstateListing",
                 "name": "Supreme Rivana Punawale - Premium 2 & 3 BHK Flats",
-                "description": "Ultra-luxury 2 & 3 BHK riverside apartments in a 15-acre IGBC certified township. 31-storey towers with 6 units per floor for maximum privacy. 40+ world-class amenities including infinity pool, skywalk, and multi-tier clubhouse.",
+                "description": "Ultra-luxury 2 & 3 BHK riverside apartments in a 12.6-acre IGBC certified township. 31-storey towers with 6 units per floor for maximum privacy. 60,000 sq.ft clubhouse with 40+ world-class amenities including infinity pool and skywalk.",
                 "url": url,
                 "datePosted": "2026-01-01",
                 "offers": [
@@ -267,7 +267,7 @@ const SEO = ({
                         "@type": "Offer",
                         "name": "2 BHK Luxury Apartment",
                         "description": "Spacious 2 BHK waterfront apartment with river views, premium finishes, and smart layouts",
-                        "price": "7500000",
+                        "price": "9400000",
                         "priceCurrency": "INR",
                         "availability": "https://schema.org/InStock",
                         "areaServed": "Punawale, Pune West"
@@ -276,7 +276,7 @@ const SEO = ({
                         "@type": "Offer",
                         "name": "3 BHK Premium Apartment",
                         "description": "Expansive 3 BHK luxury apartment with panoramic river views, premium flooring, and exclusive community access",
-                        "price": "11000000",
+                        "price": "15500000",
                         "priceCurrency": "INR",
                         "availability": "https://schema.org/InStock",
                         "areaServed": "Punawale, Pune West"
