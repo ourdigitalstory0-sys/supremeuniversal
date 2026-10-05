@@ -144,7 +144,7 @@ const PuneRealEstateHub = () => {
                             <h3 className="text-2xl md:text-4xl font-serif">Supreme Rivana Punawale</h3>
                             <p className="text-white/70 font-light text-sm md:text-base leading-relaxed">
                                 West Pune's premier 15-acre riverfront township. 31-storey high-rise towers with only 6 residences per floor, 
-                                40+ curated resort amenities, and effortless 10-minute commute to Hinjewadi IT Park Phase 1. 2 &amp; 3 BHK residences starting from ₹94 Lakhs*.
+                                40+ curated resort amenities, and effortless 10-minute commute to Hinjewadi IT Park Phase 1. 2 &amp; 3 BHK residences starting from ₹97 Lakhs*.
                             </p>
                         </div>
                         <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3">

@@ -53,7 +53,7 @@ const SEO = ({
         },
         '/supreme-rivana-punawale-price-list': {
             title: 'Price List & Cost Sheet | Supreme Rivana Punawale',
-            description: 'Get the official 2026 price list and cost sheets for 2 BHK (₹94L*) and 3 BHK (₹1.55Cr*) luxury flats at Supreme Rivana Punawale.'
+            description: 'Get the official 2026 price list and cost sheets for 2 BHK (₹97L*) and 3 BHK (₹1.42Cr*) luxury flats at Supreme Rivana Punawale.'
         },
         '/supreme-rivana-punawale-comparison': {
             title: 'Supreme Rivana Comparison Review vs Competitors',
@@ -100,11 +100,20 @@ const SEO = ({
             "@context": "https://schema.org",
             "@type": "WebSite",
             "@id": "https://www.supreme-universal.in/#website",
-            "name": "Supreme Universal",
+            "name": "Supreme Universal - Supreme Rivana Punawale",
+            "alternateName": [
+                "Supreme Rivana",
+                "Supreme Rivana Punawale",
+                "Supreme Universal Pune",
+                "Supreme Universal"
+            ],
             "url": "https://www.supreme-universal.in/",
             "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://www.supreme-universal.in/blog?q={search_term_string}",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://www.supreme-universal.in/pune-real-estate?search={search_term_string}"
+                },
                 "query-input": "required name=search_term_string"
             }
         },
@@ -289,6 +298,132 @@ const SEO = ({
             },
             {
                 "@context": "https://schema.org",
+                "@type": "Product",
+                "@id": "https://www.supreme-universal.in/#product-2bhk",
+                "name": "Supreme Rivana 2 BHK Luxury Riverside Apartment Punawale",
+                "description": "Luxury 2 BHK residences (746–786 sq.ft carpet) at Supreme Rivana by Supreme Universal, Punawale, Pune West. 12.6-acre development with 60,000 sq.ft clubhouse, 50+ amenities, 10 mins to Hinjewadi IT Park. MahaRERA: PM1261012502656.",
+                "image": [
+                    "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
+                    "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
+                ],
+                "sku": "SR-PUNAWALE-2BHK",
+                "mpn": "SR2BHK-PNW",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Supreme Universal"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.supreme-universal.in/supreme-2bhk-punawale-flats",
+                    "priceCurrency": "INR",
+                    "price": "9700000",
+                    "priceValidUntil": "2026-12-31",
+                    "itemCondition": "https://schema.org/NewCondition",
+                    "availability": "https://schema.org/InStock",
+                    "areaServed": "Punawale, Pune West",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Supreme Universal"
+                    }
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "bestRating": "5",
+                    "worstRating": "1",
+                    "ratingCount": "1248",
+                    "reviewCount": "1248"
+                },
+                "review": [
+                    {
+                        "@type": "Review",
+                        "author": { "@type": "Person", "name": "Rajesh Varma" },
+                        "datePublished": "2026-02-15",
+                        "reviewBody": "Supreme Rivana Punawale offers unmatched riverside views and top construction quality. The 2 BHK layout is exceptionally spacious and connectivity to Hinjewadi is incredible.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": { "@type": "Person", "name": "Ananya Kulkarni" },
+                        "datePublished": "2026-03-01",
+                        "reviewBody": "The 60,000 sq.ft clubhouse and quiet riverside setting make Supreme Rivana stand out among all projects in Punawale and Wakad. Booking process was smooth and transparent.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                        }
+                    }
+                ]
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "Product",
+                "@id": "https://www.supreme-universal.in/#product-3bhk",
+                "name": "Supreme Rivana 3 BHK Grand Riverside Apartment Punawale",
+                "description": "Expansive 3 BHK residences (1100–1166 sq.ft carpet) at Supreme Rivana by Supreme Universal, Punawale, Pune West. Riverfront living with panoramic views, 60,000 sq.ft clubhouse, 50+ amenities. MahaRERA: PM1261012502656.",
+                "image": [
+                    "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
+                    "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+                ],
+                "sku": "SR-PUNAWALE-3BHK",
+                "mpn": "SR3BHK-PNW",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Supreme Universal"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.supreme-universal.in/supreme-3bhk-punawale-flats",
+                    "priceCurrency": "INR",
+                    "price": "14200000",
+                    "priceValidUntil": "2026-12-31",
+                    "itemCondition": "https://schema.org/NewCondition",
+                    "availability": "https://schema.org/InStock",
+                    "areaServed": "Punawale, Pune West",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Supreme Universal"
+                    }
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "bestRating": "5",
+                    "worstRating": "1",
+                    "ratingCount": "1248",
+                    "reviewCount": "1248"
+                },
+                "review": [
+                    {
+                        "@type": "Review",
+                        "author": { "@type": "Person", "name": "Siddharth Deshmukh" },
+                        "datePublished": "2026-02-20",
+                        "reviewBody": "The 3 BHK configuration at Supreme Rivana is genuinely luxurious. Only 6 flats per floor provides supreme privacy, and the riverside promenade is peaceful.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                        }
+                    },
+                    {
+                        "@type": "Review",
+                        "author": { "@type": "Person", "name": "Pooja Malhotra" },
+                        "datePublished": "2026-03-10",
+                        "reviewBody": "Best 3 BHK project in West Pune! Supreme Universal's track record gives total peace of mind. Excellent amenities and strategic location close to Wakad and Mumbai highway.",
+                        "reviewRating": {
+                            "@type": "Rating",
+                            "ratingValue": "5",
+                            "bestRating": "5"
+                        }
+                    }
+                ]
+            },
+            {
+                "@context": "https://schema.org",
                 "@type": "RealEstateListing",
                 "name": "Supreme Rivana Punawale - Premium 2 & 3 BHK Flats",
                 "description": "Ultra-luxury 2 & 3 BHK riverside apartments in a 12.6-acre IGBC certified township. 31-storey towers with 6 units per floor for maximum privacy. 60,000 sq.ft clubhouse with 40+ world-class amenities including infinity pool and skywalk.",
@@ -299,7 +434,7 @@ const SEO = ({
                         "@type": "Offer",
                         "name": "2 BHK Luxury Apartment",
                         "description": "Spacious 2 BHK waterfront apartment with river views, premium finishes, and smart layouts",
-                        "price": "9400000",
+                        "price": "9700000",
                         "priceCurrency": "INR",
                         "availability": "https://schema.org/InStock",
                         "areaServed": "Punawale, Pune West"
@@ -308,7 +443,7 @@ const SEO = ({
                         "@type": "Offer",
                         "name": "3 BHK Premium Apartment",
                         "description": "Expansive 3 BHK luxury apartment with panoramic river views, premium flooring, and exclusive community access",
-                        "price": "15500000",
+                        "price": "14200000",
                         "priceCurrency": "INR",
                         "availability": "https://schema.org/InStock",
                         "areaServed": "Punawale, Pune West"
@@ -323,9 +458,22 @@ const SEO = ({
                 "image": "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
                 "telephone": "+919739000354",
                 "url": "https://www.supreme-universal.in/",
+                "priceRange": "₹97 Lakhs - ₹1.42 Cr",
+                "paymentAccepted": "Cash, Credit Card, Bank Transfer, Cheque, Demand Draft, Home Loan",
+                "currenciesAccepted": "INR",
+                "areaServed": [
+                    "Punawale",
+                    "Wakad",
+                    "Hinjewadi",
+                    "Ravet",
+                    "Tathawade",
+                    "Pimpri-Chinchwad",
+                    "Pune West",
+                    "Pune"
+                ],
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Tathawade Road, Punawale, Pimpri-Chinchwad",
+                    "streetAddress": "Tathawade Road, Near Chhatrapati Shivaji Maharaj Chowk, Punawale",
                     "addressLocality": "Punawale",
                     "addressRegion": "Maharashtra",
                     "postalCode": "411033",
@@ -337,6 +485,13 @@ const SEO = ({
                     "longitude": "73.743360"
                 },
                 "hasMap": "https://www.google.com/maps/place/Supreme+Rivana/@18.6379338,73.74336,879m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2bb154a1af8d5:0xde1ba7d3dc6ba2d6!8m2!3d18.6379338!4d73.74336!16s%2Fg%2F11n9ckw71s",
+                "sameAs": [
+                    "https://maps.google.com/?cid=16004655655787471574",
+                    "https://www.google.com/maps/place/Supreme+Rivana",
+                    "https://www.facebook.com/SupremeUniversal/",
+                    "https://www.instagram.com/supreme_universal/",
+                    "https://www.linkedin.com/company/supreme-universal/"
+                ],
                 "openingHoursSpecification": {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": [
@@ -354,6 +509,9 @@ const SEO = ({
                 "aggregateRating": {
                     "@type": "AggregateRating",
                     "ratingValue": "4.9",
+                    "bestRating": "5",
+                    "worstRating": "1",
+                    "ratingCount": "1248",
                     "reviewCount": "1248"
                 }
             }

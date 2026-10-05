@@ -13,12 +13,21 @@ interface Env {
 
 const FALLBACK_BROCHURE_URL = 'https://www.supremeuniversal.com/residential-property/pune/punawale/supreme-rivana/';
 
-export async function onRequestOptions(): Promise<Response> {
+export async function onRequestOptions(context: { request: Request }): Promise<Response> {
+    const origin = context.request.headers.get('Origin') || '';
+    const isAllowedOrigin = !origin || 
+                            origin.endsWith('supreme-universal.in') || 
+                            origin.endsWith('pages.dev') ||
+                            origin.includes('localhost') || 
+                            origin.includes('127.0.0.1');
+
     return new Response(null, {
         headers: {
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': isAllowedOrigin && origin ? origin : 'https://www.supreme-universal.in',
             'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
             'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Max-Age': '86400',
+            'X-Content-Type-Options': 'nosniff'
         }
     });
 }
@@ -28,6 +37,14 @@ export async function onRequestGet(context: {
     env: Env;
 }): Promise<Response> {
     const { request, env } = context;
+    const origin = request.headers.get('Origin') || '';
+    const isAllowedOrigin = !origin || 
+                            origin.endsWith('supreme-universal.in') || 
+                            origin.endsWith('pages.dev') ||
+                            origin.includes('localhost') || 
+                            origin.includes('127.0.0.1');
+
+    const corsOrigin = isAllowedOrigin && origin ? origin : 'https://www.supreme-universal.in';
     const url = new URL(request.url);
     const fileType = url.searchParams.get('type') || 'brochure'; // 'brochure' | 'cost-sheet' | 'floor-plan'
 
@@ -91,7 +108,7 @@ export async function onRequestGet(context: {
         status: 200,
         headers: {
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': corsOrigin,
             'Cache-Control': 'no-cache',
             'X-Content-Type-Options': 'nosniff'
         }

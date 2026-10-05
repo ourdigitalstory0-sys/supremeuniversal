@@ -38,6 +38,25 @@ const DEFAULT_PRICING = {
     note: '*Government taxes, registration & stamp duty extra. Base starting price. MahaRERA: PM1261012502656. Contact sales desk at +91 97390 00354 for verified cost sheet.'
 };
 
+export async function onRequestOptions(context: { request: Request }): Promise<Response> {
+    const origin = context.request.headers.get('Origin') || '';
+    const isAllowedOrigin = !origin || 
+                            origin.endsWith('supreme-universal.in') || 
+                            origin.endsWith('pages.dev') ||
+                            origin.includes('localhost') || 
+                            origin.includes('127.0.0.1');
+
+    return new Response(null, {
+        headers: {
+            'Access-Control-Allow-Origin': isAllowedOrigin && origin ? origin : 'https://www.supreme-universal.in',
+            'Access-Control-Allow-Methods': 'GET, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Max-Age': '86400',
+            'X-Content-Type-Options': 'nosniff'
+        }
+    });
+}
+
 export async function onRequestGet(context: {
     request: Request;
     env: Env;
@@ -47,11 +66,12 @@ export async function onRequestGet(context: {
     const origin = request.headers.get('Origin') || '';
     const isAllowedOrigin = !origin || 
                             origin.endsWith('supreme-universal.in') || 
+                            origin.endsWith('pages.dev') ||
                             origin.includes('localhost') || 
                             origin.includes('127.0.0.1');
 
     const corsHeaders = {
-        'Access-Control-Allow-Origin': isAllowedOrigin ? origin : 'https://www.supreme-universal.in',
+        'Access-Control-Allow-Origin': isAllowedOrigin && origin ? origin : 'https://www.supreme-universal.in',
         'Content-Type': 'application/json',
         'Cache-Control': 'public, max-age=300', // 5 min CDN cache
         'X-Content-Type-Options': 'nosniff'

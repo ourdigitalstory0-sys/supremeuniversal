@@ -56,12 +56,18 @@ export async function onRequest(context: {
     const url = new URL(request.url);
     const ua = (request.headers.get('user-agent') || '').toLowerCase();
 
-    // 0. Canonical Domain Enforcer (Consolidate 100% PageRank into www)
-    if (url.hostname === 'supreme-universal.in') {
-        const targetUrl = new URL(request.url);
-        targetUrl.hostname = 'www.supreme-universal.in';
-        targetUrl.protocol = 'https:';
-        return Response.redirect(targetUrl.toString(), 301);
+    // 0. Canonical Domain & Ecosystem Enforcer (Consolidate 100% PageRank into https://www.supreme-universal.in)
+    // Hardens supreme-universal.in, www.supreme-universal.in, and supremeuniversal-erc.pages.dev
+    const isPagesDev = url.hostname.endsWith('.pages.dev');
+    const isApex = url.hostname === 'supreme-universal.in';
+    const isHttp = url.protocol === 'http:';
+
+    // A. 301 Redirect apex, http, and all pages.dev requests (except /api/ for testing) to canonical www host
+    if (isApex || (isPagesDev && !url.pathname.startsWith('/api/')) || (isHttp && url.hostname.includes('supreme-universal.in'))) {
+        const canonicalTarget = new URL(request.url);
+        canonicalTarget.hostname = 'www.supreme-universal.in';
+        canonicalTarget.protocol = 'https:';
+        return Response.redirect(canonicalTarget.toString(), 301);
     }
 
     // 0a. Edge 301 Permanent Redirects for Legacy URLs (Instant Googlebot Wave 1 PageRank Consolidation)
@@ -307,7 +313,13 @@ export async function onRequest(context: {
                 });
 
             const newHeaders = new Headers(response.headers);
-            newHeaders.set('X-Robots-Tag', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+            if (isPagesDev) {
+                newHeaders.set('X-Robots-Tag', 'noindex, nofollow, noarchive');
+            } else {
+                newHeaders.set('X-Robots-Tag', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+                newHeaders.set('Link', `<https://www.supreme-universal.in${url.pathname}>; rel="canonical"`);
+            }
+            newHeaders.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload');
             newHeaders.set('X-DNS-Prefetch-Control', 'on');
             newHeaders.set('X-XSS-Protection', '1; mode=block');
             newHeaders.set('X-Content-Type-Options', 'nosniff');
@@ -330,7 +342,13 @@ export async function onRequest(context: {
 
     // 5. Inject additional Edge-level security & Google Interconnect headers for standard routes
     const newHeaders = new Headers(response.headers);
-    newHeaders.set('X-Robots-Tag', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+    if (isPagesDev) {
+        newHeaders.set('X-Robots-Tag', 'noindex, nofollow, noarchive');
+    } else {
+        newHeaders.set('X-Robots-Tag', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+        newHeaders.set('Link', `<https://www.supreme-universal.in${url.pathname}>; rel="canonical"`);
+    }
+    newHeaders.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload');
     newHeaders.set('X-DNS-Prefetch-Control', 'on');
     newHeaders.set('X-XSS-Protection', '1; mode=block');
     newHeaders.set('X-Content-Type-Options', 'nosniff');
