@@ -327,6 +327,29 @@ export function resolvePseoMetadata(pathname: string): EdgePseoMeta | null {
             },
             {
                 '@context': 'https://schema.org',
+                '@type': 'Organization',
+                '@id': 'https://www.supreme-universal.in/#organization',
+                'name': 'Supreme Universal',
+                'url': 'https://www.supreme-universal.in/',
+                'logo': 'https://www.supremeuniversal.com/front/img/logo.svg',
+                'foundingDate': '1982',
+                'description': 'Supreme Universal is a premium real estate developer with 40+ years of legacy, delivering 70+ iconic projects across Mumbai and Pune. Recognized by CREDAI-MCHI and Asia Property Awards.',
+                'sameAs': [
+                    'https://www.supremeuniversal.com/',
+                    'https://www.facebook.com/SupremeUniversal/',
+                    'https://www.instagram.com/supreme_universal/',
+                    'https://www.linkedin.com/company/supreme-universal/'
+                ],
+                'contactPoint': {
+                    '@type': 'ContactPoint',
+                    'telephone': '+919739000354',
+                    'contactType': 'sales',
+                    'areaServed': 'IN',
+                    'availableLanguage': ['en', 'hi', 'mr']
+                }
+            },
+            {
+                '@context': 'https://schema.org',
                 '@type': 'BreadcrumbList',
                 'itemListElement': breadcrumbItems
             },

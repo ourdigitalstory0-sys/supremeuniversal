@@ -127,6 +127,7 @@ const SEO = ({
             "foundingDate": "1982",
             "description": "Supreme Universal is a premium real estate developer with 40+ years of legacy, delivering 70+ iconic projects across Mumbai and Pune. Recognized by CREDAI-MCHI and Asia Property Awards.",
             "sameAs": [
+                "https://www.supremeuniversal.com/",
                 "https://www.facebook.com/SupremeUniversal/",
                 "https://www.instagram.com/supreme_universal/",
                 "https://www.linkedin.com/company/supreme-universal/"
