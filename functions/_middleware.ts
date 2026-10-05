@@ -326,6 +326,7 @@ export async function onRequest(context: {
             newHeaders.set('X-Frame-Options', 'SAMEORIGIN');
             newHeaders.set('X-Permitted-Cross-Domain-Policies', 'none');
             newHeaders.set('X-Download-Options', 'noopen');
+            newHeaders.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=(self "https://maps.google.com")');
             newHeaders.set('Referrer-Policy', 'strict-origin-when-cross-origin');
             newHeaders.set('X-Edge-Prerender', 'active');
             newHeaders.set('Timing-Allow-Origin', '*');
@@ -355,6 +356,7 @@ export async function onRequest(context: {
     newHeaders.set('X-Frame-Options', 'SAMEORIGIN');
     newHeaders.set('X-Permitted-Cross-Domain-Policies', 'none');
     newHeaders.set('X-Download-Options', 'noopen');
+    newHeaders.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=(self "https://maps.google.com")');
     newHeaders.set('Referrer-Policy', 'strict-origin-when-cross-origin');
     newHeaders.set('Timing-Allow-Origin', '*');
     newHeaders.set('Server-Timing', 'cf-google-peering;desc="Cloudflare to Google AS15169 Direct PNI", dur=2');
