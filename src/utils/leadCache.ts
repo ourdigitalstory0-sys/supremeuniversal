@@ -52,7 +52,6 @@ export const syncPendingLeads = async () => {
     const leads = getPendingLeads();
     if (leads.length === 0) return;
 
-    console.log(`Attempting to synchronize ${leads.length} pending lead(s)...`);
     for (const lead of leads) {
         try {
             const formData = new FormData();
@@ -66,11 +65,10 @@ export const syncPendingLeads = async () => {
             });
             const data = await response.json();
             if (data.success) {
-                console.log(`Lead ${lead.id} successfully synchronized.`);
                 removePendingLead(lead.id);
             }
-        } catch (err) {
-            console.warn(`Synchronization attempt failed for lead ${lead.id}:`, err);
+        } catch {
+            // Offline retry on next connectivity event
         }
     }
 };

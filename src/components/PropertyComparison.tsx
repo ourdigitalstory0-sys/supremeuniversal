@@ -152,9 +152,10 @@ const PropertyComparison = () => {
 
                                 <a
                                     href={`/projects/${project.id}`}
+                                    aria-label={`Explore ${project.name} Project Details & Floor Plans`}
                                     className="mt-8 flex items-center justify-between w-full bg-supreme-black text-white px-6 py-4 text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-supreme-gold transition-all duration-500 group"
                                 >
-                                    Explore Project
+                                    <span>Explore {project.name}</span>
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </a>
                             </motion.div>

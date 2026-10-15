@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Supreme Rivana Punawale AI Services",
+  "version": "1.0.0",
+  "description": "Agentic discovery catalog and API interfaces for Supreme Rivana Punawale luxury residences by Supreme Universal.",
+  "url": "https://www.supreme-universal.in",
+  "developer": {
+    "name": "Supreme Universal",
+    "url": "https://www.supreme-universal.in"
+  },
+  "contact": {
+    "name": "Supreme Universal Real Estate Advisory",
+    "email": "info@supremeuniversal.com",
+    "telephone": "+919739000354",
+    "url": "https://www.supreme-universal.in"
+  },
+  "capabilities": [
+    {
+      "id": "pricing-lookup",
+      "name": "Live Real Estate Pricing",
+      "description": "Retrieve current 2026 pricing, carpet areas, and payment schedules for 2 BHK and 3 BHK residences.",
+      "endpoint": "https://www.supreme-universal.in/api/pricing",
+      "method": "GET",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "config": {
+            "type": "string",
+            "enum": ["2bhk", "3bhk", "all"],
+            "description": "Apartment configuration filter"
+          }
+        }
+      }
+    },
+    {
+      "id": "brochure-download",
+      "name": "Project Document Delivery",
+      "description": "Fetch official PDF brochures, carpet area floor plans, and cost sheets directly from Cloudflare Edge storage.",
+      "endpoint": "https://www.supreme-universal.in/api/brochure",
+      "method": "GET",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["brochure", "cost-sheet", "floor-plan"],
+            "description": "Type of document requested"
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-advisory",
+      "name": "AI Real Estate Assistant",
+      "description": "Query Supreme Rivana luxury real estate knowledge base with natural language questions.",
+      "endpoint": "https://www.supreme-universal.in/api/chat",
+      "method": "POST",
+      "parameters": {
+        "type": "object",
+        "required": ["message"],
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "User question regarding pricing, floor plans, possession, or location."
+          }
+        }
+      }
+    }
+  ]
+}

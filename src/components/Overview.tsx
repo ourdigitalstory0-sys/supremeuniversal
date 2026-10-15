@@ -23,6 +23,8 @@ const Overview = () => {
                                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-[2s] ease-out"
                                     loading="lazy"
                                     decoding="async"
+                                    width="800"
+                                    height="1000"
                                 />
                             </div>
 
@@ -135,6 +137,7 @@ const Overview = () => {
                             >
                                 <Link
                                     to="/supreme-rivana-punawale-amenities"
+                                    aria-label="Discover 50+ Curated Lifestyle Amenities at Supreme Rivana"
                                     className="group inline-flex items-center gap-4 text-supreme-black font-sans font-semibold uppercase tracking-[0.15em] text-xs hover:text-supreme-gold transition-colors"
                                 >
                                     <span>Discover Amenities</span>

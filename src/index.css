@@ -1,16 +1,11 @@
 @import "tailwindcss";
-@import "leaflet/dist/leaflet.css";
 
 @import '@fontsource/playfair-display/400.css';
 @import '@fontsource/playfair-display/700.css';
-@import '@fontsource/manrope/300.css';
 @import '@fontsource/manrope/400.css';
-@import '@fontsource/manrope/500.css';
 @import '@fontsource/manrope/600.css';
 @import '@fontsource/outfit/400.css';
-@import '@fontsource/outfit/500.css';
 @import '@fontsource/outfit/600.css';
-@import '@fontsource/outfit/700.css';
 
 @theme {
   --font-serif: "Playfair Display", serif;
@@ -19,6 +14,7 @@
   --font-google: "Outfit", sans-serif;
 
   --color-supreme-gold: #C6A87C;
+  --color-supreme-gold-text: #8E652E; /* WCAG AA 4.6:1 compliant on light background */
   --color-supreme-black: #1C1C1C;
   --color-supreme-gray: #FAFAFA;
   --color-supreme-gold-dark: #A3865D;

@@ -19,30 +19,27 @@ const Hero = ({
     return (
         <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-supreme-black">
             {/* Background Image with Dark Overlay */}
-            <div className="absolute inset-0 bg-black/60 z-10"></div>
+            <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none"></div>
 
-            <motion.div
-                className="absolute inset-0 z-0"
-                initial={{ scale: 1.1 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 15, ease: "easeOut" }}
-            >
+            <div className="absolute inset-0 z-0">
                 <img
-                    src="https://cdn.supremeuniversal.com/media/Supreme-Rivana-Web-Banner_fzjUZ4.jpeg"
-                    alt="Supreme Rivana Punawale luxury apartments — premium 2 BHK & 3 BHK flats for sale in Punawale near Hinjewadi IT Park."
+                    src="/images/hero-banner.jpg"
+                    alt="Supreme Rivana Punawale luxury residences — premium 2 BHK and 3 BHK waterfront apartments in Punawale Pune near Hinjewadi IT Park."
                     className="w-full h-full object-cover opacity-80 mix-blend-overlay"
                     fetchPriority="high"
                     loading="eager"
+                    decoding="async"
+                    width="1920"
+                    height="1080"
                 />
-            </motion.div>
+            </div>
 
             {/* Content Container */}
             <div className="container mx-auto px-6 relative z-20 flex flex-col items-center justify-center text-center mt-20">
-                <h2 className="sr-only">Supreme Rivana Punawale new launch project — Book premium 2 & 3 BHK apartments in Punawale near Hinjewadi IT Park. Check Supreme Rivana 2 BHK price and 3 BHK carpet area today.</h2>
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3, duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                    transition={{ delay: 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                     className="mb-6 flex flex-col items-center w-full"
                 >
                     <span className="block text-xs md:text-sm font-sans tracking-[0.4em] text-supreme-gold mb-4 uppercase">
@@ -63,7 +60,7 @@ const Hero = ({
                     className="text-base md:text-xl text-white/80 max-w-2xl mx-auto font-sans font-light tracking-wide mb-10 leading-relaxed"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.7, duration: 1 }}
+                    transition={{ delay: 0.3, duration: 0.8 }}
                 >
                     {description || (
                         <>
@@ -71,17 +68,16 @@ const Hero = ({
                         </>
                     )}
                 </motion.p>
-                {/* Semantic heading for SEO crawlers — visually hidden */}
-                <h2 className="sr-only">Supreme Rivana Punawale brochure download — Luxury 2 & 3 BHK waterfront residences for sale in Punawale near Wakad and Tathawade. Best residential project by Supreme Universal.</h2>
 
                 <motion.div
                     className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.9, duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                    transition={{ delay: 0.5, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 >
                     <button
                         onClick={onEnquire}
+                        aria-label="Enquire about Supreme Rivana 2 and 3 BHK Apartments"
                         className="group relative overflow-hidden bg-supreme-gold text-white px-8 py-4 rounded-full font-sans font-semibold uppercase tracking-widest text-sm transition-all duration-300 w-full sm:w-auto hover:-translate-y-1 shadow-2xl hover:shadow-supreme-gold/20"
                     >
                         <span className="relative z-10 transition-colors duration-300 group-hover:text-supreme-black">Enquire Now</span>
@@ -90,6 +86,7 @@ const Hero = ({
 
                     <button
                         onClick={onDownload}
+                        aria-label="Download Supreme Rivana Official Brochure"
                         className="group relative px-8 py-4 rounded-full font-sans font-semibold uppercase tracking-widest text-sm transition-all w-full sm:w-auto text-white border border-white/30 hover:border-white hover:bg-white/10 flex items-center justify-center gap-2"
                     >
                         Download Brochure
@@ -97,6 +94,7 @@ const Hero = ({
 
                     <Link
                         to="/supreme-rivana-punawale-overview"
+                        aria-label="Explore Supreme Rivana Project Overview, Masterplan & Specifications"
                         className="group relative px-8 py-4 rounded-full font-sans font-semibold uppercase tracking-widest text-sm transition-all w-full sm:w-auto text-white border border-white/30 hover:border-white hover:bg-white/10"
                     >
                         Explore Project

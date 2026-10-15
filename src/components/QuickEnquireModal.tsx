@@ -84,6 +84,7 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                             {/* Close Button */}
                             <button
                                 onClick={onClose}
+                                aria-label="Close Enquiry Modal"
                                 className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors z-10"
                             >
                                 <X size={24} strokeWidth={1.5} />

@@ -1,0 +1,24 @@
+{
+  "name": "supremeuniversal-cron-worker",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Advanced Cloudflare Cron Worker for Supreme Universal — Google Indexing, SEO Health, Price Sync, Lead Digest",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "kv:create": "wrangler kv:namespace create CRON_STATE",
+    "secret:indexing-email": "wrangler secret put GOOGLE_SERVICE_ACCOUNT_EMAIL",
+    "secret:indexing-key": "wrangler secret put GOOGLE_PRIVATE_KEY",
+    "secret:webhook": "wrangler secret put NOTIFICATION_WEBHOOK_URL",
+    "secret:email-api": "wrangler secret put EMAIL_API_KEY",
+    "trigger:health": "wrangler dev --test-scheduled",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241004.0",
+    "typescript": "~5.9.3",
+    "wrangler": "^3.107.4"
+  }
+}

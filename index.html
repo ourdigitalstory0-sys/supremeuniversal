@@ -53,9 +53,12 @@
   <link rel="dns-prefetch" href="https://maps.googleapis.com" />
   <link rel="dns-prefetch" href="https://api.web3forms.com" />
 
-  <!-- Critical Asset Preloading (LCP Image) -->
-  <link rel="preload" as="image" href="https://cdn.supremeuniversal.com/media/Supreme-Rivana-Web-Banner_fzjUZ4.jpeg" fetchpriority="high" />
+  <!-- Critical Asset Preloading (LCP Local Hero Image) -->
+  <link rel="preload" as="image" href="/images/hero-banner.jpg" type="image/jpeg" fetchpriority="high" />
 
+  <!-- Agentic Browsing & AI Discovery Standards -->
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Documentation" />
+  <link rel="service-doc" href="/.well-known/ai-catalog.json" />
 
   <!-- PWA & Mobile -->
   <link rel="manifest" href="/manifest.json" />
@@ -63,21 +66,35 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Supreme Rivana Punawale" />
-  <link rel="apple-touch-icon" href="https://www.supremeuniversal.com/front/img/favicon.png" />
+  <link rel="apple-touch-icon" href="/rivana-rera-qr.png" />
   <!-- Cloudflare Image Delivery CDN Preconnect -->
   <link rel="preconnect" href="https://imagedelivery.net" crossorigin />
   <link rel="dns-prefetch" href="https://imagedelivery.net" />
 
-  <!-- Cloudflare Web Analytics (zero-cookie, GDPR-safe) -->
-  <script type="module" defer src="https://static.cloudflareinsights.com/beacon.min.js"
-    data-cf-beacon='{"token": "2cea708fd98c46e392fcb88548fdf03d"}'></script>
+  <!-- Cloudflare Web Analytics (deferred to idle) -->
+  <script>
+    window.addEventListener('load', function() {
+      var s = document.createElement('script');
+      s.src = "https://static.cloudflareinsights.com/beacon.min.js";
+      s.setAttribute('data-cf-beacon', '{"token": "2cea708fd98c46e392fcb88548fdf03d"}');
+      s.defer = true;
+      document.head.appendChild(s);
+    });
+  </script>
 
-  <!-- Google Tag Manager (Direct Infrastructure Peering) -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-T9JZ73V4');</script>
+  <!-- Google Tag Manager (Deferred to eliminate Total Blocking Time) -->
+  <script>
+    window.addEventListener('load', function() {
+      var scheduleGTM = window.requestIdleCallback || function(cb) { setTimeout(cb, 1200); };
+      scheduleGTM(function() {
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T9JZ73V4');
+      });
+    });
+  </script>
   <!-- End Google Tag Manager -->
 
 </head>

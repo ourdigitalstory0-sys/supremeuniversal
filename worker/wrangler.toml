@@ -1,0 +1,69 @@
+# ============================================================
+# Supreme Universal — Advanced Cloudflare Cron Worker v2.0
+# Worker Name: supremeuniversal-cron
+# ============================================================
+# Deploy: wrangler deploy (inside /worker directory)
+# Secrets: wrangler secret put GOOGLE_SERVICE_ACCOUNT_EMAIL
+#          wrangler secret put GOOGLE_PRIVATE_KEY
+#          wrangler secret put NOTIFICATION_WEBHOOK_URL
+#          wrangler secret put EMAIL_API_KEY
+# ============================================================
+
+name = "supremeuniversal-cron"
+main = "src/index.ts"
+compatibility_date = "2026-08-26"
+compatibility_flags = ["nodejs_compat"]
+
+# ─────────────────────────────────────────────
+# CRON TRIGGERS (6 scheduled jobs)
+# ─────────────────────────────────────────────
+[triggers]
+crons = [
+  "0 0 * * *",    # 00:00 UTC (05:30 IST) — SEO Health Monitor + Alert
+  "0 1 * * *",    # 01:00 UTC (06:30 IST) — Sitemap Ping (Google + Bing)
+  "0 2 * * *",    # 02:00 UTC (07:30 IST) — Google Indexing API Batch (190 URLs)
+  "0 */6 * * *",  # Every 6h             — KV Price Store Refresh
+  "0 3 * * 1",    # Mon 03:00 UTC         — Weekly Lead Digest Email
+  "0 4 * * *",    # 04:00 UTC (09:30 IST) — Web Stories Metadata Refresh
+]
+
+# ─────────────────────────────────────────────
+# KV NAMESPACES
+# ─────────────────────────────────────────────
+
+# Shared live pricing + lead archive (same as Pages site)
+[[kv_namespaces]]
+binding = "PRICE_STORE"
+id = "a56588d148fd4b55b59ba0d07fb1256c"
+preview_id = "9661d1155a5c4fde92fb5a1307795d29"
+
+# Cron-exclusive state store (create with: wrangler kv:namespace create CRON_STATE)
+[[kv_namespaces]]
+binding = "CRON_STATE"
+id = "REPLACE_WITH_YOUR_CRON_KV_ID"
+preview_id = "REPLACE_WITH_YOUR_CRON_KV_PREVIEW_ID"
+
+# ─────────────────────────────────────────────
+# ENVIRONMENT VARIABLES (non-secret)
+# ─────────────────────────────────────────────
+[vars]
+DOMAIN              = "https://www.supreme-universal.in"
+PROJECT_NAME        = "Supreme Rivana Punawale"
+RERA_NUMBER         = "PM1261012502656"
+PRICE_2BHK          = "₹97 Lakhs*"
+PRICE_3BHK          = "₹1.42 Cr*"
+ALERT_EMAIL_TO      = "info@supremeuniversal.com"
+
+# ─────────────────────────────────────────────
+# SECRETS (set via wrangler secret put <NAME>)
+# ─────────────────────────────────────────────
+# GOOGLE_SERVICE_ACCOUNT_EMAIL  — from service-account.json (client_email)
+# GOOGLE_PRIVATE_KEY            — from service-account.json (private_key)
+# NOTIFICATION_WEBHOOK_URL      — Slack/Discord/Telegram webhook for alerts
+# EMAIL_API_KEY                 — SendGrid/Mailgun API key for lead digests
+
+# ─────────────────────────────────────────────
+# WORKERS AI (optional — Llama 3.1 for smart alerts)
+# ─────────────────────────────────────────────
+[ai]
+binding = "AI"

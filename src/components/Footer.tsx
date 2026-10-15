@@ -153,10 +153,10 @@ const Footer = () => {
                     <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
                         <div className="flex-1 text-center md:text-left">
                             <h2 className="text-3xl md:text-4xl font-serif mb-6">RERA Details</h2>
-                            <p className="text-white/60 font-sans font-light leading-relaxed max-w-2xl">
+                            <p className="text-white/80 font-sans font-light leading-relaxed max-w-2xl">
                                 Supreme Rivana Phase I - <span className="text-white font-medium">PM1261012502656</span> <br className="hidden md:block" />
-                                Available at <a href="https://maharera.maharashtra.gov.in/" target="_blank" rel="noopener noreferrer" className="text-supreme-gold hover:underline decoration-supreme-gold/30 underline-offset-4 transition-all">https://maharera.maharashtra.gov.in/</a> under registered projects. <br />
-                                <span className="text-[10px] mt-2 block opacity-40">*T&C apply.</span>
+                                Available at <a href="https://maharera.maharashtra.gov.in/" target="_blank" rel="noopener noreferrer" aria-label="Official MahaRERA Verification Portal for Supreme Rivana Phase I" className="text-supreme-gold hover:underline decoration-supreme-gold/60 underline-offset-4 transition-all">https://maharera.maharashtra.gov.in/</a> under registered projects. <br />
+                                <span className="text-xs mt-2 block text-white/60">*T&C apply.</span>
                             </p>
                         </div>
                         <div className="flex-shrink-0 bg-white p-4 rounded-xl shadow-2xl shadow-supreme-gold/10 hover:scale-105 transition-transform duration-500">
@@ -177,7 +177,7 @@ const Footer = () => {
                 <div className="border-t border-white/10 py-12">
                     <div className="flex items-center gap-3 mb-6">
                         <span className="w-8 h-[1px] bg-supreme-gold"></span>
-                        <h4 className="text-white/70 font-sans font-semibold uppercase tracking-[0.2em] text-xs">
+                        <h4 className="text-white/80 font-sans font-semibold uppercase tracking-[0.2em] text-xs">
                             Supreme Rivana Punawale — Topical Real Estate Directory
                         </h4>
                     </div>
@@ -185,7 +185,7 @@ const Footer = () => {
                         {footerKeywords.map((kw, i) => (
                             <span 
                                 key={i} 
-                                className="bg-white/5 border border-white/10 text-white/50 px-3.5 py-1.5 rounded-full hover:border-supreme-gold/60 hover:text-supreme-gold hover:bg-white/10 transition-all duration-300"
+                                className="bg-white/5 border border-white/15 text-white/70 px-3.5 py-1.5 rounded-full hover:border-supreme-gold/60 hover:text-supreme-gold hover:bg-white/10 transition-all duration-300"
                             >
                                 {kw}
                             </span>
@@ -193,30 +193,30 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-white/10 pt-8 mb-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/30 font-sans font-light tracking-wide">
-                    <div className="mb-4 md:mb-0 text-white/50">
-                        © {new Date().getFullYear()} Supreme Rivana Punawale. All rights reserved. <span className="mx-2 hidden md:inline">|</span> <span className="block md:inline text-white/80 mt-2 md:mt-0">MahaRERA No. PM1261012502656</span>
+                <div className="border-t border-white/10 pt-8 mb-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/60 font-sans font-light tracking-wide">
+                    <div className="mb-4 md:mb-0 text-white/70">
+                        © {new Date().getFullYear()} Supreme Rivana Punawale. All rights reserved. <span className="mx-2 hidden md:inline">|</span> <span className="block md:inline text-white/90 mt-2 md:mt-0">MahaRERA No. PM1261012502656</span>
                     </div>
                     <div className="flex gap-8">
-                        <a href="#" className="hover:text-supreme-gold transition-colors duration-300">Privacy Policy</a>
-                        <a href="#" className="hover:text-supreme-gold transition-colors duration-300">Terms & Conditions</a>
+                        <a href="#disclaimer" aria-label="Privacy policy and disclaimer information" className="hover:text-supreme-gold transition-colors duration-300">Privacy Policy</a>
+                        <a href="#disclaimer" aria-label="Terms and conditions information" className="hover:text-supreme-gold transition-colors duration-300">Terms & Conditions</a>
                     </div>
                 </div>
 
                 {/* Professional Disclaimer Section */}
-                <div className="border-t border-white/5 pt-8 text-[10px] md:text-[11px] leading-relaxed text-white/20 font-sans font-light text-justify md:text-left">
-                    <p className="mb-6 uppercase tracking-widest font-bold text-white/30 border-b border-white/5 pb-2 inline-block">Professional Legal Disclaimer</p>
-                    <p className="mb-4 text-supreme-gold/40">
+                <div id="disclaimer" className="border-t border-white/10 pt-8 text-[11px] leading-relaxed text-white/60 font-sans font-light text-justify md:text-left">
+                    <p className="mb-6 uppercase tracking-widest font-bold text-white/70 border-b border-white/10 pb-2 inline-block">Professional Legal Disclaimer</p>
+                    <p className="mb-4 text-white/70">
                         <strong>Important Notice:</strong> This website is for informational purposes only and does not constitute a legal offering. It belongs to an <strong>Authorized Marketing Partner</strong> for the projects showcased. The images and visuals depicted are artistic impressions/stock photography for representational purposes only and may not reflect actual project details.
                     </p>
                     <p className="mb-6">
                         All information, including prices, availability, and project specifications, is subject to change without prior notice. Visitors are advised to contact our sales team or visit the developer's website for the most accurate and up-to-date information. While we strive to maintain the accuracy of the data, the site owner shall not be held liable for any decisions made based on the information provided herein.
                     </p>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 border-t border-white/5 pt-6">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 border-t border-white/10 pt-6">
                         <div className="flex flex-col gap-1">
-                            <span className="text-white/40 font-bold uppercase tracking-tighter text-[9px]">Supreme Towers</span>
-                            <span className="text-supreme-gold/60">P52100053868</span>
+                            <span className="text-white/70 font-bold uppercase tracking-tighter text-[9px]">Supreme Towers</span>
+                            <span className="text-supreme-gold">P52100053868</span>
                         </div>
                         <div className="flex flex-col gap-1">
                             <span className="text-white/40 font-bold uppercase tracking-tighter text-[9px]">Supreme Villagio</span>

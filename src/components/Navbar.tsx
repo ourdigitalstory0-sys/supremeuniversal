@@ -36,7 +36,7 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
                     <div className="flex items-center w-full">
 
                         {/* Logo — Left */}
-                        <Link to="/" className="flex flex-col items-start flex-shrink-0">
+                        <Link to="/" aria-label="Supreme Rivana Punawale Home" className="flex flex-col items-start flex-shrink-0">
                             <svg className="w-7 h-3.5 mb-0.5 opacity-90" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 50 A 40 40 0 0 1 90 50 Z" fill="#DD6B4D" />
                             </svg>

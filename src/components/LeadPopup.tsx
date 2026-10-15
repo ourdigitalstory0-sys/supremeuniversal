@@ -152,6 +152,7 @@ const LeadPopup = () => {
                                 {/* Close Button */}
                                 <button
                                     onClick={closePopup}
+                                    aria-label="Close VIP Pricing Popup"
                                     className="absolute top-4 right-4 text-white/50 hover:text-white transition-colors z-10"
                                 >
                                     <X size={20} strokeWidth={1.5} />

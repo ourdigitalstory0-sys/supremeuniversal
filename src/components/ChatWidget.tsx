@@ -98,7 +98,7 @@ const ChatWidget = () => {
                                     <p className="text-white/80 text-[10px] mt-0.5">Real Estate Assistant</p>
                                 </div>
                             </div>
-                            <button onClick={() => setIsOpen(false)} className="text-white/80 hover:text-white transition-colors">
+                            <button onClick={() => setIsOpen(false)} aria-label="Close Chat Window" className="text-white/80 hover:text-white transition-colors">
                                 <X size={18} />
                             </button>
                         </div>
@@ -133,6 +133,7 @@ const ChatWidget = () => {
                                     <button
                                         key={q}
                                         onClick={() => sendMessage(q)}
+                                        aria-label={`Ask question: ${q}`}
                                         className="text-[10px] px-2 py-1 border border-supreme-gold/40 text-supreme-gold/80 hover:bg-supreme-gold/10 transition-colors rounded font-sans"
                                     >
                                         {q}
@@ -149,11 +150,13 @@ const ChatWidget = () => {
                                 onChange={e => setInput(e.target.value)}
                                 onKeyDown={e => e.key === 'Enter' && sendMessage(input)}
                                 placeholder="Ask about pricing, amenities..."
+                                aria-label="Ask about Supreme Rivana pricing, floor plans, or amenities"
                                 className="flex-1 bg-white/5 border border-white/10 px-3 py-2 text-white text-xs placeholder-white/30 focus:outline-none focus:border-supreme-gold transition-colors font-sans"
                             />
                             <button
                                 onClick={() => sendMessage(input)}
                                 disabled={!input.trim() || isLoading}
+                                aria-label="Send Message to Supreme Rivana Assistant"
                                 className="bg-supreme-gold text-white p-2 hover:bg-white hover:text-supreme-black transition-colors disabled:opacity-40"
                             >
                                 <Send size={14} />

@@ -90,6 +90,7 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                             
                             <button
                                 onClick={onClose}
+                                aria-label="Close Brochure Modal"
                                 className="absolute top-6 right-6 text-white/40 hover:text-white transition-colors"
                             >
                                 <X size={24} />
@@ -190,7 +191,7 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                                             </div>
                                             <h3 className="text-2xl font-serif text-white mb-4 uppercase tracking-[0.1em]">Ready for Download</h3>
                                             <p className="text-white/60 font-sans font-light text-sm mb-8">
-                                                The brochure has been triggered for download. If it doesn't start automatically, <a href="https://cdn.supremeuniversal.com/brochure/Supreme-Rivana-Punawale.pdf" target="_blank" className="text-supreme-gold underline">click here</a>.
+                                                The brochure has been triggered for download. If it doesn't start automatically, <a href="https://cdn.supremeuniversal.com/brochure/Supreme-Rivana-Punawale.pdf" target="_blank" rel="noopener noreferrer" className="text-supreme-gold underline">download the Supreme Rivana brochure directly</a>.
                                             </p>
                                             <button
                                                 onClick={onClose}

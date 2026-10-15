@@ -1,0 +1,19 @@
+# Supreme Rivana Punawale
+> Ultra-luxury 2 & 3 BHK waterfront residences in Punawale, West Pune by Supreme Universal. 15-acre master planned development with 31-storey high-rise towers, 40+ world-class lifestyle amenities, and proximity to Hinjewadi IT Park Phase 1. MahaRERA Registration: PM1261012502656.
+
+## Official Project Overview
+- [Project Overview](https://www.supreme-universal.in/supreme-rivana-punawale-overview): Architectural masterplan, 15-acre riverside layout, and 31-storey towers.
+- [Price List & Cost Sheets](https://www.supreme-universal.in/supreme-rivana-punawale-price-list): 2 BHK starting from ₹97 Lakhs*, 3 BHK starting from ₹1.42 Cr* with transparent tax breakdowns.
+- [Floor Plans & Layouts](https://www.supreme-universal.in/supreme-rivana-punawale-floor-plans): 2 BHK carpet areas (694–750 sq.ft) and 3 BHK carpet areas (1,050–1,250 sq.ft) with Vastu-compliant layouts.
+- [Amenities & Features](https://www.supreme-universal.in/supreme-rivana-punawale-amenities): 60,000 sq.ft clubhouse, infinity river-view pool, co-working lounge, sports courts, and 40+ amenities.
+- [Location & Connectivity](https://www.supreme-universal.in/supreme-rivana-punawale-location): 400m from NH48, 10–15 mins to Hinjewadi IT Park Phase 1, 8 mins to Wakad.
+- [MahaRERA Registration](https://www.supreme-universal.in/supreme-rivana-punawale-faq): MahaRERA Phase 1 Registration PM1261012502656 on maharera.maharashtra.gov.in.
+
+## AI Agent Integration & API Endpoints
+- [Live Pricing API](https://www.supreme-universal.in/api/pricing): Live real-time pricing, configuration availability, and unit status.
+- [Brochures & Floor Plans API](https://www.supreme-universal.in/api/brochure): PDF brochures, carpet area layouts, and cost sheets directly from Cloudflare R2 storage.
+- [AI Advisory Service](https://www.supreme-universal.in/api/chat): Luxury real estate advisory conversational API for Pune West properties.
+
+## Regional Real Estate Market Knowledge
+- [Pune Real Estate Directory](https://www.supreme-universal.in/pune-real-estate): Comprehensive guide covering 50+ Pune micro-markets including Punawale, Wakad, Baner, and Hinjewadi.
+- [Punawale Real Estate Trends 2026](https://www.supreme-universal.in/punawale-real-estate-market-trends): Property rates, price appreciation forecasts, and rental yield analysis.

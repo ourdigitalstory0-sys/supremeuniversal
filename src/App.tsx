@@ -13,12 +13,14 @@ import Breadcrumbs from './components/Breadcrumbs';
 import WhatsAppButton from './components/WhatsAppButton';
 import CustomCursor from './components/CustomCursor';
 import ScrollProgress from './components/ScrollProgress';
-import Preloader from './components/Preloader';
-import NoiseOverlay from './components/NoiseOverlay';
-import QuickEnquireModal from './components/QuickEnquireModal';
-import LeadPopup from './components/LeadPopup';
 import FloatingRERA from './components/FloatingRERA';
-import ChatWidget from './components/ChatWidget';
+import MobileStickyBar from './components/MobileStickyBar';
+
+// Lazy load modals and widgets to free initial main thread
+const QuickEnquireModal = lazy(() => import('./components/QuickEnquireModal'));
+const BrochureModal = lazy(() => import('./components/BrochureModal'));
+const LeadPopup = lazy(() => import('./components/LeadPopup'));
+const ChatWidget = lazy(() => import('./components/ChatWidget'));
 
 // Lazy load below-the-fold components to reduce initial bundle size
 const AuthoritySection = lazy(() => import('./components/AuthoritySection'));
@@ -47,7 +49,23 @@ const DynamicPseoPage = lazy(() => import('./components/DynamicPseoPage'));
 const DynamicProjectPseoPage = lazy(() => import('./components/DynamicProjectPseoPage'));
 const PuneRealEstateHub = lazy(() => import('./pages/PuneRealEstateHub'));
 
-import { pseoRoutes } from './data/pseoRoutes';
+const PSEO_PATHS = [
+  '/supreme-rivana-punawale-price',
+  '/supreme-rivana-punawale-reviews',
+  '/supreme-rivana-punawale-floor-plan',
+  '/supreme-rivana-punawale-possession-date',
+  '/supreme-riverside-punawale-photos',
+  '/supreme-2bhk-punawale-flats',
+  '/supreme-3bhk-punawale-flats',
+  '/supreme-rivana-punawale-data-sheet',
+  '/supreme-rivana-punawale-market-analysis',
+  '/supreme-rivana-punawale-faq-guide',
+  '/punawale-real-estate-market-trends',
+  '/best-residential-projects-punawale-pune',
+  '/west-pune-real-estate-investment-guide',
+  '/luxury-apartments-pune-real-estate-market',
+  '/apartments-near-hinjewadi-it-park-pune',
+];
 
 /**
  * RedirectHandler: Resolves GSC "Alternative page with proper canonical tag" issues
@@ -80,7 +98,6 @@ function RedirectHandler() {
 
     const target = redirectMap[pathname.replace(/\/$/, '')];
     if (target) {
-      console.log(`[SEO-Redirect] Mapping old path ${pathname} to ${target}`);
       navigate(target, { replace: true });
     }
   }, [pathname, navigate]);
@@ -125,86 +142,116 @@ function ScrollHandler() {
   return null;
 }
 
-import BrochureModal from './components/BrochureModal';
-
-import MobileStickyBar from './components/MobileStickyBar';
-
 function MainApp() {
-  const [isLoading, setIsLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isBrochureModalOpen, setIsBrochureModalOpen] = useState(false);
+  const [deferredInteractive, setDeferredInteractive] = useState(false);
 
   useEffect(() => {
-    // Initialize Lenis Smooth Scroll
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical',
-      gestureOrientation: 'vertical',
-      smoothWheel: true,
-      touchMultiplier: 2,
+    // Defer non-critical interactivity & Lenis to idle time to eliminate Total Blocking Time (TBT)
+    const scheduleIdle = window.requestIdleCallback || ((cb: () => void) => setTimeout(cb, 1000));
+    let lenisInstance: Lenis | null = null;
+    let rafId: number | null = null;
+
+    const idleHandle = scheduleIdle(() => {
+      setDeferredInteractive(true);
+      
+      // Initialize Lenis Smooth Scroll on idle without blocking initial hydration
+      try {
+        lenisInstance = new Lenis({
+          duration: 1.2,
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          orientation: 'vertical',
+          smoothWheel: true,
+          touchMultiplier: 2,
+        });
+
+        function raf(time: number) {
+          lenisInstance?.raf(time);
+          rafId = requestAnimationFrame(raf);
+        }
+        rafId = requestAnimationFrame(raf);
+      } catch {
+        // Fallback gracefully
+      }
     });
 
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    // Simulate loading time
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-
     return () => {
-      lenis.destroy();
-      clearTimeout(timer);
+      if (typeof window.cancelIdleCallback === 'function' && typeof idleHandle === 'number') {
+        window.cancelIdleCallback(idleHandle);
+      }
+      if (rafId) cancelAnimationFrame(rafId);
+      lenisInstance?.destroy();
     };
   }, []);
 
   return (
-    <div className="font-sans antialiased text-gray-900 bg-white cursor-none md:cursor-auto transition-colors duration-500 pb-16 md:pb-0">
+    <div className="font-sans antialiased text-gray-900 bg-white transition-colors duration-500 pb-16 md:pb-0">
       <SEO />
-      <Preloader isLoading={isLoading} />
       <CustomCursor />
       <ScrollProgress />
-      <NoiseOverlay />
       <WhatsAppButton />
-      <Navbar onEnquire={() => setIsModalOpen(true)} />
-      <Breadcrumbs />
-      <Hero onEnquire={() => setIsModalOpen(true)} onDownload={() => setIsBrochureModalOpen(true)} />
-      <Overview />
-      <Suspense fallback={<div className="h-20 bg-white" />}>
-        <AuthoritySection />
-        <Amenities />
-        <FloorPlans onEnquire={() => setIsModalOpen(true)} />
-        <Gallery />
-        <Location />
-        <NeighborhoodGuide />
-        <ROICalculator onEnquire={() => setIsModalOpen(true)} />
-        <ProximityIndex />
-        <PropertyComparison />
-        <ProjectShowcase />
-        <BlogPreview />
-        <Contact />
-        <FAQ />
-      </Suspense>
+      
+      <header role="banner">
+        <Navbar onEnquire={() => setIsModalOpen(true)} />
+      </header>
+
+      <main id="main-content" role="main">
+        <Breadcrumbs />
+        <Hero onEnquire={() => setIsModalOpen(true)} onDownload={() => setIsBrochureModalOpen(true)} />
+        <Overview />
+        <Suspense fallback={<div className="h-20 bg-white" />}>
+          <AuthoritySection />
+          <Amenities />
+          <FloorPlans onEnquire={() => setIsModalOpen(true)} />
+          <Gallery />
+          <Location />
+          <NeighborhoodGuide />
+          <ROICalculator onEnquire={() => setIsModalOpen(true)} />
+          <ProximityIndex />
+          <PropertyComparison />
+          <ProjectShowcase />
+          <BlogPreview />
+          <Contact />
+          <FAQ />
+        </Suspense>
+      </main>
+
       <Footer />
       <FloatingRERA />
-      <QuickEnquireModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-      <BrochureModal isOpen={isBrochureModalOpen} onClose={() => setIsBrochureModalOpen(false)} />
-      <LeadPopup />
-      <ChatWidget />
       <MobileStickyBar onEnquire={() => setIsModalOpen(true)} />
+
+      {/* Conditionally mount interactive modals to save initial main thread CPU */}
+      {isModalOpen && (
+        <Suspense fallback={null}>
+          <QuickEnquireModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+        </Suspense>
+      )}
+
+      {isBrochureModalOpen && (
+        <Suspense fallback={null}>
+          <BrochureModal isOpen={isBrochureModalOpen} onClose={() => setIsBrochureModalOpen(false)} />
+        </Suspense>
+      )}
+
+      {/* Defer lead popup and AI chat widget until after page is fully interactive */}
+      {deferredInteractive && (
+        <Suspense fallback={null}>
+          <LeadPopup />
+          <ChatWidget />
+        </Suspense>
+      )}
     </div>
   );
 }
 
 function App() {
   useEffect(() => {
-    // Sync any pending leads from previous offline attempts on mount
-    syncPendingLeads();
+    // Sync any pending leads from previous offline attempts on idle
+    const schedule = window.requestIdleCallback || ((cb: () => void) => setTimeout(cb, 2000));
+    schedule(() => {
+      syncPendingLeads();
+    });
     
     // Listen for online events to sync immediately
     window.addEventListener('online', syncPendingLeads);
@@ -234,8 +281,8 @@ function App() {
             <Route path="/pune-real-estate" element={<PuneRealEstateHub />} />
             <Route path="/pune-real-estate/:slug" element={<DynamicPseoPage />} />
             <Route path="/pune-projects/:slug" element={<DynamicProjectPseoPage />} />
-            {pseoRoutes.map(route => (
-              <Route key={route.path} path={route.path} element={<ProgrammaticLanding />} />
+            {PSEO_PATHS.map(path => (
+              <Route key={path} path={path} element={<ProgrammaticLanding />} />
             ))}
             <Route path="*" element={<NotFound />} />
           </Routes>
