@@ -51,8 +51,7 @@ type JobName =
     | 'web-stories-refresh';
 
 const CRON_JOB_MAP: Record<string, JobName[]> = {
-    '0 0 * * *':    ['health-monitor'],
-    '0 1 * * *':    ['sitemap-ping'],
+    '0 0 * * *':    ['health-monitor', 'sitemap-ping'],
     '0 2 * * *':    ['google-indexing'],
     '0 */6 * * *':  ['kv-price-sync'],
     '0 3 * * 1':    ['lead-digest'],

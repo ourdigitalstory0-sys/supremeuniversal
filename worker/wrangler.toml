@@ -19,8 +19,7 @@ compatibility_flags = ["nodejs_compat"]
 # ─────────────────────────────────────────────
 [triggers]
 crons = [
-  "0 0 * * *",    # 00:00 UTC (05:30 IST) — SEO Health Monitor + Alert
-  "0 1 * * *",    # 01:00 UTC (06:30 IST) — Sitemap Ping (Google + Bing)
+  "0 0 * * *",    # 00:00 UTC (05:30 IST) — SEO Health Monitor + Sitemap Ping
   "0 2 * * *",    # 02:00 UTC (07:30 IST) — Google Indexing API Batch (190 URLs)
   "0 */6 * * *",  # Every 6h             — KV Price Store Refresh
   "0 3 * * 1",    # Mon 03:00 UTC         — Weekly Lead Digest Email
@@ -34,14 +33,12 @@ crons = [
 # Shared live pricing + lead archive (same as Pages site)
 [[kv_namespaces]]
 binding = "PRICE_STORE"
-id = "a56588d148fd4b55b59ba0d07fb1256c"
-preview_id = "9661d1155a5c4fde92fb5a1307795d29"
+id = "fae686bae1d44dc9a43b13a8eda1513c"
 
-# Cron-exclusive state store (create with: wrangler kv:namespace create CRON_STATE)
+# Cron-exclusive state store
 [[kv_namespaces]]
 binding = "CRON_STATE"
-id = "REPLACE_WITH_YOUR_CRON_KV_ID"
-preview_id = "REPLACE_WITH_YOUR_CRON_KV_PREVIEW_ID"
+id = "b9f2061da71a4d05af72da2cef15aa7a"
 
 # ─────────────────────────────────────────────
 # ENVIRONMENT VARIABLES (non-secret)

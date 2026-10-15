@@ -641,5 +641,284 @@ export const portfolioProjects: PortfolioProjectType[] = [
             connectivityScore: 9.9
         },
         appreciationMultiplier: 1.08
+    },
+    {
+        id: "supreme-boulevard",
+        name: "Supreme Boulevard",
+        location: "Chembur, Mumbai",
+        fullLocation: "Sion-Trombay Road, Chembur, Mumbai 400071",
+        type: "2, 3 & 4 BHK Luxury Residences",
+        status: "Under Construction",
+        tagline: "Epitome of Urban Grandeur in Chembur",
+        description: "Supreme Boulevard is an ultra-luxurious residential landmark redefining Chembur's skyline. Featuring expansive 2, 3 and 4 BHK residences with panoramic horizon views, rooftop leisure amenities, and swift 15-minute access to BKC via the BKC-Chunabhatti flyover.",
+        highlights: [
+            "Iconic high-rise tower with art deco facade in central Chembur",
+            "Direct access to Eastern Freeway, BKC Connector & Monorail",
+            "Expansive private sundecks with panoramic city views",
+            "Rooftop infinity pool, fitness club, and landscaped sky deck",
+            "Grand air-conditioned double-height entrance lobby with concierge",
+            "MahaRERA registered with Supreme Universal's delivery guarantee"
+        ],
+        connectivity: [
+            { title: "Eastern Freeway", dist: "3 mins" },
+            { title: "BKC Connector", dist: "8 mins" },
+            { title: "Bandra Kurla Complex (BKC)", dist: "15 mins" },
+            { title: "Chembur Monorail", dist: "4 mins" },
+            { title: "Mumbai Domestic Airport", dist: "20 mins" },
+            { title: "South Mumbai (CST/Fort)", dist: "20 mins" }
+        ],
+        amenities: [
+            { icon: "Infinity", title: "Rooftop Sky Pool" },
+            { icon: "Dumbbell", title: "Fitness Suite" },
+            { icon: "Trees", title: "Sky Lounge & Zen Deck" },
+            { icon: "Film", title: "Private Screening Room" },
+            { icon: "Users", title: "Banquet Hall" },
+            { icon: "Gamepad2", title: "Kids Indoor Arena" },
+            { icon: "Car", title: "Multi-level Automated Parking" },
+            { icon: "Shield", title: "3-Tier Biometric Security" }
+        ],
+        specifications: [
+            { category: "Structure", details: ["Seismic compliant RCC framed structure", "High-performance aluminium facade"] },
+            { category: "Flooring", details: ["Imported Italian marble in living and dining", "Laminated engineered wood in master bedrooms"] },
+            { category: "Kitchen", details: ["Granite counter with branded fittings", "Piped natural gas connection"] },
+            { category: "Automation", details: ["Smart digital lock with video intercom", "Home automation readiness"] }
+        ],
+        gallery: [
+            "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
+            "/assets/projects/actual-towers.jpg",
+            "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg"
+        ],
+        seo: {
+            title: "Supreme Boulevard Chembur | Luxury 2, 3 & 4 BHK Flats in Mumbai",
+            description: "Supreme Boulevard Chembur by Supreme Universal offers luxury 2, 3 & 4 BHK residences near BKC Connector and Eastern Freeway. Rooftop sky pool & luxury amenities.",
+            keywords: "Supreme Boulevard Chembur, luxury flats in Chembur, 3 BHK in Chembur Mumbai, flats near BKC connector, Supreme Universal Mumbai projects, premium apartments Chembur"
+        },
+        image: "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
+        reraNumber: "MahaRERA: P51800047321",
+        comparisonMetrics: {
+            configuration: "2, 3 & 4 BHK",
+            possession: "2027",
+            usp: "BKC-Freeway Transit Hub",
+            connectivityScore: 9.8
+        },
+        appreciationMultiplier: 1.15
+    },
+    {
+        id: "supreme-arthouse",
+        name: "Supreme ArtHouse",
+        location: "Bandra West, Mumbai",
+        fullLocation: "Near Carter Road & Perry Cross Road, Bandra West, Mumbai 400050",
+        type: "Bespoke 4 & 5 BHK Art Residences",
+        status: "Exclusive Boutique Launch",
+        tagline: "Curated Art Deco Masterpieces in Bandra",
+        description: "Supreme ArtHouse is an ultra-niche collection of boutique art residences nestled in Mumbai's most prestigious postal code, Bandra West. Crafted for connoisseurs of fine architecture with private elevator access, double-height ceilings, and Arabian Sea breezes.",
+        highlights: [
+            "One exclusive apartment per floor for utmost privacy and security",
+            "Walking distance to Carter Road promenade and Bandra Bandstand",
+            "Double-height living rooms with floor-to-ceiling glass fenestrations",
+            "Private elevator access with biometric recognition",
+            "Bespoke Italian marble interiors and customized brass metal accents",
+            "Dedicated concierge desk and valet parking for distinguished residents"
+        ],
+        connectivity: [
+            { title: "Carter Road Promenade", dist: "2 mins" },
+            { title: "Bandra-Worli Sea Link", dist: "8 mins" },
+            { title: "Bandra Kurla Complex (BKC)", dist: "15 mins" },
+            { title: "Pali Hill", dist: "3 mins" },
+            { title: "Mumbai International Airport", dist: "20 mins" },
+            { title: "South Mumbai", dist: "20 mins" }
+        ],
+        amenities: [
+            { icon: "Infinity", title: "Private Plunge Pools" },
+            { icon: "Coffee", title: "Art Gallery Lounge" },
+            { icon: "Dumbbell", title: "Boutique Wellness Gym" },
+            { icon: "Trees", title: "Rooftop Observatory" },
+            { icon: "Shield", title: "Private High-Security Lobby" },
+            { icon: "Car", title: "Valet & EV Supercharger" }
+        ],
+        specifications: [
+            { category: "Interiors", details: ["Customized Italian Statuario marble", "Floor-to-ceiling soundproof Schuco glazing"] },
+            { category: "Kitchen", details: ["Poggenpohl / Poliform modular kitchen", "Miele appliance package"] },
+            { category: "Bathrooms", details: ["Gessi / Villeroy & Boch sanitary fixtures", "Private Jacuzzi in master suite"] }
+        ],
+        gallery: [
+            "/assets/projects/actual-towers.jpg",
+            "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg",
+            "/assets/projects/actual-estia.jpg"
+        ],
+        seo: {
+            title: "Supreme ArtHouse Bandra West | Ultra-Luxury 4 & 5 BHK Mumbai",
+            description: "Supreme ArtHouse by Supreme Universal: Exclusive one-apartment-per-floor art residences in Bandra West near Carter Road. Private elevators and Arabian Sea vistas.",
+            keywords: "Supreme ArtHouse Bandra, luxury apartments Bandra West, 4 BHK Carter Road Mumbai, Supreme Universal Bandra, Pali Hill luxury property, most expensive flats Bandra"
+        },
+        image: "/assets/projects/actual-towers.jpg",
+        reraNumber: "MahaRERA: P51800051244",
+        comparisonMetrics: {
+            configuration: "4 & 5 BHK Boutique",
+            possession: "2026",
+            usp: "One Flat Per Floor Bandra",
+            connectivityScore: 9.9
+        },
+        appreciationMultiplier: 1.20
+    },
+    {
+        id: "supreme-prana",
+        name: "Supreme Prana",
+        location: "Pali Hill, Bandra West, Mumbai",
+        fullLocation: "Pali Hill Road, Bandra West, Mumbai 400050",
+        type: "3 & 4 BHK Bespoke Residences",
+        status: "Completed / Ready",
+        tagline: "Serenity Amidst the Greens of Pali Hill",
+        description: "Supreme Prana sits atop Pali Hill, Mumbai's most coveted celebrity and corporate enclave. Featuring sprawling 3 and 4 BHK residences surrounded by lush tree canopies, complete quietude, and bespoke artisan craftsmanship.",
+        highlights: [
+            "Ultra-exclusive residential enclave in historic Pali Hill",
+            "Surrounded by century-old banyan canopies and serene nature",
+            "Sprawling wrap-around viewing decks with garden views",
+            "Home to prominent industrialists and creative icons",
+            "Low-density boutique construction with 24/7 private security"
+        ],
+        connectivity: [
+            { title: "Pali Market & Cafes", dist: "2 mins" },
+            { title: "Carter Road", dist: "4 mins" },
+            { title: "Bandra-Worli Sea Link", dist: "10 mins" },
+            { title: "BKC Commercial Hub", dist: "18 mins" },
+            { title: "Linking Road", dist: "5 mins" }
+        ],
+        amenities: [
+            { icon: "Trees", title: "Podium Zen Gardens" },
+            { icon: "Dumbbell", title: "Private Fitness Club" },
+            { icon: "Waves", title: "Temperature-Controlled Pool" },
+            { icon: "Coffee", title: "Residents Library" },
+            { icon: "Shield", title: "CCTV & Concierge Desk" }
+        ],
+        specifications: [
+            { category: "Structure", details: ["High-grade seismic resistant structure", "Acoustic glass insulation"] },
+            { category: "Flooring", details: ["Imported Italian marble throughout", "Hardwood flooring in master suites"] }
+        ],
+        gallery: [
+            "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
+            "/assets/projects/actual-estia.jpg",
+            "/assets/projects/actual-towers.jpg"
+        ],
+        seo: {
+            title: "Supreme Prana Pali Hill Bandra | Luxury Residences by Supreme Universal",
+            description: "Supreme Prana on Pali Hill Bandra West offers bespoke 3 & 4 BHK residences in Mumbai's most prestigious hillside green enclave. Ready to move.",
+            keywords: "Supreme Prana Pali Hill, flats in Pali Hill Bandra, luxury homes Bandra West, Supreme Universal Mumbai redevelopment, celebrity homes Bandra"
+        },
+        image: "https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg",
+        reraNumber: "Ready / OC Received",
+        comparisonMetrics: {
+            configuration: "3 & 4 BHK",
+            possession: "Ready",
+            usp: "Pali Hill Green Enclave",
+            connectivityScore: 9.8
+        },
+        appreciationMultiplier: 1.10
+    },
+    {
+        id: "supreme-headquarters",
+        name: "Supreme Headquarters",
+        location: "Bandra-Santacruz, Mumbai",
+        fullLocation: "Linking Road Junction, Bandra-Santacruz West, Mumbai 400054",
+        type: "Grade-A Boutique Commercial Offices & Retail",
+        status: "Completed / Ready",
+        tagline: "The Benchmark of Corporate Prestige",
+        description: "Supreme Headquarters is a landmark Grade-A commercial and retail masterpiece by Supreme Universal at the junction of Bandra and Santacruz. Designed for multinational conglomerates, family offices, and luxury flagship retail brands.",
+        highlights: [
+            "Platinum LEED certified commercial green building",
+            "Prime frontage on prominent high-street retail corridor",
+            "Grand triple-height corporate entrance lobby",
+            "High-speed destination-controlled elevators and automated parking",
+            "Column-free office plates offering flexible layouts"
+        ],
+        connectivity: [
+            { title: "Santacruz Railway Station", dist: "3 mins" },
+            { title: "Western Express Highway", dist: "5 mins" },
+            { title: "Bandra-Worli Sea Link", dist: "10 mins" },
+            { title: "Bandra Kurla Complex (BKC)", dist: "12 mins" },
+            { title: "Mumbai Domestic Airport", dist: "10 mins" }
+        ],
+        amenities: [
+            { icon: "Users", title: "Corporate Conference Center" },
+            { icon: "Coffee", title: "Rooftop Executive Cafe" },
+            { icon: "Car", title: "Automated Multi-Tier Parking" },
+            { icon: "Zap", title: "100% Redundant Power Backup" },
+            { icon: "Shield", title: "Biometric Turnstiles & CCTV" }
+        ],
+        specifications: [
+            { category: "Facade", details: ["Double-glazed low-E unitized glass curtain wall", "High acoustic and thermal efficiency"] },
+            { category: "Floor Plates", details: ["Column-free floor plates with 3.8m clear height", "Heavy load bearing design"] }
+        ],
+        gallery: [
+            "/assets/projects/actual-towers.jpg",
+            "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+        ],
+        seo: {
+            title: "Supreme Headquarters Mumbai | Grade-A Commercial Offices & Retail",
+            description: "Supreme Headquarters by Supreme Universal: Premier Grade-A commercial office suites and flagship retail on Bandra-Santacruz Link. Minutes to BKC and Airport.",
+            keywords: "Supreme Headquarters Mumbai, commercial office space Bandra, retail space Santacruz, Supreme Universal commercial projects, offices near BKC"
+        },
+        image: "/assets/projects/actual-towers.jpg",
+        reraNumber: "Completed / OC Received",
+        comparisonMetrics: {
+            configuration: "Grade-A Commercial",
+            possession: "Ready",
+            usp: "Bandra-Santacruz Commercial Hub",
+            connectivityScore: 9.9
+        },
+        appreciationMultiplier: 1.12
+    },
+    {
+        id: "supreme-alora",
+        name: "Supreme Alora",
+        location: "Chembur, Mumbai",
+        fullLocation: "Central Avenue Road, Chembur West, Mumbai 400071",
+        type: "2 & 3 BHK Luxury Residences",
+        status: "Under Construction",
+        tagline: "Redefining Luxury Living in Chembur West",
+        description: "Supreme Alora represents Supreme Universal's gold-standard residential redevelopment in Chembur West. Offering thoughtfully planned 2 & 3 BHK luxury residences with modern amenities, verdant views, and direct connectivity to Central and South Mumbai.",
+        highlights: [
+            "Prime residential sector of Chembur West with established green avenues",
+            "Meticulous floor planning with minimum common wall sharing",
+            "Rooftop clubhouse, meditation lawn, and children's play area",
+            "10 minutes to BKC via the Eastern Freeway and BKC connector",
+            "MahaRERA registered with guaranteed construction timelines"
+        ],
+        connectivity: [
+            { title: "Chembur Railway Station", dist: "5 mins" },
+            { title: "Eastern Freeway", dist: "4 mins" },
+            { title: "BKC Connector", dist: "10 mins" },
+            { title: "Navi Mumbai via Sion-Panvel", dist: "15 mins" }
+        ],
+        amenities: [
+            { icon: "Trees", title: "Rooftop Landscaped Garden" },
+            { icon: "Dumbbell", title: "Modern Gymnasium" },
+            { icon: "Baby", title: "Children's Play Zone" },
+            { icon: "Users", title: "Community Hall" },
+            { icon: "Shield", title: "24/7 Security" }
+        ],
+        specifications: [
+            { category: "Structure", details: ["RCC frame earthquake resistant design", "High quality core materials"] },
+            { category: "Flooring", details: ["Vitrified tile flooring in all rooms", "Anti-skid balcony tiles"] }
+        ],
+        gallery: [
+            "/assets/projects/actual-estia.jpg",
+            "https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg"
+        ],
+        seo: {
+            title: "Supreme Alora Chembur | Luxury 2 & 3 BHK Flats in Mumbai",
+            description: "Supreme Alora in Chembur West offers luxury 2 & 3 BHK apartments with rooftop lifestyle amenities. Rapid connectivity to BKC and Eastern Freeway.",
+            keywords: "Supreme Alora Chembur, 2 BHK in Chembur, 3 BHK flats Chembur West, Supreme Universal Chembur projects, property near BKC connector"
+        },
+        image: "/assets/projects/actual-estia.jpg",
+        reraNumber: "MahaRERA: P51800049280",
+        comparisonMetrics: {
+            configuration: "2 & 3 BHK",
+            possession: "2027",
+            usp: "Chembur West Redevelopment",
+            connectivityScore: 9.7
+        },
+        appreciationMultiplier: 1.12
     }
 ];
+

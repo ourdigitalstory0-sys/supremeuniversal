@@ -10,7 +10,6 @@ import SEO from './SEO';
 import WhatsAppButton from './WhatsAppButton';
 import CustomCursor from './CustomCursor';
 import ScrollProgress from './ScrollProgress';
-import Preloader from './Preloader';
 import NoiseOverlay from './NoiseOverlay';
 import QuickEnquireModal from './QuickEnquireModal';
 import LeadPopup from './LeadPopup';
@@ -25,14 +24,11 @@ const Footer = lazy(() => import('./Footer'));
 
 const DynamicProjectPseoPage = () => {
     const { slug } = useParams<{ slug: string }>();
-    const [isLoading, setIsLoading] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isBrochureModalOpen, setIsBrochureModalOpen] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => setIsLoading(false), 1200);
         window.scrollTo(0, 0);
-        return () => clearTimeout(timer);
     }, [slug]);
 
     if (!slug) return <Navigate to="/404" replace />;
@@ -166,7 +162,6 @@ const DynamicProjectPseoPage = () => {
                 </script>
             </Helmet>
 
-            <Preloader isLoading={isLoading} />
             <CustomCursor />
             <ScrollProgress />
             <NoiseOverlay />

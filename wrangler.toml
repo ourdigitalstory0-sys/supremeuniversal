@@ -12,8 +12,7 @@ compatibility_flags = [ "nodejs_compat" ]
 # Cloudflare KV Store (Live Dynamic Pricing & Edge Lead Archive)
 [[kv_namespaces]]
 binding = "PRICE_STORE"
-id = "a56588d148fd4b55b59ba0d07fb1256c"
-preview_id = "9661d1155a5c4fde92fb5a1307795d29"
+id = "fae686bae1d44dc9a43b13a8eda1513c"
 
 # Cloudflare R2 Object Storage (Zero-Egress High Performance Media Assets)
 # Optional: Uncomment once 'supremeuniversal-assets' bucket is created in Cloudflare Dashboard

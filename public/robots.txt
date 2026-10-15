@@ -48,6 +48,7 @@ Sitemap: https://www.supreme-universal.in/sitemap-pune-3.xml
 Sitemap: https://www.supreme-universal.in/sitemap-pune-4.xml
 Sitemap: https://www.supreme-universal.in/sitemap-pune-5.xml
 Sitemap: https://www.supreme-universal.in/sitemap-projects.xml
+Sitemap: https://www.supreme-universal.in/sitemap-web-stories.xml
 
 # Google Merchant Center RSS Feed
 # Feed: https://www.supreme-universal.in/google-merchant-feed.xml

@@ -7,7 +7,6 @@ import SEO from './SEO';
 import WhatsAppButton from './WhatsAppButton';
 import CustomCursor from './CustomCursor';
 import ScrollProgress from './ScrollProgress';
-import Preloader from './Preloader';
 import NoiseOverlay from './NoiseOverlay';
 import QuickEnquireModal from './QuickEnquireModal';
 import LeadPopup from './LeadPopup';
@@ -27,16 +26,13 @@ const Footer = lazy(() => import('./Footer'));
 
 const ProgrammaticLanding = () => {
     const { pathname } = useLocation();
-    const [isLoading, setIsLoading] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isBrochureModalOpen, setIsBrochureModalOpen] = useState(false);
 
     const routeData = pseoRoutes.find(r => r.path === pathname) || pseoRoutes[0];
 
     useEffect(() => {
-        const timer = setTimeout(() => setIsLoading(false), 1500);
         window.scrollTo(0, 0);
-        return () => clearTimeout(timer);
     }, [pathname]);
 
     const faqSchema = routeData.faqs && routeData.faqs.length > 0 ? {
@@ -66,7 +62,6 @@ const ProgrammaticLanding = () => {
                     </script>
                 </Helmet>
             )}
-            <Preloader isLoading={isLoading} />
             <CustomCursor />
             <ScrollProgress />
             <NoiseOverlay />

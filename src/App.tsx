@@ -65,6 +65,10 @@ const PSEO_PATHS = [
   '/west-pune-real-estate-investment-guide',
   '/luxury-apartments-pune-real-estate-market',
   '/apartments-near-hinjewadi-it-park-pune',
+  '/supreme-rivana-punawale-brochure',
+  '/supreme-rivana-punawale-master-plan',
+  '/supreme-rivana-punawale-rera',
+  '/supreme-rivana-punawale-sample-flat',
 ];
 
 /**

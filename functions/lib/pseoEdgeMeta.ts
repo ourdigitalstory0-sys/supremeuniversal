@@ -108,7 +108,12 @@ const PROJECTS: Record<string, { name: string; location: string; rera: string }>
     'supreme-estado': { name: 'Supreme Estado', location: 'Baner, Pune West', rera: 'Completed / OC Received' },
     'supreme-esteban': { name: 'Supreme Esteban', location: 'Koregaon Park, Pune East', rera: 'Completed / OC Received' },
     'supreme-rivana': { name: 'Supreme Rivana', location: 'Punawale, Pune West', rera: 'PM1261012502656' },
-    'supreme-vador': { name: 'Supreme Vador', location: 'Koregaon Park, Pune', rera: 'P52100030588' }
+    'supreme-vador': { name: 'Supreme Vador', location: 'Koregaon Park, Pune', rera: 'P52100030588' },
+    'supreme-boulevard': { name: 'Supreme Boulevard', location: 'Chembur, Mumbai', rera: 'P51800047321' },
+    'supreme-arthouse': { name: 'Supreme ArtHouse', location: 'Bandra West, Mumbai', rera: 'P51800051244' },
+    'supreme-prana': { name: 'Supreme Prana', location: 'Pali Hill, Bandra West, Mumbai', rera: 'Ready / OC Received' },
+    'supreme-headquarters': { name: 'Supreme Headquarters', location: 'Santacruz West, Mumbai', rera: 'Completed / OC Received' },
+    'supreme-alora': { name: 'Supreme Alora', location: 'Chembur West, Mumbai', rera: 'P51800049280' }
 };
 
 const FLAGSHIP_PAGES: Record<string, {
@@ -284,6 +289,119 @@ const FLAGSHIP_PAGES: Record<string, {
         breadcrumb: 'Blog',
         faqs: [
             { q: 'What topics does the Supreme Universal blog cover?', a: 'We publish in-depth analyses on Punawale infrastructure, comparison guides, home loan advice, RERA verification, and West Pune property investment.' }
+        ]
+    },
+    '/supreme-rivana-punawale-brochure': {
+        title: 'Download Supreme Rivana Punawale Brochure PDF | Supreme Universal',
+        description: 'Download official PDF brochure for Supreme Rivana Punawale. Explore 12.6-acre master layout, 2 & 3 BHK floor plans, Club Rivana 60,000 sq.ft & specifications.',
+        h1: 'Supreme Rivana Punawale — Official PDF Brochure & Master Plan',
+        breadcrumb: 'Brochure',
+        faqs: [
+            { q: 'How can I download the Supreme Rivana brochure?', a: 'You can download the official PDF brochure directly by submitting your details on our website or calling our sales desk at +91 97390 00354.' },
+            { q: 'What is included in the project brochure?', a: 'The brochure includes the 12.6-acre master layout, unit floor plans (746 to 1,166 sq.ft), Club Rivana amenities list, and MahaRERA compliance details.' }
+        ]
+    },
+    '/supreme-rivana-punawale-master-plan': {
+        title: 'Supreme Rivana Master Plan & Layout | 12.6-Acre Riverside Township',
+        description: 'Explore the 12.6-acre master plan of Supreme Rivana Punawale. 30+ storey towers, 60,000 sq.ft Club Rivana, Pawana riverfront promenade & 700+ native trees.',
+        h1: 'Supreme Rivana Punawale — 12.6-Acre Master Plan & Spatial Architecture',
+        breadcrumb: 'Master Plan',
+        faqs: [
+            { q: 'What is the total land area of Supreme Rivana?', a: 'Supreme Rivana spans 12.6 acres along the serene Pawana River in Punawale, West Pune.' },
+            { q: 'How much green space is included in the master layout?', a: 'Over 70% of the land area is dedicated to vehicular-free green podiums, tree canopies, and riverside promenades.' }
+        ]
+    },
+    '/supreme-rivana-punawale-rera': {
+        title: 'Supreme Rivana MahaRERA Details & Approvals | PM1261012502656',
+        description: 'Verify official MahaRERA registration number PM1261012502656 for Supreme Rivana Punawale. Check title certificates, approved building plans & compliance.',
+        h1: 'Supreme Rivana Punawale — MahaRERA Registration & Legal Compliance',
+        breadcrumb: 'MahaRERA',
+        faqs: [
+            { q: 'What is the MahaRERA registration number for Supreme Rivana?', a: 'Supreme Rivana Phase I is registered with MahaRERA under registration number PM1261012502656.' },
+            { q: 'Where can I verify the RERA certificate?', a: 'You can verify project documents on the official MahaRERA portal (maharera.mahaonline.gov.in) under registration PM1261012502656.' }
+        ]
+    },
+    '/supreme-rivana-punawale-sample-flat': {
+        title: 'Supreme Rivana Sample Flat Tour & Experience Center | Punawale',
+        description: 'Visit the fully furnished 2 BHK & 3 BHK sample flats at Supreme Rivana Punawale. Experience imported marble finishes, high ceilings & river-facing sundecks.',
+        h1: 'Supreme Rivana Punawale — Sample Residence Experience Center',
+        breadcrumb: 'Sample Flat',
+        faqs: [
+            { q: 'Can I visit the sample flat at Supreme Rivana?', a: 'Yes, fully furnished 2 BHK and 3 BHK sample residences are open daily from 9:00 AM to 8:00 PM at the on-site Sales Experience Center.' },
+            { q: 'Where is the site sales gallery located?', a: 'The experience center is located on Tathawade Road, Near Chhatrapati Shivaji Maharaj Chowk, Punawale, Pune West 411033.' }
+        ]
+    },
+    '/supreme-rivana-punawale-data-sheet': {
+        title: 'Supreme Rivana Technical Specifications & Fact Sheet | Supreme Universal',
+        description: 'Complete architectural specifications and technical fact sheet for Supreme Rivana Punawale. RCC earthquake-resistant structure, imported finishes, Club Rivana.',
+        h1: 'Supreme Rivana Punawale — Engineering Specifications & Fact Sheet',
+        breadcrumb: 'Data Sheet',
+        faqs: [
+            { q: 'What construction technology is used in Supreme Rivana?', a: 'The project utilizes monolithic aluminium formwork (Mivan grade) for enhanced seismic durability and smooth finishes.' }
+        ]
+    },
+    '/supreme-rivana-punawale-market-analysis': {
+        title: 'Punawale Real Estate Investment Analysis 2026 | Supreme Rivana',
+        description: 'Economic fundamentals and capital appreciation analysis for Punawale and West Pune real estate. Why Supreme Rivana offers 12-14% projected ROI near Hinjewadi.',
+        h1: 'Punawale Real Estate Market Analysis & ROI Outlook 2026',
+        breadcrumb: 'Market Analysis',
+        faqs: [
+            { q: 'Why is Punawale seeing high capital appreciation?', a: 'Punawale benefits from rapid transit upgrades, Metro Line 3, and a 10-minute commute to Hinjewadi IT Park.' }
+        ]
+    },
+    '/supreme-rivana-punawale-faq-guide': {
+        title: 'Supreme Rivana FAQs | Complete Buyer Guide, Pricing & RERA Details',
+        description: 'Comprehensive buyer guide answering top questions on Supreme Rivana Punawale: 2 & 3 BHK pricing, carpet areas, home loan banks, maintenance charges & RERA.',
+        h1: 'Supreme Rivana Punawale — Complete Buyer FAQ Guide',
+        breadcrumb: 'FAQ Guide',
+        faqs: [
+            { q: 'What are the home loan options for Supreme Rivana?', a: 'Home loans are pre-approved by SBI, HDFC, ICICI, and Axis Bank with attractive construction-linked payment terms.' }
+        ]
+    },
+    '/punawale-real-estate-market-trends': {
+        title: 'Punawale Real Estate Trends 2026 | Infrastructure, Prices & Growth',
+        description: 'Detailed market analysis of Punawale real estate in 2026. Explore infrastructure developments, BRTS connectivity, IT park proximity, and property price trends.',
+        h1: 'Punawale Real Estate Trends & Infrastructure Growth 2026',
+        breadcrumb: 'Market Trends',
+        faqs: [
+            { q: 'How far is Punawale from Hinjewadi IT Park?', a: 'Punawale is approximately 10 to 15 minutes away from Hinjewadi Phase 1 via Marunji Road.' }
+        ]
+    },
+    '/best-residential-projects-punawale-pune': {
+        title: 'Top Residential Projects in Punawale Pune 2026 | Luxury Buyer Guide',
+        description: 'Compare the best residential projects in Punawale, West Pune. Why Supreme Rivana ranks #1 for carpet layout, 12.6-acre riverside living & 60,000 sq.ft clubhouse.',
+        h1: 'Top Residential Projects in Punawale — Comparative Analysis',
+        breadcrumb: 'Best Projects',
+        faqs: [
+            { q: 'Which project offers the largest clubhouse in Punawale?', a: 'Supreme Rivana features West Pune\'s largest multi-level clubhouse, Club Rivana, spanning 60,000 sq.ft.' }
+        ]
+    },
+    '/west-pune-real-estate-investment-guide': {
+        title: 'West Pune Real Estate Investment Guide 2026 | Supreme Universal',
+        description: 'Comprehensive guide to investing in West Pune (Punawale, Wakad, Baner, Hinjewadi). Growth drivers, rental yields, metro connectivity, and top projects.',
+        h1: 'West Pune Real Estate Investment & Growth Guide 2026',
+        breadcrumb: 'West Pune Guide',
+        faqs: [
+            { q: 'What are the best investment pockets in West Pune?', a: 'Punawale and Tathawade offer the highest upside potential due to competitive rates and rapid transit infrastructure.' }
+        ]
+    },
+    '/luxury-apartments-pune-real-estate-market': {
+        title: 'Luxury Apartments in Pune 2026 | Supreme Universal Flagship Homes',
+        description: 'Explore luxury 2, 3 & 4 BHK apartments in Pune by Supreme Universal. Discover Supreme Rivana Punawale, Supreme Towers Mundhwa & Supreme Estia Baner.',
+        h1: 'Luxury Apartments in Pune — Supreme Universal Portfolio',
+        breadcrumb: 'Luxury Apartments',
+        faqs: [
+            { q: 'What projects does Supreme Universal have in Pune?', a: 'Key Pune developments include Supreme Rivana (Punawale), Supreme Towers (Mundhwa), Supreme Estia (Baner), and Supreme Villagio (Somatane).' }
+        ]
+    },
+    '/apartments-near-hinjewadi-it-park-pune': {
+        title: 'Flats Near Hinjewadi IT Park Pune | Supreme Rivana Punawale',
+        description: 'Luxury 2 & 3 BHK flats near Hinjewadi IT Park (10 mins away). Supreme Rivana Punawale offers 12.6-acre riverside living, 60,000 sq.ft clubhouse & starting ₹97 Lakhs*.',
+        h1: 'Executive Residences Near Hinjewadi IT Park Phase 1',
+        breadcrumb: 'Near Hinjewadi',
+        faqs: [
+            { q: 'How far is Supreme Rivana from Hinjewadi IT Park?', a: 'Supreme Rivana is located just 10-15 minutes from Hinjewadi Phase 1 via Marunji Road.' },
+            { q: 'What is the starting price of apartments near Hinjewadi?', a: '2 BHK residences at Supreme Rivana start from ₹97 Lakhs* and 3 BHK residences start from ₹1.42 Cr*.' }
         ]
     }
 };
