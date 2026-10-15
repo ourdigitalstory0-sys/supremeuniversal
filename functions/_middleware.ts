@@ -93,6 +93,72 @@ export async function onRequest(context: {
         });
     }
 
+    // 0b2. Google Web Stories Sitemap Auto-Resolver at Edge (<1ms response time)
+    if (url.pathname === '/sitemap-web-stories.xml') {
+        const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.supreme-universal.in/web-stories/supreme-rivana-overview</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/Supreme-Rivana-Web-Banner_fzjUZ4.jpeg</image:loc>
+      <image:title>Supreme Rivana Punawale Overview 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.supreme-universal.in/web-stories/supreme-rivana-price-2026</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/Supreme-Rivana-Web-Banner_fzjUZ4.jpeg</image:loc>
+      <image:title>Supreme Rivana Price List 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.supreme-universal.in/web-stories/punawale-real-estate-guide-2026</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/G4vv5v_Home--Banner.jpg</image:loc>
+      <image:title>Punawale Real Estate Investment Guide 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.supreme-universal.in/web-stories/punawale-hinjewadi-connectivity</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/SupremeVillagioDesktopBanner_5z4eED.jpeg</image:loc>
+      <image:title>Punawale to Hinjewadi IT Park Commute Guide 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.supreme-universal.in/web-stories/supreme-rivana-amenities-tour</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cdn.supremeuniversal.com/media/designthatelevate_jSxOmi.jpg</image:loc>
+      <image:title>Supreme Rivana 50+ Amenities Virtual Tour 2026</image:title>
+    </image:image>
+  </url>
+</urlset>`;
+        return new Response(sitemapXml, {
+            status: 200,
+            headers: {
+                'Content-Type': 'application/xml; charset=utf-8',
+                'Cache-Control': 'public, max-age=3600, s-maxage=3600',
+                'X-Robots-Tag': 'noindex'
+            }
+        });
+    }
+
     // 0c. Case Normalization & Slashes Normalizer (Preserves 100% PageRank into canonical lowercase)
     if (!url.pathname.startsWith('/api/') && !url.pathname.startsWith('/assets/')) {
         let cleanedPath = url.pathname;
