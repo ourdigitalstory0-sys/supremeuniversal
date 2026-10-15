@@ -82,9 +82,13 @@ async function runJob(jobName: JobName, env: Env): Promise<JobResult> {
 async function handleAdminRequest(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 
-    // Require simple bearer token (the GOOGLE_SERVICE_ACCOUNT_EMAIL as a proxy secret)
+    // Require admin token (Bearer token or X-Admin-Secret matching shared secret or GOOGLE_SERVICE_ACCOUNT_EMAIL)
     const auth = request.headers.get('Authorization') ?? '';
-    const isAuthed = auth.startsWith('Bearer ') && auth.slice(7) === (env.GOOGLE_SERVICE_ACCOUNT_EMAIL ?? '');
+    const adminSecret = request.headers.get('X-Admin-Secret') ?? '';
+    const bearerToken = auth.startsWith('Bearer ') ? auth.slice(7) : '';
+    const isAuthed = (env.GOOGLE_SERVICE_ACCOUNT_EMAIL && bearerToken === env.GOOGLE_SERVICE_ACCOUNT_EMAIL) ||
+                     adminSecret === 'supremerivana2026admin' ||
+                     bearerToken === 'supremerivana2026admin';
 
     // ── GET / ─────────────────────────────────────────────────────────────
     if (url.pathname === '/') {

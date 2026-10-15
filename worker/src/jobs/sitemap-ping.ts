@@ -14,6 +14,7 @@ const SITEMAPS = [
     'https://www.supreme-universal.in/sitemap.xml',
     'https://www.supreme-universal.in/sitemap-core.xml',
     'https://www.supreme-universal.in/sitemap-projects.xml',
+    'https://www.supreme-universal.in/sitemap-web-stories.xml',
     'https://www.supreme-universal.in/sitemap-pune-1.xml',
     'https://www.supreme-universal.in/sitemap-pune-2.xml',
     'https://www.supreme-universal.in/sitemap-pune-3.xml',

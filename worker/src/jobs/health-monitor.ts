@@ -26,9 +26,15 @@ const MONITORED_PAGES = [
     { url: `${DOMAIN}/supreme-rivana-punawale-location`,          label: 'Location' },
     { url: `${DOMAIN}/supreme-rivana-punawale-gallery`,           label: 'Gallery' },
     { url: `${DOMAIN}/supreme-rivana-punawale-contact`,           label: 'Contact' },
+    { url: `${DOMAIN}/supreme-rivana-punawale-brochure`,          label: 'Brochure' },
+    { url: `${DOMAIN}/supreme-rivana-punawale-master-plan`,        label: 'Master Plan' },
+    { url: `${DOMAIN}/supreme-rivana-punawale-rera`,               label: 'MahaRERA Page' },
+    { url: `${DOMAIN}/supreme-rivana-punawale-sample-flat`,        label: 'Sample Flat' },
     { url: `${DOMAIN}/supreme-2bhk-punawale-flats`,               label: '2 BHK Page' },
     { url: `${DOMAIN}/supreme-3bhk-punawale-flats`,               label: '3 BHK Page' },
     { url: `${DOMAIN}/pune-real-estate`,                          label: 'Pune Real Estate Hub' },
+    // Google Web Stories
+    { url: `${DOMAIN}/web-stories/supreme-rivana-overview`,       label: 'Web Story: Overview' },
     // API endpoints
     { url: `${DOMAIN}/api/pricing`,                               label: 'Pricing API' },
     // pSEO spot-checks
@@ -36,9 +42,10 @@ const MONITORED_PAGES = [
     { url: `${DOMAIN}/pune-real-estate/3bhk-apartments-in-hinjewadi-price`, label: 'pSEO: 3BHK Hinjewadi' },
     { url: `${DOMAIN}/pune-projects/supreme-rivana-2bhk-price`,             label: 'pSEO: Project 2BHK' },
     // Sitemaps
-    { url: `${DOMAIN}/sitemap.xml`,       label: 'Sitemap Index' },
-    { url: `${DOMAIN}/sitemap-core.xml`,  label: 'Core Sitemap' },
-    { url: `${DOMAIN}/robots.txt`,        label: 'Robots.txt' },
+    { url: `${DOMAIN}/sitemap.xml`,               label: 'Sitemap Index' },
+    { url: `${DOMAIN}/sitemap-core.xml`,          label: 'Core Sitemap' },
+    { url: `${DOMAIN}/sitemap-web-stories.xml`,   label: 'Web Stories Sitemap' },
+    { url: `${DOMAIN}/robots.txt`,                label: 'Robots.txt' },
 ];
 
 async function checkPage(url: string): Promise<HealthCheckResult> {
