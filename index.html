@@ -53,8 +53,9 @@
   <link rel="dns-prefetch" href="https://maps.googleapis.com" />
   <link rel="dns-prefetch" href="https://api.web3forms.com" />
 
-  <!-- Critical Asset Preloading (LCP Local Hero Image) -->
-  <link rel="preload" as="image" href="/images/hero-banner.jpg" type="image/jpeg" fetchpriority="high" />
+  <!-- Critical Asset Preloading (Responsive LCP Hero Images) -->
+  <link rel="preload" as="image" href="/images/hero-banner-mobile.jpg" media="(max-width: 768px)" type="image/jpeg" fetchpriority="high" />
+  <link rel="preload" as="image" href="/images/hero-banner.jpg" media="(min-width: 769px)" type="image/jpeg" fetchpriority="high" />
 
   <!-- Agentic Browsing & AI Discovery Standards -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Documentation" />

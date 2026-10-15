@@ -94,6 +94,7 @@ const ROICalculator = ({ onEnquire }: { onEnquire: () => void }) => {
 
                         <button
                             onClick={onEnquire}
+                            aria-label="Get Detailed ROI Report and Investment Breakdown"
                             className="hidden md:flex items-center gap-4 group"
                         >
                             <span className="bg-supreme-black text-white px-8 py-5 text-xs font-bold uppercase tracking-[0.2em] transition-all duration-500 group-hover:bg-supreme-gold group-hover:px-10">

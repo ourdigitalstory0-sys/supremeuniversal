@@ -65,6 +65,9 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
+                                role="tab"
+                                aria-selected={activeTab === tab.id}
+                                aria-label={`View ${tab.label} Floor Plan`}
                                 className={`pb-4 text-sm md:text-lg font-medium transition-all relative flex-shrink-0 ${activeTab === tab.id
                                     ? 'text-supreme-black'
                                     : 'text-gray-400 hover:text-gray-600'
@@ -162,6 +165,7 @@ const FloorPlans = ({ onEnquire }: FloorPlansProps) => {
 
                                     <button
                                         onClick={onEnquire}
+                                        aria-label="Download Supreme Rivana Master Brochure with Floor Plans and Layouts"
                                         className="w-full py-4 border border-supreme-black text-supreme-black hover:bg-supreme-black hover:text-white transition-colors uppercase tracking-widest text-xs font-bold"
                                     >
                                         Download Master Brochure

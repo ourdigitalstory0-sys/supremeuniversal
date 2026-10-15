@@ -93,6 +93,8 @@ const FAQ = () => {
                         >
                             <button
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                                aria-expanded={openIndex === index}
+                                aria-label={`Toggle FAQ: ${faq.question}`}
                                 className="w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none group hover:bg-white/10 transition-colors duration-300"
                             >
                                 <h3 className={`font-serif text-xl md:text-2xl transition-colors duration-300 ${openIndex === index ? 'text-supreme-gold' : 'text-white'}`}>

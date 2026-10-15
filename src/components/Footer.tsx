@@ -126,7 +126,13 @@ const Footer = () => {
                             </li>
                             <li className="flex flex-col gap-1">
                                 <span className="text-supreme-gold text-xs uppercase tracking-[0.1em]">Direct Line</span>
-                                <a href="tel:+919739000354" className="hover:text-white transition-colors duration-300 font-medium tracking-wide">+91 97390 00354</a>
+                                <a 
+                                    href="tel:+919739000354" 
+                                    aria-label="Call Supreme Rivana Sales Desk at +91 97390 00354"
+                                    className="hover:text-white underline underline-offset-4 decoration-white/30 hover:decoration-white transition-colors duration-300 font-medium tracking-wide"
+                                >
+                                    +91 97390 00354
+                                </a>
                             </li>
                             <li className="mt-4 text-[10px] text-white/30 truncate" title="Optimized for local search: Apartments near Hinjewadi IT Park, 2 BHK near Wakad, Projects near Mumbai Pune Expressway">
                                 Location Points: NH48 (400m) | Hinjewadi IT Park (15 Mins) | Wakad (8 Mins)
@@ -140,6 +146,7 @@ const Footer = () => {
                             href="https://wa.me/919739000354?text=I%20want%20to%20schedule%20a%20site%20visit%20for%20Supreme%20Rivana%20Punawale"
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label="Reach Supreme Rivana Sales Desk via WhatsApp to schedule a site visit"
                             className="inline-flex items-center gap-4 text-supreme-gold font-sans font-semibold uppercase tracking-[0.15em] text-xs hover:text-white transition-colors duration-300"
                         >
                             <span>Reach via WhatsApp</span>

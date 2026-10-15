@@ -186,10 +186,11 @@ const QuickEnquireModal = ({ isOpen, onClose }: QuickEnquireModalProps) => {
                                                 type="date"
                                                 name="visit_date"
                                                 id="modal-visit-date"
+                                                aria-label="Tentative Site Visit Date"
                                                 min={new Date().toISOString().split('T')[0]}
                                                 className="w-full bg-transparent border-b border-white/20 py-3 text-white/70 focus:outline-none focus:border-supreme-gold transition-colors font-light text-sm [color-scheme:dark]"
                                             />
-                                            <label className="absolute left-0 -top-3.5 text-white/40 text-xs uppercase tracking-widest">
+                                            <label htmlFor="modal-visit-date" className="absolute left-0 -top-3.5 text-white/40 text-xs uppercase tracking-widest">
                                                 Tentative Site Visit Date
                                             </label>
                                         </div>

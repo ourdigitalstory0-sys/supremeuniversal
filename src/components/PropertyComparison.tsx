@@ -63,6 +63,8 @@ const PropertyComparison = () => {
                         <button
                             key={project.id}
                             onClick={() => toggleProject(project.id)}
+                            aria-pressed={selectedProjects.includes(project.id)}
+                            aria-label={`Toggle comparison for ${project.name}`}
                             className={`px-6 py-3 text-[10px] uppercase tracking-[0.2em] font-bold border transition-all duration-500 ${selectedProjects.includes(project.id)
                                 ? 'bg-supreme-black text-white border-supreme-black'
                                 : 'bg-transparent text-gray-400 border-gray-200 hover:border-supreme-gold hover:text-supreme-gold'
@@ -78,12 +80,16 @@ const PropertyComparison = () => {
                     <div className="inline-flex bg-gray-50 p-1 border border-gray-100">
                         <button
                             onClick={() => setViewMode('all')}
+                            aria-pressed={viewMode === 'all'}
+                            aria-label="View complete project specifications"
                             className={`px-4 py-2 text-[10px] uppercase tracking-widest font-bold transition-all ${viewMode === 'all' ? 'bg-white shadow-sm text-supreme-gold' : 'text-gray-400'}`}
                         >
                             Complete Specs
                         </button>
                         <button
                             onClick={() => setViewMode('highlights')}
+                            aria-pressed={viewMode === 'highlights'}
+                            aria-label="View key project highlights"
                             className={`px-4 py-2 text-[10px] uppercase tracking-widest font-bold transition-all ${viewMode === 'highlights' ? 'bg-white shadow-sm text-supreme-gold' : 'text-gray-400'}`}
                         >
                             Key Highlights

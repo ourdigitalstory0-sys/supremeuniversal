@@ -70,6 +70,7 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
                             {/* Enquire CTA */}
                             <button
                                 onClick={onEnquire}
+                                aria-label="Enquire Now about Supreme Rivana"
                                 className="flex items-center gap-2 bg-supreme-gold text-white px-5 py-2 text-[11px] font-sans font-semibold tracking-[0.15em] uppercase hover:bg-white hover:text-supreme-black transition-all duration-300"
                             >
                                 <Phone size={13} />
@@ -81,7 +82,9 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
                         <button
                             className="lg:hidden text-white focus:outline-none ml-auto"
                             onClick={() => setIsOpen(!isOpen)}
-                            aria-label="Toggle Navigation Menu"
+                            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+                            aria-expanded={isOpen}
+                            aria-controls="mobile-navigation"
                         >
                             {isOpen ? <X size={26} /> : <Menu size={26} />}
                         </button>
@@ -90,7 +93,7 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
             </nav>
 
             {/* Mobile Menu Backdrop */}
-            <div className={`fixed inset-0 bg-supreme-black/98 backdrop-blur-2xl z-40 transition-opacity duration-500 lg:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+            <div id="mobile-navigation" className={`fixed inset-0 bg-supreme-black/98 backdrop-blur-2xl z-40 transition-opacity duration-500 lg:hidden ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
                 <div className="flex flex-col h-full justify-center items-center space-y-8 px-6">
                     {navLinks.map((link) => (
                         <Link
@@ -108,6 +111,7 @@ const Navbar = ({ onEnquire }: NavbarProps) => {
                             setIsOpen(false);
                             onEnquire?.();
                         }}
+                        aria-label="Enquire Now about Supreme Rivana - Call Sales Desk"
                         className={`mt-8 flex flex-col items-center gap-4 transition-all duration-500 delay-500 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}
                     >
                         <div className="bg-supreme-gold text-supreme-black px-8 py-4 rounded-full text-sm font-sans tracking-[0.15em] uppercase font-semibold flex items-center gap-3 shadow-xl">

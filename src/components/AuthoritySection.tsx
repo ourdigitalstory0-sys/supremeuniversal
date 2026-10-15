@@ -119,6 +119,7 @@ const AuthoritySection = () => {
                             href="https://search.google.com/local/writereview?placeid=ChIJ1fgaShW7wjsR1qJr3NOnG94"
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label="Rate Supreme Universal and Supreme Rivana on Google Reviews (opens in new tab)"
                             className="ml-2 px-3 py-1.5 bg-supreme-gold text-supreme-black text-[10px] font-bold uppercase tracking-wider hover:bg-white transition-colors rounded"
                         >
                             Rate Us on Google &rarr;

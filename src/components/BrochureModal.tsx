@@ -122,6 +122,7 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                                                     <input
                                                         type="text"
                                                         name="name"
+                                                        aria-label="Full Name"
                                                         placeholder="Full Name *"
                                                         required
                                                         className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-supreme-gold transition-colors font-sans text-sm"
@@ -129,6 +130,7 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                                                     <input
                                                         type="tel"
                                                         name="phone"
+                                                        aria-label="Phone Number"
                                                         placeholder="Phone Number *"
                                                         pattern="[6-9][0-9]{9}"
                                                         title="Please enter a valid 10-digit Indian mobile number"
@@ -138,6 +140,7 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                                                     <input
                                                         type="email"
                                                         name="email"
+                                                        aria-label="Email Address"
                                                         placeholder="Email Address *"
                                                         required
                                                         className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-supreme-gold transition-colors font-sans text-sm"
@@ -164,6 +167,7 @@ const BrochureModal = ({ isOpen, onClose }: BrochureModalProps) => {
                                                     <input
                                                         type="date"
                                                         name="visit_date"
+                                                        aria-label="Tentative Site Visit Date"
                                                         min={new Date().toISOString().split('T')[0]}
                                                         placeholder="Tentative Site Visit Date"
                                                         className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white/70 focus:outline-none focus:border-supreme-gold transition-colors font-sans text-sm [color-scheme:dark]"

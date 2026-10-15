@@ -157,11 +157,15 @@ const Contact = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="space-y-8"
                         >
-                            <a href="tel:+919739000354" className="flex items-center gap-6 group">
+                            <a 
+                                href="tel:+919739000354" 
+                                aria-label="Call Supreme Rivana Sales Desk at +91 97390 00354"
+                                className="flex items-center gap-6 group"
+                            >
                                 <div className="p-4 bg-white/5 border border-white/10 rounded-full group-hover:border-supreme-gold transition-colors duration-500">
                                     <Phone className="text-supreme-gold w-5 h-5" />
                                 </div>
-                                <p className="text-xl text-white font-sans font-light tracking-wide group-hover:text-supreme-gold transition-colors duration-300">+91 97390 00354</p>
+                                <p className="text-xl text-white font-sans font-light tracking-wide group-hover:text-supreme-gold transition-colors duration-300 underline underline-offset-4 decoration-white/30 hover:decoration-supreme-gold">+91 97390 00354</p>
                             </a>
                         </motion.div>
                     </div>
@@ -259,6 +263,7 @@ const Contact = () => {
                                                     <input
                                                         type="text"
                                                         name="first_name"
+                                                        aria-label="First Name"
                                                         placeholder="First Name *"
                                                         required
                                                         value={formData.first_name}
@@ -270,6 +275,7 @@ const Contact = () => {
                                                     <input
                                                         type="text"
                                                         name="last_name"
+                                                        aria-label="Last Name"
                                                         placeholder="Last Name"
                                                         value={formData.last_name}
                                                         onChange={handleInputChange}
@@ -282,6 +288,7 @@ const Contact = () => {
                                                     <input
                                                         type="email"
                                                         name="email"
+                                                        aria-label="Email Address"
                                                         placeholder="Email Address *"
                                                         required
                                                         value={formData.email}
@@ -293,6 +300,7 @@ const Contact = () => {
                                                     <input
                                                         type="tel"
                                                         name="phone"
+                                                        aria-label="Phone Number"
                                                         placeholder="Phone Number *"
                                                         pattern="[6-9][0-9]{9}"
                                                         title="Please enter a valid 10-digit Indian mobile number"

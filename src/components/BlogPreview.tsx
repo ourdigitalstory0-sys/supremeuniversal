@@ -48,7 +48,7 @@ const BlogPreview = () => {
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                             className="group bg-white flex flex-col h-full hover:shadow-2xl transition-shadow duration-500"
                         >
-                            <Link to={`/blog/${post.id}`} className="block relative overflow-hidden aspect-[4/3]">
+                            <Link to={`/blog/${post.id}`} aria-label={`Read article: ${post.title}`} className="block relative overflow-hidden aspect-[4/3]">
                                 <img
                                     src={post.image}
                                     alt={post.title}
@@ -72,9 +72,10 @@ const BlogPreview = () => {
                                 <div className="mt-auto">
                                     <Link
                                         to={`/blog/${post.id}`}
+                                        aria-label={`Read full article: ${post.title}`}
                                         className="inline-flex items-center gap-3 text-supreme-black font-sans font-semibold uppercase tracking-[0.1em] text-[10px] hover:text-supreme-gold transition-colors"
                                     >
-                                        <span>Read More</span>
+                                        <span>Read Article <span className="sr-only">: {post.title}</span></span>
                                         <span className="w-6 h-[1px] bg-supreme-black group-hover:bg-supreme-gold transition-colors"></span>
                                     </Link>
                                 </div>

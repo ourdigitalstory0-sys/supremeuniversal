@@ -21,27 +21,25 @@ const Hero = ({
             {/* Background Image with Dark Overlay */}
             <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none"></div>
 
-            <div className="absolute inset-0 z-0">
-                <img
-                    src="/images/hero-banner.jpg"
-                    alt="Supreme Rivana Punawale luxury residences — premium 2 BHK and 3 BHK waterfront apartments in Punawale Pune near Hinjewadi IT Park."
-                    className="w-full h-full object-cover opacity-80 mix-blend-overlay"
-                    fetchPriority="high"
-                    loading="eager"
-                    decoding="async"
-                    width="1920"
-                    height="1080"
-                />
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                <picture>
+                    <source media="(max-width: 768px)" srcSet="/images/hero-banner-mobile.jpg" width="480" height="720" />
+                    <img
+                        src="/images/hero-banner.jpg"
+                        alt="Supreme Rivana Punawale luxury residences — premium 2 BHK and 3 BHK waterfront apartments in Punawale Pune near Hinjewadi IT Park."
+                        className="w-full h-full object-cover opacity-80 mix-blend-overlay"
+                        fetchPriority="high"
+                        loading="eager"
+                        decoding="async"
+                        width="1920"
+                        height="1080"
+                    />
+                </picture>
             </div>
 
             {/* Content Container */}
             <div className="container mx-auto px-6 relative z-20 flex flex-col items-center justify-center text-center mt-20">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                    className="mb-6 flex flex-col items-center w-full"
-                >
+                <div className="mb-6 flex flex-col items-center w-full">
                     <span className="block text-xs md:text-sm font-sans tracking-[0.4em] text-supreme-gold mb-4 uppercase">
                         Premium Lifestyle Apartments Pune | Luxury Residences Pune
                     </span>
@@ -54,20 +52,15 @@ const Hero = ({
                         )}
                         <span className="block text-xl md:text-2xl mt-8 font-sans font-light tracking-wide text-white/90">{subtitle}</span>
                     </h1>
-                </motion.div>
+                </div>
 
-                <motion.p
-                    className="text-base md:text-xl text-white/80 max-w-2xl mx-auto font-sans font-light tracking-wide mb-10 leading-relaxed"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.3, duration: 0.8 }}
-                >
+                <p className="text-base md:text-xl text-white/80 max-w-2xl mx-auto font-sans font-light tracking-wide mb-10 leading-relaxed">
                     {description || (
                         <>
                             Widely considered the <strong>best project in Punawale 2026</strong>. Experience unprecedented <strong>waterfront luxury</strong> and the pinnacle of real estate evolution with our premium <strong>2 & 3 BHK flats near Hinjewadi IT Park</strong>. A 15-acre IGBC certified township with <strong>31-storey towers</strong>, 40+ world-class amenities, and <strong>Pune Metro Line 3</strong> proximity.
                         </>
                     )}
-                </motion.p>
+                </p>
 
                 <motion.div
                     className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full"

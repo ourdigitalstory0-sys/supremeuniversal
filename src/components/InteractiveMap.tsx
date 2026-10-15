@@ -92,6 +92,7 @@ const InteractiveMap = () => {
                                 href="https://maps.google.com/?cid=16004655655787471574"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                aria-label="Open Supreme Rivana Punawale location on Google Maps (opens in new tab)"
                                 className="inline-block px-3 py-1 bg-supreme-gold text-supreme-black text-[10px] uppercase tracking-wider font-bold hover:bg-white transition-colors rounded"
                             >
                                 Open on Google Maps &rarr;
@@ -122,6 +123,7 @@ const InteractiveMap = () => {
                     href="https://maps.google.com/?cid=16004655655787471574"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="View Supreme Rivana Punawale pin on Google Maps (opens in new tab)"
                     className="flex items-center gap-2 bg-supreme-black/90 backdrop-blur-md px-3.5 py-2 border border-supreme-gold/40 text-supreme-gold hover:bg-supreme-gold hover:text-supreme-black text-[10px] uppercase tracking-widest font-bold transition-all shadow-lg"
                 >
                     <span>📍 View on Google Maps</span>
